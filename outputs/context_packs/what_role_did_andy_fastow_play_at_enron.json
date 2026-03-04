@@ -1,0 +1,222 @@
+{
+  "question": "What role did Andy Fastow play at Enron?",
+  "matched_entities": [
+    {
+      "entity_id": "b0fed017-3ab3-4a33-8014-ae823ed280b0",
+      "canonical_name": "Phillip Love",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "ae9229e7-0960-427e-8e8f-217a08a531df",
+      "canonical_name": "Enron Industrial Markets",
+      "entity_type": "organization",
+      "score": 1.0
+    },
+    {
+      "entity_id": "82a2515a-8707-45a0-9e8f-0e6a0d0c7ab9",
+      "canonical_name": "Andy Zipper",
+      "entity_type": "person",
+      "score": 0.5519859194755554
+    },
+    {
+      "entity_id": "20898ee8-cba0-4e5f-ae41-e0733ac622e1",
+      "canonical_name": "Gus Eghneim",
+      "entity_type": "person",
+      "score": 0.4521426558494568
+    },
+    {
+      "entity_id": "65ccd3e5-698b-432c-99f5-6ac8fd5ac2b7",
+      "canonical_name": "Lloyd Will",
+      "entity_type": "person",
+      "score": 0.4420650899410248
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Enron Industrial Markets discussed investor conference call overview",
+      "claim_id": "8dc8cab4-e577-4c99-9a48-615e5845929b",
+      "claim_type": "discussed",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.9618784530386739,
+      "evidence": [
+        {
+          "excerpt": "today enron hosted a conference call to give investors a current overview of the company",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        },
+        {
+          "excerpt": "we also discussed our existing financial vehicles including osprey marlin and yosemite in further detail",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets status_change overleveraged",
+      "claim_id": "f880c0de-0538-4363-8200-86762fcfeb4c",
+      "claim_type": "status_change",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.9618784530386739,
+      "evidence": [
+        {
+          "excerpt": "because of these bad investments weve become overleveraged as a company",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        },
+        {
+          "excerpt": "enr on20 now ranks no 7 on the fortune 500 up from no 18 last year",
+          "source_id": "412014",
+          "date": "2001-04-02T00:00:00",
+          "sender": "office.chairman@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets decided create a capital book",
+      "claim_id": "a48adb1b-a7ef-4955-bb8e-d1669f0f8c1a",
+      "claim_type": "decided",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7861878453038673,
+      "evidence": [
+        {
+          "excerpt": "we have decided to create a capital book",
+          "source_id": "350639",
+          "date": "2001-04-16T00:00:00",
+          "sender": "enron.announcements@enron.com"
+        },
+        {
+          "excerpt": "enron decided to sell pge since a regulated utility no longer fit with its strategy to buy and sell energy on wholesale markets",
+          "source_id": "157933",
+          "date": "2001-03-26T00:00:00",
+          "sender": "miyung.buster@enron.com"
+        },
+        {
+          "excerpt": "our goal is to have all enron employees usin g20 the xms system by april 15",
+          "source_id": "160524",
+          "date": "2001-03-02T00:00:00",
+          "sender": "enron.announcements@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets opinion positioned for great success this year and beyond",
+      "claim_id": "e8f67280-0ce9-4d6e-af73-4b0db21ecd5b",
+      "claim_type": "opinion",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.774585635359116,
+      "evidence": [
+        {
+          "excerpt": "our vision to become the worlds leading company positions our company for great success this year and beyond",
+          "source_id": "209885",
+          "date": "2001-04-02T00:00:00",
+          "sender": "general.announcement@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets mentioned data storage market",
+      "claim_id": "0116ab00-5dad-4f79-99fe-46f7fc60b4c7",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7256906077348065,
+      "evidence": [
+        {
+          "excerpt": "read about enrons entry into the data storage market",
+          "source_id": "463378",
+          "date": "2001-02-02T00:00:00",
+          "sender": "enron.announcements@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Phillip Love sent_to Victor Guggenheim",
+      "claim_id": "511a98b6-a180-473e-91cb-7eb9d646acfb",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7240331491712707,
+      "evidence": [
+        {
+          "excerpt": "To: victor.guggenheim@enron.com",
+          "source_id": "296240",
+          "date": "2001-01-31T00:00:00",
+          "sender": "phillip.love@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Phillip Love discussed Larry Joe Hunter",
+      "claim_id": "a49f2601-3120-437a-95f6-280c9df9076a",
+      "claim_type": "discussed",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7240331491712707,
+      "evidence": [
+        {
+          "excerpt": "after meeting with larry joe hunter",
+          "source_id": "296240",
+          "date": "2001-01-31T00:00:00",
+          "sender": "phillip.love@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Phillip Love decided TAGG access will not be granted",
+      "claim_id": "aa24eab5-ad1d-409d-9a95-a2f4501fb6c2",
+      "claim_type": "decided",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7240331491712707,
+      "evidence": [
+        {
+          "excerpt": "we will not be granting tagg access to his group",
+          "source_id": "296240",
+          "date": "2001-01-31T00:00:00",
+          "sender": "phillip.love@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Phillip Love mentioned credit risk exposure",
+      "claim_id": "9fb1ee43-1325-47a0-a82d-49144f422266",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7240331491712707,
+      "evidence": [
+        {
+          "excerpt": "our credit risk exposure is the bottom line",
+          "source_id": "296240",
+          "date": "2001-01-31T00:00:00",
+          "sender": "phillip.love@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Phillip Love opinion mistakes in counterparty assignment will result in severe consequences",
+      "claim_id": "d6125a9d-b017-43fa-bac5-a8f88ecf3bff",
+      "claim_type": "opinion",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7240331491712707,
+      "evidence": [
+        {
+          "excerpt": "if we continue to make these mistakes we as a group will catch severe fire",
+          "source_id": "296240",
+          "date": "2001-01-31T00:00:00",
+          "sender": "phillip.love@enron.com"
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}

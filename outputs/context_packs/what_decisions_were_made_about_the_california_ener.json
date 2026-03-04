@@ -1,0 +1,240 @@
+{
+  "question": "What decisions were made about the California energy situation?",
+  "matched_entities": [
+    {
+      "entity_id": "6a61dc39-c42d-4784-b349-b006b5ff226a",
+      "canonical_name": "Alan Julson",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "35f4f306-a11c-47ae-bae1-f2082286b7ab",
+      "canonical_name": "Bill Williams III",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "ae9229e7-0960-427e-8e8f-217a08a531df",
+      "canonical_name": "Enron Industrial Markets",
+      "entity_type": "organization",
+      "score": 1.0
+    },
+    {
+      "entity_id": "6e96e4cc-9b03-49af-b7ca-ca223a3bf29a",
+      "canonical_name": "OU",
+      "entity_type": "organization",
+      "score": 1.0
+    },
+    {
+      "entity_id": "e857a0c0-1d11-43c0-a673-58a5e1d40ea3",
+      "canonical_name": "University of Texas at Austin",
+      "entity_type": "organization",
+      "score": 1.0
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Enron Industrial Markets discussed investor conference call overview",
+      "claim_id": "8dc8cab4-e577-4c99-9a48-615e5845929b",
+      "claim_type": "discussed",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.9618784530386739,
+      "evidence": [
+        {
+          "excerpt": "today enron hosted a conference call to give investors a current overview of the company",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        },
+        {
+          "excerpt": "we also discussed our existing financial vehicles including osprey marlin and yosemite in further detail",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets status_change overleveraged",
+      "claim_id": "f880c0de-0538-4363-8200-86762fcfeb4c",
+      "claim_type": "status_change",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.9618784530386739,
+      "evidence": [
+        {
+          "excerpt": "because of these bad investments weve become overleveraged as a company",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        },
+        {
+          "excerpt": "enr on20 now ranks no 7 on the fortune 500 up from no 18 last year",
+          "source_id": "412014",
+          "date": "2001-04-02T00:00:00",
+          "sender": "office.chairman@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Alan Julson sent_to Jason Wolfe",
+      "claim_id": "82cf69ae-d1b8-4715-bb9e-5352982fe97a",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.8127071823204419,
+      "evidence": [
+        {
+          "excerpt": "From: vze28szx@verizon.net To: jason.wolfe@enron.com",
+          "source_id": "513340",
+          "date": "2001-05-18T00:00:00",
+          "sender": "vze28szx@verizon.net"
+        }
+      ]
+    },
+    {
+      "claim": "Alan Julson mentioned visiting June 23 and leaving the next Sunday",
+      "claim_id": "cc3245b1-c0fe-4bc6-8612-46205223362e",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.8127071823204419,
+      "evidence": [
+        {
+          "excerpt": "i get into town on june 23 and i fly out the next sunday",
+          "source_id": "513340",
+          "date": "2001-05-18T00:00:00",
+          "sender": "vze28szx@verizon.net"
+        },
+        {
+          "excerpt": "any interest in an astros game on sunday afternoon june 24",
+          "source_id": "513340",
+          "date": "2001-05-18T00:00:00",
+          "sender": "vze28szx@verizon.net"
+        },
+        {
+          "excerpt": "i think i am staying with becky at the beginning of the week at least though lissa has moved in with her now",
+          "source_id": "513340",
+          "date": "2001-05-18T00:00:00",
+          "sender": "vze28szx@verizon.net"
+        },
+        {
+          "excerpt": "i will still be haning out with shelly on saturday night",
+          "source_id": "513340",
+          "date": "2001-05-18T00:00:00",
+          "sender": "vze28szx@verizon.net"
+        }
+      ]
+    },
+    {
+      "claim": "Alan Julson requested place to crash a few nights",
+      "claim_id": "19a1e440-fbf9-4526-8944-6eb6144628cb",
+      "claim_type": "requested",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.8127071823204419,
+      "evidence": [
+        {
+          "excerpt": "i may need a place to crash a few nights",
+          "source_id": "513340",
+          "date": "2001-05-18T00:00:00",
+          "sender": "vze28szx@verizon.net"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets decided create a capital book",
+      "claim_id": "a48adb1b-a7ef-4955-bb8e-d1669f0f8c1a",
+      "claim_type": "decided",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7861878453038673,
+      "evidence": [
+        {
+          "excerpt": "we have decided to create a capital book",
+          "source_id": "350639",
+          "date": "2001-04-16T00:00:00",
+          "sender": "enron.announcements@enron.com"
+        },
+        {
+          "excerpt": "enron decided to sell pge since a regulated utility no longer fit with its strategy to buy and sell energy on wholesale markets",
+          "source_id": "157933",
+          "date": "2001-03-26T00:00:00",
+          "sender": "miyung.buster@enron.com"
+        },
+        {
+          "excerpt": "our goal is to have all enron employees usin g20 the xms system by april 15",
+          "source_id": "160524",
+          "date": "2001-03-02T00:00:00",
+          "sender": "enron.announcements@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets opinion positioned for great success this year and beyond",
+      "claim_id": "e8f67280-0ce9-4d6e-af73-4b0db21ecd5b",
+      "claim_type": "opinion",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.774585635359116,
+      "evidence": [
+        {
+          "excerpt": "our vision to become the worlds leading company positions our company for great success this year and beyond",
+          "source_id": "209885",
+          "date": "2001-04-02T00:00:00",
+          "sender": "general.announcement@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Bill Williams III works_at Enron Industrial Markets",
+      "claim_id": "3f7d39af-726e-4bc2-a47b-df2e8eac12ea",
+      "claim_type": "works_at",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7596685082872927,
+      "evidence": [
+        {
+          "excerpt": "bill.iii@enron.com",
+          "source_id": "464364",
+          "date": "2001-03-15T00:00:00",
+          "sender": "kate.symes@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Bill Williams III mentioned appreciation for help",
+      "claim_id": "7a636246-a76a-4f09-b979-8a708e5cf03c",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7596685082872927,
+      "evidence": [
+        {
+          "excerpt": "i appreciate the help",
+          "source_id": "464364",
+          "date": "2001-03-15T00:00:00",
+          "sender": "kate.symes@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets mentioned data storage market",
+      "claim_id": "0116ab00-5dad-4f79-99fe-46f7fc60b4c7",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7256906077348065,
+      "evidence": [
+        {
+          "excerpt": "read about enrons entry into the data storage market",
+          "source_id": "463378",
+          "date": "2001-02-02T00:00:00",
+          "sender": "enron.announcements@enron.com"
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}

@@ -1,6 +1,6 @@
 .env
 data/
-outputs/*.db
+# outputs/*.db  # tracked for submission
 outputs/extractions/
 __pycache__/
 *.pyc

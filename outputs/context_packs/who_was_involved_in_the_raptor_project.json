@@ -1,0 +1,140 @@
+{
+  "question": "Who was involved in the Raptor project?",
+  "matched_entities": [
+    {
+      "entity_id": "99197372-1f25-42e4-a2ef-a323f4c1b138",
+      "canonical_name": "Caroline Emmert",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "67ea8a95-7d4d-458a-8881-68760e2650a8",
+      "canonical_name": "Shockatan Hills Project",
+      "entity_type": "project",
+      "score": 0.3045790493488312
+    },
+    {
+      "entity_id": "676b172a-1cfe-4dce-9831-b6ce4650b61b",
+      "canonical_name": "Inspiration",
+      "entity_type": "project",
+      "score": 0.2951928377151489
+    },
+    {
+      "entity_id": "b1a776fb-df35-4317-a4df-8ce3223607c0",
+      "canonical_name": "Puerto Cabezas",
+      "entity_type": "location",
+      "score": 0.29164817929267883
+    },
+    {
+      "entity_id": "133fd7d2-0a2d-4ba4-98e4-b8954efae7ed",
+      "canonical_name": "Y Haynes",
+      "entity_type": "person",
+      "score": 0.2885202467441559
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Caroline Emmert mentioned declined parking spot",
+      "claim_id": "ef6a7d15-baea-4cc9-b796-c079cd5d6c32",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.8972375690607735,
+      "evidence": [
+        {
+          "excerpt": "i do not require a wtc building parking space at this time",
+          "source_id": "458610",
+          "date": "2001-08-28T00:00:00",
+          "sender": "chris.stokley@enron.com"
+        },
+        {
+          "excerpt": "the following individuals have first option on these spots caroline emmert",
+          "source_id": "458610",
+          "date": "2001-08-28T00:00:00",
+          "sender": "chris.stokley@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Caroline Emmert works_at Sempra Energy Solutions",
+      "claim_id": "e60af574-4e44-4e9e-99ed-3a230621b7b8",
+      "claim_type": "works_at",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7480662983425413,
+      "evidence": [
+        {
+          "excerpt": "caroline tran natural gas portfolio pricing manager sempra energy solutions",
+          "source_id": "346554",
+          "date": "2001-03-01T00:00:00",
+          "sender": "dedeutsch@duke-energy.com"
+        }
+      ]
+    },
+    {
+      "claim": "Caroline Emmert role_assignment Natural Gas Portfolio Pricing Manager",
+      "claim_id": "9556dd43-c500-4dcd-8148-011bfbef2c83",
+      "claim_type": "role_assignment",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7480662983425413,
+      "evidence": [
+        {
+          "excerpt": "caroline tran natural gas portfolio pricing manager sempra energy solutions",
+          "source_id": "346554",
+          "date": "2001-03-01T00:00:00",
+          "sender": "dedeutsch@duke-energy.com"
+        }
+      ]
+    },
+    {
+      "claim": "Caroline Emmert sent_to Collin Whitehead",
+      "claim_id": "f4cd9de9-0ec6-47e4-9cf5-4f9d45d92168",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7008287292817679,
+      "evidence": [
+        {
+          "excerpt": "From: caroline.emmert@enron.com\nTo: mark.guzman@enron.com, collin.whitehead@enron.com",
+          "source_id": "149375",
+          "date": "2001-01-03T00:00:00",
+          "sender": "caroline.emmert@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Caroline Emmert requested Collin Whitehead",
+      "claim_id": "537e195e-33ce-4b15-9ab0-98ddf38d6f35",
+      "claim_type": "requested",
+      "confidence": 1.0,
+      "status": "active",
+      "score": 0.7008287292817679,
+      "evidence": [
+        {
+          "excerpt": "when searching for the counterparty in the listing please be extra careful about the one you actually choose",
+          "source_id": "149375",
+          "date": "2001-01-03T00:00:00",
+          "sender": "caroline.emmert@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Caroline Emmert discussed David E. Deutsch",
+      "claim_id": "85f9d134-2615-474e-8255-be7e8fd807ae",
+      "claim_type": "discussed",
+      "confidence": 0.7,
+      "status": "active",
+      "score": 0.6580662983425414,
+      "evidence": [
+        {
+          "excerpt": "it was nice to talk to you last night",
+          "source_id": "346554",
+          "date": "2001-03-01T00:00:00",
+          "sender": "dedeutsch@duke-energy.com"
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}
