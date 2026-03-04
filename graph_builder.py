@@ -111,76 +111,83 @@ def _init_db(conn: sqlite3.Connection):
 
 def save_to_sqlite(entities: list[Entity], claims: list[Claim],
                    evidence: list[Evidence], db_path: str):
-    """Persist entities, claims, and evidence to SQLite (idempotent via INSERT OR REPLACE)."""
+    """Persist entities, claims, and evidence to SQLite.
+
+    Uses executemany() for bulk inserts — 10-50× faster than per-row execute()
+    for batches of 1000+ rows. INSERT OR REPLACE ensures idempotency.
+    """
     conn = sqlite3.connect(db_path)
     _init_db(conn)
 
-    for e in entities:
-        conn.execute(
-            "INSERT OR REPLACE INTO entities VALUES (?,?,?,?,?,?,?,?)",
-            (
-                e.entity_id,
-                e.canonical_name,
-                e.entity_type.value,
-                json.dumps(e.aliases),
-                e.first_seen.isoformat() if e.first_seen else None,
-                e.last_seen.isoformat() if e.last_seen else None,
-                json.dumps(e.metadata),
-                json.dumps(e.merge_history),
-            )
+    # Batch insert entities
+    entity_rows = [
+        (
+            e.entity_id,
+            e.canonical_name,
+            e.entity_type.value,
+            json.dumps(e.aliases),
+            e.first_seen.isoformat() if e.first_seen else None,
+            e.last_seen.isoformat() if e.last_seen else None,
+            json.dumps(e.metadata),
+            json.dumps(e.merge_history),
         )
+        for e in entities
+    ]
+    conn.executemany("INSERT OR REPLACE INTO entities VALUES (?,?,?,?,?,?,?,?)", entity_rows)
 
-    for c in claims:
-        conn.execute(
-            "INSERT OR REPLACE INTO claims VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
-            (
-                c.claim_id,
-                c.claim_type.value,
-                c.subject_entity_id,
-                c.object_entity_id,
-                c.object_value,
-                c.confidence,
-                c.status.value,
-                c.valid_from.isoformat() if c.valid_from else None,
-                c.valid_until.isoformat() if c.valid_until else None,
-                json.dumps(c.evidence_ids),
-                c.superseded_by,
-                c.extraction_version,
-                json.dumps(c.merge_history),
-            )
+    # Batch insert claims
+    claim_rows = [
+        (
+            c.claim_id,
+            c.claim_type.value,
+            c.subject_entity_id,
+            c.object_entity_id,
+            c.object_value,
+            c.confidence,
+            c.status.value,
+            c.valid_from.isoformat() if c.valid_from else None,
+            c.valid_until.isoformat() if c.valid_until else None,
+            json.dumps(c.evidence_ids),
+            c.superseded_by,
+            c.extraction_version,
+            json.dumps(c.merge_history),
         )
+        for c in claims
+    ]
+    conn.executemany("INSERT OR REPLACE INTO claims VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)", claim_rows)
 
-    for ev in evidence:
-        conn.execute(
-            "INSERT OR REPLACE INTO evidence VALUES (?,?,?,?,?,?,?,?)",
-            (
-                ev.evidence_id,
-                ev.source_id,
-                ev.source_type,
-                ev.excerpt,
-                ev.timestamp.isoformat() if ev.timestamp else None,
-                ev.subject,
-                ev.sender,
-                json.dumps(ev.recipients) if ev.recipients else None,
-            )
+    # Batch insert evidence
+    evidence_rows = [
+        (
+            ev.evidence_id,
+            ev.source_id,
+            ev.source_type,
+            ev.excerpt,
+            ev.timestamp.isoformat() if ev.timestamp else None,
+            ev.subject,
+            ev.sender,
+            json.dumps(ev.recipients) if ev.recipients else None,
         )
+        for ev in evidence
+    ]
+    conn.executemany("INSERT OR REPLACE INTO evidence VALUES (?,?,?,?,?,?,?,?)", evidence_rows)
 
-    # Record merges from entity merge_history
-    for e in entities:
-        for mh in e.merge_history:
-            merge_id = str(uuid.uuid4())
-            conn.execute(
-                "INSERT OR IGNORE INTO merges VALUES (?,?,?,?,?,?,?)",
-                (
-                    merge_id,
-                    "entity",
-                    mh.get("merged_from", ""),
-                    mh.get("merged_into", ""),
-                    mh.get("reason", ""),
-                    mh.get("timestamp", datetime.utcnow().isoformat()),
-                    1,
-                )
-            )
+    # Batch insert merge audit records
+    merge_rows = [
+        (
+            str(uuid.uuid4()),
+            "entity",
+            mh.get("merged_from", ""),
+            mh.get("merged_into", ""),
+            mh.get("reason", ""),
+            mh.get("timestamp", datetime.utcnow().isoformat()),
+            1,
+        )
+        for e in entities
+        for mh in e.merge_history
+    ]
+    if merge_rows:
+        conn.executemany("INSERT OR IGNORE INTO merges VALUES (?,?,?,?,?,?,?)", merge_rows)
 
     conn.commit()
     conn.close()

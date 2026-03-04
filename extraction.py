@@ -6,6 +6,11 @@ and Pydantic (ExtractionResult) for strict output validation.
 Prompt strategy: hybrid chain-of-thought — instruct the model to resolve
 all entities FIRST, then extract claims that reference only those entities.
 This reduces hallucinated entity references without a second API call.
+
+Chunking: emails longer than CHUNK_WORD_LIMIT words are split into overlapping
+chunks (CHUNK_WORDS words each, CHUNK_OVERLAP_WORDS overlap). Each chunk is
+extracted independently; results are merged (union of entities + claims).
+The overlap prevents missing entities that straddle chunk boundaries.
 """
 import json
 import re
@@ -13,6 +18,11 @@ import time
 import logging
 import os
 from typing import Optional
+
+# Semantic chunking parameters
+CHUNK_WORD_LIMIT = 400    # trigger chunking above this many words
+CHUNK_WORDS = 400         # target chunk size in words
+CHUNK_OVERLAP_WORDS = 50  # overlap between consecutive chunks
 
 from pydantic import ValidationError
 
@@ -169,13 +179,62 @@ def validate_extraction(data: dict) -> list[str]:
         return [str(e)]
 
 
-def extract_email(email_dict: dict, max_retries: int = 2) -> Optional[dict]:
-    """Extract entities and claims from a single email.
+def chunk_body(body: str, chunk_words: int = CHUNK_WORDS,
+               overlap_words: int = CHUNK_OVERLAP_WORDS) -> list[str]:
+    """Split a long email body into overlapping word-level chunks.
 
-    Uses hybrid chain-of-thought prompt (entities first, then claims).
-    Validates output with Pydantic and retries once on failure.
-    Returns the raw dict (not Pydantic objects) for JSON-serialisable storage.
+    Args:
+        body: Email body text.
+        chunk_words: Maximum words per chunk.
+        overlap_words: Words to repeat at the start of the next chunk so that
+                       entities straddling a boundary are not lost.
+
+    Returns:
+        List of chunk strings. If body is short enough, returns [body].
     """
+    words = body.split()
+    if len(words) <= chunk_words:
+        return [body]
+
+    chunks = []
+    start = 0
+    while start < len(words):
+        end = min(start + chunk_words, len(words))
+        chunks.append(' '.join(words[start:end]))
+        if end == len(words):
+            break
+        start = end - overlap_words  # next chunk starts with overlap
+    return chunks
+
+
+def _merge_extractions(results: list[dict]) -> dict:
+    """Merge extraction results from multiple chunks.
+
+    Entities and claims are unioned. Duplicate entity names (same name + type)
+    are not filtered here — that's handled downstream by dedup.py.
+    """
+    merged_entities: list[dict] = []
+    merged_claims: list[dict] = []
+    seen_entity_keys: set[tuple] = set()
+    seen_excerpt_keys: set[str] = set()
+
+    for r in results:
+        for e in r.get("entities", []):
+            key = (e.get("name", "").lower(), e.get("type", ""))
+            if key not in seen_entity_keys:
+                merged_entities.append(e)
+                seen_entity_keys.add(key)
+        for c in r.get("claims", []):
+            excerpt = c.get("supporting_excerpt", "").strip()
+            if excerpt and excerpt not in seen_excerpt_keys:
+                merged_claims.append(c)
+                seen_excerpt_keys.add(excerpt)
+
+    return {"entities": merged_entities, "claims": merged_claims}
+
+
+def _extract_single(email_dict: dict, max_retries: int = 2) -> Optional[dict]:
+    """Extract from one prompt (single email body or one chunk)."""
     prompt = build_prompt(email_dict)
 
     for attempt in range(max_retries):
@@ -200,6 +259,39 @@ def extract_email(email_dict: dict, max_retries: int = 2) -> Optional[dict]:
                 time.sleep(2 ** attempt)
 
     return None
+
+
+def extract_email(email_dict: dict, max_retries: int = 2) -> Optional[dict]:
+    """Extract entities and claims from a single email.
+
+    For emails longer than CHUNK_WORD_LIMIT words, the body is split into
+    overlapping chunks. Each chunk is extracted independently and the results
+    are merged. For short emails, a single LLM call is made.
+
+    Returns the raw dict (not Pydantic objects) for JSON-serialisable storage.
+    """
+    body = email_dict.get("body", "")
+    chunks = chunk_body(body)
+
+    if len(chunks) == 1:
+        return _extract_single(email_dict, max_retries)
+
+    # Multi-chunk extraction
+    logger.info(f"Email body split into {len(chunks)} chunks ({len(body.split())} words total)")
+    chunk_results = []
+    for i, chunk in enumerate(chunks):
+        chunk_dict = dict(email_dict)
+        chunk_dict["body"] = chunk
+        result = _extract_single(chunk_dict, max_retries)
+        if result is not None:
+            chunk_results.append(result)
+        if i < len(chunks) - 1:
+            time.sleep(0.5)  # light rate limiting between chunk calls
+
+    if not chunk_results:
+        return None
+
+    return _merge_extractions(chunk_results)
 
 
 def extract_batch(emails: list[dict], output_dir: str = EXTRACTIONS_DIR,
