@@ -137,6 +137,7 @@ def build_context_pack(question: str, entities: list[Entity],
     """Build a context pack answering a natural language question."""
     # Build evidence lookup
     ev_by_id = {ev.evidence_id: ev for ev in evidence}
+    entity_by_id = {e.entity_id: e for e in entities}
 
     # Find matching entities
     entity_scores = _find_matching_entities_with_scores(question, entities, threshold=0.3)
@@ -188,9 +189,11 @@ def build_context_pack(question: str, entities: list[Entity],
     conflict_claims = []
 
     for claim, score, claim_evs in scored_claims[:10]:
-        claim_str = f"{claim.subject_entity_id} {claim.claim_type.value}"
+        subj_name = entity_by_id.get(claim.subject_entity_id, type('', (), {'canonical_name': claim.subject_entity_id})()).canonical_name
+        claim_str = f"{subj_name} {claim.claim_type.value}"
         if claim.object_entity_id:
-            claim_str += f" {claim.object_entity_id}"
+            obj_name = entity_by_id.get(claim.object_entity_id, type('', (), {'canonical_name': claim.object_entity_id})()).canonical_name
+            claim_str += f" {obj_name}"
         elif claim.object_value:
             claim_str += f" {claim.object_value}"
 
