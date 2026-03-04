@@ -34,11 +34,20 @@ def is_quoted_duplicate(text: str, seen_bodies: list[str]) -> bool:
     return False
 
 
+_DEDUP_MODEL = None
+
+
 def _get_embeddings(texts: list[str]):
-    """Get embeddings for a list of texts."""
-    from sentence_transformers import SentenceTransformer
-    model = SentenceTransformer('all-MiniLM-L6-v2')
-    return model.encode(texts, convert_to_numpy=True)
+    """Get embeddings for a list of texts (model loaded once)."""
+    global _DEDUP_MODEL
+    if _DEDUP_MODEL is None:
+        import logging, warnings, os
+        os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+        warnings.filterwarnings("ignore", category=UserWarning, module="torch")
+        logging.getLogger("sentence_transformers").setLevel(logging.ERROR)
+        from sentence_transformers import SentenceTransformer
+        _DEDUP_MODEL = SentenceTransformer('all-MiniLM-L6-v2')
+    return _DEDUP_MODEL.encode(texts, convert_to_numpy=True)
 
 
 def _cosine_similarity(a, b) -> float:

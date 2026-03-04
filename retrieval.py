@@ -1,14 +1,27 @@
 """Retrieval and context pack generation."""
+import warnings
+import os
 from datetime import datetime
 from typing import Optional
 
 import numpy as np
 from schema import Entity, Claim, Evidence, ClaimStatus
 
+# Suppress noisy CUDA / HuggingFace warnings
+os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+warnings.filterwarnings("ignore", category=UserWarning, module="torch")
+
+_MODEL = None
+
 
 def _get_model():
-    from sentence_transformers import SentenceTransformer
-    return SentenceTransformer('all-MiniLM-L6-v2')
+    global _MODEL
+    if _MODEL is None:
+        import logging
+        logging.getLogger("sentence_transformers").setLevel(logging.ERROR)
+        from sentence_transformers import SentenceTransformer
+        _MODEL = SentenceTransformer('all-MiniLM-L6-v2')
+    return _MODEL
 
 
 def _cosine_sim(a: np.ndarray, b: np.ndarray) -> float:

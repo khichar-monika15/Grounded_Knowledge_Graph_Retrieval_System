@@ -2,13 +2,27 @@
 import json
 import os
 import sqlite3
+import warnings
 
 import streamlit as st
 import networkx as nx
 
+# Suppress CUDA / HuggingFace noise before any torch/transformers imports
+os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+warnings.filterwarnings("ignore", category=UserWarning, module="torch")
+
 from config import DB_PATH, GRAPH_JSON_PATH
 
 st.set_page_config(page_title="Enron Memory Graph", layout="wide")
+
+
+@st.cache_resource
+def get_embedding_model():
+    """Load sentence-transformers model once for the lifetime of the app."""
+    import logging
+    logging.getLogger("sentence_transformers").setLevel(logging.ERROR)
+    from sentence_transformers import SentenceTransformer
+    return SentenceTransformer('all-MiniLM-L6-v2')
 
 
 @st.cache_resource
@@ -134,6 +148,10 @@ def main():
     ev_by_id = {ev.evidence_id: ev for ev in evidence}
     entity_by_id = {e.entity_id: e for e in entities}
 
+    # Pre-warm embedding model (cached, loads once)
+    import retrieval
+    retrieval._MODEL = get_embedding_model()
+
     # Sidebar filters
     st.sidebar.header("Filters")
     all_etypes = sorted({e.entity_type.value for e in entities})
@@ -198,6 +216,8 @@ def main():
         search = st.button("Search", use_container_width=True)
 
     if search and question:
+        import retrieval
+        retrieval._MODEL = get_embedding_model()  # reuse cached model
         from retrieval import build_context_pack
         with st.spinner("Searching..."):
             pack = build_context_pack(question, entities, claims, evidence)
