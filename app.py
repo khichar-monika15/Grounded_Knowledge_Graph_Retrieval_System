@@ -153,16 +153,11 @@ def main():
 
     with col1:
         st.subheader("Memory Graph")
-        # Try streamlit-agraph first, fall back to pyvis
-        try:
-            selected_node = render_graph_agraph(G, selected_etypes, confidence_threshold, status_filter)
-        except Exception as e:
-            st.warning(f"streamlit-agraph error ({e}), using pyvis")
-            html_path = render_graph_pyvis(G, selected_etypes, confidence_threshold, status_filter)
-            with open(html_path) as f:
-                html_content = f.read()
-            st.components.v1.html(html_content, height=520, scrolling=True)
-            selected_node = None
+        html_path = render_graph_pyvis(G, selected_etypes, confidence_threshold, status_filter)
+        with open(html_path) as f:
+            html_content = f.read()
+        st.components.v1.html(html_content, height=520, scrolling=True)
+        selected_node = None
 
     with col2:
         st.subheader("Entity Browser")
