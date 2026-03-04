@@ -217,6 +217,53 @@ Heuristics for durability:
 
 ## 10. Tradeoffs & Future Work
 
+### Single-Call vs Step-Wise Extraction
+
+We chose **single-call extraction** for this prototype: one API call per email returns both entities and claims in a single JSON response.
+
+The alternative is **step-wise extraction**: call the LLM once to extract entities, then make a second call with those resolved entities to extract claims. Step-wise reduces hallucinations because the claim step cannot invent entities that weren't found in step 1. However it doubles API costs and adds pipeline complexity.
+
+**Why single-call fits this project:**
+- **Cost control:** 200–500 emails × 1 call ≈ 200–500 API calls. At Claude Haiku pricing (~$0.25/1M input tokens), total cost stays well under $1.
+- **Simplicity:** One code path is easier to debug, test, and iterate on within a 3-day window.
+- **Accuracy is sufficient:** The hybrid chain-of-thought prompt (described below) mitigates most of the hallucination risk without a second call.
+
+**Hybrid chain-of-thought (current approach):** The prompt instructs the LLM to resolve all entities *first*, then extract claims that reference only those entities — all within a single response:
+
+```
+STEP 1 — ENTITY EXTRACTION: Identify every person, organization, project...
+STEP 2 — CLAIM EXTRACTION: For each relationship, write one claim that
+references only entities from Step 1.
+```
+
+This encourages the model to treat entity resolution as a prerequisite for claim extraction, which reduces orphaned entity references without a second API call. The entity IDs and claim structure in the schema are fully compatible with a future migration to true step-wise extraction — only `extraction.py` would change.
+
+> In a production system with larger scale and higher accuracy demands, we would migrate to step-wise extraction (entities first, then claims) with structured output / tool-calling to enforce the schema at the API level. The current design is intentionally compatible with this evolution.
+
+### Pydantic as the Extraction Contract
+
+The initial implementation used a manual `validate_extraction()` function that checked dict keys. This has been replaced with strict Pydantic validation via `ExtractionResult`, `RawEntityExtraction`, and `RawClaimExtraction` models in `schema.py`. Benefits:
+
+- **Type enforcement:** `entity.type` must be a valid `EntityType` value; `claim.claim_type` must match `ClaimType`. Invalid strings are caught immediately with a clear error.
+- **Grounding guarantee at schema level:** `RawClaimExtraction.supporting_excerpt` has a `@field_validator` that rejects empty strings — it is literally impossible for a claim to be created without an excerpt.
+- **Error messages:** Pydantic's `ValidationError.errors()` returns structured error info (field path + message) which gets logged and counted in pipeline quality metrics.
+- **Evolution path:** When the ontology changes (new entity types, new claim types), updating the Pydantic enums automatically makes `validate_extraction` catch stale LLM outputs without any additional code.
+
+### LLM Provider Abstraction via litellm
+
+The extraction pipeline uses `litellm` instead of the OpenAI SDK directly. litellm provides a unified interface across providers. Switching backends requires only config changes, no code changes:
+
+```python
+# Current: TrueFoundry → Claude Haiku
+MODEL = "anthropic/claude-haiku-4-5-20251001"
+BASE_URL = "https://gateway.truefoundry.ai"
+
+# Ollama (local, zero cost):
+MODEL = "ollama/llama3"
+BASE_URL = "http://localhost:11434"
+OPENAI_API_KEY = ""  # not needed
+```
+
 ### Acknowledged Tradeoffs
 
 **Evidence offsets:** `char_start`/`char_end` fields exist in the schema but are populated as `None` in this prototype. Production would compute them via `body.find(excerpt)` to enable exact span highlighting in the UI and precise citation anchoring.
@@ -227,9 +274,8 @@ Heuristics for durability:
 
 **Thread linking:** The cleaned CSV lacks `Message-ID` / `In-Reply-To` headers. Full thread reconstruction (which would enable proper evidence deduplication across reply chains) requires the raw `.mbox` files. The prototype uses quoted-content substring dedup as an approximation.
 
-**Embedding caching:** `all-MiniLM-L6-v2` is loaded fresh for each dedup and retrieval call. Production would cache the model in memory and precompute entity embeddings at ingestion time.
-
 ### Future Work
+- True step-wise extraction (entities call → claims call) with Pydantic structured outputs
 - Named entity recognition as a pre-filter before LLM extraction (reduce token cost)
 - Graph traversal for context expansion (include 1-hop neighbors of matched entities)
 - Confidence calibration via human-labeled eval set

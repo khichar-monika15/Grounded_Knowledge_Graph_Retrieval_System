@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, ValidationError
 from typing import Optional
 from datetime import datetime
 from enum import Enum
@@ -80,3 +80,59 @@ class Claim(BaseModel):
     superseded_by: Optional[str] = None
     extraction_version: str = "v1"
     merge_history: list[dict] = []
+
+
+# ---------------------------------------------------------------------------
+# LLM extraction output models — Pydantic validation of raw LLM JSON
+# ---------------------------------------------------------------------------
+
+class RawEntityExtraction(BaseModel):
+    """Pydantic model for a single entity as returned by the LLM."""
+    name: str
+    type: str
+    aliases: list[str] = []
+
+    @field_validator('type')
+    @classmethod
+    def validate_entity_type(cls, v: str) -> str:
+        valid = {e.value for e in EntityType}
+        if v.lower() not in valid:
+            raise ValueError(f"Invalid entity type '{v}'. Must be one of: {sorted(valid)}")
+        return v.lower()
+
+    @field_validator('name')
+    @classmethod
+    def name_not_empty(cls, v: str) -> str:
+        if not v or not v.strip():
+            raise ValueError('entity name cannot be empty')
+        return v.strip()
+
+
+class RawClaimExtraction(BaseModel):
+    """Pydantic model for a single claim as returned by the LLM."""
+    claim_type: str
+    subject: str
+    object: str = ""
+    confidence: float = Field(default=0.5, ge=0.0, le=1.0)
+    supporting_excerpt: str
+
+    @field_validator('claim_type')
+    @classmethod
+    def validate_claim_type(cls, v: str) -> str:
+        valid = {ct.value for ct in ClaimType}
+        if v.lower() not in valid:
+            raise ValueError(f"Invalid claim type '{v}'. Must be one of: {sorted(valid)}")
+        return v.lower()
+
+    @field_validator('supporting_excerpt')
+    @classmethod
+    def excerpt_not_empty(cls, v: str) -> str:
+        if not v or not v.strip():
+            raise ValueError('supporting_excerpt cannot be empty — every claim must be grounded')
+        return v.strip()
+
+
+class ExtractionResult(BaseModel):
+    """Top-level Pydantic model for the full LLM extraction response."""
+    entities: list[RawEntityExtraction]
+    claims: list[RawClaimExtraction]

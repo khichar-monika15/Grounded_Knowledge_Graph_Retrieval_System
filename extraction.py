@@ -1,4 +1,12 @@
-"""LLM-based structured extraction from emails."""
+"""LLM-based structured extraction from emails.
+
+Uses litellm for provider-agnostic LLM calls (TrueFoundry gateway / Ollama / etc.)
+and Pydantic (ExtractionResult) for strict output validation.
+
+Prompt strategy: hybrid chain-of-thought — instruct the model to resolve
+all entities FIRST, then extract claims that reference only those entities.
+This reduces hallucinated entity references without a second API call.
+"""
 import json
 import re
 import time
@@ -6,34 +14,54 @@ import logging
 import os
 from typing import Optional
 
+from pydantic import ValidationError
+
 from config import OPENAI_API_KEY, BASE_URL, MODEL, EXTRACTIONS_DIR
+from schema import ExtractionResult
 
 logger = logging.getLogger(__name__)
 
-PROMPT_TEMPLATE = """You are an information extraction system. Given an email, extract structured knowledge.
+# ---------------------------------------------------------------------------
+# Hybrid chain-of-thought prompt
+# ---------------------------------------------------------------------------
+PROMPT_TEMPLATE = """You are an information extraction system. Analyze the email below carefully.
 
-Return ONLY valid JSON with this structure:
+Follow these two steps IN ORDER — this is important for accuracy:
+
+STEP 1 — ENTITY EXTRACTION:
+Identify every person, organization, project, topic, location, and role mentioned.
+List them all before moving to claims.
+
+STEP 2 — CLAIM EXTRACTION:
+For each relationship or fact, write one claim. Every claim MUST:
+- Reference only entities you identified in Step 1
+- Include the EXACT text from the email that supports it (copy-paste, do not paraphrase)
+
+Return ONLY valid JSON — no explanation, no markdown fences:
 {{
   "entities": [
     {{"name": "...", "type": "person|organization|project|topic|location|role", "aliases": []}}
   ],
   "claims": [
     {{
-      "claim_type": "works_at|reports_to|participated_in|decided|requested|mentioned|discussed|role_assignment|status_change|opinion|sent_to",
-      "subject": "entity name (who/what)",
-      "object": "entity name or value (target)",
+      "claim_type": "works_at|reports_to|participated_in|decided|requested|mentioned|discussed|sent_to|role_assignment|status_change|opinion",
+      "subject": "entity name from Step 1",
+      "object": "entity name from Step 1, or free-text value",
       "confidence": 0.0-1.0,
-      "supporting_excerpt": "EXACT quote from the email that supports this claim"
+      "supporting_excerpt": "EXACT quote from the email"
     }}
   ]
 }}
 
+Confidence scale:
+- 1.0 = explicitly stated ("Andy is the CFO")
+- 0.7 = strongly implied ("Andy handles all financial structures")
+- 0.4 = weakly implied (peripheral mention)
+
 Rules:
-- Only extract claims that are directly supported by the email text
-- Include the exact excerpt that supports each claim
-- confidence: 1.0 = explicitly stated, 0.7 = strongly implied, 0.4 = weakly implied
-- Do not invent information not in the email
-- Extract sender/recipient relationships as claims too
+- Only extract what is directly supported by the email text
+- Extract sender→recipient as a sent_to claim
+- Do NOT invent entities or excerpts
 
 EMAIL:
 From: {sender}
@@ -45,7 +73,7 @@ Date: {date}
 
 
 def build_prompt(email_dict: dict) -> str:
-    """Build extraction prompt from email dict."""
+    """Build hybrid chain-of-thought extraction prompt from email dict."""
     return PROMPT_TEMPLATE.format(
         sender=email_dict.get("sender", "unknown"),
         recipient=email_dict.get("recipient", email_dict.get("recipients", "unknown")),
@@ -71,20 +99,28 @@ def strip_quoted_content(body: str) -> tuple[str, str]:
 
 
 def call_llm(prompt: str) -> str:
-    """Call LLM via TrueFoundry OpenAI-compatible endpoint."""
-    from openai import OpenAI
-    client = OpenAI(
+    """Call LLM via litellm (provider-agnostic).
+
+    Currently configured for TrueFoundry → Claude Haiku.
+    To switch to Ollama: set MODEL="ollama/llama3" and BASE_URL="http://localhost:11434"
+    and remove api_key / extra_headers.
+    """
+    from litellm import completion
+
+    response = completion(
         api_key=OPENAI_API_KEY,
-        base_url=BASE_URL,
-    )
-    response = client.chat.completions.create(
+        custom_llm_provider="openai",
         model=MODEL,
         messages=[
-            {"role": "system", "content": "You are an information extraction system. Return only valid JSON."},
+            {
+                "role": "system",
+                "content": "You are an information extraction system. Return only valid JSON.",
+            },
             {"role": "user", "content": prompt},
         ],
         temperature=0.1,
         stream=False,
+        api_base=BASE_URL,
         extra_headers={
             "X-TFY-METADATA": json.dumps({"purpose": "enron-extraction"}),
             "X-TFY-LOGGING-CONFIG": json.dumps({"enabled": True}),
@@ -94,17 +130,17 @@ def call_llm(prompt: str) -> str:
 
 
 def parse_llm_response(raw: str) -> Optional[dict]:
-    """Parse LLM response, handling markdown fences and malformed JSON."""
+    """Parse LLM response, handling markdown fences and loose text."""
     if raw is None:
         return None
 
-    # Strip markdown fences
     text = raw.strip()
+    # Strip ```json ... ``` fences
     fence_match = re.search(r'```(?:json)?\s*([\s\S]*?)```', text)
     if fence_match:
         text = fence_match.group(1).strip()
 
-    # Find JSON object
+    # Extract first JSON object
     json_match = re.search(r'\{[\s\S]*\}', text)
     if json_match:
         text = json_match.group(0)
@@ -116,33 +152,30 @@ def parse_llm_response(raw: str) -> Optional[dict]:
 
 
 def validate_extraction(data: dict) -> list[str]:
-    """Validate extraction output structure. Returns list of error messages."""
-    errors = []
+    """Validate extraction output using Pydantic ExtractionResult schema.
 
-    if "entities" not in data:
-        errors.append("Missing 'entities' key")
-    if "claims" not in data:
-        errors.append("Missing 'claims' key")
-        return errors
-
-    for i, entity in enumerate(data.get("entities", [])):
-        if "type" not in entity:
-            errors.append(f"Entity {i} missing 'type'")
-        if "name" not in entity:
-            errors.append(f"Entity {i} missing 'name'")
-
-    for i, claim in enumerate(data.get("claims", [])):
-        excerpt = claim.get("supporting_excerpt", "")
-        if not excerpt or not str(excerpt).strip():
-            errors.append(f"Claim {i} missing or empty 'supporting_excerpt'")
-        if "claim_type" not in claim:
-            errors.append(f"Claim {i} missing 'claim_type'")
-
-    return errors
+    Returns a list of human-readable error strings (empty = valid).
+    Replaces the earlier manual dict-inspection approach with strict
+    Pydantic validation that enforces entity types, claim types, and
+    the grounding requirement (non-empty supporting_excerpt).
+    """
+    try:
+        ExtractionResult.model_validate(data)
+        return []
+    except ValidationError as e:
+        return [f"{'.'.join(str(loc) for loc in err['loc'])}: {err['msg']}"
+                for err in e.errors()]
+    except Exception as e:
+        return [str(e)]
 
 
 def extract_email(email_dict: dict, max_retries: int = 2) -> Optional[dict]:
-    """Extract entities and claims from a single email. Retries once on failure."""
+    """Extract entities and claims from a single email.
+
+    Uses hybrid chain-of-thought prompt (entities first, then claims).
+    Validates output with Pydantic and retries once on failure.
+    Returns the raw dict (not Pydantic objects) for JSON-serialisable storage.
+    """
     prompt = build_prompt(email_dict)
 
     for attempt in range(max_retries):
@@ -152,12 +185,15 @@ def extract_email(email_dict: dict, max_retries: int = 2) -> Optional[dict]:
             if parsed is None:
                 logger.warning(f"Failed to parse LLM response on attempt {attempt + 1}")
                 continue
+
             errors = validate_extraction(parsed)
             if errors:
-                logger.warning(f"Validation errors on attempt {attempt + 1}: {errors}")
+                logger.warning(f"Pydantic validation errors attempt {attempt + 1}: {errors}")
                 if attempt < max_retries - 1:
                     continue
+
             return parsed
+
         except Exception as e:
             logger.error(f"LLM call failed on attempt {attempt + 1}: {e}")
             if attempt < max_retries - 1:
@@ -168,7 +204,7 @@ def extract_email(email_dict: dict, max_retries: int = 2) -> Optional[dict]:
 
 def extract_batch(emails: list[dict], output_dir: str = EXTRACTIONS_DIR,
                   rate_limit_sleep: float = 1.0) -> list[dict]:
-    """Extract from a batch of emails with rate limiting."""
+    """Extract from a batch of emails with rate limiting and per-email caching."""
     os.makedirs(output_dir, exist_ok=True)
     results = []
 
@@ -176,7 +212,6 @@ def extract_batch(emails: list[dict], output_dir: str = EXTRACTIONS_DIR,
         source_id = str(email.get("source_id", i))
         output_path = os.path.join(output_dir, f"{source_id}.json")
 
-        # Skip if already extracted
         if os.path.exists(output_path):
             with open(output_path) as f:
                 results.append(json.load(f))
