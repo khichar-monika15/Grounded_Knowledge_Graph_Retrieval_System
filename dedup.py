@@ -23,7 +23,14 @@ def hash_email_body(body: str) -> str:
 
 
 def is_quoted_duplicate(text: str, seen_bodies: list[str]) -> bool:
-    """Check if text (potentially quoted) is a substring of any seen body."""
+    """Check if text (potentially quoted) is a substring of any seen body.
+
+    Bug 20 optimisations:
+    - Short texts (< 20 chars) are skipped — single-word matches cause false positives.
+    - Comparison is capped at ~500 chars to limit O(N×M) cost on long emails.
+    - seen_bodies is expected to be pre-cleaned (strip_quoted_content output)
+      so we avoid re-normalising every body on every call.
+    """
     clean_lines = []
     for line in text.split('\n'):
         stripped = line.strip()
@@ -34,9 +41,13 @@ def is_quoted_duplicate(text: str, seen_bodies: list[str]) -> bool:
     clean = ' '.join(clean_lines).strip()
     clean_normalized = re.sub(r'\s+', ' ', clean)
 
-    # Bug 12: cap comparison at 500 chars — avoids O(N×M) blow-up on long emails
-    # while still catching duplicated quoted content (excerpts are rarely >500 chars)
+    # Very short text produces false positives (e.g. "ok" matches everything)
+    if len(clean_normalized) < 20:
+        return False
+
+    # Cap comparison to first 500 chars to limit cost
     clean_prefix = clean_normalized[:500]
+
     for body in seen_bodies:
         body_normalized = re.sub(r'\s+', ' ', body.strip())
         if clean_prefix in body_normalized:

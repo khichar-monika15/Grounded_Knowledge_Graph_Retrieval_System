@@ -28,6 +28,37 @@ class TestArtifactDedup:
         quoted = "> we need to discuss the California situation"
         assert is_quoted_duplicate(quoted, [original]) is True
 
+    def test_non_duplicate_not_flagged(self):
+        """Bug 20 correctness: distinct emails must NOT be flagged as duplicates."""
+        from dedup import is_quoted_duplicate
+        body = "Let's schedule a meeting for next Thursday about quarterly projections."
+        seen = [
+            "We need to discuss the California energy crisis urgently.",
+            "Andy please prepare the Raptor documents before the board meeting.",
+        ]
+        assert is_quoted_duplicate(body, seen) is False
+
+    def test_quoted_duplicate_scales_with_many_bodies(self):
+        """Bug 20 performance: should handle 500+ seen bodies without hanging."""
+        from dedup import is_quoted_duplicate
+        import time
+        # Build a large seen list
+        seen = [f"This is email body number {i} with some filler text about Enron." for i in range(500)]
+        # A quoted version of the 250th email
+        quoted = "> This is email body number 250 with some filler text about Enron."
+        start = time.time()
+        result = is_quoted_duplicate(quoted, seen)
+        elapsed = time.time() - start
+        assert result is True
+        assert elapsed < 2.0, f"is_quoted_duplicate took {elapsed:.2f}s — too slow for 500 bodies"
+
+    def test_long_body_substring_check(self):
+        """Bug 20 correctness: long email bodies should still be detected as duplicates."""
+        from dedup import is_quoted_duplicate
+        long_body = "word " * 2000  # 2000 words
+        quoted = "> " + long_body.strip()
+        assert is_quoted_duplicate(quoted, [long_body]) is True
+
 
 class TestEntityDedup:
     def test_same_person_different_names_merged(self, duplicate_entities):

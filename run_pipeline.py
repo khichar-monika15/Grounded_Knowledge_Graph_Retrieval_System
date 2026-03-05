@@ -59,6 +59,11 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
 
     email_by_source = {e["source_id"]: e for e in emails}
 
+    # Bug 15: persist entity name→id mapping across extractions so the same
+    # entity is reused (not duplicated) and last_seen advances over time.
+    name_to_entity_id: dict[str, str] = {}
+    name_to_entity_idx: dict[str, int] = {}  # name.lower() → index in all_entities
+
     for extraction in extractions:
         source_id = extraction.get("_source_id", str(uuid.uuid4()))
         email_meta = extraction.get("_email_meta", {})
@@ -100,8 +105,7 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
                 char_end=char_end,
             ))
 
-        # Build entity name → entity_id mapping
-        name_to_entity_id: dict[str, str] = {}
+        # Build / update entity name → entity_id mapping (shared across extractions)
         for ent_raw in extraction.get("entities", []):
             name = ent_raw.get("name", "").strip()
             if not name:  # Bug 2 — guard blank entity names
@@ -112,16 +116,33 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
             except ValueError:
                 etype = EntityType.TOPIC
 
-            entity_id = str(uuid.uuid4())
-            all_entities.append(Entity(
-                entity_id=entity_id,
-                canonical_name=name,
-                entity_type=etype,
-                aliases=ent_raw.get("aliases", []),
-                first_seen=ts,  # Bug 3
-                last_seen=ts,   # Bug 3
-            ))
-            name_to_entity_id[name.lower()] = entity_id
+            key = name.lower()
+            if key in name_to_entity_id:
+                # Bug 15: entity already exists — update temporal bounds
+                idx = name_to_entity_idx[key]
+                existing = all_entities[idx]
+                if ts:
+                    new_first = min(existing.first_seen, ts) if existing.first_seen else ts
+                    new_last = max(existing.last_seen, ts) if existing.last_seen else ts
+                    # Merge aliases from this extraction into existing entity
+                    merged_aliases = list(set(existing.aliases + ent_raw.get("aliases", [])))
+                    all_entities[idx] = existing.model_copy(update={
+                        "first_seen": new_first,
+                        "last_seen": new_last,
+                        "aliases": merged_aliases,
+                    })
+            else:
+                entity_id = str(uuid.uuid4())
+                all_entities.append(Entity(
+                    entity_id=entity_id,
+                    canonical_name=name,
+                    entity_type=etype,
+                    aliases=ent_raw.get("aliases", []),
+                    first_seen=ts,  # Bug 3
+                    last_seen=ts,   # Bug 3
+                ))
+                name_to_entity_id[key] = entity_id
+                name_to_entity_idx[key] = len(all_entities) - 1
 
         # Build claims
         for claim_raw in extraction.get("claims", []):
@@ -147,6 +168,7 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
                     last_seen=ts,   # Bug 3
                 ))
                 name_to_entity_id[subject_name.lower()] = subject_id
+                name_to_entity_idx[subject_name.lower()] = len(all_entities) - 1
 
             object_id = name_to_entity_id.get(object_name.lower())
             # Bug 10: auto-create object entity if the LLM mentioned it in claims
@@ -162,6 +184,7 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
                     last_seen=ts,
                 ))
                 name_to_entity_id[object_name.lower()] = object_id
+                name_to_entity_idx[object_name.lower()] = len(all_entities) - 1
 
             claim_type_str = claim_raw.get("claim_type", "mentioned").lower()
             try:

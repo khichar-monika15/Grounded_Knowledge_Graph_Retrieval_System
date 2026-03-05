@@ -92,6 +92,65 @@ class TestFullPipeline:
             "object_value should be None when object_entity_id is set"
         )
 
+    def test_entity_last_seen_updated_across_emails(self):
+        """Bug 15: when the same entity name appears across multiple emails,
+        the pipeline should reuse the entity and update last_seen to the later date
+        rather than creating duplicate entities with frozen timestamps."""
+        from run_pipeline import emails_to_schema_objects
+        from datetime import datetime
+
+        extraction_may = {
+            "_source_id": "email_may",
+            "_email_meta": {"date": "2001-05-01", "sender": "a@enron.com", "recipient": "b@enron.com"},
+            "entities": [
+                {"name": "Jeff Skilling", "type": "person", "aliases": []},
+            ],
+            "claims": [{
+                "claim_type": "mentioned",
+                "subject": "Jeff Skilling",
+                "object": "Enron",
+                "confidence": 0.8,
+                "supporting_excerpt": "Jeff Skilling mentioned Enron",
+            }],
+        }
+        extraction_sept = {
+            "_source_id": "email_sept",
+            "_email_meta": {"date": "2001-09-15", "sender": "c@enron.com", "recipient": "d@enron.com"},
+            "entities": [
+                {"name": "Jeff Skilling", "type": "person", "aliases": []},
+            ],
+            "claims": [{
+                "claim_type": "discussed",
+                "subject": "Jeff Skilling",
+                "object": "Raptor",
+                "confidence": 0.9,
+                "supporting_excerpt": "Jeff Skilling discussed Raptor",
+            }],
+        }
+
+        emails = [
+            {"source_id": "email_may", "date": "2001-05-01", "sender": "a@enron.com",
+             "recipient": "b@enron.com", "body": "Jeff Skilling mentioned Enron"},
+            {"source_id": "email_sept", "date": "2001-09-15", "sender": "c@enron.com",
+             "recipient": "d@enron.com", "body": "Jeff Skilling discussed Raptor"},
+        ]
+
+        entities, claims, _ = emails_to_schema_objects(
+            [extraction_may, extraction_sept], emails
+        )
+
+        # With entity reuse, there should be exactly ONE "Jeff Skilling" entity
+        jeff_entities = [e for e in entities if e.canonical_name == "Jeff Skilling"]
+        assert len(jeff_entities) == 1, (
+            f"Expected 1 reused entity, got {len(jeff_entities)} — entity should be reused, not duplicated"
+        )
+
+        jeff = jeff_entities[0]
+        assert jeff.first_seen == datetime(2001, 5, 1), "first_seen should be the earliest date"
+        assert jeff.last_seen == datetime(2001, 9, 15), (
+            "last_seen must be updated to September when entity reappears in later email"
+        )
+
     def test_context_pack_serializable(self, sample_graph_data):
         """Context packs must be JSON-serializable for output files."""
         from retrieval import build_context_pack
