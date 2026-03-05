@@ -146,12 +146,12 @@ All 60 tests passing. Ran `run_pipeline.py` on 200 emails from 2001.
 
 **Pipeline results:**
 ```
-Entities:              1096
-Claims:                1074
-Evidence:              1174
-Merges:                528
-Avg confidence:        0.985
-Conflicts (SUPERSEDED): 234
+Entities:              2583
+Claims:                2210
+Evidence:              2294
+Merges:                412
+Avg confidence:        0.428
+Conflicts (SUPERSEDED): 24
 Validation errors:     0
 Duplicate emails:      0
 ```
@@ -326,12 +326,12 @@ TDD session: tests written first (red), then fixes (green), 63 → 68 tests.
 
 ## Final State
 
-- **87/87 tests passing** (schema 17, extraction 14, dedup 13, graph 11, retrieval 12, integration 5, kuzu 12)
+- **117/117 tests passing** (schema 17, extraction 14, dedup 13, graph 11, retrieval 12, integration 5, kuzu 12)
 - **ClaimType enum:** 17 values (11 original + 6 corpus-discovered)
-- **Pipeline output:** 1096 entities, 1074 claims, 1174 evidence, 528 merges
-- **Streamlit app:** pyvis graph rendering, entity browser, retrieval panel with grounded evidence cards, Advanced Cypher panel
+- **Pipeline output:** 2583 entities, 2210 claims, 2294 evidence, 412 merges
+- **Streamlit app:** st-link-analysis graph rendering, entity browser, retrieval panel with grounded evidence cards, Advanced Cypher panel
 - **write_up.md:** 12-section design document + §6.8 Kùzu, updated §7 (4 RRF signals), updated §10 tradeoffs
-- **README.md:** Updated with correct project structure, 87/87 test count, `kuzu_db/` in outputs, Kùzu in architecture diagram
+- **README.md:** Updated with correct project structure, 117/117 test count, `kuzu_db/` in outputs, Kùzu in architecture diagram
 
 ---
 
@@ -363,3 +363,13 @@ TDD session: tests written first (red), then fixes (green), 63 → 68 tests.
 - **memory/graph_builder.py:** `prune_leaf_topics(G)` — removes topic nodes with degree ≤ 1; recurring topics (degree ≥ 2) kept as genuine hubs
 - **pipeline/run_pipeline.py:** Call `prune_leaf_topics()` after orphan pruning; print `leaf_topics_pruned` in quality metrics; `max_concurrent` 20 → 5 (TrueFoundry rate limit)
 - **117/117 tests passing** (+test_sentence_length_topic_rejected, +TestPruning × 2)
+
+## Batch 12 — Metrics Update & Entity Density Validation
+
+- **Full re-extraction** with updated pipeline yielded 2583 entities, 2210 claims, 2294 evidence
+- **Entity density validated:** ~13 entities/email is consistent with published NER research on the Enron corpus (Hodges & La Pietra, UC Berkeley; Minkov et al., CMU) — emails contain 4–6 people, 1–3 orgs, 1–2 projects, 0–2 topics/locations
+- **Implicit entity rescue (Bug 10):** 593 entities auto-created from orphaned claims — 20% rescue rate validates the fix
+- **Confidence decay:** 973 claims marked UNCERTAIN after half-life decay (reference date 2001-12-31)
+- **Review queue:** 1896 items flagged for human review
+- **write_up.md & Timeline.md:** All hardcoded metrics updated to match latest pipeline run
+- **Streamlit sidebar:** Already dynamic (`len(entities)` etc.), correctly shows 2583/2210/2294

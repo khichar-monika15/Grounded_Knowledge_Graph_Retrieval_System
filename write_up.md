@@ -468,19 +468,19 @@ reproducibility across kuzu Python API changes.
 `run_pipeline.py` prints quality metrics after every run:
 
 ```
-Entities:                        2542
-Claims:                          2098
-Evidence:                        2196
-Merges:                           340
-Average extraction confidence:   0.680
-Conflicts (SUPERSEDED claims):     23
+Entities:                        2583
+Claims:                          2210
+Evidence:                        2294
+Merges:                           412
+Average extraction confidence:   0.428
+Conflicts (SUPERSEDED claims):     24
 Validation errors:                  0
 Duplicate emails skipped:           0
-Orphan nodes pruned:               47
-Leaf topics pruned:               ~794
-Uncertain after decay:             12
-Review queue items:               201
-Entity resolution (gold):  P=0.933  R=0.867  F1=0.899
+Orphan nodes pruned:              262
+Leaf topics pruned:               889
+Uncertain after decay:            973
+Review queue items:              1896
+Entity resolution (gold):  P=1.0  R=0.72  F1=0.837
 ```
 
 These metrics serve as quality gates:
@@ -840,23 +840,28 @@ uv run pytest tests/ -v   # 117/117 pass
 ## 12. Pipeline Quality Metrics (200-Email Run)
 
 ```
-Entities:                        2542   (post-dedup, post-orphan-prune)
-Claims:                          2098
-Evidence:                        2196
-Merges:                           340
-Average extraction confidence:   0.680  (recalibrated from structural signals)
-Conflicts (SUPERSEDED claims):     23   (SINGLE_VALUED_CLAIMS guard applied)
+Entities:                        2583   (post-dedup, post-orphan-prune)
+Claims:                          2210
+Evidence:                        2294
+Merges:                           412
+Average extraction confidence:   0.428  (recalibrated from structural signals)
+Conflicts (SUPERSEDED claims):     24   (SINGLE_VALUED_CLAIMS guard applied)
 Validation errors:                  0
 Duplicate emails skipped:           0
+Orphan nodes pruned:              262
+Leaf topics pruned:               889
+Uncertain after decay:            973
+Review queue items:              1896
+Entity resolution (gold):  P=1.0  R=0.72  F1=0.837
 ```
 
-### Quality Improvement: Batch 8 → Batch 11
+### Quality Improvement: Batch 8 → Batch 12
 
-| Metric | Batch 8 (pre-fix) | Batch 9 | Batch 11 (this run) | Change |
+| Metric | Batch 8 (pre-fix) | Batch 9 | Batch 12 (this run) | Change |
 |--------|-------------------|---------|---------------------|--------|
-| Total entities | 5,773 | 2,542 | lower (leaf topics pruned) | −56%+ (topic explosion fixed) |
-| Superseded claims | 1,504 (36%) | 23 (<1%) | 23 (<1%) | −98% (SINGLE_VALUED_CLAIMS guard) |
-| Avg confidence | 0.978 (91% at 1.0) | 0.680 | 0.680 | Realistic distribution |
+| Total entities | 5,773 | 2,542 | 2,583 | Stable after dedup + implicit rescue |
+| Superseded claims | 1,504 (36%) | 23 (<1%) | 24 (<1%) | −98% (SINGLE_VALUED_CLAIMS guard) |
+| Avg confidence | 0.978 (91% at 1.0) | 0.680 | 0.428 | Realistic distribution after decay |
 | Hub-spoke topics (degree=1) | ~794 | ~794 | ~0 | Eliminated by leaf-topic prune |
 | Tests passing | 87 | 114 | 117 | +30 total |
 

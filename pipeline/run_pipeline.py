@@ -432,8 +432,13 @@ def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: boo
           f"({pruned} orphans pruned, {leaf_topics_pruned} leaf topics pruned)")
 
     # Step 8: Persist to SQLite (uses executemany)
+    # Delete old DB to prevent row accumulation from previous runs
+    # (INSERT OR REPLACE only deduplicates by primary key; different UUIDs
+    # across runs cause the table to grow unboundedly)
     print(f"Saving to SQLite: {DB_PATH}...")
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
+    if os.path.exists(DB_PATH):
+        os.remove(DB_PATH)
     save_to_sqlite(entities, claims, evidence, DB_PATH)
     save_graph_json(G, GRAPH_JSON_PATH)
 

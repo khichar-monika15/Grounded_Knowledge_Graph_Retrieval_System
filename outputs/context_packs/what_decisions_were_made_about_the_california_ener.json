@@ -2,31 +2,31 @@
   "question": "What decisions were made about the California energy situation?",
   "matched_entities": [
     {
-      "entity_id": "a82c7407-625a-459e-9631-2b48646b75b8",
+      "entity_id": "9176d63a-f45a-4588-8981-b2d8da0532c4",
       "canonical_name": "Enron North America Corp",
       "entity_type": "organization",
       "score": 1.0
     },
     {
-      "entity_id": "29f27a85-6c4d-49fa-9a25-0e2f8ccc7576",
+      "entity_id": "9d26a7d8-353b-491c-a088-bc93d3ba7b54",
       "canonical_name": "Oklahoma",
       "entity_type": "organization",
       "score": 1.0
     },
     {
-      "entity_id": "c9e17c73-2717-410c-97f0-6e62a22de6cf",
+      "entity_id": "fffb5dd7-f7e9-4270-b268-981c9d55c2bb",
       "canonical_name": "California",
       "entity_type": "location",
       "score": 1.0
     },
     {
-      "entity_id": "5636149b-52be-42a0-862d-04f36c0ce547",
+      "entity_id": "69326604-211e-4179-b6ab-1b9d5fb1c3aa",
       "canonical_name": "Proposed Decision Implementation",
       "entity_type": "topic",
       "score": 0.6600085496902466
     },
     {
-      "entity_id": "522bb0e8-ead0-4491-946d-a91531a6872f",
+      "entity_id": "8c1323a9-9ad1-4d7e-9dd4-73be016272b3",
       "canonical_name": "Californians are getting very irritable about energy situation",
       "entity_type": "topic",
       "score": 0.6581637859344482
@@ -35,7 +35,7 @@
   "claims": [
     {
       "claim": "Enron North America Corp sent_to Richard Shapiro",
-      "claim_id": "9415dbe5-d714-4ead-bfae-b4cb73445ce9",
+      "claim_id": "f8d393b6-7726-434f-8c83-9f86471ee2c1",
       "claim_type": "sent_to",
       "confidence": 0.427,
       "status": "active",
@@ -51,7 +51,7 @@
     },
     {
       "claim": "Enron North America Corp requested Richard Shapiro",
-      "claim_id": "b90f268a-d689-44e7-a5a3-1edef1184492",
+      "claim_id": "c456ab3d-20e4-4fc1-96c1-be7c778d27d1",
       "claim_type": "requested",
       "confidence": 0.769,
       "status": "active",
@@ -67,7 +67,7 @@
     },
     {
       "claim": "Enron North America Corp mentioned Federal Energy Regulatory Commission not doing enough to control California energy prices",
-      "claim_id": "537b1203-f6f2-4796-8a22-9a63d83795c3",
+      "claim_id": "b4c253f8-30fb-434b-ac90-3f66417320a3",
       "claim_type": "mentioned",
       "confidence": 0.305,
       "status": "active",
@@ -83,7 +83,7 @@
     },
     {
       "claim": "Enron North America Corp mentioned affiliate took brief turn in pipeline capacity in February 2000",
-      "claim_id": "f26697c6-8df4-405a-9efb-adb880c038c1",
+      "claim_id": "48113b02-b007-454e-a225-979f43fbd3fd",
       "claim_type": "mentioned",
       "confidence": 0.305,
       "status": "active",
@@ -99,7 +99,7 @@
     },
     {
       "claim": "Enron North America Corp discussed Maharashtra State Electricity Board",
-      "claim_id": "b8a2abc4-563b-40cd-8b78-dadafce9e6d5",
+      "claim_id": "776e62f0-758a-438e-adc5-01099166763c",
       "claim_type": "discussed",
       "confidence": 0.305,
       "status": "active",
@@ -115,7 +115,7 @@
     },
     {
       "claim": "Enron North America Corp proposed 2000 mw call option on ancillaries",
-      "claim_id": "f0860f7b-187e-4ab0-8826-893132478f60",
+      "claim_id": "25bc70c3-bd90-4aea-8967-6f310e2604d6",
       "claim_type": "proposed",
       "confidence": 0.376,
       "status": "active",
@@ -131,7 +131,7 @@
     },
     {
       "claim": "Enron North America Corp decided PGE Sale Transaction",
-      "claim_id": "43126405-37a7-40aa-a8e7-de76c1984f7c",
+      "claim_id": "3cd1664d-a434-4c14-aa9e-75157ac287e8",
       "claim_type": "decided",
       "confidence": 0.34,
       "status": "active",
@@ -147,7 +147,7 @@
     },
     {
       "claim": "Enron North America Corp proposed Cut tariffs by at least 10 percent",
-      "claim_id": "ddfa831a-3cb7-42a5-a1e7-cdf4014b365b",
+      "claim_id": "5fd4bc86-2c94-47c7-b8c2-83caf4057266",
       "claim_type": "proposed",
       "confidence": 0.392,
       "status": "active",
@@ -163,7 +163,7 @@
     },
     {
       "claim": "Debra Perlingiere works_at Enron North America Corp",
-      "claim_id": "190a22a5-1f52-4eab-9624-17395567da70",
+      "claim_id": "ab253475-6ab3-432f-84d3-fdc5265084e3",
       "claim_type": "works_at",
       "confidence": 0.383,
       "status": "active",
@@ -185,7 +185,7 @@
     },
     {
       "claim": "Enron North America Corp status_change 10-Q filing delayed to November 19",
-      "claim_id": "e1894958-eae4-4bd2-bb06-de0b70963c35",
+      "claim_id": "defb5fc5-d4b7-4e65-ae29-4d1acdf54341",
       "claim_type": "status_change",
       "confidence": 0.751,
       "status": "active",
