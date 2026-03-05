@@ -74,20 +74,38 @@ def _extract_last_name(name: str) -> str:
 
 
 def _names_likely_same_person(name_a: str, name_b: str) -> bool:
-    """Check if two person names likely refer to the same person."""
+    """Check if two person names likely refer to the same person.
+
+    Requires both names to have at least 2 tokens (first + last).
+    Single-token names like 'Jeff' are too ambiguous — they match
+    every Jeff in the corpus and cause false merges.
+    Email addresses are also skipped (contain '@').
+    """
     na = _normalize_name(name_a)
     nb = _normalize_name(name_b)
 
-    la = _extract_last_name(na)
-    lb = _extract_last_name(nb)
+    # Skip email addresses — not comparable as person names
+    if '@' in na or '@' in nb:
+        return False
+
+    parts_a = na.split()
+    parts_b = nb.split()
+
+    # Require at least first + last for both names
+    if len(parts_a) < 2 or len(parts_b) < 2:
+        return False
+
+    la = parts_a[-1]  # last name
+    lb = parts_b[-1]
+
     if la == lb and la:
-        tokens_a = set(na.split())
-        tokens_b = set(nb.split())
+        tokens_a = set(parts_a)
+        tokens_b = set(parts_b)
         if tokens_a & tokens_b:
             return True
         # Check if first names are prefix-compatible (Jeff vs Jeffrey)
-        first_a = na.split()[0] if na.split() else ""
-        first_b = nb.split()[0] if nb.split() else ""
+        first_a = parts_a[0]
+        first_b = parts_b[0]
         if first_a and first_b:
             if first_a.startswith(first_b) or first_b.startswith(first_a):
                 return True

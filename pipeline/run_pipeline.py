@@ -396,11 +396,11 @@ def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: boo
     # Step 10: Generate context packs
     print("Generating context packs...")
     questions = [
-        "Who did Jeff Skilling report to?",
+        "What role did Sally Beck play at Enron?",
         "What decisions were made about the California energy situation?",
-        "Who was involved in the Raptor project?",
-        "What role did Andy Fastow play at Enron?",
-        "What topics were discussed between Ken Lay and Jeff Skilling?",
+        "What topics did Kenneth Lay discuss?",
+        "Who worked at Enron and what were their roles?",
+        "What did Vince Kaminski work on?",
     ]
 
     for q in questions:

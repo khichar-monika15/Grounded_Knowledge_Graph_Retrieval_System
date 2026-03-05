@@ -1,0 +1,279 @@
+{
+  "question": "Who worked at Enron and what were their roles?",
+  "matched_entities": [
+    {
+      "entity_id": "8f916770-a406-47f2-881a-3e9355cfb55e",
+      "canonical_name": "Enron Industrial Markets",
+      "entity_type": "organization",
+      "score": 1.0
+    },
+    {
+      "entity_id": "8dce7f3d-a0c4-4be9-9fae-7750e89a77b6",
+      "canonical_name": "Enron Industrial Markets",
+      "entity_type": "organization",
+      "score": 1.0
+    },
+    {
+      "entity_id": "d85c58ed-bef1-4cc2-b43f-a657a0450cbd",
+      "canonical_name": "enron executive",
+      "entity_type": "topic",
+      "score": 0.7915776968002319
+    },
+    {
+      "entity_id": "a4a66ce3-7bb3-4a31-9706-6f3ebc35fa5e",
+      "canonical_name": "Del and Enron",
+      "entity_type": "person",
+      "score": 0.717357337474823
+    },
+    {
+      "entity_id": "11bb2ead-1a13-41c8-9aff-325c1feb2165",
+      "canonical_name": "chairman of Enron Corp",
+      "entity_type": "topic",
+      "score": 0.7007272839546204
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Enron Industrial Markets mentioned proposed transactions with Dynegy",
+      "claim_id": "84a6c69e-ab13-44d1-829a-b2df60fb8b86",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04805419491888139,
+      "evidence": [
+        {
+          "excerpt": "in connection with the proposed transactions dynegy and enron will file a joint proxy statementprospectus with the securities and exchange commission",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets status_change overleveraged",
+      "claim_id": "a2c05734-e6b8-4dc5-9951-c9dc91373c78",
+      "claim_type": "status_change",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.0475472803424252,
+      "evidence": [
+        {
+          "excerpt": "because of these bad investments weve become overleveraged as a company",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets discussed financial vehicles Osprey Marlin and Yosemite",
+      "claim_id": "f061eeb8-f950-4812-94dc-77387cb4cbd1",
+      "claim_type": "discussed",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.047504080618834724,
+      "evidence": [
+        {
+          "excerpt": "we also discussed our existing financial vehicles including osprey marlin and yosemite in further detail",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets decided to engage a PR firm and manage media",
+      "claim_id": "9e9cb44f-fb0b-4d59-99c3-c3d419e1bf32",
+      "claim_type": "decided",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.046220137886804555,
+      "evidence": [
+        {
+          "excerpt": "this objection was brushed aside by enron which said in a letter that the world bank opinion can be changed that we enron will engage a pr firm and hopefully manage the media",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "claim": "Enron Industrial Markets mentioned Dabhol Power Company",
+      "claim_id": "7397f425-1966-4087-9513-4ead4d7c405f",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.048768388143436245,
+      "evidence": [
+        {
+          "excerpt": "enron promoted dabhol power company dpc",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets mentioned 29000",
+      "claim_id": "e04b3654-f67b-44c7-855b-6db85f418ff9",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.04850397777854994,
+      "evidence": [
+        {
+          "excerpt": "enron has 29000",
+          "source_id": "467802",
+          "date": "2001-01-29T00:00:00",
+          "sender": "stephanie.piwetz@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets decided create a capital book",
+      "claim_id": "8be06e9e-2d93-4ec6-bdec-ffa00e210bfd",
+      "claim_type": "decided",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.0482479613935013,
+      "evidence": [
+        {
+          "excerpt": "we have decided to create a capital book",
+          "source_id": "350639",
+          "date": "2001-04-16T00:00:00",
+          "sender": "enron.announcements@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets mentioned marketing affiliate of enron pipelines",
+      "claim_id": "70a06766-9910-464f-bc2b-88ad3f5825f5",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.04799994552048543,
+      "evidence": [
+        {
+          "excerpt": "enron energy services is presently a marketing affiliate of several of the enron pipelines",
+          "source_id": "162985",
+          "date": "2001-02-21T00:00:00",
+          "sender": "rod.hayslett@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets mentioned data storage market",
+      "claim_id": "9a59c214-76c5-4c29-a3c7-0e5f4902e15d",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.04775956090510081,
+      "evidence": [
+        {
+          "excerpt": "read about enrons entry into the data storage market",
+          "source_id": "463378",
+          "date": "2001-02-02T00:00:00",
+          "sender": "enron.announcements@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets decided to sell Portland General Electric",
+      "claim_id": "6913cfba-59ff-472b-b2bb-0b39551db91f",
+      "claim_type": "decided",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.04752646067200058,
+      "evidence": [
+        {
+          "excerpt": "enron decided to sell pge since a regulated utility no longer fit with its strategy to buy and sell energy on wholesale markets",
+          "source_id": "157933",
+          "date": "2001-03-26T00:00:00",
+          "sender": "miyung.buster@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets mentioned to sell Portland General Electric",
+      "claim_id": "b3cb5ab3-0adb-4801-ab72-00cdf8908f6f",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.04730031865481379,
+      "evidence": [
+        {
+          "excerpt": "enron says sale of utility portland general is unlikely wrap",
+          "source_id": "157933",
+          "date": "2001-03-26T00:00:00",
+          "sender": "miyung.buster@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets decided have all enron employees using the xms system by april 15",
+      "claim_id": "531d909f-e390-4008-be9d-d7e876ca7c9b",
+      "claim_type": "decided",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.0470808278734266,
+      "evidence": [
+        {
+          "excerpt": "our goal is to have all enron employees usin g20 the xms system by april 15",
+          "source_id": "160524",
+          "date": "2001-03-02T00:00:00",
+          "sender": "enron.announcements@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets discussed investor conference call overview",
+      "claim_id": "2ba8a4d8-61fe-490c-913f-b034cbd86176",
+      "claim_type": "discussed",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.046867699143673835,
+      "evidence": [
+        {
+          "excerpt": "today enron hosted a conference call to give investors a current overview of the company",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets mentioned bad investments in noncore businesses",
+      "claim_id": "021b4158-6ed2-4d2e-97d9-f6af1b3b2397",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.04666065980619971,
+      "evidence": [
+        {
+          "excerpt": "in hindsight we definitely made some very bad investments in our noncore businesses over the past several years those include investments in azurix india and brazil",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron Industrial Markets mentioned related party transactions",
+      "claim_id": "3580e167-b43b-45aa-bea3-34a45ceea7ff",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "superseded",
+      "rrf_score": 0.046263834409374316,
+      "evidence": [
+        {
+          "excerpt": "we also entered into related party transactions that led to a loss of investor confidence",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    }
+  ]
+}

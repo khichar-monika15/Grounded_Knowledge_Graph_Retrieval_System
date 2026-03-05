@@ -4,7 +4,7 @@ Extracts structured knowledge from the Enron email dataset, deduplicates entitie
 three levels, stores them in a grounded memory graph, and provides retrieval with interactive
 visualization.
 
-**87/87 tests passing · 1096 entities · 1074 claims · 1174 evidence · 528 merges**
+**87/87 tests passing · 2910 entities · 2074 claims · 2104 evidence · 390 merges**
 
 ---
 
@@ -175,10 +175,10 @@ SQLite with four tables:
 
 | Table | Contents |
 |-------|----------|
-| `entities` | 1096 entities with canonical names, aliases, merge history |
-| `claims` | 1074 claims with type, confidence, status, evidence links, valid_from/until |
-| `evidence` | 1174 evidence records with exact excerpts, source metadata, char offsets |
-| `merges` | 528 merge audit records (reversible, with reason + timestamp) |
+| `entities` | 2910 entities with canonical names, aliases, merge history |
+| `claims` | 2074 claims with type, confidence, status, evidence links, valid_from/until |
+| `evidence` | 2104 evidence records with exact excerpts, source metadata, char offsets |
+| `merges` | 390 merge audit records (reversible, with reason + timestamp) |
 
 ### Example Context Packs (`outputs/context_packs/`)
 
@@ -186,11 +186,11 @@ Five pre-generated retrieval outputs demonstrating grounded question answering:
 
 | Question | File |
 |----------|------|
-| Who did Jeff Skilling report to? | `who_did_jeff_skilling_report_to.json` |
+| What role did Sally Beck play at Enron? | `what_role_did_sally_beck_play_at_enron.json` |
 | What decisions were made about the California energy situation? | `what_decisions_were_made_about_the_california_ener.json` |
-| Who was involved in the Raptor project? | `who_was_involved_in_the_raptor_project.json` |
-| What role did Andy Fastow play at Enron? | `what_role_did_andy_fastow_play_at_enron.json` |
-| What topics were discussed between Ken Lay and Jeff Skilling? | `what_topics_were_discussed_between_ken_lay_and_jef.json` |
+| What topics did Kenneth Lay discuss? | `what_topics_did_kenneth_lay_discuss.json` |
+| Who worked at Enron and what were their roles? | `who_worked_at_enron_and_what_were_their_roles.json` |
+| What did Vince Kaminski work on? | `what_did_vince_kaminski_work_on.json` |
 
 Each context pack contains: matched entities (with scores) → ranked claims (with RRF score,
 type, confidence, status) → evidence (with exact excerpt, source ID, date, sender) → conflicts.

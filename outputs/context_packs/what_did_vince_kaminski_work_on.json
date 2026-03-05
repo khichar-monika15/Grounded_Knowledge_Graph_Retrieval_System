@@ -1,0 +1,198 @@
+{
+  "question": "What did Vince Kaminski work on?",
+  "matched_entities": [
+    {
+      "entity_id": "aeb8889b-218a-4413-9142-1fe20eb9e2fd",
+      "canonical_name": "vince j kaminski enron com",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "f833fa61-ad24-4d3b-ac82-17b3d1564e02",
+      "canonical_name": "Vince Kamins",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "6afe3c15-fe88-4cc8-9e54-739f1054aaaf",
+      "canonical_name": "vince j kaminski enron com",
+      "entity_type": "person",
+      "score": 0.5108493566513062
+    },
+    {
+      "entity_id": "625dff09-376a-4f4e-8f5d-cde632d82840",
+      "canonical_name": "Vince Kamins",
+      "entity_type": "person",
+      "score": 0.5035845637321472
+    },
+    {
+      "entity_id": "90b134f7-065f-4f60-a323-a89acd5ab0fa",
+      "canonical_name": "Shawn Noonan",
+      "entity_type": "person",
+      "score": 0.4251254200935364
+    }
+  ],
+  "claims": [
+    {
+      "claim": "vince j kaminski enron com role_assignment VP",
+      "claim_id": "876bfb03-6873-41d2-94d6-e5b299ecc9ef",
+      "claim_type": "role_assignment",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.059020979020979025,
+      "evidence": [
+        {
+          "excerpt": "you have received this email because the requester specified you as their vp",
+          "source_id": "212528",
+          "date": "2001-10-19T00:00:00",
+          "sender": "arsystem@mailman.enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "vince j kaminski enron com sent_to Brian Mihura",
+      "claim_id": "292c7fc7-7fc9-4bdc-a3ea-16b405444ba6",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.057507790716745937,
+      "evidence": [
+        {
+          "excerpt": "From: j.kaminski@enron.com\nTo: brian.mihura@enron.com",
+          "source_id": "221744",
+          "date": "2001-10-19T00:00:00",
+          "sender": "j.kaminski@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "vince j kaminski enron com works_at Enron Industrial Markets",
+      "claim_id": "8102de0c-03db-4d5f-ae7c-562b69e3bc31",
+      "claim_type": "works_at",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.056825737969558754,
+      "evidence": [
+        {
+          "excerpt": "vince.kaminski@enron.com",
+          "source_id": "224429",
+          "date": "2001-04-16T00:00:00",
+          "sender": "vince.kaminski@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Cassandra Schultz mentioned vince j kaminski enron com",
+      "claim_id": "5a3dc7e2-0dd2-4618-8bcf-851eb679e33c",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.056458049415795894,
+      "evidence": [
+        {
+          "excerpt": "ill get vince to sign for research",
+          "source_id": "208330",
+          "date": "2001-05-04T00:00:00",
+          "sender": "cassandra.schultz@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "vince j kaminski enron com participated_in analysis",
+      "claim_id": "832da6f3-7df0-441e-8874-63cd426248c8",
+      "claim_type": "participated_in",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.0564383066527539,
+      "evidence": [
+        {
+          "excerpt": "an analysis put together by sandeep kohli and reviewed by vince and me",
+          "source_id": "443933",
+          "date": "2001-01-05T00:00:00",
+          "sender": "stinson.gibner@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "arsystem@mailman.enron.com sent_to vince j kaminski enron com",
+      "claim_id": "c261079d-e9ce-4796-bbc0-04ed78c69067",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.05530216351154566,
+      "evidence": [
+        {
+          "excerpt": "From: arsystem@mailman.enron.com\nTo: j.kaminski@enron.com",
+          "source_id": "212528",
+          "date": "2001-10-19T00:00:00",
+          "sender": "arsystem@mailman.enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "vince j kaminski enron com mentioned weekend social gathering",
+      "claim_id": "579d5705-e596-493b-ae4d-ca2cadadf626",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.055297966283572045,
+      "evidence": [
+        {
+          "excerpt": "would you like to stop by this weekend for a drink or two",
+          "source_id": "221744",
+          "date": "2001-10-19T00:00:00",
+          "sender": "j.kaminski@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "vince j kaminski enron com discussed Electricity Price Data",
+      "claim_id": "a42b733c-cddf-47c4-bdb5-304662950301",
+      "claim_type": "discussed",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.05453132797548825,
+      "evidence": [
+        {
+          "excerpt": "we shall prepare for you the electricity price information cinergy cobb and palo verde",
+          "source_id": "224429",
+          "date": "2001-04-16T00:00:00",
+          "sender": "vince.kaminski@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "cooper sent_to vince j kaminski enron com",
+      "claim_id": "fab0a322-c5bb-4353-8665-2440a58688c4",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.0540797930116398,
+      "evidence": [
+        {
+          "excerpt": "From: cooper@enron.com To: j.kaminski@enron.com",
+          "source_id": "212074",
+          "date": "2001-06-01T00:00:00",
+          "sender": "cooper@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "vince j kaminski enron com decided Natural Gas Henry Hub Prices",
+      "claim_id": "d37ba66e-1126-4fd0-9d87-5d4607ed8b07",
+      "claim_type": "decided",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.05363606840754038,
+      "evidence": [
+        {
+          "excerpt": "we shall send you natural gas henry hub prices right away",
+          "source_id": "224429",
+          "date": "2001-04-16T00:00:00",
+          "sender": "vince.kaminski@enron.com"
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}

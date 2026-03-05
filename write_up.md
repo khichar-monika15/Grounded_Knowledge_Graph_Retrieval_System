@@ -429,14 +429,14 @@ reproducibility across kuzu Python API changes.
 `run_pipeline.py` prints quality metrics after every run:
 
 ```
-Entities:               1096
-Claims:                 1074
-Evidence:               1174
-Merges:                  528
-Avg extraction confidence:  0.985
-Conflicts (SUPERSEDED):  234
-Validation errors:         0
-Duplicate emails skipped:  0
+Entities:                        2910
+Claims:                          2074
+Evidence:                        2104
+Merges:                           390
+Average extraction confidence:   0.978
+Conflicts (SUPERSEDED claims):    738
+Validation errors:                  0
+Duplicate emails skipped:           0
 ```
 
 These metrics serve as quality gates:
@@ -523,11 +523,11 @@ Five context packs are pre-generated at `outputs/context_packs/`:
 
 | Question | File |
 |----------|------|
-| Who did Jeff Skilling report to? | `who_did_jeff_skilling_report_to.json` |
+| What role did Sally Beck play at Enron? | `what_role_did_sally_beck_play_at_enron.json` |
 | What decisions were made about the California energy situation? | `what_decisions_were_made_about_the_california_ener.json` |
-| Who was involved in the Raptor project? | `who_was_involved_in_the_raptor_project.json` |
-| What role did Andy Fastow play at Enron? | `what_role_did_andy_fastow_play_at_enron.json` |
-| What topics were discussed between Ken Lay and Jeff Skilling? | `what_topics_were_discussed_between_ken_lay_and_jef.json` |
+| What topics did Kenneth Lay discuss? | `what_topics_did_kenneth_lay_discuss.json` |
+| Who worked at Enron and what were their roles? | `who_worked_at_enron_and_what_were_their_roles.json` |
+| What did Vince Kaminski work on? | `what_did_vince_kaminski_work_on.json` |
 
 ---
 
@@ -775,12 +775,12 @@ uv run pytest tests/ -v   # 87/87 pass
 ## 12. Pipeline Quality Metrics (200-Email Run)
 
 ```
-Entities:                        1096
-Claims:                          1074
-Evidence:                        1174
-Merges:                           528
-Average extraction confidence:   0.985
-Conflicts (SUPERSEDED claims):    234
+Entities:                        2910
+Claims:                          2074
+Evidence:                        2104
+Merges:                           390
+Average extraction confidence:   0.978
+Conflicts (SUPERSEDED claims):    738
 Validation errors:                  0
 Duplicate emails skipped:           0
 ```

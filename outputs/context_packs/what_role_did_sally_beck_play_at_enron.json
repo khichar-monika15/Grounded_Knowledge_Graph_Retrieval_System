@@ -1,0 +1,198 @@
+{
+  "question": "What role did Sally Beck play at Enron?",
+  "matched_entities": [
+    {
+      "entity_id": "f38b3db3-681d-4fcc-8f86-cfd0ba7771fd",
+      "canonical_name": "Sally Beck",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "12b1ff66-d6c7-41f9-a4e5-8ab7b40095d6",
+      "canonical_name": "Kenneth Lay",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "e25edb4c-20fe-495c-965c-ed373169e44a",
+      "canonical_name": "Patrick H Wood III",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "b4e26ed0-c34b-4d26-a715-14c8d7442f05",
+      "canonical_name": "Alan Julson",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "c14eb1d1-128b-4de6-9345-003a232d6e8b",
+      "canonical_name": "Phillip Love",
+      "entity_type": "person",
+      "score": 1.0
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Sally Beck sent_to Rick Buy",
+      "claim_id": "342d558d-ce0f-420b-b462-a187c600934c",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04628776241679467,
+      "evidence": [
+        {
+          "excerpt": "From: sally.beck@enron.com\nTo: rick.buy@enron.com",
+          "source_id": "272096",
+          "date": "2001-10-05T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck works_at EA",
+      "claim_id": "9ca89a13-d946-4129-ab12-6cd9c5c10aac",
+      "claim_type": "works_at",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.045171910531853515,
+      "evidence": [
+        {
+          "excerpt": "my commitment to have operations viewed as an integral part of the team at ea egm eim",
+          "source_id": "30923",
+          "date": "2001-09-26T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck mentioned Mark Pickering",
+      "claim_id": "0ef40147-97d2-4020-ab25-3a3faf2deb65",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.045062229437229435,
+      "evidence": [
+        {
+          "excerpt": "if you have questions about the enw budgets as we are working with you to finalize them please call one of us greg piper sally beck mark pickering",
+          "source_id": "272096",
+          "date": "2001-10-05T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck role_assignment Operations Manager",
+      "claim_id": "7dea16b6-27ff-4ccb-b682-97eecee6effa",
+      "claim_type": "role_assignment",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04437621202327085,
+      "evidence": [
+        {
+          "excerpt": "i took the role a few years back was to create a true team between commerical and my operations team",
+          "source_id": "30923",
+          "date": "2001-09-26T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Robert L Hall reports_to Sally Beck",
+      "claim_id": "165a6ec1-1792-4495-813b-83a5c994478f",
+      "claim_type": "reports_to",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04424323720098368,
+      "evidence": [
+        {
+          "excerpt": "bob hall the vp that reports to me",
+          "source_id": "31967",
+          "date": "2001-03-07T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck opinion Operations Team Integration",
+      "claim_id": "9c1961bc-6cdc-4db8-847c-b21dbb645565",
+      "claim_type": "opinion",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04379960317460317,
+      "evidence": [
+        {
+          "excerpt": "if we dont have people fully dedicated to and feeling a part of the business to which they provide support",
+          "source_id": "30923",
+          "date": "2001-09-26T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck reports_to Louise Kitchen",
+      "claim_id": "a7e53102-debd-4eb5-9024-14b0e9f2b7b3",
+      "claim_type": "reports_to",
+      "confidence": 0.7,
+      "status": "active",
+      "rrf_score": 0.04372294372294372,
+      "evidence": [
+        {
+          "excerpt": "i will talk with you later today and fill you in on the commitment for ken lay",
+          "source_id": "30923",
+          "date": "2001-09-26T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck participated_in Elimination of confirmations and impact on commodylogic",
+      "claim_id": "38567680-4a10-4138-b4f7-7e8001a70e62",
+      "claim_type": "participated_in",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.043024835921010786,
+      "evidence": [
+        {
+          "excerpt": "attendees sally beck   andy zipper   jay webb   tom gros   mark taylor   jeff hodge   elizabeth sager   leslie reeves",
+          "source_id": "387778",
+          "date": "2001-04-25T00:00:00",
+          "sender": "patti.thompson@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck discussed 2002 Enron Networks Budget",
+      "claim_id": "dafa8644-7763-42eb-99f6-ce66ad3427b4",
+      "claim_type": "discussed",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04265734265734266,
+      "evidence": [
+        {
+          "excerpt": "the 2002 enron net works budget will for the first time combine allocations to business units for four key services",
+          "source_id": "272096",
+          "date": "2001-10-05T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck works_at EA",
+      "claim_id": "7068fd2a-441f-4e95-a593-34ec2b025009",
+      "claim_type": "works_at",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04239233013040494,
+      "evidence": [
+        {
+          "excerpt": "my commitment to have operations viewed as an integral part of the team at ea egm eim",
+          "source_id": "30923",
+          "date": "2001-09-26T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}

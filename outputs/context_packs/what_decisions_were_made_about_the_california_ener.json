@@ -34,28 +34,12 @@
   ],
   "claims": [
     {
-      "claim": "Reliant Energy mentioned Supplied energy to California",
-      "claim_id": "6f7b1b06-8823-446f-992a-6daf6af94d31",
-      "claim_type": "mentioned",
-      "confidence": 1.0,
-      "status": "active",
-      "rrf_score": 0.04117636005768589,
-      "evidence": [
-        {
-          "excerpt": "houstonbased reliant energy and enron corp which have supplied energy to california until recently",
-          "source_id": "74091",
-          "date": "2001-05-29T00:00:00",
-          "sender": "ann.schmidt@enron.com"
-        }
-      ]
-    },
-    {
       "claim": "Patrick H Wood III opinion prepared to order californias energy suppliers to make heavy refunds because of overcharging",
       "claim_id": "b3bae756-3565-425c-be88-0536af440a66",
       "claim_type": "opinion",
       "confidence": 1.0,
       "status": "active",
-      "rrf_score": 0.04108480064764218,
+      "rrf_score": 0.042628010524185384,
       "evidence": [
         {
           "excerpt": "the governor got some support from two ferc members who said wednesday 20 that they are prepared to order californias energy suppliers to make heavy 20 refunds because of overcharging20 but the two commissioners pat wood iii and william massey",
@@ -71,7 +55,7 @@
       "claim_type": "role_assignment",
       "confidence": 1.0,
       "status": "active",
-      "rrf_score": 0.04082039028275587,
+      "rrf_score": 0.04236360015929908,
       "evidence": [
         {
           "excerpt": "bushs two new fer c appointees pat wood iii and nora brownell",
@@ -87,7 +71,7 @@
       "claim_type": "mentioned",
       "confidence": 1.0,
       "status": "active",
-      "rrf_score": 0.04056437389770723,
+      "rrf_score": 0.04210758377425044,
       "evidence": [
         {
           "excerpt": "patrick h wood iii a bush ally from texas",
@@ -103,7 +87,7 @@
       "claim_type": "works_at",
       "confidence": 1.0,
       "status": "active",
-      "rrf_score": 0.04031635802469136,
+      "rrf_score": 0.041859567901234566,
       "evidence": [
         {
           "excerpt": "bill.iii@enron.com",
@@ -119,7 +103,7 @@
       "claim_type": "requested",
       "confidence": 0.7,
       "status": "active",
-      "rrf_score": 0.04007597340930674,
+      "rrf_score": 0.04161918328584995,
       "evidence": [
         {
           "excerpt": "you shouldnt be sorry about the fact that you need help",
@@ -135,7 +119,7 @@
       "claim_type": "sent_to",
       "confidence": 1.0,
       "status": "active",
-      "rrf_score": 0.03984287317620651,
+      "rrf_score": 0.04138608305274972,
       "evidence": [
         {
           "excerpt": "From: vze28szx@verizon.net To: jason.wolfe@enron.com",
@@ -151,7 +135,7 @@
       "claim_type": "mentioned",
       "confidence": 1.0,
       "status": "active",
-      "rrf_score": 0.039616731159019716,
+      "rrf_score": 0.041159941035562926,
       "evidence": [
         {
           "excerpt": "i will still be haning out with shelly on saturday night",
@@ -167,7 +151,7 @@
       "claim_type": "requested",
       "confidence": 1.0,
       "status": "active",
-      "rrf_score": 0.039397240377632536,
+      "rrf_score": 0.04094045025417574,
       "evidence": [
         {
           "excerpt": "i may need a place to crash a few nights",
@@ -183,7 +167,7 @@
       "claim_type": "works_at",
       "confidence": 1.0,
       "status": "active",
-      "rrf_score": 0.039184111647879764,
+      "rrf_score": 0.040727321524422974,
       "evidence": [
         {
           "excerpt": "jeff.dasovich@enron.com",
@@ -202,6 +186,22 @@
           "source_id": "62404",
           "date": "2001-07-30T00:00:00",
           "sender": "janel.guerrero@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Reliant Energy mentioned Supplied energy to California",
+      "claim_id": "71fe4635-0adb-40e1-90ba-d5c72fb1b1e2",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04067232779962138,
+      "evidence": [
+        {
+          "excerpt": "houstonbased reliant energy and enron corp which have supplied energy to california until recently",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
         }
       ]
     }

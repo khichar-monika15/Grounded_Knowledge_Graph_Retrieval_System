@@ -1,0 +1,210 @@
+{
+  "question": "What topics did Kenneth Lay discuss?",
+  "matched_entities": [
+    {
+      "entity_id": "12b1ff66-d6c7-41f9-a4e5-8ab7b40095d6",
+      "canonical_name": "Kenneth Lay",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "9f126dd9-7f9b-4378-bd72-e80db6b98bde",
+      "canonical_name": "Comprehensive Settlement",
+      "entity_type": "project",
+      "score": 1.0
+    },
+    {
+      "entity_id": "8753d24a-f5af-4f47-b915-b3a90be2afd2",
+      "canonical_name": "Comprehensive Settlement",
+      "entity_type": "project",
+      "score": 1.0
+    },
+    {
+      "entity_id": "4ce63bdd-d73c-4730-9276-4e9707324c08",
+      "canonical_name": "Kenneth Lay should face jail time",
+      "entity_type": "topic",
+      "score": 0.6660867929458618
+    },
+    {
+      "entity_id": "83d00450-a7ba-47f6-a58e-11c6642e53f3",
+      "canonical_name": "Ken Lay Meeting",
+      "entity_type": "topic",
+      "score": 0.6089575290679932
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Kenneth Lay sent_to dl-ga-all_enron_worldwide2@enron.com",
+      "claim_id": "5d9c9910-7157-48bf-b3a0-7aa13de1f5f6",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04622110501800164,
+      "evidence": [
+        {
+          "excerpt": "From: chairman.ken@enron.com\nTo: dl-ga-all_enron_worldwide2@enron.com",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Alan Comnes mentioned Kenneth Lay",
+      "claim_id": "a8cf7627-79dc-4af1-9963-94a3de1f18d4",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.045965088632953,
+      "evidence": [
+        {
+          "excerpt": "jeff asked for this for ken lay",
+          "source_id": "57504",
+          "date": "2001-05-01T00:00:00",
+          "sender": "alan.comnes@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Alan Comnes mentioned Kenneth Lay",
+      "claim_id": "45eab2ce-e845-41ed-8beb-5e45fc5b6d55",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04583067206018026,
+      "evidence": [
+        {
+          "excerpt": "jeff asked for this for ken lay",
+          "source_id": "57504",
+          "date": "2001-05-01T00:00:00",
+          "sender": "alan.comnes@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Bill Lockyer opinion Kenneth Lay",
+      "claim_id": "837387fb-1292-46a7-986d-d486127e2c96",
+      "claim_type": "opinion",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.045084103293058515,
+      "evidence": [
+        {
+          "excerpt": "lockyer said i would love to personally escort lay to an 8by10 cell that he would share with a tattooed dude who says hi my name is spike honey",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        },
+        {
+          "excerpt": "ken lay chairman of the texasbased energy company enron corp and a close friend of bush should be locked in a prison cell with a tattooed inmate named spike",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Bill Lockyer opinion Kenneth Lay",
+      "claim_id": "ababf4bb-b1a8-4851-9e22-4363b93f0cb6",
+      "claim_type": "opinion",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04424900327131466,
+      "evidence": [
+        {
+          "excerpt": "lockyer said i would love to personally escort lay to an 8by10 cell that he would share with a tattooed dude who says hi my name is spike honey",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        },
+        {
+          "excerpt": "ken lay chairman of the texasbased energy company enron corp and a close friend of bush should be locked in a prison cell with a tattooed inmate named spike",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Bill Lockyer requested Kenneth Lay",
+      "claim_id": "fb7ba0a7-4ac6-4e07-85a9-b2ac5b667ea4",
+      "claim_type": "requested",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.044143111790170615,
+      "evidence": [
+        {
+          "excerpt": "the states democratic attorney general bill lockyer sharpened his attacks on enrons top executive ken lay lockyer said his office would like to file civil and criminal charges against the energy supplier",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Kenneth Lay sent_to dl-ga-all_enron_worldwide2@enron.com",
+      "claim_id": "7d37328d-6652-4ef6-b3ca-9f605f5c0e43",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.0441133766807651,
+      "evidence": [
+        {
+          "excerpt": "From: chairman.ken@enron.com\nTo: dl-ga-all_enron_worldwide2@enron.com",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Kenneth Lay decided Managing Directors Meeting",
+      "claim_id": "72446faf-4f70-4a74-8050-0a59e26f4144",
+      "claim_type": "decided",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04395604395604395,
+      "evidence": [
+        {
+          "excerpt": "as announced earlier we will be bringing all managing directors together on a quarterly basis",
+          "source_id": "273479",
+          "date": "2001-08-24T00:00:00",
+          "sender": "kenneth.lay@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Kenneth Lay decided Managing Directors Meeting",
+      "claim_id": "c3d4fdd5-d19f-4b5e-bc16-0232f74a28ef",
+      "claim_type": "decided",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04381638376017471,
+      "evidence": [
+        {
+          "excerpt": "as announced earlier we will be bringing all managing directors together on a quarterly basis",
+          "source_id": "273479",
+          "date": "2001-08-24T00:00:00",
+          "sender": "kenneth.lay@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Bill Lockyer requested Kenneth Lay",
+      "claim_id": "0500889d-744d-4469-88ab-61db5e37aa19",
+      "claim_type": "requested",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.043789127874542866,
+      "evidence": [
+        {
+          "excerpt": "the states democratic attorney general bill lockyer sharpened his attacks on enrons top executive ken lay lockyer said his office would like to file civil and criminal charges against the energy supplier",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}
