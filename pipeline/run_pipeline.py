@@ -327,7 +327,7 @@ def _generate_review_queue(claims: list, threshold: float = 0.5) -> list:
 # ---------------------------------------------------------------------------
 
 def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: bool = False,
-                 max_concurrent: int = 20):
+                 max_concurrent: int = 5):
     """Run the full end-to-end pipeline."""
     if api_key:
         os.environ["OPENAI_API_KEY"] = api_key
