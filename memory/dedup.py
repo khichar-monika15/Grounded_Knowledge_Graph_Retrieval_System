@@ -99,12 +99,12 @@ def _names_likely_same_person(name_a: str, name_b: str) -> bool:
     # the single token matches the LAST name of the multi-token name.
     # We also require the matching token to be > 3 chars to avoid matching initials.
     if len(parts_a) == 1 and len(parts_b) >= 2:
-        if parts_a[0] == parts_b[-1] and len(parts_a[0]) > 3:
+        if parts_a[0] == parts_b[-1] and len(parts_a[0]) > 4:
             return True
         return False
 
     if len(parts_b) == 1 and len(parts_a) >= 2:
-        if parts_b[0] == parts_a[-1] and len(parts_b[0]) > 3:
+        if parts_b[0] == parts_a[-1] and len(parts_b[0]) > 4:
             return True
         return False
 
@@ -183,19 +183,29 @@ def _build_merge_clusters(group: list[Entity], etype: str, threshold: float = 0.
                     union(i, j)
 
     # Pass 3: vectorised cosine similarity for remaining unmerged pairs
-    # Build text representations
     texts = [' '.join([e.canonical_name] + e.aliases) for e in group]
 
     from memory.embeddings import encode, cosine_similarity_matrix
     embs = encode(texts, normalize=True)          # shape (n, d), L2-normalised
     sim_matrix = cosine_similarity_matrix(embs, embs)  # shape (n, n), single matmul
 
+    # Stricter threshold for persons: short names with a shared first name
+    # ("John Lavorato" / "John Arnold") produce misleadingly high cosine similarity
+    effective_threshold = 0.92 if etype == "person" else threshold
+
     # Only check pairs not already in the same cluster
     for i in range(n):
         for j in range(i + 1, n):
             if find(i) == find(j):
                 continue
-            if sim_matrix[i, j] > threshold:
+            if sim_matrix[i, j] > effective_threshold:
+                # For persons: require last-name match as a hard gate so that
+                # shared first names ("John X" vs "John Y") never trigger a merge
+                if etype == "person":
+                    last_i = _extract_last_name(_normalize_name(group[i].canonical_name))
+                    last_j = _extract_last_name(_normalize_name(group[j].canonical_name))
+                    if last_i != last_j and len(last_i) > 2 and len(last_j) > 2:
+                        continue  # different last names — skip
                 union(i, j)
 
     # Collect clusters
