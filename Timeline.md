@@ -343,3 +343,23 @@ TDD session: tests written first (red), then fixes (green), 63 → 68 tests.
 4. **Conservative dedup thresholds** (0.85 cosine) prevent false merges. Person name heuristics handle the residual hard cases.
 5. **streamlit-agraph is fragile** — always test graph rendering with a 5-node graph on Day 1 so you know whether to fall back to pyvis.
 6. **Module-level singletons + `@st.cache_resource`** are the correct pattern for expensive model objects in Streamlit.
+
+
+---
+
+## Batch 10 — Submission Polish
+
+- **eval/gold_standard.py:** Precision/recall against 10 known Enron entities + 5 false-merge pairs; called at pipeline end and runnable standalone
+- **memory/decay.py:** Half-life confidence decay; multi-evidence claims decay slower; confidence < 0.3 → UNCERTAIN
+- **memory/graph_builder.py:** `prune_orphan_nodes()` — removes isolated nodes post-graph-build
+- **pipeline/run_pipeline.py:** Decay (step 6.5), orphan pruning, gold eval (step 9.6), review queue → `outputs/review_queue.json`; prints all new metrics
+- **app/app.py:** `show_claim_evolution()` renders superseded_by chain as a status timeline in the edge detail panel; sample question chips in Search tab; search bar + button horizontally aligned
+- **114/114 tests passing** (added test_eval.py × 4, test_decay.py × 5)
+
+## Batch 11 — Topic Entity Explosion Fix
+
+- **Root cause:** LLMs emit sentence-length topic names (e.g. "California energy crisis can be resolved without further rate hikes") → ~794 dead-end topic nodes each connected to exactly one person → hub-spoke graph
+- **pipeline/extraction.py:** `MAX_TOPIC_WORDS = 6` — topics > 6 words rejected at extraction; `MAX_TOPICS_PER_EMAIL` 5 → 3; prompt instruction reinforced
+- **memory/graph_builder.py:** `prune_leaf_topics(G)` — removes topic nodes with degree ≤ 1; recurring topics (degree ≥ 2) kept as genuine hubs
+- **pipeline/run_pipeline.py:** Call `prune_leaf_topics()` after orphan pruning; print `leaf_topics_pruned` in quality metrics; `max_concurrent` 20 → 5 (TrueFoundry rate limit)
+- **117/117 tests passing** (+test_sentence_length_topic_rejected, +TestPruning × 2)

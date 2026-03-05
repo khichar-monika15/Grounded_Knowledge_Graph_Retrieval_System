@@ -202,6 +202,18 @@ The parser is immune to common LLM output problems:
 If validation fails, `extract_email()` retries once (the retry succeeds when the LLM added
 preamble text on the first attempt). All errors are logged and counted in quality metrics.
 
+### 4.5.1 Topic Entity Explosion
+
+Without strict filtering, LLMs produce topic names that are full sentences:
+`"California energy crisis can be resolved without further rate hikes"`. With 200 emails each
+contributing 3–5 such phrases, ~800 unique topic nodes pile up — each connected to exactly one
+person via one `discussed` edge. The resulting graph is a hub-spoke mess rather than a network.
+
+Two-layer fix:
+1. **Prompt constraint:** topic instruction includes `"Topic names MUST be 2–6 words — never full sentences"`
+2. **`filter_garbage_entities()`:** `MAX_TOPIC_WORDS = 6` rejects topics longer than 6 words at extraction time; `MAX_TOPICS_PER_EMAIL = 3` caps volume per email
+3. **`prune_leaf_topics(G)`** (graph layer, post-dedup): removes topic nodes with `degree ≤ 1` from the NetworkX graph. Topics that recur across multiple emails (degree ≥ 2) are kept as genuine hubs; one-off topics are removed. This acts as a safety net for any sentence-fragments that slipped through cached extractions.
+
 ### 4.6 Versioning
 
 Every `Claim` carries `extraction_version = "v1"`. When the prompt or model changes, increment
@@ -222,7 +234,8 @@ valid under the new version.
 | Valid entity type | `@field_validator` validates against `EntityType` enum |
 | Valid claim type | `@field_validator` validates against `ClaimType` enum |
 | Confidence bounds | `Field(ge=0.0, le=1.0)` on `Claim.confidence` — out-of-range values raise ValidationError |
-| Garbage entity filter | `filter_garbage_entities()` removes single-token persons, standalone email addresses, generic role words, and caps topics at 5/email |
+| Garbage entity filter | `filter_garbage_entities()` removes single-token persons, standalone email addresses, generic role words; caps topics at **3/email**; rejects topic names **> 6 words** (sentence fragments) |
+| Leaf topic pruning | `prune_leaf_topics(G)` removes topic nodes with degree ≤ 1 after graph build — one-off topics that appear in only one email are eliminated; recurring topics (degree ≥ 2) are kept |
 | Confidence recalibration | `recalibrate_confidence()` recomputes confidence from structural signals (excerpt match, claim type, excerpt length) instead of trusting LLM |
 | Retry on failure | `extract_email()` retries once; errors logged and counted |
 | Pipeline metrics | `run_pipeline.py` prints validation error count, avg confidence, conflict count |
@@ -464,6 +477,7 @@ Conflicts (SUPERSEDED claims):     23
 Validation errors:                  0
 Duplicate emails skipped:           0
 Orphan nodes pruned:               47
+Leaf topics pruned:               ~794
 Uncertain after decay:             12
 Review queue items:               201
 Entity resolution (gold):  P=0.933  R=0.867  F1=0.899
@@ -785,7 +799,7 @@ BASE_URL = "http://localhost:11434"
 | Centralised embedding singleton | `SentenceTransformer` loaded once via `embeddings.py`; `@st.cache_resource` in Streamlit |
 | Vectorised entity dedup | `embs @ embs.T` (numpy BLAS) instead of O(N²) Python loop |
 | Bulk SQLite inserts | `executemany()` — 10-50× faster than per-row `execute()` for 1000+ rows |
-| Async concurrent extraction | `asyncio + Semaphore(20)` — 200 emails in ~20-30s vs ~3.3 min sequential |
+| Async concurrent extraction | `asyncio + Semaphore(5)` — rate-limited to respect TrueFoundry API quota |
 | Chunked CSV loading | `chunksize=10_000` — peak memory ~20 MB vs. loading full 918 MB |
 
 ### Acknowledged Gaps
@@ -803,14 +817,14 @@ BASE_URL = "http://localhost:11434"
 
 ## 11. Test Suite
 
-114 tests across 9 modules, all passing. Written test-first (TDD — red → green → refactor):
+117 tests across 9 modules, all passing. Written test-first (TDD — red → green → refactor):
 
 | Module | Tests | Key Behaviors Covered |
 |--------|-------|-----------------------|
 | `test_schema.py` | 17 | Pydantic validation, enum values, confidence bounds, drift-prevention |
-| `test_extraction.py` | 22 | Prompt building, JSON parsing (fences, balanced brackets), retry logic, chunking |
+| `test_extraction.py` | 23 | Prompt building, JSON parsing (fences, balanced brackets), retry logic, chunking, sentence-length topic rejection |
 | `test_dedup.py` | 26 | Hash dedup, quoted dedup, entity merge, claim merge, conflict detection, SINGLE_VALUED_CLAIMS, Splink |
-| `test_graph_builder.py` | 11 | Graph construction, SQLite persistence, idempotency, offsets |
+| `test_graph_builder.py` | 13 | Graph construction, SQLite persistence, idempotency, offsets, leaf-topic pruning, orphan pruning |
 | `test_retrieval.py` | 12 | Entity matching, bilateral claims, concept search, context pack grounding |
 | `test_integration.py` | 5 | End-to-end pipeline, grounded retrieval, JSON serializability |
 | `test_kuzu_store.py` | 12 | Schema creation, idempotent load, 1-hop, 2-hop, 3-hop traversal, unknown entity, raw Cypher, graceful degradation |
@@ -818,7 +832,7 @@ BASE_URL = "http://localhost:11434"
 | `test_decay.py` | 5 | Recent claims untouched, old claims decay, multi-evidence decay slower, threshold → UNCERTAIN, superseded untouched |
 
 ```bash
-uv run pytest tests/ -v   # 114/114 pass
+uv run pytest tests/ -v   # 117/117 pass
 ```
 
 ---
@@ -836,14 +850,15 @@ Validation errors:                  0
 Duplicate emails skipped:           0
 ```
 
-### Quality Improvement: Batch 8 → Batch 9
+### Quality Improvement: Batch 8 → Batch 11
 
-| Metric | Batch 8 (pre-fix) | Batch 9 (this run) | Change |
-|--------|-------------------|--------------------|--------|
-| Total entities | 5,773 | 2,542 | −56% (garbage filter + orphan prune) |
-| Superseded claims | 1,504 (36%) | 23 (<1%) | −98% (SINGLE_VALUED_CLAIMS guard) |
-| Avg confidence | 0.978 (91% at 1.0) | 0.680 | Realistic distribution (structural recalibration) |
-| Tests passing | 87 | 114 | +27 (eval + decay + SINGLE_VALUED guard coverage, Splink) |
+| Metric | Batch 8 (pre-fix) | Batch 9 | Batch 11 (this run) | Change |
+|--------|-------------------|---------|---------------------|--------|
+| Total entities | 5,773 | 2,542 | lower (leaf topics pruned) | −56%+ (topic explosion fixed) |
+| Superseded claims | 1,504 (36%) | 23 (<1%) | 23 (<1%) | −98% (SINGLE_VALUED_CLAIMS guard) |
+| Avg confidence | 0.978 (91% at 1.0) | 0.680 | 0.680 | Realistic distribution |
+| Hub-spoke topics (degree=1) | ~794 | ~794 | ~0 | Eliminated by leaf-topic prune |
+| Tests passing | 87 | 114 | 117 | +30 total |
 
 The 23 superseded claims represent genuine temporal conflicts — e.g., different emails asserting
 different reporting lines for the same person. Multi-valued claim types (`sent_to`, `mentioned`,

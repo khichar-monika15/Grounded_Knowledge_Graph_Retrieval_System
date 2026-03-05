@@ -4,7 +4,7 @@ Extracts structured knowledge from the Enron email dataset, deduplicates entitie
 three levels, stores them in a grounded memory graph, and provides retrieval with interactive
 visualization.
 
-**114/114 tests passing · 2542 entities · 2098 claims · 2196 evidence · 340 merges**
+**117/117 tests passing · 2542 entities · 2098 claims · 2196 evidence · 340 merges**
 
 ---
 
@@ -79,7 +79,8 @@ Layer10_Assign/
 │   ├── schema.py                   # Pydantic models: Evidence, Entity, Claim, enums
 │   ├── dedup.py                    # 3-level dedup: artifact, entity, claim
 │   ├── embeddings.py               # Centralised SentenceTransformer singleton
-│   ├── graph_builder.py            # NetworkX graph + SQLite persistence
+│   ├── graph_builder.py            # NetworkX graph + SQLite + prune_leaf_topics / prune_orphan_nodes
+│   ├── decay.py                    # Half-life confidence decay → UNCERTAIN status
 │   ├── retrieval.py                # Embedding-based retrieval + RRF context packs (4 signals)
 │   ├── vector_store.py             # FAISS index: pre-compute + ANN search
 │   └── kuzu_store.py               # Kùzu embedded graph: multi-hop Cypher traversal
@@ -93,12 +94,12 @@ Layer10_Assign/
 ├── app/
 │   └── app.py                      # Streamlit UI: graph, entity browser, retrieval
 │
-├── tests/                          # 114 TDD tests, all passing
+├── tests/                          # 117 TDD tests, all passing
 │   ├── conftest.py                 # Shared fixtures
 │   ├── test_schema.py              # 17 tests
-│   ├── test_extraction.py          # 22 tests
+│   ├── test_extraction.py          # 23 tests
 │   ├── test_dedup.py               # 26 tests
-│   ├── test_graph_builder.py       # 11 tests
+│   ├── test_graph_builder.py       # 13 tests
 │   ├── test_retrieval.py           # 12 tests
 │   ├── test_integration.py         # 5 tests
 │   ├── test_kuzu_store.py          # 12 tests
@@ -143,7 +144,7 @@ uv run pytest tests/test_kuzu_store.py -v
 uv run pytest tests/test_eval.py -v
 uv run pytest tests/test_decay.py -v
 
-# Expected: 114/114 passed
+# Expected: 117/117 passed
 ```
 
 ---
@@ -228,7 +229,7 @@ download_corpus.py   — chunked load, date filter, random_state=42 sample
   │
   ▼
 extraction.py        — hybrid CoT prompt → JSON parse → Pydantic validate → cache
-  │  (async, 20 concurrent, per-email cache)
+  │  (async, 5 concurrent, per-email cache)
   ▼
 dedup.py             — artifact hash dedup → entity embedding merge → claim group merge
   │
