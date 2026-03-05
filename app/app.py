@@ -342,21 +342,51 @@ def main():
     # ------------------------------------------------------------------
     with tab3:
         st.subheader("Question Retrieval")
-        col_q, col_btn = st.columns([4, 1])
+
+        SAMPLE_QUESTIONS = [
+            "Who did Jeff Skilling report to?",
+            "What role did Andy Fastow play at Enron?",
+            "What decisions were made about the California energy situation?",
+            "Who was involved in the Raptor project?",
+            "What topics did Kenneth Lay discuss?",
+            "What did Vince Kaminski work on?",
+        ]
+
+        # Horizontal search bar + button (vertically aligned via CSS)
+        st.markdown(
+            "<style>.search-btn > div > button { margin-top: -1.2rem; width: 100%; }</style>",
+            unsafe_allow_html=True,
+        )
+        col_q, col_btn = st.columns([5, 1])
         with col_q:
             question = st.text_input(
                 "Ask a question about Enron",
-                placeholder="Who did Jeff Skilling report to?"
+                placeholder="Who did Jeff Skilling report to?",
+                label_visibility="collapsed",
             )
         with col_btn:
-            search = st.button("Search", width="stretch")
+            st.markdown('<div class="search-btn">', unsafe_allow_html=True)
+            search = st.button("Search", use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
 
-        if search and question:
+        # Sample question chips
+        st.caption("Try a sample question:")
+        chip_cols = st.columns(len(SAMPLE_QUESTIONS))
+        clicked_question = None
+        for i, (col, q) in enumerate(zip(chip_cols, SAMPLE_QUESTIONS)):
+            with col:
+                if st.button(q, key=f"sample_{i}", use_container_width=True):
+                    clicked_question = q
+
+        # Use clicked sample or typed question
+        active_question = clicked_question or (question if search else None)
+
+        if active_question:
             import memory.embeddings as _emb
             _emb._MODEL = get_embedding_model()
             from memory.retrieval import build_context_pack
             with st.spinner("Searching..."):
-                pack = build_context_pack(question, entities, claims, evidence)
+                pack = build_context_pack(active_question, entities, claims, evidence)
 
             st.markdown(
                 f"**Matched entities:** "
