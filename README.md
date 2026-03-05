@@ -237,7 +237,8 @@ app/app.py           — Streamlit: 4-tab UI (graph explorer · merge history ·
 | Prompt strategy | Hybrid chain-of-thought (1 call) | Reduces hallucination; 2× cheaper than step-wise |
 | Validation | Pydantic `ExtractionResult` | Schema drift = immediate ValidationError, not silent drop |
 | Claim grounding | `@field_validator` on `supporting_excerpt` | Physically impossible to create ungrounded claim |
-| Entity dedup threshold | Cosine > 0.85 (strict) | Under-merge preferred; 3-pass heuristic prevents first-name false merges (e.g. "Jeff" ≠ "Jeff Skilling") |
+| Entity dedup (persons) | Splink probabilistic ER | Fellegi-Sunter + Jaro-Winkler + last-name blocking; fallback to 3-pass deterministic (exact match → prefix → cosine 0.85) |
+| Entity dedup (non-persons) | Cosine > 0.85 (strict) | Org/project names are unambiguous; embedding similarity is sufficient |
 | Graph store | NetworkX + SQLite | Algorithm flexibility + ACID persistence, no server required |
 | Retrieval ranking | Reciprocal Rank Fusion (4 signals) | Parameter-free, robust to score-scale differences |
 | Multi-hop traversal | Kùzu embedded graph | 2-hop BFS surfaces indirectly related claims |

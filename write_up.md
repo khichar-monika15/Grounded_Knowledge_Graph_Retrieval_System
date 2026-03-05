@@ -257,12 +257,21 @@ a hypothetical `Raptor` organization are never merged):
 Lowercase, remove honorifics (`Mr.`, `Dr.`, `Ms.`), reverse `"Last, First"` format → check
 string equality across all aliases of all entities of the same type.
 
-**Pass 2 — Person name heuristics:**
-For `person` entities: if last names match and first names are prefix-compatible
-(`Jeff` ⊂ `Jeffrey`, `Ken` ⊂ `Kenneth`, `Andy` ⊂ `Andrew`, `Bill` ⊂ `William`), merge.
-This catches cases where embedding cosine similarity falls just below the threshold.
+**Pass 2 — Person entity resolution (Splink, Fellegi-Sunter):**
+Person entities use `Splink` (probabilistic record linkage, Fellegi-Sunter model).
+A DuckDB-backed `Linker` is configured with `NameComparison("canonical_name")` (Jaro-Winkler
++ exact tiers) and a `block_on("last_name")` blocking rule. EM training estimates m/u
+probabilities; pairs with `match_probability > 0.90` are merged via union-find. If the entity
+group is too small for EM convergence (common for per-email extracted sub-groups), a
+deterministic fallback runs in three sub-passes:
+- **Pass 2a** — Exact normalized name match across all aliases (catches `"Skilling, Jeff"` ↔ `"Jeff Skilling"`);
+- **Pass 2b** — Same last name + first-name prefix match on canonical names (catches `"Jeff Skilling"` ↔ `"Jeffrey Skilling"`);
+- **Pass 2c** — Embedding cosine > 0.85 with a last-name hard gate (blocks `"John Lavorato"` ↔ `"John Arnold"`).
 
-**Pass 3 — Embedding cosine similarity:**
+Non-person entities (organizations, projects, etc.) skip Splink entirely — their names are
+far less ambiguous and Pass 1 + embedding similarity are sufficient.
+
+**Pass 3 — Embedding cosine similarity (non-persons only):**
 Using `all-MiniLM-L6-v2`, compute the full similarity matrix as a single numpy matmul
 (`embs @ embs.T`) — one BLAS operation instead of O(N²) Python iterations.
 Threshold: **0.85** (intentionally strict — better to under-merge than over-merge).

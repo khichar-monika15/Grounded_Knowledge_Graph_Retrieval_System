@@ -73,71 +73,20 @@ def _extract_last_name(name: str) -> str:
     return parts[-1] if parts else name
 
 
-def _names_likely_same_person(name_a: str, name_b: str) -> bool:
-    """Check if two person names likely refer to the same person.
+def deduplicate_persons_splink(group: list[Entity]) -> list[list[int]]:
+    """Probabilistic person entity resolution via Splink (Fellegi-Sunter model).
 
-    Requires both names to have at least 2 tokens (first + last).
-    Single-token names like 'Jeff' are too ambiguous — they match
-    every Jeff in the corpus and cause false merges.
-    Email addresses are also skipped (contain '@').
-    """
-    na = _normalize_name(name_a)
-    nb = _normalize_name(name_b)
-
-    # Skip email addresses — not comparable as person names
-    if '@' in na or '@' in nb:
-        return False
-
-    parts_a = na.split()
-    parts_b = nb.split()
-
-    # If both are single tokens, we defer to Pass 3 (embedding) to avoid "Jeff" == "Jeff" false positives.
-    if len(parts_a) == 1 and len(parts_b) == 1:
-        return False
-        
-    # If one is single-token and the other is multi-token, allow merge ONLY IF
-    # the single token matches the LAST name of the multi-token name.
-    # We also require the matching token to be > 3 chars to avoid matching initials.
-    if len(parts_a) == 1 and len(parts_b) >= 2:
-        if parts_a[0] == parts_b[-1] and len(parts_a[0]) > 4:
-            return True
-        return False
-
-    if len(parts_b) == 1 and len(parts_a) >= 2:
-        if parts_b[0] == parts_a[-1] and len(parts_b[0]) > 4:
-            return True
-        return False
-
-    la = parts_a[-1]  # last name
-    lb = parts_b[-1]
-
-    if la == lb and la:
-        tokens_a = set(parts_a)
-        tokens_b = set(parts_b)
-        if tokens_a & tokens_b:
-            return True
-        # Check if first names are prefix-compatible (Jeff vs Jeffrey)
-        first_a = parts_a[0]
-        first_b = parts_b[0]
-        if first_a and first_b:
-            if first_a.startswith(first_b) or first_b.startswith(first_a):
-                return True
-    return False
-
-
-def _build_merge_clusters(group: list[Entity], etype: str, threshold: float = 0.85) -> list[list[int]]:
-    """Return list of index-clusters that should be merged.
-
-    Strategy:
-    1. Exact normalised name match → same cluster (fast, no embeddings needed).
-    2. Person name heuristics (prefix match) → same cluster.
-    3. Vectorised cosine similarity matrix (single BLAS matmul) — entities with
-       similarity > threshold are candidates; sklearn AgglomerativeClustering
-       groups them. This replaces the O(n²) Python loop.
+    Uses Jaro-Winkler comparison on canonical_name + last-name blocking.
+    Returns list-of-index-lists (same signature as _build_merge_clusters).
+    Falls back to embedding cosine (threshold=0.92 + last-name guard) if
+    Splink raises an error (too few records for EM training).
     """
     n = len(group)
+    if n == 0:
+        return []
+    if n == 1:
+        return [[0]]
 
-    # Union-Find
     parent = list(range(n))
 
     def find(x: int) -> int:
@@ -149,71 +98,133 @@ def _build_merge_clusters(group: list[Entity], etype: str, threshold: float = 0.
     def union(x: int, y: int) -> None:
         parent[find(x)] = find(y)
 
-    # Pass 1 & 2: exact match + person heuristics (cheap, no embeddings)
+    try:
+        import pandas as pd
+        from splink import DuckDBAPI, Linker, SettingsCreator, block_on
+        import splink.comparison_library as cl
+
+        records = []
+        for i, e in enumerate(group):
+            norm = _normalize_name(e.canonical_name)
+            parts = norm.split()
+            records.append({
+                "unique_id": i,
+                "canonical_name": norm,
+                "last_name": parts[-1] if parts else "",
+            })
+        df = pd.DataFrame(records)
+
+        settings = SettingsCreator(
+            link_type="dedupe_only",
+            comparisons=[cl.NameComparison("canonical_name")],
+            blocking_rules_to_generate_predictions=[block_on("last_name")],
+        )
+
+        linker = Linker(df, settings, DuckDBAPI())
+        linker.estimate_probability_two_random_records_match(
+            deterministic_matching_rules=[block_on("last_name")],
+            recall=0.6,
+        )
+        linker.estimate_u_using_random_sampling(max_pairs=1e5)
+        linker.estimate_parameters_using_expectation_maximisation(block_on("last_name"))
+        preds = linker.predict(threshold_match_probability=0.9).as_pandas_dataframe()
+        for _, row in preds.iterrows():
+            union(int(row["unique_id_l"]), int(row["unique_id_r"]))
+
+    except Exception:
+        # Fallback 3-pass approach when Splink EM training fails (too few records)
+
+        # Pass 1: exact normalized name match (catches "Skilling, Jeff" ↔ "Jeff Skilling")
+        for i in range(n):
+            for j in range(i + 1, n):
+                names_i = {_normalize_name(nm) for nm in [group[i].canonical_name] + group[i].aliases
+                           if '@' not in nm}
+                names_j = {_normalize_name(nm) for nm in [group[j].canonical_name] + group[j].aliases
+                           if '@' not in nm}
+                if names_i & names_j:
+                    union(i, j)
+
+        # Pass 2: same last name + first-name prefix match on canonical names
+        # (catches "Jeff Skilling" ↔ "Jeffrey Skilling")
+        for i in range(n):
+            for j in range(i + 1, n):
+                if find(i) == find(j):
+                    continue
+                na = _normalize_name(group[i].canonical_name)
+                nb = _normalize_name(group[j].canonical_name)
+                if '@' in na or '@' in nb:
+                    continue
+                parts_a = na.split()
+                parts_b = nb.split()
+                if len(parts_a) >= 2 and len(parts_b) >= 2:
+                    if parts_a[-1] == parts_b[-1]:  # same last name
+                        fa, fb = parts_a[0], parts_b[0]
+                        if fa.startswith(fb) or fb.startswith(fa):
+                            union(i, j)
+
+        # Pass 3: embedding cosine + last-name hard gate for remaining pairs
+        from memory.embeddings import encode, cosine_similarity_matrix
+        texts = [' '.join([e.canonical_name] + e.aliases) for e in group]
+        embs = encode(texts, normalize=True)
+        sim = cosine_similarity_matrix(embs, embs)
+        for i in range(n):
+            for j in range(i + 1, n):
+                if find(i) == find(j):
+                    continue
+                if sim[i, j] > 0.85:
+                    last_i = _extract_last_name(_normalize_name(group[i].canonical_name))
+                    last_j = _extract_last_name(_normalize_name(group[j].canonical_name))
+                    if last_i != last_j and len(last_i) > 2 and len(last_j) > 2:
+                        continue
+                    union(i, j)
+
+    clusters: dict[int, list[int]] = {}
+    for i in range(n):
+        clusters.setdefault(find(i), []).append(i)
+    return list(clusters.values())
+
+
+def _build_merge_clusters(group: list[Entity], etype: str, threshold: float = 0.85) -> list[list[int]]:
+    """Route persons to Splink; use exact-match + embedding for non-persons."""
+    if etype == "person" and len(group) > 1:
+        return deduplicate_persons_splink(group)
+
+    # --- Non-person path (orgs, projects, topics, locations, roles) ---
+    n = len(group)
+    parent = list(range(n))
+
+    def find(x: int) -> int:
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(x: int, y: int) -> None:
+        parent[find(x)] = find(y)
+
+    # Pass 1: exact normalized name match (non-persons can safely merge on single-token names)
     for i in range(n):
         for j in range(i + 1, n):
             names_i = {_normalize_name(nm) for nm in [group[i].canonical_name] + group[i].aliases}
             names_j = {_normalize_name(nm) for nm in [group[j].canonical_name] + group[j].aliases}
+            if names_i & names_j:
+                union(i, j)
 
-            common_names = names_i & names_j
-            if common_names:
-                # If they are persons, check if the common name is too ambiguous.
-                # A single-token common name (e.g. "jeff") should not blindly merge
-                # two different canonical people in Pass 1. 
-                # We defer to Pass 2 (heuristic) or Pass 3 (embedding) for single-token names.
-                if etype == "person":
-                    valid_match = any(len(n.split()) >= 2 for n in common_names)
-                    if valid_match:
-                        union(i, j)
-                        continue
-                else:
-                    # Non-persons (orgs, projects) can safely merge on single-token names like "Raptor"
-                    union(i, j)
-                    continue
-
-            if etype == "person":
-                raws_i = [group[i].canonical_name] + group[i].aliases
-                raws_j = [group[j].canonical_name] + group[j].aliases
-                found = any(
-                    _names_likely_same_person(ni, nj)
-                    for ni in raws_i
-                    for nj in raws_j
-                )
-                if found:
-                    union(i, j)
-
-    # Pass 3: vectorised cosine similarity for remaining unmerged pairs
-    texts = [' '.join([e.canonical_name] + e.aliases) for e in group]
-
+    # Pass 3: embedding cosine similarity
     from memory.embeddings import encode, cosine_similarity_matrix
-    embs = encode(texts, normalize=True)          # shape (n, d), L2-normalised
-    sim_matrix = cosine_similarity_matrix(embs, embs)  # shape (n, n), single matmul
-
-    # Stricter threshold for persons: short names with a shared first name
-    # ("John Lavorato" / "John Arnold") produce misleadingly high cosine similarity
-    effective_threshold = 0.92 if etype == "person" else threshold
-
-    # Only check pairs not already in the same cluster
+    texts = [' '.join([e.canonical_name] + e.aliases) for e in group]
+    embs = encode(texts, normalize=True)
+    sim_matrix = cosine_similarity_matrix(embs, embs)
     for i in range(n):
         for j in range(i + 1, n):
             if find(i) == find(j):
                 continue
-            if sim_matrix[i, j] > effective_threshold:
-                # For persons: require last-name match as a hard gate so that
-                # shared first names ("John X" vs "John Y") never trigger a merge
-                if etype == "person":
-                    last_i = _extract_last_name(_normalize_name(group[i].canonical_name))
-                    last_j = _extract_last_name(_normalize_name(group[j].canonical_name))
-                    if last_i != last_j and len(last_i) > 2 and len(last_j) > 2:
-                        continue  # different last names — skip
+            if sim_matrix[i, j] > threshold:
                 union(i, j)
 
-    # Collect clusters
     clusters: dict[int, list[int]] = {}
     for i in range(n):
-        root = find(i)
-        clusters.setdefault(root, []).append(i)
-
+        clusters.setdefault(find(i), []).append(i)
     return list(clusters.values())
 
 
