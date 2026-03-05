@@ -42,7 +42,7 @@ STEP 1 — ENTITY EXTRACTION:
 Identify every person, organization, project, topic, location, and role mentioned.
 - "topic": ONLY for high-level recurring themes (e.g. "California Energy Crisis", "Raptor SPV",
   "quarterly earnings"). NOT for one-off actions, dates, numbers, or sentence fragments.
-  Maximum 3 topic entities per email.
+  Maximum 3 topic entities per email. Topic names MUST be 2–6 words — never full sentences.
 List them all before moving to claims.
 
 STEP 2 — CLAIM EXTRACTION:
@@ -230,8 +230,9 @@ GARBAGE_PERSON_NAMES = frozenset({
     "customer", "user", "analyst", "trader", "attorney", "counsel",
 })
 
-MAX_TOPICS_PER_EMAIL = 5
+MAX_TOPICS_PER_EMAIL = 3
 MIN_TOPIC_WORDS = 2
+MAX_TOPIC_WORDS = 6
 
 
 def filter_garbage_entities(entities: list[dict]) -> list[dict]:
@@ -256,7 +257,10 @@ def filter_garbage_entities(entities: list[dict]) -> list[dict]:
         elif etype == "topic":
             if re.match(r'^[\d/\-\.\s,]+$', name):
                 continue
-            if len(name.split()) < MIN_TOPIC_WORDS:
+            word_count = len(name.split())
+            if word_count < MIN_TOPIC_WORDS:
+                continue
+            if word_count > MAX_TOPIC_WORDS:  # reject sentence-length topic names
                 continue
             if topic_count >= MAX_TOPICS_PER_EMAIL:
                 continue

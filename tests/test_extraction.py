@@ -160,13 +160,26 @@ class TestPostExtractionFiltering:
         assert len(filtered) == 2
 
     def test_topic_limit_enforced(self):
-        """Max 5 topics per email after filtering."""
+        """Max 3 topics per email after filtering."""
         from pipeline.extraction import filter_garbage_entities
         entities = [{"name": f"topic {i} about something", "type": "topic", "aliases": []}
                     for i in range(10)]
         filtered = filter_garbage_entities(entities)
         topics = [e for e in filtered if e["type"] == "topic"]
-        assert len(topics) <= 5
+        assert len(topics) <= 3
+
+    def test_sentence_length_topic_rejected(self):
+        """Topics longer than 6 words are sentence fragments — reject them."""
+        from pipeline.extraction import filter_garbage_entities
+        entities = [
+            {"name": "California energy crisis can be resolved without further rate hikes",
+             "type": "topic", "aliases": []},
+            {"name": "California Energy Crisis", "type": "topic", "aliases": []},
+        ]
+        filtered = filter_garbage_entities(entities)
+        names = [e["name"] for e in filtered]
+        assert "California Energy Crisis" in names
+        assert "California energy crisis can be resolved without further rate hikes" not in names
 
 
 class TestConfidenceRecalibration:

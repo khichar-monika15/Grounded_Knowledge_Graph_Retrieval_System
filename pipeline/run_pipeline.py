@@ -21,7 +21,7 @@ from config import DB_PATH, EXTRACTIONS_DIR, CONTEXT_PACKS_DIR, GRAPH_JSON_PATH,
 from memory.schema import Entity, Claim, Evidence, EntityType, ClaimType, ClaimStatus
 from pipeline.extraction import extract_email, validate_extraction, strip_quoted_content
 from memory.dedup import hash_email_body, is_quoted_duplicate, deduplicate_entities, deduplicate_claims
-from memory.graph_builder import build_graph, save_to_sqlite, save_graph_json, prune_orphan_nodes
+from memory.graph_builder import build_graph, save_to_sqlite, save_graph_json, prune_orphan_nodes, prune_leaf_topics
 from memory.retrieval import build_context_pack
 from memory.vector_store import build_and_save_index
 
@@ -427,7 +427,9 @@ def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: boo
     print("Building memory graph...")
     G = build_graph(entities, claims)
     pruned = prune_orphan_nodes(G, keep_types={"organization"})
-    print(f"Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges ({pruned} orphans pruned)")
+    leaf_topics_pruned = prune_leaf_topics(G)
+    print(f"Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges "
+          f"({pruned} orphans pruned, {leaf_topics_pruned} leaf topics pruned)")
 
     # Step 8: Persist to SQLite (uses executemany)
     print(f"Saving to SQLite: {DB_PATH}...")
@@ -492,6 +494,7 @@ def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: boo
     print(f"  Validation errors:      {validation_errors}")
     print(f"  Duplicate emails:       {duplicate_count}")
     print(f"  Orphan nodes pruned:    {pruned}")
+    print(f"  Leaf topics pruned:     {leaf_topics_pruned}")
     print(f"  Uncertain after decay:  {uncertain_count}")
     print(f"  Review queue items:     {len(review_queue)}")
     print(f"  Entity resolution (gold):")

@@ -30,6 +30,54 @@ class TestGraphConstruction:
         assert edge_data is not None
 
 
+class TestPruning:
+    def test_prune_leaf_topics_removes_single_edge_topics(self):
+        from memory.graph_builder import build_graph, prune_leaf_topics
+        from memory.schema import Entity, Claim, EntityType, ClaimType
+        entities = [
+            Entity(entity_id="p1", canonical_name="Jeff Skilling", entity_type=EntityType.PERSON),
+            Entity(entity_id="p2", canonical_name="Ken Lay", entity_type=EntityType.PERSON),
+            Entity(entity_id="t1", canonical_name="California Energy Crisis", entity_type=EntityType.TOPIC),
+            Entity(entity_id="t2", canonical_name="quarterly earnings report", entity_type=EntityType.TOPIC),
+        ]
+        claims = [
+            Claim(claim_id="c1", claim_type=ClaimType.DISCUSSED,
+                  subject_entity_id="p1", object_entity_id="t1",
+                  confidence=0.8, evidence_ids=["ev1"]),
+            Claim(claim_id="c2", claim_type=ClaimType.DISCUSSED,
+                  subject_entity_id="p2", object_entity_id="t1",
+                  confidence=0.8, evidence_ids=["ev2"]),
+            # t2 connected only to p1 — leaf topic, should be pruned
+            Claim(claim_id="c3", claim_type=ClaimType.DISCUSSED,
+                  subject_entity_id="p1", object_entity_id="t2",
+                  confidence=0.5, evidence_ids=["ev3"]),
+        ]
+        G = build_graph(entities, claims)
+        removed = prune_leaf_topics(G)
+        assert removed == 1
+        assert "t2" not in G.nodes  # leaf topic gone
+        assert "t1" in G.nodes      # recurring topic preserved
+
+    def test_prune_leaf_topics_preserves_persons(self):
+        """Person nodes with degree 1 are NOT removed by prune_leaf_topics."""
+        from memory.graph_builder import build_graph, prune_leaf_topics
+        from memory.schema import Entity, Claim, EntityType, ClaimType
+        entities = [
+            Entity(entity_id="p1", canonical_name="Jeff Skilling", entity_type=EntityType.PERSON),
+            Entity(entity_id="p2", canonical_name="Ken Lay", entity_type=EntityType.PERSON),
+        ]
+        claims = [
+            Claim(claim_id="c1", claim_type=ClaimType.SENT_TO,
+                  subject_entity_id="p1", object_entity_id="p2",
+                  confidence=0.9, evidence_ids=["ev1"]),
+        ]
+        G = build_graph(entities, claims)
+        removed = prune_leaf_topics(G)
+        assert removed == 0
+        assert "p1" in G.nodes
+        assert "p2" in G.nodes
+
+
 class TestSQLitePersistence:
     def test_save_and_load_entities(self, sample_graph_data, tmp_path):
         from memory.graph_builder import save_to_sqlite, load_entities_from_sqlite

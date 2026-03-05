@@ -58,6 +58,24 @@ def build_graph(entities: list[Entity], claims: list[Claim]) -> nx.MultiDiGraph:
     return G
 
 
+def prune_leaf_topics(G: nx.MultiDiGraph) -> int:
+    """Remove topic nodes with degree <= 1 (appear in only one email, add noise).
+
+    Topic nodes with a single edge are one-off sentence fragments that never
+    recur. Keeping only topics with degree >= 2 preserves recurring themes
+    (e.g. "California Energy Crisis" linked to many people) while eliminating
+    the ~794 dead-end topic nodes that turn the graph into a hub-spoke mess.
+
+    Returns the number of nodes removed.
+    """
+    to_remove = [
+        n for n in G.nodes()
+        if G.nodes[n].get("entity_type") == "topic" and G.degree(n) <= 1
+    ]
+    G.remove_nodes_from(to_remove)
+    return len(to_remove)
+
+
 def prune_orphan_nodes(G: nx.MultiDiGraph, keep_types: set[str] | None = None) -> int:
     """Remove nodes with degree=0 (no edges). Returns number removed.
 
