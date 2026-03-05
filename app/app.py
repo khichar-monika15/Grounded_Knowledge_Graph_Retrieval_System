@@ -1,8 +1,13 @@
 """Streamlit visualization app for the Enron memory graph."""
 import json
 import os
+import sys
 import sqlite3
 import warnings
+
+# Ensure project root is on sys.path so `config` / `memory` are importable
+# regardless of how Streamlit invokes this file.
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import streamlit as st
 import networkx as nx
@@ -58,30 +63,56 @@ def entity_type_color(etype: str) -> str:
 
 
 def render_graph_pyvis(G: nx.MultiDiGraph, entity_type_filter: list, confidence_threshold: float,
-                        status_filter: str):
-    """Render graph using pyvis."""
+                        status_filter: str, focus_node_id: str = None):
+    """Render graph using pyvis with zoom controls and entity focus."""
     from pyvis.network import Network
     import tempfile
 
-    net = Network(height="500px", width="100%", directed=True, notebook=False)
+    net = Network(height="600px", width="100%", directed=True, notebook=False)
     net.set_options("""
     {
       "physics": {
         "enabled": true,
-        "stabilization": {"iterations": 100}
+        "stabilization": {"iterations": 150},
+        "barnesHut": {
+          "gravitationalConstant": -3000,
+          "springLength": 120,
+          "springConstant": 0.04
+        }
       },
-      "edges": {"arrows": {"to": {"enabled": true}}}
+      "edges": {"arrows": {"to": {"enabled": true}}, "smooth": {"type": "continuous"}},
+      "interaction": {
+        "hover": true,
+        "tooltipDelay": 100,
+        "zoomView": true,
+        "dragView": true,
+        "navigationButtons": false,
+        "keyboard": {"enabled": true}
+      }
     }
     """)
 
-    # Add nodes
+    # Add nodes — highlight focused node
     for node_id, data in G.nodes(data=True):
         etype = data.get("entity_type", "topic")
         if entity_type_filter and etype not in entity_type_filter:
             continue
         color = entity_type_color(etype)
         label = data.get("canonical_name", node_id)
-        net.add_node(node_id, label=label, color=color, title=f"{etype}: {label}")
+        is_focused = (focus_node_id and node_id == focus_node_id)
+        node_opts = {
+            "label": label,
+            "color": {
+                "background": color,
+                "border": "#FFD700" if is_focused else color,
+                "highlight": {"background": color, "border": "#FFD700"},
+            },
+            "title": f"{etype}: {label}",
+            "size": 25 if is_focused else 15,
+            "borderWidth": 4 if is_focused else 1,
+            "borderWidthSelected": 4,
+        }
+        net.add_node(node_id, **node_opts)
 
     # Add edges
     for u, v, data in G.edges(data=True):
@@ -94,12 +125,120 @@ def render_graph_pyvis(G: nx.MultiDiGraph, entity_type_filter: list, confidence_
         if not (net.get_node(u) and net.get_node(v)):
             continue
         claim_type = data.get("claim_type", "")
-        net.add_edge(u, v, title=f"{claim_type} (conf={conf:.2f})", width=conf * 3)
+        is_connected = focus_node_id and (u == focus_node_id or v == focus_node_id)
+        edge_color = "#FFD700" if is_connected else "#666666"
+        net.add_edge(u, v, title=f"{claim_type} (conf={conf:.2f})",
+                     width=(conf * 4) if is_connected else (conf * 2),
+                     color=edge_color)
 
-    # Save to temp HTML
+    # Save base HTML
     with tempfile.NamedTemporaryFile(suffix=".html", delete=False, mode="w") as f:
         net.save_graph(f.name)
-        return f.name
+
+    # Inject zoom controls + focus JS into the generated HTML
+    focus_js = ""
+    if focus_node_id:
+        safe_id = focus_node_id.replace("'", "\\'")
+        focus_js = f"""
+        // Auto-focus on selected entity after stabilization
+        network.once('stabilized', function() {{
+            try {{
+                network.focus('{safe_id}', {{
+                    scale: 1.8,
+                    animation: {{duration: 800, easingFunction: 'easeInOutQuad'}}
+                }});
+                network.selectNodes(['{safe_id}']);
+            }} catch(e) {{}}
+        }});
+        """
+
+    controls_html = """
+    <style>
+      #graph-controls {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      #graph-controls button {
+        width: 36px;
+        height: 36px;
+        border: 1px solid #555;
+        border-radius: 6px;
+        background: rgba(30, 30, 30, 0.85);
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(4px);
+        transition: background 0.15s, transform 0.1s;
+      }
+      #graph-controls button:hover {
+        background: rgba(60, 60, 60, 0.95);
+        transform: scale(1.08);
+      }
+      #graph-controls button:active {
+        transform: scale(0.95);
+      }
+      #graph-controls button.active-btn {
+        background: rgba(255, 215, 0, 0.3);
+        border-color: #FFD700;
+      }
+      #graph-controls .separator {
+        height: 1px;
+        background: #555;
+        margin: 2px 4px;
+      }
+    </style>
+    <div id="graph-controls">
+      <button onclick="zoomIn()" title="Zoom In">+</button>
+      <button onclick="zoomOut()" title="Zoom Out">−</button>
+      <button onclick="fitAll()" title="Fit All">⊡</button>
+      <div class="separator"></div>
+      <button id="physicsBtn" onclick="togglePhysics()" title="Toggle Physics">⚡</button>
+    </div>
+    <script>
+      var physicsOn = true;
+
+      function zoomIn() {
+        var scale = network.getScale();
+        network.moveTo({scale: scale * 1.4, animation: {duration: 300, easingFunction: 'easeInOutQuad'}});
+      }
+      function zoomOut() {
+        var scale = network.getScale();
+        network.moveTo({scale: scale / 1.4, animation: {duration: 300, easingFunction: 'easeInOutQuad'}});
+      }
+      function fitAll() {
+        network.fit({animation: {duration: 500, easingFunction: 'easeInOutQuad'}});
+      }
+      function togglePhysics() {
+        physicsOn = !physicsOn;
+        network.setOptions({physics: {enabled: physicsOn}});
+        var btn = document.getElementById('physicsBtn');
+        btn.classList.toggle('active-btn', physicsOn);
+        btn.title = physicsOn ? 'Physics ON (click to freeze)' : 'Physics OFF (click to unfreeze)';
+      }
+
+      // Mark physics button as active initially
+      document.getElementById('physicsBtn').classList.add('active-btn');
+
+      """ + focus_js + """
+    </script>
+    """
+
+    # Inject controls before closing </body>
+    with open(f.name, "r") as fh:
+        html = fh.read()
+    html = html.replace("</body>", controls_html + "</body>")
+    with open(f.name, "w") as fh:
+        fh.write(html)
+
+    return f.name
 
 
 def render_graph_agraph(G: nx.MultiDiGraph, entity_type_filter: list, confidence_threshold: float,
@@ -176,19 +315,27 @@ def main():
 
     col1, col2 = st.columns([2, 1])
 
-    with col1:
-        st.subheader("Memory Graph")
-        html_path = render_graph_pyvis(G, selected_etypes, confidence_threshold, status_filter)
-        with open(html_path) as f:
-            html_content = f.read()
-        st.components.v1.html(html_content, height=520, scrolling=True)
-        selected_node = None
-
+    # --- Entity Browser (col2, rendered first so we know the focus target) ---
     with col2:
-        st.subheader("Entity Browser")
+        st.subheader("Entity Browser 🔗")
         entity_names = [f"{e.canonical_name} ({e.entity_type.value})" for e in entities]
         selected_idx = st.selectbox("Select Entity", range(len(entity_names)),
                                      format_func=lambda i: entity_names[i])
+
+    # Determine focus node
+    focus_entity_id = None
+    if selected_idx is not None:
+        focus_entity_id = entities[selected_idx].entity_id
+
+    # --- Graph View (col1, uses focus_entity_id) ---
+    with col1:
+        st.subheader("Memory Graph")
+        st.caption("🔍 Use +/− buttons or scroll to zoom · Click an entity in the browser to focus")
+        html_path = render_graph_pyvis(G, selected_etypes, confidence_threshold, status_filter,
+                                       focus_node_id=focus_entity_id)
+        with open(html_path) as f:
+            html_content = f.read()
+        st.components.v1.html(html_content, height=640, scrolling=False)
 
         if selected_idx is not None:
             entity = entities[selected_idx]

@@ -2,31 +2,31 @@
   "question": "What topics were discussed between Ken Lay and Jeff Skilling?",
   "matched_entities": [
     {
-      "entity_id": "551a8d6e-19da-4ab1-b5b3-527ca733ae93",
+      "entity_id": "a8f65887-d325-44fe-ac78-449f4f7fc0a7",
       "canonical_name": "jdasovic@enron.com",
       "entity_type": "person",
       "score": 1.0
     },
     {
-      "entity_id": "1676d9e8-4498-431b-a829-515b13de35db",
+      "entity_id": "12b1ff66-d6c7-41f9-a4e5-8ab7b40095d6",
       "canonical_name": "Kenneth Lay",
       "entity_type": "person",
       "score": 1.0
     },
     {
-      "entity_id": "35f4f306-a11c-47ae-bae1-f2082286b7ab",
-      "canonical_name": "Bill Williams III",
+      "entity_id": "e25edb4c-20fe-495c-965c-ed373169e44a",
+      "canonical_name": "Patrick H Wood III",
       "entity_type": "person",
       "score": 1.0
     },
     {
-      "entity_id": "cebc799f-923a-4827-912e-54938ec90b55",
+      "entity_id": "e3d42f09-81d7-49a0-bdd1-8dfd42c9f8d7",
       "canonical_name": "Transwestern",
       "entity_type": "organization",
       "score": 1.0
     },
     {
-      "entity_id": "cb79d31c-2427-418e-ae95-e782df5b784f",
+      "entity_id": "9f126dd9-7f9b-4378-bd72-e80db6b98bde",
       "canonical_name": "Comprehensive Settlement",
       "entity_type": "project",
       "score": 1.0
@@ -34,72 +34,82 @@
   ],
   "claims": [
     {
-      "claim": "Kenneth Lay opinion optimistic about actions taken",
-      "claim_id": "c028622e-dfa4-450a-a61c-0e9120e7f914",
-      "claim_type": "opinion",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.9618784530386739,
-      "evidence": [
-        {
-          "excerpt": "i also remain optimistic that the actions weve taken over the past couple of weeks have addressed our customer and counterparty credit and liquidity concerns",
-          "source_id": "120664",
-          "date": "2001-11-14T00:00:00",
-          "sender": "chairman.ken@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "jdasovic@enron.com sent_to Emily Sellers",
-      "claim_id": "b83175f8-a656-4b32-918a-885dff7aff77",
-      "claim_type": "sent_to",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.9312154696132596,
-      "evidence": [
-        {
-          "excerpt": "From: jeff.dasovich@enron.com\nTo: nancy.sellers@robertmondavi.com",
-          "source_id": "78280",
-          "date": "2001-10-08T00:00:00",
-          "sender": "jeff.dasovich@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "jdasovic@enron.com mentioned got message",
-      "claim_id": "03be9815-f4cc-49bc-a9c7-c9b24889a2b0",
+      "claim": "Alan Comnes mentioned Kenneth Lay",
+      "claim_id": "a8cf7627-79dc-4af1-9963-94a3de1f18d4",
       "claim_type": "mentioned",
       "confidence": 1.0,
       "status": "active",
-      "score": 0.9312154696132596,
+      "rrf_score": 0.04438773872572621,
       "evidence": [
         {
-          "excerpt": "got message",
-          "source_id": "79082",
-          "date": "2001-10-03T00:00:00",
-          "sender": "jeff.dasovich@enron.com"
+          "excerpt": "jeff asked for this for ken lay",
+          "source_id": "57504",
+          "date": "2001-05-01T00:00:00",
+          "sender": "alan.comnes@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Bill Lockyer opinion Kenneth Lay",
+      "claim_id": "ababf4bb-b1a8-4851-9e22-4363b93f0cb6",
+      "claim_type": "opinion",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.043445003988237675,
+      "evidence": [
+        {
+          "excerpt": "lockyer said i would love to personally escort lay to an 8by10 cell that he would share with a tattooed dude who says hi my name is spike honey",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
         },
         {
-          "excerpt": "bill and jeff will have their own hardhats",
-          "source_id": "446380",
-          "date": "2001-05-04T00:00:00",
-          "sender": "joannie.williamson@enron.com"
-        },
+          "excerpt": "ken lay chairman of the texasbased energy company enron corp and a close friend of bush should be locked in a prison cell with a tattooed inmate named spike",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Bill Lockyer requested Kenneth Lay",
+      "claim_id": "0500889d-744d-4469-88ab-61db5e37aa19",
+      "claim_type": "requested",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04231287557440792,
+      "evidence": [
         {
-          "excerpt": "thanks boy am i glad ive sat on that 94 cab wow",
-          "source_id": "78280",
-          "date": "2001-10-08T00:00:00",
-          "sender": "jeff.dasovich@enron.com"
+          "excerpt": "the states democratic attorney general bill lockyer sharpened his attacks on enrons top executive ken lay lockyer said his office would like to file civil and criminal charges against the energy supplier",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Kenneth Lay mentioned First meeting scheduled for Tuesday October 2nd",
+      "claim_id": "32ccf0fa-e813-4d47-9bbd-094cd04d1a26",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.041706349206349205,
+      "evidence": [
+        {
+          "excerpt": "however our first meeting will be on tuesday october 2nd",
+          "source_id": "273479",
+          "date": "2001-08-24T00:00:00",
+          "sender": "kenneth.lay@enron.com"
         }
       ]
     },
     {
       "claim": "jdasovic@enron.com works_at Enron Industrial Markets",
-      "claim_id": "e8a6e30e-6df0-4506-872a-1ad148799e88",
+      "claim_id": "1a68b3b0-6a2f-423f-9187-0757c4157916",
       "claim_type": "works_at",
       "confidence": 1.0,
       "status": "active",
-      "score": 0.9270718232044198,
+      "rrf_score": 0.04108480064764218,
       "evidence": [
         {
           "excerpt": "jeff.dasovich@enron.com",
@@ -122,109 +132,81 @@
       ]
     },
     {
+      "claim": "jdasovic@enron.com sent_to Emily Sellers",
+      "claim_id": "cea39a59-4234-49b1-8226-be950474f819",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04082039028275587,
+      "evidence": [
+        {
+          "excerpt": "From: jeff.dasovich@enron.com\nTo: nancy.sellers@robertmondavi.com",
+          "source_id": "78280",
+          "date": "2001-10-08T00:00:00",
+          "sender": "jeff.dasovich@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Kenneth Lay sent_to dl-ga-all_enron_worldwide2@enron.com",
+      "claim_id": "5d9c9910-7157-48bf-b3a0-7aa13de1f5f6",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.040655088900702935,
+      "evidence": [
+        {
+          "excerpt": "From: chairman.ken@enron.com\nTo: dl-ga-all_enron_worldwide2@enron.com",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "jdasovic@enron.com mentioned 94 cab",
+      "claim_id": "0344d384-2824-4e0d-9aa9-00a18da39d4d",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04056437389770723,
+      "evidence": [
+        {
+          "excerpt": "thanks boy am i glad ive sat on that 94 cab wow",
+          "source_id": "78280",
+          "date": "2001-10-08T00:00:00",
+          "sender": "jeff.dasovich@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Kenneth Lay opinion optimistic about actions taken",
+      "claim_id": "480cf8df-4ae5-4c95-9b92-37900efdb8bd",
+      "claim_type": "opinion",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04038427326098559,
+      "evidence": [
+        {
+          "excerpt": "i also remain optimistic that the actions weve taken over the past couple of weeks have addressed our customer and counterparty credit and liquidity concerns",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
+        }
+      ]
+    },
+    {
       "claim": "jdasovic@enron.com requested call when u can",
-      "claim_id": "affcb16a-c83f-48ff-9d45-55f8b5db4a9a",
+      "claim_id": "344f99f1-2028-4cb0-ae21-51186f8f1c6c",
       "claim_type": "requested",
       "confidence": 1.0,
       "status": "active",
-      "score": 0.9270718232044198,
+      "rrf_score": 0.04031635802469136,
       "evidence": [
         {
           "excerpt": "call when u can",
           "source_id": "79082",
           "date": "2001-10-03T00:00:00",
-          "sender": "jeff.dasovich@enron.com"
-        },
-        {
-          "excerpt": "jeff asked for this for ken lay  the original article had a table of  generators and the amount of gouging by each",
-          "source_id": "57504",
-          "date": "2001-05-01T00:00:00",
-          "sender": "alan.comnes@enron.com"
-        },
-        {
-          "excerpt": "if your company has a draft of comments we would appreciate an opportunity to look at them to avoid substantive conflicts",
-          "source_id": "158220",
-          "date": "2001-03-19T00:00:00",
-          "sender": "jeff.dasovich@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Kenneth Lay sent_to Tim Belden",
-      "claim_id": "8952013e-0ce6-482d-8612-dbf9d7f257bd",
-      "claim_type": "sent_to",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.8939226519337016,
-      "evidence": [
-        {
-          "excerpt": "From: kenneth.lay@enron.com\nTo: tim.belden@enron.com",
-          "source_id": "273479",
-          "date": "2001-08-24T00:00:00",
-          "sender": "kenneth.lay@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Kenneth Lay decided Managing Directors Meeting",
-      "claim_id": "8d9b8d4e-1154-4870-8a67-03a1ea5c4a32",
-      "claim_type": "decided",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.8939226519337016,
-      "evidence": [
-        {
-          "excerpt": "as announced earlier we will be bringing all managing directors together on a quarterly basis",
-          "source_id": "273479",
-          "date": "2001-08-24T00:00:00",
-          "sender": "kenneth.lay@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Kenneth Lay requested Hold first Monday of every quarter from 8:30 am for meetings",
-      "claim_id": "a24933cd-c833-4247-b616-7d35982462be",
-      "claim_type": "requested",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.8939226519337016,
-      "evidence": [
-        {
-          "excerpt": "please hold open the first monday of every quarter from 830 am to  pm for this purpose",
-          "source_id": "273479",
-          "date": "2001-08-24T00:00:00",
-          "sender": "kenneth.lay@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Kenneth Lay mentioned First meeting scheduled for Tuesday October 2nd",
-      "claim_id": "983ce28c-6e01-4f2b-9859-7c7a3cbf68cd",
-      "claim_type": "mentioned",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.8939226519337016,
-      "evidence": [
-        {
-          "excerpt": "however our first meeting will be on tuesday october 2nd",
-          "source_id": "273479",
-          "date": "2001-08-24T00:00:00",
-          "sender": "kenneth.lay@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "jdasovic@enron.com participated_in California Plan",
-      "claim_id": "11ef1bd9-9965-41d2-8d46-a8154cd533c4",
-      "claim_type": "participated_in",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.7812154696132596,
-      "evidence": [
-        {
-          "excerpt": "the california plan that jeff and i must provide to rick",
-          "source_id": "82185",
-          "date": "2001-04-10T00:00:00",
           "sender": "jeff.dasovich@enron.com"
         }
       ]

@@ -2,31 +2,31 @@
   "question": "What decisions were made about the California energy situation?",
   "matched_entities": [
     {
-      "entity_id": "6a61dc39-c42d-4784-b349-b006b5ff226a",
+      "entity_id": "e25edb4c-20fe-495c-965c-ed373169e44a",
+      "canonical_name": "Patrick H Wood III",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "b4e26ed0-c34b-4d26-a715-14c8d7442f05",
       "canonical_name": "Alan Julson",
       "entity_type": "person",
       "score": 1.0
     },
     {
-      "entity_id": "35f4f306-a11c-47ae-bae1-f2082286b7ab",
-      "canonical_name": "Bill Williams III",
-      "entity_type": "person",
-      "score": 1.0
-    },
-    {
-      "entity_id": "ae9229e7-0960-427e-8e8f-217a08a531df",
+      "entity_id": "8f916770-a406-47f2-881a-3e9355cfb55e",
       "canonical_name": "Enron Industrial Markets",
       "entity_type": "organization",
       "score": 1.0
     },
     {
-      "entity_id": "6e96e4cc-9b03-49af-b7ca-ca223a3bf29a",
+      "entity_id": "0dcbec3a-31ec-44b5-8388-9985f7e3c383",
       "canonical_name": "OU",
       "entity_type": "organization",
       "score": 1.0
     },
     {
-      "entity_id": "e857a0c0-1d11-43c0-a673-58a5e1d40ea3",
+      "entity_id": "3e996259-0f8a-43db-88e5-4a7ef4b68d03",
       "canonical_name": "University of Texas at Austin",
       "entity_type": "organization",
       "score": 1.0
@@ -34,166 +34,76 @@
   ],
   "claims": [
     {
-      "claim": "Enron Industrial Markets discussed investor conference call overview",
-      "claim_id": "8dc8cab4-e577-4c99-9a48-615e5845929b",
-      "claim_type": "discussed",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.9618784530386739,
-      "evidence": [
-        {
-          "excerpt": "today enron hosted a conference call to give investors a current overview of the company",
-          "source_id": "120664",
-          "date": "2001-11-14T00:00:00",
-          "sender": "chairman.ken@enron.com"
-        },
-        {
-          "excerpt": "we also discussed our existing financial vehicles including osprey marlin and yosemite in further detail",
-          "source_id": "120664",
-          "date": "2001-11-14T00:00:00",
-          "sender": "chairman.ken@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Enron Industrial Markets status_change overleveraged",
-      "claim_id": "f880c0de-0538-4363-8200-86762fcfeb4c",
-      "claim_type": "status_change",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.9618784530386739,
-      "evidence": [
-        {
-          "excerpt": "because of these bad investments weve become overleveraged as a company",
-          "source_id": "120664",
-          "date": "2001-11-14T00:00:00",
-          "sender": "chairman.ken@enron.com"
-        },
-        {
-          "excerpt": "enr on20 now ranks no 7 on the fortune 500 up from no 18 last year",
-          "source_id": "412014",
-          "date": "2001-04-02T00:00:00",
-          "sender": "office.chairman@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Alan Julson sent_to Jason Wolfe",
-      "claim_id": "82cf69ae-d1b8-4715-bb9e-5352982fe97a",
-      "claim_type": "sent_to",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.8127071823204419,
-      "evidence": [
-        {
-          "excerpt": "From: vze28szx@verizon.net To: jason.wolfe@enron.com",
-          "source_id": "513340",
-          "date": "2001-05-18T00:00:00",
-          "sender": "vze28szx@verizon.net"
-        }
-      ]
-    },
-    {
-      "claim": "Alan Julson mentioned visiting June 23 and leaving the next Sunday",
-      "claim_id": "cc3245b1-c0fe-4bc6-8612-46205223362e",
+      "claim": "Reliant Energy mentioned Supplied energy to California",
+      "claim_id": "6f7b1b06-8823-446f-992a-6daf6af94d31",
       "claim_type": "mentioned",
       "confidence": 1.0,
       "status": "active",
-      "score": 0.8127071823204419,
+      "rrf_score": 0.04117636005768589,
       "evidence": [
         {
-          "excerpt": "i get into town on june 23 and i fly out the next sunday",
-          "source_id": "513340",
-          "date": "2001-05-18T00:00:00",
-          "sender": "vze28szx@verizon.net"
-        },
-        {
-          "excerpt": "any interest in an astros game on sunday afternoon june 24",
-          "source_id": "513340",
-          "date": "2001-05-18T00:00:00",
-          "sender": "vze28szx@verizon.net"
-        },
-        {
-          "excerpt": "i think i am staying with becky at the beginning of the week at least though lissa has moved in with her now",
-          "source_id": "513340",
-          "date": "2001-05-18T00:00:00",
-          "sender": "vze28szx@verizon.net"
-        },
-        {
-          "excerpt": "i will still be haning out with shelly on saturday night",
-          "source_id": "513340",
-          "date": "2001-05-18T00:00:00",
-          "sender": "vze28szx@verizon.net"
+          "excerpt": "houstonbased reliant energy and enron corp which have supplied energy to california until recently",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
         }
       ]
     },
     {
-      "claim": "Alan Julson requested place to crash a few nights",
-      "claim_id": "19a1e440-fbf9-4526-8944-6eb6144628cb",
-      "claim_type": "requested",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.8127071823204419,
-      "evidence": [
-        {
-          "excerpt": "i may need a place to crash a few nights",
-          "source_id": "513340",
-          "date": "2001-05-18T00:00:00",
-          "sender": "vze28szx@verizon.net"
-        }
-      ]
-    },
-    {
-      "claim": "Enron Industrial Markets decided create a capital book",
-      "claim_id": "a48adb1b-a7ef-4955-bb8e-d1669f0f8c1a",
-      "claim_type": "decided",
-      "confidence": 1.0,
-      "status": "active",
-      "score": 0.7861878453038673,
-      "evidence": [
-        {
-          "excerpt": "we have decided to create a capital book",
-          "source_id": "350639",
-          "date": "2001-04-16T00:00:00",
-          "sender": "enron.announcements@enron.com"
-        },
-        {
-          "excerpt": "enron decided to sell pge since a regulated utility no longer fit with its strategy to buy and sell energy on wholesale markets",
-          "source_id": "157933",
-          "date": "2001-03-26T00:00:00",
-          "sender": "miyung.buster@enron.com"
-        },
-        {
-          "excerpt": "our goal is to have all enron employees usin g20 the xms system by april 15",
-          "source_id": "160524",
-          "date": "2001-03-02T00:00:00",
-          "sender": "enron.announcements@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Enron Industrial Markets opinion positioned for great success this year and beyond",
-      "claim_id": "e8f67280-0ce9-4d6e-af73-4b0db21ecd5b",
+      "claim": "Patrick H Wood III opinion prepared to order californias energy suppliers to make heavy refunds because of overcharging",
+      "claim_id": "b3bae756-3565-425c-be88-0536af440a66",
       "claim_type": "opinion",
       "confidence": 1.0,
       "status": "active",
-      "score": 0.774585635359116,
+      "rrf_score": 0.04108480064764218,
       "evidence": [
         {
-          "excerpt": "our vision to become the worlds leading company positions our company for great success this year and beyond",
-          "source_id": "209885",
-          "date": "2001-04-02T00:00:00",
-          "sender": "general.announcement@enron.com"
+          "excerpt": "the governor got some support from two ferc members who said wednesday 20 that they are prepared to order californias energy suppliers to make heavy 20 refunds because of overcharging20 but the two commissioners pat wood iii and william massey",
+          "source_id": "72065",
+          "date": "2001-06-21T00:00:00",
+          "sender": "angela.wilson@enron.com"
         }
       ]
     },
     {
-      "claim": "Bill Williams III works_at Enron Industrial Markets",
-      "claim_id": "3f7d39af-726e-4bc2-a47b-df2e8eac12ea",
+      "claim": "Patrick H Wood III role_assignment FERC appointee",
+      "claim_id": "8e21cdd2-787c-4bfb-9dda-79506782d280",
+      "claim_type": "role_assignment",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04082039028275587,
+      "evidence": [
+        {
+          "excerpt": "bushs two new fer c appointees pat wood iii and nora brownell",
+          "source_id": "72065",
+          "date": "2001-06-21T00:00:00",
+          "sender": "angela.wilson@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Patrick H Wood III mentioned Bush ally from Texas",
+      "claim_id": "a23ddaaf-8d42-4244-9fe1-b01e3d763e40",
+      "claim_type": "mentioned",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.04056437389770723,
+      "evidence": [
+        {
+          "excerpt": "patrick h wood iii a bush ally from texas",
+          "source_id": "72065",
+          "date": "2001-06-21T00:00:00",
+          "sender": "angela.wilson@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Patrick H Wood III works_at Enron Industrial Markets",
+      "claim_id": "511573f8-747d-4472-9e15-4e37bfccc8d4",
       "claim_type": "works_at",
       "confidence": 1.0,
       "status": "active",
-      "score": 0.7596685082872927,
+      "rrf_score": 0.04031635802469136,
       "evidence": [
         {
           "excerpt": "bill.iii@enron.com",
@@ -204,15 +114,15 @@
       ]
     },
     {
-      "claim": "Bill Williams III mentioned appreciation for help",
-      "claim_id": "7a636246-a76a-4f09-b979-8a708e5cf03c",
-      "claim_type": "mentioned",
-      "confidence": 1.0,
+      "claim": "Patrick H Wood III requested help",
+      "claim_id": "112f04f7-ed0d-42f7-a10c-1de026f7dbc1",
+      "claim_type": "requested",
+      "confidence": 0.7,
       "status": "active",
-      "score": 0.7596685082872927,
+      "rrf_score": 0.04007597340930674,
       "evidence": [
         {
-          "excerpt": "i appreciate the help",
+          "excerpt": "you shouldnt be sorry about the fact that you need help",
           "source_id": "464364",
           "date": "2001-03-15T00:00:00",
           "sender": "kate.symes@enron.com"
@@ -220,18 +130,78 @@
       ]
     },
     {
-      "claim": "Enron Industrial Markets mentioned data storage market",
-      "claim_id": "0116ab00-5dad-4f79-99fe-46f7fc60b4c7",
+      "claim": "Alan Julson sent_to Jason Wolfe",
+      "claim_id": "eb668f94-14d6-497d-a4b2-80d937a48a1e",
+      "claim_type": "sent_to",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.03984287317620651,
+      "evidence": [
+        {
+          "excerpt": "From: vze28szx@verizon.net To: jason.wolfe@enron.com",
+          "source_id": "513340",
+          "date": "2001-05-18T00:00:00",
+          "sender": "vze28szx@verizon.net"
+        }
+      ]
+    },
+    {
+      "claim": "Alan Julson mentioned hanging out with Shelly on Saturday night",
+      "claim_id": "ceda91d6-fe35-4cfb-8581-6894dc675391",
       "claim_type": "mentioned",
       "confidence": 1.0,
       "status": "active",
-      "score": 0.7256906077348065,
+      "rrf_score": 0.039616731159019716,
       "evidence": [
         {
-          "excerpt": "read about enrons entry into the data storage market",
-          "source_id": "463378",
-          "date": "2001-02-02T00:00:00",
-          "sender": "enron.announcements@enron.com"
+          "excerpt": "i will still be haning out with shelly on saturday night",
+          "source_id": "513340",
+          "date": "2001-05-18T00:00:00",
+          "sender": "vze28szx@verizon.net"
+        }
+      ]
+    },
+    {
+      "claim": "Alan Julson requested place to crash a few nights",
+      "claim_id": "4af70e5c-2447-4b52-8bc0-519b99c03777",
+      "claim_type": "requested",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.039397240377632536,
+      "evidence": [
+        {
+          "excerpt": "i may need a place to crash a few nights",
+          "source_id": "513340",
+          "date": "2001-05-18T00:00:00",
+          "sender": "vze28szx@verizon.net"
+        }
+      ]
+    },
+    {
+      "claim": "jdasovic@enron.com works_at Enron Industrial Markets",
+      "claim_id": "1a68b3b0-6a2f-423f-9187-0757c4157916",
+      "claim_type": "works_at",
+      "confidence": 1.0,
+      "status": "active",
+      "rrf_score": 0.039184111647879764,
+      "evidence": [
+        {
+          "excerpt": "jeff.dasovich@enron.com",
+          "source_id": "79082",
+          "date": "2001-10-03T00:00:00",
+          "sender": "jeff.dasovich@enron.com"
+        },
+        {
+          "excerpt": "jeff.dasovich@enron.com",
+          "source_id": "82185",
+          "date": "2001-04-10T00:00:00",
+          "sender": "jeff.dasovich@enron.com"
+        },
+        {
+          "excerpt": "jeff.dasovich@enron.com",
+          "source_id": "62404",
+          "date": "2001-07-30T00:00:00",
+          "sender": "janel.guerrero@enron.com"
         }
       ]
     }
