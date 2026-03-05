@@ -2,60 +2,44 @@
   "question": "What topics did Kenneth Lay discuss?",
   "matched_entities": [
     {
-      "entity_id": "54ddcd79-1d72-46e6-a412-6d1d3ae510d9",
+      "entity_id": "c6331f2f-6c13-49c3-9e18-658ed4aeecb7",
       "canonical_name": "Kenneth Lay",
       "entity_type": "person",
       "score": 1.0
     },
     {
-      "entity_id": "5a1fabfa-1cee-4c68-b252-63358e49494f",
+      "entity_id": "264f5217-6b99-4db1-8b79-d637320ba9c1",
       "canonical_name": "Ken",
       "entity_type": "person",
       "score": 1.0
     },
     {
-      "entity_id": "a85ba1a4-fbe3-412c-bd03-9b22d80aa40e",
+      "entity_id": "1a3f3c3c-b800-44c1-93a6-80b5fbafa517",
+      "canonical_name": "Lay",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "d46c6c8d-f959-44b5-942b-9dc0dd49f7ab",
       "canonical_name": "Comprehensive Settlement",
       "entity_type": "project",
       "score": 1.0
     },
     {
-      "entity_id": "f14d7572-98d7-4b12-b7dc-51e5d314a00e",
-      "canonical_name": "United States",
-      "entity_type": "location",
-      "score": 1.0
-    },
-    {
-      "entity_id": "4f1c9c39-5d74-4af7-978c-7c10efc02de5",
-      "canonical_name": "Ned Holmes, Ken Lay, Marc J Shapiro",
-      "entity_type": "person",
-      "score": 0.5418034195899963
+      "entity_id": "f36df6e8-c40c-42dc-b714-a9f549c7d0af",
+      "canonical_name": "Ken Lay should be locked in prison",
+      "entity_type": "topic",
+      "score": 0.5277702808380127
     }
   ],
   "claims": [
     {
-      "claim": "Sally Beck mentioned Kenneth Lay",
-      "claim_id": "2f0a4163-b624-4054-8000-4f316d9c007d",
-      "claim_type": "mentioned",
-      "confidence": 0.4,
-      "status": "active",
-      "rrf_score": 0.06230077413479053,
-      "evidence": [
-        {
-          "excerpt": "i committed months ago to attend a meeting that ken lay asked to be involved in",
-          "source_id": "30923",
-          "date": "2001-09-26T00:00:00",
-          "sender": "sally.beck@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Kenneth Lay sent_to K. Allen",
-      "claim_id": "6033e317-8ab5-4502-bf01-0f3d403916de",
+      "claim": "Kenneth Lay sent_to Phillip K Allen",
+      "claim_id": "7d80b8e8-d4e6-4331-9ad3-ec80f0f01a16",
       "claim_type": "sent_to",
-      "confidence": 0.5,
+      "confidence": 0.304,
       "status": "active",
-      "rrf_score": 0.062111801242236024,
+      "rrf_score": 0.06353209026563073,
       "evidence": [
         {
           "excerpt": "From: kenneth.lay@enron.com\nTo: k..allen@enron.com",
@@ -66,63 +50,31 @@
       ]
     },
     {
-      "claim": "Bill Lockyer mentioned Kenneth Lay",
-      "claim_id": "00492c6e-9dda-4aa7-b79d-9e67f282098b",
-      "claim_type": "mentioned",
-      "confidence": 0.7,
-      "status": "active",
-      "rrf_score": 0.06190061028770706,
-      "evidence": [
-        {
-          "excerpt": "californias democratic attorney general bill lockyer suggested in an interview published by the wall street journal on tuesday that ken lay chairman of the texasbased energy company enron corp and a close friend of bush should be locked in a prison cell with a tattooed inmate named spike",
-          "source_id": "74091",
-          "date": "2001-05-29T00:00:00",
-          "sender": "ann.schmidt@enron.com"
-        }
-      ]
-    },
-    {
       "claim": "Kenneth Lay sent_to Sally Beck",
-      "claim_id": "f5bccba5-d359-407c-a7e7-6346ba27c612",
+      "claim_id": "41725625-f328-4e5c-ba1b-116f27c816c5",
       "claim_type": "sent_to",
-      "confidence": 0.5,
+      "confidence": 0.304,
       "status": "active",
-      "rrf_score": 0.061342072759937125,
+      "rrf_score": 0.06320163178968044,
       "evidence": [
         {
-          "excerpt": "From: kenneth.lay@enron.com\nTo: k..allen@enron.com, sally.beck@enron.com",
+          "excerpt": "From: kenneth.lay@enron.com\nTo: sally.beck@enron.com",
           "source_id": "273479",
           "date": "2001-08-24T00:00:00",
           "sender": "kenneth.lay@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Kenneth Lay mentioned President Bush",
-      "claim_id": "c84e4068-ba61-4cdf-8e10-e179a5c44af8",
-      "claim_type": "mentioned",
-      "confidence": 0.7,
-      "status": "active",
-      "rrf_score": 0.06105884666335486,
-      "evidence": [
-        {
-          "excerpt": "ken lay chairman of the texasbased energy company enron corp and a close friend of bush",
-          "source_id": "74091",
-          "date": "2001-05-29T00:00:00",
-          "sender": "ann.schmidt@enron.com"
         }
       ]
     },
     {
       "claim": "Kenneth Lay sent_to Tim Belden",
-      "claim_id": "8b205294-652d-4940-ae6e-1b701c3792df",
+      "claim_id": "96f79ac2-3bdd-47e5-8799-63265265e110",
       "claim_type": "sent_to",
-      "confidence": 0.5,
+      "confidence": 0.304,
       "status": "active",
-      "rrf_score": 0.060787151916184175,
+      "rrf_score": 0.06258094635703744,
       "evidence": [
         {
-          "excerpt": "From: kenneth.lay@enron.com\nTo: k..allen@enron.com, sally.beck@enron.com, tim.belden@enron.com",
+          "excerpt": "From: kenneth.lay@enron.com\nTo: tim.belden@enron.com",
           "source_id": "273479",
           "date": "2001-08-24T00:00:00",
           "sender": "kenneth.lay@enron.com"
@@ -130,28 +82,12 @@
       ]
     },
     {
-      "claim": "Kenneth Lay mentioned Enron North America Corp",
-      "claim_id": "e759b1a9-a1fd-4ec9-b0af-d3aee1895e62",
-      "claim_type": "mentioned",
-      "confidence": 0.7,
-      "status": "active",
-      "rrf_score": 0.05893824485373782,
-      "evidence": [
-        {
-          "excerpt": "lay the chairman of enron corp is testing the water with various community leaders",
-          "source_id": "74091",
-          "date": "2001-05-29T00:00:00",
-          "sender": "ann.schmidt@enron.com"
-        }
-      ]
-    },
-    {
       "claim": "Kenneth Lay proposed Managing Directors Quarterly Meetings",
-      "claim_id": "9b3b11ac-0b32-46a2-a34c-69c441ee7b90",
+      "claim_id": "016978cf-3dd3-4cf4-b56e-344b4ed2b886",
       "claim_type": "proposed",
-      "confidence": 0.9,
+      "confidence": 0.548,
       "status": "active",
-      "rrf_score": 0.05886727768103821,
+      "rrf_score": 0.06092032967032967,
       "evidence": [
         {
           "excerpt": "as announced earlier we will be bringing all managing directors together on a quarterly basis",
@@ -162,15 +98,31 @@
       ]
     },
     {
-      "claim": "Kenneth Lay works_at Enron North America Corp",
-      "claim_id": "7ea44121-01fd-4f51-bc31-c5e98536f45a",
-      "claim_type": "works_at",
-      "confidence": 0.8,
+      "claim": "Kenneth Lay mentioned Federal Energy Regulatory Commission",
+      "claim_id": "1273d222-0130-4c4c-ab84-1efb3e8d8a2b",
+      "claim_type": "mentioned",
+      "confidence": 0.305,
       "status": "active",
-      "rrf_score": 0.05884290475083314,
+      "rrf_score": 0.06061301882197405,
       "evidence": [
         {
-          "excerpt": "kenneth lay who heads the enron corporation",
+          "excerpt": "kenneth lay who heads the enron corporation and has sought to influence the selection of members of the federal energy regulatory commission",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Kenneth Lay mentioned close friend of Bush",
+      "claim_id": "ad0708fc-86e5-4067-a869-1abf2b658b93",
+      "claim_type": "mentioned",
+      "confidence": 0.305,
+      "status": "active",
+      "rrf_score": 0.060517451733408764,
+      "evidence": [
+        {
+          "excerpt": "ken lay chairman of the texasbased energy company enron corp and a close friend of bush",
           "source_id": "74091",
           "date": "2001-05-29T00:00:00",
           "sender": "ann.schmidt@enron.com"
@@ -179,17 +131,71 @@
     },
     {
       "claim": "Kenneth Lay informed First meeting scheduled for Tuesday October 2nd",
-      "claim_id": "29bbe638-8d3d-450c-859d-b4f68421c0f5",
+      "claim_id": "dc9959cc-1f64-450a-939b-9094edfc35ee",
       "claim_type": "informed",
-      "confidence": 0.8,
+      "confidence": 0.487,
       "status": "active",
-      "rrf_score": 0.05823904001653362,
+      "rrf_score": 0.06043629573041338,
       "evidence": [
         {
           "excerpt": "however our first meeting will be on tuesday october 2nd",
           "source_id": "273479",
           "date": "2001-08-24T00:00:00",
           "sender": "kenneth.lay@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Bill Lockyer opinion Kenneth Lay",
+      "claim_id": "330d6dc8-3fa3-4e89-88d6-a99fb1fc2622",
+      "claim_type": "opinion",
+      "confidence": 0.305,
+      "status": "active",
+      "rrf_score": 0.060383690643157684,
+      "evidence": [
+        {
+          "excerpt": "californias attorney general bill lockyer also a democrat suggested to the wall street journal last week that some time in jail would be the best way to deal with one of mr bushs biggest supporters kenneth lay",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Kenneth Lay requested Hold first Monday of every quarter from 8:30 am for meetings",
+      "claim_id": "e1924d57-8162-4115-85de-545c0df1e370",
+      "claim_type": "requested",
+      "confidence": 0.548,
+      "status": "active",
+      "rrf_score": 0.05952107593898639,
+      "evidence": [
+        {
+          "excerpt": "please hold open the first monday of every quarter from 830 am to  pm for this purpose",
+          "source_id": "273479",
+          "date": "2001-08-24T00:00:00",
+          "sender": "kenneth.lay@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Kenneth Lay role_assignment Enron made very bad investments in noncore businesses",
+      "claim_id": "090344ad-c773-4e96-9a70-bfba0c10171f",
+      "claim_type": "role_assignment",
+      "confidence": 0.517,
+      "status": "active",
+      "rrf_score": 0.057628613197404144,
+      "evidence": [
+        {
+          "excerpt": "lay the chairman of enron corp is testing the water",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        },
+        {
+          "excerpt": "ken lay chairman of the texasbased energy company enron corp",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
         }
       ]
     }

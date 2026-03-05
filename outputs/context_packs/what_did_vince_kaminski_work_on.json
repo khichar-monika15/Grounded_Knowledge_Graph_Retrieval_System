@@ -2,63 +2,47 @@
   "question": "What did Vince Kaminski work on?",
   "matched_entities": [
     {
-      "entity_id": "091232b6-0e1b-42d1-aec4-ef5b4bbb136b",
-      "canonical_name": "Vince J Kaminski",
+      "entity_id": "c2f07d5a-8fec-49f5-9c24-37720f031f97",
+      "canonical_name": "Vince Kaminski",
       "entity_type": "person",
       "score": 1.0
     },
     {
-      "entity_id": "88c7b101-1aa8-4e85-b26f-86bc0cbc97ed",
-      "canonical_name": "time swap with Vince Kaminski",
+      "entity_id": "572f6e9a-d470-40e3-8b2b-4d524789da1c",
+      "canonical_name": "Vince",
       "entity_type": "topic",
-      "score": 0.6530939340591431
+      "score": 1.0
     },
     {
-      "entity_id": "7f0a749b-8b7d-4d3d-903a-95c588d56ae1",
+      "entity_id": "5b5b4296-9870-44da-b10f-049f8761c343",
+      "canonical_name": "Vince Kaminski approval for speaking with Youyi",
+      "entity_type": "topic",
+      "score": 0.5874263644218445
+    },
+    {
+      "entity_id": "a1508ec8-5981-4b91-8e13-29f510107517",
       "canonical_name": "J. Kaminski",
       "entity_type": "person",
       "score": 0.5140023827552795
     },
     {
-      "entity_id": "77639fd1-f1db-4c75-89bd-07ae34369cde",
-      "canonical_name": "Shawn Noonan",
+      "entity_id": "7461fce6-a990-41f8-80bd-ad42ef72ccdb",
+      "canonical_name": "Jeff McDonald",
       "entity_type": "person",
-      "score": 0.42512550950050354
-    },
-    {
-      "entity_id": "714ef060-255b-4ed0-b222-1ebbe40b5116",
-      "canonical_name": "Jeff Keeler",
-      "entity_type": "person",
-      "score": 0.42167797684669495
+      "score": 0.4846794903278351
     }
   ],
   "claims": [
     {
-      "claim": "Vince J Kaminski role_assignment Research",
-      "claim_id": "ff8d160f-798f-42d6-a33b-d6b2acaf767f",
-      "claim_type": "role_assignment",
-      "confidence": 0.9,
+      "claim": "Vince Kaminski proposed natural gas henry hub prices",
+      "claim_id": "fe35463a-439a-4222-8ddd-b3a9cc73281f",
+      "claim_type": "proposed",
+      "confidence": 0.332,
       "status": "active",
-      "rrf_score": 0.06430053288858154,
+      "rrf_score": 0.06356340039741679,
       "evidence": [
         {
-          "excerpt": "ill get vince to sign for research",
-          "source_id": "208330",
-          "date": "2001-05-04T00:00:00",
-          "sender": "cassandra.schultz@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Vince J Kaminski opinion Megawatt Daily",
-      "claim_id": "091bfd7a-653f-4936-b72b-d83c1805a0dc",
-      "claim_type": "opinion",
-      "confidence": 0.6,
-      "status": "active",
-      "rrf_score": 0.06127633867254857,
-      "evidence": [
-        {
-          "excerpt": "we recommend using",
+          "excerpt": "we shall send you natural gas henry hub prices right away",
           "source_id": "224429",
           "date": "2001-04-16T00:00:00",
           "sender": "vince.kaminski@enron.com"
@@ -66,12 +50,30 @@
       ]
     },
     {
-      "claim": "Vince J Kaminski sent_to Mulong Wang",
-      "claim_id": "ef106830-7ca0-4efa-a0ea-05dbe124359b",
-      "claim_type": "sent_to",
-      "confidence": 0.5,
+      "claim": "Vince mentioned Brian Mihura",
+      "claim_id": "52891f6b-6305-461e-b7b5-4b9f177d2414",
+      "claim_type": "mentioned",
+      "confidence": 0.453,
       "status": "active",
-      "rrf_score": 0.06112648735599555,
+      "rrf_score": 0.05394503387751699,
+      "evidence": [
+        {
+          "excerpt": "vince",
+          "source_id": "221744",
+          "date": "2001-10-19T00:00:00",
+          "sender": "j.kaminski@enron.com"
+        }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "claim": "Vince Kaminski sent_to Mulong Wang",
+      "claim_id": "b032ac89-0ab6-4cab-9eae-fb91dc7b0bcc",
+      "claim_type": "sent_to",
+      "confidence": 0.184,
+      "status": "uncertain",
+      "rrf_score": 0.05670980064764218,
       "evidence": [
         {
           "excerpt": "From: vince.kaminski@enron.com To: mlwang@uts.cc.utexas.edu",
@@ -82,60 +84,12 @@
       ]
     },
     {
-      "claim": "Vince J Kaminski requested Megawatt Daily",
-      "claim_id": "2c3b7707-9ea5-44dd-9150-18d40f3cd54d",
-      "claim_type": "requested",
-      "confidence": 0.6,
-      "status": "active",
-      "rrf_score": 0.06089426877470356,
-      "evidence": [
-        {
-          "excerpt": "you have to approach ft the publishers of megawatts daily a newsletter that produces the price index we recommend using and request the permision to use the data",
-          "source_id": "224429",
-          "date": "2001-04-16T00:00:00",
-          "sender": "vince.kaminski@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Vince J Kaminski sent_to Vasant Shanbhogue",
-      "claim_id": "750449e7-e8a1-4b47-9a58-4d6176ac2e5d",
-      "claim_type": "sent_to",
-      "confidence": 0.5,
-      "status": "active",
-      "rrf_score": 0.059724711270410194,
-      "evidence": [
-        {
-          "excerpt": "From: vince.kaminski@enron.com To: vasant.shanbhogue@enron.com",
-          "source_id": "224738",
-          "date": "2001-05-04T00:00:00",
-          "sender": "vince.kaminski@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Rafal Weron sent_to Vince J Kaminski",
-      "claim_id": "b1fc577d-d9d0-44e8-a1bb-4c452f033cb1",
-      "claim_type": "sent_to",
-      "confidence": 0.5,
-      "status": "active",
-      "rrf_score": 0.059470208166628846,
-      "evidence": [
-        {
-          "excerpt": "From: rweron@mazur.im.pwr.wroc.pl\nTo: vkamins@enron.com",
-          "source_id": "204233",
-          "date": "2001-01-29T00:00:00",
-          "sender": "rweron@mazur.im.pwr.wroc.pl"
-        }
-      ]
-    },
-    {
-      "claim": "Vince J Kaminski requested Kimberly Watson's assistant",
-      "claim_id": "ad9dd5e6-0413-4100-8896-3f6167e726fd",
-      "claim_type": "requested",
-      "confidence": 0.9,
-      "status": "active",
-      "rrf_score": 0.056762812331603275,
+      "claim": "Vince Kaminski mentioned Shirley Crenshaw",
+      "claim_id": "4cc692e0-4c1f-41cc-9521-ef64d703071b",
+      "claim_type": "mentioned",
+      "confidence": 0.183,
+      "status": "uncertain",
+      "rrf_score": 0.05644539028275587,
       "evidence": [
         {
           "excerpt": "please ask your assistant to call shirley and arrange the move",
@@ -146,31 +100,15 @@
       ]
     },
     {
-      "claim": "Vince J Kaminski proposed social gathering with Brian Mihura",
-      "claim_id": "f0cb9be0-4609-4933-8fc5-1a6db7f2c6bd",
-      "claim_type": "proposed",
-      "confidence": 0.6,
-      "status": "active",
-      "rrf_score": 0.05673748259349664,
+      "claim": "Vince Kaminski sent_to Vasant Shanbhogue",
+      "claim_id": "8e498373-a81e-46b1-990a-f54b706e59b1",
+      "claim_type": "sent_to",
+      "confidence": 0.198,
+      "status": "uncertain",
+      "rrf_score": 0.05618937389770723,
       "evidence": [
         {
-          "excerpt": "would you like to stop by this weekend for a drink or two",
-          "source_id": "221744",
-          "date": "2001-10-19T00:00:00",
-          "sender": "j.kaminski@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Vince J Kaminski opinion Summer Intern Program",
-      "claim_id": "a1760306-986a-47ff-aacc-f961f6b0777f",
-      "claim_type": "opinion",
-      "confidence": 0.4,
-      "status": "active",
-      "rrf_score": 0.05648564792400409,
-      "evidence": [
-        {
-          "excerpt": "we always face a challenge with summer interns we dont want to expose them to too much information we typically look for a selfcontained project and limit interns access to additional information",
+          "excerpt": "From: vince.kaminski@enron.com\nTo: vasant.shanbhogue@enron.com",
           "source_id": "224738",
           "date": "2001-05-04T00:00:00",
           "sender": "vince.kaminski@enron.com"
@@ -178,12 +116,156 @@
       ]
     },
     {
-      "claim": "Mulong Wang sent_to Vince J Kaminski",
-      "claim_id": "109ad82b-8704-420a-b2a7-0bdb9310128a",
+      "claim": "Vince Kaminski mentioned Megawatt Daily",
+      "claim_id": "fe819018-e8f1-4396-a2c0-17e1536d74d9",
+      "claim_type": "mentioned",
+      "confidence": 0.148,
+      "status": "uncertain",
+      "rrf_score": 0.05594135802469136,
+      "evidence": [
+        {
+          "excerpt": "please look at ft the publishers of megawatts daily a newsletter that produces the price index we recommend using",
+          "source_id": "224429",
+          "date": "2001-04-16T00:00:00",
+          "sender": "vince.kaminski@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Vince Kaminski proposed possible manipulation of wholesale electricity prices by energy firms",
+      "claim_id": "431b9fcc-d88f-480a-bed4-3b3119afbf4e",
+      "claim_type": "proposed",
+      "confidence": 0.221,
+      "status": "uncertain",
+      "rrf_score": 0.05570097340930674,
+      "evidence": [
+        {
+          "excerpt": "we shall prepare for you the electricity price information cinergy cobb and palo verde",
+          "source_id": "224429",
+          "date": "2001-04-16T00:00:00",
+          "sender": "vince.kaminski@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Vince Kaminski requested permission to use data from Megawatt Daily",
+      "claim_id": "35ee4e9b-cab0-4313-b60f-9849aa23feab",
+      "claim_type": "requested",
+      "confidence": 0.221,
+      "status": "uncertain",
+      "rrf_score": 0.055241731159019716,
+      "evidence": [
+        {
+          "excerpt": "you have to approach ft the publishers of megawatts daily a newsletter that produces the price index we recommend using and request the permision to use the data",
+          "source_id": "224429",
+          "date": "2001-04-16T00:00:00",
+          "sender": "vince.kaminski@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Vince Kaminski opinion academic research justification",
+      "claim_id": "0010a4d5-9d1b-4018-ae50-9b6e9fb08c61",
+      "claim_type": "opinion",
+      "confidence": 0.148,
+      "status": "uncertain",
+      "rrf_score": 0.055022240377632536,
+      "evidence": [
+        {
+          "excerpt": "please explain that this is for academic research and that we can produce the time series for you conditional on the permission from the publishers of megawatts daily",
+          "source_id": "224429",
+          "date": "2001-04-16T00:00:00",
+          "sender": "vince.kaminski@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Vince Kaminski approved Youyi desk arrangement",
+      "claim_id": "033f8d41-0590-4a74-97c1-62f71236fa64",
+      "claim_type": "approved",
+      "confidence": 0.183,
+      "status": "uncertain",
+      "rrf_score": 0.054809111647879764,
+      "evidence": [
+        {
+          "excerpt": "i dont see any problem for the time being he can keep his desk on the 19th floor as well and the same phone number",
+          "source_id": "210015",
+          "date": "2001-01-16T00:00:00",
+          "sender": "kimberly.watson@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Vince Kaminski participated_in Dabhol energy costs are several cents below that of roughly 600 mw of distributed generation",
+      "claim_id": "a9152f17-c0a1-4971-aa97-a11f4b93e222",
+      "claim_type": "participated_in",
+      "confidence": 0.15,
+      "status": "uncertain",
+      "rrf_score": 0.05460207231040564,
+      "evidence": [
+        {
+          "excerpt": "an analysis put together by sandeep kohli and reviewed by vince and me",
+          "source_id": "443933",
+          "date": "2001-01-05T00:00:00",
+          "sender": "stinson.gibner@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Vince Kaminski discussed Summer Intern Program",
+      "claim_id": "3f20261e-3487-46b6-96ee-9fb4ef31d551",
+      "claim_type": "discussed",
+      "confidence": 0.158,
+      "status": "uncertain",
+      "rrf_score": 0.05440086506694488,
+      "evidence": [
+        {
+          "excerpt": "i concur with vasant we always face a challenge with summer interns we dont want to expose them to too much information we typically look for a selfcontained project and limit interns access to additional information",
+          "source_id": "224738",
+          "date": "2001-05-04T00:00:00",
+          "sender": "vince.kaminski@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck mentioned Vince Kaminski",
+      "claim_id": "3b15b63f-9bbe-4cdf-9e5c-bad27aae2079",
+      "claim_type": "mentioned",
+      "confidence": 0.207,
+      "status": "uncertain",
+      "rrf_score": 0.054205246913580245,
+      "evidence": [
+        {
+          "excerpt": "i orchestrated the time swap with vince kaminiski",
+          "source_id": "30923",
+          "date": "2001-09-26T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Rafal Weron sent_to Vince Kaminski",
+      "claim_id": "244a7f18-8f12-4568-b30a-a899313c9f97",
       "claim_type": "sent_to",
-      "confidence": 0.8,
-      "status": "active",
-      "rrf_score": 0.05642712550607287,
+      "confidence": 0.137,
+      "status": "uncertain",
+      "rrf_score": 0.05401498816167766,
+      "evidence": [
+        {
+          "excerpt": "From: rweron@mazur.im.pwr.wroc.pl\nTo: vkamins@enron.com",
+          "source_id": "204233",
+          "date": "2001-01-29T00:00:00",
+          "sender": "rweron@mazur.im.pwr.wroc.pl"
+        }
+      ]
+    },
+    {
+      "claim": "Mulong Wang sent_to Vince Kaminski",
+      "claim_id": "36eed4e9-77c6-4d78-bcfa-00d86aafa181",
+      "claim_type": "sent_to",
+      "confidence": 0.295,
+      "status": "uncertain",
+      "rrf_score": 0.05382987153820487,
       "evidence": [
         {
           "excerpt": "to vincejkaminskienroncom",
@@ -193,6 +275,5 @@
         }
       ]
     }
-  ],
-  "conflicts": []
+  ]
 }

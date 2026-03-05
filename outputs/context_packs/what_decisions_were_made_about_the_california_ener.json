@@ -2,44 +2,44 @@
   "question": "What decisions were made about the California energy situation?",
   "matched_entities": [
     {
-      "entity_id": "5984f1fc-5d9a-4a76-99ed-f2c07d9fa833",
+      "entity_id": "a82c7407-625a-459e-9631-2b48646b75b8",
       "canonical_name": "Enron North America Corp",
       "entity_type": "organization",
       "score": 1.0
     },
     {
-      "entity_id": "5195aa6e-c499-4824-b5bd-e0896dbc18c0",
+      "entity_id": "29f27a85-6c4d-49fa-9a25-0e2f8ccc7576",
+      "canonical_name": "Oklahoma",
+      "entity_type": "organization",
+      "score": 1.0
+    },
+    {
+      "entity_id": "c9e17c73-2717-410c-97f0-6e62a22de6cf",
       "canonical_name": "California",
       "entity_type": "location",
       "score": 1.0
     },
     {
-      "entity_id": "ec5f84c3-c73c-4bcd-b134-22486b9ce38c",
-      "canonical_name": "supplied energy to California",
+      "entity_id": "5636149b-52be-42a0-862d-04f36c0ce547",
+      "canonical_name": "Proposed Decision Implementation",
       "entity_type": "topic",
-      "score": 0.7112257480621338
+      "score": 0.6600085496902466
     },
     {
-      "entity_id": "82e95843-0955-4223-b496-c054a0287b17",
-      "canonical_name": "California Energy Commission report",
-      "entity_type": "person",
-      "score": 0.704616367816925
-    },
-    {
-      "entity_id": "7d881dcb-ee7a-4fe9-986f-cba7c8db777b",
-      "canonical_name": "California Energy Regulation",
+      "entity_id": "522bb0e8-ead0-4491-946d-a91531a6872f",
+      "canonical_name": "Californians are getting very irritable about energy situation",
       "entity_type": "topic",
-      "score": 0.6931542158126831
+      "score": 0.6581637859344482
     }
   ],
   "claims": [
     {
       "claim": "Enron North America Corp sent_to Richard Shapiro",
-      "claim_id": "ee6fad5d-6649-40d3-9492-8c5d1cd57870",
+      "claim_id": "9415dbe5-d714-4ead-bfae-b4cb73445ce9",
       "claim_type": "sent_to",
-      "confidence": 0.5,
+      "confidence": 0.427,
       "status": "active",
-      "rrf_score": 0.05620500566737126,
+      "rrf_score": 0.05694942254082039,
       "evidence": [
         {
           "excerpt": "From: enron_update@concureworkplace.com\nTo: richard.shapiro@enron.com",
@@ -51,11 +51,11 @@
     },
     {
       "claim": "Enron North America Corp requested Richard Shapiro",
-      "claim_id": "17a496ad-4b47-44ef-bdb0-636100efbcf5",
+      "claim_id": "b90f268a-d689-44e7-a5a3-1edef1184492",
       "claim_type": "requested",
-      "confidence": 0.9,
+      "confidence": 0.769,
       "status": "active",
-      "rrf_score": 0.05601017378197053,
+      "rrf_score": 0.05579068300058335,
       "evidence": [
         {
           "excerpt": "the following reports have been waiting for your approval for more than 4 days  please review",
@@ -66,101 +66,15 @@
       ]
     },
     {
-      "claim": "Enron North America Corp decided responsibility for daily operations of building support services will transition from corporate to Enron Energy Services by year-end",
-      "claim_id": "4973d1a1-7ed2-4efc-a234-4389babe1170",
-      "claim_type": "decided",
-      "confidence": 1.0,
-      "status": "active",
-      "rrf_score": 0.05571588904922238,
-      "evidence": [
-        {
-          "excerpt": "responsibility for daily operations of building support services in the enron building houston leased offices and two pacific place omaha will be transitioning from corporate to enron energy services ees by yearend",
-          "source_id": "162985",
-          "date": "2001-02-21T00:00:00",
-          "sender": "rod.hayslett@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Enron North America Corp sent_to dl-ga-all_enron_worldwide2@enron.com",
-      "claim_id": "b05db557-7f0f-4550-b262-a5d4d76c644b",
-      "claim_type": "sent_to",
-      "confidence": 0.5,
-      "status": "active",
-      "rrf_score": 0.055227488560821894,
-      "evidence": [
-        {
-          "excerpt": "From: enron.announcements@enron.com\nTo: all.houston@enron.com",
-          "source_id": "32382",
-          "date": "2001-05-10T00:00:00",
-          "sender": "enron.announcements@enron.com"
-        },
-        {
-          "excerpt": "To: all.states@enron.com",
-          "source_id": "160524",
-          "date": "2001-03-02T00:00:00",
-          "sender": "enron.announcements@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Enron North America Corp mentioned Powerex",
-      "claim_id": "d17a17d6-114b-4ab4-8fbc-9b8c67943378",
+      "claim": "Enron North America Corp mentioned Federal Energy Regulatory Commission not doing enough to control California energy prices",
+      "claim_id": "537b1203-f6f2-4796-8a22-9a63d83795c3",
       "claim_type": "mentioned",
-      "confidence": 0.7,
+      "confidence": 0.305,
       "status": "active",
-      "rrf_score": 0.054809111647879764,
+      "rrf_score": 0.054542104293348076,
       "evidence": [
         {
-          "excerpt": "enron sells powerex 25 mw of offpeak np15 for 128129 at 25000",
-          "source_id": "462752",
-          "date": "2001-01-26T00:00:00",
-          "sender": "kate.symes@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Enron North America Corp mentioned data storage market",
-      "claim_id": "b4649c69-e413-4107-948e-79fdaa40c666",
-      "claim_type": "mentioned",
-      "confidence": 0.6,
-      "status": "active",
-      "rrf_score": 0.05368295466334682,
-      "evidence": [
-        {
-          "excerpt": "read about enrons entry into the data storage market",
-          "source_id": "463378",
-          "date": "2001-02-02T00:00:00",
-          "sender": "enron.announcements@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Enron North America Corp mentioned natural gas pipeline businesses",
-      "claim_id": "67442605-cc75-4361-be42-9625eaac0a26",
-      "claim_type": "mentioned",
-      "confidence": 0.4,
-      "status": "active",
-      "rrf_score": 0.05306157935265916,
-      "evidence": [
-        {
-          "excerpt": "these include natural gas pipeline businesses gas and power businesses in north america and europe retail businesses in north america and europe and coal businesses in north america and europe",
-          "source_id": "120664",
-          "date": "2001-11-14T00:00:00",
-          "sender": "chairman.ken@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Enron North America Corp mentioned President Bush",
-      "claim_id": "c2b7c0ce-9cfe-4201-87be-bc8a82750ff4",
-      "claim_type": "mentioned",
-      "confidence": 0.6,
-      "status": "active",
-      "rrf_score": 0.05291005291005291,
-      "evidence": [
-        {
-          "excerpt": "company enron corp and a close friend of bush",
+          "excerpt": "company enron corp and a close friend of bush should be locked in a prison cell",
           "source_id": "74091",
           "date": "2001-05-29T00:00:00",
           "sender": "ann.schmidt@enron.com"
@@ -168,34 +82,120 @@
       ]
     },
     {
-      "claim": "Enron North America Corp participated_in Deal 50623901",
-      "claim_id": "b997e07f-dac5-484e-b352-64708a0f3ce3",
-      "claim_type": "participated_in",
-      "confidence": 0.8,
-      "status": "active",
-      "rrf_score": 0.05244843701127854,
-      "evidence": [
-        {
-          "excerpt": "enron buys dynegy mid c 129 only 25 mws",
-          "source_id": "467802",
-          "date": "2001-01-29T00:00:00",
-          "sender": "stephanie.piwetz@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Enron North America Corp mentioned Pipeline capacity rights for 15 months with 385 million bid",
-      "claim_id": "38cf46a6-dc99-4496-863c-4eac1c2da925",
+      "claim": "Enron North America Corp mentioned affiliate took brief turn in pipeline capacity in February 2000",
+      "claim_id": "f26697c6-8df4-405a-9efb-adb880c038c1",
       "claim_type": "mentioned",
-      "confidence": 0.7,
+      "confidence": 0.305,
       "status": "active",
-      "rrf_score": 0.05208861829866396,
+      "rrf_score": 0.05347425276153346,
       "evidence": [
         {
           "excerpt": "then an enron affiliate took a brief turn in february 2000",
           "source_id": "74091",
           "date": "2001-05-29T00:00:00",
           "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron North America Corp discussed Maharashtra State Electricity Board",
+      "claim_id": "b8a2abc4-563b-40cd-8b78-dadafce9e6d5",
+      "claim_type": "discussed",
+      "confidence": 0.305,
+      "status": "active",
+      "rrf_score": 0.05347425276153346,
+      "evidence": [
+        {
+          "excerpt": "enron and mseb have been sparring for over six months on the 2184 mw project",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron North America Corp proposed 2000 mw call option on ancillaries",
+      "claim_id": "f0860f7b-187e-4ab0-8826-893132478f60",
+      "claim_type": "proposed",
+      "confidence": 0.376,
+      "status": "active",
+      "rrf_score": 0.05247449520393118,
+      "evidence": [
+        {
+          "excerpt": "in essence we want a call option on ancilliaries of our choice to cover 2000 mw of power at a price that keeps us whole with our existing book of business",
+          "source_id": "438390",
+          "date": "2001-05-18T00:00:00",
+          "sender": "janine.migden@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron North America Corp decided PGE Sale Transaction",
+      "claim_id": "43126405-37a7-40aa-a8e7-de76c1984f7c",
+      "claim_type": "decided",
+      "confidence": 0.34,
+      "status": "active",
+      "rrf_score": 0.05232907978006017,
+      "evidence": [
+        {
+          "excerpt": "enron decided to sell pge since a regulated utility no longer fit with its strategy to buy and sell energy on wholesale markets",
+          "source_id": "157933",
+          "date": "2001-03-26T00:00:00",
+          "sender": "miyung.buster@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron North America Corp proposed Cut tariffs by at least 10 percent",
+      "claim_id": "ddfa831a-3cb7-42a5-a1e7-cdf4014b365b",
+      "claim_type": "proposed",
+      "confidence": 0.392,
+      "status": "active",
+      "rrf_score": 0.05209376042709376,
+      "evidence": [
+        {
+          "excerpt": "enrons india unit willing to cut tariffs by 10 report dow jones international news 052901",
+          "source_id": "74091",
+          "date": "2001-05-29T00:00:00",
+          "sender": "ann.schmidt@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Debra Perlingiere works_at Enron North America Corp",
+      "claim_id": "190a22a5-1f52-4eab-9624-17395567da70",
+      "claim_type": "works_at",
+      "confidence": 0.383,
+      "status": "active",
+      "rrf_score": 0.05195436586503348,
+      "evidence": [
+        {
+          "excerpt": "debra perlingiere enron north america corp legal department",
+          "source_id": "358855",
+          "date": "2001-03-19T00:00:00",
+          "sender": "debra.perlingiere@enron.com"
+        },
+        {
+          "excerpt": "debra perlingiere enron north america corp legal department",
+          "source_id": "358837",
+          "date": "2001-03-16T00:00:00",
+          "sender": "debra.perlingiere@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Enron North America Corp status_change 10-Q filing delayed to November 19",
+      "claim_id": "e1894958-eae4-4bd2-bb06-de0b70963c35",
+      "claim_type": "status_change",
+      "confidence": 0.751,
+      "status": "active",
+      "rrf_score": 0.051797585130918464,
+      "evidence": [
+        {
+          "excerpt": "we told investors that we will file our 1 0q five days late due to our current activities it will be filed on nov 19",
+          "source_id": "120664",
+          "date": "2001-11-14T00:00:00",
+          "sender": "chairman.ken@enron.com"
         }
       ]
     }

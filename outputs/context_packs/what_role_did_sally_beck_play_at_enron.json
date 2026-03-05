@@ -2,69 +2,47 @@
   "question": "What role did Sally Beck play at Enron?",
   "matched_entities": [
     {
-      "entity_id": "90d86762-52f9-4ddb-b508-5fd54b3a79a3",
+      "entity_id": "e6193fd4-5879-4a13-a19d-4352b3fc3ae6",
       "canonical_name": "Sally Beck",
       "entity_type": "person",
       "score": 1.0
     },
     {
-      "entity_id": "99d4ff3d-0dbc-4500-9569-bb148905dde8",
+      "entity_id": "a9ac0d80-0ac8-4ada-8046-f22f3edba7fc",
       "canonical_name": "Phillip Love",
       "entity_type": "person",
       "score": 1.0
     },
     {
-      "entity_id": "5984f1fc-5d9a-4a76-99ed-f2c07d9fa833",
+      "entity_id": "1a3f3c3c-b800-44c1-93a6-80b5fbafa517",
+      "canonical_name": "Lay",
+      "entity_type": "person",
+      "score": 1.0
+    },
+    {
+      "entity_id": "a82c7407-625a-459e-9631-2b48646b75b8",
       "canonical_name": "Enron North America Corp",
       "entity_type": "organization",
       "score": 1.0
     },
     {
-      "entity_id": "677fe6f8-9266-4842-a4f6-c8b4a6ce4eee",
-      "canonical_name": "Sheri Thomas, Andy Zipper, Sally Beck",
+      "entity_id": "01d2e458-a297-45e3-ab6f-42b48cc9ef14",
+      "canonical_name": "Sally Beck, Sheri Thomas, Andy Zipper",
       "entity_type": "person",
-      "score": 0.5155724287033081
-    },
-    {
-      "entity_id": "37613ed2-e4de-4464-9190-9336441197bb",
-      "canonical_name": "Sally Alexander",
-      "entity_type": "person",
-      "score": 0.5132690668106079
+      "score": 0.511507511138916
     }
   ],
   "claims": [
     {
-      "claim": "Sally Beck sent_to Lisa Costello",
-      "claim_id": "7608dd7c-bf8d-413d-a41d-bb085ffba7f9",
-      "claim_type": "sent_to",
-      "confidence": 0.5,
-      "status": "active",
-      "rrf_score": 0.059724711270410194,
-      "evidence": [
-        {
-          "excerpt": "From: sally.beck@enron.com To: lisa.costello@enron.com",
-          "source_id": "31967",
-          "date": "2001-03-07T00:00:00",
-          "sender": "sally.beck@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Sally Beck participated_in Wes Colwell",
-      "claim_id": "89baacda-68a4-49e2-9470-0400f154762e",
+      "claim": "Sally Beck participated_in Enron Networks",
+      "claim_id": "01c051b3-9fdb-4e47-8ad3-82eaf3c94a4b",
       "claim_type": "participated_in",
-      "confidence": 0.9,
+      "confidence": 0.415,
       "status": "active",
-      "rrf_score": 0.05954525954525954,
+      "rrf_score": 0.05958011921458625,
       "evidence": [
         {
-          "excerpt": "i have worked with wes colwell and made a trade with vince kaminsk to make all of this happen",
-          "source_id": "30923",
-          "date": "2001-09-26T00:00:00",
-          "sender": "sally.beck@enron.com"
-        },
-        {
-          "excerpt": "i have worked with wes colwell and made a trade with vince kaminsk i to make all of this happen",
+          "excerpt": "i orchestrated the time swap with vince kaminiski so that we could have our enw meeting at 300",
           "source_id": "30923",
           "date": "2001-09-26T00:00:00",
           "sender": "sally.beck@enron.com"
@@ -72,31 +50,15 @@
       ]
     },
     {
-      "claim": "Sally Beck sent_to Raymond Bowen",
-      "claim_id": "0b0d7925-413a-4a35-a58c-932c3d92dcf4",
-      "claim_type": "sent_to",
-      "confidence": 0.5,
-      "status": "active",
-      "rrf_score": 0.0582664249330916,
-      "evidence": [
-        {
-          "excerpt": "From: sally.beck@enron.com\nTo: raymond.bowen@enron.com",
-          "source_id": "272096",
-          "date": "2001-10-05T00:00:00",
-          "sender": "sally.beck@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Sally Beck mentioned Kenneth Lay",
-      "claim_id": "2f0a4163-b624-4054-8000-4f316d9c007d",
+      "claim": "Sally Beck mentioned Bob Hall",
+      "claim_id": "bd841de6-4495-4cd8-a666-d55ac9734287",
       "claim_type": "mentioned",
-      "confidence": 0.4,
+      "confidence": 0.415,
       "status": "active",
-      "rrf_score": 0.058134151091897575,
+      "rrf_score": 0.059296784821919725,
       "evidence": [
         {
-          "excerpt": "i committed months ago to attend a meeting that ken lay asked to be involved in",
+          "excerpt": "bob hall added",
           "source_id": "30923",
           "date": "2001-09-26T00:00:00",
           "sender": "sally.beck@enron.com"
@@ -105,9 +67,9 @@
     },
     {
       "claim": "Sally Beck sent_to Rick Buy",
-      "claim_id": "3d345b7e-933e-4be8-b0e5-462149b2e1fd",
+      "claim_id": "80ee54ee-2972-461f-9ef7-face5c720f74",
       "claim_type": "sent_to",
-      "confidence": 0.5,
+      "confidence": 0.358,
       "status": "active",
       "rrf_score": 0.0578214252810024,
       "evidence": [
@@ -120,12 +82,60 @@
       ]
     },
     {
-      "claim": "Sally Beck sent_to London Brown",
-      "claim_id": "ddf4f521-7824-4049-bdf6-3ff462012564",
+      "claim": "Sally Beck sent_to Raymond Bowen",
+      "claim_id": "c26e8db8-167c-4c20-8c42-59db674ea86a",
       "claim_type": "sent_to",
-      "confidence": 0.5,
+      "confidence": 0.358,
       "status": "active",
-      "rrf_score": 0.05757408244970434,
+      "rrf_score": 0.05782079213451763,
+      "evidence": [
+        {
+          "excerpt": "From: sally.beck@enron.com\nTo: raymond.bowen@enron.com",
+          "source_id": "272096",
+          "date": "2001-10-05T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck mentioned Louise",
+      "claim_id": "655a4bc8-9e86-41c7-9161-2ad831cb69e4",
+      "claim_type": "mentioned",
+      "confidence": 0.415,
+      "status": "active",
+      "rrf_score": 0.057541183770691964,
+      "evidence": [
+        {
+          "excerpt": "that is what john and louise should want",
+          "source_id": "30923",
+          "date": "2001-09-26T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck mentioned Beth Perlman",
+      "claim_id": "faffeace-f43e-40f4-ba44-e1b663452cfc",
+      "claim_type": "mentioned",
+      "confidence": 0.484,
+      "status": "active",
+      "rrf_score": 0.05722036661646926,
+      "evidence": [
+        {
+          "excerpt": "only because beth perlman is out on thursday for a religious holiday",
+          "source_id": "30923",
+          "date": "2001-09-26T00:00:00",
+          "sender": "sally.beck@enron.com"
+        }
+      ]
+    },
+    {
+      "claim": "Sally Beck sent_to London Brown",
+      "claim_id": "3d0dda83-598a-4586-9f9c-eaa5d0135eca",
+      "claim_type": "sent_to",
+      "confidence": 0.358,
+      "status": "active",
+      "rrf_score": 0.05714146293856439,
       "evidence": [
         {
           "excerpt": "From: sally.beck@enron.com\nTo: london.brown@enron.com",
@@ -136,31 +146,15 @@
       ]
     },
     {
-      "claim": "Sally Beck mentioned Robert L Hall",
-      "claim_id": "58bb74b8-48df-4686-9017-c4654e91dd99",
+      "claim": "Sally Beck mentioned Wes",
+      "claim_id": "c2c8b9a2-b4d1-4be0-bc50-d405d056293b",
       "claim_type": "mentioned",
-      "confidence": 0.4,
+      "confidence": 0.484,
       "status": "active",
-      "rrf_score": 0.0570329569085788,
+      "rrf_score": 0.05635103503767098,
       "evidence": [
         {
-          "excerpt": "the robert l hall at ets to whom this is addressed is not bob hall in networks who reports to me",
-          "source_id": "31967",
-          "date": "2001-03-07T00:00:00",
-          "sender": "sally.beck@enron.com"
-        }
-      ]
-    },
-    {
-      "claim": "Sally Beck sent_to Greg Piper",
-      "claim_id": "3a903f0d-2b00-4f5e-b0da-7fbccc88a6ac",
-      "claim_type": "sent_to",
-      "confidence": 0.5,
-      "status": "active",
-      "rrf_score": 0.05625019734141644,
-      "evidence": [
-        {
-          "excerpt": "From: sally.beck@enron.com\nTo: greg.piper@enron.com",
+          "excerpt": "wes suggested that we also review with you the ees budget",
           "source_id": "30923",
           "date": "2001-09-26T00:00:00",
           "sender": "sally.beck@enron.com"
@@ -168,15 +162,27 @@
       ]
     },
     {
-      "claim": "Sally Beck mentioned EIM",
-      "claim_id": "56fadcaf-12dd-42c3-8ac3-23d0844517c4",
-      "claim_type": "mentioned",
-      "confidence": 0.4,
+      "claim": "Sally Beck sent_to Greg Piper",
+      "claim_id": "f0ac0fed-28a1-4182-920c-c479187bc579",
+      "claim_type": "sent_to",
+      "confidence": 0.416,
       "status": "active",
-      "rrf_score": 0.05574491454181116,
+      "rrf_score": 0.056043158003942314,
       "evidence": [
         {
-          "excerpt": "we have shared systems and eim and egm may not want to pay per transaction",
+          "excerpt": "From: sally.beck@enron.com\nTo: greg.piper@enron.com",
+          "source_id": "30923",
+          "date": "2001-09-26T00:00:00",
+          "sender": "sally.beck@enron.com"
+        },
+        {
+          "excerpt": "From: sally.beck@enron.com To: greg.piper@enron.com",
+          "source_id": "30923",
+          "date": "2001-09-26T00:00:00",
+          "sender": "sally.beck@enron.com"
+        },
+        {
+          "excerpt": "To: greg.piper@enron.com",
           "source_id": "30923",
           "date": "2001-09-26T00:00:00",
           "sender": "sally.beck@enron.com"
@@ -185,11 +191,11 @@
     },
     {
       "claim": "Sally Beck sent_to Mark Pickering",
-      "claim_id": "caea7149-93f2-4571-a79d-b82db94c7741",
+      "claim_id": "bd609ed7-52a6-41ea-ba46-c1a09b4d8bcd",
       "claim_type": "sent_to",
-      "confidence": 0.5,
+      "confidence": 0.391,
       "status": "active",
-      "rrf_score": 0.05561690054443678,
+      "rrf_score": 0.05541569330097601,
       "evidence": [
         {
           "excerpt": "From: sally.beck@enron.com\nTo: greg.piper@enron.com, mark.pickering@enron.com",
@@ -198,7 +204,7 @@
           "sender": "sally.beck@enron.com"
         },
         {
-          "excerpt": "From: sally.beck@enron.com\nTo: mark.pickering@enron.com",
+          "excerpt": "To: greg.piper@enron.com, mark.pickering@enron.com",
           "source_id": "30923",
           "date": "2001-09-26T00:00:00",
           "sender": "sally.beck@enron.com"
