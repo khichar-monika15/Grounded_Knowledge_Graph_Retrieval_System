@@ -43,7 +43,7 @@ Every claim links to one or more `Evidence` objects containing:
 - Exact `excerpt` (the actual text that grounds the claim)
 - `source_id` (row index in the CSV — the email's identity)
 - `sender`, `recipients`, `timestamp` for provenance
-- `char_start`/`char_end` fields (currently `None` in this prototype — see Tradeoffs)
+- `char_start`/`char_end` fields populated via `body.find(excerpt)` during extraction and persisted in SQLite
 
 ---
 
@@ -142,12 +142,17 @@ Not implemented in prototype. In production:
 3. **Fallback:** Cosine similarity against concatenated claim text (handles concept questions like "California energy")
 4. Collect all ACTIVE claims for matched entities
 5. Retrieve linked Evidence objects from SQLite
-6. Score: `(entity_sim × 0.4) + (claim_confidence × 0.3) + (recency × 0.3)`
-7. Recency normalized to [0,1] over the date range of the corpus
-8. Return top-10 claim+evidence pairs with conflict section
+6. Fuse three signals via **Reciprocal Rank Fusion (RRF)**: entity-based claim retrieval,
+   BM25 keyword ranking, and FAISS semantic search are merged via
+   `score(d) = Σ 1/(k + rank_i(d))` where k=60. RRF is parameter-free and robust to
+   score-scale differences between signals.
+7. Return top-10 claim+evidence pairs; conflicting/superseded claims shown separately
 
 ### Grounding Guarantee
 Every item in the context pack's `claims` list has a non-empty `evidence` array. Each evidence entry contains the exact `excerpt`, `source_id`, `sender`, and `date`. No claim enters the context pack without provenance.
+
+### Bilateral Claim Retrieval
+`get_claims_for_entity()` returns claims where the entity is either the **subject** or the **object** of the relation. This ensures that queries like "Who reports to Ken Lay?" return the relevant `REPORTS_TO` claims regardless of which side of the relation Ken Lay sits on.
 
 ### Conflict Handling
 SUPERSEDED claims appear in the `conflicts` section of the context pack, not the main `claims` list. The UI shows them with a warning indicator. The consumer (human or LLM) sees both the current truth and the historical state that was superseded.
@@ -245,7 +250,7 @@ This encourages the model to treat entity resolution as a prerequisite for claim
 The initial implementation used a manual `validate_extraction()` function that checked dict keys. This has been replaced with strict Pydantic validation via `ExtractionResult`, `RawEntityExtraction`, and `RawClaimExtraction` models in `schema.py`. Benefits:
 
 - **Type enforcement:** `entity.type` must be a valid `EntityType` value; `claim.claim_type` must match `ClaimType`. Invalid strings are caught immediately with a clear error.
-- **Grounding guarantee at schema level:** `RawClaimExtraction.supporting_excerpt` has a `@field_validator` that rejects empty strings — it is literally impossible for a claim to be created without an excerpt.
+- **Grounding guarantee at schema level:** `RawClaimExtraction.supporting_excerpt` has a `@field_validator` that rejects empty strings — it is literally impossible for a claim to be created without an excerpt. `RawClaimExtraction.subject` has the same treatment, preventing anonymous/blank-subject claims from entering the graph.
 - **Error messages:** Pydantic's `ValidationError.errors()` returns structured error info (field path + message) which gets logged and counted in pipeline quality metrics.
 - **Evolution path:** When the ontology changes (new entity types, new claim types), updating the Pydantic enums automatically makes `validate_extraction` catch stale LLM outputs without any additional code.
 
@@ -276,7 +281,7 @@ Two signals are fused: FAISS semantic rank and BM25 keyword rank (`rank-bm25`). 
 
 **Semantic chunking:** Emails >400 words are split into overlapping 400-word chunks (50-word overlap). Each chunk is extracted independently; results are merged (union of entities and claims deduplicated by excerpt). The overlap prevents dropping entities that straddle chunk boundaries. This also reduces per-request token counts, lowering the chance of truncated extraction outputs.
 
-**Centralised embedding singleton (`embeddings.py`):** `SentenceTransformer('all-MiniLM-L6-v2')` is loaded once per process via a module-level `_MODEL` global in `embeddings.py`. All modules (`dedup.py`, `retrieval.py`, `app.py`, `vector_store.py`) import from this single location — no duplicate model loads. In the Streamlit app, `@st.cache_resource` ensures the model survives across rerenders.
+**Centralised embedding singleton (`embeddings.py`):** `SentenceTransformer('all-MiniLM-L6-v2')` is loaded once per process via a module-level `_MODEL` global in `embeddings.py`. All modules (`dedup.py`, `retrieval.py`, `app.py`, `vector_store.py`) delegate to `embeddings.py` — no duplicate model loads. In the Streamlit app, `@st.cache_resource` ensures the model survives across rerenders.
 
 **Async concurrent LLM extraction:** `run_pipeline.py` uses `asyncio` + `asyncio.Semaphore(20)` to cap in-flight LLM calls at 20 simultaneous requests. `extract_email` (synchronous) is dispatched to a thread pool via `loop.run_in_executor`. Wall-clock time for 200 emails drops from ~3.3 minutes (sequential, 1 s/email) to ~20-30 seconds. Per-email JSON caching is preserved — already-extracted emails are never re-called.
 
@@ -288,7 +293,11 @@ Two signals are fused: FAISS semantic rank and BM25 keyword rank (`rank-bm25`). 
 
 ### Acknowledged Tradeoffs
 
-**Evidence offsets:** `char_start`/`char_end` fields exist in the schema but are populated as `None` in this prototype. Production would compute them via `body.find(excerpt)` to enable exact span highlighting in the UI and precise citation anchoring.
+**Evidence offsets:** `char_start`/`char_end` are now computed via `body.find(excerpt)` and persisted in SQLite. Span highlighting in the UI is possible; the current UI does not yet render highlights (left as future UI work).
+
+**Claim confidence bounded:** `Claim.confidence` is now validated by `Field(ge=0.0, le=1.0)` — invalid LLM outputs (e.g., `confidence=99.0`) raise `ValidationError` at ingestion time and are counted in pipeline quality metrics.
+
+**FAISS claim embeddings use entity names:** Claim texts for the FAISS index are built with canonical entity names (`"works_at Jeff Skilling Enron"`) rather than UUID strings. Semantic claim search is now meaningful.
 
 **Confidence decay:** No time-based confidence decay implemented. In production, claims older than N months with no corroborating evidence would decay toward `ClaimStatus.UNCERTAIN` automatically, preventing stale facts from dominating retrieval.
 

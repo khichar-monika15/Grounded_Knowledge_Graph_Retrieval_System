@@ -36,6 +36,14 @@ class TestClaimRetrieval:
         from schema import ClaimStatus
         assert all(c.status == ClaimStatus.ACTIVE for c in claims)
 
+    def test_get_claims_for_entity_as_object(self, sample_graph_data):
+        """Bug 18: claims where entity is object_entity_id must also be returned.
+        e3 (Enron) is only an object in sample_graph_data (c1: e1 works_at e3)."""
+        from retrieval import get_claims_for_entity
+        claims = get_claims_for_entity("e3", sample_graph_data["claims"])
+        assert len(claims) >= 1
+        assert any(c.object_entity_id == "e3" for c in claims)
+
 
 class TestClaimTextSearch:
     def test_fallback_search_finds_concept(self, sample_graph_data):
@@ -43,6 +51,20 @@ class TestClaimTextSearch:
         from retrieval import search_claims_by_text
         matches = search_claims_by_text("California energy", sample_graph_data["claims"])
         assert len(matches) > 0
+
+    def test_search_claims_uses_entity_names(self, sample_graph_data):
+        """Bug 19: claim search must use entity canonical names not UUIDs.
+        Searching 'Jeff Skilling Enron' should match the works_at claim."""
+        from retrieval import search_claims_by_text
+        entity_by_id = {e.entity_id: e.canonical_name
+                        for e in sample_graph_data["entities"]}
+        matches = search_claims_by_text(
+            "Jeff Skilling Enron",
+            sample_graph_data["claims"],
+            entity_by_id=entity_by_id,
+        )
+        assert len(matches) > 0
+        assert any(c.claim_type.value == "works_at" for c in matches)
 
 
 class TestContextPack:

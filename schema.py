@@ -72,7 +72,7 @@ class Claim(BaseModel):
     subject_entity_id: str
     object_entity_id: Optional[str] = None
     object_value: Optional[str] = None
-    confidence: float = 0.5
+    confidence: float = Field(default=0.5, ge=0.0, le=1.0)
     status: ClaimStatus = ClaimStatus.ACTIVE
     valid_from: Optional[datetime] = None
     valid_until: Optional[datetime] = None
@@ -123,6 +123,13 @@ class RawClaimExtraction(BaseModel):
         if v.lower() not in valid:
             raise ValueError(f"Invalid claim type '{v}'. Must be one of: {sorted(valid)}")
         return v.lower()
+
+    @field_validator('subject')
+    @classmethod
+    def subject_not_empty(cls, v: str) -> str:
+        if not v or not v.strip():
+            raise ValueError('claim subject cannot be empty')
+        return v.strip()
 
     @field_validator('supporting_excerpt')
     @classmethod

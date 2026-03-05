@@ -169,22 +169,30 @@ def _find_matching_entities_with_scores(query: str, entities: list[Entity],
 
 
 def get_claims_for_entity(entity_id: str, claims: list[Claim]) -> list[Claim]:
-    """Get all ACTIVE claims for an entity (as subject)."""
+    """Get all ACTIVE claims where entity is subject OR object."""
     return [c for c in claims
-            if c.subject_entity_id == entity_id and c.status == ClaimStatus.ACTIVE]
+            if (c.subject_entity_id == entity_id or c.object_entity_id == entity_id)
+            and c.status == ClaimStatus.ACTIVE]
 
 
 def search_claims_by_text(query: str, claims: list[Claim],
-                           threshold: float = 0.3) -> list[Claim]:
-    """Search claims by semantic similarity (FAISS if available, else brute-force)."""
+                           threshold: float = 0.3,
+                           entity_by_id: dict | None = None) -> list[Claim]:
+    """Search claims by semantic similarity (FAISS if available, else brute-force).
+
+    entity_by_id maps entity_id → canonical_name; when provided, claim texts use
+    human-readable names instead of UUID strings for meaningful semantic matching.
+    """
     if not claims:
         return []
 
+    _eid = entity_by_id or {}
     claim_texts = []
     for c in claims:
-        parts = [c.claim_type.value, c.subject_entity_id]
+        parts = [c.claim_type.value]
+        parts.append(_eid.get(c.subject_entity_id, c.subject_entity_id))
         if c.object_entity_id:
-            parts.append(c.object_entity_id)
+            parts.append(_eid.get(c.object_entity_id, c.object_entity_id))
         if c.object_value:
             parts.append(c.object_value)
         claim_texts.append(' '.join(parts))
@@ -276,7 +284,9 @@ def build_context_pack(question: str, entities: list[Entity],
     bm25_claim_ids = [active_claims[idx].claim_id for idx, _ in bm25_ranked]
 
     # --- Signal 3: FAISS/semantic claim search ---
-    semantic_matches = search_claims_by_text(question, active_claims, threshold=0.2)
+    eid_to_name = {e.entity_id: e.canonical_name for e in entities}
+    semantic_matches = search_claims_by_text(question, active_claims, threshold=0.2,
+                                              entity_by_id=eid_to_name)
     semantic_claim_ids = [c.claim_id for c in semantic_matches[:20]]
 
     # --- RRF fusion ---

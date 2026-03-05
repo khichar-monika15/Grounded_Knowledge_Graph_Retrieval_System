@@ -79,3 +79,28 @@ class TestClaim:
         c = Claim(claim_id="c1", claim_type=ClaimType.MENTIONED,
                   subject_entity_id="e1", confidence=0.0, evidence_ids=["ev1"])
         assert 0.0 <= c.confidence <= 1.0
+
+    def test_confidence_above_one_raises(self):
+        """Bug 13: Claim.confidence must be bounded to [0, 1]."""
+        from schema import Claim, ClaimType
+        with pytest.raises(Exception):  # Pydantic ValidationError
+            Claim(claim_id="c1", claim_type=ClaimType.MENTIONED,
+                  subject_entity_id="e1", confidence=1.5, evidence_ids=["ev1"])
+
+    def test_confidence_below_zero_raises(self):
+        """Bug 13: Claim.confidence must be bounded to [0, 1]."""
+        from schema import Claim, ClaimType
+        with pytest.raises(Exception):  # Pydantic ValidationError
+            Claim(claim_id="c1", claim_type=ClaimType.MENTIONED,
+                  subject_entity_id="e1", confidence=-0.1, evidence_ids=["ev1"])
+
+
+class TestRawClaimExtraction:
+    def test_empty_subject_raises(self):
+        """Bug 16: RawClaimExtraction.subject cannot be blank."""
+        from schema import RawClaimExtraction
+        with pytest.raises(Exception):  # Pydantic ValidationError
+            RawClaimExtraction(
+                claim_type="mentioned", subject="", object="",
+                confidence=0.5, supporting_excerpt="some text"
+            )

@@ -253,9 +253,52 @@ Two ranking signals are fused: FAISS semantic rank + BM25 keyword rank. RRF is p
 
 ---
 
+## Improvements Batch 3 (Audit & Bug Fixes)
+
+Full post-implementation audit against `TASK.md` and `CLAUDE.md` uncovered 13 bugs across two fix sessions. All were resolved with TDD (tests written first).
+
+### Bugs Fixed (Batch 3 — sessions 1 & 2)
+
+| # | Location | Description |
+|---|----------|-------------|
+| 1 | `run_pipeline.py` | `valid_from=ts` now passed to Claim — temporal superseding works correctly |
+| 2 | `run_pipeline.py` | Empty `subject_name` guard prevents blank/anonymous entity nodes |
+| 3 | `run_pipeline.py` | `first_seen=ts, last_seen=ts` set on Entity creation |
+| 4 | `app.py` | Embedding model injected into `embeddings._MODEL` not `retrieval._MODEL` |
+| 5 | `app.py` | `VectorStore.load()` result injected into `retrieval._VECTOR_STORE` at startup |
+| 6 | `dedup.py` | Conflict detection splits `entity_rel` vs `attr_claims` before comparing `obj_ids` |
+| 7 | `run_pipeline.py` | Evidence `char_start`/`char_end` computed via `body_text.find(excerpt)` |
+| 8 | `dedup.py` / `retrieval.py` | Removed duplicate `_MODEL` singleton; all modules use `embeddings.py` |
+| 9 | `retrieval.py` | Removed double cosine similarity computation per claim (was encoding twice) |
+| 10 | `run_pipeline.py` | Object entity auto-create guard — only creates entity if name is non-empty |
+| 11 | `graph_builder.py` | SQLite evidence offsets `char_start`/`char_end` persisted correctly |
+| 12 | `dedup.py` | O(N²) quoted dedup replaced with set-based substring check |
+| 13 | `dedup.py` | O(E×M) entity ID remap replaced with single-pass dict lookup |
+
+**Test count after Batch 3: 63/63**
+
+Note: Bug 19 (UUID strings in claim embeddings) and Bug 18 (object-side claims missing from retrieval) are addressed in the next batch (Batch 4).
+
+---
+
+## Improvements Batch 4 (Audit — Bugs 13, 16, 18, 19)
+
+TDD session: tests written first (red), then fixes (green), 63 → 68 tests.
+
+| # | Location | Description |
+|---|----------|-------------|
+| 13 | `schema.py` | `Claim.confidence` now `Field(ge=0.0, le=1.0)` — out-of-range LLM values raise ValidationError |
+| 16 | `schema.py` | `RawClaimExtraction.subject` validator rejects empty strings (mirrors excerpt validator) |
+| 18 | `retrieval.py` | `get_claims_for_entity()` now returns claims where entity is **subject OR object** |
+| 19 | `retrieval.py`, `vector_store.py` | Claim texts use canonical entity names not UUID strings — semantic claim search is now meaningful |
+
+**Test count after Batch 4: 68/68**
+
+---
+
 ## Final State
 
-- **60/60 tests passing** throughout all improvements
+- **68/68 tests passing**
 - **Pipeline output:** 1096 entities, 1074 claims, 1174 evidence, 528 merges
 - **Streamlit app:** pyvis graph rendering, entity browser, retrieval panel with grounded evidence cards
 - **write_up.md:** 10-section design document

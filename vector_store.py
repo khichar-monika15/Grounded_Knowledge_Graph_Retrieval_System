@@ -127,16 +127,6 @@ class VectorStore:
 # Build helper called from run_pipeline.py
 # ------------------------------------------------------------------
 
-def _claim_text(claim: Claim) -> str:
-    """Build a short text representation of a claim for embedding."""
-    parts = [claim.claim_type.value, claim.subject_entity_id]
-    if claim.object_entity_id:
-        parts.append(claim.object_entity_id)
-    if claim.object_value:
-        parts.append(claim.object_value)
-    return ' '.join(parts)
-
-
 def build_and_save_index(
     entities: list[Entity],
     claims: list[Claim],
@@ -146,17 +136,30 @@ def build_and_save_index(
 
     Called once at the end of run_pipeline.py. The resulting .npz file is loaded
     by the Streamlit app at startup so retrieval never re-encodes the corpus.
+    Claim texts use entity canonical names (not UUIDs) for meaningful semantic search.
     """
     from embeddings import encode
 
     print(f"Building FAISS index for {len(entities)} entities and {len(claims)} claims...")
+
+    entity_by_id = {e.entity_id: e.canonical_name for e in entities}
+
+    def _claim_text(claim: Claim) -> str:
+        """Build a text representation using canonical entity names, not UUIDs."""
+        parts = [claim.claim_type.value]
+        parts.append(entity_by_id.get(claim.subject_entity_id, claim.subject_entity_id))
+        if claim.object_entity_id:
+            parts.append(entity_by_id.get(claim.object_entity_id, claim.object_entity_id))
+        if claim.object_value:
+            parts.append(claim.object_value)
+        return ' '.join(parts)
 
     # Entity embeddings: canonical_name + aliases
     entity_ids = [e.entity_id for e in entities]
     entity_texts = [' '.join([e.canonical_name] + e.aliases) for e in entities]
     entity_embs = encode(entity_texts, normalize=True) if entity_texts else np.zeros((0, 384), dtype=np.float32)
 
-    # Claim embeddings: claim_type + subject + object
+    # Claim embeddings: claim_type + subject_name + object_name/value
     claim_ids = [c.claim_id for c in claims]
     claim_texts = [_claim_text(c) for c in claims]
     claim_embs = encode(claim_texts, normalize=True) if claim_texts else np.zeros((0, 384), dtype=np.float32)
