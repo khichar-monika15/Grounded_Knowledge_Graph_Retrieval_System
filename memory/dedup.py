@@ -91,8 +91,21 @@ def _names_likely_same_person(name_a: str, name_b: str) -> bool:
     parts_a = na.split()
     parts_b = nb.split()
 
-    # Require at least first + last for both names
-    if len(parts_a) < 2 or len(parts_b) < 2:
+    # If both are single tokens, we defer to Pass 3 (embedding) to avoid "Jeff" == "Jeff" false positives.
+    if len(parts_a) == 1 and len(parts_b) == 1:
+        return False
+        
+    # If one is single-token and the other is multi-token, allow merge ONLY IF
+    # the single token matches the LAST name of the multi-token name.
+    # We also require the matching token to be > 3 chars to avoid matching initials.
+    if len(parts_a) == 1 and len(parts_b) >= 2:
+        if parts_a[0] == parts_b[-1] and len(parts_a[0]) > 3:
+            return True
+        return False
+
+    if len(parts_b) == 1 and len(parts_a) >= 2:
+        if parts_b[0] == parts_a[-1] and len(parts_b[0]) > 3:
+            return True
         return False
 
     la = parts_a[-1]  # last name
@@ -142,9 +155,21 @@ def _build_merge_clusters(group: list[Entity], etype: str, threshold: float = 0.
             names_i = {_normalize_name(nm) for nm in [group[i].canonical_name] + group[i].aliases}
             names_j = {_normalize_name(nm) for nm in [group[j].canonical_name] + group[j].aliases}
 
-            if names_i & names_j:
-                union(i, j)
-                continue
+            common_names = names_i & names_j
+            if common_names:
+                # If they are persons, check if the common name is too ambiguous.
+                # A single-token common name (e.g. "jeff") should not blindly merge
+                # two different canonical people in Pass 1. 
+                # We defer to Pass 2 (heuristic) or Pass 3 (embedding) for single-token names.
+                if etype == "person":
+                    valid_match = any(len(n.split()) >= 2 for n in common_names)
+                    if valid_match:
+                        union(i, j)
+                        continue
+                else:
+                    # Non-persons (orgs, projects) can safely merge on single-token names like "Raptor"
+                    union(i, j)
+                    continue
 
             if etype == "person":
                 raws_i = [group[i].canonical_name] + group[i].aliases

@@ -110,10 +110,15 @@ def build_graph_elements(entities, claims, entity_type_filter, confidence_thresh
         NodeStyle(etype.upper(), ENTITY_COLORS.get(etype, "#b07aa1"), "name", ENTITY_ICONS.get(etype, "circle"))
         for etype in ENTITY_COLORS
     ]
-    edge_styles = [
-        EdgeStyle(ct.value.upper(), caption="label", directed=True)
-        for ct in ClaimType
-    ]
+    # Suppress library-internal DeprecationWarning: EdgeStyle fires `labeled is not None`
+    # even with the default value (False). Using `caption` is already correct here.
+    import warnings as _w
+    with _w.catch_warnings():
+        _w.simplefilter("ignore")
+        edge_styles = [
+            EdgeStyle(ct.value.upper(), caption="label", directed=True)
+            for ct in ClaimType
+        ]
 
     return {"nodes": nodes, "edges": edges}, node_styles, edge_styles
 
@@ -246,7 +251,7 @@ def main():
                     "Current Aliases": ", ".join(e.aliases[:5]),
                 })
         if rows:
-            st.dataframe(pd.DataFrame(rows), use_container_width=True)
+            st.dataframe(pd.DataFrame(rows), width="stretch")
             st.caption(f"{len(rows)} entity merge(s)")
         else:
             st.info("No entity merge history found. Run the pipeline first.")
@@ -261,7 +266,7 @@ def main():
                     "FROM merges ORDER BY timestamp DESC",
                     conn,
                 )
-                st.dataframe(df, use_container_width=True)
+                st.dataframe(df, width="stretch")
                 st.caption(f"{len(df)} total merge record(s)")
             except Exception as exc:
                 st.warning(f"Could not read merges table: {exc}")
@@ -282,7 +287,7 @@ def main():
                 placeholder="Who did Jeff Skilling report to?"
             )
         with col_btn:
-            search = st.button("Search", use_container_width=True)
+            search = st.button("Search", width="stretch")
 
         if search and question:
             import memory.embeddings as _emb
