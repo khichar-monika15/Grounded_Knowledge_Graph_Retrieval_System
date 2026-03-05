@@ -49,6 +49,49 @@ class TestFullPipeline:
                 assert ev["excerpt"].strip() != ""
                 assert ev["source_id"] != ""
 
+    def test_object_entity_auto_created(self):
+        """Bug 10: object entities not listed under 'entities' must be auto-created
+        so the claim becomes an entity-relation edge, not a degraded attribute claim."""
+        from run_pipeline import emails_to_schema_objects
+        import uuid
+
+        extraction = {
+            "_source_id": "test_bug10",
+            "_email_meta": {"date": "2001-05-14", "sender": "a@enron.com", "recipient": "b@enron.com"},
+            "entities": [
+                {"name": "Jeff Skilling", "type": "person", "aliases": []},
+                # "Enron" intentionally absent from entities list — LLM omission
+            ],
+            "claims": [{
+                "claim_type": "works_at",
+                "subject": "Jeff Skilling",
+                "object": "Enron",
+                "confidence": 0.9,
+                "supporting_excerpt": "Jeff Skilling works at Enron",
+            }],
+        }
+        email = {
+            "source_id": "test_bug10",
+            "date": "2001-05-14",
+            "sender": "a@enron.com",
+            "recipient": "b@enron.com",
+            "body": "Jeff Skilling works at Enron",
+        }
+
+        entities, claims, _ = emails_to_schema_objects([extraction], [email])
+
+        entity_names = {e.canonical_name for e in entities}
+        assert "Enron" in entity_names, "Object entity 'Enron' must be auto-created"
+
+        works_at = [c for c in claims if c.claim_type.value == "works_at"]
+        assert len(works_at) == 1
+        assert works_at[0].object_entity_id is not None, (
+            "Claim should be an entity-relation (edge), not an attribute claim"
+        )
+        assert works_at[0].object_value is None, (
+            "object_value should be None when object_entity_id is set"
+        )
+
     def test_context_pack_serializable(self, sample_graph_data):
         """Context packs must be JSON-serializable for output files."""
         from retrieval import build_context_pack

@@ -202,11 +202,11 @@ def search_claims_by_text(query: str, claims: list[Claim],
         return [c for c, _ in sorted(results, key=lambda x: x[1], reverse=True)]
     else:
         embs = _encode(claim_texts)
-        results = [
-            (c, _cosine_sim(query_emb, emb))
-            for c, emb in zip(claims, embs)
-            if _cosine_sim(query_emb, emb) >= threshold
-        ]
+        results = []
+        for c, emb in zip(claims, embs):
+            sim = _cosine_sim(query_emb, emb)  # computed once per claim (Bug 9)
+            if sim >= threshold:
+                results.append((c, sim))
         return [c for c, _ in sorted(results, key=lambda x: x[1], reverse=True)]
 
 

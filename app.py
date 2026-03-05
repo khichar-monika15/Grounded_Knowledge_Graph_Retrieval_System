@@ -13,16 +13,17 @@ warnings.filterwarnings("ignore", category=UserWarning, module="torch")
 
 from config import DB_PATH, GRAPH_JSON_PATH
 
+FAISS_INDEX_PATH = "outputs/faiss_index.npz"
+
 st.set_page_config(page_title="Enron Memory Graph", layout="wide")
 
 
 @st.cache_resource
 def get_embedding_model():
-    """Load sentence-transformers model once for the lifetime of the app."""
-    import logging
-    logging.getLogger("sentence_transformers").setLevel(logging.ERROR)
-    from sentence_transformers import SentenceTransformer
-    return SentenceTransformer('all-MiniLM-L6-v2')
+    """Return the shared embedding model singleton — delegates to embeddings.py (Bug 8).
+    Avoids loading a second ~90MB model copy into RAM."""
+    from embeddings import get_model
+    return get_model()
 
 
 @st.cache_resource
@@ -148,9 +149,15 @@ def main():
     ev_by_id = {ev.evidence_id: ev for ev in evidence}
     entity_by_id = {e.entity_id: e for e in entities}
 
-    # Pre-warm embedding model (cached, loads once)
-    import retrieval
-    retrieval._MODEL = get_embedding_model()
+    # Pre-warm embedding model into the shared embeddings singleton (Bug 4)
+    import embeddings
+    embeddings._MODEL = get_embedding_model()
+
+    # Load pre-built FAISS index into retrieval module (Bug 5)
+    if os.path.exists(FAISS_INDEX_PATH):
+        from vector_store import VectorStore
+        import retrieval
+        retrieval._VECTOR_STORE = VectorStore.load(FAISS_INDEX_PATH)
 
     # Sidebar filters
     st.sidebar.header("Filters")
@@ -216,8 +223,8 @@ def main():
         search = st.button("Search", use_container_width=True)
 
     if search and question:
-        import retrieval
-        retrieval._MODEL = get_embedding_model()  # reuse cached model
+        import embeddings
+        embeddings._MODEL = get_embedding_model()  # reuse cached model (Bug 4)
         from retrieval import build_context_pack
         with st.spinner("Searching..."):
             pack = build_context_pack(question, entities, claims, evidence)

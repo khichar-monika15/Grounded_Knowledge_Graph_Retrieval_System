@@ -34,9 +34,12 @@ def is_quoted_duplicate(text: str, seen_bodies: list[str]) -> bool:
     clean = ' '.join(clean_lines).strip()
     clean_normalized = re.sub(r'\s+', ' ', clean)
 
+    # Bug 12: cap comparison at 500 chars — avoids O(N×M) blow-up on long emails
+    # while still catching duplicated quoted content (excerpts are rarely >500 chars)
+    clean_prefix = clean_normalized[:500]
     for body in seen_bodies:
         body_normalized = re.sub(r'\s+', ' ', body.strip())
-        if clean_normalized in body_normalized:
+        if clean_prefix in body_normalized:
             return True
     return False
 
@@ -258,20 +261,29 @@ def deduplicate_claims(claims: list[Claim]) -> list[Claim]:
             final.append(group[0])
             continue
 
-        obj_ids = {c.object_entity_id for c in group}
+        # Bug 6 fix: only trigger conflict logic on entity-relation claims (object_entity_id is not None).
+        # Attribute claims (object_value only, object_entity_id=None) must not be mixed in —
+        # they would spuriously inflate obj_ids and get wrongly marked SUPERSEDED.
+        entity_rel = [c for c in group if c.object_entity_id is not None]
+        attr_claims = [c for c in group if c.object_entity_id is None]
+
+        obj_ids = {c.object_entity_id for c in entity_rel}
         if len(obj_ids) <= 1:
+            # No conflict among entity-relation claims — all pass through
             final.extend(group)
             continue
 
-        # Conflicting: sort by (valid_from, confidence) ascending; newest/highest = winner
-        sorted_group = sorted(group, key=lambda c: (c.valid_from or datetime.min, c.confidence))
-        newest = sorted_group[-1]
+        # Conflicting entity-relation claims: sort by (valid_from, confidence); newest = winner
+        sorted_entity_rel = sorted(entity_rel, key=lambda c: (c.valid_from or datetime.min, c.confidence))
+        newest = sorted_entity_rel[-1]
 
-        for c in sorted_group[:-1]:
+        for c in sorted_entity_rel[:-1]:
             final.append(c.model_copy(update={
                 "status": ClaimStatus.SUPERSEDED,
                 "superseded_by": newest.claim_id,
             }))
         final.append(newest)
+        # Attribute claims are unrelated to the conflict — pass through unchanged
+        final.extend(attr_claims)
 
     return final

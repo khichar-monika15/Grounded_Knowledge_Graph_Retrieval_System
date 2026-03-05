@@ -64,6 +64,15 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
         email_meta = extraction.get("_email_meta", {})
         email = email_by_source.get(source_id, email_meta)
 
+        # Compute email timestamp once — shared by all Evidence/Claim/Entity from this email
+        try:
+            ts = datetime.fromisoformat(email_meta.get("date") or email.get("date") or "")
+        except (ValueError, TypeError):
+            ts = None
+
+        # Body text for evidence character offset computation (Bug 7)
+        body_text = email.get("body", "")
+
         # Build evidence per unique excerpt
         excerpt_to_ev_id: dict[str, str] = {}
         for claim_raw in extraction.get("claims", []):
@@ -73,10 +82,10 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
             ev_id = str(uuid.uuid4())
             excerpt_to_ev_id[excerpt] = ev_id
 
-            try:
-                ts = datetime.fromisoformat(email_meta.get("date") or email.get("date") or "")
-            except (ValueError, TypeError):
-                ts = None
+            # Compute character offsets so grounding is precise (Bug 7)
+            char_start = body_text.find(excerpt)
+            char_end = char_start + len(excerpt) if char_start >= 0 else None
+            char_start = char_start if char_start >= 0 else None
 
             all_evidence.append(Evidence(
                 evidence_id=ev_id,
@@ -87,12 +96,16 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
                 sender=email_meta.get("sender") or email.get("sender"),
                 recipients=[email_meta.get("recipient") or email.get("recipient", "")]
                     if (email_meta.get("recipient") or email.get("recipient")) else None,
+                char_start=char_start,
+                char_end=char_end,
             ))
 
         # Build entity name → entity_id mapping
         name_to_entity_id: dict[str, str] = {}
         for ent_raw in extraction.get("entities", []):
             name = ent_raw.get("name", "").strip()
+            if not name:  # Bug 2 — guard blank entity names
+                continue
             etype_str = ent_raw.get("type", "topic").lower()
             try:
                 etype = EntityType(etype_str)
@@ -105,6 +118,8 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
                 canonical_name=name,
                 entity_type=etype,
                 aliases=ent_raw.get("aliases", []),
+                first_seen=ts,  # Bug 3
+                last_seen=ts,   # Bug 3
             ))
             name_to_entity_id[name.lower()] = entity_id
 
@@ -118,6 +133,9 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
             subject_name = claim_raw.get("subject", "").strip()
             object_name = claim_raw.get("object", "").strip()
 
+            if not subject_name:  # Bug 2 — skip claims with blank subject
+                continue
+
             subject_id = name_to_entity_id.get(subject_name.lower())
             if not subject_id:
                 subject_id = str(uuid.uuid4())
@@ -125,10 +143,25 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
                     entity_id=subject_id,
                     canonical_name=subject_name,
                     entity_type=EntityType.PERSON,
+                    first_seen=ts,  # Bug 3
+                    last_seen=ts,   # Bug 3
                 ))
                 name_to_entity_id[subject_name.lower()] = subject_id
 
             object_id = name_to_entity_id.get(object_name.lower())
+            # Bug 10: auto-create object entity if the LLM mentioned it in claims
+            # but omitted it from the entities list — prevents legitimate edges
+            # from silently degrading into attribute claims.
+            if not object_id and object_name:
+                object_id = str(uuid.uuid4())
+                all_entities.append(Entity(
+                    entity_id=object_id,
+                    canonical_name=object_name,
+                    entity_type=EntityType.TOPIC,  # conservative default; dedup will refine
+                    first_seen=ts,
+                    last_seen=ts,
+                ))
+                name_to_entity_id[object_name.lower()] = object_id
 
             claim_type_str = claim_raw.get("claim_type", "mentioned").lower()
             try:
@@ -145,6 +178,7 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
                 confidence=float(claim_raw.get("confidence", 0.5)),
                 evidence_ids=[ev_id] if ev_id else [],
                 extraction_version="v1",
+                valid_from=ts,  # Bug 1 — inherit email timestamp for temporal superseding
             ))
 
     return all_entities, all_claims, all_evidence
@@ -283,13 +317,14 @@ def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: boo
     # Step 5: Entity dedup
     print("Deduplicating entities...")
     entities = deduplicate_entities(raw_entities)
+    # Bug 13: build reverse lookup in O(E+M) instead of O(E×M×H) nested loops
     entity_id_map: dict[str, str] = {}
-    for orig in raw_entities:
-        for merged in entities:
-            if orig.entity_id == merged.entity_id or orig.entity_id in [
-                mh.get("merged_from") for mh in merged.merge_history
-            ]:
-                entity_id_map[orig.entity_id] = merged.entity_id
+    for merged in entities:
+        entity_id_map[merged.entity_id] = merged.entity_id
+        for mh in merged.merge_history:
+            src = mh.get("merged_from", "")
+            if src:
+                entity_id_map[src] = merged.entity_id
 
     print(f"After entity dedup: {len(entities)} entities (merged {len(raw_entities) - len(entities)})")
 

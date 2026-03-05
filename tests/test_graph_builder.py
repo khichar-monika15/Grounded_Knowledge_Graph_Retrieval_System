@@ -80,3 +80,41 @@ class TestSQLitePersistence:
                        sample_graph_data["evidence"], db_path)
         loaded = load_entities_from_sqlite(db_path)
         assert len(loaded) == 4
+
+    def test_evidence_char_offsets_persisted(self, tmp_path):
+        """Bug 11: char_start/char_end must survive the SQLite round-trip."""
+        from graph_builder import save_to_sqlite, load_evidence_from_sqlite
+        from schema import Evidence
+        from datetime import datetime
+        ev = Evidence(
+            evidence_id="ev_offset_test",
+            source_id="email_001",
+            source_type="email",
+            excerpt="California situation",
+            timestamp=datetime(2001, 5, 14),
+            sender="jeff@enron.com",
+            char_start=42,
+            char_end=62,
+        )
+        db_path = str(tmp_path / "offset_test.db")
+        save_to_sqlite([], [], [ev], db_path)
+        loaded = load_evidence_from_sqlite(db_path)
+        assert len(loaded) == 1
+        assert loaded[0].char_start == 42
+        assert loaded[0].char_end == 62
+
+    def test_evidence_null_offsets_persisted(self, tmp_path):
+        """Evidence with no offsets (None) should round-trip cleanly."""
+        from graph_builder import save_to_sqlite, load_evidence_from_sqlite
+        from schema import Evidence
+        ev = Evidence(
+            evidence_id="ev_no_offset",
+            source_id="email_002",
+            source_type="email",
+            excerpt="some text",
+        )
+        db_path = str(tmp_path / "null_offset_test.db")
+        save_to_sqlite([], [], [ev], db_path)
+        loaded = load_evidence_from_sqlite(db_path)
+        assert loaded[0].char_start is None
+        assert loaded[0].char_end is None

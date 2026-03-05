@@ -94,7 +94,9 @@ def _init_db(conn: sqlite3.Connection):
             timestamp TEXT,
             subject TEXT,
             sender TEXT,
-            recipients TEXT
+            recipients TEXT,
+            char_start INTEGER,
+            char_end INTEGER
         );
         CREATE TABLE IF NOT EXISTS merges (
             merge_id TEXT PRIMARY KEY,
@@ -106,6 +108,12 @@ def _init_db(conn: sqlite3.Connection):
             reversible INTEGER DEFAULT 1
         );
     """)
+    # Bug 11 migration: add char_start/char_end if absent (for pre-existing databases)
+    for col_def in ("char_start INTEGER", "char_end INTEGER"):
+        try:
+            conn.execute(f"ALTER TABLE evidence ADD COLUMN {col_def}")
+        except sqlite3.OperationalError:
+            pass  # column already exists
     conn.commit()
 
 
@@ -156,7 +164,7 @@ def save_to_sqlite(entities: list[Entity], claims: list[Claim],
     ]
     conn.executemany("INSERT OR REPLACE INTO claims VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)", claim_rows)
 
-    # Batch insert evidence
+    # Batch insert evidence (Bug 11: include char_start/char_end)
     evidence_rows = [
         (
             ev.evidence_id,
@@ -167,10 +175,12 @@ def save_to_sqlite(entities: list[Entity], claims: list[Claim],
             ev.subject,
             ev.sender,
             json.dumps(ev.recipients) if ev.recipients else None,
+            ev.char_start,
+            ev.char_end,
         )
         for ev in evidence
     ]
-    conn.executemany("INSERT OR REPLACE INTO evidence VALUES (?,?,?,?,?,?,?,?)", evidence_rows)
+    conn.executemany("INSERT OR REPLACE INTO evidence VALUES (?,?,?,?,?,?,?,?,?,?)", evidence_rows)
 
     # Batch insert merge audit records
     merge_rows = [
@@ -254,7 +264,7 @@ def load_evidence_from_sqlite(db_path: str) -> list[Evidence]:
     evidence = []
     for row in rows:
         (evidence_id, source_id, source_type, excerpt, timestamp,
-         subject, sender, recipients_json) = row
+         subject, sender, recipients_json, char_start, char_end) = row
         evidence.append(Evidence(
             evidence_id=evidence_id,
             source_id=source_id,
@@ -264,6 +274,8 @@ def load_evidence_from_sqlite(db_path: str) -> list[Evidence]:
             subject=subject,
             sender=sender,
             recipients=json.loads(recipients_json) if recipients_json else None,
+            char_start=char_start,
+            char_end=char_end,
         ))
     return evidence
 
