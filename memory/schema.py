@@ -127,9 +127,12 @@ class RawClaimExtraction(BaseModel):
     @classmethod
     def validate_claim_type(cls, v: str) -> str:
         valid = {ct.value for ct in ClaimType}
-        if v.lower() not in valid:
-            raise ValueError(f"Invalid claim type '{v}'. Must be one of: {sorted(valid)}")
-        return v.lower()
+        normalized = v.lower()
+        if normalized not in valid:
+            # Coerce unknown claim types (e.g. LLM hallucinations like "confirmed", "confirmé")
+            # to "mentioned" rather than rejecting the whole extraction.
+            return "mentioned"
+        return normalized
 
     @field_validator('subject')
     @classmethod
