@@ -124,3 +124,72 @@ class TestClaimDedup:
         assert older.status == ClaimStatus.SUPERSEDED
         assert older.superseded_by == "c2"
         assert newer.status == ClaimStatus.ACTIVE
+
+
+class TestSplinkPersonDedup:
+    def test_merges_same_person_name_variants(self):
+        """Jeff Skilling / Jeffrey Skilling / Skilling Jeff → one cluster."""
+        from memory.schema import Entity, EntityType
+        from memory.dedup import deduplicate_persons_splink
+        group = [
+            Entity(entity_id="e1", canonical_name="Jeff Skilling",    entity_type=EntityType.PERSON),
+            Entity(entity_id="e2", canonical_name="Jeffrey Skilling", entity_type=EntityType.PERSON),
+            Entity(entity_id="e3", canonical_name="Skilling, Jeff",   entity_type=EntityType.PERSON),
+        ]
+        clusters = deduplicate_persons_splink(group)
+        assert len(clusters) == 1
+        assert sorted(clusters[0]) == [0, 1, 2]
+
+    def test_does_not_merge_different_last_names(self):
+        """John Lavorato and John Arnold share a first name only — must NOT merge."""
+        from memory.schema import Entity, EntityType
+        from memory.dedup import deduplicate_persons_splink
+        group = [
+            Entity(entity_id="e1", canonical_name="John Lavorato", entity_type=EntityType.PERSON),
+            Entity(entity_id="e2", canonical_name="John Arnold",   entity_type=EntityType.PERSON),
+        ]
+        clusters = deduplicate_persons_splink(group)
+        assert len(clusters) == 2
+
+    def test_does_not_merge_same_first_different_last(self):
+        """George Bush vs George Arnold — different last names → separate."""
+        from memory.schema import Entity, EntityType
+        from memory.dedup import deduplicate_persons_splink
+        group = [
+            Entity(entity_id="e1", canonical_name="George Bush",   entity_type=EntityType.PERSON),
+            Entity(entity_id="e2", canonical_name="George Arnold", entity_type=EntityType.PERSON),
+        ]
+        clusters = deduplicate_persons_splink(group)
+        assert len(clusters) == 2
+
+    def test_handles_single_entity(self):
+        """One entity → one singleton cluster [[0]]."""
+        from memory.schema import Entity, EntityType
+        from memory.dedup import deduplicate_persons_splink
+        group = [Entity(entity_id="e1", canonical_name="Ken Lay", entity_type=EntityType.PERSON)]
+        clusters = deduplicate_persons_splink(group)
+        assert clusters == [[0]]
+
+    def test_handles_empty_group(self):
+        """Empty list → empty list."""
+        from memory.dedup import deduplicate_persons_splink
+        assert deduplicate_persons_splink([]) == []
+
+    def test_splink_path_used_for_persons_in_dedup_entities(self, duplicate_entities):
+        """Integration: deduplicate_entities still collapses Skilling variants."""
+        from memory.dedup import deduplicate_entities
+        merged = deduplicate_entities(duplicate_entities)
+        person_names = [e.canonical_name for e in merged if e.entity_type.value == "person"]
+        assert len([n for n in person_names if "skilling" in n.lower()]) == 1
+        assert len([n for n in person_names if "lay" in n.lower()]) == 1
+
+    def test_george_bush_variants_merge(self):
+        """George Bush / George W Bush — same last name → one cluster."""
+        from memory.schema import Entity, EntityType
+        from memory.dedup import deduplicate_persons_splink
+        group = [
+            Entity(entity_id="e1", canonical_name="George Bush",   entity_type=EntityType.PERSON),
+            Entity(entity_id="e2", canonical_name="George W Bush", entity_type=EntityType.PERSON),
+        ]
+        clusters = deduplicate_persons_splink(group)
+        assert len(clusters) == 1
