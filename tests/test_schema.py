@@ -104,3 +104,43 @@ class TestRawClaimExtraction:
                 claim_type="mentioned", subject="", object="",
                 confidence=0.5, supporting_excerpt="some text"
             )
+
+
+class TestClaimTypeDiscovery:
+    def test_discovered_types_in_enum(self):
+        """Batch 5: 6 corpus-discovered types must exist in ClaimType enum."""
+        from memory.schema import ClaimType
+        discovered = {"approved", "rejected", "informed", "proposed", "agreed", "authorized"}
+        enum_values = {ct.value for ct in ClaimType}
+        missing = discovered - enum_values
+        assert not missing, f"Missing from ClaimType enum: {missing}"
+
+
+class TestClaimTypeConsistency:
+    def test_prompt_contains_all_claim_types(self):
+        """All ClaimType enum values must appear verbatim in the extraction prompt.
+        Fails if enum is updated without updating the prompt."""
+        from memory.schema import ClaimType
+        from pipeline.extraction import PROMPT_TEMPLATE
+        enum_values = {ct.value for ct in ClaimType}
+        missing = {v for v in enum_values if v not in PROMPT_TEMPLATE}
+        assert not missing, (
+            f"ClaimType values missing from PROMPT_TEMPLATE: {missing}. "
+            "Update the claim_type line in pipeline/extraction.py."
+        )
+
+    def test_prompt_types_all_in_enum(self):
+        """Every type in the prompt's claim_type string must exist in ClaimType.
+        Fails if prompt is updated without updating the enum."""
+        import re
+        from memory.schema import ClaimType
+        from pipeline.extraction import PROMPT_TEMPLATE
+        match = re.search(r'"claim_type":\s*"([^"]+)"', PROMPT_TEMPLATE)
+        assert match, "Could not find claim_type line in PROMPT_TEMPLATE"
+        prompt_types = {t.strip() for t in match.group(1).split('|')}
+        enum_values = {ct.value for ct in ClaimType}
+        unknown = prompt_types - enum_values
+        assert not unknown, (
+            f"Prompt lists types not in ClaimType enum: {unknown}. "
+            "Add them to ClaimType in memory/schema.py."
+        )

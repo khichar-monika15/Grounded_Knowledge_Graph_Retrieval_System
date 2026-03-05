@@ -54,7 +54,7 @@ Return ONLY valid JSON — no explanation, no markdown fences:
   ],
   "claims": [
     {{
-      "claim_type": "works_at|reports_to|participated_in|decided|requested|mentioned|discussed|sent_to|role_assignment|status_change|opinion",
+      "claim_type": "works_at|reports_to|participated_in|decided|requested|mentioned|discussed|sent_to|role_assignment|status_change|opinion|approved|rejected|informed|proposed|agreed|authorized",
       "subject": "entity name from Step 1",
       "object": "entity name from Step 1, or free-text value",
       "confidence": 0.0-1.0,
@@ -129,6 +129,7 @@ def call_llm(prompt: str) -> str:
             {"role": "user", "content": prompt},
         ],
         temperature=0.1,
+        max_tokens=8192,
         stream=False,
         api_base=BASE_URL,
         extra_headers={
@@ -136,29 +137,70 @@ def call_llm(prompt: str) -> str:
             "X-TFY-LOGGING-CONFIG": json.dumps({"enabled": True}),
         },
     )
+
+    finish_reason = getattr(response.choices[0], "finish_reason", None)
+    if finish_reason == "length":
+        logger.warning("LLM response truncated (finish_reason='length') — JSON likely incomplete")
+
     return response.choices[0].message.content
 
 
 def parse_llm_response(raw: str) -> Optional[dict]:
-    """Parse LLM response, handling markdown fences and loose text."""
+    """Parse LLM response, handling markdown fences and loose text.
+
+    Three-pass strategy:
+    1. Strip ```json ... ``` fences if present.
+    2. Try the full remaining text as JSON (handles clean responses).
+    3. Walk forward from the first '{' and find the matching '}' using a
+       bracket counter — this is immune to the greedy-regex problem where
+       post-JSON commentary containing braces causes json.loads to fail.
+    """
     if raw is None:
         return None
 
     text = raw.strip()
-    # Strip ```json ... ``` fences
+
+    # Pass 1: strip markdown fences
     fence_match = re.search(r'```(?:json)?\s*([\s\S]*?)```', text)
     if fence_match:
         text = fence_match.group(1).strip()
 
-    # Extract first JSON object
-    json_match = re.search(r'\{[\s\S]*\}', text)
-    if json_match:
-        text = json_match.group(0)
-
+    # Pass 2: try the whole text directly (fast path for clean responses)
     try:
         return json.loads(text)
     except (json.JSONDecodeError, ValueError):
+        pass
+
+    # Pass 3: bracket-balanced extraction — find first '{' and walk to its
+    # matching '}', ignoring any trailing commentary
+    start = text.find('{')
+    if start == -1:
         return None
+    depth = 0
+    in_string = False
+    escape_next = False
+    for i, ch in enumerate(text[start:], start):
+        if escape_next:
+            escape_next = False
+            continue
+        if ch == '\\' and in_string:
+            escape_next = True
+            continue
+        if ch == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if ch == '{':
+            depth += 1
+        elif ch == '}':
+            depth -= 1
+            if depth == 0:
+                try:
+                    return json.loads(text[start:i + 1])
+                except (json.JSONDecodeError, ValueError):
+                    return None
+    return None
 
 
 def validate_extraction(data: dict) -> list[str]:
@@ -242,7 +284,11 @@ def _extract_single(email_dict: dict, max_retries: int = 2) -> Optional[dict]:
             raw = call_llm(prompt)
             parsed = parse_llm_response(raw)
             if parsed is None:
-                logger.warning(f"Failed to parse LLM response on attempt {attempt + 1}")
+                preview = (raw or "")[:300].replace('\n', ' ')
+                logger.warning(
+                    f"Failed to parse LLM response on attempt {attempt + 1}. "
+                    f"Raw preview: {preview!r}"
+                )
                 continue
 
             errors = validate_extraction(parsed)

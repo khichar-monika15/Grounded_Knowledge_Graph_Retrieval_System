@@ -38,6 +38,8 @@ The core principle: **every memory item must trace back to a specific text excer
 ### Claim Types
 Chosen to capture the directed assertions in business email: who works where (`works_at`), who asked whom to do what (`requested`), what was discussed (`discussed`), what was decided (`decided`), and temporal roles (`role_assignment`, `status_change`). `sent_to` captures the communication graph itself as a claim.
 
+The initial 11 types were validated and extended to 17 via a data-driven discovery run (`pipeline/discover_claim_types.py`) on 30 sampled emails. The 6 added types — `approved`, `rejected`, `informed`, `proposed`, `agreed`, `authorized` — were the most frequent LLM-generated labels that previously failed Pydantic validation and were silently dropped.
+
 ### Evidence Model
 Every claim links to one or more `Evidence` objects containing:
 - Exact `excerpt` (the actual text that grounds the claim)
@@ -56,6 +58,8 @@ Confidence scale:
 - `1.0` = explicitly stated ("Andy is the CFO")
 - `0.7` = strongly implied ("Andy handles the financial structures")
 - `0.4` = weakly implied (peripheral references)
+
+Claim types in the prompt are kept in sync with the `ClaimType` enum via `TestClaimTypeConsistency` — an automated drift-prevention test that fails if either side is updated without updating the other.
 
 ### Quoted Content Handling
 Before extraction, `strip_quoted_content()` splits each email body into clean content and quoted/forwarded lines (starting with `>`). Only the clean content is sent to the LLM, preventing duplicate extraction of forwarded content. The quoted text is preserved separately for artifact dedup.
@@ -308,6 +312,7 @@ Two signals are fused: FAISS semantic rank and BM25 keyword rank (`rank-bm25`). 
 **Async + SQLite threading:** `asyncio.run_in_executor` dispatches `extract_email` to a thread pool. SQLite connections are opened and closed per call (not shared across threads), which is safe but adds minor overhead. A connection pool would be the production fix.
 
 ### Future Work
+- Data-driven ontology refresh: re-run `discover_claim_types.py` after expanding to 500+ emails to surface any remaining domain-specific types at higher sample fidelity.
 - True step-wise extraction (entities call → claims call) with Pydantic structured outputs
 - Named entity recognition as a pre-filter before LLM extraction (reduce token cost)
 - Graph traversal for context expansion (include 1-hop neighbors of matched entities)

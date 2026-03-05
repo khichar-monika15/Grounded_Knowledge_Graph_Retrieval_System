@@ -296,9 +296,20 @@ TDD session: tests written first (red), then fixes (green), 63 → 68 tests.
 
 ---
 
+## Improvements Batch 5 (Data-Driven Ontology)
+
+- **Problem:** LLM was already producing semantically valid types (`approved`, `rejected`, `informed`, `proposed`, `agreed`, `authorized`) that failed Pydantic validation and were silently dropped, reducing extraction yield.
+- **Fix:** `pipeline/discover_claim_types.py` — samples N emails biased toward longer bodies, calls LLM with open-ended prompt (no constrained `claim_type` list), normalizes free-text relationship labels with `re.sub`, applies synonym clustering via `SYNONYMS` dict, prints frequency table + suggested enum additions.
+- **ClaimType expanded:** 11 → 17 values. The 6 new types were the most frequent LLM-generated labels not previously in the enum.
+- **PROMPT_TEMPLATE updated:** All 17 types listed verbatim in the `claim_type` field of the extraction prompt.
+- **Drift-prevention tests added:** `TestClaimTypeDiscovery` (1 test) + `TestClaimTypeConsistency` (2 tests) — fail if enum and prompt diverge in either direction.
+- **Test count:** 72 → 75
+
+---
+
 ## Final State
 
-- **68/68 tests passing**
+- **75/75 tests passing**
 - **Pipeline output:** 1096 entities, 1074 claims, 1174 evidence, 528 merges
 - **Streamlit app:** pyvis graph rendering, entity browser, retrieval panel with grounded evidence cards
 - **write_up.md:** 10-section design document

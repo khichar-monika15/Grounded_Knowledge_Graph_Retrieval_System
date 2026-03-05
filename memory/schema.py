@@ -57,6 +57,13 @@ class ClaimType(str, Enum):
     ROLE_ASSIGNMENT = "role_assignment"
     STATUS_CHANGE = "status_change"
     OPINION = "opinion"
+    # Added via data-driven corpus discovery (Batch 5)
+    APPROVED = "approved"
+    REJECTED = "rejected"
+    INFORMED = "informed"
+    PROPOSED = "proposed"
+    AGREED = "agreed"
+    AUTHORIZED = "authorized"
 
 
 class ClaimStatus(str, Enum):
