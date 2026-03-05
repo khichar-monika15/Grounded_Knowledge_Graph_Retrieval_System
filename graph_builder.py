@@ -256,8 +256,14 @@ def load_claims_from_sqlite(db_path: str) -> list[Claim]:
 
 
 def load_evidence_from_sqlite(db_path: str) -> list[Evidence]:
-    """Load all evidence from SQLite."""
+    """Load all evidence from SQLite.
+
+    Runs _init_db first so any older database (missing char_start/char_end)
+    gets the ALTER TABLE migration applied before SELECT *, preventing the
+    'not enough values to unpack' crash when the app loads a pre-Bug11 DB.
+    """
     conn = sqlite3.connect(db_path)
+    _init_db(conn)   # ensures char_start/char_end columns exist (idempotent)
     rows = conn.execute("SELECT * FROM evidence").fetchall()
     conn.close()
 
