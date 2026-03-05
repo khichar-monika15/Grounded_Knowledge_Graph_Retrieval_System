@@ -195,7 +195,7 @@ def main():
     st.sidebar.markdown(f"**Evidence:** {len(evidence)}")
 
     tab1, tab2, tab3, tab4 = st.tabs([
-        "Graph Explorer", "Merge History", "Search", "Cypher Query"
+        "Graph Explorer", "Merge History", "Search", "Advanced Query (Cypher)"
     ])
 
     # ------------------------------------------------------------------
@@ -352,12 +352,7 @@ def main():
             "What did Vince Kaminski work on?",
         ]
 
-        # Horizontal search bar + button (vertically aligned via CSS)
-        st.markdown(
-            "<style>.search-btn > div > button { margin-top: -1.2rem; width: 100%; }</style>",
-            unsafe_allow_html=True,
-        )
-        col_q, col_btn = st.columns([5, 1])
+        col_q, col_btn = st.columns([5, 1], vertical_alignment="bottom")
         with col_q:
             question = st.text_input(
                 "Ask a question about Enron",
@@ -365,9 +360,7 @@ def main():
                 label_visibility="collapsed",
             )
         with col_btn:
-            st.markdown('<div class="search-btn">', unsafe_allow_html=True)
             search = st.button("Search", use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
 
         # Sample question chips
         st.caption("Try a sample question:")
@@ -415,7 +408,8 @@ def main():
     # Tab 4: Cypher Query
     # ------------------------------------------------------------------
     with tab4:
-        st.subheader("Graph Query (Cypher)")
+        st.subheader("Advanced Graph Query (Cypher)")
+        st.info("Cypher is a powerful graph query language that lets you find complex multi-hop relationships exactly. Use the templates below to see how it works, or write your own custom queries to explore the Enron memory graph.")
         if _ret_module._KUZU_STORE is None:
             st.info("Kùzu graph not loaded. Run the pipeline first.")
         else:
