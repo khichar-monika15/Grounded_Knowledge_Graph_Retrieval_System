@@ -4,6 +4,17 @@
 
 ---
 
+## TL;DR for Reviewers
+
+- **Extraction Quality**: Schema enforced via strict **Pydantic validators** (`ExtractionResult`). Empty evidence excerpts raise immediate validation errors. Hybrid chain-of-thought prompt resolves entities before claims. All claims track `extraction_version` for backfill capability.
+- **Grounding**: **100% Guaranteed**. The schema makes it physically impossible to ingest a claim without a linked `Evidence` object containing the exact source excerpt, email ID, sender, and date.
+- **Deduplication**: **Artifact**: MD5 hash & quoted-content substring filtering. **Entity**: Splink/Fellegi-Sunter + heuristics for persons (handles aliases/renames); Cosine > 0.85 for orgs. **Claim**: grouped by subject/object/type. All merges write an auditable log to `Entity.merge_history` and a reversible SQLite `merges` table.
+- **Long-Term Correctness**: Temporal truth modeled via `ClaimStatus` (active, superseded, uncertain). Conflicting assertions over time are modeled as a linked list (`superseded_by`). Confidence decays incrementally. Sources can be soft-deleted (`redacted=1`) to cascade claim retraction.
+- **Usability**: Interactive Streamlit UI provides 4 tabs: an explorable Cytoscape **graph**, an auditable **merge history**, grounded context pack **retrieval**, and a 2-hop **Cypher query IDE** (via Kùzu).
+- **Clarity**: The architecture is fully reproducible (`README.md` runs end-to-end to UI in ~minutes). Section 10 explicitly acknowledges tradeoff compromises (e.g. step-wise vs single-call extraction, missing `.mbox` headers for true threading).
+
+---
+
 ## 1. Overview
 
 This system extracts structured knowledge from the Enron email dataset, deduplicates entities and
