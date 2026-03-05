@@ -9,7 +9,7 @@ Improvements over v1:
 import hashlib
 import re
 import uuid
-from datetime import datetime
+from datetime import datetime, UTC
 
 import numpy as np
 
@@ -207,7 +207,7 @@ def deduplicate_entities(entities: list[Entity]) -> list[Entity]:
                     "merged_from": e.entity_id,
                     "merged_into": primary.entity_id,
                     "reason": "embedding_similarity",
-                    "timestamp": datetime.utcnow().isoformat(),
+                    "timestamp": datetime.now(UTC).isoformat(),
                 }
                 for e in members[1:]
             ]
@@ -252,7 +252,7 @@ def deduplicate_claims(claims: list[Claim]) -> list[Claim]:
 
         merge_hist = [
             {"merged_from": c.claim_id, "merged_into": best.claim_id,
-             "reason": "duplicate_claim", "timestamp": datetime.utcnow().isoformat()}
+             "reason": "duplicate_claim", "timestamp": datetime.now(UTC).isoformat()}
             for c in group if c.claim_id != best.claim_id
         ]
 

@@ -2,7 +2,7 @@
 import json
 import sqlite3
 import uuid
-from datetime import datetime
+from datetime import datetime, UTC
 from typing import Optional
 
 import networkx as nx
@@ -190,7 +190,7 @@ def save_to_sqlite(entities: list[Entity], claims: list[Claim],
             mh.get("merged_from", ""),
             mh.get("merged_into", ""),
             mh.get("reason", ""),
-            mh.get("timestamp", datetime.utcnow().isoformat()),
+            mh.get("timestamp", datetime.now(UTC).isoformat()),
             1,
         )
         for e in entities
