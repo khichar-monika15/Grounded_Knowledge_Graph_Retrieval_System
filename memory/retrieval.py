@@ -17,7 +17,7 @@ from typing import Optional
 
 import numpy as np
 
-from schema import Entity, Claim, Evidence, ClaimStatus
+from memory.schema import Entity, Claim, Evidence, ClaimStatus
 
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
@@ -37,17 +37,17 @@ _RRF_K = 60
 # ---------------------------------------------------------------------------
 
 def _get_model():
-    from embeddings import get_model
+    from memory.embeddings import get_model
     return get_model()
 
 
 def _encode(texts: list[str]) -> np.ndarray:
-    from embeddings import encode
+    from memory.embeddings import encode
     return encode(texts, normalize=True)
 
 
 def _cosine_sim(a: np.ndarray, b: np.ndarray) -> float:
-    from embeddings import cosine_similarity
+    from memory.embeddings import cosine_similarity
     return cosine_similarity(a, b)
 
 

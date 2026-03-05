@@ -18,12 +18,12 @@ from datetime import datetime
 import pandas as pd
 
 from config import DB_PATH, EXTRACTIONS_DIR, CONTEXT_PACKS_DIR, GRAPH_JSON_PATH, OPENAI_API_KEY
-from schema import Entity, Claim, Evidence, EntityType, ClaimType, ClaimStatus
-from extraction import extract_email, validate_extraction, strip_quoted_content
-from dedup import hash_email_body, is_quoted_duplicate, deduplicate_entities, deduplicate_claims
-from graph_builder import build_graph, save_to_sqlite, save_graph_json
-from retrieval import build_context_pack
-from vector_store import build_and_save_index
+from memory.schema import Entity, Claim, Evidence, EntityType, ClaimType, ClaimStatus
+from pipeline.extraction import extract_email, validate_extraction, strip_quoted_content
+from memory.dedup import hash_email_body, is_quoted_duplicate, deduplicate_entities, deduplicate_claims
+from memory.graph_builder import build_graph, save_to_sqlite, save_graph_json
+from memory.retrieval import build_context_pack
+from memory.vector_store import build_and_save_index
 
 FAISS_INDEX_PATH = "outputs/faiss_index.npz"
 

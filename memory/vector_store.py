@@ -19,7 +19,7 @@ from pathlib import Path
 
 import numpy as np
 
-from schema import Entity, Claim
+from memory.schema import Entity, Claim
 
 
 class VectorStore:
@@ -138,7 +138,7 @@ def build_and_save_index(
     by the Streamlit app at startup so retrieval never re-encodes the corpus.
     Claim texts use entity canonical names (not UUIDs) for meaningful semantic search.
     """
-    from embeddings import encode
+    from memory.embeddings import encode
 
     print(f"Building FAISS index for {len(entities)} entities and {len(claims)} claims...")
 

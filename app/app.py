@@ -20,9 +20,9 @@ st.set_page_config(page_title="Enron Memory Graph", layout="wide")
 
 @st.cache_resource
 def get_embedding_model():
-    """Return the shared embedding model singleton — delegates to embeddings.py (Bug 8).
+    """Return the shared embedding model singleton — delegates to memory/embeddings.py (Bug 8).
     Avoids loading a second ~90MB model copy into RAM."""
-    from embeddings import get_model
+    from memory.embeddings import get_model
     return get_model()
 
 
@@ -31,7 +31,7 @@ def load_data():
     """Load entities, claims, evidence from SQLite."""
     if not os.path.exists(DB_PATH):
         return [], [], []
-    from graph_builder import load_entities_from_sqlite, load_claims_from_sqlite, load_evidence_from_sqlite
+    from memory.graph_builder import load_entities_from_sqlite, load_claims_from_sqlite, load_evidence_from_sqlite
     entities = load_entities_from_sqlite(DB_PATH)
     claims = load_claims_from_sqlite(DB_PATH)
     evidence = load_evidence_from_sqlite(DB_PATH)
@@ -41,7 +41,7 @@ def load_data():
 @st.cache_resource
 def load_graph(_entities, _claims):
     """Build NetworkX graph from entities and claims."""
-    from graph_builder import build_graph
+    from memory.graph_builder import build_graph
     return build_graph(list(_entities), list(_claims))
 
 
@@ -150,13 +150,13 @@ def main():
     entity_by_id = {e.entity_id: e for e in entities}
 
     # Pre-warm embedding model into the shared embeddings singleton (Bug 4)
-    import embeddings
+    import memory.embeddings as embeddings
     embeddings._MODEL = get_embedding_model()
 
     # Load pre-built FAISS index into retrieval module (Bug 5)
     if os.path.exists(FAISS_INDEX_PATH):
-        from vector_store import VectorStore
-        import retrieval
+        from memory.vector_store import VectorStore
+        import memory.retrieval as retrieval
         retrieval._VECTOR_STORE = VectorStore.load(FAISS_INDEX_PATH)
 
     # Sidebar filters
@@ -223,9 +223,9 @@ def main():
         search = st.button("Search", use_container_width=True)
 
     if search and question:
-        import embeddings
+        import memory.embeddings as embeddings
         embeddings._MODEL = get_embedding_model()  # reuse cached model (Bug 4)
-        from retrieval import build_context_pack
+        from memory.retrieval import build_context_pack
         with st.spinner("Searching..."):
             pack = build_context_pack(question, entities, claims, evidence)
 

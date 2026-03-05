@@ -88,7 +88,7 @@ def sample_valid_llm_response(sample_extraction_response):
 @pytest.fixture
 def duplicate_entities():
     """Entities that should be merged during dedup."""
-    from schema import Entity, EntityType
+    from memory.schema import Entity, EntityType
     return [
         Entity(entity_id="e1", canonical_name="Jeff Skilling", entity_type=EntityType.PERSON, aliases=["Skilling"]),
         Entity(entity_id="e2", canonical_name="Skilling, Jeff", entity_type=EntityType.PERSON, aliases=["J. Skilling"]),
@@ -100,7 +100,7 @@ def duplicate_entities():
 @pytest.fixture
 def duplicate_claims():
     """Claims that should be deduplicated."""
-    from schema import Claim, ClaimType, ClaimStatus
+    from memory.schema import Claim, ClaimType, ClaimStatus
     return [
         Claim(claim_id="c1", claim_type=ClaimType.WORKS_AT, subject_entity_id="e1",
               object_entity_id="org1", object_value=None, confidence=0.9,
@@ -114,7 +114,7 @@ def duplicate_claims():
 @pytest.fixture
 def conflicting_claims():
     """Claims that conflict — same subject+predicate, different object."""
-    from schema import Claim, ClaimType, ClaimStatus
+    from memory.schema import Claim, ClaimType, ClaimStatus
     from datetime import datetime
     return [
         Claim(claim_id="c1", claim_type=ClaimType.REPORTS_TO, subject_entity_id="e1",
@@ -129,7 +129,7 @@ def conflicting_claims():
 @pytest.fixture
 def sample_graph_data():
     """Pre-built entities, claims, and evidence for graph/retrieval tests."""
-    from schema import Entity, Claim, Evidence, EntityType, ClaimType
+    from memory.schema import Entity, Claim, Evidence, EntityType, ClaimType
     from datetime import datetime
     entities = [
         Entity(entity_id="e1", canonical_name="Jeff Skilling", entity_type=EntityType.PERSON, aliases=["Skilling"]),

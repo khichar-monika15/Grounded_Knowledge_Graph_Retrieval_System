@@ -6,25 +6,25 @@ import sqlite3
 
 class TestGraphConstruction:
     def test_entities_become_nodes(self, sample_graph_data):
-        from graph_builder import build_graph
+        from memory.graph_builder import build_graph
         G = build_graph(sample_graph_data["entities"], sample_graph_data["claims"])
         assert G.number_of_nodes() == 4
         assert G.nodes["e1"]["canonical_name"] == "Jeff Skilling"
 
     def test_claims_become_edges(self, sample_graph_data):
-        from graph_builder import build_graph
+        from memory.graph_builder import build_graph
         G = build_graph(sample_graph_data["entities"], sample_graph_data["claims"])
         assert G.has_edge("e1", "e3")
 
     def test_attribute_claims_stored_on_node(self, sample_graph_data):
         """Claims with object_value (no object_entity) → stored as node attributes."""
-        from graph_builder import build_graph
+        from memory.graph_builder import build_graph
         G = build_graph(sample_graph_data["entities"], sample_graph_data["claims"])
         node_data = G.nodes["e1"]
         assert "attribute_claims" in node_data or G.number_of_edges() >= 2
 
     def test_edge_has_evidence_ids(self, sample_graph_data):
-        from graph_builder import build_graph
+        from memory.graph_builder import build_graph
         G = build_graph(sample_graph_data["entities"], sample_graph_data["claims"])
         edge_data = G.get_edge_data("e1", "e3")
         assert edge_data is not None
@@ -32,7 +32,7 @@ class TestGraphConstruction:
 
 class TestSQLitePersistence:
     def test_save_and_load_entities(self, sample_graph_data, tmp_path):
-        from graph_builder import save_to_sqlite, load_entities_from_sqlite
+        from memory.graph_builder import save_to_sqlite, load_entities_from_sqlite
         db_path = str(tmp_path / "test.db")
         save_to_sqlite(sample_graph_data["entities"], sample_graph_data["claims"],
                        sample_graph_data["evidence"], db_path)
@@ -40,7 +40,7 @@ class TestSQLitePersistence:
         assert len(loaded) == 4
 
     def test_save_and_load_claims(self, sample_graph_data, tmp_path):
-        from graph_builder import save_to_sqlite, load_claims_from_sqlite
+        from memory.graph_builder import save_to_sqlite, load_claims_from_sqlite
         db_path = str(tmp_path / "test.db")
         save_to_sqlite(sample_graph_data["entities"], sample_graph_data["claims"],
                        sample_graph_data["evidence"], db_path)
@@ -48,7 +48,7 @@ class TestSQLitePersistence:
         assert len(loaded) == 3
 
     def test_save_and_load_evidence(self, sample_graph_data, tmp_path):
-        from graph_builder import save_to_sqlite, load_evidence_from_sqlite
+        from memory.graph_builder import save_to_sqlite, load_evidence_from_sqlite
         db_path = str(tmp_path / "test.db")
         save_to_sqlite(sample_graph_data["entities"], sample_graph_data["claims"],
                        sample_graph_data["evidence"], db_path)
@@ -57,7 +57,7 @@ class TestSQLitePersistence:
         assert loaded[0].excerpt != ""
 
     def test_sqlite_tables_created(self, sample_graph_data, tmp_path):
-        from graph_builder import save_to_sqlite
+        from memory.graph_builder import save_to_sqlite
         db_path = str(tmp_path / "test.db")
         save_to_sqlite(sample_graph_data["entities"], sample_graph_data["claims"],
                        sample_graph_data["evidence"], db_path)
@@ -72,7 +72,7 @@ class TestSQLitePersistence:
 
     def test_idempotent_save(self, sample_graph_data, tmp_path):
         """Saving twice should not create duplicates."""
-        from graph_builder import save_to_sqlite, load_entities_from_sqlite
+        from memory.graph_builder import save_to_sqlite, load_entities_from_sqlite
         db_path = str(tmp_path / "test.db")
         save_to_sqlite(sample_graph_data["entities"], sample_graph_data["claims"],
                        sample_graph_data["evidence"], db_path)
@@ -83,8 +83,8 @@ class TestSQLitePersistence:
 
     def test_evidence_char_offsets_persisted(self, tmp_path):
         """Bug 11: char_start/char_end must survive the SQLite round-trip."""
-        from graph_builder import save_to_sqlite, load_evidence_from_sqlite
-        from schema import Evidence
+        from memory.graph_builder import save_to_sqlite, load_evidence_from_sqlite
+        from memory.schema import Evidence
         from datetime import datetime
         ev = Evidence(
             evidence_id="ev_offset_test",
@@ -105,8 +105,8 @@ class TestSQLitePersistence:
 
     def test_evidence_null_offsets_persisted(self, tmp_path):
         """Evidence with no offsets (None) should round-trip cleanly."""
-        from graph_builder import save_to_sqlite, load_evidence_from_sqlite
-        from schema import Evidence
+        from memory.graph_builder import save_to_sqlite, load_evidence_from_sqlite
+        from memory.schema import Evidence
         ev = Evidence(
             evidence_id="ev_no_offset",
             source_id="email_002",

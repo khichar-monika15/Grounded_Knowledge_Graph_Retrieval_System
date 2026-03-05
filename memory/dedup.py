@@ -13,7 +13,7 @@ from datetime import datetime, UTC
 
 import numpy as np
 
-from schema import Entity, Claim, ClaimStatus, EntityType
+from memory.schema import Entity, Claim, ClaimStatus, EntityType
 
 
 def hash_email_body(body: str) -> str:
@@ -143,7 +143,7 @@ def _build_merge_clusters(group: list[Entity], etype: str, threshold: float = 0.
     # Build text representations
     texts = [' '.join([e.canonical_name] + e.aliases) for e in group]
 
-    from embeddings import encode, cosine_similarity_matrix
+    from memory.embeddings import encode, cosine_similarity_matrix
     embs = encode(texts, normalize=True)          # shape (n, d), L2-normalised
     sim_matrix = cosine_similarity_matrix(embs, embs)  # shape (n, n), single matmul
 

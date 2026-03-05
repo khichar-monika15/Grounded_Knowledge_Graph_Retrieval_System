@@ -7,7 +7,7 @@ from typing import Optional
 
 import networkx as nx
 
-from schema import Entity, Claim, Evidence, EntityType, ClaimType, ClaimStatus
+from memory.schema import Entity, Claim, Evidence, EntityType, ClaimType, ClaimStatus
 
 
 def build_graph(entities: list[Entity], claims: list[Claim]) -> nx.MultiDiGraph:

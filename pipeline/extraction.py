@@ -27,7 +27,7 @@ CHUNK_OVERLAP_WORDS = 50  # overlap between consecutive chunks
 from pydantic import ValidationError
 
 from config import OPENAI_API_KEY, BASE_URL, MODEL, EXTRACTIONS_DIR
-from schema import ExtractionResult
+from memory.schema import ExtractionResult
 
 logger = logging.getLogger(__name__)
 

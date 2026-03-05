@@ -7,13 +7,13 @@ import json
 class TestFullPipeline:
     def test_extraction_to_graph_pipeline(self, sample_email_raw, sample_valid_llm_response, mocker, tmp_path):
         """Full flow: email → extraction → dedup → graph → SQLite."""
-        from extraction import extract_email
-        from dedup import deduplicate_entities, deduplicate_claims
-        from graph_builder import build_graph, save_to_sqlite
-        from schema import Entity, Claim, Evidence, EntityType, ClaimType
+        from pipeline.extraction import extract_email
+        from memory.dedup import deduplicate_entities, deduplicate_claims
+        from memory.graph_builder import build_graph, save_to_sqlite
+        from memory.schema import Entity, Claim, Evidence, EntityType, ClaimType
         import uuid
 
-        mocker.patch("extraction.call_llm", return_value=sample_valid_llm_response)
+        mocker.patch("pipeline.extraction.call_llm", return_value=sample_valid_llm_response)
 
         result = extract_email(sample_email_raw)
         assert result is not None
@@ -39,7 +39,7 @@ class TestFullPipeline:
 
     def test_retrieval_returns_grounded_results(self, sample_graph_data):
         """Every returned claim must have evidence with non-empty excerpts."""
-        from retrieval import build_context_pack
+        from memory.retrieval import build_context_pack
         pack = build_context_pack("Raptor project",
                                    sample_graph_data["entities"],
                                    sample_graph_data["claims"],
@@ -52,7 +52,7 @@ class TestFullPipeline:
     def test_object_entity_auto_created(self):
         """Bug 10: object entities not listed under 'entities' must be auto-created
         so the claim becomes an entity-relation edge, not a degraded attribute claim."""
-        from run_pipeline import emails_to_schema_objects
+        from pipeline.run_pipeline import emails_to_schema_objects
         import uuid
 
         extraction = {
@@ -96,7 +96,7 @@ class TestFullPipeline:
         """Bug 15: when the same entity name appears across multiple emails,
         the pipeline should reuse the entity and update last_seen to the later date
         rather than creating duplicate entities with frozen timestamps."""
-        from run_pipeline import emails_to_schema_objects
+        from pipeline.run_pipeline import emails_to_schema_objects
         from datetime import datetime
 
         extraction_may = {
@@ -153,7 +153,7 @@ class TestFullPipeline:
 
     def test_context_pack_serializable(self, sample_graph_data):
         """Context packs must be JSON-serializable for output files."""
-        from retrieval import build_context_pack
+        from memory.retrieval import build_context_pack
         pack = build_context_pack("Jeff Skilling",
                                    sample_graph_data["entities"],
                                    sample_graph_data["claims"],
