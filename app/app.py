@@ -33,8 +33,8 @@ ENTITY_COLORS = {
 ENTITY_ICONS = {
     "person": "person",
     "organization": "business",
-    "project": "work",
-    "topic": "label",
+    "project": "folder",       # "work" not bundled; folder is closest available
+    "topic": "description",    # "label" not bundled; description is closest available
     "location": "place",
     "role": "badge",
 }
@@ -181,6 +181,38 @@ def main():
         elements, node_styles, edge_styles = build_graph_elements(
             entities, claims, selected_etypes, confidence_threshold, status_filter
         )
+
+        total_nodes = len(elements['nodes'])
+        total_edges = len(elements['edges'])
+
+        # Cap node count to prevent browser crash on large graphs
+        max_nodes = st.slider(
+            "Max nodes to render", 50, min(total_nodes, 2000), min(300, total_nodes), 50,
+            help="Limit graph size to keep the browser responsive."
+        )
+
+        if total_nodes > max_nodes:
+            # Keep the most-connected nodes: count edges per node, rank, take top-N
+            node_ids = {n['data']['id'] for n in elements['nodes']}
+            from collections import Counter
+            degree = Counter()
+            for e in elements['edges']:
+                degree[e['data']['source']] += 1
+                degree[e['data']['target']] += 1
+            top_ids = {nid for nid, _ in degree.most_common(max_nodes)}
+            # Always include nodes with zero degree up to the cap
+            remaining = max_nodes - len(top_ids)
+            if remaining > 0:
+                zero_deg = [n['data']['id'] for n in elements['nodes'] if n['data']['id'] not in top_ids]
+                top_ids.update(zero_deg[:remaining])
+
+            elements['nodes'] = [n for n in elements['nodes'] if n['data']['id'] in top_ids]
+            elements['edges'] = [e for e in elements['edges']
+                                 if e['data']['source'] in top_ids and e['data']['target'] in top_ids]
+            st.info(
+                f"⚡ Showing top {len(elements['nodes'])} most-connected nodes "
+                f"(of {total_nodes} total). Adjust the slider above to see more."
+            )
 
         st.caption(
             f"Showing {len(elements['nodes'])} nodes · {len(elements['edges'])} edges. "
