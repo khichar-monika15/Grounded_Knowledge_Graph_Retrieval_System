@@ -58,6 +58,20 @@ def build_graph(entities: list[Entity], claims: list[Claim]) -> nx.MultiDiGraph:
     return G
 
 
+def prune_orphan_nodes(G: nx.MultiDiGraph, keep_types: set[str] | None = None) -> int:
+    """Remove nodes with degree=0 (no edges). Returns number removed.
+
+    keep_types: entity types to preserve even if isolated (e.g. {"organization"}).
+    """
+    keep_types = keep_types or set()
+    orphans = [
+        n for n in G.nodes()
+        if G.degree(n) == 0 and G.nodes[n].get("entity_type") not in keep_types
+    ]
+    G.remove_nodes_from(orphans)
+    return len(orphans)
+
+
 def _init_db(conn: sqlite3.Connection):
     """Create tables if they don't exist."""
     conn.executescript("""

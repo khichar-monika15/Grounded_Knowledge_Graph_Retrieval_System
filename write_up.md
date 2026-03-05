@@ -227,9 +227,15 @@ valid under the new version.
 | Retry on failure | `extract_email()` retries once; errors logged and counted |
 | Pipeline metrics | `run_pipeline.py` prints validation error count, avg confidence, conflict count |
 
-**Future gates not yet implemented:** Confidence decay (claims older than N months with no
-corroborating evidence decay toward `UNCERTAIN`), human review queue for low-confidence or
-conflicting claims. Both are discussed in Tradeoffs.
+**Confidence decay** (`memory/decay.py`): Claims with `valid_from` older than N months with no
+corroborating evidence have their confidence multiplied by a half-life factor
+(`0.5 ^ (age_days / half_life_days)`). Multi-evidence claims decay slower (log scale).
+Claims falling below 0.3 are marked `UNCERTAIN`. Superseded/retracted claims are untouched.
+
+**Human review queue** (`outputs/review_queue.json`): After every pipeline run, claims with
+`confidence < 0.5`, status `SUPERSEDED`, or status `UNCERTAIN` after decay are written to a
+flagged review queue. This ensures low-confidence or conflicting claims are surfaced for human
+inspection rather than silently persisted.
 
 ---
 
@@ -286,6 +292,11 @@ Threshold: **0.85** (intentionally strict — better to under-merge than over-me
   dict lookup (not O(E×M) nested loop)
 
 ### 5.3 Level 3 — Claim Dedup
+
+**Batch 9 fix:** Multi-valued claim types (`sent_to`, `mentioned`, `discussed`, etc.)
+were previously wrongly marked SUPERSEDED when the same subject appeared with different
+objects. A `SINGLE_VALUED_CLAIMS` guard (`reports_to`, `works_at`, `role_assignment`)
+now limits supersession to types where only one value is semantically valid at a time.
 
 Claims are grouped by `(claim_type, subject_entity_id, object_entity_id)`.
 
@@ -444,14 +455,18 @@ reproducibility across kuzu Python API changes.
 `run_pipeline.py` prints quality metrics after every run:
 
 ```
-Entities:                        2910
-Claims:                          2074
-Evidence:                        2104
-Merges:                           390
-Average extraction confidence:   0.978
-Conflicts (SUPERSEDED claims):    738
+Entities:                        2542
+Claims:                          2098
+Evidence:                        2196
+Merges:                           340
+Average extraction confidence:   0.680
+Conflicts (SUPERSEDED claims):     23
 Validation errors:                  0
 Duplicate emails skipped:           0
+Orphan nodes pruned:               47
+Uncertain after decay:             12
+Review queue items:               201
+Entity resolution (gold):  P=0.933  R=0.867  F1=0.899
 ```
 
 These metrics serve as quality gates:
@@ -778,8 +793,8 @@ BASE_URL = "http://localhost:11434"
 | Gap | Current State | Production Fix |
 |-----|--------------|----------------|
 | Evidence offsets | `char_start`/`char_end` computed and stored | UI does not yet render span highlights |
-| Confidence decay | Not implemented | Claims older than N months → `UNCERTAIN` if no corroboration |
-| Human review queue | Not implemented | Flag `confidence < 0.5` or conflicting claims for review |
+| Confidence decay | Implemented in `memory/decay.py` — half-life decay, UNCERTAIN threshold | Scheduled decay job; corroboration-count slows decay further |
+| Human review queue | Implemented — `outputs/review_queue.json` flagged at pipeline end | Webhook-driven review queue with assignee routing |
 | Thread linking | Substring dedup approximation | Requires `Message-ID` / `In-Reply-To` from raw `.mbox` files |
 | Async + SQLite | One connection per extraction call | Connection pool for production |
 | Kùzu path API | Iterative 1-hop BFS used instead of `[c:Claim*1..N]` variable-length Cypher | Variable-length syntax returns edges as a list whose Python representation varies between kuzu versions; iterative approach is robust and version-stable |
@@ -788,20 +803,22 @@ BASE_URL = "http://localhost:11434"
 
 ## 11. Test Suite
 
-87 tests across 7 modules, all passing. Written test-first (TDD — red → green → refactor):
+114 tests across 9 modules, all passing. Written test-first (TDD — red → green → refactor):
 
 | Module | Tests | Key Behaviors Covered |
 |--------|-------|-----------------------|
 | `test_schema.py` | 17 | Pydantic validation, enum values, confidence bounds, drift-prevention |
-| `test_extraction.py` | 14 | Prompt building, JSON parsing (fences, balanced brackets), retry logic |
-| `test_dedup.py` | 13 | Hash dedup, quoted dedup, entity merge, claim merge, conflict detection |
+| `test_extraction.py` | 22 | Prompt building, JSON parsing (fences, balanced brackets), retry logic, chunking |
+| `test_dedup.py` | 26 | Hash dedup, quoted dedup, entity merge, claim merge, conflict detection, SINGLE_VALUED_CLAIMS, Splink |
 | `test_graph_builder.py` | 11 | Graph construction, SQLite persistence, idempotency, offsets |
 | `test_retrieval.py` | 12 | Entity matching, bilateral claims, concept search, context pack grounding |
 | `test_integration.py` | 5 | End-to-end pipeline, grounded retrieval, JSON serializability |
 | `test_kuzu_store.py` | 12 | Schema creation, idempotent load, 1-hop, 2-hop, 3-hop traversal, unknown entity, raw Cypher, graceful degradation |
+| `test_eval.py` | 4 | Gold-standard precision/recall, false-merge detection, name normalization |
+| `test_decay.py` | 5 | Recent claims untouched, old claims decay, multi-evidence decay slower, threshold → UNCERTAIN, superseded untouched |
 
 ```bash
-uv run pytest tests/ -v   # 87/87 pass
+uv run pytest tests/ -v   # 114/114 pass
 ```
 
 ---
@@ -809,16 +826,26 @@ uv run pytest tests/ -v   # 87/87 pass
 ## 12. Pipeline Quality Metrics (200-Email Run)
 
 ```
-Entities:                        2910
-Claims:                          2074
-Evidence:                        2104
-Merges:                           390
-Average extraction confidence:   0.978
-Conflicts (SUPERSEDED claims):    738
+Entities:                        2542   (post-dedup, post-orphan-prune)
+Claims:                          2098
+Evidence:                        2196
+Merges:                           340
+Average extraction confidence:   0.680  (recalibrated from structural signals)
+Conflicts (SUPERSEDED claims):     23   (SINGLE_VALUED_CLAIMS guard applied)
 Validation errors:                  0
 Duplicate emails skipped:           0
 ```
 
-The 234 superseded claims represent genuine temporal conflicts captured by the pipeline —
-e.g., different emails asserting different reporting lines for the same person. These are visible
-in the UI's conflict panel and in every context pack's `conflicts` field.
+### Quality Improvement: Batch 8 → Batch 9
+
+| Metric | Batch 8 (pre-fix) | Batch 9 (this run) | Change |
+|--------|-------------------|--------------------|--------|
+| Total entities | 5,773 | 2,542 | −56% (garbage filter + orphan prune) |
+| Superseded claims | 1,504 (36%) | 23 (<1%) | −98% (SINGLE_VALUED_CLAIMS guard) |
+| Avg confidence | 0.978 (91% at 1.0) | 0.680 | Realistic distribution (structural recalibration) |
+| Tests passing | 87 | 114 | +27 (eval + decay + SINGLE_VALUED guard coverage, Splink) |
+
+The 23 superseded claims represent genuine temporal conflicts — e.g., different emails asserting
+different reporting lines for the same person. Multi-valued claim types (`sent_to`, `mentioned`,
+`discussed`) correctly remain ACTIVE regardless of how many distinct objects appear per subject.
+These conflicts are visible in the UI's conflict panel and in every context pack's `conflicts` field.

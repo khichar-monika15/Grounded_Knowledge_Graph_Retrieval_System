@@ -21,7 +21,7 @@ from config import DB_PATH, EXTRACTIONS_DIR, CONTEXT_PACKS_DIR, GRAPH_JSON_PATH,
 from memory.schema import Entity, Claim, Evidence, EntityType, ClaimType, ClaimStatus
 from pipeline.extraction import extract_email, validate_extraction, strip_quoted_content
 from memory.dedup import hash_email_body, is_quoted_duplicate, deduplicate_entities, deduplicate_claims
-from memory.graph_builder import build_graph, save_to_sqlite, save_graph_json
+from memory.graph_builder import build_graph, save_to_sqlite, save_graph_json, prune_orphan_nodes
 from memory.retrieval import build_context_pack
 from memory.vector_store import build_and_save_index
 
@@ -293,6 +293,36 @@ async def async_extract_batch(emails: list[dict], output_dir: str,
 
 
 # ---------------------------------------------------------------------------
+# Review queue
+# ---------------------------------------------------------------------------
+
+def _generate_review_queue(claims: list, threshold: float = 0.5) -> list:
+    """Flag claims with low confidence, SUPERSEDED, or UNCERTAIN status for human review."""
+    queue = []
+    for c in claims:
+        reasons = []
+        if c.confidence < threshold and c.status == ClaimStatus.ACTIVE:
+            reasons.append(f"low_confidence ({c.confidence:.2f})")
+        if c.status == ClaimStatus.SUPERSEDED:
+            reasons.append("superseded_claim")
+        if c.status == ClaimStatus.UNCERTAIN:
+            reasons.append("uncertain_after_decay")
+        if reasons:
+            queue.append({
+                "claim_id": c.claim_id,
+                "reasons": reasons,
+                "claim_type": c.claim_type.value,
+                "subject": c.subject_entity_id,
+                "confidence": c.confidence,
+            })
+    os.makedirs("outputs", exist_ok=True)
+    with open("outputs/review_queue.json", "w") as f:
+        json.dump(queue, f, indent=2, default=str)
+    print(f"Review queue: {len(queue)} items flagged → outputs/review_queue.json")
+    return queue
+
+
+# ---------------------------------------------------------------------------
 # Main pipeline
 # ---------------------------------------------------------------------------
 
@@ -386,10 +416,18 @@ def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: boo
     merge_count = sum(len(e.merge_history) for e in entities)
     print(f"After claim dedup: {len(claims)} claims, {conflicts} conflicts")
 
+    # Step 6.5: Confidence decay
+    print("Applying confidence decay...")
+    from memory.decay import apply_confidence_decay
+    claims = apply_confidence_decay(claims, reference_date=datetime(2001, 12, 31))
+    uncertain_count = sum(1 for c in claims if c.status == ClaimStatus.UNCERTAIN)
+    print(f"After decay: {uncertain_count} claims marked UNCERTAIN")
+
     # Step 7: Build graph
     print("Building memory graph...")
     G = build_graph(entities, claims)
-    print(f"Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    pruned = prune_orphan_nodes(G, keep_types={"organization"})
+    print(f"Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges ({pruned} orphans pruned)")
 
     # Step 8: Persist to SQLite (uses executemany)
     print(f"Saving to SQLite: {DB_PATH}...")
@@ -411,6 +449,12 @@ def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: boo
     _ret._KUZU_STORE = kuzu_store
     print(f"  Kùzu graph ready at {KUZU_DB_PATH}")
 
+    # Step 9.6: Gold-standard entity evaluation
+    print("Running gold-standard entity evaluation...")
+    from eval.gold_standard import evaluate_entity_dedup
+    eval_result = evaluate_entity_dedup(entities)
+    print(f"  Entity resolution: P={eval_result['precision']}  R={eval_result['recall']}  F1={eval_result['f1']}")
+
     # Step 10: Generate context packs
     print("Generating context packs...")
     questions = [
@@ -429,6 +473,9 @@ def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: boo
             json.dump(pack, f, indent=2, default=str)
         print(f"  Saved: {pack_path} ({len(pack['claims'])} claims)")
 
+    # Step 10.5: Generate review queue
+    review_queue = _generate_review_queue(claims)
+
     # Step 11: Quality metrics
     confidences = [c.confidence for c in claims if c.status == ClaimStatus.ACTIVE]
     avg_conf = sum(confidences) / len(confidences) if confidences else 0.0
@@ -444,6 +491,14 @@ def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: boo
     print(f"  Conflicts (SUPERSEDED): {conflicts}")
     print(f"  Validation errors:      {validation_errors}")
     print(f"  Duplicate emails:       {duplicate_count}")
+    print(f"  Orphan nodes pruned:    {pruned}")
+    print(f"  Uncertain after decay:  {uncertain_count}")
+    print(f"  Review queue items:     {len(review_queue)}")
+    print(f"  Entity resolution (gold):")
+    print(f"    Precision: {eval_result['precision']}")
+    print(f"    Recall:    {eval_result['recall']}")
+    print(f"    F1:        {eval_result['f1']}")
+    print(f"    TP={eval_result['tp']}  FP={eval_result['fp']}  FN={eval_result['fn']}")
     print("=" * 60)
 
     return {"entities": entities, "claims": claims, "evidence": evidence}

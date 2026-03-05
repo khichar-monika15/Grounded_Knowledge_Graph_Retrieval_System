@@ -4,7 +4,17 @@ Extracts structured knowledge from the Enron email dataset, deduplicates entitie
 three levels, stores them in a grounded memory graph, and provides retrieval with interactive
 visualization.
 
-**87/87 tests passing · 2910 entities · 2074 claims · 2104 evidence · 390 merges**
+**114/114 tests passing · 2542 entities · 2098 claims · 2196 evidence · 340 merges**
+
+---
+
+## Screenshots
+
+| Graph Explorer | Evidence Panel | Retrieval | Merge Inspector |
+|---|---|---|---|
+| ![graph](screenshots/graph_explorer.png) | ![evidence](screenshots/evidence_panel.png) | ![retrieval](screenshots/retrieval.png) | ![merge](screenshots/merge_inspector.png) |
+
+> To regenerate: `uv run streamlit run app/app.py` (requires `outputs/` to exist)
 
 ---
 
@@ -83,15 +93,23 @@ Layer10_Assign/
 ├── app/
 │   └── app.py                      # Streamlit UI: graph, entity browser, retrieval
 │
-├── tests/                          # 87 TDD tests, all passing
+├── tests/                          # 114 TDD tests, all passing
 │   ├── conftest.py                 # Shared fixtures
 │   ├── test_schema.py              # 17 tests
-│   ├── test_extraction.py          # 14 tests
-│   ├── test_dedup.py               # 13 tests
+│   ├── test_extraction.py          # 22 tests
+│   ├── test_dedup.py               # 26 tests
 │   ├── test_graph_builder.py       # 11 tests
 │   ├── test_retrieval.py           # 12 tests
 │   ├── test_integration.py         # 5 tests
-│   └── test_kuzu_store.py          # 12 tests
+│   ├── test_kuzu_store.py          # 12 tests
+│   ├── test_eval.py                # 4 tests
+│   └── test_decay.py               # 5 tests
+│
+├── eval/                           # Gold-standard evaluation
+│   ├── __init__.py
+│   └── gold_standard.py            # Precision/recall against known Enron entities
+│
+├── screenshots/                    # UI screenshots (see screenshots/README.md)
 │
 ├── dataset/                        # Enron_emails.csv (gitignored, ~918 MB)
 ├── data/                           # Sampled emails (generated, gitignored)
@@ -102,7 +120,8 @@ Layer10_Assign/
 │   ├── faiss_index.npz             # Pre-computed FAISS embeddings
 │   ├── kuzu_db/                    # Kùzu embedded graph for multi-hop Cypher
 │   ├── extractions/                # Per-email raw extraction JSON (cached)
-│   └── context_packs/              # 5 example retrieval outputs (JSON)
+│   ├── context_packs/              # 5 example retrieval outputs (JSON)
+│   └── review_queue.json           # Claims flagged for human review (low conf / uncertain)
 │
 ├── write_up.md                     # Full design document
 ├── Timeline.md                     # Chronological development log
@@ -121,8 +140,10 @@ uv run pytest tests/ -v
 uv run pytest tests/test_schema.py -v
 uv run pytest tests/test_extraction.py -v
 uv run pytest tests/test_kuzu_store.py -v
+uv run pytest tests/test_eval.py -v
+uv run pytest tests/test_decay.py -v
 
-# Expected: 87/87 passed
+# Expected: 114/114 passed
 ```
 
 ---
@@ -175,10 +196,10 @@ SQLite with four tables:
 
 | Table | Contents |
 |-------|----------|
-| `entities` | 2910 entities with canonical names, aliases, merge history |
-| `claims` | 2074 claims with type, confidence, status, evidence links, valid_from/until |
-| `evidence` | 2104 evidence records with exact excerpts, source metadata, char offsets |
-| `merges` | 390 merge audit records (reversible, with reason + timestamp) |
+| `entities` | 2542 entities with canonical names, aliases, merge history |
+| `claims` | 2098 claims with type, confidence, status, evidence links, valid_from/until |
+| `evidence` | 2196 evidence records with exact excerpts, source metadata, char offsets |
+| `merges` | 340 merge audit records (reversible, with reason + timestamp) |
 
 ### Example Context Packs (`outputs/context_packs/`)
 

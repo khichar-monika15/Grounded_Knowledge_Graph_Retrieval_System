@@ -123,6 +123,31 @@ def build_graph_elements(entities, claims, entity_type_filter, confidence_thresh
     return {"nodes": nodes, "edges": edges}, node_styles, edge_styles
 
 
+def show_claim_evolution(claim_id: str, claim_by_id: dict):
+    """Walk superseded_by chain and render a timeline."""
+    chain = []
+    current_id = claim_id
+    visited = set()
+    while current_id and current_id not in visited:
+        visited.add(current_id)
+        c = claim_by_id.get(current_id)
+        if c is None:
+            break
+        chain.append(c)
+        current_id = c.superseded_by
+
+    if len(chain) <= 1:
+        return
+
+    st.markdown("**Claim Evolution Timeline**")
+    for c in chain:
+        icon = "🟢" if c.status.value == "active" else "🔴"
+        st.markdown(
+            f"{icon} `{c.claim_type.value}` | confidence: {c.confidence:.2f} | {c.status.value}"
+        )
+        st.caption(f"valid_from: {c.valid_from} | claim_id: {c.claim_id}")
+
+
 def main():
     st.title("Enron Memory Graph")
     st.markdown("Grounded long-term memory extracted from Enron emails.")
@@ -136,6 +161,7 @@ def main():
 
     ev_by_id = {ev.evidence_id: ev for ev in evidence}
     entity_by_id = {e.entity_id: e for e in entities}
+    claim_by_id = {c.claim_id: c for c in claims}
 
     # Pre-warm embedding model into the shared embeddings singleton (Bug 4)
     import memory.embeddings as embeddings
@@ -263,6 +289,10 @@ def main():
                 tgt = entity_by_id.get(data.get("target", ""))
                 if src and tgt:
                     st.markdown(f"**{src.canonical_name}** → **{tgt.canonical_name}**")
+                # Claim evolution timeline for superseded claims
+                claim_id = data.get("id", "")
+                if claim_id:
+                    show_claim_evolution(claim_id, claim_by_id)
 
     # ------------------------------------------------------------------
     # Tab 2: Merge History
