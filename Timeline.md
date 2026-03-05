@@ -309,10 +309,12 @@ TDD session: tests written first (red), then fixes (green), 63 → 68 tests.
 
 ## Final State
 
-- **75/75 tests passing**
+- **75/75 tests passing** (schema 17, extraction 14, dedup 13, graph 11, retrieval 12, integration 5)
+- **ClaimType enum:** 17 values (11 original + 6 corpus-discovered)
 - **Pipeline output:** 1096 entities, 1074 claims, 1174 evidence, 528 merges
 - **Streamlit app:** pyvis graph rendering, entity browser, retrieval panel with grounded evidence cards
-- **write_up.md:** 10-section design document
+- **write_up.md:** 12-section design document covering all TASK.md requirements
+- **README.md:** Updated with correct project structure, 75/75 test count, full reproduction steps
 
 ---
 

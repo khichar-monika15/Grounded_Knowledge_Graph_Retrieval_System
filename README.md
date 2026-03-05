@@ -1,68 +1,247 @@
 # Layer10 Grounded Long-Term Memory System
 
-Extracts structured knowledge from the Enron email dataset, deduplicates entities and claims, stores them in a memory graph, and provides retrieval + visualization.
+Extracts structured knowledge from the Enron email dataset, deduplicates entities and claims at
+three levels, stores them in a grounded memory graph, and provides retrieval with interactive
+visualization.
+
+**75/75 tests passing · 1096 entities · 1074 claims · 1174 evidence · 528 merges**
+
+---
 
 ## Quick Start
 
 ```bash
+# 0. Prerequisites
+#    - Python 3.11+, uv installed (https://docs.astral.sh/uv/)
+#    - TrueFoundry API key (or Ollama running locally)
+#    - dataset/Enron_emails.csv  (see Dataset section below)
+
 # 1. Install dependencies
 uv sync
 
-# 2. Set API key (already in .env)
-# OPENAI_API_KEY=<your-truefoundry-key>
+# 2. Configure API key
+cp .env.example .env
+# Edit .env: OPENAI_API_KEY=<your-truefoundry-jwt-token>
 
-# 3. Download & sample corpus (200 emails from 2001)
-uv run python download_corpus.py --sample-size 200
+# 3. Sample corpus (200 emails from 2001)
+uv run python -m pipeline.download_corpus --sample-size 200
 
-# 4. Run full pipeline
-uv run python run_pipeline.py --sample-size 200
+# 4. Run full extraction + dedup + graph + retrieval pipeline
+uv run python main.py --sample-size 200
 
-# 5. Launch UI
-uv run streamlit run app.py
+# 5. Launch interactive UI
+uv run streamlit run app/app.py
 ```
+
+---
+
+## Dataset
+
+The Enron CSV must be placed at `dataset/Enron_emails.csv` before running the pipeline.
+
+**Download (Kaggle CLI):**
+```bash
+kaggle datasets download tarunkashyap/enron-clean -p dataset/ --unzip
+```
+
+**Manual download:**
+Visit https://www.kaggle.com/datasets/tarunkashyap/enron-clean, download and unzip into
+`dataset/`.
+
+| Property | Value |
+|----------|-------|
+| File size | ~918 MB |
+| Rows | ~517,000 |
+| Columns | `date`, `sender`, `recipient`, `body` |
+| Sample used | 200 rows, 2001-01-01 to 2001-12-31, `random_state=42` |
+
+---
 
 ## Project Structure
 
 ```
-├── schema.py           # Pydantic models: Evidence, Entity, Claim
-├── extraction.py       # LLM-based extraction + prompt builder
-├── dedup.py            # 3-level dedup: artifact, entity, claim
-├── graph_builder.py    # NetworkX graph + SQLite persistence
-├── retrieval.py        # Embedding-based retrieval + context packs
-├── app.py              # Streamlit visualization
-├── run_pipeline.py     # End-to-end orchestrator
-├── download_corpus.py  # Corpus sampling from Enron CSV
-├── config.py           # API keys, paths, model config
-├── tests/              # 60 TDD tests (all passing)
-├── dataset/            # Enron_emails.csv (~918MB, gitignored)
-├── data/               # Sampled emails (generated, gitignored)
-└── outputs/            # Graph, DB, context packs (generated)
+Layer10_Assign/
+├── main.py                         # Entry point — runs full pipeline
+├── config.py                       # API keys, paths, model config
+├── pyproject.toml                  # Dependencies (managed by uv)
+│
+├── memory/                         # Core data layer
+│   ├── schema.py                   # Pydantic models: Evidence, Entity, Claim, enums
+│   ├── dedup.py                    # 3-level dedup: artifact, entity, claim
+│   ├── embeddings.py               # Centralised SentenceTransformer singleton
+│   ├── graph_builder.py            # NetworkX graph + SQLite persistence
+│   ├── retrieval.py                # Embedding-based retrieval + context packs
+│   └── vector_store.py             # FAISS index: pre-compute + ANN search
+│
+├── pipeline/                       # Extraction and orchestration
+│   ├── download_corpus.py          # Chunked CSV loading + date-filtered sampling
+│   ├── extraction.py               # LLM extraction: prompt, parse, validate, chunk
+│   ├── run_pipeline.py             # End-to-end orchestrator (async, cached)
+│   └── discover_claim_types.py     # Data-driven ClaimType discovery script
+│
+├── app/
+│   └── app.py                      # Streamlit UI: graph, entity browser, retrieval
+│
+├── tests/                          # 75 TDD tests, all passing
+│   ├── conftest.py                 # Shared fixtures
+│   ├── test_schema.py              # 17 tests
+│   ├── test_extraction.py          # 14 tests
+│   ├── test_dedup.py               # 13 tests
+│   ├── test_graph_builder.py       # 11 tests
+│   ├── test_retrieval.py           # 12 tests
+│   └── test_integration.py         # 5 tests
+│
+├── dataset/                        # Enron_emails.csv (gitignored, ~918 MB)
+├── data/                           # Sampled emails (generated, gitignored)
+│
+├── outputs/
+│   ├── memory.db                   # SQLite: entities, claims, evidence, merges
+│   ├── graph.json                  # Serialised NetworkX graph
+│   ├── faiss_index.npz             # Pre-computed FAISS embeddings
+│   ├── extractions/                # Per-email raw extraction JSON (cached)
+│   └── context_packs/              # 5 example retrieval outputs (JSON)
+│
+├── write_up.md                     # Full design document
+├── Timeline.md                     # Chronological development log
+└── TASK.md                         # Original task specification
 ```
+
+---
 
 ## Running Tests
 
 ```bash
+# Full suite
 uv run pytest tests/ -v
-# 60 tests, all pass
+
+# Single module
+uv run pytest tests/test_schema.py -v
+uv run pytest tests/test_extraction.py -v
+
+# Expected: 75/75 passed
 ```
+
+---
 
 ## Configuration
 
-`config.py` / `.env`:
-- `OPENAI_API_KEY` — TrueFoundry JWT token
-- `BASE_URL` — `https://gateway.truefoundry.ai`
-- `MODEL` — `anthropic/claude-haiku-4-5-20251001`
+**`config.py` reads from `.env`:**
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `OPENAI_API_KEY` | — | TrueFoundry JWT token |
+| `BASE_URL` | `https://gateway.truefoundry.ai` | LLM gateway URL |
+| `MODEL` | `anthropic/claude-haiku-4-5-20251001` | Model ID |
+| `DB_PATH` | `outputs/memory.db` | SQLite database |
+| `EXTRACTIONS_DIR` | `outputs/extractions` | Per-email extraction cache |
+| `CONTEXT_PACKS_DIR` | `outputs/context_packs` | Retrieval output directory |
+
+**Switching to Ollama (local, zero cost):**
+```python
+# config.py
+MODEL = "ollama/llama3"
+BASE_URL = "http://localhost:11434"
+OPENAI_API_KEY = ""  # not needed
+```
+
+---
 
 ## Pipeline Flags
 
 ```bash
-uv run python run_pipeline.py --sample-size 500   # scale up
-uv run python run_pipeline.py --skip-download     # reuse existing data/enron_sample.csv
+# Scale to 500 emails
+uv run python main.py --sample-size 500
+
+# Skip corpus download (reuse existing data/enron_sample.csv)
+uv run python main.py --skip-download
+
+# Discover new ClaimType labels from corpus
+uv run python -m pipeline.discover_claim_types --sample-size 30
+uv run python -m pipeline.discover_claim_types --sample-size 30 --output-json outputs/discovery.json
 ```
 
-## Dataset
+---
 
-The Enron CSV must be at `dataset/Enron_emails.csv`. Download from:
-https://www.kaggle.com/datasets/tarunkashyap/enron-clean
+## Outputs
 
-See `write_up.md` for full design documentation.
+### Memory Database (`outputs/memory.db`)
+
+SQLite with four tables:
+
+| Table | Contents |
+|-------|----------|
+| `entities` | 1096 entities with canonical names, aliases, merge history |
+| `claims` | 1074 claims with type, confidence, status, evidence links, valid_from/until |
+| `evidence` | 1174 evidence records with exact excerpts, source metadata, char offsets |
+| `merges` | 528 merge audit records (reversible, with reason + timestamp) |
+
+### Example Context Packs (`outputs/context_packs/`)
+
+Five pre-generated retrieval outputs demonstrating grounded question answering:
+
+| Question | File |
+|----------|------|
+| Who did Jeff Skilling report to? | `who_did_jeff_skilling_report_to.json` |
+| What decisions were made about the California energy situation? | `what_decisions_were_made_about_the_california_ener.json` |
+| Who was involved in the Raptor project? | `who_was_involved_in_the_raptor_project.json` |
+| What role did Andy Fastow play at Enron? | `what_role_did_andy_fastow_play_at_enron.json` |
+| What topics were discussed between Ken Lay and Jeff Skilling? | `what_topics_were_discussed_between_ken_lay_and_jef.json` |
+
+Each context pack contains: matched entities (with scores) → ranked claims (with RRF score,
+type, confidence, status) → evidence (with exact excerpt, source ID, date, sender) → conflicts.
+
+---
+
+## Architecture Summary
+
+```
+Raw CSV
+  │
+  ▼
+download_corpus.py   — chunked load, date filter, random_state=42 sample
+  │
+  ▼
+extraction.py        — hybrid CoT prompt → JSON parse → Pydantic validate → cache
+  │  (async, 20 concurrent, per-email cache)
+  ▼
+dedup.py             — artifact hash dedup → entity embedding merge → claim group merge
+  │
+  ▼
+graph_builder.py     — NetworkX MultiDiGraph + SQLite (INSERT OR REPLACE, executemany)
+  │
+  ▼
+vector_store.py      — pre-compute FAISS IndexFlatIP (entity + claim embeddings)
+  │
+  ▼
+retrieval.py         — entity match + FAISS ANN + BM25 → RRF fusion → context pack
+  │
+  ▼
+app/app.py           — Streamlit: pyvis graph · entity browser · retrieval panel
+```
+
+---
+
+## Key Design Decisions
+
+| Decision | Choice | Rationale |
+|----------|--------|-----------|
+| LLM extraction | Claude Haiku via litellm | Provider-agnostic; switch to Ollama with config only |
+| Prompt strategy | Hybrid chain-of-thought (1 call) | Reduces hallucination; 2× cheaper than step-wise |
+| Validation | Pydantic `ExtractionResult` | Schema drift = immediate ValidationError, not silent drop |
+| Claim grounding | `@field_validator` on `supporting_excerpt` | Physically impossible to create ungrounded claim |
+| Entity dedup threshold | Cosine > 0.85 (strict) | Under-merge preferred; person heuristics handle edge cases |
+| Graph store | NetworkX + SQLite | Algorithm flexibility + ACID persistence, no server required |
+| Retrieval ranking | Reciprocal Rank Fusion | Parameter-free, robust to score-scale differences |
+| Graph visualization | pyvis (not streamlit-agraph) | agraph had broken JS bundle; pyvis is more stable |
+| ClaimType ontology | Data-driven discovery | `discover_claim_types.py` + drift-prevention tests |
+
+---
+
+## Documentation
+
+| File | Contents |
+|------|----------|
+| `write_up.md` | Full design: schema, extraction, dedup, graph, retrieval, Layer10 adaptation, tradeoffs |
+| `Timeline.md` | Chronological development log: decisions, bugs, fixes across 5 improvement batches |
+| `TASK.md` | Original Layer10 task specification |
+| `CLAUDE.md` | AI assistant instructions (project-specific) |
