@@ -40,6 +40,9 @@ Follow these two steps IN ORDER — this is important for accuracy:
 
 STEP 1 — ENTITY EXTRACTION:
 Identify every person, organization, project, topic, location, and role mentioned.
+- "topic": ONLY for high-level recurring themes (e.g. "California Energy Crisis", "Raptor SPV",
+  "quarterly earnings"). NOT for one-off actions, dates, numbers, or sentence fragments.
+  Maximum 3 topic entities per email.
 List them all before moving to claims.
 
 STEP 2 — CLAIM EXTRACTION:
@@ -221,6 +224,71 @@ def validate_extraction(data: dict) -> list[str]:
         return [str(e)]
 
 
+GARBAGE_PERSON_NAMES = frozenset({
+    "counterparty", "recipient", "sender", "employee", "manager",
+    "board member", "staff", "team", "person", "individual", "client",
+    "customer", "user", "analyst", "trader", "attorney", "counsel",
+})
+
+MAX_TOPICS_PER_EMAIL = 5
+MIN_TOPIC_WORDS = 2
+
+
+def filter_garbage_entities(entities: list[dict]) -> list[dict]:
+    """Remove low-quality entities that pollute the graph."""
+    filtered = []
+    topic_count = 0
+
+    for e in entities:
+        etype = e.get("type", "").lower()
+        name = e.get("name", "").strip()
+
+        if etype == "person":
+            if "@" in name and " " not in name:
+                continue
+            if len(name.split()) < 2 and "@" not in name:
+                continue
+            if name.lower() in GARBAGE_PERSON_NAMES:
+                continue
+            if len(name) <= 4 and not all(c.isalpha() for c in name):
+                continue
+
+        elif etype == "topic":
+            if re.match(r'^[\d/\-\.\s,]+$', name):
+                continue
+            if len(name.split()) < MIN_TOPIC_WORDS:
+                continue
+            if topic_count >= MAX_TOPICS_PER_EMAIL:
+                continue
+            topic_count += 1
+
+        filtered.append(e)
+
+    return filtered
+
+
+def recalibrate_confidence(claim: dict, email_body: str) -> float:
+    """Compute confidence from structural signals instead of trusting LLM."""
+    excerpt = claim.get("supporting_excerpt", "")
+    score = 0.5  # baseline
+
+    if excerpt and excerpt.lower() in email_body.lower():
+        score += 0.3
+
+    explicit_types = {"decided", "approved", "rejected", "authorized", "role_assignment"}
+    if claim.get("claim_type") in explicit_types:
+        score += 0.1
+
+    if len(excerpt.split()) > 10:
+        score += 0.1
+
+    weak_types = {"mentioned", "discussed", "opinion"}
+    if claim.get("claim_type") in weak_types:
+        score -= 0.2
+
+    return round(min(max(score, 0.1), 1.0), 2)
+
+
 def chunk_body(body: str, chunk_words: int = CHUNK_WORDS,
                overlap_words: int = CHUNK_OVERLAP_WORDS) -> list[str]:
     """Split a long email body into overlapping word-level chunks.
@@ -296,6 +364,12 @@ def _extract_single(email_dict: dict, max_retries: int = 2) -> Optional[dict]:
                 logger.warning(f"Pydantic validation errors attempt {attempt + 1}: {errors}")
                 if attempt < max_retries - 1:
                     continue
+
+            # Post-extraction quality filters
+            parsed["entities"] = filter_garbage_entities(parsed.get("entities", []))
+            body = email_dict.get("body", "")
+            for claim in parsed.get("claims", []):
+                claim["confidence"] = recalibrate_confidence(claim, body)
 
             return parsed
 

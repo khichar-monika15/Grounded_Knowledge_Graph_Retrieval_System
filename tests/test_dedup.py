@@ -193,3 +193,52 @@ class TestSplinkPersonDedup:
         ]
         clusters = deduplicate_persons_splink(group)
         assert len(clusters) == 1
+
+
+class TestMultiValuedClaimSupersession:
+    def test_multivalued_claims_not_superseded(self):
+        """sent_to claims to different recipients must ALL stay active."""
+        from memory.schema import Claim, ClaimType, ClaimStatus
+        from memory.dedup import deduplicate_claims
+        from datetime import datetime
+        claims = [
+            Claim(claim_id="c1", claim_type=ClaimType.SENT_TO, subject_entity_id="e1",
+                  object_entity_id="e2", confidence=1.0, evidence_ids=["ev1"],
+                  valid_from=datetime(2001, 5, 1)),
+            Claim(claim_id="c2", claim_type=ClaimType.SENT_TO, subject_entity_id="e1",
+                  object_entity_id="e3", confidence=1.0, evidence_ids=["ev2"],
+                  valid_from=datetime(2001, 5, 2)),
+        ]
+        merged = deduplicate_claims(claims)
+        assert len(merged) == 2
+        assert all(c.status == ClaimStatus.ACTIVE for c in merged)
+
+    def test_mentioned_claims_not_superseded(self):
+        """mentioned claims with different objects must ALL stay active."""
+        from memory.schema import Claim, ClaimType, ClaimStatus
+        from memory.dedup import deduplicate_claims
+        claims = [
+            Claim(claim_id="c1", claim_type=ClaimType.MENTIONED, subject_entity_id="e1",
+                  object_entity_id="e4", confidence=0.9, evidence_ids=["ev1"]),
+            Claim(claim_id="c2", claim_type=ClaimType.MENTIONED, subject_entity_id="e1",
+                  object_entity_id="e5", confidence=0.8, evidence_ids=["ev2"]),
+        ]
+        merged = deduplicate_claims(claims)
+        assert all(c.status == ClaimStatus.ACTIVE for c in merged)
+
+    def test_single_valued_claims_still_superseded(self):
+        """reports_to with different objects: older must be superseded."""
+        from memory.schema import Claim, ClaimType, ClaimStatus
+        from memory.dedup import deduplicate_claims
+        from datetime import datetime
+        claims = [
+            Claim(claim_id="c1", claim_type=ClaimType.REPORTS_TO, subject_entity_id="e1",
+                  object_entity_id="e4", confidence=0.9, evidence_ids=["ev1"],
+                  valid_from=datetime(2001, 1, 1)),
+            Claim(claim_id="c2", claim_type=ClaimType.REPORTS_TO, subject_entity_id="e1",
+                  object_entity_id="e5", confidence=0.95, evidence_ids=["ev2"],
+                  valid_from=datetime(2001, 6, 1)),
+        ]
+        merged = deduplicate_claims(claims)
+        older = [c for c in merged if c.claim_id == "c1"][0]
+        assert older.status == ClaimStatus.SUPERSEDED

@@ -15,6 +15,11 @@ import numpy as np
 
 from memory.schema import Entity, Claim, ClaimStatus, EntityType
 
+# Claim types where only one value is valid at a time (e.g. a person has one boss).
+# Multi-valued types (sent_to, mentioned, discussed, etc.) can have many objects
+# for the same subject — these are NOT conflicts and must NOT trigger supersession.
+SINGLE_VALUED_CLAIMS = frozenset({"reports_to", "works_at", "role_assignment"})
+
 
 def hash_email_body(body: str) -> str:
     """Normalize whitespace and compute MD5 hash of email body."""
@@ -219,7 +224,8 @@ def _build_merge_clusters(group: list[Entity], etype: str, threshold: float = 0.
         for j in range(i + 1, n):
             if find(i) == find(j):
                 continue
-            if sim_matrix[i, j] > threshold:
+            effective_threshold = 0.75 if etype == "topic" else threshold
+            if sim_matrix[i, j] > effective_threshold:
                 union(i, j)
 
     clusters: dict[int, list[int]] = {}
@@ -343,8 +349,9 @@ def deduplicate_claims(claims: list[Claim]) -> list[Claim]:
         attr_claims = [c for c in group if c.object_entity_id is None]
 
         obj_ids = {c.object_entity_id for c in entity_rel}
-        if len(obj_ids) <= 1:
-            # No conflict among entity-relation claims — all pass through
+        claim_type_val = key[0].value if hasattr(key[0], 'value') else str(key[0])
+        if len(obj_ids) <= 1 or claim_type_val not in SINGLE_VALUED_CLAIMS:
+            # Multi-valued claims (sent_to, mentioned, etc.) naturally have many objects — no conflict
             final.extend(group)
             continue
 

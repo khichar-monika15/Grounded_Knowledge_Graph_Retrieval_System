@@ -110,3 +110,80 @@ class TestExtractEmail:
             return_value='{"entities": [], "claims": []}')
         result = extract_email(sample_email_short)
         assert result is not None
+
+
+class TestPostExtractionFiltering:
+    def test_single_token_person_rejected(self):
+        """Single-token persons like 'Chad' should be filtered out."""
+        from pipeline.extraction import filter_garbage_entities
+        entities = [
+            {"name": "Chad", "type": "person", "aliases": []},
+            {"name": "Jeff Skilling", "type": "person", "aliases": []},
+        ]
+        filtered = filter_garbage_entities(entities)
+        names = [e["name"] for e in filtered]
+        assert "Chad" not in names
+        assert "Jeff Skilling" in names
+
+    def test_email_address_person_rejected(self):
+        """Standalone email-address entities should be filtered."""
+        from pipeline.extraction import filter_garbage_entities
+        entities = [
+            {"name": "jdasovic@enron.com", "type": "person", "aliases": []},
+            {"name": "Ken Lay", "type": "person", "aliases": ["ken.lay@enron.com"]},
+        ]
+        filtered = filter_garbage_entities(entities)
+        names = [e["name"] for e in filtered]
+        assert "jdasovic@enron.com" not in names
+        assert "Ken Lay" in names
+
+    def test_generic_role_word_person_rejected(self):
+        """Generic words classified as persons should be filtered."""
+        from pipeline.extraction import filter_garbage_entities
+        entities = [
+            {"name": "counterparty", "type": "person", "aliases": []},
+            {"name": "Andy Fastow", "type": "person", "aliases": []},
+        ]
+        filtered = filter_garbage_entities(entities)
+        names = [e["name"] for e in filtered]
+        assert "counterparty" not in names
+        assert "Andy Fastow" in names
+
+    def test_non_person_entities_not_filtered(self):
+        """filter_garbage_entities only touches persons."""
+        from pipeline.extraction import filter_garbage_entities
+        entities = [
+            {"name": "Enron", "type": "organization", "aliases": []},
+            {"name": "Raptor", "type": "project", "aliases": []},
+        ]
+        filtered = filter_garbage_entities(entities)
+        assert len(filtered) == 2
+
+    def test_topic_limit_enforced(self):
+        """Max 5 topics per email after filtering."""
+        from pipeline.extraction import filter_garbage_entities
+        entities = [{"name": f"topic {i} about something", "type": "topic", "aliases": []}
+                    for i in range(10)]
+        filtered = filter_garbage_entities(entities)
+        topics = [e for e in filtered if e["type"] == "topic"]
+        assert len(topics) <= 5
+
+
+class TestConfidenceRecalibration:
+    def test_exact_excerpt_boosts_confidence(self):
+        from pipeline.extraction import recalibrate_confidence
+        claim = {"supporting_excerpt": "Andy is the CFO", "claim_type": "role_assignment"}
+        score = recalibrate_confidence(claim, "Andy is the CFO of Enron")
+        assert score >= 0.8
+
+    def test_weak_claim_type_lowers_confidence(self):
+        from pipeline.extraction import recalibrate_confidence
+        claim = {"supporting_excerpt": "mentioned the deal", "claim_type": "mentioned"}
+        score = recalibrate_confidence(claim, "He mentioned the deal briefly")
+        assert score <= 0.7
+
+    def test_missing_excerpt_low_confidence(self):
+        from pipeline.extraction import recalibrate_confidence
+        claim = {"supporting_excerpt": "this text does not exist", "claim_type": "decided"}
+        score = recalibrate_confidence(claim, "Completely different email body")
+        assert score <= 0.6

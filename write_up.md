@@ -222,6 +222,8 @@ valid under the new version.
 | Valid entity type | `@field_validator` validates against `EntityType` enum |
 | Valid claim type | `@field_validator` validates against `ClaimType` enum |
 | Confidence bounds | `Field(ge=0.0, le=1.0)` on `Claim.confidence` — out-of-range values raise ValidationError |
+| Garbage entity filter | `filter_garbage_entities()` removes single-token persons, standalone email addresses, generic role words, and caps topics at 5/email |
+| Confidence recalibration | `recalibrate_confidence()` recomputes confidence from structural signals (excerpt match, claim type, excerpt length) instead of trusting LLM |
 | Retry on failure | `extract_email()` retries once; errors logged and counted |
 | Pipeline metrics | `run_pipeline.py` prints validation error count, avg confidence, conflict count |
 
@@ -293,12 +295,16 @@ Claims are grouped by `(claim_type, subject_entity_id, object_entity_id)`.
 - Record merge in `merge_history`
 
 **Conflicting claims (same subject+type, different object):**
-- Keep both — they represent distinct (potentially contradictory) facts
-- Mark the older / lower-confidence one as `ClaimStatus.SUPERSEDED`
-- Set `superseded_by` pointer to the newer claim's ID
+- Only triggered for **single-valued claim types** (`reports_to`, `works_at`, `role_assignment`)
+  where a person can only have one value at a time
+- Multi-valued types (`sent_to`, `mentioned`, `discussed`, etc.) naturally have many objects per
+  subject — these are NOT conflicts and all stay `ACTIVE`
+- For single-valued conflicts: keep both, mark the older / lower-confidence one as
+  `ClaimStatus.SUPERSEDED`, set `superseded_by` pointer to the newer claim's ID
 
 This handles real-world cases: "Jeff Skilling reports to Ken Lay" (2001-01) superseded by
-"Jeff Skilling is CEO" (2001-06).
+"Jeff Skilling is CEO" (2001-06) — while "Jeff Skilling sent_to Ken Lay" and "Jeff Skilling
+sent_to Andy Fastow" correctly coexist as active claims.
 
 ### 5.4 Conflicts and Revisions
 

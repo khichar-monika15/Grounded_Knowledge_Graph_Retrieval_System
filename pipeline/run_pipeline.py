@@ -27,6 +27,26 @@ from memory.vector_store import build_and_save_index
 
 FAISS_INDEX_PATH = "outputs/faiss_index.npz"
 
+
+def _find_excerpt_offset(body: str, excerpt: str) -> tuple[int | None, int | None]:
+    """Find excerpt offset with normalization fallbacks."""
+    import re as _re
+    # Fast path: exact match
+    idx = body.find(excerpt)
+    if idx >= 0:
+        return idx, idx + len(excerpt)
+    # Case-insensitive
+    idx = body.lower().find(excerpt.lower())
+    if idx >= 0:
+        return idx, idx + len(excerpt)
+    # Normalized whitespace
+    body_norm = _re.sub(r'\s+', ' ', body.lower())
+    excerpt_norm = _re.sub(r'\s+', ' ', excerpt.lower())
+    idx = body_norm.find(excerpt_norm)
+    if idx >= 0:
+        return idx, idx + len(excerpt_norm)
+    return None, None
+
 # ---------------------------------------------------------------------------
 # Corpus loading
 # ---------------------------------------------------------------------------
@@ -87,10 +107,8 @@ def emails_to_schema_objects(extractions: list[dict], emails: list[dict]):
             ev_id = str(uuid.uuid4())
             excerpt_to_ev_id[excerpt] = ev_id
 
-            # Compute character offsets so grounding is precise (Bug 7)
-            char_start = body_text.find(excerpt)
-            char_end = char_start + len(excerpt) if char_start >= 0 else None
-            char_start = char_start if char_start >= 0 else None
+            # Compute character offsets with normalization fallbacks (Bug 7 + Bug 6)
+            char_start, char_end = _find_excerpt_offset(body_text, excerpt)
 
             all_evidence.append(Evidence(
                 evidence_id=ev_id,
