@@ -22,6 +22,7 @@ dependencies = [
     "faiss-cpu>=1.13.2",
     "rank-bm25>=0.2.2",
     "kuzu>=0.8.0",
+    "st-link-analysis>=0.4.0",
 ]
 
 [tool.pytest.ini_options]

@@ -224,7 +224,7 @@ kuzu_store.py        — build Kùzu embedded graph for 2-hop Cypher neighborhoo
 retrieval.py         — entity match + FAISS ANN + BM25 + Kùzu 2-hop → RRF fusion → context pack
   │
   ▼
-app/app.py           — Streamlit: pyvis graph · entity browser · retrieval panel · Cypher query
+app/app.py           — Streamlit: 4-tab UI (graph explorer · merge history · search · Cypher query)
 ```
 
 ---
@@ -241,7 +241,7 @@ app/app.py           — Streamlit: pyvis graph · entity browser · retrieval p
 | Graph store | NetworkX + SQLite | Algorithm flexibility + ACID persistence, no server required |
 | Retrieval ranking | Reciprocal Rank Fusion (4 signals) | Parameter-free, robust to score-scale differences |
 | Multi-hop traversal | Kùzu embedded graph | 2-hop BFS surfaces indirectly related claims |
-| Graph visualization | pyvis (not streamlit-agraph) | agraph had broken JS bundle; pyvis is more stable |
+| Graph visualization | st-link-analysis (Cytoscape.js) | Built-in toolbar, neighbour highlight, fullscreen, layout selector |
 | ClaimType ontology | Data-driven discovery | `discover_claim_types.py` + drift-prevention tests |
 
 ---

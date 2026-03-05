@@ -533,44 +533,63 @@ Five context packs are pre-generated at `outputs/context_packs/`:
 
 ## 8. Visualization Layer
 
-The Streamlit app (`app/app.py`) has four interactive areas:
+The Streamlit app (`app/app.py`) uses a **4-tab layout** (`st.tabs()`):
 
-### 8.1 Sidebar — Filters
+### 8.1 Sidebar — Filters (Global)
 
+Applied across all tabs:
 - Entity type filter (multi-select: person, organization, project, …)
 - Minimum confidence threshold slider (0.0 – 1.0)
 - Claim status filter (active / superseded / all)
-- Summary stats: total entities, claims, evidence, merges
+- Summary stats: total entities, claims, evidence
 
-### 8.2 Graph Panel — Entity/Relationship Explorer
+### 8.2 Tab 1: Graph Explorer — Interactive Graph + Detail Panel
 
-Interactive graph rendered via `pyvis` (embedded via `st.components.v1.html()`). Node color
-encodes entity type; edge thickness encodes claim confidence. Clicking a node opens the entity
-detail panel.
+Interactive graph rendered via **`st-link-analysis`** (Cytoscape.js). Node colour encodes
+entity type (six colours); directed edges represent claims, thickness proportional to
+confidence. Built-in toolbar provides:
+- **Zoom / fit / center** controls
+- **Fullscreen** toggle
+- **JSON export** of visible graph
+- **Neighbour highlighting** on node/edge selection
+- **Layout selector** (cose, grid, circle, breadthfirst, …)
 
-*Note:* `streamlit-agraph` was attempted first but failed with a broken JS bundle
-(`FileNotFoundError` on a compiled frontend chunk). `pyvis` generates a self-contained HTML
-file that Streamlit embeds in an iframe — more reliable and easier to debug.
+Clicking a node displays an entity detail panel inline:
+- Canonical name, type, aliases, merge count
+- All subject claims with claim type, confidence, status
+- First evidence excerpt with sender and date
 
-### 8.3 Entity Browser — Detail View
+Clicking an edge displays the claim detail panel:
+- Claim type, confidence, status
+- Subject → object entity names
 
-Dropdown to select any entity. Shows:
-- Canonical name, type, aliases
-- Merge history count and details (which entities were merged into this one)
-- All associated claims with claim type, confidence, status
-- First evidence excerpt for each claim with source metadata
+### 8.3 Tab 2: Merge History — Full Audit Table
 
-This directly satisfies the requirement to **inspect duplicates/merges**: the alias list shows
-all names that were merged, and merge history shows the reason and timestamp.
+Two sections:
+1. **Entity merge table** — one row per merge event with canonical name, type,
+   merged-from ID, reason, timestamp, and current aliases. Rendered as a sortable
+   `st.dataframe()`.
+2. **SQLite audit log** — reads directly from the `merges` table (merge type,
+   merged-from/into IDs, reason, timestamp, reversible flag). Every deduplication
+   event is inspectable.
 
-### 8.4 Retrieval Panel
+This satisfies the requirement to **inspect duplicates/merges** with full provenance.
 
-Free-text question input → "Search" button → context pack displayed as expandable claim cards,
-each showing:
+### 8.4 Tab 3: Search — Retrieval Panel
+
+Free-text question input → "Search" button → context pack displayed as expandable claim
+cards, each showing:
 - Claim text, type, confidence, status, RRF score
 - Evidence accordion: exact excerpt, source ID, date, sender
 
 Conflicting/superseded claims shown separately with a visual warning.
+
+### 8.5 Tab 4: Cypher Query — Advanced Graph Traversal
+
+Full-panel Kùzu Cypher query interface (previously hidden in a collapsed expander):
+- Three pre-built templates (custom, all-claims-of-type, 2-hop neighbourhood)
+- Free-form query editor (text area)
+- Results rendered as `st.dataframe()` with row count
 
 ---
 

@@ -22,11 +22,27 @@ FAISS_INDEX_PATH = "outputs/faiss_index.npz"
 
 st.set_page_config(page_title="Enron Memory Graph", layout="wide")
 
+ENTITY_COLORS = {
+    "person": "#4e79a7",
+    "organization": "#59a14f",
+    "project": "#f28e2b",
+    "topic": "#e15759",
+    "location": "#76b7b2",
+    "role": "#edc948",
+}
+ENTITY_ICONS = {
+    "person": "person",
+    "organization": "business",
+    "project": "work",
+    "topic": "label",
+    "location": "place",
+    "role": "badge",
+}
+
 
 @st.cache_resource
 def get_embedding_model():
-    """Return the shared embedding model singleton — delegates to memory/embeddings.py (Bug 8).
-    Avoids loading a second ~90MB model copy into RAM."""
+    """Return the shared embedding model singleton — delegates to memory/embeddings.py (Bug 8)."""
     from memory.embeddings import get_model
     return get_model()
 
@@ -50,228 +66,56 @@ def load_graph(_entities, _claims):
     return build_graph(list(_entities), list(_claims))
 
 
-def entity_type_color(etype: str) -> str:
-    colors = {
-        "person": "#4e79a7",
-        "organization": "#59a14f",
-        "project": "#f28e2b",
-        "topic": "#e15759",
-        "location": "#76b7b2",
-        "role": "#edc948",
+def build_graph_elements(entities, claims, entity_type_filter, confidence_threshold, status_filter):
+    """Build st-link-analysis elements (nodes + edges) with NodeStyle/EdgeStyle lists."""
+    from st_link_analysis import NodeStyle, EdgeStyle
+    from memory.schema import ClaimType
+
+    visible_ids = {
+        e.entity_id for e in entities
+        if not entity_type_filter or e.entity_type.value in entity_type_filter
     }
-    return colors.get(etype, "#b07aa1")
 
+    nodes = [
+        {"data": {
+            "id": e.entity_id,
+            "label": e.entity_type.value.upper(),
+            "name": e.canonical_name,
+            "type": e.entity_type.value,
+            "aliases": ", ".join(e.aliases[:3]),
+        }}
+        for e in entities if e.entity_id in visible_ids
+    ]
 
-def render_graph_pyvis(G: nx.MultiDiGraph, entity_type_filter: list, confidence_threshold: float,
-                        status_filter: str, focus_node_id: str = None):
-    """Render graph using pyvis with zoom controls and entity focus."""
-    from pyvis.network import Network
-    import tempfile
-
-    net = Network(height="600px", width="100%", directed=True, notebook=False)
-    net.set_options("""
-    {
-      "physics": {
-        "enabled": true,
-        "stabilization": {"iterations": 150},
-        "barnesHut": {
-          "gravitationalConstant": -3000,
-          "springLength": 120,
-          "springConstant": 0.04
-        }
-      },
-      "edges": {"arrows": {"to": {"enabled": true}}, "smooth": {"type": "continuous"}},
-      "interaction": {
-        "hover": true,
-        "tooltipDelay": 100,
-        "zoomView": true,
-        "dragView": true,
-        "navigationButtons": false,
-        "keyboard": {"enabled": true}
-      }
-    }
-    """)
-
-    # Add nodes — highlight focused node
-    for node_id, data in G.nodes(data=True):
-        etype = data.get("entity_type", "topic")
-        if entity_type_filter and etype not in entity_type_filter:
-            continue
-        color = entity_type_color(etype)
-        label = data.get("canonical_name", node_id)
-        is_focused = (focus_node_id and node_id == focus_node_id)
-        node_opts = {
-            "label": label,
-            "color": {
-                "background": color,
-                "border": "#FFD700" if is_focused else color,
-                "highlight": {"background": color, "border": "#FFD700"},
-            },
-            "title": f"{etype}: {label}",
-            "size": 25 if is_focused else 15,
-            "borderWidth": 4 if is_focused else 1,
-            "borderWidthSelected": 4,
-        }
-        net.add_node(node_id, **node_opts)
-
-    # Add edges
-    for u, v, data in G.edges(data=True):
-        conf = data.get("confidence", 0.5)
-        status = data.get("status", "active")
-        if conf < confidence_threshold:
-            continue
-        if status_filter != "all" and status != status_filter:
-            continue
-        if not (net.get_node(u) and net.get_node(v)):
-            continue
-        claim_type = data.get("claim_type", "")
-        is_connected = focus_node_id and (u == focus_node_id or v == focus_node_id)
-        edge_color = "#FFD700" if is_connected else "#666666"
-        net.add_edge(u, v, title=f"{claim_type} (conf={conf:.2f})",
-                     width=(conf * 4) if is_connected else (conf * 2),
-                     color=edge_color)
-
-    # Save base HTML
-    with tempfile.NamedTemporaryFile(suffix=".html", delete=False, mode="w") as f:
-        net.save_graph(f.name)
-
-    # Inject zoom controls + focus JS into the generated HTML
-    focus_js = ""
-    if focus_node_id:
-        safe_id = focus_node_id.replace("'", "\\'")
-        focus_js = f"""
-        // Auto-focus on selected entity after stabilization
-        network.once('stabilized', function() {{
-            try {{
-                network.focus('{safe_id}', {{
-                    scale: 1.8,
-                    animation: {{duration: 800, easingFunction: 'easeInOutQuad'}}
-                }});
-                network.selectNodes(['{safe_id}']);
-            }} catch(e) {{}}
-        }});
-        """
-
-    controls_html = """
-    <style>
-      #graph-controls {
-        position: absolute;
-        top: 12px;
-        left: 12px;
-        z-index: 1000;
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-      }
-      #graph-controls button {
-        width: 36px;
-        height: 36px;
-        border: 1px solid #555;
-        border-radius: 6px;
-        background: rgba(30, 30, 30, 0.85);
-        color: #fff;
-        font-size: 18px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        backdrop-filter: blur(4px);
-        transition: background 0.15s, transform 0.1s;
-      }
-      #graph-controls button:hover {
-        background: rgba(60, 60, 60, 0.95);
-        transform: scale(1.08);
-      }
-      #graph-controls button:active {
-        transform: scale(0.95);
-      }
-      #graph-controls button.active-btn {
-        background: rgba(255, 215, 0, 0.3);
-        border-color: #FFD700;
-      }
-      #graph-controls .separator {
-        height: 1px;
-        background: #555;
-        margin: 2px 4px;
-      }
-    </style>
-    <div id="graph-controls">
-      <button onclick="zoomIn()" title="Zoom In">+</button>
-      <button onclick="zoomOut()" title="Zoom Out">−</button>
-      <button onclick="fitAll()" title="Fit All">⊡</button>
-      <div class="separator"></div>
-      <button id="physicsBtn" onclick="togglePhysics()" title="Toggle Physics">⚡</button>
-    </div>
-    <script>
-      var physicsOn = true;
-
-      function zoomIn() {
-        var scale = network.getScale();
-        network.moveTo({scale: scale * 1.4, animation: {duration: 300, easingFunction: 'easeInOutQuad'}});
-      }
-      function zoomOut() {
-        var scale = network.getScale();
-        network.moveTo({scale: scale / 1.4, animation: {duration: 300, easingFunction: 'easeInOutQuad'}});
-      }
-      function fitAll() {
-        network.fit({animation: {duration: 500, easingFunction: 'easeInOutQuad'}});
-      }
-      function togglePhysics() {
-        physicsOn = !physicsOn;
-        network.setOptions({physics: {enabled: physicsOn}});
-        var btn = document.getElementById('physicsBtn');
-        btn.classList.toggle('active-btn', physicsOn);
-        btn.title = physicsOn ? 'Physics ON (click to freeze)' : 'Physics OFF (click to unfreeze)';
-      }
-
-      // Mark physics button as active initially
-      document.getElementById('physicsBtn').classList.add('active-btn');
-
-      """ + focus_js + """
-    </script>
-    """
-
-    # Inject controls before closing </body>
-    with open(f.name, "r") as fh:
-        html = fh.read()
-    html = html.replace("</body>", controls_html + "</body>")
-    with open(f.name, "w") as fh:
-        fh.write(html)
-
-    return f.name
-
-
-def render_graph_agraph(G: nx.MultiDiGraph, entity_type_filter: list, confidence_threshold: float,
-                         status_filter: str):
-    """Render graph using streamlit-agraph."""
-    from streamlit_agraph import agraph, Node, Edge, Config
-
-    nodes = []
     edges = []
+    for c in claims:
+        if not c.object_entity_id:
+            continue
+        if c.subject_entity_id not in visible_ids or c.object_entity_id not in visible_ids:
+            continue
+        if c.confidence < confidence_threshold:
+            continue
+        if status_filter != "all" and c.status.value != status_filter:
+            continue
+        edges.append({"data": {
+            "id": c.claim_id,
+            "label": c.claim_type.value.upper(),
+            "source": c.subject_entity_id,
+            "target": c.object_entity_id,
+            "confidence": round(c.confidence, 2),
+            "status": c.status.value,
+        }})
 
-    for node_id, data in G.nodes(data=True):
-        etype = data.get("entity_type", "topic")
-        if entity_type_filter and etype not in entity_type_filter:
-            continue
-        color = entity_type_color(etype)
-        label = data.get("canonical_name", node_id)
-        nodes.append(Node(id=node_id, label=label, color=color, size=20))
+    node_styles = [
+        NodeStyle(etype.upper(), ENTITY_COLORS.get(etype, "#b07aa1"), "name", ENTITY_ICONS.get(etype, "circle"))
+        for etype in ENTITY_COLORS
+    ]
+    edge_styles = [
+        EdgeStyle(ct.value.upper(), caption="label", directed=True)
+        for ct in ClaimType
+    ]
 
-    node_ids = {n.id for n in nodes}
-    for u, v, data in G.edges(data=True):
-        if u not in node_ids or v not in node_ids:
-            continue
-        conf = data.get("confidence", 0.5)
-        status = data.get("status", "active")
-        if conf < confidence_threshold:
-            continue
-        if status_filter != "all" and status != status_filter:
-            continue
-        claim_type = data.get("claim_type", "")
-        edges.append(Edge(source=u, target=v, label=claim_type))
-
-    config = Config(width=700, height=500, directed=True, physics=True, hierarchical=False)
-    return agraph(nodes=nodes, edges=edges, config=config)
+    return {"nodes": nodes, "edges": edges}, node_styles, edge_styles
 
 
 def main():
@@ -307,104 +151,174 @@ def main():
         except Exception:
             pass  # graceful degradation — multi-hop just disabled
 
-    # Sidebar filters
+    # Sidebar filters (global — affect Tab 1 graph)
     st.sidebar.header("Filters")
     all_etypes = sorted({e.entity_type.value for e in entities})
     selected_etypes = st.sidebar.multiselect("Entity Types", all_etypes, default=all_etypes)
     confidence_threshold = st.sidebar.slider("Min Confidence", 0.0, 1.0, 0.3, 0.05)
     status_filter = st.sidebar.selectbox("Claim Status", ["active", "all", "superseded"])
 
-    # Stats
     st.sidebar.markdown("---")
     st.sidebar.markdown(f"**Entities:** {len(entities)}")
     st.sidebar.markdown(f"**Claims:** {len(claims)}")
     st.sidebar.markdown(f"**Evidence:** {len(evidence)}")
 
-    G = load_graph(tuple(entities), tuple(claims))
+    tab1, tab2, tab3, tab4 = st.tabs([
+        "Graph Explorer", "Merge History", "Search", "Cypher Query"
+    ])
 
-    col1, col2 = st.columns([2, 1])
+    # ------------------------------------------------------------------
+    # Tab 1: Graph Explorer
+    # ------------------------------------------------------------------
+    with tab1:
+        from st_link_analysis import st_link_analysis
 
-    # --- Entity Browser (col2, rendered first so we know the focus target) ---
-    with col2:
-        st.subheader("Entity Browser 🔗")
-        entity_names = [f"{e.canonical_name} ({e.entity_type.value})" for e in entities]
-        selected_idx = st.selectbox("Select Entity", range(len(entity_names)),
-                                     format_func=lambda i: entity_names[i])
+        elements, node_styles, edge_styles = build_graph_elements(
+            entities, claims, selected_etypes, confidence_threshold, status_filter
+        )
 
-    # Determine focus node
-    focus_entity_id = None
-    if selected_idx is not None:
-        focus_entity_id = entities[selected_idx].entity_id
+        st.caption(
+            f"Showing {len(elements['nodes'])} nodes · {len(elements['edges'])} edges. "
+            "Click a node or edge for details."
+        )
 
-    # --- Graph View (col1, uses focus_entity_id) ---
-    with col1:
-        st.subheader("Memory Graph")
-        st.caption("🔍 Use +/− buttons or scroll to zoom · Click an entity in the browser to focus")
-        html_path = render_graph_pyvis(G, selected_etypes, confidence_threshold, status_filter,
-                                       focus_node_id=focus_entity_id)
-        with open(html_path) as f:
-            html_content = f.read()
-        st.components.v1.html(html_content, height=640, scrolling=False)
+        selected = st_link_analysis(
+            elements, "cose", node_styles, edge_styles, height=580, key="main_graph"
+        )
 
-        if selected_idx is not None:
-            entity = entities[selected_idx]
-            st.markdown(f"**{entity.canonical_name}**")
-            st.markdown(f"Type: `{entity.entity_type.value}`")
-            if entity.aliases:
-                st.markdown(f"Aliases: {', '.join(entity.aliases[:5])}")
-            if entity.merge_history:
-                st.markdown(f"Merges: {len(entity.merge_history)} entities merged")
+        # Detail panel driven by graph selection
+        if selected and selected.get("data"):
+            data = selected["data"]
+            st.markdown("---")
+            if data.get("type"):
+                # Node selected — show entity detail
+                entity = entity_by_id.get(data["id"])
+                if entity:
+                    st.markdown(f"### {entity.canonical_name}")
+                    st.markdown(f"**Type:** `{entity.entity_type.value}`")
+                    if entity.aliases:
+                        st.markdown(f"**Aliases:** {', '.join(entity.aliases[:8])}")
+                    if entity.merge_history:
+                        st.caption(f"{len(entity.merge_history)} entities merged here")
 
-            st.markdown("**Claims:**")
-            entity_claims = [c for c in claims if c.subject_entity_id == entity.entity_id]
-            for c in entity_claims[:10]:
-                status_emoji = "✓" if c.status.value == "active" else "⚠"
-                target = entity_by_id.get(c.object_entity_id, {})
-                target_name = target.canonical_name if hasattr(target, 'canonical_name') else c.object_value or "?"
-                st.markdown(f"{status_emoji} **{c.claim_type.value}** → {target_name} (conf={c.confidence:.2f})")
+                    st.markdown("**Claims:**")
+                    entity_claims = [c for c in claims if c.subject_entity_id == entity.entity_id]
+                    for c in entity_claims[:10]:
+                        icon = "✓" if c.status.value == "active" else "⚠"
+                        target = entity_by_id.get(c.object_entity_id)
+                        tname = target.canonical_name if target else (c.object_value or "?")
+                        st.markdown(f"{icon} **{c.claim_type.value}** → {tname} (conf={c.confidence:.2f})")
+                        for ev_id in c.evidence_ids[:1]:
+                            ev = ev_by_id.get(ev_id)
+                            if ev:
+                                st.caption(
+                                    f'"{ev.excerpt[:100]}..." — {ev.sender or "?"}, '
+                                    f'{ev.timestamp.date() if ev.timestamp else "?"}'
+                                )
+            else:
+                # Edge selected — show claim detail
+                st.markdown(f"### Claim: {data.get('label', '')}")
+                st.markdown(
+                    f"**Confidence:** {data.get('confidence', '?')} | "
+                    f"**Status:** {data.get('status', '?')}"
+                )
+                src = entity_by_id.get(data.get("source", ""))
+                tgt = entity_by_id.get(data.get("target", ""))
+                if src and tgt:
+                    st.markdown(f"**{src.canonical_name}** → **{tgt.canonical_name}**")
 
-                # Show evidence
-                for ev_id in c.evidence_ids[:1]:
-                    ev = ev_by_id.get(ev_id)
-                    if ev:
-                        st.caption(f'"{ev.excerpt[:100]}..." — {ev.sender or "unknown"}, {ev.timestamp.date() if ev.timestamp else "?"}')
+    # ------------------------------------------------------------------
+    # Tab 2: Merge History
+    # ------------------------------------------------------------------
+    with tab2:
+        import pandas as pd
 
-    # Retrieval panel
-    st.markdown("---")
-    st.subheader("Question Retrieval")
-    col_q, col_btn = st.columns([4, 1])
-    with col_q:
-        question = st.text_input("Ask a question about Enron", placeholder="Who did Jeff Skilling report to?")
-    with col_btn:
-        search = st.button("Search", use_container_width=True)
-
-    if search and question:
-        import memory.embeddings as embeddings
-        embeddings._MODEL = get_embedding_model()  # reuse cached model (Bug 4)
-        from memory.retrieval import build_context_pack
-        with st.spinner("Searching..."):
-            pack = build_context_pack(question, entities, claims, evidence)
-
-        st.markdown(f"**Matched entities:** {', '.join(e['canonical_name'] for e in pack['matched_entities'][:5])}")
-
-        if pack["claims"]:
-            for claim_entry in pack["claims"][:5]:
-                with st.expander(f"{claim_entry['claim']} (conf={claim_entry['confidence']:.2f})"):
-                    for ev in claim_entry["evidence"]:
-                        st.markdown(f"> {ev['excerpt']}")
-                        st.caption(f"Source: {ev['source_id']} | From: {ev['sender'] or 'unknown'} | Date: {ev['date'] or 'unknown'}")
+        st.subheader("Entity Merge History")
+        rows = []
+        for e in entities:
+            for mh in e.merge_history:
+                rows.append({
+                    "Canonical Name": e.canonical_name,
+                    "Type": e.entity_type.value,
+                    "Merged From ID": mh.get("merged_from", ""),
+                    "Reason": mh.get("reason", ""),
+                    "Timestamp": mh.get("timestamp", ""),
+                    "Current Aliases": ", ".join(e.aliases[:5]),
+                })
+        if rows:
+            st.dataframe(pd.DataFrame(rows), use_container_width=True)
+            st.caption(f"{len(rows)} entity merge(s)")
         else:
-            st.info("No matching claims found.")
+            st.info("No entity merge history found. Run the pipeline first.")
 
-        if pack["conflicts"]:
-            st.markdown("**Conflicting/Superseded claims:**")
-            for c in pack["conflicts"][:3]:
-                st.warning(f"{c['claim']} (status: {c['status']})")
+        st.markdown("---")
+        st.subheader("Full Merge Audit Log (SQLite)")
+        if os.path.exists(DB_PATH):
+            conn = sqlite3.connect(DB_PATH)
+            try:
+                df = pd.read_sql_query(
+                    "SELECT merge_type, merged_from, merged_into, reason, timestamp, reversible "
+                    "FROM merges ORDER BY timestamp DESC",
+                    conn,
+                )
+                st.dataframe(df, use_container_width=True)
+                st.caption(f"{len(df)} total merge record(s)")
+            except Exception as exc:
+                st.warning(f"Could not read merges table: {exc}")
+            finally:
+                conn.close()
+        else:
+            st.info("Database not found.")
 
-    # Advanced Cypher panel — hidden by default
-    st.markdown("---")
-    import memory.retrieval as _ret_module
-    with st.expander("Advanced: Graph Query (Cypher)", expanded=False):
+    # ------------------------------------------------------------------
+    # Tab 3: Search
+    # ------------------------------------------------------------------
+    with tab3:
+        st.subheader("Question Retrieval")
+        col_q, col_btn = st.columns([4, 1])
+        with col_q:
+            question = st.text_input(
+                "Ask a question about Enron",
+                placeholder="Who did Jeff Skilling report to?"
+            )
+        with col_btn:
+            search = st.button("Search", use_container_width=True)
+
+        if search and question:
+            import memory.embeddings as _emb
+            _emb._MODEL = get_embedding_model()
+            from memory.retrieval import build_context_pack
+            with st.spinner("Searching..."):
+                pack = build_context_pack(question, entities, claims, evidence)
+
+            st.markdown(
+                f"**Matched entities:** "
+                f"{', '.join(e['canonical_name'] for e in pack['matched_entities'][:5])}"
+            )
+
+            if pack["claims"]:
+                for claim_entry in pack["claims"][:5]:
+                    with st.expander(f"{claim_entry['claim']} (conf={claim_entry['confidence']:.2f})"):
+                        for ev in claim_entry["evidence"]:
+                            st.markdown(f"> {ev['excerpt']}")
+                            st.caption(
+                                f"Source: {ev['source_id']} | "
+                                f"From: {ev['sender'] or 'unknown'} | "
+                                f"Date: {ev['date'] or 'unknown'}"
+                            )
+            else:
+                st.info("No matching claims found.")
+
+            if pack["conflicts"]:
+                st.markdown("**Conflicting/Superseded claims:**")
+                for c in pack["conflicts"][:3]:
+                    st.warning(f"{c['claim']} (status: {c['status']})")
+
+    # ------------------------------------------------------------------
+    # Tab 4: Cypher Query
+    # ------------------------------------------------------------------
+    with tab4:
+        st.subheader("Graph Query (Cypher)")
         if _ret_module._KUZU_STORE is None:
             st.info("Kùzu graph not loaded. Run the pipeline first.")
         else:
