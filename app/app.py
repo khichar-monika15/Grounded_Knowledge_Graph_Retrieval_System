@@ -16,7 +16,7 @@ import networkx as nx
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 warnings.filterwarnings("ignore", category=UserWarning, module="torch")
 
-from config import DB_PATH, GRAPH_JSON_PATH
+from config import DB_PATH, GRAPH_JSON_PATH, KUZU_DB_PATH
 
 FAISS_INDEX_PATH = "outputs/faiss_index.npz"
 
@@ -298,6 +298,15 @@ def main():
         import memory.retrieval as retrieval
         retrieval._VECTOR_STORE = VectorStore.load(FAISS_INDEX_PATH)
 
+    # Load Kùzu graph for multi-hop retrieval
+    import memory.retrieval as _ret_module
+    if os.path.exists(KUZU_DB_PATH):
+        try:
+            from memory.kuzu_store import KuzuGraphStore
+            _ret_module._KUZU_STORE = KuzuGraphStore(KUZU_DB_PATH)
+        except Exception:
+            pass  # graceful degradation — multi-hop just disabled
+
     # Sidebar filters
     st.sidebar.header("Filters")
     all_etypes = sorted({e.entity_type.value for e in entities})
@@ -391,6 +400,39 @@ def main():
             st.markdown("**Conflicting/Superseded claims:**")
             for c in pack["conflicts"][:3]:
                 st.warning(f"{c['claim']} (status: {c['status']})")
+
+    # Advanced Cypher panel — hidden by default
+    st.markdown("---")
+    import memory.retrieval as _ret_module
+    with st.expander("Advanced: Graph Query (Cypher)", expanded=False):
+        if _ret_module._KUZU_STORE is None:
+            st.info("Kùzu graph not loaded. Run the pipeline first.")
+        else:
+            TEMPLATES = {
+                "Custom Cypher": "",
+                "All claims of a type": (
+                    "MATCH (a:Entity)-[c:Claim]->(b:Entity)\n"
+                    "WHERE c.claim_type = 'works_at'\n"
+                    "RETURN a.name, c.claim_type, b.name, c.confidence\n"
+                    "ORDER BY c.confidence DESC LIMIT 20"
+                ),
+                "2-hop neighborhood": (
+                    "MATCH (src:Entity {name: 'Jeff Skilling'})-[c:Claim*1..2]-(dst:Entity)\n"
+                    "RETURN dst.name, dst.entity_type LIMIT 20"
+                ),
+            }
+            template = st.selectbox("Template", list(TEMPLATES.keys()))
+            cypher_query = st.text_area("Cypher query", value=TEMPLATES[template], height=120)
+            if st.button("Run Query"):
+                try:
+                    rows = _ret_module._KUZU_STORE.execute_cypher(cypher_query)
+                    if rows:
+                        st.dataframe(rows)
+                        st.caption(f"{len(rows)} row(s) returned")
+                    else:
+                        st.info("Query returned no results.")
+                except Exception as exc:
+                    st.error(f"Query error: {exc}")
 
 
 if __name__ == "__main__":

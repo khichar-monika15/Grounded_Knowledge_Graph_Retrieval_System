@@ -402,7 +402,29 @@ A claim whose evidence is entirely outside the requesting user's ACL is excluded
 context pack, even if the claim itself is visible at the claim level. This ensures memory
 retrieval never leaks information the user couldn't have accessed directly.
 
-### 6.7 Observability
+### 6.8 Kùzu Embedded Graph (Multi-Hop Retrieval)
+
+Alongside SQLite, the pipeline builds a **Kùzu embedded graph database** (`outputs/kuzu_db/`) at
+pipeline completion. Kùzu supports native Cypher queries without a server process — it is embedded
+like SQLite.
+
+The Kùzu graph mirrors entity/claim data from SQLite: entities become `Entity` nodes, relational
+claims (those with `object_entity_id`) become directed `Claim` edges. Attribute claims (only
+`object_value`) are skipped — Kùzu is used exclusively for graph traversal, not as a secondary
+store of attribute facts.
+
+**4th RRF signal:** `neighborhood(entity_id, depth=2)` performs iterative 1-hop BFS in both
+directions, returning all `claim_id` values reachable within 2 hops. These are fed into the
+existing RRF fusion as a 4th ranked list, enabling answers to complex relational queries like
+*"Did anyone who reports to Kenneth Lay discuss the Raptor project?"* that require traversal
+through intermediate entities not directly matched by keyword or embedding search.
+
+**Source of truth:** SQLite remains the source of truth. The Kùzu graph is a derived structure
+rebuilt at every pipeline run via `KuzuGraphStore.load()`, which drops and recreates all tables
+(idempotent by design). In production, pin the `kuzu` version in `pyproject.toml` for
+reproducibility across kuzu Python API changes.
+
+### 6.9 Observability
 
 `run_pipeline.py` prints quality metrics after every run:
 
@@ -444,14 +466,15 @@ Given a natural language question:
    concept queries like "California energy" that don't map to a named entity
 5. **Collect** all `ACTIVE` claims for matched entities (bilateral: entity as subject OR object)
 6. **Retrieve** linked `Evidence` from SQLite for each claim
-7. **Rank** via **Reciprocal Rank Fusion (RRF):**
+7. **Kùzu 2-hop expansion:** For each of the top-3 matched entities, run a 2-hop BFS in the
+   Kùzu embedded graph to discover indirectly related claim IDs (multi-hop paths)
+8. **Rank** via **Reciprocal Rank Fusion (RRF):**
    ```
-   rrf_score(d) = Σ  1 / (k + rank_i(d))   [k=60]
+   rrf_score(d) = Σ  1 / (k + rank_i(d))   [k=60, 4 signals]
    ```
-   Two signals fused: FAISS semantic rank + BM25 keyword rank. RRF is parameter-free and
-   robust to score-scale differences between signals — consistently outperforms weighted sums
-   in IR benchmarks without tuning.
-8. Return **top-10** claim+evidence pairs; conflicting/superseded claims shown separately
+   Four signals fused: entity-based claims, BM25 keyword, FAISS semantic, Kùzu 2-hop
+   neighborhood. RRF is parameter-free and robust to score-scale differences between signals.
+9. Return **top-10** claim+evidence pairs; conflicting/superseded claims shown separately
 
 ### 7.2 Expansion Without Explosion
 
@@ -725,12 +748,13 @@ BASE_URL = "http://localhost:11434"
 | Human review queue | Not implemented | Flag `confidence < 0.5` or conflicting claims for review |
 | Thread linking | Substring dedup approximation | Requires `Message-ID` / `In-Reply-To` from raw `.mbox` files |
 | Async + SQLite | One connection per extraction call | Connection pool for production |
+| Kùzu path API | Iterative 1-hop BFS used instead of `[c:Claim*1..N]` variable-length Cypher | Variable-length syntax returns edges as a list whose Python representation varies between kuzu versions; iterative approach is robust and version-stable |
 
 ---
 
 ## 11. Test Suite
 
-75 tests across 6 modules, all passing. Written test-first (TDD — red → green → refactor):
+87 tests across 7 modules, all passing. Written test-first (TDD — red → green → refactor):
 
 | Module | Tests | Key Behaviors Covered |
 |--------|-------|-----------------------|
@@ -740,9 +764,10 @@ BASE_URL = "http://localhost:11434"
 | `test_graph_builder.py` | 11 | Graph construction, SQLite persistence, idempotency, offsets |
 | `test_retrieval.py` | 12 | Entity matching, bilateral claims, concept search, context pack grounding |
 | `test_integration.py` | 5 | End-to-end pipeline, grounded retrieval, JSON serializability |
+| `test_kuzu_store.py` | 12 | Schema creation, idempotent load, 1-hop, 2-hop, 3-hop traversal, unknown entity, raw Cypher, graceful degradation |
 
 ```bash
-uv run pytest tests/ -v   # 75/75 pass
+uv run pytest tests/ -v   # 87/87 pass
 ```
 
 ---

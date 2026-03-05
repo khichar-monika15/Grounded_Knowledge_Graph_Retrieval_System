@@ -4,7 +4,7 @@ Extracts structured knowledge from the Enron email dataset, deduplicates entitie
 three levels, stores them in a grounded memory graph, and provides retrieval with interactive
 visualization.
 
-**75/75 tests passing · 1096 entities · 1074 claims · 1174 evidence · 528 merges**
+**87/87 tests passing · 1096 entities · 1074 claims · 1174 evidence · 528 merges**
 
 ---
 
@@ -70,8 +70,9 @@ Layer10_Assign/
 │   ├── dedup.py                    # 3-level dedup: artifact, entity, claim
 │   ├── embeddings.py               # Centralised SentenceTransformer singleton
 │   ├── graph_builder.py            # NetworkX graph + SQLite persistence
-│   ├── retrieval.py                # Embedding-based retrieval + context packs
-│   └── vector_store.py             # FAISS index: pre-compute + ANN search
+│   ├── retrieval.py                # Embedding-based retrieval + RRF context packs (4 signals)
+│   ├── vector_store.py             # FAISS index: pre-compute + ANN search
+│   └── kuzu_store.py               # Kùzu embedded graph: multi-hop Cypher traversal
 │
 ├── pipeline/                       # Extraction and orchestration
 │   ├── download_corpus.py          # Chunked CSV loading + date-filtered sampling
@@ -82,14 +83,15 @@ Layer10_Assign/
 ├── app/
 │   └── app.py                      # Streamlit UI: graph, entity browser, retrieval
 │
-├── tests/                          # 75 TDD tests, all passing
+├── tests/                          # 87 TDD tests, all passing
 │   ├── conftest.py                 # Shared fixtures
 │   ├── test_schema.py              # 17 tests
 │   ├── test_extraction.py          # 14 tests
 │   ├── test_dedup.py               # 13 tests
 │   ├── test_graph_builder.py       # 11 tests
 │   ├── test_retrieval.py           # 12 tests
-│   └── test_integration.py         # 5 tests
+│   ├── test_integration.py         # 5 tests
+│   └── test_kuzu_store.py          # 12 tests
 │
 ├── dataset/                        # Enron_emails.csv (gitignored, ~918 MB)
 ├── data/                           # Sampled emails (generated, gitignored)
@@ -98,6 +100,7 @@ Layer10_Assign/
 │   ├── memory.db                   # SQLite: entities, claims, evidence, merges
 │   ├── graph.json                  # Serialised NetworkX graph
 │   ├── faiss_index.npz             # Pre-computed FAISS embeddings
+│   ├── kuzu_db/                    # Kùzu embedded graph for multi-hop Cypher
 │   ├── extractions/                # Per-email raw extraction JSON (cached)
 │   └── context_packs/              # 5 example retrieval outputs (JSON)
 │
@@ -117,8 +120,9 @@ uv run pytest tests/ -v
 # Single module
 uv run pytest tests/test_schema.py -v
 uv run pytest tests/test_extraction.py -v
+uv run pytest tests/test_kuzu_store.py -v
 
-# Expected: 75/75 passed
+# Expected: 87/87 passed
 ```
 
 ---
@@ -133,6 +137,7 @@ uv run pytest tests/test_extraction.py -v
 | `BASE_URL` | `https://gateway.truefoundry.ai` | LLM gateway URL |
 | `MODEL` | `anthropic/claude-haiku-4-5-20251001` | Model ID |
 | `DB_PATH` | `outputs/memory.db` | SQLite database |
+| `KUZU_DB_PATH` | `outputs/kuzu_db` | Kùzu embedded graph directory |
 | `EXTRACTIONS_DIR` | `outputs/extractions` | Per-email extraction cache |
 | `CONTEXT_PACKS_DIR` | `outputs/context_packs` | Retrieval output directory |
 
@@ -213,10 +218,13 @@ graph_builder.py     — NetworkX MultiDiGraph + SQLite (INSERT OR REPLACE, exec
 vector_store.py      — pre-compute FAISS IndexFlatIP (entity + claim embeddings)
   │
   ▼
-retrieval.py         — entity match + FAISS ANN + BM25 → RRF fusion → context pack
+kuzu_store.py        — build Kùzu embedded graph for 2-hop Cypher neighborhood expansion
   │
   ▼
-app/app.py           — Streamlit: pyvis graph · entity browser · retrieval panel
+retrieval.py         — entity match + FAISS ANN + BM25 + Kùzu 2-hop → RRF fusion → context pack
+  │
+  ▼
+app/app.py           — Streamlit: pyvis graph · entity browser · retrieval panel · Cypher query
 ```
 
 ---
@@ -231,7 +239,8 @@ app/app.py           — Streamlit: pyvis graph · entity browser · retrieval p
 | Claim grounding | `@field_validator` on `supporting_excerpt` | Physically impossible to create ungrounded claim |
 | Entity dedup threshold | Cosine > 0.85 (strict) | Under-merge preferred; person heuristics handle edge cases |
 | Graph store | NetworkX + SQLite | Algorithm flexibility + ACID persistence, no server required |
-| Retrieval ranking | Reciprocal Rank Fusion | Parameter-free, robust to score-scale differences |
+| Retrieval ranking | Reciprocal Rank Fusion (4 signals) | Parameter-free, robust to score-scale differences |
+| Multi-hop traversal | Kùzu embedded graph | 2-hop BFS surfaces indirectly related claims |
 | Graph visualization | pyvis (not streamlit-agraph) | agraph had broken JS bundle; pyvis is more stable |
 | ClaimType ontology | Data-driven discovery | `discover_claim_types.py` + drift-prevention tests |
 

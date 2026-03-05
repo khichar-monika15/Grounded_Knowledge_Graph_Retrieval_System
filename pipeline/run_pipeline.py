@@ -383,6 +383,16 @@ def run_pipeline(sample_size: int = 200, api_key: str = None, skip_download: boo
     print("Building FAISS vector index...")
     build_and_save_index(entities, claims, FAISS_INDEX_PATH)
 
+    # Step 9.5: Build Kùzu multi-hop graph
+    print("Building Kùzu multi-hop graph...")
+    from config import KUZU_DB_PATH
+    from memory.kuzu_store import KuzuGraphStore
+    import memory.retrieval as _ret
+    kuzu_store = KuzuGraphStore(KUZU_DB_PATH)
+    kuzu_store.load(entities, claims)
+    _ret._KUZU_STORE = kuzu_store
+    print(f"  Kùzu graph ready at {KUZU_DB_PATH}")
+
     # Step 10: Generate context packs
     print("Generating context packs...")
     questions = [

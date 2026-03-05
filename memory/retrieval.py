@@ -24,6 +24,9 @@ os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 # Optional FAISS store — injected by run_pipeline / app.py when available
 _VECTOR_STORE = None
 
+# Optional Kùzu store — injected by run_pipeline / app.py when available
+_KUZU_STORE = None
+
 # Cached date range for recency normalisation
 _EARLIEST: Optional[datetime] = None
 _LATEST: Optional[datetime] = None
@@ -289,12 +292,22 @@ def build_context_pack(question: str, entities: list[Entity],
                                               entity_by_id=eid_to_name)
     semantic_claim_ids = [c.claim_id for c in semantic_matches[:20]]
 
+    # --- Signal 4: Kùzu multi-hop expansion (2 hops) ---
+    kuzu_claim_ids: list[str] = []
+    if _KUZU_STORE is not None:
+        for ent, _score in top_entities[:3]:
+            hop_ids = _KUZU_STORE.neighborhood(ent.entity_id, depth=2)
+            for cid in hop_ids:
+                if cid not in kuzu_claim_ids:
+                    kuzu_claim_ids.append(cid)
+
     # --- RRF fusion ---
     # Collect all candidate claim IDs
     all_candidate_ids: set[str] = set()
     all_candidate_ids.update(c.claim_id for c in entity_claims)
     all_candidate_ids.update(bm25_claim_ids)
     all_candidate_ids.update(semantic_claim_ids)
+    all_candidate_ids.update(kuzu_claim_ids)
 
     claim_by_id = {c.claim_id: c for c in claims}
 
@@ -312,7 +325,10 @@ def build_context_pack(question: str, entities: list[Entity],
         r_entity = _rank_in(cid, entity_claim_ids)
         r_bm25 = _rank_in(cid, bm25_claim_ids)
         r_semantic = _rank_in(cid, semantic_claim_ids)
-        rrf_scores[cid] = _rrf_score([r_entity, r_bm25, r_semantic])
+        ranks = [r_entity, r_bm25, r_semantic]
+        if kuzu_claim_ids:
+            ranks.append(_rank_in(cid, kuzu_claim_ids))
+        rrf_scores[cid] = _rrf_score(ranks)
 
     ranked_claim_ids = sorted(rrf_scores, key=lambda cid: rrf_scores[cid], reverse=True)
 

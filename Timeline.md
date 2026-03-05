@@ -307,14 +307,31 @@ TDD session: tests written first (red), then fixes (green), 63 → 68 tests.
 
 ---
 
+## Improvements Batch 6 (Multi-Hop Graph Reasoning via Kùzu)
+
+- **Problem:** 1-hop retrieval misses complex relational queries requiring N-hop traversal, e.g. *"Did anyone who reports to Kenneth Lay discuss the Raptor project?"*
+- **Fix:** `memory/kuzu_store.py` — `KuzuGraphStore` class wrapping Kùzu embedded graph DB.
+  - Schema: one `Entity` node table (PRIMARY KEY `entity_id`) + one generic `Claim` rel table (extensible without migration when new `ClaimType` values are added).
+  - `load(entities, claims)` — drops+recreates tables for idempotency; skips attribute claims (no `object_entity_id`).
+  - `neighborhood(entity_id, depth=2)` — iterative 1-hop BFS in both directions; avoids variable-length Cypher path API instability across kuzu versions.
+  - `execute_cypher(query, params)` — raw Cypher passthrough using `has_next()` / `get_next()` iterator (no pandas dependency).
+- **Pipeline integration:** Step 9.5 in `pipeline/run_pipeline.py` after FAISS build — constructs `KuzuGraphStore`, loads entities+claims, injects into `memory.retrieval._KUZU_STORE`.
+- **Retrieval:** `_KUZU_STORE` module-level global added to `memory/retrieval.py`. Signal 4 added to `build_context_pack()` — 2-hop neighborhood expansion for top-3 matched entities, fed as a 4th list into existing RRF fusion.
+- **UI:** Advanced Cypher panel added to `app/app.py` inside `st.expander()` (hidden by default). Includes 3 pre-built templates (Custom, All claims of a type, 2-hop neighborhood) and live query execution with `st.dataframe()` output.
+- **Config:** `KUZU_DB_PATH = "outputs/kuzu_db"` added to `config.py`.
+- **Tests:** 12 new TDD tests in `tests/test_kuzu_store.py` — schema creation, idempotent load, 1-hop, 2-hop, 3-hop, unknown entity, raw Cypher, graceful degradation when `_KUZU_STORE = None`.
+- **Test count:** 75 → 87
+
+---
+
 ## Final State
 
-- **75/75 tests passing** (schema 17, extraction 14, dedup 13, graph 11, retrieval 12, integration 5)
+- **87/87 tests passing** (schema 17, extraction 14, dedup 13, graph 11, retrieval 12, integration 5, kuzu 12)
 - **ClaimType enum:** 17 values (11 original + 6 corpus-discovered)
 - **Pipeline output:** 1096 entities, 1074 claims, 1174 evidence, 528 merges
-- **Streamlit app:** pyvis graph rendering, entity browser, retrieval panel with grounded evidence cards
-- **write_up.md:** 12-section design document covering all TASK.md requirements
-- **README.md:** Updated with correct project structure, 75/75 test count, full reproduction steps
+- **Streamlit app:** pyvis graph rendering, entity browser, retrieval panel with grounded evidence cards, Advanced Cypher panel
+- **write_up.md:** 12-section design document + §6.8 Kùzu, updated §7 (4 RRF signals), updated §10 tradeoffs
+- **README.md:** Updated with correct project structure, 87/87 test count, `kuzu_db/` in outputs, Kùzu in architecture diagram
 
 ---
 
