@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "Evelyn Metoyer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Kate Symes",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mike Swerzbin",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mike Driscoll",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Prebon West",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Bloomberg",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Amerex",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Arizona Public",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Palo Verde",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Energy Trading Operations",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Evelyn Metoyer",
+      "object": "Kate Symes",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: evelyn.metoyer@enron.com\nTo: kate.symes@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mike Swerzbin",
+      "object": "deal 585337",
+      "confidence": 0.6,
+      "supporting_excerpt": "mike swerzbin deal 585337"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bloomberg",
+      "object": "deal 585337",
+      "confidence": 0.6,
+      "supporting_excerpt": "bloomberg shows cp as arizona public"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mike Driscoll",
+      "object": "deal 585230",
+      "confidence": 0.6,
+      "supporting_excerpt": "amerex  mike driscoll  deal 585230"
+    },
+    {
+      "claim_type": "confirmed",
+      "subject": "Evelyn Metoyer",
+      "object": "Palo Verde as delivery point",
+      "confidence": 0.8,
+      "supporting_excerpt": "i confirmed palo verde as the del point"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Evelyn Metoyer",
+      "object": "Kate Symes",
+      "confidence": 0.8,
+      "supporting_excerpt": "can you double check location with mike on this deal"
+    }
+  ],
+  "_source_id": "465216",
+  "_email_meta": {
+    "sender": "evelyn.metoyer@enron.com",
+    "recipient": "kate.symes@enron.com",
+    "date": "2001-04-18"
+  }
+}

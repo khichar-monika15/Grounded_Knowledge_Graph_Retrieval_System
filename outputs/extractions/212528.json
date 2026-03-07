@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron.com"
+      ]
+    },
+    {
+      "name": "Risk Acceptance Forms",
+      "type": "project",
+      "aliases": [
+        "risk acceptance forms air cards"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "arsystem@mailman.enron.com",
+      "object": "j.kaminski@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: arsystem@mailman.enron.com\nTo: j.kaminski@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "j.kaminski@enron.com",
+      "object": "VP",
+      "confidence": 1.0,
+      "supporting_excerpt": "you have received this email because the requester specified you as their vp"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "requester",
+      "object": "Risk Acceptance Forms",
+      "confidence": 0.8,
+      "supporting_excerpt": "resource name        risk acceptance forms air cards"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Risk Acceptance Forms",
+      "object": "applications",
+      "confidence": 0.6,
+      "supporting_excerpt": "resource type        applications"
+    }
+  ],
+  "_source_id": "212528",
+  "_email_meta": {
+    "sender": "arsystem@mailman.enron.com",
+    "recipient": "j.kaminski@enron.com",
+    "date": "2001-10-19"
+  }
+}

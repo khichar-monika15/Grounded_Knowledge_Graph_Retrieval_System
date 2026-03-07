@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "Matthew Lenhart",
+      "type": "person",
+      "aliases": [
+        "matthew.lenhart@enron.com"
+      ]
+    },
+    {
+      "name": "Scott Morrill",
+      "type": "person",
+      "aliases": [
+        "scott.morrill@grubb-ellis.com"
+      ]
+    },
+    {
+      "name": "Grubb Ellis",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Matthew Lenhart",
+      "object": "Scott Morrill",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: matthew.lenhart@enron.com\nTo: scott.morrill@grubb-ellis.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Matthew Lenhart",
+      "object": "two rooms with two double beds in each",
+      "confidence": 0.7,
+      "supporting_excerpt": "i think they have two rooms with two double beds in each"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Matthew Lenhart",
+      "object": "Jen",
+      "confidence": 0.3,
+      "supporting_excerpt": "jen knows the details"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Matthew Lenhart",
+      "object": "reservation deadline within one week",
+      "confidence": 0.7,
+      "supporting_excerpt": "i heard we need to make reservations within the next week"
+    }
+  ],
+  "_source_id": "279646",
+  "_email_meta": {
+    "sender": "matthew.lenhart@enron.com",
+    "recipient": "scott.morrill@grubb-ellis.com",
+    "date": "2001-05-08"
+  }
+}

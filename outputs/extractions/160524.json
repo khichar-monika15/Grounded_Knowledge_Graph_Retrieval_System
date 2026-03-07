@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "XMS",
+      "type": "project",
+      "aliases": [
+        "expense management system"
+      ]
+    },
+    {
+      "name": "Accounts Payable",
+      "type": "role",
+      "aliases": [
+        "AP department"
+      ]
+    },
+    {
+      "name": "IT Central",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "LEAP",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "ISC Help Desk",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "Expense Management System",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Enron",
+      "object": "all.states@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: all.states@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Enron",
+      "object": "XMS",
+      "confidence": 0.7,
+      "supporting_excerpt": "xms communication20  the expense management system xms is a tool used to electronically submit 20 your expense report for approval and payment through the enron intranet"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "XMS",
+      "object": "made available October 15, 2000",
+      "confidence": 0.8,
+      "supporting_excerpt": "this product was initially made available october 15 200 020"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "XMS",
+      "object": "approximately 50 of the houston employees are currently using it",
+      "confidence": 0.9,
+      "supporting_excerpt": "approximately 50 of the houston employees are currently using it to20 submit their expense reports"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Enron",
+      "object": "have all enron employees using XMS system by April 15",
+      "confidence": 0.9,
+      "supporting_excerpt": "our goal is to have all enron employees usin g20 the xms system by april 15"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Accounts Payable",
+      "object": "paper and email directed expense reports will not be accepted",
+      "confidence": 1.0,
+      "supporting_excerpt": "in the near future pape r20 and email directed expense reports will not be accepted"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "LEAP",
+      "object": "training available for XMS system",
+      "confidence": 0.7,
+      "supporting_excerpt": "if you are unsur e20 of how to use the xms system there is training available through leap that 20 will explain how to use the system"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "IT Central",
+      "object": "provides XMS training and documentation",
+      "confidence": 0.6,
+      "supporting_excerpt": "go to the it central web page  select servicestraining"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "ISC Help Desk",
+      "object": "provides application support services",
+      "confidence": 0.6,
+      "supporting_excerpt": "call the isc help desk at 713 3454sap 4727"
+    }
+  ],
+  "_source_id": "160524",
+  "_email_meta": {
+    "sender": "enron.announcements@enron.com",
+    "recipient": "all.states@enron.com",
+    "date": "2001-03-02"
+  }
+}

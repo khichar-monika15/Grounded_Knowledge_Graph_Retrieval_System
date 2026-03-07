@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron"
+      ]
+    },
+    {
+      "name": "Joseph Pratt",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "University of Houston",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Oral History Project",
+      "type": "project",
+      "aliases": [
+        "oral history project"
+      ]
+    },
+    {
+      "name": "Strategic choices and regulatory change",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "public.relations@enron.com",
+      "object": "all.downtown@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: public.relations@enron.com\nTo: all.downtown@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Enron Oral History Project",
+      "object": "Strategic choices and regulatory change",
+      "confidence": 0.4,
+      "supporting_excerpt": "how can an understanding of strategic choices regulatory change and corporate culture help enron achieve its vision"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Joseph Pratt",
+      "object": "Cullen Professor of History and Business",
+      "confidence": 1.0,
+      "supporting_excerpt": "joseph pratt cullen professor of history and business university of houston"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Joseph Pratt",
+      "object": "codirector enron oral history project",
+      "confidence": 0.9,
+      "supporting_excerpt": "codirector enron oral history project"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Joseph Pratt",
+      "object": "University of Houston",
+      "confidence": 0.9,
+      "supporting_excerpt": "joseph pratt cullen professor of history and business university of houston"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron Oral History Project",
+      "object": "Enron",
+      "confidence": 0.4,
+      "supporting_excerpt": "the enron oral history project continues using history to help enron become the worlds leading company"
+    }
+  ],
+  "_source_id": "158344",
+  "_email_meta": {
+    "sender": "public.relations@enron.com",
+    "recipient": "all.downtown@enron.com",
+    "date": "2001-05-31"
+  }
+}

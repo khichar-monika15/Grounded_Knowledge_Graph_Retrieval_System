@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "Sara Davidson",
+      "type": "person",
+      "aliases": [
+        "sara.davidson@enron.com"
+      ]
+    },
+    {
+      "name": "Robert Hermann",
+      "type": "person",
+      "aliases": [
+        "robert.hermann@enron.com"
+      ]
+    },
+    {
+      "name": "Leesa White",
+      "type": "person",
+      "aliases": [
+        "leesa.white@enron.com"
+      ]
+    },
+    {
+      "name": "Lynn Aven",
+      "type": "person",
+      "aliases": [
+        "lynn.aven@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "2001 Enron Law Conference",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "San Antonio",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Sara Davidson",
+      "object": "Robert Hermann",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sara.davidson@enron.com\nTo: robert.hermann@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sara Davidson",
+      "object": "Leesa White",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sara.davidson@enron.com\nTo: leesa.white@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sara Davidson",
+      "object": "Lynn Aven",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sara.davidson@enron.com\nTo: lynn.aven@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Sara Davidson",
+      "object": "RSVP form submission by March 30, 2001",
+      "confidence": 0.9,
+      "supporting_excerpt": "remember responses must be submitted no later than friday march 30 2001"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Sara Davidson",
+      "object": "RSVP form submission by March 23, 2001 for CLE credit requests",
+      "confidence": 0.6,
+      "supporting_excerpt": "for anyone requesting cle credit for a state other than texas please submit your rsvp form by march 23 2001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sara Davidson",
+      "object": "San Antonio",
+      "confidence": 0.6,
+      "supporting_excerpt": "see you in san antonio"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Sara Davidson",
+      "object": "resubmission of RSVP forms submitted prior to 1:00pm CST",
+      "confidence": 0.6,
+      "supporting_excerpt": "due to problems with the system all rsvp forms submitted prior to 100pm cst should resubmit their form"
+    }
+  ],
+  "_source_id": "159225",
+  "_email_meta": {
+    "sender": "sara.davidson@enron.com",
+    "recipient": "robert.hermann@enron.com, leesa.white@enron.com, lynn.aven@enron.com, ",
+    "date": "2001-03-19"
+  }
+}

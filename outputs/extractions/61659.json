@@ -1,0 +1,40 @@
+{
+  "entities": [
+    {
+      "name": "Jeff Dasovich",
+      "type": "person",
+      "aliases": [
+        "jeff.dasovich@enron.com"
+      ]
+    },
+    {
+      "name": "D Hunter",
+      "type": "person",
+      "aliases": [
+        "dhunter@s-k-w.com"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "D Hunter",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com\nTo: dhunter@s-k-w.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "D Hunter",
+      "object": "fired",
+      "confidence": 0.8,
+      "supporting_excerpt": "youre fired"
+    }
+  ],
+  "_source_id": "61659",
+  "_email_meta": {
+    "sender": "jeff.dasovich@enron.com",
+    "recipient": "dhunter@s-k-w.com",
+    "date": "2001-07-10"
+  }
+}

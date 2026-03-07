@@ -1,0 +1,583 @@
+{
+  "entities": [
+    {
+      "name": "Sally Beck",
+      "type": "person",
+      "aliases": [
+        "sally.beck@enron.com"
+      ]
+    },
+    {
+      "name": "Greg Piper",
+      "type": "person",
+      "aliases": [
+        "greg.piper@enron.com"
+      ]
+    },
+    {
+      "name": "Mark Pickering",
+      "type": "person",
+      "aliases": [
+        "mark.pickering@enron.com"
+      ]
+    },
+    {
+      "name": "John Lavorato",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EA",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EGM",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EIM",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Gas and Power Trading",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Cost Per Transaction Model",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Operations Team Management",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "EnronOnline",
+      "type": "project",
+      "aliases": [
+        "EOL",
+        "eol"
+      ]
+    },
+    {
+      "name": "ENW",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Operations Team",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "Operations Management",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Louise Kitchen",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Wes Colwell",
+      "type": "person",
+      "aliases": [
+        "wes"
+      ]
+    },
+    {
+      "name": "EOL",
+      "type": "project",
+      "aliases": [
+        "eol"
+      ]
+    },
+    {
+      "name": "EIM",
+      "type": "project",
+      "aliases": [
+        "eim"
+      ]
+    },
+    {
+      "name": "EGM",
+      "type": "project",
+      "aliases": [
+        "egm"
+      ]
+    },
+    {
+      "name": "ENW",
+      "type": "project",
+      "aliases": [
+        "enw"
+      ]
+    },
+    {
+      "name": "IT Infrastructure Outsourcing",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "EOL Pricing Strategy",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Budget Discussions",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Ken Lay",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Beth Perlman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Vince Kaminski",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "EES",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "EA",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "The Woodlands",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Budget Planning and Scheduling",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "ENW Budget Planning",
+      "type": "project",
+      "aliases": [
+        "enw 2002 plan"
+      ]
+    },
+    {
+      "name": "Faith Killen",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Rob Milnthrop",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bob Hall",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jenny Rub",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Kerry Roper",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Brad Richter",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jay Webb",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Meeting Rescheduling",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Sally Beck",
+      "object": "Greg Piper",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sally.beck@enron.com\nTo: greg.piper@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sally Beck",
+      "object": "Mark Pickering",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sally.beck@enron.com\nTo: greg.piper@enron.com, mark.pickering@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sally Beck",
+      "object": "Gas and Power Trading",
+      "confidence": 0.7,
+      "supporting_excerpt": "realistically only the trading support provided for straightforward gas a nd power trading makes sense to consider in a cost per transaction mode"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sally Beck",
+      "object": "Cost Per Transaction Model",
+      "confidence": 0.7,
+      "supporting_excerpt": "while we could come up with a methodology for cost per transaction i still have concerns about this on a lot of levels"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sally Beck",
+      "object": "Cost Per Transaction Model creates operational challenges",
+      "confidence": 0.4,
+      "supporting_excerpt": "whenever john lavorato or the traders ask for a different view of data or an ad ho c analysis of pl we would need to discuss this as a change order and pric e accordingly practically speaking there is not one of the ad hoc trader requests that isnt needed yesterday"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sally Beck",
+      "object": "Arms length service arrangement threatens recruitment",
+      "confidence": 0.7,
+      "supporting_excerpt": "i also have a big concern over pushing the envel ope on an arms length service arrangement i will have trouble recruiting and retaining the best people"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Sally Beck",
+      "object": "Operations Manager",
+      "confidence": 1.0,
+      "supporting_excerpt": "when i took the role a few years back was to create a true team between commerical and my operations team"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "John Lavorato",
+      "confidence": 0.4,
+      "supporting_excerpt": "whenever john lavorato or the traders ask for a different view of data"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "Louise",
+      "confidence": 0.6,
+      "supporting_excerpt": "that is what john and louise should want"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sally Beck",
+      "object": "Operations should be integral part of EA team",
+      "confidence": 0.4,
+      "supporting_excerpt": "my commitment to have operations viewed as an integral part of the team at ea egm eim etc"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Greg Piper",
+      "object": "Sally Beck",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sally.beck@enron.com To: greg.piper@enron.com, mark.pickering@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Sally Beck",
+      "object": "Operations Team",
+      "confidence": 1.0,
+      "supporting_excerpt": "and my operations team to make su re that this works for enron"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sally Beck",
+      "object": "Operations Team value",
+      "confidence": 0.7,
+      "supporting_excerpt": "i have some really good people who are very motivated and a big part of that is my commitment to have operations viewe d as an integral part of the team"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sally Beck",
+      "object": "Operations as integral part of business",
+      "confidence": 0.7,
+      "supporting_excerpt": "we had to work har d to achieve that but weve gotten there for the most part"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Unknown",
+      "object": "Sally Beck",
+      "confidence": 0.8,
+      "supporting_excerpt": "now i have been asked to help correct that"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sally Beck",
+      "object": "Running operations as business",
+      "confidence": 0.7,
+      "supporting_excerpt": "i am fully supportive of running operations and enw like a business with a critical eye toward delivering value effectively"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Greg Piper",
+      "object": "Per transaction service model",
+      "confidence": 0.8,
+      "supporting_excerpt": "i have been thinking alot about this per transaction thing"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Greg Piper",
+      "object": "ENW service types",
+      "confidence": 0.6,
+      "supporting_excerpt": "enw provides three very different types of services to enron"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Greg Piper",
+      "object": "EnronOnline",
+      "confidence": 0.7,
+      "supporting_excerpt": "the first e nrononline is very collaborative and is very much an application building and operating situation"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Greg Piper",
+      "object": "EnronOnline relationship",
+      "confidence": 0.7,
+      "supporting_excerpt": "i am not in favor of any relationship on eol that would drive any kind of arms l ength wedge between us and any other group"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sally Beck",
+      "object": "Greg Piper",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sally.beck@enron.com To: greg.piper@enron.com"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sally Beck",
+      "object": "IT Infrastructure Outsourcing",
+      "confidence": 0.7,
+      "supporting_excerpt": "it infrastructure is something that could be outsourced it was once and i t didnt work very well and we pulled it back in"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sally Beck",
+      "object": "per transaction pricing for EOL",
+      "confidence": 0.6,
+      "supporting_excerpt": "i am against per transaction for eol"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sally Beck",
+      "object": "per transaction pricing for fulfillment",
+      "confidence": 0.7,
+      "supporting_excerpt": "i think we should only consider per transaction on the fulfillment portion"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Mark Pickering",
+      "object": "service level selection decision",
+      "confidence": 0.9,
+      "supporting_excerpt": "that would be up to mark and jenny"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Wes Colwell",
+      "object": "Budget Discussions",
+      "confidence": 0.7,
+      "supporting_excerpt": "wes and team had preset the meeting schedule and topics to be covered"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Sally Beck",
+      "object": "outline with changes for remainder of week",
+      "confidence": 0.9,
+      "supporting_excerpt": "the outline that i sent you with the changes for the remainder of this week"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "Ken Lay",
+      "confidence": 0.4,
+      "supporting_excerpt": "i committed months ago to attend a meeting that ken lay asked to be involved in"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "Beth Perlman",
+      "confidence": 0.7,
+      "supporting_excerpt": "only because beth perlman is out on thursday for a religious holiday"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Sally Beck",
+      "object": "skip out from this meeting to be here on friday afternoon",
+      "confidence": 0.7,
+      "supporting_excerpt": "i decided to skip out from this meeting to be here on friday afternoon to discuss the operations and it development budgets together"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Sally Beck",
+      "object": "ENW",
+      "confidence": 0.6,
+      "supporting_excerpt": "i orchestrated the time swap with vince kaminiski so that we could have our enw meeting at 300"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "Vince Kaminski",
+      "confidence": 0.3,
+      "supporting_excerpt": "i orchestrated the time swap with vince kaminiski"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sally Beck",
+      "object": "EES budget",
+      "confidence": 0.7,
+      "supporting_excerpt": "wes suggested that we also review with you the ees budget that enw has prepared"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "Wes",
+      "confidence": 0.7,
+      "supporting_excerpt": "wes suggested that we also review with you the ees budget"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Sally Beck",
+      "object": "cost sharing split for EES and ENW budgets",
+      "confidence": 0.6,
+      "supporting_excerpt": "we are prepared however with a suggested split on the costs for discussion purposes"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "EA",
+      "confidence": 0.4,
+      "supporting_excerpt": "if you would like to cover all of enws budgets together both for ees and ea"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sally Beck",
+      "object": "Budget Discussions",
+      "confidence": 0.4,
+      "supporting_excerpt": "to make our enw budget discussions most meaningful we felt that coupling discussions of the operations and it development budgets will make the most sense"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Sally Beck",
+      "object": "coupling operations and IT development budgets",
+      "confidence": 0.6,
+      "supporting_excerpt": "coupling discussions of the operations and it development budgets will make the most sense"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Sally Beck",
+      "object": "ENW Budget Planning",
+      "confidence": 0.6,
+      "supporting_excerpt": "to insure that we have the appropriate attendees in our enw 2002 plan meetings"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "Wes Colwell",
+      "confidence": 0.4,
+      "supporting_excerpt": "i have worked with wes colwell and made a trade with vince kaminski"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Louise Kitchen",
+      "object": "Budget Discussions",
+      "confidence": 0.4,
+      "supporting_excerpt": "i am expecting an all in cost for this service what do we achieve in separation"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Louise Kitchen",
+      "object": "all in cost for service",
+      "confidence": 0.8,
+      "supporting_excerpt": "i am expecting an all in cost for this service"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Sally Beck",
+      "object": "3 hour meeting block",
+      "confidence": 0.9,
+      "supporting_excerpt": "it would make more sense to set a longer block of time maybe 3 hours"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sally Beck",
+      "object": "Canadian budget",
+      "confidence": 0.7,
+      "supporting_excerpt": "to cover the canadian budget and we can work out a schedule"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sally Beck",
+      "object": "Greg Piper",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: greg.piper@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sally Beck",
+      "object": "Mark Pickering",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: greg.piper@enron.com, mark.pickering@enron.com"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Sally Beck",
+      "object": "Meeting Rescheduling",
+      "confidence": 0.9,
+      "supporting_excerpt": "schedule these meetings around thursday as a religious holiday i have worked with wes colwell and made a trade with vince kaminsk i to make all of this happen"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Wes Colwell",
+      "object": "Meeting Rescheduling",
+      "confidence": 0.9,
+      "supporting_excerpt": "i have worked with wes colwell and made a trade with vince kaminsk i to make all of this happen"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "Bob Hall",
+      "confidence": 0.6,
+      "supporting_excerpt": "bob hall added"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "Brad Richter",
+      "confidence": 0.6,
+      "supporting_excerpt": "brad richter added"
+    }
+  ],
+  "_source_id": "30923",
+  "_email_meta": {
+    "sender": "sally.beck@enron.com",
+    "recipient": "greg.piper@enron.com, mark.pickering@enron.com",
+    "date": "2001-09-26"
+  }
+}

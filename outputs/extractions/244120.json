@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "Fatima Center",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Coralie Graham",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Father Nicholas Gruner",
+      "type": "person",
+      "aliases": [
+        "the fatima priest"
+      ]
+    },
+    {
+      "name": "Blessed Virgin Mary",
+      "type": "person",
+      "aliases": [
+        "our lady",
+        "our lady of fatima"
+      ]
+    },
+    {
+      "name": "Fatima, Portugal",
+      "type": "location",
+      "aliases": [
+        "fatima"
+      ]
+    },
+    {
+      "name": "New York",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Hotel Pennsylvania",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Rally Against Terrorism",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Fatima Message Campaign",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "September 11 Attacks",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Arthur Skinner",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Fatima Crusader",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Fatima Center",
+      "object": "fatimapr@softcom.ca",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: fatimapr@softcom.ca\nTo: fatimapr@softcom.ca"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Coralie Graham",
+      "object": "contact for Fatima Center",
+      "confidence": 0.9,
+      "supporting_excerpt": "contact coralie graham 9058717607 or coraliegrahamsoftcomca"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Father Nicholas Gruner",
+      "object": "Rally Against Terrorism",
+      "confidence": 0.9,
+      "supporting_excerpt": "attenders at the rally will hear seven distinguished speakers including father gruner"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Father Nicholas Gruner",
+      "object": "Fatima Message Campaign",
+      "confidence": 0.7,
+      "supporting_excerpt": "according to father nicholas gruner the fatima priest this foretells tragic events like those of september 11th"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Blessed Virgin Mary",
+      "object": "prophecy at Fatima, Portugal",
+      "confidence": 0.7,
+      "supporting_excerpt": "thousands of catholics in new york and around the world believe that the terrorist attack against the world trade center was prophesied by the blessed virgin mary to three shepherd children at fatima portugal on july 13th 1917"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Father Nicholas Gruner",
+      "object": "September 11 Attacks foretold by Fatima message",
+      "confidence": 0.7,
+      "supporting_excerpt": "according to father nicholas gruner the fatima priest this foretells tragic events like those of september 11th this is it he says this is what our lady tried to warn us about"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Rally Against Terrorism",
+      "object": "scheduled for November 10-12, 2001",
+      "confidence": 0.9,
+      "supporting_excerpt": "a rally against terrorism to be held at new yorks hotel pennsylvania from saturday november 10th through monday november 12th"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Rally Against Terrorism",
+      "object": "Hotel Pennsylvania, New York",
+      "confidence": 0.7,
+      "supporting_excerpt": "sessions are scheduled from 845 am until 530 pm on saturday sunday and monday november 10th through 12th at new yorks hotel pennsylvania 401 7th avenue between 32nd and 33rd streets"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Rally Against Terrorism",
+      "object": "Hotel Pennsylvania",
+      "confidence": 0.7,
+      "supporting_excerpt": "admission to the rally against terrorism is free sessions are scheduled from 845 am until 530 pm on saturday sunday and monday november 10th through 12th at new yorks hotel pennsylvania 401 7th avenue between 32nd and 33rd streets"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Arthur Skinner",
+      "object": "Rally Against Terrorism",
+      "confidence": 0.7,
+      "supporting_excerpt": "for more information contact arthur skinner or coralie graham at the fatima center"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Fatima Center",
+      "object": "Fatima Crusader",
+      "confidence": 0.7,
+      "supporting_excerpt": "it is home to the fatima crusader a quarterly magazine with a circulation of 500000 copies per issue"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Fatima Center",
+      "object": "Coralie Graham",
+      "confidence": 0.7,
+      "supporting_excerpt": "or contact coralie graham the fatima center 266 elmwood ave buffalo ny 14222"
+    }
+  ],
+  "_source_id": "244120",
+  "_email_meta": {
+    "sender": "fatimapr@softcom.ca",
+    "recipient": "fatimapr@softcom.ca",
+    "date": "2001-10-26"
+  }
+}

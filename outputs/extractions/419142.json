@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "Sara Shackleton",
+      "type": "person",
+      "aliases": [
+        "sara.shackleton@enron.com",
+        "sara shackletonhouect"
+      ]
+    },
+    {
+      "name": "Stephanie Panus",
+      "type": "person",
+      "aliases": [
+        "stephanie.panus@enron.com"
+      ]
+    },
+    {
+      "name": "Guenther Klar",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Richard Sage",
+      "type": "person",
+      "aliases": [
+        "richard sagelonectect"
+      ]
+    },
+    {
+      "name": "Janine Juggins",
+      "type": "person",
+      "aliases": [
+        "janine jugginslonectect"
+      ]
+    },
+    {
+      "name": "Denis O'Connell",
+      "type": "person",
+      "aliases": [
+        "denis oconnelllonectect"
+      ]
+    },
+    {
+      "name": "Tana Jones",
+      "type": "person",
+      "aliases": [
+        "tana joneshouectect"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron north america corp"
+      ]
+    },
+    {
+      "name": "Enron Credit Inc",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Credit Ltd",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "SCANA",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "SCANA Confidentiality Agreement",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Guenther Klar",
+      "object": "Sara Shackleton",
+      "confidence": 0.8,
+      "supporting_excerpt": "to sara shackletonhouectect"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Guenther Klar",
+      "object": "Sara Shackleton",
+      "confidence": 0.6,
+      "supporting_excerpt": "sara  you are right about the tax issue"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Guenther Klar",
+      "object": "SCANA Confidentiality Agreement",
+      "confidence": 0.6,
+      "supporting_excerpt": "re confidentiality agreement with scana"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Enron Credit Inc",
+      "object": "replacing the uk directors and officers with us directors and officers",
+      "confidence": 0.6,
+      "supporting_excerpt": "we are in the process of replacing the uk directors and officers of enron credit inc with us directors and officers"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Guenther Klar",
+      "object": "Richard Sage",
+      "confidence": 0.3,
+      "supporting_excerpt": "based on conversations i have had with richard sage"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Guenther Klar",
+      "object": "Enron Credit Ltd owns the information to be supplied",
+      "confidence": 0.4,
+      "supporting_excerpt": "based on conversations i have had with richard sage i had formed the impression that the owner of the information was enron credit ltd"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Guenther Klar",
+      "object": "pursue Sara Shackleton's first suggestion",
+      "confidence": 0.5,
+      "supporting_excerpt": "if this is right we should pursue your first suggestion"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Guenther Klar",
+      "object": "tax risk can be accepted in second suggestion",
+      "confidence": 0.4,
+      "supporting_excerpt": "given that the tax issue is being rectified and this should therefore be an isolated incident i think we can wear the tax risk inherent in your second suggestion"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Guenther Klar",
+      "object": "Richard Sage",
+      "confidence": 0.4,
+      "supporting_excerpt": "though i do wonder whether an officer of enron credit inc such as richard sage currently could sign rather than a director"
+    }
+  ],
+  "_source_id": "419142",
+  "_email_meta": {
+    "sender": "sara.shackleton@enron.com",
+    "recipient": "stephanie.panus@enron.com",
+    "date": "2001-02-20"
+  }
+}

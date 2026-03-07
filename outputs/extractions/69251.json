@@ -1,0 +1,364 @@
+{
+  "entities": [
+    {
+      "name": "Board Cafe",
+      "type": "project",
+      "aliases": [
+        "board cafe"
+      ]
+    },
+    {
+      "name": "CompassPoint Nonprofit Services",
+      "type": "organization",
+      "aliases": [
+        "compasspoint"
+      ]
+    },
+    {
+      "name": "BoardSource",
+      "type": "organization",
+      "aliases": [
+        "boardsource",
+        "national center for nonprofit boards"
+      ]
+    },
+    {
+      "name": "Jan Masaoka",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Executive Director",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "Board President",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "Board Member Exit Interviews",
+      "type": "topic",
+      "aliases": [
+        "exit interviews"
+      ]
+    },
+    {
+      "name": "Board Insurance Requirements",
+      "type": "topic",
+      "aliases": [
+        "insurance"
+      ]
+    },
+    {
+      "name": "Reaching People with Disabilities",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Board Cafe",
+      "type": "organization",
+      "aliases": [
+        "boardcafe@compasspoint.org"
+      ]
+    },
+    {
+      "name": "Compass Point",
+      "type": "organization",
+      "aliases": [
+        "compasspoint.org"
+      ]
+    },
+    {
+      "name": "Alliance for Technology Access",
+      "type": "organization",
+      "aliases": [
+        "ATA"
+      ]
+    },
+    {
+      "name": "Nonprofit Risk Management Center",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Melanie Herman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Nonprofit Insurance Planning",
+      "type": "topic",
+      "aliases": [
+        "insurance issues",
+        "insurance needs"
+      ]
+    },
+    {
+      "name": "Accessibility for People with Disabilities",
+      "type": "topic",
+      "aliases": [
+        "reaching people with disabilities",
+        "organizational accessibility"
+      ]
+    },
+    {
+      "name": "boardcafe@compasspoint.org",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "boardcafe@lists.compasspoint.org",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Nonprofit Insurance and Risk Management",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Volunteer Protection Laws",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Risk Management Audit",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Directors and Officers Liability Insurance",
+      "type": "topic",
+      "aliases": [
+        "D&O insurance",
+        "DO insurance"
+      ]
+    },
+    {
+      "name": "Nonprofit Insurance Coverage",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "San Francisco",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "San Jose",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Washington DC",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "CompassPoint",
+      "type": "organization",
+      "aliases": [
+        "CompassPoint Nonprofit Services"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "boardcafe@compasspoint.org",
+      "object": "boardcafe@lists.compasspoint.org",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: boardcafe@compasspoint.org\nTo: boardcafe@lists.compasspoint.org"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Jan Masaoka",
+      "object": "chef writer",
+      "confidence": 0.9,
+      "supporting_excerpt": "chef writer jan masaoka novemberdecember 2001 vol 5 no10"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Board Cafe",
+      "object": "CompassPoint Nonprofit Services",
+      "confidence": 0.6,
+      "supporting_excerpt": "co published by compasspoint nonprofit services and boardsource"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Board Cafe",
+      "object": "BoardSource",
+      "confidence": 0.7,
+      "supporting_excerpt": "co published by compasspoint nonprofit services and boardsource formerly national center for nonprofit boards"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "board member",
+      "object": "resign from the board",
+      "confidence": 0.9,
+      "supporting_excerpt": "i decided to resign from the board"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "board member",
+      "object": "unhappy with the new executive director",
+      "confidence": 0.7,
+      "supporting_excerpt": "i was on a board and was so unhappy with the new executive director"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Board President",
+      "object": "dissatisfaction with the executive director",
+      "confidence": 0.7,
+      "supporting_excerpt": "the board president had telephoned a few of the board members who had left before their terms were up and she had been surprised to hear their dissatisfaction with the executive director"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Executive Director",
+      "object": "fired",
+      "confidence": 0.8,
+      "supporting_excerpt": "a few months later the executive director was fired"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Board Cafe",
+      "object": "Board Member Exit Interviews",
+      "confidence": 0.7,
+      "supporting_excerpt": "this story links two of the topics for this months board cafe exit interviews for board members"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Board Cafe",
+      "object": "Board Insurance Requirements",
+      "confidence": 0.7,
+      "supporting_excerpt": "this story links two of the topics for this months board cafe exit interviews for board members and what every board needs to do about insurance"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Alliance for Technology Access",
+      "object": "Accessibility for People with Disabilities",
+      "confidence": 0.7,
+      "supporting_excerpt": "a great book access aware extending your reach to people with disabilities is now available from the alliance for technology access"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Melanie Herman",
+      "object": "Nonprofit Insurance Planning",
+      "confidence": 0.7,
+      "supporting_excerpt": "what you need to do about insurance by melanie herman nonprofit risk management center"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Board Cafe",
+      "object": "Nonprofit Insurance Planning",
+      "confidence": 0.7,
+      "supporting_excerpt": "now for this months main course at the board cafe what you need to do about insurance"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Nonprofit Risk Management Center",
+      "object": "every nonprofit board should consider its insurance needs",
+      "confidence": 0.7,
+      "supporting_excerpt": "every nonprofit board should consider its insurance needs and the resources needed to protect the good health and mission of the organization"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "boardcafe@compasspoint.org",
+      "object": "Nonprofit Insurance and Risk Management",
+      "confidence": 0.7,
+      "supporting_excerpt": "have an annual report to the board on insurance and risk"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "boardcafe@compasspoint.org",
+      "object": "Volunteer Protection Laws",
+      "confidence": 0.7,
+      "supporting_excerpt": "ask the risk management or finance committee to look at the language in your state volunteer protection laws as well as the federal volunteer protection acts"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "boardcafe@compasspoint.org",
+      "object": "Risk Management Audit",
+      "confidence": 0.9,
+      "supporting_excerpt": "the board should consider conducting a risk management audit or simply identifying ways to reduce risk"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Board Cafe",
+      "object": "Directors and Officers Liability Insurance",
+      "confidence": 0.7,
+      "supporting_excerpt": "consider directors officers do liability insurance while many suits against nonprofits are brought against the nonprofit corporation as well as individual managers and board members"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Board Cafe",
+      "object": "Nonprofit Insurance Coverage",
+      "confidence": 0.7,
+      "supporting_excerpt": "import if you cant afford all of the coverages youd like your nonprofit to have start with the policy you consider most important and add others when you can"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Board Cafe",
+      "object": "test the market every three to five years",
+      "confidence": 0.9,
+      "supporting_excerpt": "test the market every three to five years consider shopping your insurance program invite several brokers or agents to submit proposals"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Board Cafe",
+      "object": "Nonprofit Risk Management Center",
+      "confidence": 0.7,
+      "supporting_excerpt": "the nonprofit risk management center provides free technical assistance to nonprofits via telephone or email"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Board Cafe",
+      "object": "CompassPoint Nonprofit Services",
+      "confidence": 0.9,
+      "supporting_excerpt": "you are reading the board cafe published monthly by compasspoint nonprofit services"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Board Cafe",
+      "object": "BoardSource",
+      "confidence": 0.9,
+      "supporting_excerpt": "you are reading the board cafe published monthly by compasspoint nonprofit services and boardsource"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Board Cafe",
+      "object": "CompassPoint",
+      "confidence": 0.7,
+      "supporting_excerpt": "office 1922 the alameda san jose 95126 phone 4082489505 email boardcafecompasspointorg"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "BoardSource",
+      "object": "CompassPoint",
+      "confidence": 0.7,
+      "supporting_excerpt": "c 2001 compasspoint nonprofit servicesboardsource formerly national center for nonprofit boards"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Board Cafe",
+      "object": "San Jose",
+      "confidence": 0.6,
+      "supporting_excerpt": "office 1922 the alameda san jose 95126"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "BoardSource",
+      "object": "Washington DC",
+      "confidence": 0.6,
+      "supporting_excerpt": "boardsource 1828 l street nw ste 900 washington dc 2024526262"
+    }
+  ],
+  "_source_id": "69251",
+  "_email_meta": {
+    "sender": "boardcafe@compasspoint.org",
+    "recipient": "boardcafe@lists.compasspoint.org",
+    "date": "2001-12-14"
+  }
+}

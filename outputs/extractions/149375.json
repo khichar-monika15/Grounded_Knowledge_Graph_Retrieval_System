@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "Caroline Emmert",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark Guzman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Collin Whitehead",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Snohomish PUD",
+      "type": "organization",
+      "aliases": [
+        "snohomissup"
+      ]
+    },
+    {
+      "name": "Transmission Deals",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Caroline Emmert",
+      "object": "Mark Guzman",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: caroline.emmert@enron.com\nTo: mark.guzman@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Caroline Emmert",
+      "object": "Collin Whitehead",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: caroline.emmert@enron.com\nTo: mark.guzman@enron.com, collin.whitehead@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Caroline Emmert",
+      "object": "Transmission Deals",
+      "confidence": 0.4,
+      "supporting_excerpt": "im sending this to you as an fyi because your names were on the deals i had to fix"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Transmission Deals",
+      "object": "Snohomish PUD",
+      "confidence": 0.4,
+      "supporting_excerpt": "we have two transmission deals with snohomish pud see 4697701 and 4697911"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Caroline Emmert",
+      "object": "counterparty selection accuracy",
+      "confidence": 0.4,
+      "supporting_excerpt": "when searching for the counterparty in the listing please be extra careful about the one you actually choose"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Caroline Emmert",
+      "object": "Virginia",
+      "confidence": 0.4,
+      "supporting_excerpt": "it will send someone usually me or virginia on an unnecessary wild goose chase"
+    }
+  ],
+  "_source_id": "149375",
+  "_email_meta": {
+    "sender": "caroline.emmert@enron.com",
+    "recipient": "mark.guzman@enron.com, collin.whitehead@enron.com",
+    "date": "2001-01-03"
+  }
+}

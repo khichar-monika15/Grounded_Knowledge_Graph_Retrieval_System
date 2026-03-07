@@ -1,0 +1,349 @@
+{
+  "entities": [
+    {
+      "name": "Kimberly Ward",
+      "type": "person",
+      "aliases": [
+        "kimberly"
+      ]
+    },
+    {
+      "name": "Travelocity",
+      "type": "organization",
+      "aliases": [
+        "travelocitycom"
+      ]
+    },
+    {
+      "name": "Holiday travel planning",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Travelocity Preferred Traveler Program",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "K. Ward",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "JetBlue",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Royal Caribbean",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Carnival",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Norwegian Cruise Line",
+      "type": "organization",
+      "aliases": [
+        "ncls"
+      ]
+    },
+    {
+      "name": "Princess",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Travel America Now Act",
+      "type": "topic",
+      "aliases": [
+        "tan act"
+      ]
+    },
+    {
+      "name": "Holiday Travel Promotions",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Caribbean Cruise Offers",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "K Ward",
+      "type": "person",
+      "aliases": [
+        "kward@ect.enron.com"
+      ]
+    },
+    {
+      "name": "Princess Cruises",
+      "type": "organization",
+      "aliases": [
+        "princess"
+      ]
+    },
+    {
+      "name": "Caribbean Vacation Deals",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Belize",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Las Vegas",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "American Airlines",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Thrifty",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Howard Johnson",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Korean Air",
+      "type": "organization",
+      "aliases": [
+        "korean"
+      ]
+    },
+    {
+      "name": "Travel promotions and deals",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Coffeemate",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Moguls Mountain Travel",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Hertz",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Best Western",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Spiegel",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Utah ski resorts",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "ECT"
+      ]
+    },
+    {
+      "name": "Sabre",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Travel booking and lodging promotions",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Travelocity",
+      "object": "Kimberly Ward",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: feedback@travelocity.m0.net\nTo: kward@ect.enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Travelocity",
+      "object": "Holiday travel planning",
+      "confidence": 0.7,
+      "supporting_excerpt": "dear kimberly with the holiday approaching many of you are looking forward to a few days off and to spending time with family and friends if you have been holding off on making your holiday travel plans"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Travelocity",
+      "object": "Travelocity Preferred Traveler Program",
+      "confidence": 0.9,
+      "supporting_excerpt": "when you join the travelocity preferred traveler program today thats a total of 75 in savings"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Travelocity",
+      "object": "Fare Watcher feature",
+      "confidence": 0.7,
+      "supporting_excerpt": "fare watcher will do the rest traveler reviewstraveler reviews looking for a great caribbean cruise"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Travelocity",
+      "object": "Travel America Now Act",
+      "confidence": 0.7,
+      "supporting_excerpt": "keep america traveling help us pass the tan act congress is considering the travel america now act"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "JetBlue",
+      "object": "Holiday Travel Promotions",
+      "confidence": 0.7,
+      "supporting_excerpt": "air coast to coast from 129 oneway on jetblue fly the airline thats got it all from stateoftheart aircraft to leather seats directv and more"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Royal Caribbean",
+      "object": "Caribbean Cruise Offers",
+      "confidence": 0.7,
+      "supporting_excerpt": "cruisessail to mexicos hottest ports from just 199 whether youre in the mood for a longweekend escape or a weeklong break royal caribbean takes you away in style this winter"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Carnival",
+      "object": "Caribbean Cruise Offers",
+      "confidence": 0.7,
+      "supporting_excerpt": "5night western caribbean cruises from 299 the western caribbean comes alive on carnivals funfilled four and fivenight sailings"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Norwegian Cruise Line",
+      "object": "Caribbean Cruise Offers",
+      "confidence": 0.7,
+      "supporting_excerpt": "ncls 7night caribbean from 399 plus 100 back book this already lowpriced cruise by november 28 2001 with a mastercard and get 100 in shipboard credits and cash back norwegian cruise line wants you to get up close and personal with belize st thomas the bahamas grand cayman and beyond"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Princess",
+      "object": "Caribbean Cruise Offers",
+      "confidence": 0.7,
+      "supporting_excerpt": "weeklong caribbean voyages with princess from 499 see the best of the virgin islands as well as cozumel and grand cayman on princess"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Princess Cruises",
+      "object": "Caribbean Vacation Deals",
+      "confidence": 0.6,
+      "supporting_excerpt": "book now weeklong caribbean voyages with princess from 499"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "American Airlines",
+      "object": "Caribbean Vacation Deals",
+      "confidence": 0.6,
+      "supporting_excerpt": "just book an american airlines vacations package to colorado"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Thrifty",
+      "object": "Car Rental Promotion",
+      "confidence": 0.7,
+      "supporting_excerpt": "thrifty is taking 10 off their already incredibly low rates from now until december 31 2001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Korean Air",
+      "object": "Asia Travel Offer",
+      "confidence": 0.6,
+      "supporting_excerpt": "receive a free business class companion ticket on korean"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Travelocity",
+      "object": "Travel promotions and deals",
+      "confidence": 0.6,
+      "supporting_excerpt": "exclusive offersfree companion ticket to asia"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Korean Air",
+      "object": "Travel promotions and deals",
+      "confidence": 0.7,
+      "supporting_excerpt": "receive a free business class companion ticket on korean air travel is valid to bangkok hong kong tokyo and more"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Coffeemate",
+      "object": "Travel promotions and deals",
+      "confidence": 0.7,
+      "supporting_excerpt": "let coffeemate flavors take you far away win a trip for 2 to italy france brazil or ireland from coffeemate"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Moguls Mountain Travel",
+      "object": "Utah ski resorts",
+      "confidence": 0.7,
+      "supporting_excerpt": "holiday ski vacations from moguls mountain travel ski for the holidays"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Hertz",
+      "object": "Travel promotions and deals",
+      "confidence": 0.7,
+      "supporting_excerpt": "members also receive 75 in cashrebate coupons on airline tickets 15 off hertz weekly rentals"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Best Western",
+      "object": "Travel promotions and deals",
+      "confidence": 0.7,
+      "supporting_excerpt": "25 cash back on twonight stays or more at best western hotels"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Travelocity",
+      "object": "lodging properties",
+      "confidence": 0.6,
+      "supporting_excerpt": "you stay three nights or more at participating lodging properties"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "K. Ward",
+      "object": "Travelocity",
+      "confidence": 0.7,
+      "supporting_excerpt": "when you registered at travelocity or preview travel you agreed to receive email"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Travelocity",
+      "object": "Sabre",
+      "confidence": 0.6,
+      "supporting_excerpt": "sabre is a trademark of an affiliate of sabre inc"
+    }
+  ],
+  "_source_id": "492164",
+  "_email_meta": {
+    "sender": "feedback@travelocity.m0.net",
+    "recipient": "kward@ect.enron.com",
+    "date": "2001-11-17"
+  }
+}

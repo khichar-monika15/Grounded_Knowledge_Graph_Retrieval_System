@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "Houston Ward",
+      "type": "person",
+      "aliases": [
+        "houston",
+        "kim"
+      ]
+    },
+    {
+      "name": "H. Foster",
+      "type": "person",
+      "aliases": [
+        "h..foster"
+      ]
+    },
+    {
+      "name": "C. Giron",
+      "type": "person",
+      "aliases": [
+        "chris",
+        "c..giron"
+      ]
+    },
+    {
+      "name": "Citizens Deal",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Houston Ward",
+      "object": "H. Foster",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: houston <.ward@enron.com> To: h..foster@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Houston Ward",
+      "object": "C. Giron",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: houston <.ward@enron.com> To: c..giron@enron.com"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Houston Ward",
+      "object": "meeting to discuss Citizens Deal and booking issues",
+      "confidence": 0.9,
+      "supporting_excerpt": "i have set up a meeting in 32c2 at 100 pm central time to discuss the citizens deal and booking issues associated with it"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "meeting",
+      "object": "Citizens Deal",
+      "confidence": 0.7,
+      "supporting_excerpt": "to discuss the citizens deal and booking issues associated with it"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Houston Ward",
+      "object": "C. Giron will be called via speaker phone",
+      "confidence": 0.7,
+      "supporting_excerpt": "chris we will call you from the speaker phone in that conference room"
+    }
+  ],
+  "_source_id": "490930",
+  "_email_meta": {
+    "sender": "houston <.ward@enron.com>",
+    "recipient": "h..foster@enron.com, c..giron@enron.com",
+    "date": "2001-07-06"
+  }
+}

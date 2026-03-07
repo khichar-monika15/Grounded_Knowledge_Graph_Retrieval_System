@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "Bob Joyce",
+      "type": "person",
+      "aliases": [
+        "bob.joyce@kvaerner.com"
+      ]
+    },
+    {
+      "name": "David K. Bargainer",
+      "type": "person",
+      "aliases": [
+        "david.k.bargainer@enron.com"
+      ]
+    },
+    {
+      "name": "Tracy Bogiel",
+      "type": "person",
+      "aliases": [
+        "tracybogiel@garygreene.com"
+      ]
+    },
+    {
+      "name": "Kvaerner",
+      "type": "organization",
+      "aliases": [
+        "Kvaerner Process"
+      ]
+    },
+    {
+      "name": "Platelet Donation Request",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Bob Joyce",
+      "object": "David K. Bargainer",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: bob.joyce@kvaerner.com\nTo: david.k.bargainer@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Bob Joyce",
+      "object": "Tracy Bogiel",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: bob.joyce@kvaerner.com\nTo: tracybogiel@garygreene.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Bob Joyce",
+      "object": "Type O blood platelet donation for Michael",
+      "confidence": 0.6,
+      "supporting_excerpt": "is anyone with type o blood either or able to donate platelets for michael today"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bob Joyce",
+      "object": "Michael",
+      "confidence": 0.6,
+      "supporting_excerpt": "donate platelets for michael today"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bob Joyce",
+      "object": "Bev",
+      "confidence": 0.7,
+      "supporting_excerpt": "if youre able to donate today please call my wife bev at 713 9726840"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Bob Joyce",
+      "object": "Kvaerner",
+      "confidence": 0.9,
+      "supporting_excerpt": "bob joyce kvaerner process 7909 parkwood circle drive houston tx 77036"
+    }
+  ],
+  "_source_id": "314878",
+  "_email_meta": {
+    "sender": "bob.joyce@kvaerner.com",
+    "recipient": "david.k.bargainer@enron.com, tracybogiel@garygreene.com, ",
+    "date": "2001-06-04"
+  }
+}

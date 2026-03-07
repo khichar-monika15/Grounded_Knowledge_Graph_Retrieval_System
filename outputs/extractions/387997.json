@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "Elizabeth Sager",
+      "type": "person",
+      "aliases": [
+        "elizabeth.sager@enron.com"
+      ]
+    },
+    {
+      "name": "Paul Radous",
+      "type": "person",
+      "aliases": [
+        "paul.radous@enron.com"
+      ]
+    },
+    {
+      "name": "Edward Sacks",
+      "type": "person",
+      "aliases": [
+        "edward.sacks@enron.com"
+      ]
+    },
+    {
+      "name": "Andy Katz",
+      "type": "person",
+      "aliases": [
+        "akatz@eei.org"
+      ]
+    },
+    {
+      "name": "Edison Electric Institute",
+      "type": "organization",
+      "aliases": [
+        "EEI"
+      ]
+    },
+    {
+      "name": "Morgan Stanley",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Collateral Annex",
+      "type": "project",
+      "aliases": [
+        "draft collateral annex"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Elizabeth Sager",
+      "object": "Paul Radous",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: paul.radous@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Elizabeth Sager",
+      "object": "Edward Sacks",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: paul.radous@enron.com, edward.sacks@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Andy Katz",
+      "object": "director industry legal affairs",
+      "confidence": 0.9,
+      "supporting_excerpt": "andrew s katz director industry legal affairs edison electric institute"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Andy Katz",
+      "object": "Edison Electric Institute",
+      "confidence": 0.8,
+      "supporting_excerpt": "andrew s katz director industry legal affairs edison electric institute"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Andy Katz",
+      "object": "Collateral Annex",
+      "confidence": 0.7,
+      "supporting_excerpt": "the draft collateral annex file i sent out with other documents last friday was the earlier version of the annex"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Collateral Annex",
+      "object": "correct version",
+      "confidence": 0.9,
+      "supporting_excerpt": "the version i sent out on 718 is correct its attached for your convenience"
+    }
+  ],
+  "_source_id": "387997",
+  "_email_meta": {
+    "sender": "elizabeth.sager@enron.com",
+    "recipient": "paul.radous@enron.com, edward.sacks@enron.com",
+    "date": "2001-08-06"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "Veronica Gonzalez",
+      "type": "person",
+      "aliases": [
+        "veronica.gonzalez@enron.com"
+      ]
+    },
+    {
+      "name": "Bob Shults",
+      "type": "person",
+      "aliases": [
+        "bob.shults@enron.com"
+      ]
+    },
+    {
+      "name": "Daniel Diamond",
+      "type": "person",
+      "aliases": [
+        "daniel.diamond@enron.com"
+      ]
+    },
+    {
+      "name": "Teresa Mandola",
+      "type": "person",
+      "aliases": [
+        "teresa.mandola@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EPMI Power Credit Watch List",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Veronica Gonzalez",
+      "object": "Bob Shults",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: veronica.gonzalez@enron.com\nTo: bob.shults@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Veronica Gonzalez",
+      "object": "Daniel Diamond",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: veronica.gonzalez@enron.com\nTo: bob.shults@enron.com, daniel.diamond@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Veronica Gonzalez",
+      "object": "Teresa Mandola",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: veronica.gonzalez@enron.com\nTo: bob.shults@enron.com, daniel.diamond@enron.com, teresa.mandola@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Veronica Gonzalez",
+      "object": "EPMI Power Credit Watch List",
+      "confidence": 0.7,
+      "supporting_excerpt": "attached please find the epmi power credit watch list as of 030601"
+    }
+  ],
+  "_source_id": "466460",
+  "_email_meta": {
+    "sender": "veronica.gonzalez@enron.com",
+    "recipient": "bob.shults@enron.com, daniel.diamond@enron.com, teresa.mandola@enron.com, ",
+    "date": "2001-03-06"
+  }
+}

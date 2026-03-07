@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "Kristin Gandy",
+      "type": "person",
+      "aliases": [
+        "kristin.gandy@enron.com",
+        "gandy kristin"
+      ]
+    },
+    {
+      "name": "John Arnold",
+      "type": "person",
+      "aliases": [
+        "john.arnold@enron.com",
+        "arnold john"
+      ]
+    },
+    {
+      "name": "Paul Racicot",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "the big e"
+      ]
+    },
+    {
+      "name": "Enron Global Markets",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Freight Markets",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Enron Financial Crisis",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kristin Gandy",
+      "object": "John Arnold",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kristin.gandy@enron.com To: john.arnold@enron.com"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Kristin Gandy",
+      "object": "Enron Global Markets",
+      "confidence": 0.8,
+      "supporting_excerpt": "kristin gandy freight markets enron global markets"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Kristin Gandy",
+      "object": "Specialist",
+      "confidence": 0.7,
+      "supporting_excerpt": "my title is specialist so i am the little man on the trading floor"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Kristin Gandy",
+      "object": "Freight Markets",
+      "confidence": 0.8,
+      "supporting_excerpt": "kristin gandy freight markets enron global markets"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kristin Gandy",
+      "object": "Paul Racicot",
+      "confidence": 0.4,
+      "supporting_excerpt": "i briefly meet you while talking to paul racicot on friday at front porch pub"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kristin Gandy",
+      "object": "Matt",
+      "confidence": 0.4,
+      "supporting_excerpt": "with matt working here in freight you probably already know we are not well off these days"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Kristin Gandy",
+      "object": "Enron",
+      "confidence": 0.7,
+      "supporting_excerpt": "i may want to cut my losses with the big e and take my skills elsewhere"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Kristin Gandy",
+      "object": "John Arnold",
+      "confidence": 0.6,
+      "supporting_excerpt": "i was wondering if you knew of any positions available in your area"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "John Arnold",
+      "object": "Kristin Gandy",
+      "confidence": 0.7,
+      "supporting_excerpt": "unfotunately i dont have any openings in my group right now"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "John Arnold",
+      "object": "Kristin Gandy",
+      "confidence": 0.6,
+      "supporting_excerpt": "can you remind me what title you have now"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Kristin Gandy",
+      "object": "Freight Markets",
+      "confidence": 0.4,
+      "supporting_excerpt": "we are not well off these days next on the chopping block is never a good place to be"
+    }
+  ],
+  "_source_id": "6130",
+  "_email_meta": {
+    "sender": "kristin.gandy@enron.com",
+    "recipient": "john.arnold@enron.com",
+    "date": "2001-11-21"
+  }
+}

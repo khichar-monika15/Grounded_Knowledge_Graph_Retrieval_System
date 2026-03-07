@@ -1,0 +1,126 @@
+{
+  "entities": [
+    {
+      "name": "Enron Global Strategic Sourcing",
+      "type": "organization",
+      "aliases": [
+        "GSS"
+      ]
+    },
+    {
+      "name": "Enron Networks",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Skytel Communications Inc",
+      "type": "organization",
+      "aliases": [
+        "Skytel"
+      ]
+    },
+    {
+      "name": "Research in Motion",
+      "type": "organization",
+      "aliases": [
+        "RIM"
+      ]
+    },
+    {
+      "name": "Tom O Moore",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron Houston",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Skytel-Enron Pager Agreement",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "BlackBerry Days",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Mobile Device Services",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "no.address@enron.com",
+      "object": "Enron Houston",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: all enron houston@enron"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Enron Global Strategic Sourcing",
+      "object": "Skytel-Enron Pager Agreement",
+      "confidence": 0.9,
+      "supporting_excerpt": "enron global strategic sourcing in collaboration with enron net works recently executed a twoyear agreement with skytel communications inc"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Enron Networks",
+      "object": "Skytel-Enron Pager Agreement",
+      "confidence": 0.9,
+      "supporting_excerpt": "enron global strategic sourcing in collaboration with enron net works recently executed a twoyear agreement with skytel communications inc"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Skytel Communications Inc",
+      "object": "Skytel-Enron Pager Agreement",
+      "confidence": 0.9,
+      "supporting_excerpt": "enron global strategic sourcing in collaboration with enron net works recently executed a twoyear agreement with skytel communications inc"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Tom O Moore",
+      "object": "GSS senior contract manager",
+      "confidence": 0.9,
+      "supporting_excerpt": "please contact gss senior contract manager tom o moore"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Skytel-Enron Pager Agreement",
+      "object": "effective August 1",
+      "confidence": 0.9,
+      "supporting_excerpt": "effective august 1 please visit ibuyitenroncom to order hardware or request activation"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Skytel-Enron Pager Agreement",
+      "object": "50 percent discount on BlackBerry-enabled hardware purchases through year-end 2001",
+      "confidence": 0.7,
+      "supporting_excerpt": "enron will also receive special discount incentives including 50 discount on blackberryenabled hardware purchases through yearend 2001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Skytel-Enron Pager Agreement",
+      "object": "service costs billed at 50 percent of normal rates for a limited time",
+      "confidence": 0.7,
+      "supporting_excerpt": "featured quarterly and monthly service costs that will be billed at 50 of normal rates for a limited time"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Enron Houston",
+      "object": "BlackBerry Days",
+      "confidence": 0.9,
+      "supporting_excerpt": "handson demonstrations of various skytel products will be conducted during blackberry days on july 31 august 1 and august 2 from  am  200 pm in the enron building lobby"
+    }
+  ],
+  "_source_id": "44633",
+  "_email_meta": {
+    "sender": "no.address@enron.com",
+    "recipient": "all enron houston@enron <??sall enron houston@enron>",
+    "date": "2001-07-26"
+  }
+}

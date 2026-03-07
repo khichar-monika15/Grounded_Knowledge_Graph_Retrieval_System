@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "Paul Pfeffer",
+      "type": "person",
+      "aliases": [
+        "paul.pfeffer@bakerbotts.com"
+      ]
+    },
+    {
+      "name": "Gerald Nemec",
+      "type": "person",
+      "aliases": [
+        "gerald.nemec@enron.com"
+      ]
+    },
+    {
+      "name": "Lee Corso",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Cornhuskers",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Oklahoma",
+      "type": "organization",
+      "aliases": [
+        "OU"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Paul Pfeffer",
+      "object": "Gerald Nemec",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: paul.pfeffer@bakerbotts.com\nTo: gerald.nemec@enron.com"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Lee Corso",
+      "object": "will pick the Cornhuskers to beat OU",
+      "confidence": 0.6,
+      "supporting_excerpt": "why will lee corso pick the cornhuskers to beat ou"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Paul Pfeffer",
+      "object": "Lee Corso's poor gameday picks record vs OU is 17",
+      "confidence": 0.7,
+      "supporting_excerpt": "needs poor gameday picks record vs ou 17 to make career college coaching mark 73836 look good by comparison"
+    }
+  ],
+  "_source_id": "348467",
+  "_email_meta": {
+    "sender": "paul.pfeffer@bakerbotts.com",
+    "recipient": "gerald.nemec@enron.com",
+    "date": "2001-10-24"
+  }
+}

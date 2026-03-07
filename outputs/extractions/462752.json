@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "Kate Symes",
+      "type": "person",
+      "aliases": [
+        "kate.symes@enron.com"
+      ]
+    },
+    {
+      "name": "Evelyn Metoyer",
+      "type": "person",
+      "aliases": [
+        "evelyn.metoyer@enron.com"
+      ]
+    },
+    {
+      "name": "Jeff Richter",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Powerex",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Amerex",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Power Deal Documentation",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kate Symes",
+      "object": "Evelyn Metoyer",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kate.symes@enron.com To: evelyn.metoyer@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kate Symes",
+      "object": "Jeff Richter",
+      "confidence": 0.6,
+      "supporting_excerpt": "deal per amerex for jeff richter"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron",
+      "object": "Powerex",
+      "confidence": 0.6,
+      "supporting_excerpt": "enron sells powerex 25 mw of offpeak np15"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Kate Symes",
+      "object": "Power Deal Documentation",
+      "confidence": 0.7,
+      "supporting_excerpt": "i am missing the following deal per amerex for jeff richter enron sells powerex 25 mw of offpeak np15 for 128129 at 25000"
+    }
+  ],
+  "_source_id": "462752",
+  "_email_meta": {
+    "sender": "kate.symes@enron.com",
+    "recipient": "evelyn.metoyer@enron.com",
+    "date": "2001-01-26"
+  }
+}

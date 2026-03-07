@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "Tana Jones",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Carlos Alatorre",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Sara Shackleton",
+      "type": "person",
+      "aliases": [
+        "wsara shackleton"
+      ]
+    },
+    {
+      "name": "Morgan Stanley",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Morgan Stanley Capital Services Inc",
+      "type": "organization",
+      "aliases": [
+        "morgan stanley capital group"
+      ]
+    },
+    {
+      "name": "Gary Hickerson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EnronOnline",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Currency Swaps Trading",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Tana Jones",
+      "object": "Carlos Alatorre",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: tana.jones@enron.com\nTo: carlos.alatorre@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sara Shackleton",
+      "object": "Currency Swaps Trading",
+      "confidence": 0.4,
+      "supporting_excerpt": "after discussing this counterparty wsara shackleton an attorney in the swap group"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Sara Shackleton",
+      "object": "attorney in the swap group",
+      "confidence": 0.6,
+      "supporting_excerpt": "wsara shackleton an attorney in the swap group"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sara Shackleton",
+      "object": "Morgan Stanley",
+      "confidence": 0.6,
+      "supporting_excerpt": "sara has been talking to morgan stanley"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Morgan Stanley",
+      "object": "Currency Swaps Trading",
+      "confidence": 0.4,
+      "supporting_excerpt": "morgan stanley does all its interest rate currency business out of morgan stanley capital services inc"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Sara Shackleton",
+      "object": "ISDA master for Morgan Stanley Capital Services Inc",
+      "confidence": 0.6,
+      "supporting_excerpt": "sara is already working on a isda master for capital services for gary hickersons group"
+    }
+  ],
+  "_source_id": "198296",
+  "_email_meta": {
+    "sender": "tana.jones@enron.com",
+    "recipient": "carlos.alatorre@enron.com",
+    "date": "2001-05-15"
+  }
+}

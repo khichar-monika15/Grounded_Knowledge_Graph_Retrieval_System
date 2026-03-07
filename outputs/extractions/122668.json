@@ -1,0 +1,160 @@
+{
+  "entities": [
+    {
+      "name": "Tracy Geaccone",
+      "type": "person",
+      "aliases": [
+        "tracy.geaccone@enron.com"
+      ]
+    },
+    {
+      "name": "Rod Hayslett",
+      "type": "person",
+      "aliases": [
+        "rod.hayslett@enron.com",
+        "hayslett rod"
+      ]
+    },
+    {
+      "name": "Corina Taylor",
+      "type": "person",
+      "aliases": [
+        "taylor corina"
+      ]
+    },
+    {
+      "name": "Tracey Kozadinos",
+      "type": "person",
+      "aliases": [
+        "kozadinos tracey"
+      ]
+    },
+    {
+      "name": "Michelle Akers",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Sladana Kulic",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Lane Merchant",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Biliana Pehlivanova",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "UH 2000 Recruiting",
+      "type": "project",
+      "aliases": [
+        "uh 2000 recruiting team"
+      ]
+    },
+    {
+      "name": "University Hilton",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Recruiting Coordinator",
+      "type": "role",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Tracy Geaccone",
+      "object": "Rod Hayslett",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: tracy.geaccone@enron.com To: rod.hayslett@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Rod Hayslett",
+      "object": "Tracy Geaccone",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from  hayslett rod   sent wednesday october 10 2001 533 pm to geaccone tracy"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Corina Taylor",
+      "object": "Rod Hayslett",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from  taylor corina   sent wednesday october 10 2001  to hayslett rod"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Corina Taylor",
+      "object": "Tracey Kozadinos",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from  taylor corina   sent wednesday october 10 2001  to hayslett rod kozadinos tracey"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Michelle Akers",
+      "object": "UH 2000 Recruiting",
+      "confidence": 0.8,
+      "supporting_excerpt": "michelle akers  started 71601"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Sladana Kulic",
+      "object": "UH 2000 Recruiting",
+      "confidence": 0.8,
+      "supporting_excerpt": "sladana kulic  started 30101"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Lane Merchant",
+      "object": "UH 2000 Recruiting",
+      "confidence": 0.8,
+      "supporting_excerpt": "lane merchant  started 10201  left 062101"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Biliana Pehlivanova",
+      "object": "UH 2000 Recruiting",
+      "confidence": 0.8,
+      "supporting_excerpt": "biliana pehlivanova  started 21201"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Corina Taylor",
+      "object": "Recruiting Coordinator",
+      "confidence": 0.9,
+      "supporting_excerpt": "corina taylor recruiting coordinator"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Corina Taylor",
+      "object": "8-12 people from Enron needed for presentation",
+      "confidence": 1.0,
+      "supporting_excerpt": "at our last meeting we decided that we would need 812 people from enron there to answer questions"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Corina Taylor",
+      "object": "Rod Hayslett",
+      "confidence": 0.9,
+      "supporting_excerpt": "please revise your team member list and let me know who will be attending the presentation"
+    }
+  ],
+  "_source_id": "122668",
+  "_email_meta": {
+    "sender": "tracy.geaccone@enron.com",
+    "recipient": "rod.hayslett@enron.com",
+    "date": "2001-10-10"
+  }
+}

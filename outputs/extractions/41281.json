@@ -1,0 +1,214 @@
+{
+  "entities": [
+    {
+      "name": "Marc Phillips",
+      "type": "person",
+      "aliases": [
+        "marc.phillips@enron.com"
+      ]
+    },
+    {
+      "name": "Ruth Jensen",
+      "type": "person",
+      "aliases": [
+        "ruth.jensen@enron.com"
+      ]
+    },
+    {
+      "name": "Larry Campbell",
+      "type": "person",
+      "aliases": [
+        "larry.campbell@enron.com"
+      ]
+    },
+    {
+      "name": "Gus Eghneim",
+      "type": "person",
+      "aliases": [
+        "gus.eghneim@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "TNRCC",
+      "type": "organization",
+      "aliases": [
+        "Texas Natural Resource Conservation Commission"
+      ]
+    },
+    {
+      "name": "Reliant",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "TXOGA",
+      "type": "organization",
+      "aliases": [
+        "Texas Oil & Gas Association"
+      ]
+    },
+    {
+      "name": "TNRCC Sunset Legislation",
+      "type": "topic",
+      "aliases": [
+        "sunset legislation",
+        "grandfather provisions"
+      ]
+    },
+    {
+      "name": "Pipeline Engine Compliance",
+      "type": "topic",
+      "aliases": [
+        "pipeline reciprocating engines",
+        "emission sources"
+      ]
+    },
+    {
+      "name": "East Texas",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "West Texas",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Texas",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Marc Phillips",
+      "object": "Ruth Jensen",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: marc.phillips@enron.com\nTo: ruth.jensen@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Marc Phillips",
+      "object": "Larry Campbell",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: marc.phillips@enron.com\nTo: larry.campbell@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Marc Phillips",
+      "object": "Gus Eghneim",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: marc.phillips@enron.com\nTo: gus.eghneim@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Marc Phillips",
+      "object": "TNRCC Sunset Legislation",
+      "confidence": 0.4,
+      "supporting_excerpt": "i am providing a quick summary of this bill since you may be discussing it next week in houston"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Marc Phillips",
+      "object": "TXOGA",
+      "confidence": 0.6,
+      "supporting_excerpt": "i will be attending a txoga pipeline committee meeting on june 5"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "TNRCC Sunset Legislation",
+      "object": "sent to the governor",
+      "confidence": 0.6,
+      "supporting_excerpt": "the tnrcc sunset legislation including the grandfather provisions has been sent to the governor and will likely be signed"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "TNRCC Sunset Legislation",
+      "object": "East Texas",
+      "confidence": 0.4,
+      "supporting_excerpt": "the bill divides the state into two regions east texas is all counties east of i35 north of san antonio and north of i37 south of san antonio"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "TNRCC Sunset Legislation",
+      "object": "West Texas",
+      "confidence": 0.3,
+      "supporting_excerpt": "west texas is the rest of the state"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "TNRCC Sunset Legislation",
+      "object": "permit application deadline for East Texas",
+      "confidence": 0.7,
+      "supporting_excerpt": "in east texas you must apply for a permit for grandfathered emission sources by september 1 2003"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "TNRCC Sunset Legislation",
+      "object": "permit compliance deadline for East Texas",
+      "confidence": 0.9,
+      "supporting_excerpt": "comply with the permit by march 1 2007"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "TNRCC Sunset Legislation",
+      "object": "permit application deadline for West Texas",
+      "confidence": 0.6,
+      "supporting_excerpt": "in west texas you must apply by september 1 2004"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "TNRCC Sunset Legislation",
+      "object": "permit compliance deadline for West Texas",
+      "confidence": 0.6,
+      "supporting_excerpt": "comply with the permit by march 1 2008"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pipeline Engine Compliance",
+      "object": "East Texas",
+      "confidence": 0.4,
+      "supporting_excerpt": "there are specific provisions for pipeline reciprocating engines in east texas 50 reductions of nox and voc will be required"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pipeline Engine Compliance",
+      "object": "West Texas",
+      "confidence": 0.4,
+      "supporting_excerpt": "in west texas 0 to 20 reductions of nox and voc will be required"
+    },
+    {
+      "claim_type": "authorized",
+      "subject": "Reliant",
+      "object": "162 million fund",
+      "confidence": 0.7,
+      "supporting_excerpt": "a 162 million fund has been established by reliant to partially finance the cost of compliance with the pipeline engine requirements in east texas"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Marc Phillips",
+      "object": "cost impact reduction through grandfathered emission sources",
+      "confidence": 0.4,
+      "supporting_excerpt": "the cost impact of this legislation can be greatly reduced by authorizing as many grandfathered emission sources as possible under old standard exemptions"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "TNRCC",
+      "object": "September 1 2001 deadline for old exemptions authorization",
+      "confidence": 0.4,
+      "supporting_excerpt": "tnrcc indicated verbally that this method of authorizing grandfathered sources would be available until september 1 2001 but tnrcc can change this date move it up or move it back"
+    }
+  ],
+  "_source_id": "41281",
+  "_email_meta": {
+    "sender": "marc.phillips@enron.com",
+    "recipient": "ruth.jensen@enron.com, larry.campbell@enron.com, gus.eghneim@enron.com, ",
+    "date": "2001-05-31"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "Mark Whitt",
+      "type": "person",
+      "aliases": [
+        "mark.whitt@enron.com",
+        "whitt mark"
+      ]
+    },
+    {
+      "name": "Doug Sewell",
+      "type": "person",
+      "aliases": [
+        "doug.sewell@enron.com",
+        "sewell doug"
+      ]
+    },
+    {
+      "name": "Barry Tycholiz",
+      "type": "person",
+      "aliases": [
+        "tycholiz barry"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Denver Office Expenses",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Mark Whitt",
+      "object": "Doug Sewell",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: mark.whitt@enron.com\nTo: doug.sewell@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mark Whitt",
+      "object": "Barry Tycholiz",
+      "confidence": 0.6,
+      "supporting_excerpt": "cc tycholiz barry"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Mark Whitt",
+      "object": "Denver Office Expenses",
+      "confidence": 0.6,
+      "supporting_excerpt": "subject denver office expenses"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Mark Whitt",
+      "object": "disregard the first email",
+      "confidence": 0.8,
+      "supporting_excerpt": "please disregard the first email i made one slight change"
+    }
+  ],
+  "_source_id": "507606",
+  "_email_meta": {
+    "sender": "mark.whitt@enron.com",
+    "recipient": "doug.sewell@enron.com",
+    "date": "2001-12-10"
+  }
+}

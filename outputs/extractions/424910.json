@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "Wendy Conwell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Sara Shackleton",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Tana Jones",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Samantha Boyd",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Lafarge Canada Inc",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "ISDA Preparation",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Wendy Conwell",
+      "object": "Sara Shackleton",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: wendy.conwell@enron.com\nTo: sara.shackleton@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Wendy Conwell",
+      "object": "Tana Jones",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: wendy.conwell@enron.com\nTo: tana.jones@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Wendy Conwell",
+      "object": "Samantha Boyd",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: wendy.conwell@enron.com\nTo: samantha.boyd@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Wendy Conwell",
+      "object": "ISDA Preparation",
+      "confidence": 0.4,
+      "supporting_excerpt": "please find attached the credit worksheet for the preparation of an isda with lafarge canada inc"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Wendy Conwell",
+      "object": "Lafarge Canada Inc",
+      "confidence": 0.3,
+      "supporting_excerpt": "the preparation of an isda with lafarge canada inc"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Wendy Conwell",
+      "object": "exchanging guarantees with Lafarge Canada Inc",
+      "confidence": 0.6,
+      "supporting_excerpt": "we will be exchanging guarantees with the counterparty and therefore will need to prepare a draft guaranty for their review"
+    }
+  ],
+  "_source_id": "424910",
+  "_email_meta": {
+    "sender": "wendy.conwell@enron.com",
+    "recipient": "sara.shackleton@enron.com, tana.jones@enron.com, samantha.boyd@enron.com, ",
+    "date": "2001-02-20"
+  }
+}

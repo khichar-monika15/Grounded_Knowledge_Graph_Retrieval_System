@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "name": "John Arnold",
+      "type": "person",
+      "aliases": [
+        "john.arnold@enron.com",
+        "arnold john"
+      ]
+    },
+    {
+      "name": "Kim Ward",
+      "type": "person",
+      "aliases": [
+        "kim.ward@enron.com",
+        "kim warden"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "John Arnold",
+      "object": "Kim Ward",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: john.arnold@enron.com To: kim.ward@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kim Ward",
+      "object": "Phil",
+      "confidence": 0.3,
+      "supporting_excerpt": "i pawned them off on my unsuspecting coworker phil"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Phil",
+      "object": "liked them",
+      "confidence": 0.6,
+      "supporting_excerpt": "he liked them"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Kim Ward",
+      "object": "those things are terrible",
+      "confidence": 0.6,
+      "supporting_excerpt": "those things are terrible"
+    }
+  ],
+  "_source_id": "3404",
+  "_email_meta": {
+    "sender": "john.arnold@enron.com",
+    "recipient": "kim.ward@enron.com",
+    "date": "2001-05-09"
+  }
+}

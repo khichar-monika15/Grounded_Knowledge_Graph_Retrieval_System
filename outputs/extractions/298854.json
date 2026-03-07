@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "John Griffith",
+      "type": "person",
+      "aliases": [
+        "john.griffith@enron.com"
+      ]
+    },
+    {
+      "name": "John Arnold",
+      "type": "person",
+      "aliases": [
+        "john.arnold@enron.com"
+      ]
+    },
+    {
+      "name": "Mike Maggi",
+      "type": "person",
+      "aliases": [
+        "mike.maggi@enron.com"
+      ]
+    },
+    {
+      "name": "Taylor Craig",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Lee McMurtry",
+      "type": "person",
+      "aliases": [
+        "lmcmurtry@mdck.com"
+      ]
+    },
+    {
+      "name": "Daniel Diamond",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "John Griffith",
+      "object": "John Arnold",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: john.arnold@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "John Griffith",
+      "object": "Mike Maggi",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: john.arnold@enron.com, mike.maggi@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Taylor Craig",
+      "object": "John Griffith",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from  taylor craig   sent thursday june 07 2001 201 pm to griffith john"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Lee McMurtry",
+      "object": "Taylor Craig",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from  mcmurtry lee lmcmurtrymdckcomenron mailtoimceanotes22mcmurtry2c20lee22203clmcmurtry40mdck2ecom3e40enronenroncom  sent thursday june 07 2001  to taylor craig"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Taylor Craig",
+      "object": "Daniel Diamond",
+      "confidence": 0.7,
+      "supporting_excerpt": "subject new game  a must have     original message from  mcmurtry lee lmcmurtrymdckcomenron mailtoimceanotes22mcmurtry2c20lee22203clmcmurtry40mdck2ecom3e40enronenroncom  sent thursday june 07 2001  to taylor craig subject    be the first on your block to have this hot new game"
+    }
+  ],
+  "_source_id": "298854",
+  "_email_meta": {
+    "sender": "john.griffith@enron.com",
+    "recipient": "john.arnold@enron.com, mike.maggi@enron.com",
+    "date": "2001-06-07"
+  }
+}

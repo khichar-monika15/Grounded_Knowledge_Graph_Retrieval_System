@@ -1,0 +1,40 @@
+{
+  "entities": [
+    {
+      "name": "Katie Trullinger",
+      "type": "person",
+      "aliases": [
+        "katie.trullinger@wfsg.com"
+      ]
+    },
+    {
+      "name": "Mark Guzman",
+      "type": "person",
+      "aliases": [
+        "mark.guzman@enron.com"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Katie Trullinger",
+      "object": "Mark Guzman",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: katie.trullinger@wfsg.com\nTo: mark.guzman@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Zack",
+      "object": "apartment",
+      "confidence": 0.7,
+      "supporting_excerpt": "zack has never been to an apartment before and he thought that it looked like a hotel"
+    }
+  ],
+  "_source_id": "148597",
+  "_email_meta": {
+    "sender": "katie.trullinger@wfsg.com",
+    "recipient": "mark.guzman@enron.com",
+    "date": "2001-04-19"
+  }
+}

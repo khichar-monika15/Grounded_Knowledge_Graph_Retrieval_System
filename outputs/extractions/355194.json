@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "Cheryl Johnson",
+      "type": "person",
+      "aliases": [
+        "cheryl"
+      ]
+    },
+    {
+      "name": "Stephanie Panus",
+      "type": "person",
+      "aliases": [
+        "stephanie",
+        "panus"
+      ]
+    },
+    {
+      "name": "Sara Shackleton",
+      "type": "person",
+      "aliases": [
+        "shackleton"
+      ]
+    },
+    {
+      "name": "Tana Jones",
+      "type": "person",
+      "aliases": [
+        "tana"
+      ]
+    },
+    {
+      "name": "Merrill Lynch Futures Inc",
+      "type": "organization",
+      "aliases": [
+        "MLFI"
+      ]
+    },
+    {
+      "name": "Merrill Lynch Pierce Fenner Smith Inc",
+      "type": "organization",
+      "aliases": [
+        "MLPFS"
+      ]
+    },
+    {
+      "name": "COMEX",
+      "type": "organization",
+      "aliases": [
+        "Commodity Exchange Inc"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Merrill Lynch Acquisition",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Cheryl Johnson",
+      "object": "Stephanie Panus",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: cheryl.johnson@enron.com To: stephanie.panus@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Cheryl Johnson",
+      "object": "Merrill Lynch Futures Inc",
+      "confidence": 0.7,
+      "supporting_excerpt": "i dont show that were doing any business w merrill lynch futures inc"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Stephanie Panus",
+      "object": "Cheryl Johnson",
+      "confidence": 0.6,
+      "supporting_excerpt": "cheryl can global verify the below acquisition of merrill lynch futures inc by merrill lynch pierce fenner smith inc"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Stephanie Panus",
+      "object": "Cheryl Johnson",
+      "confidence": 0.6,
+      "supporting_excerpt": "original message from panus stephanie sent wednesday november 14 2001 818 am to johnson cheryl"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sara Shackleton",
+      "object": "Stephanie Panus",
+      "confidence": 0.6,
+      "supporting_excerpt": "original message from shackleton sara sent wednesday november 14 2001 to panus stephanie"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sara Shackleton",
+      "object": "Tana Jones",
+      "confidence": 0.6,
+      "supporting_excerpt": "cc jones tana"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Stephanie Panus",
+      "object": "Merrill Lynch Acquisition",
+      "confidence": 0.6,
+      "supporting_excerpt": "stephanie is updating lotus notes and verifying the transition"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Merrill Lynch Pierce Fenner Smith Inc",
+      "object": "Merrill Lynch Futures Inc",
+      "confidence": 0.6,
+      "supporting_excerpt": "merrill lynch pierce fenner smith inc has acquired merrill lynch futures inc"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Merrill Lynch Futures Inc",
+      "object": "COMEX",
+      "confidence": 0.9,
+      "supporting_excerpt": "merrill lynch futures inc has been terminated as a clearing member firm of comex"
+    }
+  ],
+  "_source_id": "355194",
+  "_email_meta": {
+    "sender": "cheryl.johnson@enron.com",
+    "recipient": "stephanie.panus@enron.com",
+    "date": "2001-11-14"
+  }
+}

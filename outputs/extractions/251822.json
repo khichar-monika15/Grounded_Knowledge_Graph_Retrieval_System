@@ -1,0 +1,106 @@
+{
+  "entities": [
+    {
+      "name": "Steven Kean",
+      "type": "person",
+      "aliases": [
+        "steven j kean",
+        "steven.kean@enron.com"
+      ]
+    },
+    {
+      "name": "Alhamd Alkhayat",
+      "type": "person",
+      "aliases": [
+        "alhamd.alkhayat@enron.com"
+      ]
+    },
+    {
+      "name": "Phillip K Allen",
+      "type": "person",
+      "aliases": [
+        "phillip k allen"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "LDC Storage Operations",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "aliases": [
+        "socal",
+        "socals"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Phillip K Allen",
+      "object": "Steven Kean",
+      "confidence": 0.9,
+      "supporting_excerpt": "forwarded by steven j keannaenron on 01022001     phillip k allenect  12222000         to steven j keannaenronenron"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Steven Kean",
+      "object": "Alhamd Alkhayat",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: steven.kean@enron.com\nTo: alhamd.alkhayat@enron.com"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Phillip K Allen",
+      "object": "examine ldcs incentive rate program",
+      "confidence": 0.9,
+      "supporting_excerpt": "as far as recommendations here is a short list   1  examine ldcs incentive rate program"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Phillip K Allen",
+      "object": "LDC Storage Operations",
+      "confidence": 0.7,
+      "supporting_excerpt": "current methodology rewards sales  above monthly index without enough consideration of future        replacement cost  the result is that the ldcs sell gas that should be  injected into storage when daily prices run above the monthly index"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Phillip K Allen",
+      "object": "investigate why California storage and pipeline capacity wasnt maximized operationally",
+      "confidence": 0.9,
+      "supporting_excerpt": "california has the storage capacity and pipeline capacity to meet  demand  investigate why it wasnt maximized operationally"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Phillip K Allen",
+      "object": "socal gas does an extremely poor job of forecasting their own demand",
+      "confidence": 0.7,
+      "supporting_excerpt": "i believe socal gas does an extremely poor job of forecasting their  own demand"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Phillip K Allen",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "similar to the power market  there is too much benchmarking to short  term prices  not enough forward hedging is done by the major                      ldcs"
+    }
+  ],
+  "_source_id": "251822",
+  "_email_meta": {
+    "sender": "steven.kean@enron.com",
+    "recipient": "alhamd.alkhayat@enron.com",
+    "date": "2001-01-02"
+  }
+}

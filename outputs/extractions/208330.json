@@ -1,0 +1,105 @@
+{
+  "entities": [
+    {
+      "name": "Cassandra Schultz",
+      "type": "person",
+      "aliases": [
+        "cassandra.schultz@enron.com"
+      ]
+    },
+    {
+      "name": "Jitendra Patel",
+      "type": "person",
+      "aliases": [
+        "jitendra.patel@enron.com"
+      ]
+    },
+    {
+      "name": "Ted News",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Rick Buy",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jeff Skilling",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Credit Trading Limit Application",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Trading Limit Policy Documentation",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Cassandra Schultz",
+      "object": "Jitendra Patel",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: cassandra.schultz@enron.com\nTo: jitendra.patel@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Cassandra Schultz",
+      "object": "Jitendra Patel",
+      "confidence": 0.6,
+      "supporting_excerpt": "would you please print the attached document and obtain bryan ted newsjordan and then sherriffs signatures and fax it back to me"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Credit Trading Limit Application",
+      "object": "December BOD Meeting",
+      "confidence": 0.7,
+      "supporting_excerpt": "the limit application for credit trading that was approved in the december bod meeting"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Cassandra Schultz",
+      "object": "Vince",
+      "confidence": 0.6,
+      "supporting_excerpt": "ill get vince to sign for research"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Cassandra Schultz",
+      "object": "Rick Buy",
+      "confidence": 0.4,
+      "supporting_excerpt": "and then send to rick buy and jeff skilling to sign"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Cassandra Schultz",
+      "object": "Jeff Skilling",
+      "confidence": 0.4,
+      "supporting_excerpt": "and then send to rick buy and jeff skilling to sign"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bryan",
+      "object": "Oliver",
+      "confidence": 0.7,
+      "supporting_excerpt": "this document is exactly what bryan sent to oliver in january"
+    }
+  ],
+  "_source_id": "208330",
+  "_email_meta": {
+    "sender": "cassandra.schultz@enron.com",
+    "recipient": "jitendra.patel@enron.com",
+    "date": "2001-05-04"
+  }
+}

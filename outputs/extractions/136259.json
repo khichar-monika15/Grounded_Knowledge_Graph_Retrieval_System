@@ -1,0 +1,74 @@
+{
+  "entities": [
+    {
+      "name": "Darron Giron",
+      "type": "person",
+      "aliases": [
+        "dg"
+      ]
+    },
+    {
+      "name": "D Moore",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "NYLF",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Chicago trip",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Darron Giron",
+      "object": "D Moore",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: darron.giron@enron.com\nTo: dmoore@nylf.org"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Darron Giron",
+      "object": "recent trip to New Orleans",
+      "confidence": 0.4,
+      "supporting_excerpt": "we had a good time in no we definitely want to go back it was really crowded but fun the weather was good and the food was great"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Darron Giron",
+      "object": "D Moore",
+      "confidence": 0.6,
+      "supporting_excerpt": "i wanted to ask if you can help with cc on the 16th and 17th of may when we are in chicago"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Darron Giron",
+      "object": "Chicago trip",
+      "confidence": 0.4,
+      "supporting_excerpt": "help with cc on the 16th and 17th of may when we are in chicago"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Darron Giron",
+      "object": "Conroe location",
+      "confidence": 0.4,
+      "supporting_excerpt": "they can stay in conroe on fri and sat we leave wed night and return sun morning"
+    }
+  ],
+  "_source_id": "136259",
+  "_email_meta": {
+    "sender": "darron.giron@enron.com",
+    "recipient": "dmoore@nylf.org",
+    "date": "2001-05-02"
+  }
+}

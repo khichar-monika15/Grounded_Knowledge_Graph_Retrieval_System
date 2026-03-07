@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "Mike Grigsby",
+      "type": "person",
+      "aliases": [
+        "mike.grigsby@enron.com",
+        "mike"
+      ]
+    },
+    {
+      "name": "Don Black",
+      "type": "person",
+      "aliases": [
+        "don.black@enron.com",
+        "don"
+      ]
+    },
+    {
+      "name": "David Horacefield",
+      "type": "person",
+      "aliases": [
+        "david s horacefield"
+      ]
+    },
+    {
+      "name": "Todd Peikert",
+      "type": "person",
+      "aliases": [
+        "peikert todd"
+      ]
+    },
+    {
+      "name": "Martin Thomas",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Roger Reynolds",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Qiana Nolly",
+      "type": "person",
+      "aliases": [
+        "nolly qiana"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Coastal",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Texas Markets",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Mike Grigsby",
+      "object": "Don Black",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: mike.grigsby@enron.com To: don.black@enron.com"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Mike Grigsby",
+      "object": "David Horacefield",
+      "confidence": 0.7,
+      "supporting_excerpt": "i remember him as being a passive guy  he is very conservative level headed and fairly organized"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Mike Grigsby",
+      "object": "David Horacefield",
+      "confidence": 0.9,
+      "supporting_excerpt": "i would test his ability to handle new businesses and stress"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mike Grigsby",
+      "object": "Coastal",
+      "confidence": 0.7,
+      "supporting_excerpt": "by the way he worked at coastal when i was there"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Don Black",
+      "object": "Martin Thomas",
+      "confidence": 0.9,
+      "supporting_excerpt": "please take a quick look at this guy and see if you know him or about him"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Don Black",
+      "object": "David Horacefield",
+      "confidence": 0.8,
+      "supporting_excerpt": "i need someone for my texas markets"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Todd Peikert",
+      "object": "Don Black",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from  peikert todd   sent thursday october 11 2001 947 am to black don"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Todd Peikert",
+      "object": "David Horacefield",
+      "confidence": 0.9,
+      "supporting_excerpt": "i forwarding the resume of david horacefield  i was wondering if you were interested in talking to this candidate as a potential replacement for roger reynolds"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "David Horacefield",
+      "object": "Texas Markets",
+      "confidence": 0.6,
+      "supporting_excerpt": "he has good texas natural gas knowledge"
+    }
+  ],
+  "_source_id": "144942",
+  "_email_meta": {
+    "sender": "mike.grigsby@enron.com",
+    "recipient": "don.black@enron.com",
+    "date": "2001-10-11"
+  }
+}

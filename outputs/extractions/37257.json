@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "Alejandra Chavez",
+      "type": "person",
+      "aliases": [
+        "alejandra.chavez@enron.com"
+      ]
+    },
+    {
+      "name": "Chuck Ames",
+      "type": "person",
+      "aliases": [
+        "chuck.ames@enron.com"
+      ]
+    },
+    {
+      "name": "F. Brawner",
+      "type": "person",
+      "aliases": [
+        "f..brawner@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "East PL Totals",
+      "type": "project",
+      "aliases": [
+        "east pl totals"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Alejandra Chavez",
+      "object": "Chuck Ames",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: alejandra.chavez@enron.com\nTo: chuck.ames@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Alejandra Chavez",
+      "object": "F. Brawner",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: alejandra.chavez@enron.com\nTo: f..brawner@enron.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "East PL Totals",
+      "object": "now available for viewing on the website",
+      "confidence": 0.6,
+      "supporting_excerpt": "the report named east pl totals ... published as of 10292001 is now available for viewing on the website"
+    }
+  ],
+  "_source_id": "37257",
+  "_email_meta": {
+    "sender": "alejandra.chavez@enron.com",
+    "recipient": "chuck.ames@enron.com, f..brawner@enron.com, alejandra.chavez@enron.com, ",
+    "date": "2001-10-29"
+  }
+}

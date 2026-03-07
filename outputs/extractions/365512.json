@@ -1,0 +1,41 @@
+{
+  "entities": [
+    {
+      "name": "Stuart Zisman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Kevin Presto",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "David Kane",
+      "type": "person",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Stuart Zisman",
+      "object": "Kevin Presto",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: stuart.zisman@enron.com\nTo: kevin.presto@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Stuart Zisman",
+      "object": "David Kane",
+      "confidence": 0.6,
+      "supporting_excerpt": "david kane resumedoc"
+    }
+  ],
+  "_source_id": "365512",
+  "_email_meta": {
+    "sender": "stuart.zisman@enron.com",
+    "recipient": "kevin.presto@enron.com",
+    "date": "2001-04-09"
+  }
+}

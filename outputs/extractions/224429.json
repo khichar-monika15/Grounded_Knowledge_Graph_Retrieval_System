@@ -1,0 +1,184 @@
+{
+  "entities": [
+    {
+      "name": "Vince Kaminski",
+      "type": "person",
+      "aliases": [
+        "vince.kaminski@enron.com",
+        "vincejkaminskienroncom"
+      ]
+    },
+    {
+      "name": "Mulong Wang",
+      "type": "person",
+      "aliases": [
+        "mlwang@uts.cc.utexas.edu",
+        "mlwangutsccutexasedu",
+        "mulong"
+      ]
+    },
+    {
+      "name": "Richard Macminn",
+      "type": "person",
+      "aliases": [
+        "macminn@uts.cc.utexas.edu",
+        "macminnrutsccutexasedu"
+      ]
+    },
+    {
+      "name": "Patrick Brockett",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "University of Texas at Austin",
+      "type": "organization",
+      "aliases": [
+        "uts.cc.utexas.edu"
+      ]
+    },
+    {
+      "name": "Megawatt Daily",
+      "type": "organization",
+      "aliases": [
+        "megawatts daily"
+      ]
+    },
+    {
+      "name": "Financial Times",
+      "type": "organization",
+      "aliases": [
+        "FT"
+      ]
+    },
+    {
+      "name": "Cinergy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Cobb",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Palo Verde",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Weather and Energy Price Data",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Weather Derivatives Research",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Vince Kaminski",
+      "object": "Mulong Wang",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: vince.kaminski@enron.com To: mlwang@uts.cc.utexas.edu"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Mulong Wang",
+      "object": "Vince Kaminski",
+      "confidence": 0.8,
+      "supporting_excerpt": "to vincejkaminskienroncom"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mulong Wang",
+      "object": "Richard Macminn",
+      "confidence": 0.4,
+      "supporting_excerpt": "i am a phd candidate under the supervision of drs richard macminn and patrick brockett"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mulong Wang",
+      "object": "Patrick Brockett",
+      "confidence": 0.4,
+      "supporting_excerpt": "i am a phd candidate under the supervision of drs richard macminn and patrick brockett"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Mulong Wang",
+      "object": "Weather Derivatives Research",
+      "confidence": 0.6,
+      "supporting_excerpt": "i am now working on my dissertation which is focused on the weather derivatives and credit derivatives"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Mulong Wang",
+      "object": "weather data information",
+      "confidence": 0.6,
+      "supporting_excerpt": "could you kindly please offer me some real weather data information about the price peak or plummet because of the weather conditions"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Mulong Wang",
+      "object": "energy price data",
+      "confidence": 0.6,
+      "supporting_excerpt": "could you please offer me some energy price data during that time period"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Vince Kaminski",
+      "object": "natural gas henry hub prices",
+      "confidence": 0.9,
+      "supporting_excerpt": "we shall send you natural gas henry hub prices right away"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Vince Kaminski",
+      "object": "electricity price information",
+      "confidence": 0.6,
+      "supporting_excerpt": "we shall prepare for you the electricity price information cinergy cobb and palo verde"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Vince Kaminski",
+      "object": "Megawatt Daily",
+      "confidence": 0.4,
+      "supporting_excerpt": "please look at ft the publishers of megawatts daily a newsletter that produces the price index we recommend using"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Vince Kaminski",
+      "object": "permission to use data from Megawatt Daily",
+      "confidence": 0.6,
+      "supporting_excerpt": "you have to approach ft the publishers of megawatts daily a newsletter that produces the price index we recommend using and request the permision to use the data"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Vince Kaminski",
+      "object": "academic research justification",
+      "confidence": 0.4,
+      "supporting_excerpt": "please explain that this is for academic research and that we can produce the time series for you conditional on the permission from the publishers of megawatts daily"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Mulong Wang",
+      "object": "contact information for FT or Megawatt Daily",
+      "confidence": 0.9,
+      "supporting_excerpt": "could you kindly please let me know the contact information for ft or megawatt daily i will contact them asap to get their permission for the access of the price data"
+    }
+  ],
+  "_source_id": "224429",
+  "_email_meta": {
+    "sender": "vince.kaminski@enron.com",
+    "recipient": "mlwang@uts.cc.utexas.edu",
+    "date": "2001-04-16"
+  }
+}

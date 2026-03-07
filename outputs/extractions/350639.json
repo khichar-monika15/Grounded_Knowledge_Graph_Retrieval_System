@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron.announcements@enron.com"
+      ]
+    },
+    {
+      "name": "Enron Americas",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Joe Deffner",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Alan Quaintance",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Capital Book",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Capital Management Initiative",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Enron",
+      "object": "Enron Americas employees",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: enron.announcements@enron.com\nTo: ena.employees@enron.com"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Enron",
+      "object": "Capital Book",
+      "confidence": 0.6,
+      "supporting_excerpt": "we have decided to create a capital book"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Joe Deffner",
+      "object": "Capital Book manager",
+      "confidence": 0.9,
+      "supporting_excerpt": "will be managed by joe deffner"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Capital Book",
+      "object": "no profit target",
+      "confidence": 0.4,
+      "supporting_excerpt": "the capital book will have no profit target associated with it"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Capital Book",
+      "object": "ensure correct structuring of transactions with capital requirements",
+      "confidence": 0.4,
+      "supporting_excerpt": "the purpose of creating this book is to ensure that all transactions within enron americas with any form of capital requirement are structured correctly"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron Americas",
+      "object": "15% capital charge rate for assets held",
+      "confidence": 0.3,
+      "supporting_excerpt": "the capital charge will remain at 15"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Joe Deffner",
+      "object": "sets cost of capital for all Enron Americas transactions",
+      "confidence": 0.4,
+      "supporting_excerpt": "the cost of capital associated with all transactions in enron americas will be set by joe"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Capital Book",
+      "object": "no budget allocation",
+      "confidence": 0.4,
+      "supporting_excerpt": "the capital book will have no budget and will essentially charge out to the origination and trading groups at actual cost"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Joe Deffner",
+      "object": "contact for Capital Book questions",
+      "confidence": 0.7,
+      "supporting_excerpt": "questions regarding the capital book can be addressed to joe deffner"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Alan Quaintance",
+      "object": "contact for Capital Book questions",
+      "confidence": 0.4,
+      "supporting_excerpt": "questions regarding the capital book can be addressed to joe deffner 8537117 alan quaintance 3457731"
+    }
+  ],
+  "_source_id": "350639",
+  "_email_meta": {
+    "sender": "enron.announcements@enron.com",
+    "recipient": "ena.employees@enron.com",
+    "date": "2001-04-16"
+  }
+}

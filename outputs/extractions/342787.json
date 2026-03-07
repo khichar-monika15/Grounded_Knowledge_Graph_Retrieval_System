@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "Scott Neal",
+      "type": "person",
+      "aliases": [
+        "scott.neal@enron.com",
+        "scott nealhouect"
+      ]
+    },
+    {
+      "name": "John Taylor",
+      "type": "person",
+      "aliases": [
+        "john.taylor@enron.com"
+      ]
+    },
+    {
+      "name": "Jess Hewitt",
+      "type": "person",
+      "aliases": [
+        "jess hewittees"
+      ]
+    },
+    {
+      "name": "Don Black",
+      "type": "person",
+      "aliases": [
+        "don blackhoueesees"
+      ]
+    },
+    {
+      "name": "James W Lewis",
+      "type": "person",
+      "aliases": [
+        "james w lewishoueesees"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron.com"
+      ]
+    },
+    {
+      "name": "ENA",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Index Points Analysis",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Scott Neal",
+      "object": "John Taylor",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: scott.neal@enron.com To: john.taylor@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jess Hewitt",
+      "object": "Scott Neal",
+      "confidence": 0.9,
+      "supporting_excerpt": "forwarded by scott nealhouect on 02122001    from jess hewittees on 02082001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Scott Neal",
+      "object": "Don Black",
+      "confidence": 0.6,
+      "supporting_excerpt": "cc don blackhoueesees"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Scott Neal",
+      "object": "James W Lewis",
+      "confidence": 0.3,
+      "supporting_excerpt": "cc james w lewishoueesees"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jess Hewitt",
+      "object": "Index Points Analysis",
+      "confidence": 0.7,
+      "supporting_excerpt": "here is a list of index points that we can start looking at to determine  where ena can serve"
+    }
+  ],
+  "_source_id": "342787",
+  "_email_meta": {
+    "sender": "scott.neal@enron.com",
+    "recipient": "john.taylor@enron.com",
+    "date": "2001-02-12"
+  }
+}

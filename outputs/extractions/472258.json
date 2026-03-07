@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "Kate Symes",
+      "type": "person",
+      "aliases": [
+        "kate.symes@enron.com",
+        "kate"
+      ]
+    },
+    {
+      "name": "Sharen Cason",
+      "type": "person",
+      "aliases": [
+        "sharen.cason@enron.com",
+        "sharen cason"
+      ]
+    },
+    {
+      "name": "Sean Crandall",
+      "type": "person",
+      "aliases": [
+        "sean crandall"
+      ]
+    },
+    {
+      "name": "Kimberly Hundl",
+      "type": "person",
+      "aliases": [
+        "kimberly hundl"
+      ]
+    },
+    {
+      "name": "Amy Smith",
+      "type": "person",
+      "aliases": [
+        "amy smith"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Deal Confirmation System",
+      "type": "topic",
+      "aliases": [
+        "not to be confirmed deals",
+        "confirm status"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kate Symes",
+      "object": "Sharen Cason",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kate.symes@enron.com\nTo: sharen.cason@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Kate Symes",
+      "object": "Sean Crandall",
+      "confidence": 0.4,
+      "supporting_excerpt": "i just asked sean crandall and he said you can go ahead and confirm all of these deals"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Sean Crandall",
+      "object": "Deal confirmation",
+      "confidence": 1.0,
+      "supporting_excerpt": "he said you can go ahead and confirm all of these deals"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Kate Symes",
+      "object": "confirm status",
+      "confidence": 0.5,
+      "supporting_excerpt": "ive changed the confirm status"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kate Symes",
+      "object": "Diana",
+      "confidence": 0.6,
+      "supporting_excerpt": "i think this is an issue with dianas deal entry"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Sharen Cason",
+      "object": "Kate Symes",
+      "confidence": 0.6,
+      "supporting_excerpt": "can you check and see why these came up not to be confirmed"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sharen Cason",
+      "object": "Deal Confirmation System",
+      "confidence": 0.4,
+      "supporting_excerpt": "we came across some deals on the not to be confirmed report that look like they should be confirmed"
+    }
+  ],
+  "_source_id": "472258",
+  "_email_meta": {
+    "sender": "kate.symes@enron.com",
+    "recipient": "sharen.cason@enron.com",
+    "date": "2001-03-15"
+  }
+}

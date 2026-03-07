@@ -1,0 +1,107 @@
+{
+  "entities": [
+    {
+      "name": "Chris Germany",
+      "type": "person",
+      "aliases": [
+        "chris.germany@enron.com",
+        "chrisgermany"
+      ]
+    },
+    {
+      "name": "Leah Moss",
+      "type": "person",
+      "aliases": [
+        "lamoss@duke-energy.com",
+        "lamossdukeenergycom"
+      ]
+    },
+    {
+      "name": "Kimberly Brown",
+      "type": "person",
+      "aliases": [
+        "kimberlybrownenroncom"
+      ]
+    },
+    {
+      "name": "Janice Devers",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Berk Donaldson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Duke Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Texas Eastern",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Gas Party",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Chris Germany",
+      "object": "Leah Moss",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: chris.germany@enron.com To: lamoss@duke-energy.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Judy",
+      "object": "Gas Party",
+      "confidence": 0.6,
+      "supporting_excerpt": "you know judy will never go"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Chris Germany",
+      "object": "Gas Party",
+      "confidence": 0.3,
+      "supporting_excerpt": "i think its a sambuca party on march 21st"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Chris Germany",
+      "object": "Kimberly Brown",
+      "confidence": 0.9,
+      "supporting_excerpt": "kim please invite the following texas eastern folks to the party"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Janice Devers",
+      "object": "Gas Party",
+      "confidence": 0.4,
+      "supporting_excerpt": "kim please invite the following texas eastern folks to the party leah moss janice devers berk donaldson"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Berk Donaldson",
+      "object": "Gas Party",
+      "confidence": 0.4,
+      "supporting_excerpt": "kim please invite the following texas eastern folks to the party leah moss janice devers berk donaldson"
+    }
+  ],
+  "_source_id": "126660",
+  "_email_meta": {
+    "sender": "chris.germany@enron.com",
+    "recipient": "lamoss@duke-energy.com",
+    "date": "2001-03-14"
+  }
+}

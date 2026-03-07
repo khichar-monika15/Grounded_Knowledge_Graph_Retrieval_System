@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "Stephanie Piwetz",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Kate Symes",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Kate Fischer Deal",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "APB",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "4 Corners 345kV",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Stephanie Piwetz",
+      "object": "Kate Symes",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: stephanie.piwetz@enron.com\nTo: kate.symes@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Stephanie Piwetz",
+      "object": "Kate Fischer Deal",
+      "confidence": 0.6,
+      "supporting_excerpt": "kate fischer deal"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "APB",
+      "object": "4 Corners 345kV",
+      "confidence": 0.8,
+      "supporting_excerpt": "apb says dp should be 4 corners 345kv"
+    }
+  ],
+  "_source_id": "467350",
+  "_email_meta": {
+    "sender": "stephanie.piwetz@enron.com",
+    "recipient": "kate.symes@enron.com",
+    "date": "2001-04-13"
+  }
+}

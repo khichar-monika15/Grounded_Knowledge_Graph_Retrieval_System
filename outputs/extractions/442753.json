@@ -1,0 +1,85 @@
+{
+  "entities": [
+    {
+      "name": "Kay Cole",
+      "type": "person",
+      "aliases": [
+        "kaycole"
+      ]
+    },
+    {
+      "name": "Jeff Skilling",
+      "type": "person",
+      "aliases": [
+        "jeff.skilling"
+      ]
+    },
+    {
+      "name": "Jane Robinson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Brenda Bouchard",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Harvard Club",
+      "type": "organization",
+      "aliases": [
+        "the harvard club"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kay Cole",
+      "object": "Jeff Skilling",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kaycole@bu.edu\nTo: jeff.skilling@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jane Robinson",
+      "object": "returned last night",
+      "confidence": 0.3,
+      "supporting_excerpt": "jane robinson returned last night"
+    },
+    {
+      "claim_type": "informed",
+      "subject": "Kay Cole",
+      "object": "Jane Robinson",
+      "confidence": 0.8,
+      "supporting_excerpt": "i gave her a headsup on kristen"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Kay Cole",
+      "object": "Kristen",
+      "confidence": 0.6,
+      "supporting_excerpt": "i gave her a headsup on kristen"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Harvard Club",
+      "object": "entrance fee for nonresidents is waived until the end of april",
+      "confidence": 0.7,
+      "supporting_excerpt": "the entrance fee for nonresidents is waived until the end of april"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Brenda Bouchard",
+      "object": "contact point for Harvard Club membership",
+      "confidence": 0.6,
+      "supporting_excerpt": "you may contact brenda bouchard"
+    }
+  ],
+  "_source_id": "442753",
+  "_email_meta": {
+    "sender": "kaycole@bu.edu",
+    "recipient": "jeff.skilling@enron.com",
+    "date": "2001-03-19"
+  }
+}

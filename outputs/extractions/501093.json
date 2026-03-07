@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "Chris Abel",
+      "type": "person",
+      "aliases": [
+        "chris.abel@enron.com"
+      ]
+    },
+    {
+      "name": "Ted II",
+      "type": "person",
+      "aliases": [
+        "ted.ii@enron.com"
+      ]
+    },
+    {
+      "name": "David Port",
+      "type": "person",
+      "aliases": [
+        "david.port@enron.com"
+      ]
+    },
+    {
+      "name": "Cassandra Schultz",
+      "type": "person",
+      "aliases": [
+        "cassandra.schultz@enron.com"
+      ]
+    },
+    {
+      "name": "EOL Crude 247 Trading",
+      "type": "project",
+      "aliases": [
+        "eol crude"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Chris Abel",
+      "object": "Ted II",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: ted.ii@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Chris Abel",
+      "object": "David Port",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: david.port@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Chris Abel",
+      "object": "Cassandra Schultz",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: cassandra.schultz@enron.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "EOL Crude 247 Trading",
+      "object": "5 day cumulative loss of 47 million on June 20, 2001",
+      "confidence": 0.6,
+      "supporting_excerpt": "a 5 day cumulative loss ocurred for eol crude 247 trading on june 20 2001 in the amount of 47 million"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "EOL Crude 247 Trading",
+      "object": "loss limit of 375 million",
+      "confidence": 0.3,
+      "supporting_excerpt": "the limit established for eol crude is 375 million"
+    }
+  ],
+  "_source_id": "501093",
+  "_email_meta": {
+    "sender": "chris.abel@enron.com",
+    "recipient": "ted.ii@enron.com, david.port@enron.com, cassandra.schultz@enron.com, ",
+    "date": "2001-06-21"
+  }
+}

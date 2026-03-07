@@ -1,0 +1,227 @@
+{
+  "entities": [
+    {
+      "name": "Jeff Dasovich",
+      "type": "person",
+      "aliases": [
+        "jeff.dasovich@enron.com",
+        "jeff dasovich"
+      ]
+    },
+    {
+      "name": "Joe Hartsoe",
+      "type": "person",
+      "aliases": [
+        "joe.hartsoe@enron.com"
+      ]
+    },
+    {
+      "name": "Sarah Novosel",
+      "type": "person",
+      "aliases": [
+        "sarah.novosel@enron.com"
+      ]
+    },
+    {
+      "name": "Mary Hain",
+      "type": "person",
+      "aliases": [
+        "mary.hain@enron.com"
+      ]
+    },
+    {
+      "name": "Andy Brown",
+      "type": "person",
+      "aliases": [
+        "andybrwn",
+        "andy brown",
+        "abbeslawfirmcom"
+      ]
+    },
+    {
+      "name": "Katie Kaplan",
+      "type": "person",
+      "aliases": [
+        "kaplan"
+      ]
+    },
+    {
+      "name": "Alex Sugaoka",
+      "type": "person",
+      "aliases": [
+        "alexsugaoka"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "FERC Staff Report",
+      "type": "project",
+      "aliases": [
+        "ferc staff report"
+      ]
+    },
+    {
+      "name": "IEP FERC Comments",
+      "type": "topic",
+      "aliases": [
+        "iep ferc cmts",
+        "draft iep comments"
+      ]
+    },
+    {
+      "name": "Market Monitoring and Power Mitigation",
+      "type": "topic",
+      "aliases": [
+        "market monitoring",
+        "market power mitigation"
+      ]
+    },
+    {
+      "name": "Andrew Brown",
+      "type": "person",
+      "aliases": [
+        "abb"
+      ]
+    },
+    {
+      "name": "FERC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "FERC Staff Report on Market Monitoring",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": [
+        "regional supply context",
+        "drought"
+      ]
+    },
+    {
+      "name": "Market Power Mitigation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Sacramento",
+      "type": "location",
+      "aliases": [
+        "Sacramento CA"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "Joe Hartsoe",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com To: joe.hartsoe@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "Sarah Novosel",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com To: joe.hartsoe@enron.com, sarah.novosel@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "Mary Hain",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com To: joe.hartsoe@enron.com, sarah.novosel@enron.com, mary.hain@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jeff Dasovich",
+      "object": "IEP FERC Comments",
+      "confidence": 0.7,
+      "supporting_excerpt": "are the draft iep comments due to be filed on the 22nd regarding the ferc staff report on market monitoring and market power mitigation"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Jeff Dasovich",
+      "object": "IEP FERC Comments",
+      "confidence": 0.9,
+      "supporting_excerpt": "this is my suggested approach which is obviously subject to change per our discussion during the call tomorrow"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jeff Dasovich",
+      "object": "Market Monitoring and Power Mitigation",
+      "confidence": 0.7,
+      "supporting_excerpt": "the draft iep comments due to be filed on the 22nd regarding the ferc staff report on market monitoring and market power mitigation"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "IEP FERC Comments",
+      "object": "circuit breaker",
+      "confidence": 0.7,
+      "supporting_excerpt": "i would like to highlight that the draft characterizes the approach as a circuit breaker during periods of highest demand"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "Joe Hartsoe",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com\nTo: joe.hartsoe@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "Sarah Novosel",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com\nTo: joe.hartsoe@enron.com, sarah.novosel@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "Mary Hain",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com\nTo: joe.hartsoe@enron.com, sarah.novosel@enron.com, mary.hain@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jeff Dasovich",
+      "object": "FERC Staff Report on Market Monitoring",
+      "confidence": 0.7,
+      "supporting_excerpt": "ferc staff report on market monitoring and market power mitigation this is my suggested approach which is obviously subject to change per our discussion during the call tomorrow"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Katie Kaplan",
+      "object": "emergency circuit breaker",
+      "confidence": 0.6,
+      "supporting_excerpt": "as mentioned in katie kaplans email this morning"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Jeff Dasovich",
+      "object": "draft comments",
+      "confidence": 0.9,
+      "supporting_excerpt": "if your company has a draft of comments we would appreciate an opportunity to look at them to avoid substantive conflicts"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jeff Dasovich",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "the draft attempts to highlight the current regional supply context characterized by the drought as a rationale for the emergency circuit breaker"
+    }
+  ],
+  "_source_id": "158220",
+  "_email_meta": {
+    "sender": "jeff.dasovich@enron.com",
+    "recipient": "joe.hartsoe@enron.com, sarah.novosel@enron.com, mary.hain@enron.com, ",
+    "date": "2001-03-19"
+  }
+}

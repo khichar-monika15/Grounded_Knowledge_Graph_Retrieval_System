@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "Debra Perlingiere",
+      "type": "person",
+      "aliases": [
+        "debra.perlingiere@enron.com",
+        "dperlinenroncom"
+      ]
+    },
+    {
+      "name": "Russell Diamond",
+      "type": "person",
+      "aliases": [
+        "russell.diamond@enron.com"
+      ]
+    },
+    {
+      "name": "Enron North America Corp",
+      "type": "organization",
+      "aliases": [
+        "Enron"
+      ]
+    },
+    {
+      "name": "Legal Department",
+      "type": "role",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Debra Perlingiere",
+      "object": "Russell Diamond",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: debra.perlingiere@enron.com\nTo: russell.diamond@enron.com"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Debra Perlingiere",
+      "object": "Enron North America Corp",
+      "confidence": 0.8,
+      "supporting_excerpt": "debra perlingiere enron north america corp legal department"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Debra Perlingiere",
+      "object": "Legal Department",
+      "confidence": 0.9,
+      "supporting_excerpt": "debra perlingiere enron north america corp legal department"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Debra Perlingiere",
+      "object": "Russell Diamond",
+      "confidence": 0.9,
+      "supporting_excerpt": "please tell me again which one of these agreements you want to go out asap"
+    }
+  ],
+  "_source_id": "358855",
+  "_email_meta": {
+    "sender": "debra.perlingiere@enron.com",
+    "recipient": "russell.diamond@enron.com",
+    "date": "2001-03-19"
+  }
+}

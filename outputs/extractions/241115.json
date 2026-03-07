@@ -1,0 +1,186 @@
+{
+  "entities": [
+    {
+      "name": "William Bradford",
+      "type": "person",
+      "aliases": [
+        "bill",
+        "william.bradford@enron.com",
+        "william s bradford"
+      ]
+    },
+    {
+      "name": "John Lavorato",
+      "type": "person",
+      "aliases": [
+        "john.lavorato@enron.com"
+      ]
+    },
+    {
+      "name": "David Delainey",
+      "type": "person",
+      "aliases": [
+        "david.delainey@enron.com"
+      ]
+    },
+    {
+      "name": "Marty Sunde",
+      "type": "person",
+      "aliases": [
+        "marty.sunde@enron.com"
+      ]
+    },
+    {
+      "name": "Wendy Conwell",
+      "type": "person",
+      "aliases": [
+        "wendy"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "PG&E Corp",
+      "type": "organization",
+      "aliases": [
+        "pge corp"
+      ]
+    },
+    {
+      "name": "Edison International",
+      "type": "organization",
+      "aliases": [
+        "edison international"
+      ]
+    },
+    {
+      "name": "CAISO",
+      "type": "organization",
+      "aliases": [
+        "caiso"
+      ]
+    },
+    {
+      "name": "Cal PX",
+      "type": "organization",
+      "aliases": [
+        "cal px",
+        "px"
+      ]
+    },
+    {
+      "name": "Portland General",
+      "type": "organization",
+      "aliases": [
+        "portland general"
+      ]
+    },
+    {
+      "name": "Enron Wind",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Exposure",
+      "type": "topic",
+      "aliases": [
+        "california exposure"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "William Bradford",
+      "object": "John Lavorato",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: william.bradford@enron.com To: john.lavorato@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "William Bradford",
+      "object": "David Delainey",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: william.bradford@enron.com To: john.lavorato@enron.com, david.delainey@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "William Bradford",
+      "object": "Marty Sunde",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: william.bradford@enron.com To: john.lavorato@enron.com, david.delainey@enron.com, marty.sunde@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "William Bradford",
+      "object": "California Energy Exposure",
+      "confidence": 0.6,
+      "supporting_excerpt": "attached is the updated exposure report for california"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "William Bradford",
+      "object": "PG&E Corp",
+      "confidence": 0.6,
+      "supporting_excerpt": "1 pge corp and affilate exposure"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "William Bradford",
+      "object": "Edison International",
+      "confidence": 0.3,
+      "supporting_excerpt": "2 edison international and affiliate exopsure"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "William Bradford",
+      "object": "CAISO",
+      "confidence": 0.6,
+      "supporting_excerpt": "3 caiso and cal px exposure"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "William Bradford",
+      "object": "Cal PX",
+      "confidence": 0.6,
+      "supporting_excerpt": "3 caiso and cal px exposure"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "William Bradford",
+      "object": "PG&E Corp nonregulated exposures mitigation",
+      "confidence": 0.6,
+      "supporting_excerpt": "we are continuing to make progress on the mitigation of pge nonregulated exposures"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "William Bradford",
+      "object": "Enron Wind",
+      "confidence": 0.6,
+      "supporting_excerpt": "enron wind numbers are being reviewed"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "William Bradford",
+      "object": "Portland General",
+      "confidence": 0.7,
+      "supporting_excerpt": "portland general iso and px exposures are estimates from last week"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Wendy Conwell",
+      "object": "William Bradford",
+      "confidence": 0.5,
+      "supporting_excerpt": "from wendy conwell enron to william s bradfordhouectect"
+    }
+  ],
+  "_source_id": "241115",
+  "_email_meta": {
+    "sender": "william.bradford@enron.com",
+    "recipient": "john.lavorato@enron.com, david.delainey@enron.com, marty.sunde@enron.com, ",
+    "date": "2001-01-18"
+  }
+}

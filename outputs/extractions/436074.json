@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "Richard Shapiro",
+      "type": "person",
+      "aliases": [
+        "richard.shapiro@enron.com"
+      ]
+    },
+    {
+      "name": "Mona L Petrochko",
+      "type": "person",
+      "aliases": [
+        "mona l petrochko"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron_update@concureworkplace.com"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Enron",
+      "object": "Richard Shapiro",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: enron_update@concureworkplace.com\nTo: richard.shapiro@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Enron",
+      "object": "Richard Shapiro",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following reports have been waiting for your approval for more than 4 days  please review"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mona L Petrochko",
+      "object": "mlp11162001",
+      "confidence": 0.6,
+      "supporting_excerpt": "owner mona l petrochko report name mlp11162001"
+    }
+  ],
+  "_source_id": "436074",
+  "_email_meta": {
+    "sender": "enron_update@concureworkplace.com",
+    "recipient": "richard.shapiro@enron.com",
+    "date": "2001-11-20"
+  }
+}

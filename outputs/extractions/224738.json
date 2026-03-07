@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "Vince Kaminski",
+      "type": "person",
+      "aliases": [
+        "vince",
+        "vince.kaminski@enron.com"
+      ]
+    },
+    {
+      "name": "Vasant Shanbhogue",
+      "type": "person",
+      "aliases": [
+        "vasant",
+        "vasant.shanbhogue@enron.com"
+      ]
+    },
+    {
+      "name": "Lance Cunningham",
+      "type": "person",
+      "aliases": [
+        "lance",
+        "lance.cunningham@enron.com"
+      ]
+    },
+    {
+      "name": "Youseok Son",
+      "type": "person",
+      "aliases": [
+        "youseok",
+        "yssonmailutexas.edu"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Summer Intern Program",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Power Trading Operations",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Vince Kaminski",
+      "object": "Vasant Shanbhogue",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: vince.kaminski@enron.com\nTo: vasant.shanbhogue@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Vince Kaminski",
+      "object": "Summer Intern Program",
+      "confidence": 0.4,
+      "supporting_excerpt": "i concur with vasant we always face a challenge with summer interns we dont want to expose them to too much information we typically look for a selfcontained project and limit interns access to additional information"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Lance Cunningham",
+      "object": "Youseok Son",
+      "confidence": 0.6,
+      "supporting_excerpt": "attached is a resume for a candidate that might serve temporarily through the summer maybe this could be a stop gap measure until we can locate a full time person i would anticipate him working as a summer intern"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Vasant Shanbhogue",
+      "object": "Youseok Son",
+      "confidence": 0.6,
+      "supporting_excerpt": "he looks very good"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Vasant Shanbhogue",
+      "object": "Power Trading Operations",
+      "confidence": 0.4,
+      "supporting_excerpt": "my only concern about using a summer intern would be that i would not want him to learn all about enrons operations in power trading and then go work somewhere else"
+    },
+    {
+      "claim_type": "agreed",
+      "subject": "Vasant Shanbhogue",
+      "object": "Summer Intern Program",
+      "confidence": 0.6,
+      "supporting_excerpt": "if you agree let us check with vince and then interview him"
+    }
+  ],
+  "_source_id": "224738",
+  "_email_meta": {
+    "sender": "vince.kaminski@enron.com",
+    "recipient": "vasant.shanbhogue@enron.com",
+    "date": "2001-05-04"
+  }
+}

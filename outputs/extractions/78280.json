@@ -1,0 +1,52 @@
+{
+  "entities": [
+    {
+      "name": "Jeff Dasovich",
+      "type": "person",
+      "aliases": [
+        "jeff.dasovich@enron.com"
+      ]
+    },
+    {
+      "name": "Nancy Sellers",
+      "type": "person",
+      "aliases": [
+        "nancy.sellers@robertmondavi.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Robert Mondavi",
+      "type": "organization",
+      "aliases": [
+        "RMW"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "Nancy Sellers",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com To: nancy.sellers@robertmondavi.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jeff Dasovich",
+      "object": "94 cab",
+      "confidence": 0.4,
+      "supporting_excerpt": "thanks boy am i glad ive sat on that 94 cab wow"
+    }
+  ],
+  "_source_id": "78280",
+  "_email_meta": {
+    "sender": "jeff.dasovich@enron.com",
+    "recipient": "nancy.sellers@robertmondavi.com",
+    "date": "2001-10-08"
+  }
+}

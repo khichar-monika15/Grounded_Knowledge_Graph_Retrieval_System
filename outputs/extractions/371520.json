@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "Stacey Bolton",
+      "type": "person",
+      "aliases": [
+        "bolton",
+        "sbolton"
+      ]
+    },
+    {
+      "name": "Richard Ring",
+      "type": "person",
+      "aliases": [
+        "ring",
+        "richard"
+      ]
+    },
+    {
+      "name": "Enron Corp",
+      "type": "organization",
+      "aliases": [
+        "enron"
+      ]
+    },
+    {
+      "name": "Environmental Strategies",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Stacey Bolton",
+      "object": "Richard Ring",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: stacey.bolton@enron.com To: richard.ring@enron.com"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Stacey Bolton",
+      "object": "Enron Corp",
+      "confidence": 0.8,
+      "supporting_excerpt": "stacey bolton environmental strategies enron corp"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Stacey Bolton",
+      "object": "Environmental Strategies",
+      "confidence": 0.9,
+      "supporting_excerpt": "stacey bolton environmental strategies enron corp"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Richard Ring",
+      "object": "meeting reschedule to tomorrow",
+      "confidence": 0.9,
+      "supporting_excerpt": "i have gotten tied up on a couple of projects this afternoon  is it possible that we could meet tomorrow rather than today"
+    },
+    {
+      "claim_type": "agreed",
+      "subject": "Stacey Bolton",
+      "object": "meeting at 9:00 AM tomorrow",
+      "confidence": 0.9,
+      "supporting_excerpt": "no problem tomorrow morning would actually work better than the afternoon  can we meet at 900"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Richard Ring",
+      "object": "meeting at 9:00 AM tomorrow",
+      "confidence": 0.9,
+      "supporting_excerpt": "tomorrow morning at 900 would be fine"
+    }
+  ],
+  "_source_id": "371520",
+  "_email_meta": {
+    "sender": "stacey.bolton@enron.com",
+    "recipient": "richard.ring@enron.com",
+    "date": "2001-09-19"
+  }
+}

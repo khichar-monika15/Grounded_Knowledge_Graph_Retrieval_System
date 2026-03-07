@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "Tana Jones",
+      "type": "person",
+      "aliases": [
+        "tana.jones@enron.com"
+      ]
+    },
+    {
+      "name": "Brent Hendry",
+      "type": "person",
+      "aliases": [
+        "brent.hendry@enron.com"
+      ]
+    },
+    {
+      "name": "Linda Sietzema",
+      "type": "person",
+      "aliases": [
+        "linda.sietzema@enron.com"
+      ]
+    },
+    {
+      "name": "Russell Diamond",
+      "type": "person",
+      "aliases": [
+        "russell.diamond@enron.com"
+      ]
+    },
+    {
+      "name": "Maureen Donleyhoopes",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "ISDA Documentation",
+      "type": "project",
+      "aliases": [
+        "ISDA"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Tana Jones",
+      "object": "Brent Hendry",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: tana.jones@enron.com\nTo: brent.hendry@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Tana Jones",
+      "object": "Linda Sietzema",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: tana.jones@enron.com\nTo: linda.sietzema@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Tana Jones",
+      "object": "Russell Diamond",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: tana.jones@enron.com\nTo: russell.diamond@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Samantha",
+      "object": "documents",
+      "confidence": 0.6,
+      "supporting_excerpt": "samantha sent them to counterpartys outside counsel on 31501"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Tana Jones",
+      "object": "Maureen Donleyhoopes",
+      "confidence": 0.6,
+      "supporting_excerpt": "i just spoke to maureen donleyhoopes at outside counsel and asked her to fax me the signature pages of the isda and counterpartys guaranty to me asap"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Russell Diamond",
+      "object": "signature pages receipt",
+      "confidence": 0.3,
+      "supporting_excerpt": "once we get those russell will be a happy man"
+    }
+  ],
+  "_source_id": "197929",
+  "_email_meta": {
+    "sender": "tana.jones@enron.com",
+    "recipient": "brent.hendry@enron.com, linda.sietzema@enron.com, russell.diamond@enron.com, ",
+    "date": "2001-03-27"
+  }
+}

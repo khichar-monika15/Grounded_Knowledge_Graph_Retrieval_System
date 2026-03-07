@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "Purvi Patel",
+      "type": "person",
+      "aliases": [
+        "purvi"
+      ]
+    },
+    {
+      "name": "Peter Keavey",
+      "type": "person",
+      "aliases": [
+        "pete"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Purvi Patel",
+      "object": "Peter Keavey",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: purvi.patel@enron.com\nTo: peter.keavey@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Peter Keavey",
+      "object": "new baby girl",
+      "confidence": 0.6,
+      "supporting_excerpt": "congratulations on your new baby girl"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Purvi Patel",
+      "object": "girls are a lot of trouble",
+      "confidence": 0.3,
+      "supporting_excerpt": "girls are a lot of trouble so prepare"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Peter Keavey",
+      "object": "wife",
+      "confidence": 0.6,
+      "supporting_excerpt": "i hope that your wife is doing well"
+    }
+  ],
+  "_source_id": "253052",
+  "_email_meta": {
+    "sender": "purvi.patel@enron.com",
+    "recipient": "peter.keavey@enron.com",
+    "date": "2001-05-01"
+  }
+}

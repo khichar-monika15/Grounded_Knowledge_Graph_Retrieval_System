@@ -1,0 +1,192 @@
+{
+  "entities": [
+    {
+      "name": "Kay Mann",
+      "type": "person",
+      "aliases": [
+        "kay.mann@enron.com"
+      ]
+    },
+    {
+      "name": "John Schwartzenburg",
+      "type": "person",
+      "aliases": [
+        "john.schwartzenburg@enron.com"
+      ]
+    },
+    {
+      "name": "Mark Frevert",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark Haedicke",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Lance Schuler",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark Evans",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark Taylor",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Alan Aronowitz",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Julia Murray",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bruce Lundstrom",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron.com"
+      ]
+    },
+    {
+      "name": "Enron Wholesale Services",
+      "type": "organization",
+      "aliases": [
+        "EWS"
+      ]
+    },
+    {
+      "name": "Enron Americas",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Europe",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Net Works",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Global Markets",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Industrial Markets",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Global Assets",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EWS Legal Department Reorganization",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kay Mann",
+      "object": "John Schwartzenburg",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kay.mann@enron.com To: john.schwartzenburg@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Mark Frevert",
+      "object": "Enron Wholesale Services",
+      "confidence": 0.8,
+      "supporting_excerpt": "sent by enron announcements to all enron wholesale services employees"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Mark Haedicke",
+      "object": "Enron Wholesale Services",
+      "confidence": 0.8,
+      "supporting_excerpt": "sent by enron announcements to all enron wholesale services employees"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Mark Frevert",
+      "object": "EWS Legal Department Reorganization",
+      "confidence": 0.7,
+      "supporting_excerpt": "as a followup to the recent enron corp memorandum forming enron wholesale services ews effective today we have reorganized the wholesale services legal department"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Mark Haedicke",
+      "object": "EWS Legal Department Reorganization",
+      "confidence": 0.7,
+      "supporting_excerpt": "as a followup to the recent enron corp memorandum forming enron wholesale services ews effective today we have reorganized the wholesale services legal department"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Lance Schuler",
+      "object": "EWS Legal Policy Group",
+      "confidence": 0.7,
+      "supporting_excerpt": "a legal policy group will be formed for ews legal which will include lance schuler enron americas"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Mark Evans",
+      "object": "EWS Legal Policy Group",
+      "confidence": 0.7,
+      "supporting_excerpt": "a legal policy group will be formed for ews legal which will include lance schuler enron americas mark evans enron europe"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Mark Taylor",
+      "object": "EWS Legal Policy Group",
+      "confidence": 0.7,
+      "supporting_excerpt": "a legal policy group will be formed for ews legal which will include lance schuler enron americas mark evans enron europe mark taylor enron net works"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Alan Aronowitz",
+      "object": "EWS Legal Policy Group",
+      "confidence": 0.7,
+      "supporting_excerpt": "a legal policy group will be formed for ews legal which will include lance schuler enron americas mark evans enron europe mark taylor enron net works alan aronowitz enron global markets"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Julia Murray",
+      "object": "EWS Legal Policy Group",
+      "confidence": 0.7,
+      "supporting_excerpt": "a legal policy group will be formed for ews legal which will include lance schuler enron americas mark evans enron europe mark taylor enron net works alan aronowitz enron global markets julia murray enron industrial markets"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Bruce Lundstrom",
+      "object": "EWS Legal Policy Group",
+      "confidence": 0.7,
+      "supporting_excerpt": "a legal policy group will be formed for ews legal which will include lance schuler enron americas mark evans enron europe mark taylor enron net works alan aronowitz enron global markets julia murray enron industrial markets and bruce lundstrom enron global assets"
+    }
+  ],
+  "_source_id": "320435",
+  "_email_meta": {
+    "sender": "kay.mann@enron.com",
+    "recipient": "john.schwartzenburg@enron.com",
+    "date": "2001-03-19"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "eBay",
+      "type": "organization",
+      "aliases": [
+        "ebay"
+      ]
+    },
+    {
+      "name": "Hallmark",
+      "type": "organization",
+      "aliases": [
+        "Hallmark Gold Crown"
+      ]
+    },
+    {
+      "name": "Fox",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Holiday Shopping Campaign",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Auction for America",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "eBay",
+      "object": "mcuilla@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: marketing@welcome.ebay.com\nTo: mcuilla@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "eBay",
+      "object": "Holiday Shopping Campaign",
+      "confidence": 0.7,
+      "supporting_excerpt": "theres no time like the present for presents on ebay  ebay  httpwelcomeebaycomcgibingxcgimcpp044sry044sre4qdfk012000mpowmpodq  check out our holiday catalog"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "eBay",
+      "object": "Auction for America",
+      "confidence": 0.7,
+      "supporting_excerpt": "every item listed makes a difference during the auction for america effort search your heart search your home and find something to donate on ebays for auction for america 100 of the proceeds for your item will benefit the victims and families affected by the september 11th tragedy"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Fox",
+      "object": "Auction for America",
+      "confidence": 0.7,
+      "supporting_excerpt": "give a walkon television role or a oneofakind film prop from fox a gift theyll always treasure proceeds benefit auction for america"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Hallmark",
+      "object": "Holiday Shopping Campaign",
+      "confidence": 0.7,
+      "supporting_excerpt": "receive your first holiday gift a 10 hallmark gold crown store gift certificate its our way to get you in the holiday spirit"
+    }
+  ],
+  "_source_id": "54781",
+  "_email_meta": {
+    "sender": "marketing@welcome.ebay.com",
+    "recipient": "mcuilla@enron.com",
+    "date": "2001-11-16"
+  }
+}

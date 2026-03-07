@@ -1,0 +1,40 @@
+{
+  "entities": [
+    {
+      "name": "Phillip Allen",
+      "type": "person",
+      "aliases": [
+        "phillip.allen@enron.com"
+      ]
+    },
+    {
+      "name": "Karen Buckley",
+      "type": "person",
+      "aliases": [
+        "karen.buckley@enron.com"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Phillip Allen",
+      "object": "Karen Buckley",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: phillip.allen@enron.com\nTo: karen.buckley@enron.com"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Phillip Allen",
+      "object": "Chad deserves an interview",
+      "confidence": 0.8,
+      "supporting_excerpt": "i think chad deserves an interview"
+    }
+  ],
+  "_source_id": "929",
+  "_email_meta": {
+    "sender": "phillip.allen@enron.com",
+    "recipient": "karen.buckley@enron.com",
+    "date": "2001-04-23"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "Governor Davis",
+      "type": "person",
+      "aliases": [
+        "governor davis"
+      ]
+    },
+    {
+      "name": "CPUC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "ABX 1",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": [
+        "direct access",
+        "direct access contracts"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "sgovenar@govadv.com",
+      "object": "hgovenar@govadv.com, mday@gmssr.com, bhansen@lhom.com, jdasovic@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sgovenar@govadv.com\nTo: hgovenar@govadv.com, mday@gmssr.com, bhansen@lhom.com, jdasovic@enron.com"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Governor Davis",
+      "object": "order the CPUC to implement the provision in ABX 1 that would suspend the authority of parties to enter into direct access contracts",
+      "confidence": 0.9,
+      "supporting_excerpt": "governor davis is preparing to order the cpuc to implement the provision in abx 1 that would suspend the authority of parties to enter into direct access contracts"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "two different sources",
+      "object": "Governor Davis preparing to order CPUC to implement ABX 1 provision",
+      "confidence": 0.7,
+      "supporting_excerpt": "two different sources have heard that governor davis is preparing to order the cpuc to implement the provision in abx 1"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "administration",
+      "object": "intent is to place all direct access advocates in the position of having to justify why each and every party should be the exception to the suspension",
+      "confidence": 0.7,
+      "supporting_excerpt": "the intent of the administration is to place all direct access advocates in the position of having to justify why each and every party should be the exception to the suspension"
+    }
+  ],
+  "_source_id": "235013",
+  "_email_meta": {
+    "sender": "sgovenar@govadv.com",
+    "recipient": "hgovenar@govadv.com, mday@gmssr.com, bhansen@lhom.com, jdasovic@enron.com, ",
+    "date": "2001-02-13"
+  }
+}

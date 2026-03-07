@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "Sally Beck",
+      "type": "person",
+      "aliases": [
+        "sally.beck@enron.com"
+      ]
+    },
+    {
+      "name": "Raymond Bowen",
+      "type": "person",
+      "aliases": [
+        "raymond.bowen@enron.com"
+      ]
+    },
+    {
+      "name": "London Brown",
+      "type": "person",
+      "aliases": [
+        "london.brown@enron.com"
+      ]
+    },
+    {
+      "name": "Rick Buy",
+      "type": "person",
+      "aliases": [
+        "rick.buy@enron.com"
+      ]
+    },
+    {
+      "name": "Greg Piper",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark Pickering",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Networks",
+      "type": "organization",
+      "aliases": [
+        "ENW",
+        "enw"
+      ]
+    },
+    {
+      "name": "Enron Online",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "2002 Enron Networks Budget",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Sally Beck",
+      "object": "Raymond Bowen",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sally.beck@enron.com\nTo: raymond.bowen@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sally Beck",
+      "object": "London Brown",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sally.beck@enron.com\nTo: london.brown@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sally Beck",
+      "object": "Rick Buy",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sally.beck@enron.com\nTo: rick.buy@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sally Beck",
+      "object": "2002 Enron Networks Budget",
+      "confidence": 0.7,
+      "supporting_excerpt": "the 2002 enron net works budget will for the first time combine allocations to business units for four key services"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "2002 Enron Networks Budget",
+      "object": "Enron Online",
+      "confidence": 0.4,
+      "supporting_excerpt": "combine allocations to business units for four key services enron online it infrastructure risk management operations and it maintenance and development"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Sally Beck",
+      "object": "greater level of detail for expense and capital spend",
+      "confidence": 0.9,
+      "supporting_excerpt": "we are providing a level of detail for expense and capital spend that is greater than that provided in past years"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Greg Piper",
+      "object": "Enron Networks Budget",
+      "confidence": 0.4,
+      "supporting_excerpt": "if you have questions about the enw budgets as we are working with you to finalize them please call one of us greg piper sally beck mark pickering"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mark Pickering",
+      "object": "Enron Networks Budget",
+      "confidence": 0.4,
+      "supporting_excerpt": "if you have questions about the enw budgets as we are working with you to finalize them please call one of us greg piper sally beck mark pickering"
+    }
+  ],
+  "_source_id": "272096",
+  "_email_meta": {
+    "sender": "sally.beck@enron.com",
+    "recipient": "raymond.bowen@enron.com, london.brown@enron.com, rick.buy@enron.com, ",
+    "date": "2001-10-05"
+  }
+}

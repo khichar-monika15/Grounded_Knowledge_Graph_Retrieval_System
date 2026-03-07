@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "Elizabeth Sager",
+      "type": "person",
+      "aliases": [
+        "elizabeth.sager@enron.com"
+      ]
+    },
+    {
+      "name": "A Brock",
+      "type": "person",
+      "aliases": [
+        "abrock@poloralphlauren.com"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Elizabeth Sager",
+      "object": "A Brock",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: elizabeth.sager@enron.com\nTo: abrock@poloralphlauren.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Elizabeth Sager",
+      "object": "Lucy",
+      "confidence": 0.6,
+      "supporting_excerpt": "a babysitter for lucy ella and sam"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Elizabeth Sager",
+      "object": "Ella",
+      "confidence": 0.6,
+      "supporting_excerpt": "a babysitter for lucy ella and sam"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Elizabeth Sager",
+      "object": "Sam",
+      "confidence": 0.6,
+      "supporting_excerpt": "a babysitter for lucy ella and sam"
+    }
+  ],
+  "_source_id": "389004",
+  "_email_meta": {
+    "sender": "elizabeth.sager@enron.com",
+    "recipient": "abrock@poloralphlauren.com",
+    "date": "2001-05-22"
+  }
+}

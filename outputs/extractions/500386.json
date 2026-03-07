@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "Liz Taylor",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "John Sherriff",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Michael Brown",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Rebecca McDonald",
+      "type": "person",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Liz Taylor",
+      "object": "John Sherriff",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: liz.taylor@enron.com\nTo: john.sherriff@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Liz Taylor",
+      "object": "Michael Brown",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: liz.taylor@enron.com\nTo: michael.brown@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Liz Taylor",
+      "object": "Rebecca McDonald",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: liz.taylor@enron.com\nTo: rebecca.mcdonald@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Whalley",
+      "object": "budget meeting",
+      "confidence": 0.6,
+      "supporting_excerpt": "whalleys budget meeting"
+    }
+  ],
+  "_source_id": "500386",
+  "_email_meta": {
+    "sender": "liz.taylor@enron.com",
+    "recipient": "john.sherriff@enron.com, michael.brown@enron.com, rebecca.mcdonald@enron.com, ",
+    "date": "2001-05-29"
+  }
+}

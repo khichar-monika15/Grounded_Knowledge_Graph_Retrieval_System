@@ -1,0 +1,247 @@
+{
+  "entities": [
+    {
+      "name": "Neal L Wolkoff",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "NYMEX",
+      "type": "organization",
+      "aliases": [
+        "New York Mercantile Exchange"
+      ]
+    },
+    {
+      "name": "NYMEX Postclose Trading Session Rules",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Rule 657A",
+      "type": "project",
+      "aliases": [
+        "End of Week Postclose Trading Session Rule"
+      ]
+    },
+    {
+      "name": "Rule 657",
+      "type": "project",
+      "aliases": [
+        "Postclose Trading Session Rule"
+      ]
+    },
+    {
+      "name": "George Henderson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Rob Stasi",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Brian Regan",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Postclose Trading Session",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Energy Futures Trading",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Futures Trading Operations",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Energy Futures Contracts",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Carr Futures",
+      "type": "organization",
+      "aliases": [
+        "CARR FUTURES"
+      ]
+    },
+    {
+      "name": "End of Week Trading Session",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Energy and Metals Futures",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Chicago",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "role_assignment",
+      "subject": "Neal L Wolkoff",
+      "object": "Executive Vice President",
+      "confidence": 0.9,
+      "supporting_excerpt": "from neal l wolkoff executive vice president"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Neal L Wolkoff",
+      "object": "NYMEX members and member firms",
+      "confidence": 0.9,
+      "supporting_excerpt": "notice 01156 may 9 2001 to all nymex members and member firms from neal l wolkoff"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Neal L Wolkoff",
+      "object": "NYMEX Postclose Trading Session Rules",
+      "confidence": 0.7,
+      "supporting_excerpt": "this notice advises members and member firms of changes to the two postclose session rules applicable to the nymex division"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Rule 657A",
+      "object": "amendments become effective on Friday May 11 2001",
+      "confidence": 0.9,
+      "supporting_excerpt": "beginning on friday may 11 2001 a number of amendments to nymex rule 657a the nymex end of week postclose trading session rule will become effective"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Rule 657",
+      "object": "amendments become effective on Monday May 14 2001",
+      "confidence": 0.9,
+      "supporting_excerpt": "beginning on monday may 14 2001 a number of amendments to nymex rule 657 the exchanges postclose trading session rule for days other than fridays will become effective"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "NYMEX",
+      "object": "Postclose sessions Monday-Thursday will start at 3:25 PM and be two minutes long",
+      "confidence": 1.0,
+      "supporting_excerpt": "mondaythursday these sessions will start at 325 pm and will be two minutes long"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "NYMEX",
+      "object": "Postclose sessions Friday will start at 3:30 PM and be five minutes long",
+      "confidence": 1.0,
+      "supporting_excerpt": "fridays these sessions will start at 330 pm and will be five minutes long"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "soblander@carrfut.com",
+      "object": "soblander@carrfut.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: soblander@carrfut.com\nTo: soblander@carrfut.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "George Henderson",
+      "object": "Vice President NYMEX Floor Department",
+      "confidence": 0.9,
+      "supporting_excerpt": "george henderson vice president nymex floor department"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Rob Stasi",
+      "object": "Manager of Trading Floor Systems NYMEX Floor Department",
+      "confidence": 0.9,
+      "supporting_excerpt": "rob stasi manager of trading floor systems nymex floor department"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Brian Regan",
+      "object": "Senior Associate General Counsel",
+      "confidence": 0.9,
+      "supporting_excerpt": "brian regan senior associate general counsel"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "NYMEX",
+      "object": "Postclose Trading Session",
+      "confidence": 0.6,
+      "supporting_excerpt": "new versions of nymex rule 657postclose trading session"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "NYMEX",
+      "object": "Energy Futures Trading",
+      "confidence": 0.7,
+      "supporting_excerpt": "trading shall resume for a period of two 2 minutes the session in all energy futures contracts"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "soblander",
+      "object": "soblander",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: soblander@carrfut.com To: soblander@carrfut.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "soblander",
+      "object": "End of Week Trading Session",
+      "confidence": 0.7,
+      "supporting_excerpt": "20 minutes after the close of trading in all futures contracts and shall continue for a period of five 5 minutes in all energy and metals futures contracts"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "soblander",
+      "object": "Energy and Metals Futures",
+      "confidence": 0.7,
+      "supporting_excerpt": "five 5 minutes in all energy and metals futures contracts subject to the following conditions"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "End of Week Trading Session",
+      "object": "Crude Oil",
+      "confidence": 0.6,
+      "supporting_excerpt": "contract additional ticks crude oil 20 ticks"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "End of Week Trading Session",
+      "object": "Natural Gas",
+      "confidence": 0.6,
+      "supporting_excerpt": "natural gas 50 ticks"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "End of Week Trading Session",
+      "object": "Unleaded Gasoline",
+      "confidence": 0.6,
+      "supporting_excerpt": "unleaded gasoline 50 ticks"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "End of Week Trading Session",
+      "object": "Heating Oil",
+      "confidence": 0.6,
+      "supporting_excerpt": "heating oil 50 ticks"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "soblander",
+      "object": "Carr Futures",
+      "confidence": 0.5,
+      "supporting_excerpt": "soblander@carrfut.com"
+    }
+  ],
+  "_source_id": "252987",
+  "_email_meta": {
+    "sender": "soblander@carrfut.com",
+    "recipient": "soblander@carrfut.com",
+    "date": "2001-05-10"
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "entities": [
+    {
+      "name": "Diana Scholtes",
+      "type": "person",
+      "aliases": [
+        "diana.scholtes@enron.com"
+      ]
+    },
+    {
+      "name": "Sean Crandall",
+      "type": "person",
+      "aliases": [
+        "sean.crandall@enron.com"
+      ]
+    },
+    {
+      "name": "M. Driscoll",
+      "type": "person",
+      "aliases": [
+        "m..driscoll@enron.com"
+      ]
+    },
+    {
+      "name": "Mike Swerzbin",
+      "type": "person",
+      "aliases": [
+        "mike.swerzbin@enron.com"
+      ]
+    },
+    {
+      "name": "Perry Jon",
+      "type": "person",
+      "aliases": [
+        "perrysppccom"
+      ]
+    },
+    {
+      "name": "Mike Smart",
+      "type": "person",
+      "aliases": [
+        "michael r smart",
+        "msmartsppccom"
+      ]
+    },
+    {
+      "name": "Pat Wood",
+      "type": "person",
+      "aliases": [
+        "ferc chairman pat wood"
+      ]
+    },
+    {
+      "name": "Hunter Charles",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Joyce Jim Berg Craig",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "FERC",
+      "type": "organization",
+      "aliases": [
+        "Federal Energy Regulatory Commission"
+      ]
+    },
+    {
+      "name": "Sierra Pacific Resources",
+      "type": "organization",
+      "aliases": [
+        "sppc"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Energy Daily",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "US Energy Association",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Pacific Northwest",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Washington",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Idaho",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Western Region FERC Price Mitigation Plan",
+      "type": "topic",
+      "aliases": [
+        "price caps",
+        "june price mitigation plan"
+      ]
+    },
+    {
+      "name": "Pacific Northwest Energy Shortage",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "RTO Transmission Asset Transfer",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Resource Management",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "Vice President",
+      "type": "role",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Diana Scholtes",
+      "object": "Sean Crandall, M. Driscoll, Mike Swerzbin",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: diana.scholtes@enron.com To: sean.crandall@enron.com, m..driscoll@enron.com, mike.swerzbin@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Perry Jon",
+      "object": "Diana Scholtes",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from perry jon mailtojperrysppccom sent tuesday october 02 2001 907 am to scholtes diana"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Mike Smart",
+      "object": "Perry Jon, Hunter Charles, Joyce Jim Berg Craig",
+      "confidence": 0.6,
+      "supporting_excerpt": "original message from smart mike sent tuesday october 02 2001 857 am to perry jon hunter charles joyce jim berg craig"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Mike Smart",
+      "object": "Vice President, Resource Management",
+      "confidence": 0.7,
+      "supporting_excerpt": "michael r smart pe vice president resource management sierra pacific resources"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Mike Smart",
+      "object": "Sierra Pacific Resources",
+      "confidence": 0.6,
+      "supporting_excerpt": "michael r smart pe vice president resource management sierra pacific resources po box 10100 reno nevada"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Mike Smart",
+      "object": "Western Region FERC Price Mitigation Plan",
+      "confidence": 0.4,
+      "supporting_excerpt": "could this end up changing the western region ferc price mitigation plan ie price caps"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Pat Wood",
+      "object": "FERC regulations for siting decisions",
+      "confidence": 0.4,
+      "supporting_excerpt": "wood said he is ambivalent about regulations that give ferc power in siting decisions"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Pat Wood",
+      "object": "Changes to June price mitigation plan",
+      "confidence": 0.6,
+      "supporting_excerpt": "changes would be made to a june pricemitigation plan governing the area wood said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pat Wood",
+      "object": "Pacific Northwest energy needs focus",
+      "confidence": 0.4,
+      "supporting_excerpt": "ferc chairman pat wood said the agency would focus on the pacific northwest energy daily reported"
+    }
+  ],
+  "_source_id": "53993",
+  "_email_meta": {
+    "sender": "diana.scholtes@enron.com",
+    "recipient": "sean.crandall@enron.com, m..driscoll@enron.com, mike.swerzbin@enron.com, ",
+    "date": "2001-10-02"
+  }
+}

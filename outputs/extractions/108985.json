@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "Charlene Richmond",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Julie Daren",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Sherry Wayman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Daren Farmer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Astra Power LLC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Adtra Resources Inc",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Deal 709296",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Charlene Richmond",
+      "object": "Julie Daren",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: charlene.richmond@enron.com\nTo: julie.daren@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Charlene Richmond",
+      "object": "Sherry Wayman",
+      "confidence": 0.6,
+      "supporting_excerpt": "i spoke with their trader sherry wayman"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Sherry Wayman",
+      "object": "Deal 709296",
+      "confidence": 0.8,
+      "supporting_excerpt": "she said that she did the deal with daren farmer"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Daren Farmer",
+      "object": "Deal 709296",
+      "confidence": 0.8,
+      "supporting_excerpt": "she did the deal with daren farmer"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Deal 709296",
+      "object": "Astra Power LLC",
+      "confidence": 0.8,
+      "supporting_excerpt": "deal 709296 should be on astra power llc"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Deal 709296",
+      "object": "Adtra Resources Inc",
+      "confidence": 0.6,
+      "supporting_excerpt": "we have it on adtra resources inc"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Charlene Richmond",
+      "object": "Julie Daren",
+      "confidence": 0.8,
+      "supporting_excerpt": "could you fix asap because payment is due on 25th"
+    }
+  ],
+  "_source_id": "108985",
+  "_email_meta": {
+    "sender": "charlene.richmond@enron.com",
+    "recipient": "julie.daren@enron.com",
+    "date": "2001-05-22"
+  }
+}

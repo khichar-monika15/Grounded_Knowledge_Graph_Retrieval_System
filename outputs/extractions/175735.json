@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "Linda Simmons",
+      "type": "person",
+      "aliases": [
+        "linda.simmons@enron.com"
+      ]
+    },
+    {
+      "name": "Mark E. Haedicke",
+      "type": "person",
+      "aliases": [
+        "mark.e.haedicke@enron.com"
+      ]
+    },
+    {
+      "name": "Alan Aronowitz",
+      "type": "person",
+      "aliases": [
+        "alan.aronowitz@enron.com"
+      ]
+    },
+    {
+      "name": "Peggy Banczak",
+      "type": "person",
+      "aliases": [
+        "peggy.banczak@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Wholesale Services 2001 Legal Conference",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Woodlands Resort and Conference Center",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Houston",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Linda Simmons",
+      "object": "Mark E. Haedicke",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: linda.simmons@enron.com\nTo: mark.e.haedicke@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Linda Simmons",
+      "object": "Alan Aronowitz",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: linda.simmons@enron.com\nTo: alan.aronowitz@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Linda Simmons",
+      "object": "Peggy Banczak",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: linda.simmons@enron.com\nTo: peggy.banczak@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Linda Simmons",
+      "object": "Enron Wholesale Services 2001 Legal Conference",
+      "confidence": 0.4,
+      "supporting_excerpt": "the enron wholesale services 2001 legal conference will be held on thursday afternoon and friday october 11 12 2001"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Enron Wholesale Services 2001 Legal Conference",
+      "object": "scheduled for October 11-12, 2001",
+      "confidence": 0.6,
+      "supporting_excerpt": "the enron wholesale services 2001 legal conference will be held on thursday afternoon and friday october 11 12 2001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron Wholesale Services 2001 Legal Conference",
+      "object": "Woodlands Resort and Conference Center",
+      "confidence": 0.3,
+      "supporting_excerpt": "at the woodlands resort and conference center north of houston"
+    }
+  ],
+  "_source_id": "175735",
+  "_email_meta": {
+    "sender": "linda.simmons@enron.com",
+    "recipient": "mark.e.haedicke@enron.com, alan.aronowitz@enron.com, peggy.banczak@enron.com, ",
+    "date": "2001-03-06"
+  }
+}

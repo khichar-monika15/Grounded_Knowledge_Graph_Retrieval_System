@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "Stacey Bolton",
+      "type": "person",
+      "aliases": [
+        "bolton stacey"
+      ]
+    },
+    {
+      "name": "Elliot Mainzer",
+      "type": "person",
+      "aliases": [
+        "elliot.mainzer@enron.com"
+      ]
+    },
+    {
+      "name": "Richard Ring",
+      "type": "person",
+      "aliases": [
+        "richard.ring@enron.com"
+      ]
+    },
+    {
+      "name": "Stuart Siegfried",
+      "type": "person",
+      "aliases": [
+        "siegfried stuart",
+        "stuartsiegfriedpucstateohusenron"
+      ]
+    },
+    {
+      "name": "Navitas Energy",
+      "type": "organization",
+      "aliases": [
+        "Navitas"
+      ]
+    },
+    {
+      "name": "Northern Alternative Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Xcel Energy",
+      "type": "organization",
+      "aliases": [
+        "Northern States Power"
+      ]
+    },
+    {
+      "name": "Community Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Excel",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "NREL",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Lakota Ridge Project",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Shockatan Hills Project",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Minnesota Wind Power",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Green Energy Certificates",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Double-Counting Concern",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Minnesota",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Stacey Bolton",
+      "object": "Elliot Mainzer",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: stacey.bolton@enron.com To: elliot.mainzer@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Stacey Bolton",
+      "object": "Richard Ring",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: stacey.bolton@enron.com To: elliot.mainzer@enron.com, richard.ring@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Stacey Bolton",
+      "object": "Minnesota Wind Power",
+      "confidence": 0.7,
+      "supporting_excerpt": "i wonder if this was the minnesota project that developers like community energy are suspicious of them using the power for the green pricing program"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Stuart Siegfried",
+      "object": "Double-Counting Concern",
+      "confidence": 0.4,
+      "supporting_excerpt": "to me this smells of doublecounting but i was curious as to your reaction"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Stuart Siegfried",
+      "object": "Green Energy Certificates",
+      "confidence": 0.4,
+      "supporting_excerpt": "i came across the following blurb see below in a nrel electronic newsletter would the concept conveyed here cause you any concern"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Navitas Energy",
+      "object": "Lakota Ridge Project",
+      "confidence": 0.4,
+      "supporting_excerpt": "the certificates represent the environmental attributes of the power generated from two minnesotabased wind projects commissioned in mid1998 the 1125mw lakotaridge project"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Navitas Energy",
+      "object": "Shockatan Hills Project",
+      "confidence": 0.3,
+      "supporting_excerpt": "the 1188mw shaockatan hills project"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Xcel Energy",
+      "object": "Minnesota Wind Power",
+      "confidence": 0.4,
+      "supporting_excerpt": "the energy output of theprojects is being purchased by xcel energy formerly northern statespower to meet a legislative requirement to build or contract for425 mw of wind power by the end of 2001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Community Energy",
+      "object": "Minnesota Wind Power",
+      "confidence": 0.7,
+      "supporting_excerpt": "developers like community energy are suspicious of them using the power for the green pricing program"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Navitas Energy",
+      "object": "Green Energy Certificates",
+      "confidence": 0.6,
+      "supporting_excerpt": "navitas energy an independent power producer and an affiliate ofwind developer northern alternative energy is selling windwattsgreen energy certificates on the internet"
+    }
+  ],
+  "_source_id": "371476",
+  "_email_meta": {
+    "sender": "stacey.bolton@enron.com",
+    "recipient": "elliot.mainzer@enron.com, richard.ring@enron.com",
+    "date": "2001-10-02"
+  }
+}

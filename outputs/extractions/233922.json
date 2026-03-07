@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "name": "Mark Crowther",
+      "type": "person",
+      "aliases": [
+        "mark.crowther@enron.com"
+      ]
+    },
+    {
+      "name": "Steven Kean",
+      "type": "person",
+      "aliases": [
+        "steven.kean@enron.com"
+      ]
+    },
+    {
+      "name": "Llewelyn Mika",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Japan",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Mark Crowther",
+      "object": "Steven Kean",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: mark.crowther@enron.com\nTo: steven.kean@enron.com"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Mark Crowther",
+      "object": "presentations",
+      "confidence": 0.9,
+      "supporting_excerpt": "here are the presentations that llewelyn mika and i started at lunch today"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Llewelyn Mika",
+      "object": "presentations",
+      "confidence": 0.9,
+      "supporting_excerpt": "here are the presentations that llewelyn mika and i started at lunch today"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Mark Crowther",
+      "object": "Enron Japan",
+      "confidence": 0.8,
+      "supporting_excerpt": "mark crowther enron japan"
+    }
+  ],
+  "_source_id": "233922",
+  "_email_meta": {
+    "sender": "mark.crowther@enron.com",
+    "recipient": "steven.kean@enron.com",
+    "date": "2001-05-15"
+  }
+}

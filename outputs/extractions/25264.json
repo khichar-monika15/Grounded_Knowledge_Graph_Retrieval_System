@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "Beth Apollo",
+      "type": "person",
+      "aliases": [
+        "beth.apollo@enron.com"
+      ]
+    },
+    {
+      "name": "Kevin Meredith",
+      "type": "person",
+      "aliases": [
+        "kevin.meredith@enron.com"
+      ]
+    },
+    {
+      "name": "Scott Mills",
+      "type": "person",
+      "aliases": [
+        "scott.mills@enron.com"
+      ]
+    },
+    {
+      "name": "Jana Giovannini",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Full Time Analyst Hiring",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jana Giovannini",
+      "object": "Beth Apollo",
+      "confidence": 0.9,
+      "supporting_excerpt": "sent thursday may 31 2001 312 pm to beck sally gossett jeffrey c hall jr robert l herod brenda f reeves leslie white stacey apollo beth price brent a"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jana Giovannini",
+      "object": "Kevin Meredith",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: kevin.meredith@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jana Giovannini",
+      "object": "Scott Mills",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: scott.mills@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Jana Giovannini",
+      "object": "review of full time analyst resumes",
+      "confidence": 0.9,
+      "supporting_excerpt": "all just wanted to touch base with you to see if you have had a chance to review the full time analyst resumes that were delivered to you on may 14th"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Jana Giovannini",
+      "object": "associate and analyst program career development",
+      "confidence": 0.9,
+      "supporting_excerpt": "jana giovannini associate and analyst program career development"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Full Time Analyst Hiring",
+      "object": "analysts starting July 17th",
+      "confidence": 0.9,
+      "supporting_excerpt": "these analysts will be starting on july 17th and be attending orientation for a couple of weeks"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Timothy Weil",
+      "object": "starting July 17th as full time analyst",
+      "confidence": 0.7,
+      "supporting_excerpt": "timothy weil  will be starting july 17th with the other full time analysts"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Vacharapol Eddie Sanguanruang",
+      "object": "visa transfer in progress",
+      "confidence": 0.7,
+      "supporting_excerpt": "vacharapol eddie sanguanruang  he will be able to start as soon as his visa is transferred which is already in progress"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Nat Kreamer",
+      "object": "able to start June 4th if needed",
+      "confidence": 0.7,
+      "supporting_excerpt": "nat kreamer  he would be able to start june 4th if needed"
+    }
+  ],
+  "_source_id": "25264",
+  "_email_meta": {
+    "sender": "beth.apollo@enron.com",
+    "recipient": "kevin.meredith@enron.com, scott.mills@enron.com",
+    "date": "2001-05-31"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "Cynthia Harkness",
+      "type": "person",
+      "aliases": [
+        "cynthia.harkness@enron.com"
+      ]
+    },
+    {
+      "name": "Elizabeth Sager",
+      "type": "person",
+      "aliases": [
+        "elizabeth.sager@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Telecom Transactions",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Cynthia Harkness",
+      "object": "Elizabeth Sager",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: cynthia.harkness@enron.com\nTo: elizabeth.sager@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Cynthia Harkness",
+      "object": "Elizabeth Sager",
+      "confidence": 0.9,
+      "supporting_excerpt": "i would appreciate your view as to whether or not these provisions should be included"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Cynthia Harkness",
+      "object": "Telecom Transactions",
+      "confidence": 0.7,
+      "supporting_excerpt": "attached are the short form of gtcs that we would like to use in connection with our telecom transactions"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Cynthia Harkness",
+      "object": "Elizabeth Sager",
+      "confidence": 0.9,
+      "supporting_excerpt": "let us have your feedback when you can as we would like to start using these and preparing a version for use with our advertising master"
+    }
+  ],
+  "_source_id": "386322",
+  "_email_meta": {
+    "sender": "cynthia.harkness@enron.com",
+    "recipient": "elizabeth.sager@enron.com",
+    "date": "2001-06-11"
+  }
+}

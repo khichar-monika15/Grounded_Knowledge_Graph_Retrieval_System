@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "S. Govenar",
+      "type": "person",
+      "aliases": [
+        "sgovenar@govadv.com"
+      ]
+    },
+    {
+      "name": "H. Govenar",
+      "type": "person",
+      "aliases": [
+        "hgovenar@govadv.com"
+      ]
+    },
+    {
+      "name": "M. Day",
+      "type": "person",
+      "aliases": [
+        "mday@gmssr.com"
+      ]
+    },
+    {
+      "name": "B. Hansen",
+      "type": "person",
+      "aliases": [
+        "bhansen@lhom.com"
+      ]
+    },
+    {
+      "name": "J. Dasovic",
+      "type": "person",
+      "aliases": [
+        "jdasovic@enron.com"
+      ]
+    },
+    {
+      "name": "California Legislature",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "NCSL",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": [
+        "direct access",
+        "ABX 21 Keely"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "S. Govenar",
+      "object": "H. Govenar",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sgovenar@govadv.com\nTo: hgovenar@govadv.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "S. Govenar",
+      "object": "M. Day",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sgovenar@govadv.com\nTo: hgovenar@govadv.com, mday@gmssr.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "S. Govenar",
+      "object": "B. Hansen",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sgovenar@govadv.com\nTo: hgovenar@govadv.com, mday@gmssr.com, bhansen@lhom.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "S. Govenar",
+      "object": "J. Dasovic",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sgovenar@govadv.com\nTo: hgovenar@govadv.com, mday@gmssr.com, bhansen@lhom.com, jdasovic@enron.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "California Energy Crisis",
+      "object": "passed assembly",
+      "confidence": 0.9,
+      "supporting_excerpt": "abx 21 keely which would reinstate an abbreviated version of direct access passed out of the assembly moments ago on a vote of 700"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "California Energy Crisis",
+      "object": "Senate",
+      "confidence": 0.6,
+      "supporting_excerpt": "the bill could be heard in the senate on monday"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Legislature",
+      "object": "Washington DC trip",
+      "confidence": 0.7,
+      "supporting_excerpt": "the california legislature is scheduled to go to washington dc next week on an ncsl junket"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "California Legislature",
+      "object": "NCSL trip status uncertain",
+      "confidence": 0.9,
+      "supporting_excerpt": "the status of this trip is up in the air as of this moment"
+    }
+  ],
+  "_source_id": "158056",
+  "_email_meta": {
+    "sender": "sgovenar@govadv.com",
+    "recipient": "hgovenar@govadv.com, mday@gmssr.com, bhansen@lhom.com, jdasovic@enron.com, ",
+    "date": "2001-03-22"
+  }
+}

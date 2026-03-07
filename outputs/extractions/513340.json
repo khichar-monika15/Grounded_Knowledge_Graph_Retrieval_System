@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "Alan Julson",
+      "type": "person",
+      "aliases": [
+        "jza",
+        "Alan",
+        "al julson"
+      ]
+    },
+    {
+      "name": "Jason Wolfe",
+      "type": "person",
+      "aliases": [
+        "j wolfe",
+        "jasonwolfe"
+      ]
+    },
+    {
+      "name": "Barry White",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Frank Black",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Astros Game",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Poker Night",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Lissa's Wedding",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Alan Julson",
+      "object": "Jason Wolfe",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: vze28szx@verizon.net\nTo: jason.wolfe@enron.com"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Alan Julson",
+      "object": "Astros Game",
+      "confidence": 0.9,
+      "supporting_excerpt": "any interest in an astros game on sunday afternoon june 24"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Alan Julson",
+      "object": "Poker Night",
+      "confidence": 0.6,
+      "supporting_excerpt": "what night are you going to set up poker for"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Lissa's Wedding",
+      "object": "cancelled",
+      "confidence": 0.8,
+      "supporting_excerpt": "lissas wedding has been cancelled"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Alan Julson",
+      "object": "Shelly",
+      "confidence": 0.7,
+      "supporting_excerpt": "i will still be haning out with shelly on saturday night"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Alan Julson",
+      "object": "Becky",
+      "confidence": 0.7,
+      "supporting_excerpt": "i think i am staying with becky at the beginning of the week"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Alan Julson",
+      "object": "Lissa",
+      "confidence": 0.7,
+      "supporting_excerpt": "lissa has moved in with her now so that might get a little crowded"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Alan Julson",
+      "object": "place to stay",
+      "confidence": 0.8,
+      "supporting_excerpt": "i may need a place to crash a few nights"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jason Wolfe",
+      "object": "Enron",
+      "confidence": 0.3,
+      "supporting_excerpt": "jason.wolfe@enron.com"
+    }
+  ],
+  "_source_id": "513340",
+  "_email_meta": {
+    "sender": "vze28szx@verizon.net",
+    "recipient": "jason.wolfe@enron.com",
+    "date": "2001-05-18"
+  }
+}

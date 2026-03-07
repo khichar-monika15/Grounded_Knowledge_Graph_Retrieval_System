@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "John Arnold",
+      "type": "person",
+      "aliases": [
+        "john.arnold@enron.com"
+      ]
+    },
+    {
+      "name": "Jennifer Fraser",
+      "type": "person",
+      "aliases": [
+        "jennifer.fraser@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "ENE"
+      ]
+    },
+    {
+      "name": "Gas Trading Activity",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "John Arnold",
+      "object": "Jennifer Fraser",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: john.arnold@enron.com To: jennifer.fraser@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jennifer Fraser",
+      "object": "Gas Trading Activity",
+      "confidence": 0.7,
+      "supporting_excerpt": "just how many ene people were busy selling gas this weekend vs outside counterparties"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "John Arnold",
+      "object": "George",
+      "confidence": 0.6,
+      "supporting_excerpt": "howd george do"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "John Arnold",
+      "object": "Gas Trading Activity",
+      "confidence": 0.6,
+      "supporting_excerpt": "from saturdaymondaydid 194 trades exactly half internal"
+    }
+  ],
+  "_source_id": "6416",
+  "_email_meta": {
+    "sender": "john.arnold@enron.com",
+    "recipient": "jennifer.fraser@enron.com",
+    "date": "2001-05-29"
+  }
+}

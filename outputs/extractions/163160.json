@@ -1,0 +1,50 @@
+{
+  "entities": [
+    {
+      "name": "Rod Hayslett",
+      "type": "person",
+      "aliases": [
+        "rod.hayslett@enron.com"
+      ]
+    },
+    {
+      "name": "Steve Hotte",
+      "type": "person",
+      "aliases": [
+        "steve.hotte@enron.com"
+      ]
+    },
+    {
+      "name": "Luitgard Fischer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Rod Hayslett",
+      "object": "Steve Hotte",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: rod.hayslett@enron.com\nTo: steve.hotte@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Rod Hayslett",
+      "object": "call Luitgard Fischer",
+      "confidence": 0.8,
+      "supporting_excerpt": "call luitgard fischer"
+    }
+  ],
+  "_source_id": "163160",
+  "_email_meta": {
+    "sender": "rod.hayslett@enron.com",
+    "recipient": "steve.hotte@enron.com",
+    "date": "2001-11-01"
+  }
+}

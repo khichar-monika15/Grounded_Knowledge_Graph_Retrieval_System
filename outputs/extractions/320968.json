@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "Kay Mann",
+      "type": "person",
+      "aliases": [
+        "kay.mann@enron.com"
+      ]
+    },
+    {
+      "name": "Gracie Presas",
+      "type": "person",
+      "aliases": [
+        "gracie.presas@enron.com"
+      ]
+    },
+    {
+      "name": "Wellhead to Burner Tip",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Course Enrollment",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kay Mann",
+      "object": "Gracie Presas",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kay.mann@enron.com To: gracie.presas@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gracie Presas",
+      "object": "Wellhead to Burner Tip",
+      "confidence": 0.7,
+      "supporting_excerpt": "you are enrolled in the following  what wellhead to burnertip when april 2425 2001"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Kay Mann",
+      "object": "course enrollment cancellation",
+      "confidence": 0.8,
+      "supporting_excerpt": "i guess id better cancel  thanks for the reminder  kay"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gracie Presas",
+      "object": "immediate notification of schedule changes",
+      "confidence": 0.9,
+      "supporting_excerpt": "if your scheduled has changed and you cannot attend please let me know  immediately so that i can replace you"
+    }
+  ],
+  "_source_id": "320968",
+  "_email_meta": {
+    "sender": "kay.mann@enron.com",
+    "recipient": "gracie.presas@enron.com",
+    "date": "2001-04-18"
+  }
+}

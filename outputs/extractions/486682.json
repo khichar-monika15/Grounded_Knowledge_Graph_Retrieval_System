@@ -1,0 +1,74 @@
+{
+  "entities": [
+    {
+      "name": "Linda Willis",
+      "type": "person",
+      "aliases": [
+        "linda.willis@twcable.com"
+      ]
+    },
+    {
+      "name": "Jane M. Tholt",
+      "type": "person",
+      "aliases": [
+        "jane.m.tholt@enron.com"
+      ]
+    },
+    {
+      "name": "Time Warner Road Runner",
+      "type": "organization",
+      "aliases": [
+        "Time Warner",
+        "Road Runner"
+      ]
+    },
+    {
+      "name": "Service Area Expansion",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Linda Willis",
+      "object": "Jane M. Tholt",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: linda.willis@twcable.com\nTo: jane.m.tholt@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jane M. Tholt",
+      "object": "Time Warner Road Runner",
+      "confidence": 0.7,
+      "supporting_excerpt": "thank you for choosing time warner road runner as your highspeed online provider"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Jane M. Tholt",
+      "object": "nonserviceable at this time",
+      "confidence": 0.9,
+      "supporting_excerpt": "after a search of our database your address was found to be nonserviceable at this time"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Time Warner Road Runner",
+      "object": "free installation and a free month of road runner service",
+      "confidence": 0.9,
+      "supporting_excerpt": "a card will be sent to the address where service was requested giving an approximate upgrade date  the card includes a special offer of free installation and a free month of road runner service"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Time Warner Road Runner",
+      "object": "Service Area Expansion",
+      "confidence": 0.4,
+      "supporting_excerpt": "we are adding you to a list of persons to contact when we have expanded our service area to reach you"
+    }
+  ],
+  "_source_id": "486682",
+  "_email_meta": {
+    "sender": "linda.willis@twcable.com",
+    "recipient": "jane.m.tholt@enron.com",
+    "date": "2001-01-24"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "Kam Keiser",
+      "type": "person",
+      "aliases": [
+        "kam.keiser@enron.com"
+      ]
+    },
+    {
+      "name": "K. Allen",
+      "type": "person",
+      "aliases": [
+        "k..allen@enron.com"
+      ]
+    },
+    {
+      "name": "Randy Bhatia",
+      "type": "person",
+      "aliases": [
+        "randy.bhatia@enron.com"
+      ]
+    },
+    {
+      "name": "Frank Ermis",
+      "type": "person",
+      "aliases": [
+        "frank.ermis@enron.com"
+      ]
+    },
+    {
+      "name": "West VAR Report",
+      "type": "project",
+      "aliases": [
+        "west var"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kam Keiser",
+      "object": "K. Allen",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kam.keiser@enron.com\nTo: k..allen@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Kam Keiser",
+      "object": "Randy Bhatia",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kam.keiser@enron.com\nTo: randy.bhatia@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Kam Keiser",
+      "object": "Frank Ermis",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kam.keiser@enron.com\nTo: frank.ermis@enron.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "West VAR Report",
+      "object": "now available for viewing on the website",
+      "confidence": 0.9,
+      "supporting_excerpt": "the report named west var httptrvcorpenroncomlinkfromexcelaspreport_cd36report_namewestvarcategory_cd2category_namewesttoc_hide1stv12tv1expycurrent_efct_date11262001 published as of 11262001 is now available for viewing on the website"
+    }
+  ],
+  "_source_id": "262774",
+  "_email_meta": {
+    "sender": "kam.keiser@enron.com",
+    "recipient": "k..allen@enron.com, randy.bhatia@enron.com, frank.ermis@enron.com, ",
+    "date": "2001-11-26"
+  }
+}

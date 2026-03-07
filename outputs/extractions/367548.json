@@ -1,0 +1,41 @@
+{
+  "entities": [
+    {
+      "name": "Dutch Quigley",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Spectron Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "works_at",
+      "subject": "Brian",
+      "object": "Spectron Energy",
+      "confidence": 0.5,
+      "supporting_excerpt": "brian@spectronenergy.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Brian",
+      "object": "Dutch Quigley",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: brian@spectronenergy.com\nTo: dutch.quigley@enron.com"
+    }
+  ],
+  "_source_id": "367548",
+  "_email_meta": {
+    "sender": "brian@spectronenergy.com",
+    "recipient": "dutch.quigley@enron.com",
+    "date": "2001-12-18"
+  }
+}

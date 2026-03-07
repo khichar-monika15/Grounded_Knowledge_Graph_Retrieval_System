@@ -1,0 +1,159 @@
+{
+  "entities": [
+    {
+      "name": "Lorna Brennan",
+      "type": "person",
+      "aliases": [
+        "lorna.brennan@enron.com"
+      ]
+    },
+    {
+      "name": "Glen Hass",
+      "type": "person",
+      "aliases": [
+        "glen.hass@enron.com"
+      ]
+    },
+    {
+      "name": "Eric Gadd",
+      "type": "person",
+      "aliases": [
+        "eric.gadd@enron.com"
+      ]
+    },
+    {
+      "name": "Steven Harris",
+      "type": "person",
+      "aliases": [
+        "steven.harris@enron.com"
+      ]
+    },
+    {
+      "name": "California Energy Commission",
+      "type": "organization",
+      "aliases": [
+        "CEC"
+      ]
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Natural Gas Infrastructure",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Public Utilities Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Natural Gas Infrastructure",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Natural Gas Curtailment Policy",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Lorna Brennan",
+      "object": "Glen Hass",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: lorna.brennan@enron.com\nTo: glen.hass@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Lorna Brennan",
+      "object": "Eric Gadd",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: lorna.brennan@enron.com\nTo: glen.hass@enron.com, eric.gadd@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Lorna Brennan",
+      "object": "Steven Harris",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: lorna.brennan@enron.com\nTo: glen.hass@enron.com, eric.gadd@enron.com, steven.harris@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Lorna Brennan",
+      "object": "California Energy Commission",
+      "confidence": 0.7,
+      "supporting_excerpt": "i sent out yesterday about the california energy commissions conclusions on the states natural gas infrastructure"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "California Energy Commission",
+      "object": "Natural Gas Infrastructure",
+      "confidence": 0.7,
+      "supporting_excerpt": "the california energy commission cec staff last week released its final draft report on the states natural gas infrastructure concluding that it is constrained and has caused higherthanaverage wholesale gas prices"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Energy Commission",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "confirming what the states energy crisis made abundantly clear months ago"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "California Energy Commission",
+      "object": "market manipulation contributed to higher natural gas prices",
+      "confidence": 0.7,
+      "supporting_excerpt": "the report did not totally rule out market manipulation as a culprit it concludes that a combination of infrastructure shortcomings and possible market manipulation has to the higher natural gas prices in california"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "California Energy Commission",
+      "object": "final draft report on natural gas infrastructure",
+      "confidence": 0.7,
+      "supporting_excerpt": "it will go to the fivemember commission for approval aug 22"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "California Energy Commission",
+      "object": "California Natural Gas Infrastructure",
+      "confidence": 0.7,
+      "supporting_excerpt": "the 111page report natural gas infrastructure issues prepared by the cec electricity and natural gas committee"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "California Energy Commission",
+      "object": "Natural Gas Curtailment Policy",
+      "confidence": 0.9,
+      "supporting_excerpt": "the report recommends that the cec work more closely with the california public utilities commission to develop a new curtailment policy"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "California Energy Commission",
+      "object": "workshop on natural gas optimization",
+      "confidence": 0.9,
+      "supporting_excerpt": "it also proposes that the cec this fall conduct a workshop to determine ways to have noncore large energyintensive customers better optimize their use of natural gas storage"
+    }
+  ],
+  "_source_id": "286197",
+  "_email_meta": {
+    "sender": "lorna.brennan@enron.com",
+    "recipient": "glen.hass@enron.com, eric.gadd@enron.com, steven.harris@enron.com, ",
+    "date": "2001-08-14"
+  }
+}

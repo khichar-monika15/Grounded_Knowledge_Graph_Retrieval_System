@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "Pete Davis",
+      "type": "person",
+      "aliases": [
+        "pete.davis@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Portland West Desk",
+      "type": "organization",
+      "aliases": [
+        "oportlandwestdesk"
+      ]
+    },
+    {
+      "name": "California Scheduling ISO",
+      "type": "organization",
+      "aliases": [
+        "california scheduling iso"
+      ]
+    },
+    {
+      "name": "Energy Import Export Schedule",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Pete Davis",
+      "object": "Pete Davis",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: pete.davis@enron.com\nTo: pete.davis@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Portland West Desk",
+      "object": "California Scheduling ISO",
+      "confidence": 0.3,
+      "supporting_excerpt": "oportlandwestdeskcalifornia schedulingiso final schedules2001041805txt"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Energy Import Export Schedule",
+      "object": "final schedule not found",
+      "confidence": 0.8,
+      "supporting_excerpt": "energy importexport schedule   final schedule not found for preferred schedule"
+    }
+  ],
+  "_source_id": "335830",
+  "_email_meta": {
+    "sender": "pete.davis@enron.com",
+    "recipient": "pete.davis@enron.com",
+    "date": "2001-04-17"
+  }
+}

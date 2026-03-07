@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "Jeff Dasovich",
+      "type": "person",
+      "aliases": [
+        "jeff",
+        "jeff.dasovich@enron.com"
+      ]
+    },
+    {
+      "name": "Paul Kaufman",
+      "type": "person",
+      "aliases": [
+        "paul.kaufman@enron.com"
+      ]
+    },
+    {
+      "name": "Susan J Maran",
+      "type": "person",
+      "aliases": [
+        "susan j maran"
+      ]
+    },
+    {
+      "name": "Sandra McCubbin",
+      "type": "person",
+      "aliases": [
+        "sandra mccubbin"
+      ]
+    },
+    {
+      "name": "Alan Comnes",
+      "type": "person",
+      "aliases": [
+        "alan comnes"
+      ]
+    },
+    {
+      "name": "Joseph Alamo",
+      "type": "person",
+      "aliases": [
+        "joseph alamo"
+      ]
+    },
+    {
+      "name": "Lysa Akin",
+      "type": "person",
+      "aliases": [
+        "lysa",
+        "lysa.akin"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Plan",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Western States Meeting",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "Paul Kaufman",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com To: paul.kaufman@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Paul Kaufman",
+      "object": "Susan J Maran",
+      "confidence": 0.6,
+      "supporting_excerpt": "to susan j maran"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Paul Kaufman",
+      "object": "Sandra McCubbin",
+      "confidence": 0.3,
+      "supporting_excerpt": "sandra mccubbin"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Paul Kaufman",
+      "object": "Alan Comnes",
+      "confidence": 0.6,
+      "supporting_excerpt": "alan comnes"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Paul Kaufman",
+      "object": "Joseph Alamo",
+      "confidence": 0.6,
+      "supporting_excerpt": "cc joseph alamo"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Paul Kaufman",
+      "object": "Lysa Akin",
+      "confidence": 0.3,
+      "supporting_excerpt": "lysa.akin"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Paul Kaufman",
+      "object": "Western States Meeting",
+      "confidence": 0.6,
+      "supporting_excerpt": "i'd like to have a facetoface western states meeting on thursday afternoon of this week"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Western States Meeting",
+      "object": "California Plan",
+      "confidence": 0.4,
+      "supporting_excerpt": "topics for discussion include 1 the california plan that jeff and i must provide to rick"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Paul Kaufman",
+      "object": "Lysa Akin",
+      "confidence": 0.6,
+      "supporting_excerpt": "lysa please contact everyone in the group to determine their availability for a 2hour meeting on thursday afternoon in sfo"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Paul Kaufman",
+      "object": "Joseph Alamo",
+      "confidence": 0.5,
+      "supporting_excerpt": "joseph please cancel the staff meeting on thursday morning"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Jeff Dasovich",
+      "object": "Thursday meeting at 5 pm",
+      "confidence": 0.4,
+      "supporting_excerpt": "works for me but i have class on thursday and will have to leave at 5 pm that work best jeff"
+    }
+  ],
+  "_source_id": "82185",
+  "_email_meta": {
+    "sender": "jeff.dasovich@enron.com",
+    "recipient": "paul.kaufman@enron.com",
+    "date": "2001-04-10"
+  }
+}

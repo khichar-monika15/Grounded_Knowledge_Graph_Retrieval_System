@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "Carmen Peters",
+      "type": "person",
+      "aliases": [
+        "carmen.peters@nissan-usa.com"
+      ]
+    },
+    {
+      "name": "Lorinne Castaneda",
+      "type": "person",
+      "aliases": [
+        "lorinne.castaneda@nissan-usa.com"
+      ]
+    },
+    {
+      "name": "Nissan USA",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Carmen Peters",
+      "object": "Castaneda",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: castaneda@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carmen Peters",
+      "object": "Lorinne Castaneda",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: lorinne.castaneda@nissan-usa.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carmen Peters",
+      "object": "Hernandez",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: hernandez@enron.com"
+    }
+  ],
+  "_source_id": "449701",
+  "_email_meta": {
+    "sender": "carmen.peters@nissan-usa.com",
+    "recipient": "castaneda@enron.com, lorinne.castaneda@nissan-usa.com, hernandez@enron.com, ",
+    "date": "2001-10-25"
+  }
+}

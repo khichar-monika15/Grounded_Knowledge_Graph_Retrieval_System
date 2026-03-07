@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "Adarsh Vakharia",
+      "type": "person",
+      "aliases": [
+        "adarsh.vakharia@enron.com"
+      ]
+    },
+    {
+      "name": "Rick Buy",
+      "type": "person",
+      "aliases": [
+        "rick.buy@enron.com"
+      ]
+    },
+    {
+      "name": "Sally Beck",
+      "type": "person",
+      "aliases": [
+        "sally.beck@enron.com"
+      ]
+    },
+    {
+      "name": "Ted Murphy",
+      "type": "person",
+      "aliases": [
+        "ted.murphy@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Adarsh Vakharia",
+      "object": "Rick Buy",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: adarsh.vakharia@enron.com\nTo: rick.buy@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Adarsh Vakharia",
+      "object": "Sally Beck",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: adarsh.vakharia@enron.com\nTo: rick.buy@enron.com, sally.beck@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Adarsh Vakharia",
+      "object": "Ted Murphy",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: adarsh.vakharia@enron.com\nTo: rick.buy@enron.com, sally.beck@enron.com, ted.murphy@enron.com"
+    }
+  ],
+  "_source_id": "444829",
+  "_email_meta": {
+    "sender": "adarsh.vakharia@enron.com",
+    "recipient": "rick.buy@enron.com, sally.beck@enron.com, ted.murphy@enron.com, ",
+    "date": "2001-04-30"
+  }
+}

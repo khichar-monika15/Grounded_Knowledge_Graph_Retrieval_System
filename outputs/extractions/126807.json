@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "Chris Germany",
+      "type": "person",
+      "aliases": [
+        "chris.germany@enron.com"
+      ]
+    },
+    {
+      "name": "Jerry W Germany",
+      "type": "person",
+      "aliases": [
+        "germanj@basf-corp.com",
+        "wdgermanyjr"
+      ]
+    },
+    {
+      "name": "Don Germany",
+      "type": "person",
+      "aliases": [
+        "don_germany@notes.basf-corp.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "BASF",
+      "type": "organization",
+      "aliases": [
+        "basf-corp.com"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Chris Germany",
+      "object": "Jerry W Germany",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: chris.germany@enron.com To: germanj@basf-corp.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Chris Germany",
+      "object": "Don Germany",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: chris.germany@enron.com To: don_germany@notes.basf-corp.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Chris Germany",
+      "object": "insurance reimbursement funds",
+      "confidence": 0.7,
+      "supporting_excerpt": "we received 1124063 from medical reimbursements and 500 from the electric company"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Chris Germany",
+      "object": "not to go to Mexico with funds",
+      "confidence": 1.0,
+      "supporting_excerpt": "i was going to mexico with the dough but decided against it"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Chris Germany",
+      "object": "transferred 374900 to checking accounts",
+      "confidence": 0.6,
+      "supporting_excerpt": "i just transferred 374900 to to your checking accounts"
+    }
+  ],
+  "_source_id": "126807",
+  "_email_meta": {
+    "sender": "chris.germany@enron.com",
+    "recipient": "germanj@basf-corp.com, don_germany@notes.basf-corp.com",
+    "date": "2001-01-31"
+  }
+}

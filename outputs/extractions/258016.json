@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "Laura Luce",
+      "type": "person",
+      "aliases": [
+        "laura.luce@enron.com"
+      ]
+    },
+    {
+      "name": "Louise Kitchen",
+      "type": "person",
+      "aliases": [
+        "louise.kitchen@enron.com"
+      ]
+    },
+    {
+      "name": "Louise Hunter",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Trading and Origination Interface",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Trading Origination Track",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Laura Luce",
+      "object": "Louise Kitchen",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: laura.luce@enron.com\nTo: louise.kitchen@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Laura Luce",
+      "object": "meeting with Louise Kitchen",
+      "confidence": 0.9,
+      "supporting_excerpt": "louise  hunter and i would like to meet with you for 30 minutes"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Louise Hunter",
+      "object": "meeting request",
+      "confidence": 0.8,
+      "supporting_excerpt": "louise  hunter and i would like to meet with you"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Laura Luce",
+      "object": "Trading and Origination Interface",
+      "confidence": 0.6,
+      "supporting_excerpt": "to discuss 1 interface between trading and origination"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Laura Luce",
+      "object": "Trading Origination Track",
+      "confidence": 0.7,
+      "supporting_excerpt": "to discuss 1 interface between trading and origination 2 tradingorigination track"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Laura Luce",
+      "object": "Trading and Origination Interface",
+      "confidence": 0.7,
+      "supporting_excerpt": "as usual we have an opinion and i wanted to ensure you heard our view"
+    }
+  ],
+  "_source_id": "258016",
+  "_email_meta": {
+    "sender": "laura.luce@enron.com",
+    "recipient": "louise.kitchen@enron.com",
+    "date": "2001-09-17"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "Ron Matthews",
+      "type": "person",
+      "aliases": [
+        "ronald matthews",
+        "ron m",
+        "matthews ron"
+      ]
+    },
+    {
+      "name": "Madeleine Cardoso",
+      "type": "person",
+      "aliases": [
+        "madeleine cardoso"
+      ]
+    },
+    {
+      "name": "Enron Corp",
+      "type": "organization",
+      "aliases": [
+        "enron"
+      ]
+    },
+    {
+      "name": "TravelPark",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Houston to Albuquerque Travel",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Ron Matthews",
+      "object": "Madeleine Cardoso",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: ron.matthews@enron.com To: madeleine.cardoso@travelpark.com"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Ron Matthews",
+      "object": "Houston to Albuquerque Travel",
+      "confidence": 0.9,
+      "supporting_excerpt": "arrangements okay with me"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Madeleine Cardoso",
+      "object": "Ron Matthews",
+      "confidence": 0.9,
+      "supporting_excerpt": "please review the itinerary and let me know if i should issue the ticket"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Ron Matthews",
+      "object": "Enron Corp",
+      "confidence": 0.8,
+      "supporting_excerpt": "enron corp"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Madeleine Cardoso",
+      "object": "TravelPark",
+      "confidence": 0.5,
+      "supporting_excerpt": "madeleine.cardoso@travelpark.com"
+    }
+  ],
+  "_source_id": "400480",
+  "_email_meta": {
+    "sender": "ron.matthews@enron.com",
+    "recipient": "madeleine.cardoso@travelpark.com",
+    "date": "2001-10-23"
+  }
+}

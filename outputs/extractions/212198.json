@@ -1,0 +1,18 @@
+{
+  "entities": [],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "abnjlc@earthlink.net",
+      "object": "wwillis@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: abnjlc@earthlink.net\nTo: wwillis@enron.com"
+    }
+  ],
+  "_source_id": "212198",
+  "_email_meta": {
+    "sender": "abnjlc@earthlink.net",
+    "recipient": "wwillis@enron.com",
+    "date": "2001-11-18"
+  }
+}

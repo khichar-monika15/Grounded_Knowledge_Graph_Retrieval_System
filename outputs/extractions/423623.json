@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "NYMEX",
+      "type": "organization",
+      "aliases": [
+        "nymex"
+      ]
+    },
+    {
+      "name": "Sara Shackleton",
+      "type": "person",
+      "aliases": [
+        "sara.shackleton"
+      ]
+    },
+    {
+      "name": "Brian O'Neil",
+      "type": "person",
+      "aliases": [
+        "brian o01neil"
+      ]
+    },
+    {
+      "name": "John Ketcham",
+      "type": "person",
+      "aliases": [
+        "john ketcham"
+      ]
+    },
+    {
+      "name": "Oliver Alma",
+      "type": "person",
+      "aliases": [
+        "oliver alma"
+      ]
+    },
+    {
+      "name": "Man International Inc",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "NYMEX Membership Services",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "NYMEX Membership Services",
+      "object": "Sara Shackleton",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: exchangeinfo@nymex.com\nTo: sara.shackleton@enron.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Brian O'Neil",
+      "object": "switch of lessor",
+      "confidence": 0.8,
+      "supporting_excerpt": "brian o01neil adb508   switch of status"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "John Ketcham",
+      "object": "from a licensee member to a full member",
+      "confidence": 0.9,
+      "supporting_excerpt": "john ketcham jkay4667 from a licensee member to a full member with a20 qualified trader guarantee provided by man international inc"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Man International Inc",
+      "object": "qualified trader guarantee for John Ketcham",
+      "confidence": 0.9,
+      "supporting_excerpt": "qualified trader guarantee provided by man international inc"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Oliver Alma",
+      "object": "notice of intention to transfer membership privileges",
+      "confidence": 0.8,
+      "supporting_excerpt": "oliver alma olvr3260"
+    }
+  ],
+  "_source_id": "423623",
+  "_email_meta": {
+    "sender": "exchangeinfo@nymex.com",
+    "recipient": "sara.shackleton@enron.com",
+    "date": "2001-06-01"
+  }
+}

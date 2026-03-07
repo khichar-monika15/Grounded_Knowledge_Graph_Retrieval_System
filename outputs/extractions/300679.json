@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "Kay Mann",
+      "type": "person",
+      "aliases": [
+        "kay.mann@enron.com",
+        "kay mann"
+      ]
+    },
+    {
+      "name": "Suzanne Adams",
+      "type": "person",
+      "aliases": [
+        "suzanne.adams@enron.com"
+      ]
+    },
+    {
+      "name": "Carolyn Campbell",
+      "type": "person",
+      "aliases": [
+        "campbell carolyn",
+        "ccampbell@kslaw.com",
+        "carolyn m campbell"
+      ]
+    },
+    {
+      "name": "John Keffer",
+      "type": "person",
+      "aliases": [
+        "keffer john",
+        "jkeffer@kslaw.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "King & Spalding",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Fulbright & Jaworski",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "ENA",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "CAEDI",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "SEL",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "CAEDII",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Deal Closing Process",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kay Mann",
+      "object": "Suzanne Adams",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kay.mann@enron.com\nTo: suzanne.adams@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Kay Mann",
+      "object": "print and put these in a file folder",
+      "confidence": 0.9,
+      "supporting_excerpt": "this is a deal that will close soon  please print and put these in a file  folder"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carolyn Campbell",
+      "object": "Kay Mann",
+      "confidence": 0.8,
+      "supporting_excerpt": "campbell carolyn ccampbellkslawcom on 01032001  to kaymannenroncom"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carolyn Campbell",
+      "object": "John Keffer",
+      "confidence": 0.8,
+      "supporting_excerpt": "cc keffer john jkefferkslawcom"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Carolyn Campbell",
+      "object": "promissory note payable by CAEDI to ENA in the amount of 16100000",
+      "confidence": 0.7,
+      "supporting_excerpt": "enclosed for review are drafts of the following documents  1  promissory note payable by caedi to ena in the amount of 16100000"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Carolyn Campbell",
+      "object": "membership certificate no 1 in the name of ENA for 100 interest",
+      "confidence": 0.7,
+      "supporting_excerpt": "2  membership certificate no 1 in the name of ena for 100 interest"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Carolyn Campbell",
+      "object": "membership certificate no 2 in the name of ENA for 80 interest",
+      "confidence": 0.7,
+      "supporting_excerpt": "3  membership certificate no 2 in the name of ena for 80 interest"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Carolyn Campbell",
+      "object": "membership certificate no 3 in the name of SEL for 20 interest",
+      "confidence": 0.7,
+      "supporting_excerpt": "and 4  membership certificate no 3 in the name of sel for 20 interest"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Carolyn Campbell",
+      "object": "similar notes will be prepared for each of the three transactions",
+      "confidence": 0.9,
+      "supporting_excerpt": "similar notes will be prepared for each of the three transactions"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Carolyn Campbell",
+      "object": "similar membership certificates will be prepared for CAEDII",
+      "confidence": 0.8,
+      "supporting_excerpt": "similar membership certificates will be prepared for caedii"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Carolyn Campbell",
+      "object": "Fulbright & Jaworski will want to prepare promissory note payable by the LLC to SEL",
+      "confidence": 0.7,
+      "supporting_excerpt": "i have not prepared a draft of a promissory note payable by the llc to sel assuming that fulbright  jaworski will want to prepare this"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Carolyn Campbell",
+      "object": "comments at your convenience",
+      "confidence": 0.8,
+      "supporting_excerpt": "please advise of any comments at your convenience"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Carolyn Campbell",
+      "object": "forward drafts to George",
+      "confidence": 0.8,
+      "supporting_excerpt": "if acceptable i will forward drafts to george"
+    }
+  ],
+  "_source_id": "300679",
+  "_email_meta": {
+    "sender": "kay.mann@enron.com",
+    "recipient": "suzanne.adams@enron.com",
+    "date": "2001-01-03"
+  }
+}

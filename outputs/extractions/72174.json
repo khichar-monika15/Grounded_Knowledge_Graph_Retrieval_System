@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "Jeanne Bennett",
+      "type": "person",
+      "aliases": [
+        "jbennett"
+      ]
+    },
+    {
+      "name": "Harry Kingerski",
+      "type": "person",
+      "aliases": [
+        "harry.kingerski"
+      ]
+    },
+    {
+      "name": "J Dasovic",
+      "type": "person",
+      "aliases": [
+        "jdasovic"
+      ]
+    },
+    {
+      "name": "James D Steffes",
+      "type": "person",
+      "aliases": [
+        "james_d_steffes"
+      ]
+    },
+    {
+      "name": "Sid Fannie",
+      "type": "person",
+      "aliases": [
+        "sidcpuc"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "CPUC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "UDCs Retained Generation",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "CPUC Revenue Requirements Proceeding",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeanne Bennett",
+      "object": "Harry Kingerski",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jbennett@gmssr.com To: harry.kingerski@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeanne Bennett",
+      "object": "J Dasovic",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jbennett@gmssr.com To: jdasovic@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeanne Bennett",
+      "object": "James D Steffes",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jbennett@gmssr.com To: james_d_steffes@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jeanne Bennett",
+      "object": "UDCs Retained Generation",
+      "confidence": 0.7,
+      "supporting_excerpt": "attached is a ruling issued this afternoon setting a procedural schedule expedited for setting revenue requirements for the udcs retained generation"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Jeanne Bennett",
+      "object": "Enron",
+      "confidence": 0.9,
+      "supporting_excerpt": "please let me know as soon as possible if enron is interested in participating in this proceeding"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sid Fannie",
+      "object": "CPUC Revenue Requirements Proceeding",
+      "confidence": 0.4,
+      "supporting_excerpt": "original message from sid fannie mailtosidcpuccagov sent friday june 15 2001 306 pm to subject chief alj ruling in a0011038 et al"
+    }
+  ],
+  "_source_id": "72174",
+  "_email_meta": {
+    "sender": "jbennett@gmssr.com",
+    "recipient": "harry.kingerski@enron.com, jdasovic@enron.com, james_d_steffes@enron.com, ",
+    "date": "2001-06-15"
+  }
+}

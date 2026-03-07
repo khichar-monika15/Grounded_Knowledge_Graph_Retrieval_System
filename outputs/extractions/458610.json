@@ -1,0 +1,283 @@
+{
+  "entities": [
+    {
+      "name": "Chris Stokley",
+      "type": "person",
+      "aliases": [
+        "chris.stokley@enron.com",
+        "chris",
+        "stokley"
+      ]
+    },
+    {
+      "name": "Amy Fitzpatrick",
+      "type": "person",
+      "aliases": [
+        "amy.fitzpatrick@enron.com",
+        "amy",
+        "fitzpatrick"
+      ]
+    },
+    {
+      "name": "Caroline Emmert",
+      "type": "person",
+      "aliases": [
+        "emmert",
+        "caroline"
+      ]
+    },
+    {
+      "name": "Karen Jones",
+      "type": "person",
+      "aliases": [
+        "jones",
+        "karen"
+      ]
+    },
+    {
+      "name": "Sean Crandall",
+      "type": "person",
+      "aliases": [
+        "crandall",
+        "sean"
+      ]
+    },
+    {
+      "name": "Murray O'Neil",
+      "type": "person",
+      "aliases": [
+        "oneil",
+        "murray"
+      ]
+    },
+    {
+      "name": "Kathy Axford",
+      "type": "person",
+      "aliases": [
+        "axford",
+        "kathy"
+      ]
+    },
+    {
+      "name": "Jim Gilbert",
+      "type": "person",
+      "aliases": [
+        "gilbert",
+        "jim"
+      ]
+    },
+    {
+      "name": "John Malowney",
+      "type": "person",
+      "aliases": [
+        "malowney",
+        "john"
+      ]
+    },
+    {
+      "name": "Phil Platter",
+      "type": "person",
+      "aliases": [
+        "platter",
+        "phillip"
+      ]
+    },
+    {
+      "name": "Diana Scholtes",
+      "type": "person",
+      "aliases": [
+        "scholtes",
+        "diana"
+      ]
+    },
+    {
+      "name": "Julie Sarnowski",
+      "type": "person",
+      "aliases": [
+        "sarnowski",
+        "julie"
+      ]
+    },
+    {
+      "name": "Lysa Tracy",
+      "type": "person",
+      "aliases": [
+        "tracy",
+        "lysa"
+      ]
+    },
+    {
+      "name": "Les Rawson",
+      "type": "person",
+      "aliases": [
+        "rawson",
+        "lester"
+      ]
+    },
+    {
+      "name": "Jeff Richter",
+      "type": "person",
+      "aliases": [
+        "richter",
+        "jeff"
+      ]
+    },
+    {
+      "name": "Heather Dunton",
+      "type": "person",
+      "aliases": [
+        "dunton",
+        "heather"
+      ]
+    },
+    {
+      "name": "Tim Belden",
+      "type": "person",
+      "aliases": [
+        "belden"
+      ]
+    },
+    {
+      "name": "Christopher Calger",
+      "type": "person",
+      "aliases": [
+        "calger"
+      ]
+    },
+    {
+      "name": "World Trade Center Parking",
+      "type": "topic",
+      "aliases": [
+        "wtc parking",
+        "wtc building parking"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Chris Stokley",
+      "object": "Amy Fitzpatrick",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: chris.stokley@enron.com\nTo: amy.fitzpatrick@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Caroline Emmert",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "as caroline has declined you are next on the list"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Caroline Emmert",
+      "object": "World Trade Center Parking",
+      "confidence": 1.0,
+      "supporting_excerpt": "i do not require a wtc building parking space at this time"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Chris Stokley",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "1  chris stokley"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Karen Jones",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "karen jones"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sean Crandall",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "sean crandall"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Murray O'Neil",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "murray oneil"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kathy Axford",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "kathy axford"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jim Gilbert",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "jim gilbert"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "John Malowney",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "2  john malowney"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Phil Platter",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "3  phil platter"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Diana Scholtes",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "4  diana scholtes"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Julie Sarnowski",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "5  julie sarnowski"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Lysa Tracy",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "6  lysa tracy"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Les Rawson",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "7  les rawson"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jeff Richter",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "8  jeff richter"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Heather Dunton",
+      "object": "World Trade Center Parking",
+      "confidence": 0.6,
+      "supporting_excerpt": "9  heather dunton"
+    }
+  ],
+  "_source_id": "458610",
+  "_email_meta": {
+    "sender": "chris.stokley@enron.com",
+    "recipient": "amy.fitzpatrick@enron.com",
+    "date": "2001-08-28"
+  }
+}

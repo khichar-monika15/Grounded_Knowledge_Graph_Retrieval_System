@@ -1,0 +1,151 @@
+{
+  "entities": [
+    {
+      "name": "Darron Giron",
+      "type": "person",
+      "aliases": [
+        "darron c giron",
+        "darron.giron@enron.com"
+      ]
+    },
+    {
+      "name": "Dawn Kenne",
+      "type": "person",
+      "aliases": [
+        "dawn.kenne@enron.com"
+      ]
+    },
+    {
+      "name": "Carlos Giron",
+      "type": "person",
+      "aliases": [
+        "carlosgironpsiusacom"
+      ]
+    },
+    {
+      "name": "Bishop Keller",
+      "type": "person",
+      "aliases": [
+        "bkellerpsiusacom"
+      ]
+    },
+    {
+      "name": "Angela Teer Williams",
+      "type": "person",
+      "aliases": [
+        "angelateerwilliamsgtenet"
+      ]
+    },
+    {
+      "name": "Glenn Home",
+      "type": "person",
+      "aliases": [
+        "glennhomecom"
+      ]
+    },
+    {
+      "name": "Ralph Mayer",
+      "type": "person",
+      "aliases": [
+        "ralphmayershotmailcom"
+      ]
+    },
+    {
+      "name": "Y Haynes",
+      "type": "person",
+      "aliases": [
+        "yhaynesmindspringcom"
+      ]
+    },
+    {
+      "name": "Mike Kotar",
+      "type": "person",
+      "aliases": [
+        "mikekotarpsiusacom"
+      ]
+    },
+    {
+      "name": "Ronnie Giron",
+      "type": "person",
+      "aliases": [
+        "ronniegironyahoocom"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Darron Giron",
+      "object": "Dawn Kenne",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: darron.giron@enron.com\nTo: dawn.kenne@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carlos Giron",
+      "object": "Darron Giron",
+      "confidence": 0.9,
+      "supporting_excerpt": "forwarded by darron c gironhouect on 04262001      carlos giron carlosgironpsiusacom on 04232001  to darroncgironenroncom"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carlos Giron",
+      "object": "Angela Teer Williams",
+      "confidence": 0.8,
+      "supporting_excerpt": "to darroncgironenroncom angelateerwilliamsgtenet glennhomecom  ralphmayershotmailcom yhaynesmindspringcom mikekotarpsiusacom  ronniegironyahoocom"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carlos Giron",
+      "object": "Glenn Home",
+      "confidence": 0.8,
+      "supporting_excerpt": "to darroncgironenroncom angelateerwilliamsgtenet glennhomecom  ralphmayershotmailcom yhaynesmindspringcom mikekotarpsiusacom  ronniegironyahoocom"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carlos Giron",
+      "object": "Ralph Mayer",
+      "confidence": 0.8,
+      "supporting_excerpt": "to darroncgironenroncom angelateerwilliamsgtenet glennhomecom  ralphmayershotmailcom yhaynesmindspringcom mikekotarpsiusacom  ronniegironyahoocom"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carlos Giron",
+      "object": "Y Haynes",
+      "confidence": 0.8,
+      "supporting_excerpt": "to darroncgironenroncom angelateerwilliamsgtenet glennhomecom  ralphmayershotmailcom yhaynesmindspringcom mikekotarpsiusacom  ronniegironyahoocom"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carlos Giron",
+      "object": "Mike Kotar",
+      "confidence": 0.8,
+      "supporting_excerpt": "to darroncgironenroncom angelateerwilliamsgtenet glennhomecom  ralphmayershotmailcom yhaynesmindspringcom mikekotarpsiusacom  ronniegironyahoocom"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carlos Giron",
+      "object": "Ronnie Giron",
+      "confidence": 0.8,
+      "supporting_excerpt": "to darroncgironenroncom angelateerwilliamsgtenet glennhomecom  ralphmayershotmailcom yhaynesmindspringcom mikekotarpsiusacom  ronniegironyahoocom"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Bishop Keller",
+      "object": "Carlos Giron",
+      "confidence": 0.8,
+      "supporting_excerpt": "from bishop keller bkellerpsiusacom to carlosgironpsiusacom"
+    }
+  ],
+  "_source_id": "136369",
+  "_email_meta": {
+    "sender": "darron.giron@enron.com",
+    "recipient": "dawn.kenne@enron.com",
+    "date": "2001-04-26"
+  }
+}

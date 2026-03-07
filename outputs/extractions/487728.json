@@ -1,0 +1,158 @@
+{
+  "entities": [
+    {
+      "name": "Matt Smith",
+      "type": "person",
+      "aliases": [
+        "smith matt",
+        "mat"
+      ]
+    },
+    {
+      "name": "James Marlo C",
+      "type": "person",
+      "aliases": [
+        "marlo",
+        "james marlo c"
+      ]
+    },
+    {
+      "name": "Patti Sullivan",
+      "type": "person",
+      "aliases": [
+        "sullivan patti"
+      ]
+    },
+    {
+      "name": "Jane Tholt",
+      "type": "person",
+      "aliases": [
+        "tholt jane m"
+      ]
+    },
+    {
+      "name": "Sherry Anastas",
+      "type": "person",
+      "aliases": [
+        "anastas sherry"
+      ]
+    },
+    {
+      "name": "Melanie Harwell",
+      "type": "person",
+      "aliases": [
+        "harwell melanie"
+      ]
+    },
+    {
+      "name": "Laurie Ellis",
+      "type": "person",
+      "aliases": [
+        "ellis laurie"
+      ]
+    },
+    {
+      "name": "Lisa Valderrama",
+      "type": "person",
+      "aliases": [
+        "valderrama lisa"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Southern California Gas Company",
+      "type": "organization",
+      "aliases": [
+        "so cal"
+      ]
+    },
+    {
+      "name": "EES",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "SoCal Imbalance Trading",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "West Imbalance Trades",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "July 2001 Imbalance",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Matt Tholt",
+      "object": "James Marlo C",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: m..tholt@enron.com To: c..james@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Matt Smith",
+      "object": "responsible for socal imbalance trading",
+      "confidence": 0.6,
+      "supporting_excerpt": "matt smith is now responsible for socal imbalance trading"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "James Marlo C",
+      "object": "July 2001 Imbalance",
+      "confidence": 0.7,
+      "supporting_excerpt": "the imbalance trade for july 2001 is deal 1020741 and is to southern california gas company for 320000 mmbtu"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "James Marlo C",
+      "object": "Southern California Gas Company",
+      "confidence": 0.7,
+      "supporting_excerpt": "the imbalance trade for july 2001 is deal 1020741 and is to southern california gas company for 320000 mmbtu"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Patti Sullivan",
+      "object": "EES",
+      "confidence": 0.7,
+      "supporting_excerpt": "the buy back tkt for ees has been put in for a volume of 276441 for the july imbalance"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "James Marlo C",
+      "object": "verification of deal placement",
+      "confidence": 0.6,
+      "supporting_excerpt": "did these 2 deals get put in correctly please let me know"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "James Marlo C",
+      "object": "Matt Smith",
+      "confidence": 0.6,
+      "supporting_excerpt": "original message from james marlo c sent monday september 10 2001 232 pm to smith matt"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Matt Smith",
+      "object": "James Marlo C",
+      "confidence": 0.6,
+      "supporting_excerpt": "original message from smith matt sent thursday august 30 2001 105 pm to james marlo c"
+    }
+  ],
+  "_source_id": "487728",
+  "_email_meta": {
+    "sender": "m..tholt@enron.com",
+    "recipient": "c..james@enron.com",
+    "date": "2001-09-13"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "Cara Semperger",
+      "type": "person",
+      "aliases": [
+        "cara.semperger@enron.com"
+      ]
+    },
+    {
+      "name": "Thresa Allen",
+      "type": "person",
+      "aliases": [
+        "thresa.allen@enron.com"
+      ]
+    },
+    {
+      "name": "Monica Lande",
+      "type": "person",
+      "aliases": [
+        "monica.lande@enron.com"
+      ]
+    },
+    {
+      "name": "Valarie Sabo",
+      "type": "person",
+      "aliases": [
+        "valarie.sabo@enron.com"
+      ]
+    },
+    {
+      "name": "Index Multiplier Adjustment",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Cara Semperger",
+      "object": "Thresa Allen",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: cara.semperger@enron.com\nTo: thresa.allen@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Cara Semperger",
+      "object": "Monica Lande",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: cara.semperger@enron.com\nTo: monica.lande@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Cara Semperger",
+      "object": "Valarie Sabo",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: cara.semperger@enron.com\nTo: valarie.sabo@enron.com"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Cara Semperger",
+      "object": "changed the index multiplier for all of the days in january",
+      "confidence": 1.0,
+      "supporting_excerpt": "i have changed the index multiplier for all of the days in january"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Cara Semperger",
+      "object": "changed days that were not at a multiplier of 105 to that amount",
+      "confidence": 0.7,
+      "supporting_excerpt": "the days that were not at a mulitplier of 105 have been changed to that amount"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Cara Semperger",
+      "object": "there was no deal in for 19 and 2 identical deals for 110",
+      "confidence": 0.7,
+      "supporting_excerpt": "there was no deal in for 19 and 2 identical deals for 110"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Cara Semperger",
+      "object": "modified one of the 110 days to the 19 amount",
+      "confidence": 0.7,
+      "supporting_excerpt": "i modified one of the 110 days to the 19 amount"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Cara Semperger",
+      "object": "will begin autoscheduling these shortly so the price will show",
+      "confidence": 0.9,
+      "supporting_excerpt": "i will begin autoscheduling these shortly so the price will show"
+    }
+  ],
+  "_source_id": "463221",
+  "_email_meta": {
+    "sender": "cara.semperger@enron.com",
+    "recipient": "thresa.allen@enron.com, monica.lande@enron.com, valarie.sabo@enron.com, ",
+    "date": "2001-01-26"
+  }
+}

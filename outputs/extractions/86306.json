@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "Bryan Denney",
+      "type": "person",
+      "aliases": [
+        "bdenney",
+        "bryan"
+      ]
+    },
+    {
+      "name": "Clint Dean",
+      "type": "person",
+      "aliases": [
+        "clint.dean"
+      ]
+    },
+    {
+      "name": "Hyperformix Inc",
+      "type": "organization",
+      "aliases": [
+        "hyperformix"
+      ]
+    },
+    {
+      "name": "Enron Corp",
+      "type": "organization",
+      "aliases": [
+        "enron"
+      ]
+    },
+    {
+      "name": "Controller",
+      "type": "role",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Clint Dean",
+      "object": "Bryan Denney",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: bdenney@hyperformix.com To: clint.dean@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Bryan Denney",
+      "object": "Controller",
+      "confidence": 0.9,
+      "supporting_excerpt": "bryan denney  controller  hyperformix inc"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Bryan Denney",
+      "object": "Hyperformix Inc",
+      "confidence": 0.9,
+      "supporting_excerpt": "bryan denney  controller  hyperformix inc  4301 westbank dr  bldg a suite 300  austin tx 78746"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Clint Dean",
+      "object": "Bryan Denney",
+      "confidence": 0.9,
+      "supporting_excerpt": "are you going to be able to go to the game with me this weekend"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Bryan Denney",
+      "object": "Clint Dean",
+      "confidence": 1.0,
+      "supporting_excerpt": "unfortunately no  we have friends coming in townscott and mandy from dallas  we thought the 4 of us were going to be able to go to the game  however scotts hookup for tickets fell through  therefore we will be watching it at my house  it would probably be rude of me to go with you and leave them there"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Bryan Denney",
+      "object": "Clint Dean",
+      "confidence": 0.9,
+      "supporting_excerpt": "you should come over after the game  and you are welcome to stay with us saturday night"
+    }
+  ],
+  "_source_id": "86306",
+  "_email_meta": {
+    "sender": "bdenney@hyperformix.com",
+    "recipient": "clint.dean@enron.com",
+    "date": "2001-10-15"
+  }
+}

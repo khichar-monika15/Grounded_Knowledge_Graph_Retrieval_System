@@ -1,0 +1,151 @@
+{
+  "entities": [
+    {
+      "name": "Rick Buy",
+      "type": "person",
+      "aliases": [
+        "rick.buy@enron.com",
+        "rick buyhouect"
+      ]
+    },
+    {
+      "name": "Jeremy Blachman",
+      "type": "person",
+      "aliases": [
+        "jeremy.blachman@enron.com"
+      ]
+    },
+    {
+      "name": "Michael Tribolet",
+      "type": "person",
+      "aliases": [
+        "tribolet michael",
+        "michael triboletenronenronxgate"
+      ]
+    },
+    {
+      "name": "Harold Buchanan",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Dalia Minal",
+      "type": "person",
+      "aliases": [
+        "minal dalia",
+        "minal daliahouees"
+      ]
+    },
+    {
+      "name": "Carol Moffett",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Marty Sunde",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Vladimir Gorny",
+      "type": "person",
+      "aliases": [
+        "gorny vladimir"
+      ]
+    },
+    {
+      "name": "James Hachen",
+      "type": "person",
+      "aliases": [
+        "hachen james"
+      ]
+    },
+    {
+      "name": "James Gorte",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "David Ruane",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark Bradford",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron Energy Services",
+      "type": "organization",
+      "aliases": [
+        "EES"
+      ]
+    },
+    {
+      "name": "MIT Sloan School",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Executive MBA Program",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Harold Buchanan MBA Program",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Rick Buy",
+      "object": "Jeremy Blachman",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: rick.buy@enron.com\nTo: jeremy.blachman@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Harold Buchanan",
+      "object": "MIT Sloan School Executive MBA Program",
+      "confidence": 0.4,
+      "supporting_excerpt": "we are pleased to announce that harold buchanan will attend mit sloan school executive mba program"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Harold Buchanan",
+      "object": "leaving for Boston in April",
+      "confidence": 0.5,
+      "supporting_excerpt": "harold and his family will leave for boston in april"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Marty Sunde",
+      "object": "leadership of Harold's organization",
+      "confidence": 0.7,
+      "supporting_excerpt": "marty sunde will be assume leadership of harolds organization until a replacement for harold is found"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Harold Buchanan",
+      "object": "work on special projects for EES",
+      "confidence": 0.9,
+      "supporting_excerpt": "in the meantime he will work on special projects for ees"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Harold Buchanan",
+      "object": "return to Enron in 2002",
+      "confidence": 0.3,
+      "supporting_excerpt": "we look forward to his return to enron in 2002"
+    }
+  ],
+  "_source_id": "37681",
+  "_email_meta": {
+    "sender": "rick.buy@enron.com",
+    "recipient": "jeremy.blachman@enron.com",
+    "date": "2001-02-23"
+  }
+}

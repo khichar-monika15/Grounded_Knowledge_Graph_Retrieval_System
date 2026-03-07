@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "ESPN",
+      "type": "organization",
+      "aliases": [
+        "espncom",
+        "ESPN.com"
+      ]
+    },
+    {
+      "name": "NPD Group",
+      "type": "organization",
+      "aliases": [
+        "NPD",
+        "npd"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "ESPN",
+      "object": "trading@williams@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: espnnews@espn.go.com To: trading <.williams@enron.com>"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "NPD Group",
+      "object": "top ten marketing research company",
+      "confidence": 0.6,
+      "supporting_excerpt": "the npd group is a top ten marketing research company"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "NPD Group",
+      "object": "online research membership with cash prize opportunity",
+      "confidence": 0.9,
+      "supporting_excerpt": "if you join npds online research team you could win 1000"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "ESPN",
+      "object": "privacy protection and confidentiality",
+      "confidence": 0.4,
+      "supporting_excerpt": "your privacy is of great concern to you and to npd any information you provide will be kept strictly confidential we will never try to sell you anything and we will never sell your personal information"
+    }
+  ],
+  "_source_id": "508059",
+  "_email_meta": {
+    "sender": "espnnews@espn.go.com",
+    "recipient": "trading <.williams@enron.com>",
+    "date": "2001-05-22"
+  }
+}

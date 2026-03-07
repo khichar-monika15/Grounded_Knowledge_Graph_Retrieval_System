@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "Shifali Sharma",
+      "type": "person",
+      "aliases": [
+        "shifali.sharma@enron.com"
+      ]
+    },
+    {
+      "name": "Greg Whalley",
+      "type": "person",
+      "aliases": [
+        "greg.whalley@enron.com"
+      ]
+    },
+    {
+      "name": "Michelle Nelson",
+      "type": "person",
+      "aliases": [
+        "x58091"
+      ]
+    },
+    {
+      "name": "John Swinney",
+      "type": "person",
+      "aliases": [
+        "x39111"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Shifali Sharma",
+      "object": "Greg Whalley",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: shifali.sharma@enron.com\nTo: greg.whalley@enron.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Shifali Sharma",
+      "object": "out of office",
+      "confidence": 0.9,
+      "supporting_excerpt": "ill be out of the office from the 5th of april  i wont be back till the  16th"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Michelle Nelson",
+      "object": "run daily book for Greg Whalley",
+      "confidence": 0.9,
+      "supporting_excerpt": "michelle nelson x58091 will run your daily book"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "John Swinney",
+      "object": "available to answer questions",
+      "confidence": 1.0,
+      "supporting_excerpt": "john swinney  x39111 will be available to answer any questions you may have"
+    }
+  ],
+  "_source_id": "499072",
+  "_email_meta": {
+    "sender": "shifali.sharma@enron.com",
+    "recipient": "greg.whalley@enron.com",
+    "date": "2001-04-03"
+  }
+}

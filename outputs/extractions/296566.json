@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "T. Lucci",
+      "type": "person",
+      "aliases": [
+        "t..lucci@enron.com"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "T. Lucci",
+      "object": "Christina",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: t..lucci@enron.com To: christina_122367@hotmail.com"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "T. Lucci",
+      "object": "meeting at T. Lucci's house around 9:00 PM",
+      "confidence": 0.9,
+      "supporting_excerpt": "do you want to meet me at my house around 900"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "T. Lucci",
+      "object": "going to the gym after work",
+      "confidence": 0.6,
+      "supporting_excerpt": "im going to hit the gym after work"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "T. Lucci",
+      "object": "meeting a friend for a drink",
+      "confidence": 0.7,
+      "supporting_excerpt": "then i was going to meet a friend for a drink"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bob",
+      "object": "staying in Boston for another night",
+      "confidence": 0.3,
+      "supporting_excerpt": "bob is staying in boston for another night"
+    }
+  ],
+  "_source_id": "296566",
+  "_email_meta": {
+    "sender": "t..lucci@enron.com",
+    "recipient": "christina_122367@hotmail.com",
+    "date": "2001-10-25"
+  }
+}

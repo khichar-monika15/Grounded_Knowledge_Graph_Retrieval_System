@@ -1,0 +1,113 @@
+{
+  "entities": [
+    {
+      "name": "Steven Kean",
+      "type": "person",
+      "aliases": [
+        "steven.kean@enron.com",
+        "steven j kean",
+        "steve"
+      ]
+    },
+    {
+      "name": "Ursula Brenner",
+      "type": "person",
+      "aliases": [
+        "ursula.brenner@enron.com"
+      ]
+    },
+    {
+      "name": "Steve Reynolds",
+      "type": "person",
+      "aliases": [
+        "sreynostatewyus"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Wyoming Energy Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Strategic Model",
+      "type": "topic",
+      "aliases": [
+        "virtual integration of market forces"
+      ]
+    },
+    {
+      "name": "Open Access Transmission System",
+      "type": "topic",
+      "aliases": [
+        "open access on the transmission system"
+      ]
+    },
+    {
+      "name": "Wyoming",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Steven Kean",
+      "object": "Ursula Brenner",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: steven.kean@enron.com To: ursula.brenner@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Steven Kean",
+      "object": "Ursula Brenner",
+      "confidence": 0.6,
+      "supporting_excerpt": "could you please put together a combined presentation enrons strategy and the need for open access on the transmission system"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Steven Kean",
+      "object": "Enron Strategic Model",
+      "confidence": 0.4,
+      "supporting_excerpt": "if you set the stage with a presentation of enron strategy then we will discuss how a state with its agencies and auathority can play a role in this evolution"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Steven Kean",
+      "object": "Ursula Brenner",
+      "confidence": 0.6,
+      "supporting_excerpt": "for the speaking engagement next wednesday i would like you to focus upon the enron strategic model of virtual integration of market forces in the evolution of energy development"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steven Kean",
+      "object": "Wyoming",
+      "confidence": 0.4,
+      "supporting_excerpt": "wyoming represents a huge material resource base and the commission is charged with the development and promotion of such"
+    },
+    {
+      "claim_type": "authorized",
+      "subject": "Steven Kean",
+      "object": "Ursula Brenner",
+      "confidence": 0.7,
+      "supporting_excerpt": "i have set your time for 45 minutes which can include a short qand a period"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steven Kean",
+      "object": "Wyoming Energy Commission",
+      "confidence": 0.4,
+      "supporting_excerpt": "the commission is charged with the development and promotion of such"
+    }
+  ],
+  "_source_id": "251242",
+  "_email_meta": {
+    "sender": "steven.kean@enron.com",
+    "recipient": "ursula.brenner@enron.com",
+    "date": "2001-05-24"
+  }
+}

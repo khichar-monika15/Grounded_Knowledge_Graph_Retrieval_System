@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "Janel Guerrero",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jeff Dasovich",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "evil empire"
+      ]
+    },
+    {
+      "name": "Independent Power Producers of New York",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "New York Energy Policy",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Janel Guerrero",
+      "object": "Jeff Dasovich",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: janel.guerrero@enron.com\nTo: jeff.dasovich@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Janel Guerrero",
+      "object": "Jeff Dasovich",
+      "confidence": 0.6,
+      "supporting_excerpt": "good to talk with you on the phone today"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Janel Guerrero",
+      "object": "Enron",
+      "confidence": 0.4,
+      "supporting_excerpt": "im glad youre taking the opportunity to escape the evil empire for a few days"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Janel Guerrero",
+      "object": "Independent Power Producers of New York",
+      "confidence": 0.4,
+      "supporting_excerpt": "i am attaching the messaging points put forth by the independent power producers of new york"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Janel Guerrero",
+      "object": "New York Energy Policy",
+      "confidence": 0.4,
+      "supporting_excerpt": "the twopage summary of the focus group research we did back in april"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Janel Guerrero",
+      "object": "Jeff Dasovich",
+      "confidence": 0.6,
+      "supporting_excerpt": "i will either foward you alecs energy day itinerary or fax it to you"
+    }
+  ],
+  "_source_id": "62404",
+  "_email_meta": {
+    "sender": "janel.guerrero@enron.com",
+    "recipient": "jeff.dasovich@enron.com",
+    "date": "2001-07-30"
+  }
+}

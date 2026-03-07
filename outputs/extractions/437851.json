@@ -1,0 +1,152 @@
+{
+  "entities": [
+    {
+      "name": "Samantha Slater",
+      "type": "person",
+      "aliases": [
+        "sslater",
+        "samantha m slater"
+      ]
+    },
+    {
+      "name": "Richard Shapiro",
+      "type": "person",
+      "aliases": [
+        "richard.shapiro",
+        "rshapiro"
+      ]
+    },
+    {
+      "name": "Billy Stiles",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Scott Smith",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Chairman McCarty",
+      "type": "person",
+      "aliases": [
+        "mccarty"
+      ]
+    },
+    {
+      "name": "Electric Power Supply Association",
+      "type": "organization",
+      "aliases": [
+        "EPSA"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Florida Energy 2020 Study Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Wisconsin PSC",
+      "type": "organization",
+      "aliases": [
+        "wisconsin psc"
+      ]
+    },
+    {
+      "name": "Indiana URC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "State Issues Summer Membership Meeting",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Competition in Wholesale Power Markets Panel",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Panel Moderator Recruitment",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Samantha Slater",
+      "object": "Richard Shapiro",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sslater@epsa.org To: richard.shapiro@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Samantha Slater",
+      "object": "manager of state regional affairs",
+      "confidence": 0.7,
+      "supporting_excerpt": "samantha m slater manager of state regional affairs electric power supply association"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Samantha Slater",
+      "object": "Electric Power Supply Association",
+      "confidence": 0.6,
+      "supporting_excerpt": "samantha m slater manager of state regional affairs electric power supply association"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Samantha Slater",
+      "object": "Richard Shapiro",
+      "confidence": 0.6,
+      "supporting_excerpt": "would you be interested in moderating the panel on competition in wholesale power markets at the state issues summer membership meeting"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Samantha Slater",
+      "object": "Billy Stiles",
+      "confidence": 0.6,
+      "supporting_excerpt": "heres billy stiles bio"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Billy Stiles",
+      "object": "Florida Energy 2020 Study Commission",
+      "confidence": 0.6,
+      "supporting_excerpt": "billy stiles florida energy 2020 study commission"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Scott Smith",
+      "object": "Wisconsin PSC",
+      "confidence": 0.6,
+      "supporting_excerpt": "scott smith wisconsin psc"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Samantha Slater",
+      "object": "Chairman McCarty",
+      "confidence": 0.8,
+      "supporting_excerpt": "hopefully chairman mccarty can join us"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Samantha Slater",
+      "object": "Indiana URC speaker",
+      "confidence": 0.3,
+      "supporting_excerpt": "im still working on a speaker from indiana urc"
+    }
+  ],
+  "_source_id": "437851",
+  "_email_meta": {
+    "sender": "sslater@epsa.org",
+    "recipient": "richard.shapiro@enron.com",
+    "date": "2001-07-11"
+  }
+}

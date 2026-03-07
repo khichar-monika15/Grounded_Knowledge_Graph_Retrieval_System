@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "Kenneth Lay",
+      "type": "person",
+      "aliases": [
+        "kenneth.lay@enron.com"
+      ]
+    },
+    {
+      "name": "K. Allen",
+      "type": "person",
+      "aliases": [
+        "k..allen@enron.com"
+      ]
+    },
+    {
+      "name": "Sally Beck",
+      "type": "person",
+      "aliases": [
+        "sally.beck@enron.com"
+      ]
+    },
+    {
+      "name": "Tim Belden",
+      "type": "person",
+      "aliases": [
+        "tim.belden@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Managing Directors Quarterly Meetings",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kenneth Lay",
+      "object": "K. Allen",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kenneth.lay@enron.com\nTo: k..allen@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Kenneth Lay",
+      "object": "Sally Beck",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kenneth.lay@enron.com\nTo: sally.beck@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Kenneth Lay",
+      "object": "Tim Belden",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kenneth.lay@enron.com\nTo: tim.belden@enron.com"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Kenneth Lay",
+      "object": "Managing Directors Quarterly Meetings",
+      "confidence": 0.9,
+      "supporting_excerpt": "as announced earlier we will be bringing all managing directors together on a quarterly basis"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Kenneth Lay",
+      "object": "Hold first Monday of every quarter from 8:30 am for meetings",
+      "confidence": 0.9,
+      "supporting_excerpt": "please hold open the first monday of every quarter from 830 am to  pm for this purpose"
+    },
+    {
+      "claim_type": "informed",
+      "subject": "Kenneth Lay",
+      "object": "First meeting scheduled for Tuesday October 2nd",
+      "confidence": 0.8,
+      "supporting_excerpt": "however our first meeting will be on tuesday october 2nd"
+    }
+  ],
+  "_source_id": "273479",
+  "_email_meta": {
+    "sender": "kenneth.lay@enron.com",
+    "recipient": "k..allen@enron.com, sally.beck@enron.com, tim.belden@enron.com, ",
+    "date": "2001-08-24"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "Kimberly Watson",
+      "type": "person",
+      "aliases": [
+        "kim",
+        "kimberly.watson@enron.com"
+      ]
+    },
+    {
+      "name": "Vince Kaminski",
+      "type": "person",
+      "aliases": [
+        "vince",
+        "vince.kaminski@enron.com",
+        "vince j kaminski"
+      ]
+    },
+    {
+      "name": "Shirley Crenshaw",
+      "type": "person",
+      "aliases": [
+        "shirley"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Prototype Model",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kimberly Watson",
+      "object": "Vince Kaminski",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kimberly.watson@enron.com\nTo: vince.kaminski@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kimberly Watson",
+      "object": "Shirley Crenshaw",
+      "confidence": 0.4,
+      "supporting_excerpt": "we will work with shirley while keeping you and krishna informed of the timing and location of the move"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kimberly Watson",
+      "object": "Krishna",
+      "confidence": 0.4,
+      "supporting_excerpt": "we will work with shirley while keeping you and krishna informed of the timing and location of the move"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kimberly Watson",
+      "object": "Youyi",
+      "confidence": 0.3,
+      "supporting_excerpt": "i will also speak with youyi tomorrow about our plans"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Vince Kaminski",
+      "object": "Youyi desk arrangement",
+      "confidence": 0.7,
+      "supporting_excerpt": "i dont see any problem for the time being he can keep his desk on the 19th floor as well and the same phone number"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Kimberly Watson",
+      "object": "Moving Youyi to Kimberly Watson's floor",
+      "confidence": 0.6,
+      "supporting_excerpt": "i spoke with krishna prior to him leaving for india about the possibility of moving youyi up to our floor so that we can work closer with him"
+    },
+    {
+      "claim_type": "agreed",
+      "subject": "Krishna",
+      "object": "Moving Youyi to Kimberly Watson's floor",
+      "confidence": 0.8,
+      "supporting_excerpt": "krishna thought that this would be a good idea"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Youyi",
+      "object": "Prototype Model",
+      "confidence": 0.6,
+      "supporting_excerpt": "it would be great to have youyi with us soon so that he will be intimately involved with the whole approach of our prototype model"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Kimberly Watson",
+      "object": "Vince Kaminski approval for speaking with Youyi",
+      "confidence": 0.6,
+      "supporting_excerpt": "would you mind if i speak with youyi and begin the paperwork for moving him onto our floor"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Vince Kaminski",
+      "object": "Shirley Crenshaw",
+      "confidence": 0.7,
+      "supporting_excerpt": "please ask your assistant to call shirley and arrange the move"
+    }
+  ],
+  "_source_id": "210015",
+  "_email_meta": {
+    "sender": "kimberly.watson@enron.com",
+    "recipient": "vince.kaminski@enron.com",
+    "date": "2001-01-16"
+  }
+}

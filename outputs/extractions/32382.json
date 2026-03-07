@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "eSource",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "LexisNexis",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Stephanie E Taylor",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron Houston",
+      "type": "organization",
+      "aliases": [
+        "all.houston@enron.com"
+      ]
+    },
+    {
+      "name": "LexisNexis Advanced Training",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "LexisNexis Public Records Training",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "enron.announcements@enron.com",
+      "object": "Enron Houston",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: enron.announcements@enron.com\nTo: all.houston@enron.com"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "eSource",
+      "object": "LexisNexis Advanced Training",
+      "confidence": 0.9,
+      "supporting_excerpt": "esource presents lexisnexis training  advanced  this session will cover advanced searching tips"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "eSource",
+      "object": "LexisNexis Public Records Training",
+      "confidence": 0.8,
+      "supporting_excerpt": "attend our lexisnexis public records clinic   may 18      noon      eb572"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Stephanie E Taylor",
+      "object": "reservation contact",
+      "confidence": 1.0,
+      "supporting_excerpt": "to reserve a seat please call stephanie e taylor at  57928"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "LexisNexis",
+      "object": "premier provider of public record information",
+      "confidence": 0.6,
+      "supporting_excerpt": "lexisnexis is the premier provider of public record information"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "LexisNexis Advanced Training",
+      "object": "May 18, 8:30 AM, EB572",
+      "confidence": 0.6,
+      "supporting_excerpt": "attend our lexisnexis advanced clinic       may 18     830      eb572"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "LexisNexis Public Records Training",
+      "object": "May 18, noon, EB572",
+      "confidence": 0.6,
+      "supporting_excerpt": "attend our lexisnexis public records clinic   may 18      noon      eb572"
+    }
+  ],
+  "_source_id": "32382",
+  "_email_meta": {
+    "sender": "enron.announcements@enron.com",
+    "recipient": "all.houston@enron.com",
+    "date": "2001-05-10"
+  }
+}

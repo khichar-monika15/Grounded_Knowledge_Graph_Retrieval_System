@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "R. Rich",
+      "type": "person",
+      "aliases": [
+        "rrich"
+      ]
+    },
+    {
+      "name": "Jeffrey Sherman",
+      "type": "person",
+      "aliases": [
+        "jsherman"
+      ]
+    },
+    {
+      "name": "Mark T. Mitchell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "El Paso Merchant Energy LP",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Federal Energy Regulatory Commission",
+      "type": "organization",
+      "aliases": [
+        "FERC"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Skadden",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Bracewell & Patterson",
+      "type": "organization",
+      "aliases": [
+        "BracePatt"
+      ]
+    },
+    {
+      "name": "FERC Regulatory Filing",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "R. Rich",
+      "object": "jdasovic@enron.com, jsteffe@enron.com, jthome@enron.com, llawner@enron.com, lyoho@enron.com, rebecca w. cantre, skean@enron.com",
+      "confidence": 0.6,
+      "supporting_excerpt": "From: rrich@bracepatt.com To: jdasovic@enron.com, jsteffe@enron.com, jthome@enron.com, llawner@enron.com, lyoho@enron.com, cantrell, rebecca w. </o=enron/ou=na/cn=recipients/cn=bcantre>, skean@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mark T. Mitchell",
+      "object": "rebuttal testimony",
+      "confidence": 0.7,
+      "supporting_excerpt": "attached is the rebuttal testimony of mark t mitchell and cover letter being filed today"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "El Paso Merchant Energy LP",
+      "object": "FERC Regulatory Filing",
+      "confidence": 0.9,
+      "supporting_excerpt": "being filed today on behalf of el paso merchant energy lp at the federal energy regulatory commission"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jeffrey Sherman",
+      "object": "rebuttal testimony filing",
+      "confidence": 0.6,
+      "supporting_excerpt": "from jeffrey sherman jshermanskaddencom"
+    }
+  ],
+  "_source_id": "453681",
+  "_email_meta": {
+    "sender": "rrich@bracepatt.com",
+    "recipient": "jdasovic@enron.com, jsteffe@enron.com, jthome@enron.com, llawner@enron.com, lyoho@enron.com, cantrell, rebecca w. </o=enron/ou=na/cn=recipients/cn=bcantre>, skean@enron.com",
+    "date": "2001-07-23"
+  }
+}

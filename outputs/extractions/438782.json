@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "Peter Styles",
+      "type": "person",
+      "aliases": [
+        "peter.styles@enron.com"
+      ]
+    },
+    {
+      "name": "Richard Shapiro",
+      "type": "person",
+      "aliases": [
+        "richard.shapiro@enron.com"
+      ]
+    },
+    {
+      "name": "Sherriff Frevert",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Mission Strategic Objectives",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Regulatory and Political Risk",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Peter Styles",
+      "object": "Richard Shapiro",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: peter.styles@enron.com\nTo: richard.shapiro@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Peter Styles",
+      "object": "Mission Strategic Objectives",
+      "confidence": 0.7,
+      "supporting_excerpt": "here are the ideas for mission strategic objectives and key issues which i submitted to him after some discussion with hennemeyer and wood"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Hennemeyer",
+      "object": "Mission Strategic Objectives",
+      "confidence": 0.8,
+      "supporting_excerpt": "after some discussion with hennemeyer and wood"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Wood",
+      "object": "Mission Strategic Objectives",
+      "confidence": 0.8,
+      "supporting_excerpt": "after some discussion with hennemeyer and wood"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Peter Styles",
+      "object": "Sherriff Frevert",
+      "confidence": 0.9,
+      "supporting_excerpt": "i hope you will between you have the opportunity to impress upon sherriff frevert and whalley the risks inherent in reducing our efforts significantly"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Peter Styles",
+      "object": "Whalley",
+      "confidence": 0.9,
+      "supporting_excerpt": "i hope you will between you have the opportunity to impress upon sherriff frevert and whalley the risks inherent in reducing our efforts significantly"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Peter Styles",
+      "object": "Reducing efforts could amount to abandoning identified objectives",
+      "confidence": 0.7,
+      "supporting_excerpt": "in my view that could amount to abandoning some of the identified objectives at a point where we are 80 of the way to reaching them"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Peter Styles",
+      "object": "Reduction would impair ability to deliver advanced regulatory and political information",
+      "confidence": 0.7,
+      "supporting_excerpt": "a reduction would also impair our ability to deliver to the commercial teams advanced and inside information on interpretation of regulatory and political shifts"
+    }
+  ],
+  "_source_id": "438782",
+  "_email_meta": {
+    "sender": "peter.styles@enron.com",
+    "recipient": "richard.shapiro@enron.com",
+    "date": "2001-10-05"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "Stephanie Piwetz",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Kate Symes",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dynegy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron-Dynegy Mid-C Deal",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Stephanie Piwetz",
+      "object": "Kate Symes",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: stephanie.piwetz@enron.com\nTo: kate.symes@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Stephanie Piwetz",
+      "object": "status of deal 50623901",
+      "confidence": 0.8,
+      "supporting_excerpt": "just checking the status of deal 50623901 from friday"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Crandall",
+      "object": "Enron-Dynegy Mid-C Deal",
+      "confidence": 0.8,
+      "supporting_excerpt": "crandall deal enron buys dynegy mid c"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Stephanie Piwetz",
+      "object": "deal 50623901 involves 25 mws capacity",
+      "confidence": 0.7,
+      "supporting_excerpt": "deal 50623901 from friday   crandall deal enron buys dynegy mid c 129 only 25 mws"
+    }
+  ],
+  "_source_id": "467802",
+  "_email_meta": {
+    "sender": "stephanie.piwetz@enron.com",
+    "recipient": "kate.symes@enron.com",
+    "date": "2001-01-29"
+  }
+}

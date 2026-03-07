@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "J. Kaminski",
+      "type": "person",
+      "aliases": [
+        "j.kaminski@enron.com"
+      ]
+    },
+    {
+      "name": "Brian Mihura",
+      "type": "person",
+      "aliases": [
+        "brian.mihura@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "J. Kaminski",
+      "object": "Brian Mihura",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: j.kaminski@enron.com\nTo: brian.mihura@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Vince",
+      "object": "Brian Mihura",
+      "confidence": 0.6,
+      "supporting_excerpt": "vince"
+    }
+  ],
+  "_source_id": "221744",
+  "_email_meta": {
+    "sender": "j.kaminski@enron.com",
+    "recipient": "brian.mihura@enron.com",
+    "date": "2001-10-19"
+  }
+}

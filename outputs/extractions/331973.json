@@ -1,0 +1,53 @@
+{
+  "entities": [
+    {
+      "name": "Kate Joslyn",
+      "type": "person",
+      "aliases": [
+        "kate.joslyn@enron.com"
+      ]
+    },
+    {
+      "name": "Jonathan McKay",
+      "type": "person",
+      "aliases": [
+        "jon",
+        "jonathan.mckay@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Moxies Pricing",
+      "type": "topic",
+      "aliases": [
+        "moxies"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kate Joslyn",
+      "object": "Jonathan McKay",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kate.joslyn@enron.com\nTo: jonathan.mckay@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Kate Joslyn",
+      "object": "refreshed prices for moxies out of oct 01 nov 01 term 123 5 years",
+      "confidence": 0.9,
+      "supporting_excerpt": "jon could i please have refreshed prices for moxies  out of oct 01  nov 01 term 123  5 years"
+    }
+  ],
+  "_source_id": "331973",
+  "_email_meta": {
+    "sender": "kate.joslyn@enron.com",
+    "recipient": "jonathan.mckay@enron.com",
+    "date": "2001-08-15"
+  }
+}

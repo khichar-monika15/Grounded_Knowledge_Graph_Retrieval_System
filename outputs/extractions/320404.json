@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "Kay Mann",
+      "type": "person",
+      "aliases": [
+        "kay"
+      ]
+    },
+    {
+      "name": "Joshua Wooten",
+      "type": "person",
+      "aliases": [
+        "joshua wooten"
+      ]
+    },
+    {
+      "name": "Body Shop",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Health and Fitness Specialist",
+      "type": "role",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Joshua Wooten",
+      "object": "Kay Mann",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kay.mann@enron.com\nTo: joshua.wooten@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Joshua Wooten",
+      "object": "Health and Fitness Specialist",
+      "confidence": 0.9,
+      "supporting_excerpt": "in health  joshua wooten health and fitness specialist"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Body Shop",
+      "object": "Kay Mann",
+      "confidence": 1.0,
+      "supporting_excerpt": "we have reviewed your health history questionnaire  and have cleared you to begin exercising at your earliest convienence"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Joshua Wooten",
+      "object": "Body Shop",
+      "confidence": 0.6,
+      "supporting_excerpt": "welcome to the body shop"
+    }
+  ],
+  "_source_id": "320404",
+  "_email_meta": {
+    "sender": "kay.mann@enron.com",
+    "recipient": "joshua.wooten@enron.com",
+    "date": "2001-03-16"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "Greg Johnston",
+      "type": "person",
+      "aliases": [
+        "johnston",
+        "greg"
+      ]
+    },
+    {
+      "name": "Mark Taylor",
+      "type": "person",
+      "aliases": [
+        "taylor",
+        "mark"
+      ]
+    },
+    {
+      "name": "Charlie Hoang",
+      "type": "person",
+      "aliases": [
+        "hoang",
+        "charlie"
+      ]
+    },
+    {
+      "name": "Chris Walker",
+      "type": "person",
+      "aliases": [
+        "walker",
+        "chris"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Product Type Approval",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "EOL Data Manager",
+      "type": "project",
+      "aliases": [
+        "enrononline"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Greg Johnston",
+      "object": "Mark Taylor",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: greg.johnston@enron.com To: legal <.taylor@enron.com>"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Greg Johnston",
+      "object": "attached products",
+      "confidence": 0.9,
+      "supporting_excerpt": "mark i have reviewed and approve the attached products"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Charlie Hoang",
+      "object": "Greg Johnston",
+      "confidence": 0.9,
+      "supporting_excerpt": "greg once you have approved these product types please forward your approval to mark taylor and copy me on the email"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Charlie Hoang",
+      "object": "Product Type Approval",
+      "confidence": 0.7,
+      "supporting_excerpt": "subject fw product type approval  can gas fin opt call and can gas fin opt put"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Charlie Hoang",
+      "object": "can gas fin opt call",
+      "confidence": 0.7,
+      "supporting_excerpt": "can gas fin opt call 2203  can gas fin opt cgpr aeco daily ec25 dec01"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Charlie Hoang",
+      "object": "can gas fin opt put",
+      "confidence": 0.7,
+      "supporting_excerpt": "can gas fin opt put 2204  can gas fin opt cgpr aeco daily ep2494 dec01"
+    }
+  ],
+  "_source_id": "479829",
+  "_email_meta": {
+    "sender": "greg.johnston@enron.com",
+    "recipient": "legal <.taylor@enron.com>",
+    "date": "2001-11-26"
+  }
+}

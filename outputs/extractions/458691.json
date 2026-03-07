@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "Chris Stokley",
+      "type": "person",
+      "aliases": [
+        "chris.stokley@enron.com",
+        "stokley chris"
+      ]
+    },
+    {
+      "name": "Jim Reyes",
+      "type": "person",
+      "aliases": [
+        "jim.reyes@enron.com",
+        "reyes jim"
+      ]
+    },
+    {
+      "name": "David Alvarez",
+      "type": "person",
+      "aliases": [
+        "alvarez david",
+        "dalvarezcaisocom"
+      ]
+    },
+    {
+      "name": "Newonda Shore Miranda",
+      "type": "person",
+      "aliases": [
+        "nichols newonda shore miranda"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "CAISO",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "SCE",
+      "type": "organization",
+      "aliases": [
+        "sce"
+      ]
+    },
+    {
+      "name": "PGE",
+      "type": "organization",
+      "aliases": [
+        "pge"
+      ]
+    },
+    {
+      "name": "VM group",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Chris Stokley",
+      "object": "Jim Reyes",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: chris.stokley@enron.com To: jim.reyes@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jim Reyes",
+      "object": "Chris Stokley",
+      "confidence": 0.6,
+      "supporting_excerpt": "original message from reyes jim sent friday september 14 2001 124 pm to stokley chris"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "David Alvarez",
+      "object": "Chris Stokley",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from alvarez david mailtodalvarezcaisocom sent thursday september 13 2001 155 pm to stokley chris"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jim Reyes",
+      "object": "Rising loads in SCE and PGE territory",
+      "confidence": 0.6,
+      "supporting_excerpt": "i called csc on this and it is legit"
+    },
+    {
+      "claim_type": "informed",
+      "subject": "Jim Reyes",
+      "object": "David Alvarez",
+      "confidence": 0.8,
+      "supporting_excerpt": "i will let david know"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Chris Stokley",
+      "object": "Jim Reyes",
+      "confidence": 0.9,
+      "supporting_excerpt": "could you look into this and let them know that they need to put you or someone else in the vm group on the contact list going forward"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "David Alvarez",
+      "object": "Rising loads in SCE and PGE territory",
+      "confidence": 0.7,
+      "supporting_excerpt": "i basically just noticed that load had risen above observed normal levels in july for epmisce1 epmipge1 epmipge2 and epmipge3"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "David Alvarez",
+      "object": "new customers",
+      "confidence": 0.7,
+      "supporting_excerpt": "i also indicted that i had seen schedules going up as well and assumed that you may be picking up new customers"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pat",
+      "object": "new customers",
+      "confidence": 0.6,
+      "supporting_excerpt": "per pat this is going to get even more heavy"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "David Alvarez",
+      "object": "Market Quality",
+      "confidence": 0.9,
+      "supporting_excerpt": "david alvarez market quality"
+    }
+  ],
+  "_source_id": "458691",
+  "_email_meta": {
+    "sender": "chris.stokley@enron.com",
+    "recipient": "jim.reyes@enron.com",
+    "date": "2001-09-14"
+  }
+}

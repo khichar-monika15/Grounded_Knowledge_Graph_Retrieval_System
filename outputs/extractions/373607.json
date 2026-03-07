@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "name": "Robin Rodrigue",
+      "type": "person",
+      "aliases": [
+        "robin.rodrigue@enron.com"
+      ]
+    },
+    {
+      "name": "Lynn Pikofsky",
+      "type": "person",
+      "aliases": [
+        "lynn.pikofsky@enron.com"
+      ]
+    },
+    {
+      "name": "Laura Luce",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Chicago office",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Robin Rodrigue",
+      "object": "Lynn Pikofsky",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: robin.rodrigue@enron.com\nTo: lynn.pikofsky@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Robin Rodrigue",
+      "object": "Laura Luce",
+      "confidence": 0.6,
+      "supporting_excerpt": "i spoke with laura luce on friday"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Laura Luce",
+      "object": "Robin Rodrigue",
+      "confidence": 0.6,
+      "supporting_excerpt": "she asked me to coordinate with you to arrange a visit to the chicago office"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Robin Rodrigue",
+      "object": "Chicago office visit",
+      "confidence": 0.6,
+      "supporting_excerpt": "we tentatively discussed scheduling my visit for friday january 26 to monday jan 29"
+    }
+  ],
+  "_source_id": "373607",
+  "_email_meta": {
+    "sender": "robin.rodrigue@enron.com",
+    "recipient": "lynn.pikofsky@enron.com",
+    "date": "2001-01-22"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "Mike McConnell",
+      "type": "person",
+      "aliases": [
+        "mike.mcconnell@enron.com"
+      ]
+    },
+    {
+      "name": "Shanna Funkhouser",
+      "type": "person",
+      "aliases": [
+        "shanna.funkhouser@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Mike McConnell",
+      "object": "Shanna Funkhouser",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: mike.mcconnell@enron.com\nTo: shanna.funkhouser@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Mike McConnell",
+      "object": "make this happen asap",
+      "confidence": 0.8,
+      "supporting_excerpt": "shanna  please make this happen asap"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Mike McConnell",
+      "object": "list of all of our key people and their conctract expiration dates",
+      "confidence": 0.9,
+      "supporting_excerpt": "i would like to see a list of all of our key people and their conctract  expiration dates"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Mike McConnell",
+      "object": "he was done",
+      "confidence": 0.6,
+      "supporting_excerpt": "i thought he was done"
+    }
+  ],
+  "_source_id": "326206",
+  "_email_meta": {
+    "sender": "mike.mcconnell@enron.com",
+    "recipient": "shanna.funkhouser@enron.com",
+    "date": "2001-04-09"
+  }
+}

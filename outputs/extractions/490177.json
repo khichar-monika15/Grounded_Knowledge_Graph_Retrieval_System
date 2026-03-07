@@ -1,0 +1,53 @@
+{
+  "entities": [
+    {
+      "name": "Barry Tycholiz",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Judy L. Wood",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "PwC Global",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Barry Tycholiz",
+      "object": "Judy L. Wood",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: barry.tycholiz@enron.com\nTo: judy.l.wood@ca.pwcglobal.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Barry Tycholiz",
+      "object": "W2 form with value 63250 from December",
+      "confidence": 0.6,
+      "supporting_excerpt": "my w2 in dec was 63250"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Barry Tycholiz",
+      "object": "options information review",
+      "confidence": 0.7,
+      "supporting_excerpt": "i may have missed some of the options information and am rechecking"
+    }
+  ],
+  "_source_id": "490177",
+  "_email_meta": {
+    "sender": "barry.tycholiz@enron.com",
+    "recipient": "judy.l.wood@ca.pwcglobal.com",
+    "date": "2001-04-12"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "Michelle Lokay",
+      "type": "person",
+      "aliases": [
+        "michelle.lokay@enron.com"
+      ]
+    },
+    {
+      "name": "Image File Preparation",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jim",
+      "object": "Michelle Lokay",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: lokay@bigfoot.com\nTo: michelle.lokay@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jim",
+      "object": "four files",
+      "confidence": 0.6,
+      "supporting_excerpt": "i have included four files"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Jim",
+      "object": "creating custom desktop wallpaper file",
+      "confidence": 0.9,
+      "supporting_excerpt": "if you want to use the picture for desktop wallpaper let me know your screen resolution ie 1024x768 i will make a file special for that"
+    }
+  ],
+  "_source_id": "288490",
+  "_email_meta": {
+    "sender": "lokay@bigfoot.com",
+    "recipient": "michelle.lokay@enron.com",
+    "date": "2001-04-10"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "Frank Hayden",
+      "type": "person",
+      "aliases": [
+        "frank.hayden@enron.com"
+      ]
+    },
+    {
+      "name": "Kam Keiser",
+      "type": "person",
+      "aliases": [
+        "kam.keiser@enron.com"
+      ]
+    },
+    {
+      "name": "Hu Wei",
+      "type": "person",
+      "aliases": [
+        "wei"
+      ]
+    },
+    {
+      "name": "Donald Wayne Vinson",
+      "type": "person",
+      "aliases": [
+        "donnie"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enpower",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "NYMEX",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Risk Type Decomposition",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Gas Derivatives Pricing",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Frank Hayden",
+      "object": "Kam Keiser",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: frank.hayden@enron.com\nTo: kam.keiser@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Frank Hayden",
+      "object": "Risk Type Decomposition",
+      "confidence": 0.4,
+      "supporting_excerpt": "i have requested that all price deals with a reference month greater than 73101 be decomposed into risk type d and p"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Frank Hayden",
+      "object": "decompose price deals into risk type d and p",
+      "confidence": 0.6,
+      "supporting_excerpt": "i have requested that all price deals with a reference month greater than 73101 be decomposed into risk type d and p"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Frank Hayden",
+      "object": "Gas Derivatives Pricing",
+      "confidence": 0.7,
+      "supporting_excerpt": "additionally wei will add a nymex leg for the p leg of the deal"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Hu Wei",
+      "object": "Enpower",
+      "confidence": 0.7,
+      "supporting_excerpt": "i saw five curve codes are being put out by enpower for gas legs of spreadoption and heatswap deals"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Hu Wei",
+      "object": "Risk Type Decomposition",
+      "confidence": 0.7,
+      "supporting_excerpt": "apparently we want to break down the risk_type_cd to p and d"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Hu Wei",
+      "object": "brief on business logic for risk type breakdown",
+      "confidence": 0.9,
+      "supporting_excerpt": "can you please brief me the business logic again so that i can see if we can provide any adhoc solution"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Hu Wei",
+      "object": "five curve codes from Enpower",
+      "confidence": 0.4,
+      "supporting_excerpt": "i saw five curve codes are being put out by enpower for gas legs of spreadoption and heatswap deals these curves are price_curve_cd gdcolgulfla gdhplshpch gdpnthwstcanb ifhplshpchan tennz6"
+    }
+  ],
+  "_source_id": "255976",
+  "_email_meta": {
+    "sender": "frank.hayden@enron.com",
+    "recipient": "kam.keiser@enron.com",
+    "date": "2001-07-23"
+  }
+}

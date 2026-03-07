@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "Monte Jones",
+      "type": "person",
+      "aliases": [
+        "monte"
+      ]
+    },
+    {
+      "name": "Mike Grigsby",
+      "type": "person",
+      "aliases": [
+        "mike"
+      ]
+    },
+    {
+      "name": "Lavo",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "NCD",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Position Reconciliation",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Monte Jones",
+      "object": "Mike Grigsby",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: monte.jones@enron.com To: mike.grigsby@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Monte Jones",
+      "object": "basics of risk management class",
+      "confidence": 0.7,
+      "supporting_excerpt": "ill be in a basics of risk management class from 800am to 430pm today"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Monte Jones",
+      "object": "check on Mike Grigsby during lunch",
+      "confidence": 0.8,
+      "supporting_excerpt": "ill come down to check on you during lunch"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Monte Jones",
+      "object": "NCD position discrepancy",
+      "confidence": 0.6,
+      "supporting_excerpt": "try to fin where we are off in ncd"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mike Grigsby",
+      "object": "NCD position mismatch",
+      "confidence": 0.7,
+      "supporting_excerpt": "my position in ncd is not matching the reports issued to lavo"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mike Grigsby",
+      "object": "Monte Jones showing 233 lots long intra",
+      "confidence": 0.7,
+      "supporting_excerpt": "monte is showing 233 lots long intra and the report is showing 413"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Mike Grigsby",
+      "object": "Monte Jones find the difference in position",
+      "confidence": 0.8,
+      "supporting_excerpt": "see if you can find the difference"
+    }
+  ],
+  "_source_id": "144063",
+  "_email_meta": {
+    "sender": "monte.jones@enron.com",
+    "recipient": "mike.grigsby@enron.com",
+    "date": "2001-10-18"
+  }
+}

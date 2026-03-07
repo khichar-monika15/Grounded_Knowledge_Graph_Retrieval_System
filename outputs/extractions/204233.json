@@ -1,0 +1,85 @@
+{
+  "entities": [
+    {
+      "name": "Rafal Weron",
+      "type": "person",
+      "aliases": [
+        "rweron"
+      ]
+    },
+    {
+      "name": "Vince Kaminski",
+      "type": "person",
+      "aliases": [
+        "vkamins"
+      ]
+    },
+    {
+      "name": "Energy Market Management",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Polish Energy Sector",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Rafal Weron",
+      "object": "Vince Kaminski",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: rweron@mazur.im.pwr.wroc.pl\nTo: vkamins@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Rafal Weron",
+      "object": "literature",
+      "confidence": 0.6,
+      "supporting_excerpt": "bardzo dziekuje za podeslana literature"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Rafal Weron",
+      "object": "London visit in June",
+      "confidence": 0.6,
+      "supporting_excerpt": "bylismy w londynie w czerwcu zeszlego roku"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Rafal Weron",
+      "object": "Polish Energy Sector",
+      "confidence": 0.9,
+      "supporting_excerpt": "obaj z alkiem ojcem wspolpracujemy z energetyka glownie polska od kilku lat"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Alec",
+      "object": "Polish Energy Sector",
+      "confidence": 0.9,
+      "supporting_excerpt": "obaj z alkiem ojcem wspolpracujemy z energetyka glownie polska od kilku lat"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Rafal Weron",
+      "object": "Energy Market Management book",
+      "confidence": 0.6,
+      "supporting_excerpt": "w zeszlym roku wydalismy ksiazke gielda energii strategie zarzadzania ryzykiem"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Rafal Weron",
+      "object": "English edition in progress",
+      "confidence": 0.6,
+      "supporting_excerpt": "a obecnie pracujemy nad jej angielskim wydaniem"
+    }
+  ],
+  "_source_id": "204233",
+  "_email_meta": {
+    "sender": "rweron@mazur.im.pwr.wroc.pl",
+    "recipient": "vkamins@enron.com",
+    "date": "2001-01-29"
+  }
+}

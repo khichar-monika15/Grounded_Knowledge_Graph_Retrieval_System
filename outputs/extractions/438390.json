@@ -1,0 +1,345 @@
+{
+  "entities": [
+    {
+      "name": "Janine Migden",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Scott Gahn",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jeff Ader",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Edward Baughman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Susan Landwehr",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Gibran Whalen",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Brad Snyder",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jeff Merola",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jay Lewis",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Christi Nicolay",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ress Young",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark Bernstein",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Chuck Decker",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Rogers Herndon",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark Ulrich",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ryan Frazier",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Dan Allegretti",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Roger Perssons",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Frank Clark",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "ComEd",
+      "type": "organization",
+      "aliases": [
+        "com ed"
+      ]
+    },
+    {
+      "name": "Cinergy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "ComEd Negotiation",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "FRP Agreement",
+      "type": "project",
+      "aliases": [
+        "frp"
+      ]
+    },
+    {
+      "name": "PPO Replacement Strategy",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Ancillary Services Pricing",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Marc Ulrich",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ancillary Service Negotiation",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Janine Migden",
+      "object": "Scott Gahn",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: janine.migden@enron.com\nTo: scott.gahn@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Janine Migden",
+      "object": "Jeff Ader",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: janine.migden@enron.com\nTo: scott.gahn@enron.com, jeff.ader@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Janine Migden",
+      "object": "Edward Baughman",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: janine.migden@enron.com\nTo: scott.gahn@enron.com, jeff.ader@enron.com, edward.baughman@enron.com"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Jeff Ader",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Susan Landwehr",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Gibran Whalen",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Brad Snyder",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Jeff Merola",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Jay Lewis",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Christi Nicolay",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis christi nicolay"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Ress Young",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis christi nicolay ress young"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Mark Bernstein",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis christi nicolay ress young mark bernstein"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Chuck Decker",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis christi nicolay ress young mark bernstein chuck decker"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Rogers Herndon",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis christi nicolay ress young mark bernstein chuck decker rogers herndon"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Mark Ulrich",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis christi nicolay ress young mark bernstein chuck decker rogers herndon mark ulrich"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Ryan Frazier",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis christi nicolay ress young mark bernstein chuck decker rogers herndon mark ulrich ryan frazier"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Dan Allegretti",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis christi nicolay ress young mark bernstein chuck decker rogers herndon mark ulrich ryan frazier dan allegretti"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Roger Perssons",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis christi nicolay ress young mark bernstein chuck decker rogers herndon mark ulrich ryan frazier dan allegretti roger perssons"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Janine Migden",
+      "object": "ComEd Negotiation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the following people were in attendance at the meeting on wednesday jeff ader susan landwehr gibran whalen brad snyder jeff merola jay lewis christi nicolay ress young mark bernstein chuck decker rogers herndon mark ulrich ryan frazier dan allegretti roger perssons chuck decker janine migden"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "ComEd Negotiation",
+      "object": "modified FRP agreement",
+      "confidence": 0.7,
+      "supporting_excerpt": "enrons negotiation position as a result of the meeting the following consensus was reached as to our negotiating position with com ed 1 negotiate with com ed to get what we need in order to do physical deals in its service territory that translates into negotiating a modified frp agreement"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Enron",
+      "object": "2000 mw call option on ancillaries",
+      "confidence": 0.9,
+      "supporting_excerpt": "in essence we want a call option on ancilliaries of our choice to cover 2000 mw of power at a price that keeps us whole with our existing book of business"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "ComEd Negotiation",
+      "object": "PPO Replacement Strategy",
+      "confidence": 0.7,
+      "supporting_excerpt": "under com eds proposal the ppo would end in 2004 but could end earlier for certain large customers paying zero ctc in that event the ppo should be replaced with a real time day ahead price into cinergy"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Janine Migden",
+      "object": "Mark Ulrich",
+      "confidence": 0.9,
+      "supporting_excerpt": "mark ulrich is reviewing a comparison between the curves the oatt and the the frp to determine the ancilliary service charge we would be willing to pay"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Janine Migden",
+      "object": "Rogers Herndon",
+      "confidence": 0.9,
+      "supporting_excerpt": "rogers herndon is reviewing the com ed tariffs on balancing etc"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Janine Migden",
+      "object": "call Frank Clark to arrange meeting",
+      "confidence": 0.9,
+      "supporting_excerpt": "once these action items are completed and incorporated into our negotiation position i will call frank clark to arrange a meeting"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Janine Migden",
+      "object": "determine the ancilliary service charge we would be willing to pay",
+      "confidence": 0.9,
+      "supporting_excerpt": "determine the ancilliary service charge we would be willing to pay"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Jeff Ader",
+      "object": "Ancillary Service Negotiation",
+      "confidence": 0.8,
+      "supporting_excerpt": "negotiation team jeff ader rogers herndon janine migden marc ulrich"
+    }
+  ],
+  "_source_id": "438390",
+  "_email_meta": {
+    "sender": "janine.migden@enron.com",
+    "recipient": "scott.gahn@enron.com, jeff.ader@enron.com, edward.baughman@enron.com, ",
+    "date": "2001-05-18"
+  }
+}

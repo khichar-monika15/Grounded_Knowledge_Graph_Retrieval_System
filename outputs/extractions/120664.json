@@ -1,0 +1,331 @@
+{
+  "entities": [
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Azurix",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "India",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Brazil",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "North America",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Europe",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Enron Financial Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Related Party Transactions",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Financial Restatement",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Global Assets Group",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Broadband Division",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "CEG Rio",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "EcoElectrica",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Portland General",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Global and Industrial Markets",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Osprey",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Marlin",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Yosemite",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Puerto Rico",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Noncore Business Exit Strategy",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Credit Rating Maintenance",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Business Portfolio Review",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Dynegy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Fitch",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Securities and Exchange Commission",
+      "type": "organization",
+      "aliases": [
+        "SEC"
+      ]
+    },
+    {
+      "name": "Enron-Dynegy Merger",
+      "type": "topic",
+      "aliases": [
+        "proposed transactions"
+      ]
+    },
+    {
+      "name": "Credit Rating Downgrade",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Houston",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Ken",
+      "object": "dl-ga-all_enron_worldwide2@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: chairman.ken@enron.com\nTo: dl-ga-all_enron_worldwide2@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "investor confidence and credit quality",
+      "confidence": 0.7,
+      "supporting_excerpt": "we told investors that were doing everything we can to protect their inter ests and to regain their confidence our focus remains on our credit qualit y balance sheet and liquidity"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Ken",
+      "object": "Enron made very bad investments in noncore businesses",
+      "confidence": 0.7,
+      "supporting_excerpt": "in hindsight we definitely made some very bad investments in our nonco re businesses over the past several years"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ken",
+      "object": "Azurix",
+      "confidence": 0.6,
+      "supporting_excerpt": "those include investments in azu rix india and brazil"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "overleveraging through debt capital",
+      "confidence": 0.7,
+      "supporting_excerpt": "weve become overleveraged as a compa ny the negative impact of those investments was exacerbated through the ex tensive use of debt capital both on and off our balance sheet"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "Related Party Transactions",
+      "confidence": 0.7,
+      "supporting_excerpt": "we also entered into related party transactions that led to a loss of in vestor confidence"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Ken",
+      "object": "Enron lacked transparency in financial disclosures",
+      "confidence": 0.7,
+      "supporting_excerpt": "weve been criticized for our lack of transparency and our hardtounder stand financial and operating disclosures"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "Financial Restatement",
+      "confidence": 0.7,
+      "supporting_excerpt": "we discovered errors in our financial statements as d iscussed in our 8k filing last week that required a restatement of previo usly reported earnings"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ken",
+      "object": "natural gas pipeline businesses",
+      "confidence": 0.7,
+      "supporting_excerpt": "core businesses our core businesses remain strong and consistent sources of significant ear nings and cash flows for the company theyre our competitive advantage th ese include natural gas pipeline businesses"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ken",
+      "object": "North America",
+      "confidence": 0.7,
+      "supporting_excerpt": "gas and power businesses in north america and europe retail businesses in north america and europe and coal businesses in north america and europe"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Ken",
+      "object": "fourth quarter profitability will be temporarily negatively impacted",
+      "confidence": 0.7,
+      "supporting_excerpt": "the events of the past few weeks have had a temporary negative impact on ou r projected fourth quarter profitability"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Ken",
+      "object": "actions taken have addressed credit and liquidity concerns",
+      "confidence": 0.7,
+      "supporting_excerpt": "i also remain optimistic that the actions weve taken over the past couple of weeks have addressed our customer and counterparty credit and liquidity"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "Noncore Business Exit Strategy",
+      "confidence": 0.7,
+      "supporting_excerpt": "we have an aggressive program in place to exit these businesses and expect that the sale of these businesses will generate billions of dollars in cash"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ken",
+      "object": "Global Assets Group",
+      "confidence": 0.7,
+      "supporting_excerpt": "our noncore businesses include our global assets group and our broadband d ivision"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "CEG Rio",
+      "confidence": 0.6,
+      "supporting_excerpt": "th ey include ceg rio a gas ldc in brazil"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "EcoElectrica",
+      "confidence": 0.7,
+      "supporting_excerpt": "ecoelectrica a power plant and ln g receiving terminal in puerto rico"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "Portland General",
+      "confidence": 0.7,
+      "supporting_excerpt": "the approximately 29 billion portland general sale is also on target to close in late 2002 pending regulatory approvals"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "Business Portfolio Review",
+      "confidence": 0.7,
+      "supporting_excerpt": "these businesses are comprised of those operations outside our power and ga s wholesale businesses and include global and industrial markets"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "Credit Rating Maintenance",
+      "confidence": 0.7,
+      "supporting_excerpt": "we continue to meet regularly with credit rating agencies and believe that our liquidity enhancements and scheduled asset sales will strengthen our ba lance sheet and maintain our investment grade credit rating"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ken",
+      "object": "Osprey",
+      "confidence": 0.7,
+      "supporting_excerpt": "we also discussed our existing financial vehicles including osprey marlin and yosemite"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Ken",
+      "object": "actions taken have addressed credit and liquidity concerns",
+      "confidence": 0.7,
+      "supporting_excerpt": "i also remain optimistic that the actions weve taken over the past couple of weeks have addressed our customer and counterparty credit and liquidity concerns"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ken",
+      "object": "Osprey, Marlin, and Yosemite financial vehicles",
+      "confidence": 0.7,
+      "supporting_excerpt": "we also discussed our existing financial vehicles including osprey marlin and yosemite in further detail"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Enron",
+      "object": "10-Q filing delayed to November 19",
+      "confidence": 0.9,
+      "supporting_excerpt": "we told investors that we will file our 1 0q five days late due to our current activities it will be filed on nov 19"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Fitch",
+      "object": "BBB rating with negative creditwatch",
+      "confidence": 0.7,
+      "supporting_excerpt": "further downgrade fitch at bbb evolving status sp at bbb creditwatch negative"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Dynegy",
+      "object": "Joint proxy statement-prospectus filing with SEC",
+      "confidence": 0.9,
+      "supporting_excerpt": "in connection with the proposed transactions dynegy and enron will file a joint proxy statementprospectus with the securities and exchange commissio n"
+    }
+  ],
+  "_source_id": "120664",
+  "_email_meta": {
+    "sender": "chairman.ken@enron.com",
+    "recipient": "dl-ga-all_enron_worldwide2@enron.com",
+    "date": "2001-11-14"
+  }
+}

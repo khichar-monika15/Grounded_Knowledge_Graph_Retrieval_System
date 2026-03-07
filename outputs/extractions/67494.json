@@ -1,0 +1,218 @@
+{
+  "entities": [
+    {
+      "name": "Janel Guerrero",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Tom Briggs",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "John Shelk",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Susan Lindberg",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "FERC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Tabors Caramanis",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Frontier Economics",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "NERC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "RTO Advocacy Effort",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "FERC RTO Model",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Reliability and Governance",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "FERC RTO",
+      "type": "project",
+      "aliases": [
+        "RTO",
+        "rto advocacy effort"
+      ]
+    },
+    {
+      "name": "RTO Governance Design",
+      "type": "topic",
+      "aliases": [
+        "well-designed RTO",
+        "regional organizations"
+      ]
+    },
+    {
+      "name": "Environmental Issues RTO",
+      "type": "topic",
+      "aliases": [
+        "air quality benefits",
+        "nimby issues"
+      ]
+    },
+    {
+      "name": "PJM",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "NECPUC",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Janel Guerrero",
+      "object": "Tom Briggs",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: janel.guerrero@enron.com\nTo: tom.briggs@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Janel Guerrero",
+      "object": "John Shelk",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: janel.guerrero@enron.com\nTo: tom.briggs@enron.com, john.shelk@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Janel Guerrero",
+      "object": "Susan Lindberg",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: janel.guerrero@enron.com\nTo: tom.briggs@enron.com, john.shelk@enron.com, susan.lindberg@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Janel Guerrero",
+      "object": "information about stakeholder concerns with FERC RTO model",
+      "confidence": 0.9,
+      "supporting_excerpt": "i sent out a request for information last week to a few of you in the field asking for the following a summary of the stakeholders who are raising concerns with the ferc rto model"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "RTO Advocacy Effort",
+      "object": "FERC RTO Model",
+      "confidence": 0.6,
+      "supporting_excerpt": "the rto advocacy effort is off to a good start"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Tabors Caramanis",
+      "object": "RTO Advocacy Effort",
+      "confidence": 0.6,
+      "supporting_excerpt": "i am coordinating with our friends at tabors caramanis and frontier economics on the development of materials"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "FERC RTO Model",
+      "object": "concerns among members of congress governors state utility commissions",
+      "confidence": 0.7,
+      "supporting_excerpt": "due to the increasing concerns and waivering support among members of congress governors state utility commissions legislators and other stakeholder groups in regard to the ferc rto model"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "NERC",
+      "object": "role in federal government involvement in reliability",
+      "confidence": 0.7,
+      "supporting_excerpt": "The role of nerc the synopsis will finally address the red herrings associated with reliability issues"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Janel Guerrero",
+      "object": "RTO Governance Design",
+      "confidence": 0.9,
+      "supporting_excerpt": "the ferc rto the welldesigned rto using specific analogies we will outline how other similar interstate issues work the shortterm and longterm issues to planning reasons to avoid balkanization and we will identify the key elements of a welldesigned rto governance issues"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Janel Guerrero",
+      "object": "Environmental Issues RTO",
+      "confidence": 0.9,
+      "supporting_excerpt": "environmental issues were first going to develop an outline to see whether a document is necessary but some of the issues to be addressed are air quality benefits and nimby issues"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Janel Guerrero",
+      "object": "draft set of documents by September 7th",
+      "confidence": 0.9,
+      "supporting_excerpt": "i am expecting a draft set of documents by september 7th"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Janel Guerrero",
+      "object": "coordinator of RTO team review",
+      "confidence": 1.0,
+      "supporting_excerpt": "i will identify approximately 5 people from our rto team to review the draft documents and weigh in with comments"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Janel Guerrero",
+      "object": "weekly deliverables for RTO advocacy effort",
+      "confidence": 0.9,
+      "supporting_excerpt": "as part of our rto advocacy effort i will be assigning weekly deliverables to people please keep an eye out for these emails they will usually be sent out on friday mornings and due the following monday"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Janel Guerrero",
+      "object": "complete list of upcoming RTO meetings with dates and attendees",
+      "confidence": 0.9,
+      "supporting_excerpt": "please provide me with a complete list of upcoming meetings you have scheduled where the rto issue will be discussed specifically i am looking for the date and who the meeting is with"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Janel Guerrero",
+      "object": "RTO presentations at conferences",
+      "confidence": 0.9,
+      "supporting_excerpt": "this deliverable includes presentations you are making at conferences and the like"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "FERC RTO",
+      "object": "deliverable due by Tuesday September 4th",
+      "confidence": 0.9,
+      "supporting_excerpt": "since monday is labor day i am assigning this weeks deliverable today and it will be due by tuesday september 4th"
+    }
+  ],
+  "_source_id": "67494",
+  "_email_meta": {
+    "sender": "janel.guerrero@enron.com",
+    "recipient": "tom.briggs@enron.com, john.shelk@enron.com, susan.lindberg@enron.com, ",
+    "date": "2001-08-27"
+  }
+}

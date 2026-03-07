@@ -1,0 +1,715 @@
+{
+  "entities": [
+    {
+      "name": "Miyung Buster",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ann Schmidt",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bryan Seyfried",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Natural Gas Price Investigation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Darrell Steinberg",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Pacific Gas and Electric",
+      "type": "organization",
+      "aliases": [
+        "PG&E"
+      ]
+    },
+    {
+      "name": "Gladys Cook",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Long Beach Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "San Diego Gas & Electric",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Southern California Gas",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Independent System Operator",
+      "type": "organization",
+      "aliases": [
+        "CAISO"
+      ]
+    },
+    {
+      "name": "Federal Energy Regulatory Commission",
+      "type": "organization",
+      "aliases": [
+        "FERC"
+      ]
+    },
+    {
+      "name": "California State Power Exchange",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Southern California Edison",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Pacific Gas and Electric Co",
+      "type": "organization",
+      "aliases": [
+        "PG&E"
+      ]
+    },
+    {
+      "name": "Gray Davis",
+      "type": "person",
+      "aliases": [
+        "Gov Gray Davis"
+      ]
+    },
+    {
+      "name": "Susan Kennedy",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Tim Gage",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "John Stevens",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jennifer Coleman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Public Utilities Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Steve Maviglio",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Harvey Rosenfield",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Foundation for Taxpayer and Consumer Rights",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Kathleen Connell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Standard & Poor's",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Deregulation Law",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Wholesale Electricity Costs",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Sacramento",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Pacific Northwest",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Rick Morrow",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Steve Wright",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Southern California Gas Co",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Bonneville Power Administration",
+      "type": "organization",
+      "aliases": [
+        "BPA"
+      ]
+    },
+    {
+      "name": "Goldendale Energy Inc",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Klickitat County Public Utility District",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "City of Los Angeles",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "City of Long Beach",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Natural Gas Price Manipulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Goldendale Energy Project",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Phoenix",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Goldendale",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Portland",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Darrell Steinberg",
+      "type": "role",
+      "aliases": [
+        "Chairman of the Assembly Energy Oversight Subcommittee"
+      ]
+    },
+    {
+      "name": "Rick Morrow",
+      "type": "role",
+      "aliases": [
+        "Vice President of Customer Service"
+      ]
+    },
+    {
+      "name": "Steve Wright",
+      "type": "role",
+      "aliases": [
+        "Acting Administrator"
+      ]
+    },
+    {
+      "name": "Mike Hansen",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron Corp",
+      "type": "organization",
+      "aliases": [
+        "Enron"
+      ]
+    },
+    {
+      "name": "Portland General Electric",
+      "type": "organization",
+      "aliases": [
+        "PGE"
+      ]
+    },
+    {
+      "name": "Sierra Pacific Resources",
+      "type": "organization",
+      "aliases": [
+        "Sierra Pacific"
+      ]
+    },
+    {
+      "name": "Jeff Skilling",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "AES Corp",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Faye Anderson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron Energy Services",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "PGE Sale Transaction",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Goldendale Terminal Construction",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "LNG Trading Initiative",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "D Casse",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jeffrey Skilling",
+      "type": "person",
+      "aliases": [
+        "skilling"
+      ]
+    },
+    {
+      "name": "US Natural Gas Market",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Enron Stock Performance",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Miyung Buster",
+      "object": "Ann Schmidt",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: miyung.buster@enron.com To: ann.schmidt@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Miyung Buster",
+      "object": "Bryan Seyfried",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: miyung.buster@enron.com To: ann.schmidt@enron.com, bryan.seyfried@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Darrell Steinberg",
+      "object": "chairman of the assembly energy oversight subcommittee",
+      "confidence": 1.0,
+      "supporting_excerpt": "said assemblyman darrell steinberg chairman of the assembly energy oversight subcommittee"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Darrell Steinberg",
+      "object": "Natural Gas Price Investigation",
+      "confidence": 0.7,
+      "supporting_excerpt": "state lawmakers began investigating friday whether market manipulation helped drive up californias natural gas prices"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gladys Cook",
+      "object": "Pacific Gas and Electric",
+      "confidence": 0.7,
+      "supporting_excerpt": "told the committee her pacific gas and electric co natural gas bill rose from about 47 or 57 a month last year at this time to 34463 in february and 112 this month"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Long Beach Energy",
+      "object": "Natural Gas Price Investigation",
+      "confidence": 0.7,
+      "supporting_excerpt": "lawsuits filed this week by long beach and los angeles accuse several utility companies of meeting at a phoenix hotel in 1996 and deciding to block construction of gas pipelines"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "California Independent System Operator",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "a state audit released thursday that says californias 1996 deregulation law encourages market manipulation by electricity buyers and sellers and the california independent system operator which oversees most of the states"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Miyung Buster",
+      "object": "Ann Schmidt",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: miyung.buster@enron.com\nTo: ann.schmidt@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Miyung Buster",
+      "object": "Bryan Seyfried",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: miyung.buster@enron.com\nTo: ann.schmidt@enron.com, bryan.seyfried@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Miyung Buster",
+      "object": "dcasse",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: miyung.buster@enron.com\nTo: ann.schmidt@enron.com, bryan.seyfried@enron.com, dcasse@whwg.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "California Independent System Operator",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "the california independent system operator which oversees most of the states power grid told the federal energy regulatory commission that electricity suppliers have overcharged it and the state power exchange at least 62 billion since may for power"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Federal Energy Regulatory Commission",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "the federal energy regulatory commission which gov gray davis and many lawmakers contend isnt doing enough to control californias energy prices declined to send a representative to the assembly hearings"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "Federal Energy Regulatory Commission not doing enough to control California energy prices",
+      "confidence": 0.7,
+      "supporting_excerpt": "the federal energy regulatory commission which gov gray davis and many lawmakers contend isnt doing enough to control californias energy prices"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Gray Davis",
+      "object": "legislation authorizing the states power purchases",
+      "confidence": 1.0,
+      "supporting_excerpt": "lawmakers and gov gray davis estimated when they approved legislation authorizing the states power purchases"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "states power crisis can be resolved without further rate hikes",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis has said repeatedly he is confident the states power crisis can be resolved without further rate hikes"
+    },
+    {
+      "claim_type": "informed",
+      "subject": "Susan Kennedy",
+      "object": "lawmakers that customers rates would have to be raised at least 50 percent",
+      "confidence": 0.9,
+      "supporting_excerpt": "cabinet secretary susan kennedy finance director tim gage and deputy chief of staff john stevens all warned lawmakers that customers rates would have to be raised at least 50 percent"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Susan Kennedy",
+      "object": "cabinet secretary",
+      "confidence": 0.9,
+      "supporting_excerpt": "cabinet secretary susan kennedy"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Tim Gage",
+      "object": "finance director",
+      "confidence": 0.9,
+      "supporting_excerpt": "finance director tim gage"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "John Stevens",
+      "object": "deputy chief of staff",
+      "confidence": 0.9,
+      "supporting_excerpt": "deputy chief of staff john stevens"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steve Maviglio",
+      "object": "Kennedy",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis spokesman steve maviglio confirmed that kennedy spoke with top democrats on friday"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Harvey Rosenfield",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "consumer advocate harvey rosenfield of the foundation for taxpayer and consumer rights promised a rebellion at the ballot box in 2002 if rates continued to rise if this goes through this is the beginning of the ratepayers revolt he said"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Southern California Edison",
+      "object": "rate increases",
+      "confidence": 0.8,
+      "supporting_excerpt": "socal edison and pgampe both have pushed for rate increases"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Pacific Gas and Electric",
+      "object": "rate increases",
+      "confidence": 0.9,
+      "supporting_excerpt": "socal edison and pgampe both have pushed for rate increases and pgampe has said its current rates would be insufficient to cover its bills"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kathleen Connell",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "state controller kathleen connell warned this week that the states powerbuying is gutting californias budget surplus and putting the state at financial risk"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Standard & Poor's",
+      "object": "California",
+      "confidence": 0.7,
+      "supporting_excerpt": "the standard amp poors creditrating agency put the state on a credit watch with negative implications when the power purchases began"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gladys Cook",
+      "object": "Pacific Gas and Electric",
+      "confidence": 0.7,
+      "supporting_excerpt": "pacific gas and electric co customer gladys cook of sacramento told the committee her natural gas bill rose from about 50 a month"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Pacific Northwest Assembly",
+      "object": "Natural Gas Price Manipulation",
+      "confidence": 0.7,
+      "supporting_excerpt": "pacific northwest the assembly on friday opened hearings into the skyrocketing natural gas costs that will include an investigation into whether market manipulation helped drive up prices"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gladys Cook",
+      "object": "Pacific Gas and Electric Co",
+      "confidence": 0.7,
+      "supporting_excerpt": "pacific gas and electric co customer gladys cook of sacramento told the committee her natural gas bill rose from about 50 a month last year at this time to 344 in february and 112 this month"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Gas Companies",
+      "object": "Block construction of gas pipelines",
+      "confidence": 1.0,
+      "supporting_excerpt": "the lawsuits say the companies decided in a phoenix hotel room in 1996 to block construction of gas pipelines that could have helped the state avoid its power crisis"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Rick Morrow",
+      "object": "Vice President of Customer Service for Southern California Gas Co",
+      "confidence": 1.0,
+      "supporting_excerpt": "rick morrow vice president of customer service for southern california gas co denied executives at the meeting were conspiring to drive up gas prices"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Rick Morrow",
+      "object": "Conspiracy allegations",
+      "confidence": 1.0,
+      "supporting_excerpt": "rick morrow vice president of customer service for southern california gas co denied executives at the meeting were conspiring to drive up gas prices there was no mystery to the meeting he said what is being alleged is absolutely false"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Steve Wright",
+      "object": "Acting Administrator of BPA",
+      "confidence": 0.9,
+      "supporting_excerpt": "said bpas acting administrator steve wright"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Bonneville Power Administration",
+      "object": "Goldendale Energy Project",
+      "confidence": 0.9,
+      "supporting_excerpt": "the bonneville power administration signed agreements with goldendale energy inc this week to connect the power from a proposed 248megawatt gasfired combustion turbine to the northwest energy grid"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Goldendale Energy Project",
+      "object": "July 2002",
+      "confidence": 0.7,
+      "supporting_excerpt": "the developers expect to have the new combustion turbine plant running by july 2002"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Goldendale Energy Inc",
+      "object": "16 million payment to BPA",
+      "confidence": 0.7,
+      "supporting_excerpt": "the energy company will pay bpa 16 million to construct operate and maintain a 230kilovolt terminal at bpas harvalum substation"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Klickitat County Public Utility District",
+      "object": "92 mile transmission line",
+      "confidence": 0.7,
+      "supporting_excerpt": "klickitat county public utility district will build a new 92 mile transmission line from the generation project to the substation"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Goldendale Energy Inc",
+      "object": "Goldendale Terminal Construction",
+      "confidence": 0.7,
+      "supporting_excerpt": "between bpa and goldendale energy inc the energy company will pay bpa 16 million to construct operate and maintain a 230kilovolt terminal"
+    },
+    {
+      "claim_type": "agreed",
+      "subject": "Bonneville Power Administration",
+      "object": "terminal operational by jan 15 2002",
+      "confidence": 0.9,
+      "supporting_excerpt": "bpa has agreed to have the terminal operational by jan 15 2002"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mike Hansen",
+      "object": "Bonneville Power Administration",
+      "confidence": 0.7,
+      "supporting_excerpt": "source bonneville power administration contact mike hansen of bonneville power administration"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Enron Corp",
+      "object": "PGE Sale Transaction",
+      "confidence": 1.0,
+      "supporting_excerpt": "enron decided to sell pge since a regulated utility no longer fit with its strategy to buy and sell energy on wholesale markets"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Jeff Skilling",
+      "object": "5 percent chance PGE sale will close",
+      "confidence": 0.7,
+      "supporting_excerpt": "jeff skilling said during a phone conference friday that there is only a 5 chance that it will be able to sell pge"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Jeff Skilling",
+      "object": "president and chief executive officer",
+      "confidence": 0.9,
+      "supporting_excerpt": "the companys president and chief executive officer jeff skilling"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sierra Pacific Resources",
+      "object": "PGE Sale Transaction",
+      "confidence": 0.7,
+      "supporting_excerpt": "sierra pacific resources from selling power plants to fund the purchase"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Faye Anderson",
+      "object": "Sierra Pacific confident deal will close by end of second quarter",
+      "confidence": 0.7,
+      "supporting_excerpt": "sierra pacific spokeswoman faye anderson she said sierra pacific is still confident the deal will close by the end of the second quarter"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Enron Corp",
+      "object": "LNG Trading Initiative",
+      "confidence": 0.9,
+      "supporting_excerpt": "enron also said it will begin trading a liquefied natural gas contract on its enron energy services web site this summer"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Jeff Skilling",
+      "object": "earnings between 175 and 178 per share this year",
+      "confidence": 0.7,
+      "supporting_excerpt": "skilling said enron still expects to earn between 175 and 178 per share this year"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Jeffrey Skilling",
+      "object": "US Natural Gas Market will continue to improve",
+      "confidence": 0.7,
+      "supporting_excerpt": "skilling said he expects it will continue to improve as us natural gas supplies are squeezed"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Jeffrey Skilling",
+      "object": "Enron fundamentals are sound",
+      "confidence": 0.6,
+      "supporting_excerpt": "he also said the companys fundamentals are sound"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Jeffrey Skilling",
+      "object": "Enron is in good shape despite market conditions",
+      "confidence": 0.7,
+      "supporting_excerpt": "its a bad market but enron is in good shape skilling said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jeffrey Skilling",
+      "object": "Enron stock decline from 90.75 to 50s",
+      "confidence": 0.7,
+      "supporting_excerpt": "he doesnt understand why the stock has fallen to the 50s from a high of 9075 in august"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Enron Stock Performance",
+      "object": "rose nearly 8 to close at 59.40 on Friday",
+      "confidence": 0.9,
+      "supporting_excerpt": "on friday shares of enron rose nearly 8 to close at 5940"
+    }
+  ],
+  "_source_id": "157933",
+  "_email_meta": {
+    "sender": "miyung.buster@enron.com",
+    "recipient": "ann.schmidt@enron.com, bryan.seyfried@enron.com, dcasse@whwg.com, ",
+    "date": "2001-03-26"
+  }
+}

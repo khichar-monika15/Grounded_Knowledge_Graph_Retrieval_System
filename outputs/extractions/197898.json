@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "Tana Jones",
+      "type": "person",
+      "aliases": [
+        "tana.jones@enron.com"
+      ]
+    },
+    {
+      "name": "Harry Collins",
+      "type": "person",
+      "aliases": [
+        "harry.collins@enron.com"
+      ]
+    },
+    {
+      "name": "Aparna Rajaram",
+      "type": "person",
+      "aliases": [
+        "aparna rajaram"
+      ]
+    },
+    {
+      "name": "Kelly Lombardi",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Samuel Schott",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bernice Rodriguez",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bill D Hare",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Steve Ventura",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Camille Gerard",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Tanya Rohauer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Tom Moran",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Frank L Davis",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ken Curry",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Nicole Hunter",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Lesli Campbell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Click Paper Approvals",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Tana Jones",
+      "object": "Harry Collins",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: tana.jones@enron.com\nTo: harry.collins@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Kelly Lombardi",
+      "confidence": 0.8,
+      "supporting_excerpt": "to kelly lombardinaenronenron"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Samuel Schott",
+      "confidence": 0.8,
+      "supporting_excerpt": "samuel schotthouectect"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Bernice Rodriguez",
+      "confidence": 0.5,
+      "supporting_excerpt": "bernice rodriguezhouectect"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Bill D Hare",
+      "confidence": 0.8,
+      "supporting_excerpt": "bill d harehouectect"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Steve Ventura",
+      "confidence": 0.8,
+      "supporting_excerpt": "steve venturatoshouectect"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Camille Gerard",
+      "confidence": 0.8,
+      "supporting_excerpt": "camille gerardcorpenronenron"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Tanya Rohauer",
+      "confidence": 0.5,
+      "supporting_excerpt": "tanya rohauerenronenronxgate"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Tom Moran",
+      "confidence": 0.8,
+      "supporting_excerpt": "tom moranenronenronxgate"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Frank L Davis",
+      "confidence": 0.8,
+      "supporting_excerpt": "frank l davishouectect"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Ken Curry",
+      "confidence": 0.8,
+      "supporting_excerpt": "ken curryenronenronxgate"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Nicole Hunter",
+      "confidence": 0.5,
+      "supporting_excerpt": "nicole hunternaenronenron"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Aparna Rajaram",
+      "object": "Lesli Campbell",
+      "confidence": 0.8,
+      "supporting_excerpt": "lesli campbellenronenronxgate"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Aparna Rajaram",
+      "object": "Click Paper Approvals",
+      "confidence": 0.6,
+      "supporting_excerpt": "subject click paper approvals 032201"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Aparna Rajaram",
+      "object": "attached document",
+      "confidence": 0.6,
+      "supporting_excerpt": "please see attached"
+    }
+  ],
+  "_source_id": "197898",
+  "_email_meta": {
+    "sender": "tana.jones@enron.com",
+    "recipient": "harry.collins@enron.com",
+    "date": "2001-03-22"
+  }
+}

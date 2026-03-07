@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron"
+      ]
+    },
+    {
+      "name": "Fortune 500",
+      "type": "topic",
+      "aliases": [
+        "fortune ranking"
+      ]
+    },
+    {
+      "name": "EnronOnline",
+      "type": "project",
+      "aliases": [
+        "enrononline"
+      ]
+    },
+    {
+      "name": "all.worldwide@enron.com",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "office.chairman@enron.com",
+      "object": "all.worldwide@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: office.chairman@enron.com\nTo: all.worldwide@enron.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Enron",
+      "object": "ranked no 7 on the fortune 500",
+      "confidence": 0.9,
+      "supporting_excerpt": "enr on20 now ranks no 7 on the fortune 500 up from no 18 last year"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron",
+      "object": "revenues topped the 100 billion mark",
+      "confidence": 0.6,
+      "supporting_excerpt": "20 topped the 100 billion mark"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "office.chairman@enron.com",
+      "object": "Fortune 500",
+      "confidence": 0.7,
+      "supporting_excerpt": "congratulations  youve helped make enron one of americas elite20 corporations  we had a stunning performance in 2000"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "EnronOnline",
+      "object": "enormous increase in volumes",
+      "confidence": 0.7,
+      "supporting_excerpt": "20 last year propelled by an enormous increase in volumes on enrononline"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "office.chairman@enron.com",
+      "object": "Enron to become the world's leading company",
+      "confidence": 0.9,
+      "supporting_excerpt": "we have20 developed a new vision for enron to become the world01s leading company"
+    }
+  ],
+  "_source_id": "412014",
+  "_email_meta": {
+    "sender": "office.chairman@enron.com",
+    "recipient": "all.worldwide@enron.com",
+    "date": "2001-04-02"
+  }
+}

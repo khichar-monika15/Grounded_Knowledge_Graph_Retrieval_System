@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "Steven Kean",
+      "type": "person",
+      "aliases": [
+        "steven.kean@enron.com",
+        "steven j kean"
+      ]
+    },
+    {
+      "name": "Katie Spencer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Brenda Sells",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Rice University",
+      "type": "organization",
+      "aliases": [
+        "rice.edu"
+      ]
+    },
+    {
+      "name": "Credit Union",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Financial Services Department",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "2000 Dividends",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Katie Spencer",
+      "object": "Steven Kean",
+      "confidence": 0.8,
+      "supporting_excerpt": "katie spencer  sent by brenda sells  04022001         to skeanenroncom"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steven Kean",
+      "object": "2000 Dividends",
+      "confidence": 0.6,
+      "supporting_excerpt": "subject 2000 dividends  1099 information"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Katie Spencer",
+      "object": "1099 information",
+      "confidence": 0.7,
+      "supporting_excerpt": "1099 information is only produced if an account earns more than 10 in  dividendinterest income"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steven Kean",
+      "object": "savings account",
+      "confidence": 0.6,
+      "supporting_excerpt": "your savings for the year 2000 earned 396"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steven Kean",
+      "object": "free checking account",
+      "confidence": 0.7,
+      "supporting_excerpt": "you have the free checking account which is noninterest bearing so there  were no dividends earned on that account"
+    },
+    {
+      "claim_type": "informed",
+      "subject": "Katie Spencer",
+      "object": "Steven Kean",
+      "confidence": 0.9,
+      "supporting_excerpt": "if you need additional  information please contact the financial services department at the credit  union at 7138536902"
+    }
+  ],
+  "_source_id": "251452",
+  "_email_meta": {
+    "sender": "steven.kean@enron.com",
+    "recipient": "kean@rice.edu",
+    "date": "2001-04-02"
+  }
+}

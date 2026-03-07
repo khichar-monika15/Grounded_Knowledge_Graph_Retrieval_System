@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "Jonathan McKay",
+      "type": "person",
+      "aliases": [
+        "jon",
+        "jonathan.mckay@enron.com"
+      ]
+    },
+    {
+      "name": "Greg Mann",
+      "type": "person",
+      "aliases": [
+        "gmann",
+        "greg.mann@enron.com"
+      ]
+    },
+    {
+      "name": "Luc Albert",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bruce Chad Grier",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Scott Dalgleish",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Haulall Gas Deal",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Sales Manager",
+      "type": "role",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jonathan McKay",
+      "object": "Greg Mann",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jonathan.mckay@enron.com To: greg.mann@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Greg Mann",
+      "object": "Sales Manager",
+      "confidence": 0.9,
+      "supporting_excerpt": "greg mann sales manager"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Greg Mann",
+      "object": "Jonathan McKay",
+      "confidence": 0.8,
+      "supporting_excerpt": "jon this deal is signed  please buy gas  thank you"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Greg Mann",
+      "object": "Haulall Gas Deal",
+      "confidence": 0.8,
+      "supporting_excerpt": "subject haulall gas deal"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Haulall Gas Deal",
+      "object": "signed",
+      "confidence": 0.8,
+      "supporting_excerpt": "jon this deal is signed"
+    }
+  ],
+  "_source_id": "332298",
+  "_email_meta": {
+    "sender": "jonathan.mckay@enron.com",
+    "recipient": "greg.mann@enron.com",
+    "date": "2001-08-14"
+  }
+}

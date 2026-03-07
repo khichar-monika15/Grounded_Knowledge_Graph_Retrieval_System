@@ -1,0 +1,4526 @@
+{
+  "entities": [
+    {
+      "name": "Angela Wilson",
+      "type": "person",
+      "aliases": [
+        "angela.wilson@enron.com"
+      ]
+    },
+    {
+      "name": "Ann Schmidt",
+      "type": "person",
+      "aliases": [
+        "ann.schmidt@enron.com"
+      ]
+    },
+    {
+      "name": "Bryan Seyfried",
+      "type": "person",
+      "aliases": [
+        "bryan.seyfried@enron.com"
+      ]
+    },
+    {
+      "name": "Elizabeth Linnell",
+      "type": "person",
+      "aliases": [
+        "elizabeth.linnell@enron.com"
+      ]
+    },
+    {
+      "name": "Gray Davis",
+      "type": "person",
+      "aliases": [
+        "Gov. Gray Davis",
+        "Governor Davis"
+      ]
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": [
+        "energy refunds",
+        "electricity overcharges",
+        "power shortage"
+      ]
+    },
+    {
+      "name": "Senate Governmental Affairs Committee",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "David Whitney",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Pat Wood III",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "William Massey",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Federal Energy Regulatory Commission",
+      "type": "organization",
+      "aliases": [
+        "FERC"
+      ]
+    },
+    {
+      "name": "California Independent System Operator",
+      "type": "organization",
+      "aliases": [
+        "CAISO"
+      ]
+    },
+    {
+      "name": "Washington Post",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "FERC",
+      "type": "organization",
+      "aliases": [
+        "Federal Energy Regulatory Commission",
+        "the commission",
+        "the energy commission"
+      ]
+    },
+    {
+      "name": "Curt Hebert",
+      "type": "person",
+      "aliases": [
+        "commission chairman hebert"
+      ]
+    },
+    {
+      "name": "Joe Lieberman",
+      "type": "person",
+      "aliases": [
+        "sen joe lieberman"
+      ]
+    },
+    {
+      "name": "Fred Thompson",
+      "type": "person",
+      "aliases": [
+        "sen fred thompson"
+      ]
+    },
+    {
+      "name": "MB Associates",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Republican National Committee",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "FERC Refunds Review",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Connecticut",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Tennessee",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Sacramento",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Frank Murkowski",
+      "type": "person",
+      "aliases": [
+        "sen frank murkowski"
+      ]
+    },
+    {
+      "name": "Dianne Feinstein",
+      "type": "person",
+      "aliases": [
+        "sens dianne feinstein"
+      ]
+    },
+    {
+      "name": "Gordon Smith",
+      "type": "person",
+      "aliases": [
+        "gordon smith"
+      ]
+    },
+    {
+      "name": "Jay Inslee",
+      "type": "person",
+      "aliases": [
+        "democratic reps jay inslee"
+      ]
+    },
+    {
+      "name": "Nancy Pelosi",
+      "type": "person",
+      "aliases": [
+        "nancy pelosi"
+      ]
+    },
+    {
+      "name": "Alaska",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Washington",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "San Francisco",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "FERC Power Refunds",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Wholesale Price Regulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Kathleen Connell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Carole Migden",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "H Josef Hebert",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Power Plant Tax Assessment",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Electricity Overcharges Refund",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "State Board of Equalization",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Power Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Patty Murray",
+      "type": "person",
+      "aliases": [
+        "Sen. Patty Murray"
+      ]
+    },
+    {
+      "name": "Pacific Northwest",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Senate Democrats",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "House Democrats",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "GOP",
+      "type": "organization",
+      "aliases": [
+        "Senate Republicans"
+      ]
+    },
+    {
+      "name": "Norm Ornstein",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Curtis L. Hebert",
+      "type": "person",
+      "aliases": [
+        "curtis l hebert"
+      ]
+    },
+    {
+      "name": "Curtis L. Wagner Jr.",
+      "type": "person",
+      "aliases": [
+        "curtis l wagner jr"
+      ]
+    },
+    {
+      "name": "Bill Lockyer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Nora Brownell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Duncan Hunter",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Darrell Issa",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "American Enterprise Institute",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Independent System Operator",
+      "type": "organization",
+      "aliases": [
+        "ISO"
+      ]
+    },
+    {
+      "name": "Pete Wilson",
+      "type": "person",
+      "aliases": [
+        "Gov Pete Wilson"
+      ]
+    },
+    {
+      "name": "Mickey Cafagna",
+      "type": "person",
+      "aliases": [
+        "Mayor Mickey Cafagna"
+      ]
+    },
+    {
+      "name": "Jim Bowersox",
+      "type": "person",
+      "aliases": [
+        "Jim Bowersox"
+      ]
+    },
+    {
+      "name": "Brian E Clark",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Poway City Council",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Energy Deregulation Plan",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "South Poway Power Plant",
+      "type": "project",
+      "aliases": [
+        "40 million power plant"
+      ]
+    },
+    {
+      "name": "Poway",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Rep Duncan Hunter",
+      "type": "person",
+      "aliases": [
+        "Duncan Hunter"
+      ]
+    },
+    {
+      "name": "Betty Rexford",
+      "type": "person",
+      "aliases": [
+        "councilwoman betty rexford"
+      ]
+    },
+    {
+      "name": "Anne Krueger",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Dianne Jacob",
+      "type": "person",
+      "aliases": [
+        "supervisor dianne jacob"
+      ]
+    },
+    {
+      "name": "San Diego",
+      "type": "location",
+      "aliases": [
+        "san diego county"
+      ]
+    },
+    {
+      "name": "San Diego Gas & Electric Co",
+      "type": "organization",
+      "aliases": [
+        "san diego gas electric co"
+      ]
+    },
+    {
+      "name": "Peaker Plant Project",
+      "type": "project",
+      "aliases": [
+        "peaker plants",
+        "peakerplant proposal"
+      ]
+    },
+    {
+      "name": "Cool Zones Program",
+      "type": "project",
+      "aliases": [
+        "cool zones"
+      ]
+    },
+    {
+      "name": "Denise Nelesen",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "William Richards",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Eve Butler",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jeff McDonald",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "County Office of Aging and Independence Services",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "San Diego Gas & Electric",
+      "type": "organization",
+      "aliases": [
+        "SDGE"
+      ]
+    },
+    {
+      "name": "California Rolling Blackout Response",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Project Care Program",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Chicago",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "El Cajon",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Lemon Grove Senior Center",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Valley Rainbow Interconnect",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "San Diego County Valley Rainbow Alliance",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Public Utilities Commission",
+      "type": "organization",
+      "aliases": [
+        "CPUC"
+      ]
+    },
+    {
+      "name": "San Diego Regional Chamber of Commerce",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Jessie Knight Jr",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Governor Gray Davis",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Riverside County",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Temecula",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Finlay Lewis",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Joe Cantlupe",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jim Jeffords",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Copley News Service",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Senate Government Affairs Committee",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Curtis Hebert",
+      "type": "person",
+      "aliases": [
+        "ferc chairman curtis hebert"
+      ]
+    },
+    {
+      "name": "Curtis Wagner Jr",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Barbara Boxer",
+      "type": "person",
+      "aliases": [
+        "sen barbara boxer"
+      ]
+    },
+    {
+      "name": "Mark Stultz",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Pat Wood",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Electric Power Supply Association",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Electricity Price Refunds",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Jennifer Coleman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "California Attorney General",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "General Electric",
+      "type": "organization",
+      "aliases": [
+        "GE"
+      ]
+    },
+    {
+      "name": "TransElect",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Vista",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Natural Gas Price Discrepancies",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "GE Capital",
+      "type": "organization",
+      "aliases": [
+        "GE Capital Services"
+      ]
+    },
+    {
+      "name": "Bob Mitchell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ken Koprowski",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Fred Keeley",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "San Diego Gas Electric",
+      "type": "organization",
+      "aliases": [
+        "SDGE"
+      ]
+    },
+    {
+      "name": "Southern California Edison",
+      "type": "organization",
+      "aliases": [
+        "Edison"
+      ]
+    },
+    {
+      "name": "Pacific Gas and Electric",
+      "type": "organization",
+      "aliases": [
+        "PG&E"
+      ]
+    },
+    {
+      "name": "GE Mitchell",
+      "type": "person",
+      "aliases": [
+        "mitchell"
+      ]
+    },
+    {
+      "name": "Phillip Schott",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Fred Pownall",
+      "type": "person",
+      "aliases": [
+        "kahlpownall"
+      ]
+    },
+    {
+      "name": "John Bryson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Edison",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "SDGE",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Kahlpownall Advocates",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Transelect Transmission Lines Deal",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Los Angeles",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Maripat Blankenheim",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Richard Simon",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "American Transmission Company",
+      "type": "organization",
+      "aliases": [
+        "ATC"
+      ]
+    },
+    {
+      "name": "Transmission System Deregulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Energy Refund Recovery",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Wisconsin",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Robert Torricelli",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Curtis L Wagner Jr",
+      "type": "person",
+      "aliases": [
+        "chief administrative law judge"
+      ]
+    },
+    {
+      "name": "Bush Administration",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "New Jersey",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Power Refunds Settlement",
+      "type": "topic",
+      "aliases": [
+        "refunds conference"
+      ]
+    },
+    {
+      "name": "Stephen E Pickett",
+      "type": "person",
+      "aliases": [
+        "stephen e pickett"
+      ]
+    },
+    {
+      "name": "Art Larson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Pat Hammond",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Donato Eassey",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Reliant Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Merrill Lynch",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "FERC-Mediated Settlement Conference",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Patrick H Wood III",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Department of Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Texas",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Curtis L Hebert Jr",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "William L Massey",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Nancy Rivera Brooks",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Thomas S Mulligan",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Janet Hook",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Natural Gas Price Increases",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Energy Assistance Program",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "New York",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Tom DeLay",
+      "type": "person",
+      "aliases": [
+        "House Majority Whip Tom DeLay"
+      ]
+    },
+    {
+      "name": "George W. Bush",
+      "type": "person",
+      "aliases": [
+        "Bush"
+      ]
+    },
+    {
+      "name": "Price Caps Debate",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Midyear Appropriation Bill",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "House of Representatives",
+      "type": "organization",
+      "aliases": [
+        "House"
+      ]
+    },
+    {
+      "name": "Senate",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Internal Revenue Service",
+      "type": "organization",
+      "aliases": [
+        "IRS"
+      ]
+    },
+    {
+      "name": "Office of Management and Budget",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Federal Emergency Management Agency",
+      "type": "organization",
+      "aliases": [
+        "FEMA"
+      ]
+    },
+    {
+      "name": "Low-Income Home Energy Assistance Program",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "House Republicans",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Mitchell Landsberg",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Richard Sklar",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mike Sloss",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Richard Roher",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Stephanie McCorkle",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Jan Smutney-Jones",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Dave Aragon",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Nancy Vogel",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "President Bush",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Vice President Dick Cheney",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Independent Energy Producers Association",
+      "type": "organization",
+      "aliases": [
+        "IEPA"
+      ]
+    },
+    {
+      "name": "Roll Your Own Blackout",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Riverside",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Palm Springs",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Northwest",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Phoenix",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Berkeley",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Lenny Goldberg",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Board of Equalization",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Tax Reform Association",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Power Plant Tax Proposal",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "California Deregulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "California Tax Board",
+      "type": "organization",
+      "aliases": [
+        "tax board",
+        "board of equalization"
+      ]
+    },
+    {
+      "name": "California Power Plant Tax Assessment",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Duke Energy North America",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Long Beach",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Huntington Beach",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Monterey Bay",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Barbara Hennessy",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Shari L Freidenrich",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Tom Williams",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Robert Salladay",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Chris Lehane",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark Fabiani",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Lewis Uhler",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bill Jones",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Duke Energy",
+      "type": "organization",
+      "aliases": [
+        "Duke"
+      ]
+    },
+    {
+      "name": "San Francisco Chronicle",
+      "type": "organization",
+      "aliases": [
+        "Chronicle"
+      ]
+    },
+    {
+      "name": "National Tax-Limitation Committee",
+      "type": "organization",
+      "aliases": [
+        "Tax-Limitation Committee"
+      ]
+    },
+    {
+      "name": "Fair Political Practices Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Hilary McLean",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Karl Rove",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jim Brulte",
+      "type": "person",
+      "aliases": [
+        "state senate minority leader"
+      ]
+    },
+    {
+      "name": "Al Gore",
+      "type": "person",
+      "aliases": [
+        "vice president al gore"
+      ]
+    },
+    {
+      "name": "Bill Clinton",
+      "type": "person",
+      "aliases": [
+        "clinton"
+      ]
+    },
+    {
+      "name": "Clinton White House",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "White House",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Edison Deal",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Political Consultant Conflict",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Garry South",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bernadette Tansey",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Johan Klehs",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Power Plant Property Tax Authority",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Monterey County",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "California Deregulation Energy Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Carolyn Lochhead",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Patrick Wood",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Los Angeles County",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Power Plant Assessment",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Electricity Price Controls",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Nora Mead Brownell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Electricity Price Regulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Texas Public Utilities Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Steve Maviglio",
+      "type": "person",
+      "aliases": [
+        "maviglio"
+      ]
+    },
+    {
+      "name": "Governor Davis",
+      "type": "person",
+      "aliases": [
+        "davis"
+      ]
+    },
+    {
+      "name": "Curtis Wagner",
+      "type": "person",
+      "aliases": [
+        "wagner"
+      ]
+    },
+    {
+      "name": "Pacific Gas and Electric Co",
+      "type": "organization",
+      "aliases": [
+        "PG&E"
+      ]
+    },
+    {
+      "name": "State of California",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Electricity Market Deregulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Price Control Settlement Talks",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Bill Workman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "West Coast Electricity Supply",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Utility Bill Relief Program",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Peter Hero",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Robert Freiri",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Community Foundation Silicon Valley",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "St Elizabeth's Day Care Center",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "San Juan Bautista Child Development Center",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Concern for the Poor",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "San Jose Family Shelter",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Energy Grant Program",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "San Jose",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Northern California",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "East San Jose",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "United Way Silicon Valley",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Greg Larson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Silicon Valley Energy Grant Program",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "California Electricity Market Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Severin Borenstein",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mike Wilczek",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Gary Ackerman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "University of California Energy Institute",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Platts Power Markets",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "McGrawHill",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Western Power Trading Forum",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Federal Price Controls",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Robert Michaels",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "California State University Fullerton",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Jim Puzzanghera",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Dena Bunis",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Orange County Register",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Price Control Ruling",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Julie Simon",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mitch Wilk",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "George W Bush",
+      "type": "person",
+      "aliases": [
+        "President George W Bush"
+      ]
+    },
+    {
+      "name": "Steven Fetter",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Fitch Inc",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "FERC Price Regulation Order",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Western Energy Market",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Kate Berry",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "John Howard",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Western Electricity Markets",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Price Controls Debate",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Billy Tauzin",
+      "type": "person",
+      "aliases": [
+        "Rep Billy Tauzin"
+      ]
+    },
+    {
+      "name": "Price Controls",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Boise Idaho",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "House Energy and Commerce Committee",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Richard Massey",
+      "type": "person",
+      "aliases": [
+        "mr caps do work massey"
+      ]
+    },
+    {
+      "name": "Debra Bowen",
+      "type": "person",
+      "aliases": [
+        "sen debra bowen"
+      ]
+    },
+    {
+      "name": "Pacific Gas Electric",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "FERC Price Controls",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Settlement Negotiations",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Sacramento Superior Court",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California State Controller",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "FERC Chief Administrative Law Judge",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "Jack M Stewart",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Cruz Bustamante",
+      "type": "person",
+      "aliases": [
+        "Lt Gov Cruz Bustamante"
+      ]
+    },
+    {
+      "name": "Jay La Suer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "John E Bryson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "California Manufacturers and Technology Association",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Edison International",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Price Gouging Legislation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Edison Bailout Deal",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Mirant",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Patrick Dorinson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Del Mar Fair",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Stephen Chambers",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ralph Clark",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Western Fairs Association",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Orange County Fair",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California State Fair",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Del Mar Fairgrounds",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Amador County Fair",
+      "type": "organization",
+      "aliases": [
+        "amador fair"
+      ]
+    },
+    {
+      "name": "Mother Lode Fair",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Fair Industry Power Costs",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Plymouth",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Sonora",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Orange County",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Del Mar",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Amador Fair",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Los Angeles County Fair",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Del Mar",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Sanmina Corp",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Transmeta Corp",
+      "type": "organization",
+      "aliases": [
+        "Transmeta"
+      ]
+    },
+    {
+      "name": "Technology Industry Slowdown",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Ann Schmidt",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: angela.wilson@enron.com\nTo: ann.schmidt@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Bryan Seyfried",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: angela.wilson@enron.com\nTo: ann.schmidt@enron.com, bryan.seyfried@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Elizabeth Linnell",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: angela.wilson@enron.com\nTo: ann.schmidt@enron.com, bryan.seyfried@enron.com, elizabeth.linnell@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "washington gov gray davis demanded wednesday that power generators refund california nearly 9 billion in electricity charges"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "energy refunds",
+      "confidence": 0.8,
+      "supporting_excerpt": "davis insists on energy refunds"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "generator overcharges",
+      "confidence": 0.4,
+      "supporting_excerpt": "it is unconscionable for the generators to profit from their egregious overcharges davis told the senate governmental affairs committee"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Bryan Seyfried",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: angela.wilson@enron.com\nTo: bryan.seyfried@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Elizabeth Linnell",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: angela.wilson@enron.com\nTo: elizabeth.linnell@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "David Whitney",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "energy refunds20 by david whitney bee washington bureau published june 21 2001"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Gray Davis",
+      "object": "power generators must refund California nearly 9 billion in electricity charges",
+      "confidence": 1.0,
+      "supporting_excerpt": "washington gov gray davis demanded wednesday that power generators refu nd20 california nearly 9 billion in electricity charges"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "it is unconscionable for generators to profit from overcharges",
+      "confidence": 0.7,
+      "supporting_excerpt": "it is unconscionable for the generators to profit from their egregious20 overcharges davis told the senate governmental affairs committee"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pat Wood III",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "the governor got some support from two ferc members who said wednesday 20 that they are prepared to order californias energy suppliers to make heavy 20 refunds because of overcharging20 but the two commissioners pat wood iii and william massey agreed"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "William Massey",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "the two commissioners pat wood iii and william massey agreed with 20 their ferc colleagues that california officials and energy companies should 20 be given a chance to settle the multibilliondollar refund dispute"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "FERC finally took a positive step in imposing limits",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis gave tepid praise to ferc which he said final ly20 took a positive step in imposing the limits"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "FERC should recover overcharges",
+      "confidence": 0.9,
+      "supporting_excerpt": "he continued to press the 20 independent agency to recover what he said were overcharges"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "the FERC has been on a sit-down strike because we haven't received a dime",
+      "confidence": 0.7,
+      "supporting_excerpt": "the ferc has been on a sitdown strike because we havent received a 20 dime davis said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Independent System Operator",
+      "object": "state was billed 8.9 billion more than competitive market would warrant",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis said the california independent system operator the folsombased20 agency that manages the states power grid found the state was billed 89 20 billion more than the competitive market would have warranted for power"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "FERC should move promptly to order energy companies to return money",
+      "confidence": 0.9,
+      "supporting_excerpt": "davis insisted that ferc move promptly to order the energy companies to gi ve20 back the money"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "Congress should pressure FERC on refunds",
+      "confidence": 0.9,
+      "supporting_excerpt": "and that congress should help pressure the agency to do so"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis told the democratcontrolled panel during a hearing into 20 whether ferc has responded properly to the crisis"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Davis",
+      "object": "89 billion in refunds",
+      "confidence": 0.9,
+      "supporting_excerpt": "the 20 89 billion that davis is now seeking in refunds"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Wood",
+      "object": "FERC Refunds Review",
+      "confidence": 0.7,
+      "supporting_excerpt": "wood and massey who talked to the post after their testimony wednesday20 before the committee"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Massey",
+      "object": "apply FERC order starting October 2000",
+      "confidence": 0.9,
+      "supporting_excerpt": "a good place to start was to take mondays order and appl y20 it starting october 2000 and see what you get in refunds"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curt Hebert",
+      "object": "commission chairman",
+      "confidence": 0.9,
+      "supporting_excerpt": "commission chairman curt hebert told the senate panel"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Curt Hebert",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "commission chairman curt hebert told the senate panel at wednesdays hearin g20 that if no deal is reached after three weeks the commission would seek"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Joe Lieberman",
+      "object": "Senate committee",
+      "confidence": 0.7,
+      "supporting_excerpt": "the questioning by the committees chairman sen joe lieberman of20 connecticut"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Fred Thompson",
+      "object": "Senate committee",
+      "confidence": 0.6,
+      "supporting_excerpt": "asked sen fred thompson of20 tennessee the committees"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Republican National Committee",
+      "object": "MB Associates",
+      "confidence": 0.7,
+      "supporting_excerpt": "the fans were paid for by a small sacramento republican consulting firm mb 20 associates"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Joe Lieberman",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "committees chairman sen joe lieberman of20 connecticut and other democrats was friendly but republicans tried to pai nt20 davis as the culprit in a crisis"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Fred Thompson",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "how did you let things get totally out of hand asked sen fred thompson of20 tennessee the committees senior republican"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Davis",
+      "object": "aggressive actions taken by his administration",
+      "confidence": 0.7,
+      "supporting_excerpt": "i make no apologies for the aggressive actions weve taken the governor 20 said"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Frank Murkowski",
+      "object": "FERC Power Refunds",
+      "confidence": 0.7,
+      "supporting_excerpt": "the top republican on the senates energy and natural resources 20 committee said it was unrealistic and perhaps unfair for davis to20 expect ferc to immediately order refunds20 theyre going to have to go back to court and prove these charges that20 indeed there was manipulation in the marketing of power and thats going to20 be very difficult to do said sen frank murkowski ralaska"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dianne Feinstein",
+      "object": "Wholesale Price Regulation",
+      "confidence": 0.7,
+      "supporting_excerpt": "meanwhile sens dianne feinstein dcalif and gordon smith rore said 20 wednesday that because of fercs action they were pulling back their bill 20 at least for now to require that wholesale prices in the west be set at th e20 cost of production plant by plant plus a margin of profit"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jay Inslee",
+      "object": "Wholesale Price Regulation",
+      "confidence": 0.7,
+      "supporting_excerpt": "house democrats said that while they were happy the commission had 20 taken action they still want a vote on a tougher pricecap proposal offere d20 by democratic reps jay inslee of washington and nancy pelosi of san20 francisco"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Kathleen Connell",
+      "object": "Power Plant Tax Assessment",
+      "confidence": 0.6,
+      "supporting_excerpt": "state controller kathleen connell a member of the board proposed that the state take over the assessments"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "State Board of Equalization",
+      "object": "Power Plant Tax Assessment",
+      "confidence": 0.7,
+      "supporting_excerpt": "the board which voted unanimously to give the plan tentative approval"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "Electricity Overcharges Refund",
+      "confidence": 0.6,
+      "supporting_excerpt": "california gov gray davis demanded that power generators refund nearly 9 billion in electricity overcharges"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "House Democrats",
+      "object": "Price Cap Proposal",
+      "confidence": 0.4,
+      "supporting_excerpt": "house democrats said that while they were happy the commission had taken action they still want a vote on a tougher pricecap proposal offered by democratic reps jay inslee of washington and nancy pelosi of san francisco"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Davis",
+      "object": "California Power Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "davis told a senate hearing wednesday that the decision by the federal energy regulatory commission to curtail price spikes in california"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Davis",
+      "object": "FERC decision was a step forward but does nothing about overcharges",
+      "confidence": 0.4,
+      "supporting_excerpt": "the decision by the federal energy regulatory commission to curtail price spikes in california and 10 other western states was a step forward but its actions do nothing about the overcharges over the past year"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Frank Murkowski",
+      "object": "California Power Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "said sen frank murkowski ralaska murkowski said many of the alleged overcharges are by public power entities not under ferc jurisdiction"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Joe Lieberman",
+      "object": "California Power Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "sen joe lieberman dconn chairman of the governmental affairs committee said the ferc which regulates wholesale electricity sales has been slow to respond"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Joe Lieberman",
+      "object": "FERC has been slow to respond and reluctant to ensure just and reasonable prices",
+      "confidence": 0.4,
+      "supporting_excerpt": "the ferc which regulates wholesale electricity sales has been slow to respond and surprisingly reluctant to assure that electricity prices are just and reasonable as required by the 1934 federal power act"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Ann Schmidt, Bryan Seyfried, Elizabeth Linnell",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: angela.wilson@enron.com To: ann.schmidt@enron.com, bryan.seyfried@enron.com, elizabeth.linnell@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "complained davis he said that between may 2000 and the beginning of this 20 month power generators are believed to have overcharged california 8920 billion20"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Davis",
+      "object": "FERC looked the other way while energy companies bilked California",
+      "confidence": 0.7,
+      "supporting_excerpt": "it is20 unconscionable that ferc looked the other way while energy companies bilked 20 our state for up to 9 billion"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Patty Murray",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "this administration has minimized this crisis for more months said sen 20 patty murray dwash alluding to president bushs repeated refusal to urg e20 the ferc to mitigate electricity prices"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Fred Thompson",
+      "object": "price controls and cost-based price caps",
+      "confidence": 0.7,
+      "supporting_excerpt": "having a federal agency try to determine what is a just and reasonable pri ce20 is laughable said sen fred thompson of tennessee the committees rankin g20 republican hard price caps dont work when supply is the problem the y20 make a bad situation worse"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Senate Democrats",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "senate democra ts20 on tuesday said they would drop legislation to require more stringent20 costbased price caps on western electricity sales"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "House Democrats",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "democrats in the house however said they would continue to pursue a bill 20 requiring the ferc to take more aggressive action"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "california gov gray davis sparred with senate republicans 20 wednesday as he blamed federal regulators for averting their gaze from an 20 alleged 9 billion scheme to bilk the states electricity consumers"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Fred Thompson",
+      "object": "ranking republican",
+      "confidence": 1.0,
+      "supporting_excerpt": "asked sen fred thomps on20 of tennessee the committees ranking republican"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "FERC",
+      "confidence": 0.9,
+      "supporting_excerpt": "davis20 demanded that the federal energy regulatory commission ferc order power 20 companies to refund the overcharges"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "FERC oversight",
+      "confidence": 0.7,
+      "supporting_excerpt": "it is unconscionable that the20 commission looked the other way while energy companies bilked our state for 20 up to 9 billion"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Norm Ornstein",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "observed norm ornstein a congressional affairs expert at the american enterprise institute"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curtis L. Hebert",
+      "object": "FERC Chairman",
+      "confidence": 0.6,
+      "supporting_excerpt": "said ferc chairman curtis l hebert"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "FERC",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "the five ferc commissioners appeared before the committee but they largely ignored the governors accusations"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "FERC",
+      "object": "price restrictions in California",
+      "confidence": 0.7,
+      "supporting_excerpt": "on monday ferc issued an order restricting energy prices in california and much of the west for the next 15 months"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curtis L. Wagner Jr.",
+      "object": "FERC Chief Administrative Law Judge",
+      "confidence": 0.6,
+      "supporting_excerpt": "before fercs chief administrative law judge curtis l wagner jr"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Independent System Operator",
+      "object": "California Energy Crisis",
+      "confidence": 0.3,
+      "supporting_excerpt": "the independent system operator which runs the states power grid"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Bill Lockyer",
+      "object": "California Attorney General",
+      "confidence": 0.6,
+      "supporting_excerpt": "california attorney general bill lockyer is reviewing possible price gouging"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Davis",
+      "object": "meeting with Pat Wood III and Nora Brownell",
+      "confidence": 0.6,
+      "supporting_excerpt": "davis expects to meet on monday in sacramento with bushs two new ferc gop appointees pat wood iii and nora brownell"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Duncan Hunter",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "reps duncan hunter rel cajon and darrell issa rvista were among the republicans who met with davis"
+    },
+    {
+      "claim_type": "agreed",
+      "subject": "Davis",
+      "object": "Angela Wilson",
+      "confidence": 0.9,
+      "supporting_excerpt": "gas and the20 president agreed with me this is something that could be fixed davis told a20 press conference"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Duncan Hunter",
+      "object": "California Energy Crisis",
+      "confidence": 0.9,
+      "supporting_excerpt": "20 reps duncan hunter rel cajon and darrell issa rvista were among the 20 republicans who met with davis"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Thompson",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "sparring with davis thompson argued that there had been ample advance20 warnings of the crisis"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Thompson",
+      "object": "Energy Deregulation Plan",
+      "confidence": 0.7,
+      "supporting_excerpt": "the state legislature that designed an energy deregulation plan now20 widely recognized as having been seriously flawed"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Davis",
+      "object": "Pete Wilson",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis sought to shift the focus back to his predecessor gov pete wilson"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Poway City Council",
+      "object": "South Poway Power Plant",
+      "confidence": 1.0,
+      "supporting_excerpt": "the city council has pulled the plug on a 20 proposed 40 million power plant in the south poway business park"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Mickey Cafagna",
+      "object": "Mayor",
+      "confidence": 0.9,
+      "supporting_excerpt": "mayor mickey cafagna told city manager jim 20 bowersox"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Mickey Cafagna",
+      "object": "Jim Bowersox",
+      "confidence": 0.9,
+      "supporting_excerpt": "mayor mickey cafagna told city manager jim 20 bowersox who was lukewarm at best to the proposed plant that his staf f20 should not spend any more time or money on the project"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Peaker Plant Project",
+      "object": "Poway",
+      "confidence": 0.6,
+      "supporting_excerpt": "if the council had chosen to proceed with the peakerplant proposal an idea it first explored in march"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Cafagna",
+      "object": "Peaker Plant Project",
+      "confidence": 0.4,
+      "supporting_excerpt": "cafagna said he saw little reason to invest in the plant especially since there are no guarantees that poway could claim any of the power it produced"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Rep Duncan Hunter",
+      "object": "diesel generator coordination plan",
+      "confidence": 0.6,
+      "supporting_excerpt": "he said the city should monitor a plan put forth by rep duncan hunter rel cajon that would coordinate the use of diesel generators owned by large businesses to help avoid the blackouts"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Betty Rexford",
+      "object": "Peaker Plant Project",
+      "confidence": 0.4,
+      "supporting_excerpt": "im not willing to commit any of the publics money on this said councilwoman betty rexford"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Betty Rexford",
+      "object": "energy-efficient light bulbs",
+      "confidence": 0.6,
+      "supporting_excerpt": "i think it would be better for the city to be handing out energyefficient light bulbs to save energy"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Dianne Jacob",
+      "object": "Cool Zones Program",
+      "confidence": 0.8,
+      "supporting_excerpt": "the cool zones were the idea of supervisor dianne jacob"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Dianne Jacob",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "jacob said she was concerned that many seniors might not use their air conditioners this summer because of high electric bills or they would have to suffer through a power outage during a rolling blackout"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Denise Nelesen",
+      "object": "spokeswoman for the county office of aging and independence services",
+      "confidence": 0.7,
+      "supporting_excerpt": "said denise nelesen spokeswoman for the county office of aging and independence services which is coordinating the program"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "County Office of Aging and Independence Services",
+      "object": "Cool Zones Program",
+      "confidence": 0.6,
+      "supporting_excerpt": "denise nelesen spokeswoman for the county office of aging and independence services which is coordinating the program"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Cool Zones Program",
+      "object": "providing transportation to cool zones is still a problem",
+      "confidence": 0.4,
+      "supporting_excerpt": "jacob said providing transportation to cool zones is still a problem that hasnt been worked out"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Project Care Program",
+      "object": "County Office of Aging and Independence Services",
+      "confidence": 0.4,
+      "supporting_excerpt": "nelesen said the county also is helping shutin seniors through its project care program in which the seniors receive a regular phone call to check on their welfare"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "William Richards",
+      "object": "Parkway Plaza is more comfortable because it is enclosed",
+      "confidence": 0.4,
+      "supporting_excerpt": "he said that although he lives closer to fashion valley an outdoor mall in mission valley he prefers parkway plaza in part because its enclosed its more comfortable richards said"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "San Diego Gas & Electric",
+      "object": "Valley Rainbow Interconnect",
+      "confidence": 0.4,
+      "supporting_excerpt": "the utility is seeking approval for a 500000volt transmission line that would run from southwest riverside county to north san diego county sdge hopes to have the socalled valley rainbow interconnect in place by 2004"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jessie Knight Jr",
+      "object": "San Diego Regional Chamber of Commerce",
+      "confidence": 0.4,
+      "supporting_excerpt": "said jessie knight jr of the san diego regional chamber of commerce"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "San Diego County Valley Rainbow Alliance",
+      "object": "Valley Rainbow Interconnect",
+      "confidence": 0.6,
+      "supporting_excerpt": "calling themselves the san diego county valley rainbow alliance members plan to testify at california public utilities commission meetings on behalf of the project"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Governor Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "gov gray davis sparred with senate republicans yesterday as he blamed federal regulators for ignoring what he said was a 9 billion scheme by power companies to bilk californians"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "Federal Energy Regulatory Commission",
+      "confidence": 0.6,
+      "supporting_excerpt": "davis demanded that the federal energy regulatory commission order power companies to refund the overcharges"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Fred Thompson",
+      "object": "Gray Davis",
+      "confidence": 0.4,
+      "supporting_excerpt": "how did you let things get so totally out of hand sen fred thompson of tennessee the committees ranking republican asked davis"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "the subtext of davis testimony involved a recognition that the states energy problems could affect the outcome of several california house races next year as well as the governors own reelection"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Joe Lieberman",
+      "object": "Gray Davis",
+      "confidence": 0.4,
+      "supporting_excerpt": "a sympathetic committee chairman democratic sen joe lieberman of connecticut made davis the star witness of yesterdays hearing"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Joe Lieberman",
+      "object": "Gray Davis",
+      "confidence": 0.7,
+      "supporting_excerpt": "sen joe lieberma n20 of connecticut made davis the star witness of yesterdays hearing"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "recent public opinion polls show that davis has lost substantial ground wit h20 california voters since the electricity crisis hit"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Norm Ornstein",
+      "object": "Gray Davis",
+      "confidence": 0.7,
+      "supporting_excerpt": "obviously this is the equivalent of a political nuclear weapon for him 20 observed norm ornstein a congressional affairs expert at the american20 enterprise institute"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Norm Ornstein",
+      "object": "American Enterprise Institute",
+      "confidence": 0.9,
+      "supporting_excerpt": "norm ornstein a congressional affairs expert at the american20 enterprise institute"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curtis Hebert",
+      "object": "FERC",
+      "confidence": 1.0,
+      "supporting_excerpt": "the commission is not ducking these issues said ferc chairman curtis20 hebert"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "FERC",
+      "object": "control energy prices in California",
+      "confidence": 1.0,
+      "supporting_excerpt": "on monday ferc issued an order to control energy prices in california and 20 much of the west for the next 15 months"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curtis Wagner Jr",
+      "object": "FERC",
+      "confidence": 1.0,
+      "supporting_excerpt": "the review procedu re20 outlined by ferc will begin before the commissions chief administrative la w20 judge curtis wagner jr"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Independent System Operator",
+      "object": "California",
+      "confidence": 0.4,
+      "supporting_excerpt": "the senior officials of the independent system operator which runs the20 california power grid"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gray Davis",
+      "object": "Independent System Operator",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis told reporters that it was the iso that produced the 9 billion20 estimate of californias electricity overcharge"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Barbara Boxer",
+      "object": "Electricity Price Refunds",
+      "confidence": 0.9,
+      "supporting_excerpt": "sen barbara boxer dcalif yesterday introduced legislation to provide f or20 refunds"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Mark Stultz",
+      "object": "Electric Power Supply Association",
+      "confidence": 1.0,
+      "supporting_excerpt": "mark 20 stultz a vice president of the electric power supply association"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bill Lockyer",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "california attorney general bill lockyer is reviewing possible price gougin g"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gray Davis",
+      "object": "Pat Wood",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis said he plans to meet on monday in sacramento with bushs two new fer c20 appointees pat wood"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Davis",
+      "object": "meeting with FERC appointees",
+      "confidence": 0.6,
+      "supporting_excerpt": "davis said he plans to meet on monday in sacramento with bushs two new ferc appointees pat wood iii and nora brownell"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pat Wood III",
+      "object": "FERC",
+      "confidence": 0.4,
+      "supporting_excerpt": "bushs two new ferc appointees pat wood iii and nora brownell"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Davis",
+      "object": "Natural Gas Price Discrepancies",
+      "confidence": 0.4,
+      "supporting_excerpt": "davis said he plans to meet on monday in sacramento with bushs two new ferc appointees pat wood iii and nora brownell about natural gas discrepancies in california"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Davis",
+      "object": "California paying three times more for natural gas",
+      "confidence": 0.4,
+      "supporting_excerpt": "davis said california has been paying up to three times more for natural gas than elsewhere in the country"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Duncan Hunter",
+      "object": "El Cajon",
+      "confidence": 0.4,
+      "supporting_excerpt": "reps duncan hunter of el cajon and darrell issa of vista were among the republicans who met with davis"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Thompson",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "sparring with davis thompson argued that there had been ample advance warnings of the crisis"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pete Wilson",
+      "object": "Energy Deregulation Plan",
+      "confidence": 0.4,
+      "supporting_excerpt": "davis sought to shift the focus back to his predecessor republican gov pete wilson and the state legislature which approved an energy deregulation plan"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Thompson",
+      "object": "Davis rhetoric could backfire",
+      "confidence": 0.4,
+      "supporting_excerpt": "thompson also criticized davis recent rhetoric castigating the power companies for pricegouging and suggested that the tactic could backfire by dissuading the energy sector from making needed investments"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "General Electric",
+      "object": "TransElect",
+      "confidence": 0.4,
+      "supporting_excerpt": "through an alliance with a littleknown startup company general electric co is trying to enter californias transmission lines business although transelect a twoyearold company"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "General Electric",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "general electric co is trying to enter californias transmission lines business"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "General Electric",
+      "object": "Transelect",
+      "confidence": 0.6,
+      "supporting_excerpt": "ge joined forces with transelect march 14 when ge capital services structured finances group inc announced it had bought a minority stake in the company"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Bob Mitchell",
+      "object": "Vice President of Transelect",
+      "confidence": 0.9,
+      "supporting_excerpt": "bob mitchell transelects vice president"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Ken Koprowski",
+      "object": "GE spokesman",
+      "confidence": 0.9,
+      "supporting_excerpt": "ken koprowski a ge spokesman"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Transelect",
+      "object": "Buy transmission lines from Southern California Edison and San Diego Gas Electric",
+      "confidence": 0.6,
+      "supporting_excerpt": "transelect first made overtures to buy the transmission lines in february offering more than 5 billion for those owned by sdge edison and pacific gas and electric"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Fred Keeley",
+      "object": "GE involvement in California transmission grid could be a conflict of interest",
+      "confidence": 0.4,
+      "supporting_excerpt": "any involvement by ge in the states transmission grid could be a conflict of interest said a key lawmaker involved in the efforts to end californias yearlong power crisis"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gray Davis",
+      "object": "Plan to buy transmission lines",
+      "confidence": 0.4,
+      "supporting_excerpt": "gov gray davis seeks legislative approval for his plan to buy the transmission lines of both san diego gas electric and southern california edison"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "GE Mitchell",
+      "object": "Transelect Transmission Lines Deal",
+      "confidence": 0.4,
+      "supporting_excerpt": "ge mitchell said what koprowski and mitchell call a lowprofile arrangement has generated lobbying activity"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Phillip Schott",
+      "object": "lobbyist",
+      "confidence": 0.7,
+      "supporting_excerpt": "ge capital hired lobbyist phillip schott a week after investing in transelect"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Fred Pownall",
+      "object": "Kahlpownall Advocates",
+      "confidence": 0.6,
+      "supporting_excerpt": "fred pownall kahlpownalls head referred all questions on the bill to ge capital"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "John Bryson",
+      "object": "CEO",
+      "confidence": 0.6,
+      "supporting_excerpt": "edison ceo john bryson rejected the transelect offer tuesday"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "John Bryson",
+      "object": "Transelect offer",
+      "confidence": 0.7,
+      "supporting_excerpt": "edison ceo john bryson rejected the transelect offer tuesday calling it a phony bid by an unknown company"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "John Bryson",
+      "object": "Transelect",
+      "confidence": 0.4,
+      "supporting_excerpt": "we dont know this company i suppose nobody does bryson said at a town hall meeting in los angeles"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Transelect",
+      "object": "18 billion for Edison lines",
+      "confidence": 0.6,
+      "supporting_excerpt": "transelect remains interested in investing in california but has postponed sending a letter offering 18 billion for edisons lines"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "GE Mitchell",
+      "object": "Transelect deal",
+      "confidence": 0.4,
+      "supporting_excerpt": "i think its potentially an attractive deal when we can create the right climate for it mitchell said"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Keeley",
+      "object": "selling transmission assets to private company",
+      "confidence": 0.4,
+      "supporting_excerpt": "keeley said he isnt convinced that selling the assets to a private company is the best longterm solution for the state"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Mitchell",
+      "object": "Davis Plan",
+      "confidence": 0.7,
+      "supporting_excerpt": "should the davis plan fail mitchell says his offer would remain"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Mitchell",
+      "object": "18 billion offer is a very strong price",
+      "confidence": 0.4,
+      "supporting_excerpt": "the 18 billion offer is a very strong price mitchell said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mitchell",
+      "object": "Transelect",
+      "confidence": 0.4,
+      "supporting_excerpt": "formed in 1998 transelect is trying to be the countrys first national transmission company"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Maripat Blankenheim",
+      "object": "American Transmission Company",
+      "confidence": 0.6,
+      "supporting_excerpt": "said atc spokeswoman maripat blankenheim"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "Energy Refund Recovery",
+      "confidence": 0.6,
+      "supporting_excerpt": "power governor urges us senate action to get back the money that was wrongly taken from us"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "Federal Energy Regulatory Commission",
+      "confidence": 0.4,
+      "supporting_excerpt": "davis told a senate panel that the order issued monday by the federal energy regulatory commission to limit western electricity prices was a step in the right direction"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "More aggressive action needed for energy refund",
+      "confidence": 0.4,
+      "supporting_excerpt": "but more aggressive action is needed he said to give us back the money that was wrongly taken from us"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "davis continued to insist that the bush administration and federal regulators must share responsibility for solving the states energy problems"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Gray Davis",
+      "object": "FERC must recover money paid to power generators",
+      "confidence": 0.6,
+      "supporting_excerpt": "the other half of the job is give us back the money that was wrongly taken from us"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Robert Torricelli",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "one committee member fellow democrat robert torricelli of new jersey bluntly warned ferc we are watching how the people of california are treated and we are watching very very closely"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "FERC",
+      "object": "wholesale power rates charged to california were unjust and unreasonable",
+      "confidence": 0.7,
+      "supporting_excerpt": "federal regulators have already determined that wholesale power rates charged to california were unjust and unreasonable"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "generator overcharges are egregious and unconscionable",
+      "confidence": 0.4,
+      "supporting_excerpt": "its unconscionable if generators are allowed to keep these egregious overcharges"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California",
+      "object": "paid about 9 billion more than competitive market would warrant for electricity from may 2000 to may 2001",
+      "confidence": 0.4,
+      "supporting_excerpt": "californias electricity grid operator has calculated that the state paid about 9 billion more than a competitive market would warrant for electricity from may 2000 to may 2001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "FERC",
+      "object": "identified about 124 million in possible overcharges confined to january and february",
+      "confidence": 0.4,
+      "supporting_excerpt": "so far ferc has only identified about 124 million in possible overcharges which were confined to january and february"
+    },
+    {
+      "claim_type": "agreed",
+      "subject": "FERC",
+      "object": "play a bigger role in seeking refunds",
+      "confidence": 0.6,
+      "supporting_excerpt": "to some extent ferc has already agreed to play a bigger role in seeking refunds"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Power Refunds Settlement",
+      "object": "scheduled to begin talks in washington next week",
+      "confidence": 0.4,
+      "supporting_excerpt": "next week representatives of the state electric utilities and power generating companies are scheduled to begin talks in washington on possible refunds"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Power Refunds Settlement",
+      "object": "scheduled to run for 15 consecutive days including weekends",
+      "confidence": 0.4,
+      "supporting_excerpt": "The settlement conference which begins monday is scheduled to run for 15 consecutive days including weekends"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curtis L Wagner Jr",
+      "object": "presiding over the settlement conference",
+      "confidence": 0.7,
+      "supporting_excerpt": "presiding over the conference will be chief administrative law judge curtis l wagner jr"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Curtis L Wagner Jr",
+      "object": "admonished participants to ensure representatives have authority to approve agreements",
+      "confidence": 0.4,
+      "supporting_excerpt": "curtis l wagner jr who admonished participants wednesday to make sure that they send representatives who have authority to approve any agreements reached during the negotiations"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Stephen E Pickett",
+      "object": "Edison general counsel",
+      "confidence": 1.0,
+      "supporting_excerpt": "edison general counsel stephen e pickett said the utility is pleased"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Stephen E Pickett",
+      "object": "the regulatory meeting is a positive step toward resolving issues",
+      "confidence": 0.4,
+      "supporting_excerpt": "certainly it is a positive step toward resolving many of these issues pickett said"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Art Larson",
+      "object": "SDGE spokesman",
+      "confidence": 0.6,
+      "supporting_excerpt": "sdge spokesman art larson said"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "San Diego Gas Electric",
+      "object": "encouraged that FERC is working toward a settlement",
+      "confidence": 0.4,
+      "supporting_excerpt": "sdge has been a supporter of customer refunds and were encouraged that the ferc is working toward a settlement"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Pat Hammond",
+      "object": "skeptical about the 9 billion overcharge figure",
+      "confidence": 0.4,
+      "supporting_excerpt": "reliant energy spokeswoman pat hammond expressed skepticism about the 9billion overcharge figure"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Donato Eassey",
+      "object": "Merrill Lynch",
+      "confidence": 0.8,
+      "supporting_excerpt": "donato eassey a houstonbased energy analyst for merrill lynch"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Donato Eassey",
+      "object": "expects FERC-mediated conference to produce compromise where all parties get a haircut",
+      "confidence": 0.4,
+      "supporting_excerpt": "donato eassey a houstonbased energy analyst for merrill lynch said he expects the fercmediated conference to produce a compromise in which all partiesgenerators utilities and consumersget a haircut"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Barbara Boxer",
+      "object": "bill requiring FERC to order rebates for unjust and unreasonable prices",
+      "confidence": 0.6,
+      "supporting_excerpt": "sen barbara boxer dcalif introduced a bill wednesday that would require ferc to order rebates if federal regulators determine that prices charged were unjust and unreasonable"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Patrick H Wood III",
+      "object": "Bush Administration",
+      "confidence": 0.6,
+      "supporting_excerpt": "patrick h wood iii a bush ally from texas"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Patrick H Wood III",
+      "object": "FERC",
+      "confidence": 0.6,
+      "supporting_excerpt": "the five members of fercs governing board also appeared wednesday"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "davis handed out a slick 177page book detailing steps his administration has taken to ease the powe r crunch"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Fred Thompson",
+      "object": "Gray Davis",
+      "confidence": 0.4,
+      "supporting_excerpt": "sen fred thompson rtenn pointedly asked davis how he let things get totally out of hand and excoriated the governor"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Gray Davis",
+      "object": "FERC",
+      "confidence": 0.6,
+      "supporting_excerpt": "davis urged the committee to keep pressure on ferc to rein in natural gas prices"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curtis L Hebert Jr",
+      "object": "FERC Chairman",
+      "confidence": 0.9,
+      "supporting_excerpt": "ferc chairman curtis l hebert jr assured the committee"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Curtis L Hebert Jr",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "ferc chairman curtis l hebert jr assured the committee that his agency is aggressively pursuing remedies to californias energy price spikes and supply shortages"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "William L Massey",
+      "object": "FERC Commissioner",
+      "confidence": 0.9,
+      "supporting_excerpt": "commissioner william l massey a democrat"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "William L Massey",
+      "object": "FERC should have acted sooner",
+      "confidence": 0.4,
+      "supporting_excerpt": "commissioner william l massey a democrat who has urged stronger federal intervention in the electricity markets said he regrets the commission did not act sooner"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Nancy Rivera Brooks",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "times staff writers nancy rivera brooks in los angeles and thomas s mulligan in new york contributed to this story"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "House",
+      "object": "Energy Assistance Program",
+      "confidence": 0.7,
+      "supporting_excerpt": "the house on wednesday approved legislation that would provide an additional 300 million to help lowincome families pay their power bills"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Nancy Pelosi",
+      "object": "Energy price caps needed",
+      "confidence": 0.4,
+      "supporting_excerpt": "this says to the people of the west your emergency doesnt count to us said rep nancy pelosi dsan francisco"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "House of Representatives",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "regulators republicans argued that price caps would not solve californias energy problem while democrats accused the gop of being cavalier about the crisis"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Tom DeLay",
+      "object": "Price Caps Debate",
+      "confidence": 0.4,
+      "supporting_excerpt": "house majority whip tom delay rtexas who said members should reject the siren song of price caps an d remember this government price controls will mean more blackouts"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "House of Representatives",
+      "object": "Midyear Appropriation Bill",
+      "confidence": 0.4,
+      "supporting_excerpt": "the issue erupted during debate on a 65billion midyear appropriatio n bill to cover unanticipated costs and emergency expenditures"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "House of Representatives",
+      "object": "Midyear Appropriation Bill",
+      "confidence": 0.9,
+      "supporting_excerpt": "the measure passed 341 to 87 in an earlier vote"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "George W. Bush",
+      "object": "65 billion",
+      "confidence": 0.5,
+      "supporting_excerpt": "the 65 billion requested by bush"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Office of Management and Budget",
+      "object": "Federal Emergency Management Agency",
+      "confidence": 0.4,
+      "supporting_excerpt": "bushs office of management and budget objects strongly to provisions that would rescind 389 million in money appropriated for the federal emergency management agency"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "House Republicans",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "republican leaders also fought efforts by democrats to turn debate on the spending bill into congress first broadgauged discussion on the nations energy crisis"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "House Democrats",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "democrats wanted to offer major energy amendments including one to impose strict costbased price caps on wholesale electricity in california"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "echoing complaints by california gov gray davis and others said fercs order did not go far enough to guarantee relief for consumers against blackouts shortages and price gouging"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "House Republicans",
+      "object": "strict price caps on wholesale electricity",
+      "confidence": 0.7,
+      "supporting_excerpt": "republicans argued that price caps would be counterproductive and that californias problems will be solved only by increasing the energy supply"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Ann Schmidt",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: ann.schmidt@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Bryan Seyfried",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: ann.schmidt@enron.com, bryan.seyfried@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Elizabeth Linnell",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: ann.schmidt@enron.com, bryan.seyfried@enron.com, elizabeth.linnell@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Richard Sklar",
+      "object": "energy supply czar",
+      "confidence": 0.6,
+      "supporting_excerpt": "richard sklar the states energy supply czar"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "California Energy Crisis",
+      "object": "conservation campaign reducing demand",
+      "confidence": 0.4,
+      "supporting_excerpt": "demand for power is down apparently the result of a successful conservation campaign"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "California Energy Crisis",
+      "object": "wholesale electricity prices declining",
+      "confidence": 0.4,
+      "supporting_excerpt": "wholesale electricity prices are a sliver of what they were just a month ago"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Federal Energy Regulatory Commission",
+      "object": "price and supply controls on western electricity market",
+      "confidence": 0.4,
+      "supporting_excerpt": "california officials appear to have won their monthslong battle with the federal energy regulatory commission which imposed price and supply controls on the western electricity market"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Bryan Seyfried",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: bryan.seyfried@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Elizabeth Linnell",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: elizabeth.linnell@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mike Sloss",
+      "object": "California Energy Commission",
+      "confidence": 0.7,
+      "supporting_excerpt": "mike sloss who tracks conservati on20 for the california energy commission"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Richard Roher",
+      "object": "California Energy Commission",
+      "confidence": 0.6,
+      "supporting_excerpt": "richard roher who crunches conservation numbers for the commission"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Southern California Edison",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "most small alternative energy suppliers finally reached agreement thi s20 week in their epic contract battle with southern california edison"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Stephanie McCorkle",
+      "object": "California Energy Commission",
+      "confidence": 0.6,
+      "supporting_excerpt": "stephanie mccorkle a spokeswoman for californias grid20 operator"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Jan Smutney-Jones",
+      "object": "executive director of the independent energy producers assn",
+      "confidence": 0.6,
+      "supporting_excerpt": "jan smutneyjones executive director of the independent energy producers assn"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jan Smutney-Jones",
+      "object": "potential power problems from simultaneous heat waves",
+      "confidence": 0.4,
+      "supporting_excerpt": "if it gets hot in california and its also hot in the northwest and its hot in phoenix we could run into some significant problems said jan smutneyjones"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Dave Aragon",
+      "object": "Roll Your Own Blackout",
+      "confidence": 0.6,
+      "supporting_excerpt": "the protest called the roll your own blackout is the idea of a southern california artist who worked in tandem with a software engineer from berkeley"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Dave Aragon",
+      "object": "Vice President Dick Cheney's energy policy stance on conservation",
+      "confidence": 0.4,
+      "supporting_excerpt": "when you hear mr cheney who drafted the energy plan deriding conservation as merely a personal virtue it is as though he believes virtue has no place in government policy and that would be a very dangerous thing said dave aragon the software engineer"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Energy Crisis",
+      "object": "Roll Your Own Blackout",
+      "confidence": 0.6,
+      "supporting_excerpt": "the california crisis gave birth to their campaign"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Nancy Vogel",
+      "object": "Times staff writer",
+      "confidence": 0.9,
+      "supporting_excerpt": "by nancy vogel times staff writer"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Ann Schmidt",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: angela.wilson@enron.com To: ann.schmidt@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Angela Wilson",
+      "object": "Bryan Seyfried",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: angela.wilson@enron.com To: ann.schmidt@enron.com, bryan.seyfried@enron.com"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Board of Equalization",
+      "object": "assert jurisdiction over property taxes for power plants producing more than 50 megawatts",
+      "confidence": 0.7,
+      "supporting_excerpt": "the fivemember board of equalization voted unanimously to assert jurisdiction over the property taxes paid by companies with power plants th at produce more than 50 megawatts"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Lenny Goldberg",
+      "object": "power plants are vastly underassessed",
+      "confidence": 0.6,
+      "supporting_excerpt": "he called the power plants vastly underassessed"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Kathleen Connell",
+      "object": "Board of Equalization chairwoman and state controller",
+      "confidence": 0.9,
+      "supporting_excerpt": "board of equalization chairwoman and state controller kathleen connell"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Kathleen Connell",
+      "object": "the move is necessary to bring in more tax revenue and ensure fair assessment if state builds power plants",
+      "confidence": 0.4,
+      "supporting_excerpt": "said the move is necessary not only because it might bring in more tax revenue but because california itself could soon build power plants or own power lines under plans pushed by gov gray davis"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Board of Equalization",
+      "object": "California Deregulation",
+      "confidence": 0.4,
+      "supporting_excerpt": "in 1999 after the launch of deregulation the tax board voted to allow counties to assess property taxes on power plants"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gray Davis",
+      "object": "plans for state to own power plants or power lines",
+      "confidence": 0.6,
+      "supporting_excerpt": "under plans pushed by gov gray davis"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "California Tax Board",
+      "object": "allow 20 counties to assess property taxes on power plants",
+      "confidence": 1.0,
+      "supporting_excerpt": "in 1999 after the launch of deregulation the tax board voted to allow 20 counties to assess property taxes on power plants"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Barbara Hennessy",
+      "object": "city controller",
+      "confidence": 0.9,
+      "supporting_excerpt": "said city controller barbara hennessy"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Shari L Freidenrich",
+      "object": "treasurer for huntington beach",
+      "confidence": 0.9,
+      "supporting_excerpt": "shari l freidenrich treasurer for huntington beach"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Carole Migden",
+      "object": "bill to protect cities by guaranteeing property tax revenue proportion",
+      "confidence": 0.9,
+      "supporting_excerpt": "a bill pending in the legislature by assemblywoman carole migden dsa n20 francisco would protect those cities by guaranteeing that they get the sam e20 proportion of property tax revenue"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Goldberg",
+      "object": "allowing the state to tax plant owners based on market value would bring in more revenue",
+      "confidence": 0.7,
+      "supporting_excerpt": "goldberg of the california tax reform assn argued that allowing the 20 state to tax plant owners based on market value would bring in more revenue"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Tom Williams",
+      "object": "Duke Energy spokesman",
+      "confidence": 0.9,
+      "supporting_excerpt": "said duke spokesman tom20 williams"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Duke Energy North America",
+      "object": "power plant on monterey bay",
+      "confidence": 0.7,
+      "supporting_excerpt": "a big power plant on monterey bay own ed20 by charlotte ncbased duke energy north america"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Robert Salladay",
+      "object": "San Francisco Chronicle",
+      "confidence": 0.6,
+      "supporting_excerpt": "robert salladay chronicle sacramento bureau"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "since the energy crisis began davis has hired several nationally known experts to advise him"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Gray Davis",
+      "object": "Chris Lehane",
+      "confidence": 0.6,
+      "supporting_excerpt": "the recent contract for chris lehane and mark fabiani"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Kathleen Connell",
+      "object": "Chris Lehane",
+      "confidence": 0.7,
+      "supporting_excerpt": "state controller kathleen connell a democrat who continually fights with davis said yesterday that she will refuse to pay lehane and fabiani with state funds"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Kathleen Connell",
+      "object": "Chris Lehane and Mark Fabiani conflict of interest",
+      "confidence": 0.4,
+      "supporting_excerpt": "connell said its hard for her to imagine that lehane and fabiani are working on state policy as required by law and not politics"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "National Tax-Limitation Committee",
+      "object": "Chris Lehane",
+      "confidence": 0.4,
+      "supporting_excerpt": "the national taxlimitation committee a sacramento group that mostly monitors legislation filed a lawsuit last week alleging that fabiani and lehane are violating the political reform act"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Lewis Uhler",
+      "object": "National Tax-Limitation Committee",
+      "confidence": 0.6,
+      "supporting_excerpt": "lewis uhler with the taxlimitation committee"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Bill Jones",
+      "object": "Fair Political Practices Commission",
+      "confidence": 0.6,
+      "supporting_excerpt": "secretary of state bill jones last week asked the fair political practices commission to investigate lehane and fabiani"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bill Jones",
+      "object": "Lehane",
+      "confidence": 0.4,
+      "supporting_excerpt": "secretary of state bill jones last week asked the fair political practices commission to investigate lehane and fabiani and their relationship with edison"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Fair Political Practices Commission",
+      "object": "Lehane",
+      "confidence": 0.7,
+      "supporting_excerpt": "a spokeswoman for the fppc said the agency was reviewing jones complaint"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Lehane",
+      "object": "Clinton White House",
+      "confidence": 0.6,
+      "supporting_excerpt": "now private citizens and communications consultants lehane and fabiani worked inside the clinton white house"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Lehane",
+      "object": "Al Gore",
+      "confidence": 0.6,
+      "supporting_excerpt": "worked inside the clinton white house and for vice president al gore during his failed 2000 campaign"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Lehane",
+      "object": "communications consultant",
+      "confidence": 0.9,
+      "supporting_excerpt": "private citizens and communications consultants lehane and fabiani"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gray Davis",
+      "object": "Lehane",
+      "confidence": 0.4,
+      "supporting_excerpt": "davis spokesman hilary mclean said lehane and fabiani were hired to explain what the state is doing"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Lehane",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "what they are working on right now is the public policy aspect of the california energy crisis"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Karl Rove",
+      "object": "senior white house position",
+      "confidence": 0.7,
+      "supporting_excerpt": "president bush put his political strategist karl rove in a senior white house position"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Jim Brulte",
+      "object": "Lehane",
+      "confidence": 0.4,
+      "supporting_excerpt": "state senate minority leader jim brulte said the contract for lehane and fabiani is clearly a conflict of interest"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Jim Brulte",
+      "object": "2001-02 state budget",
+      "confidence": 0.7,
+      "supporting_excerpt": "brulte promised he would not vote for a 200102 state budget that includes the lehane and fabiani contract"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.3,
+      "supporting_excerpt": "the energy crisis has badly damaged his standing among voters"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Garry South",
+      "object": "chief adviser",
+      "confidence": 0.6,
+      "supporting_excerpt": "orchestrated by chief adviser garry south"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "State Board of Equalization",
+      "object": "Power Plant Property Tax Authority",
+      "confidence": 0.4,
+      "supporting_excerpt": "the state board of equalization yesterday proposed taking back authority to set property taxes for large private power plants"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "State Board of Equalization",
+      "object": "reverse 1999 decision on power plant tax assessment",
+      "confidence": 1.0,
+      "supporting_excerpt": "the board voted 5 to 0 to take steps to reverse a decision it made in 1999"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kathleen Connell",
+      "object": "Power Plant Property Tax Authority",
+      "confidence": 0.3,
+      "supporting_excerpt": "proposed by state controller kathleen connell"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Johan Klehs",
+      "object": "board member",
+      "confidence": 0.9,
+      "supporting_excerpt": "board member johan klehs said"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Johan Klehs",
+      "object": "power industry did not keep deregulation bargain",
+      "confidence": 0.4,
+      "supporting_excerpt": "the power industry did not live up to its claim that deregulation would bring california lower rates for electricity"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Klehs",
+      "object": "California Deregulation Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "up to its claim that deregulation 20 would bring california lower rates for electricity klehs said"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Klehs",
+      "object": "county assessment would yield a more fair value",
+      "confidence": 0.7,
+      "supporting_excerpt": "klehs said the thinking 20 then was that county assessment would yield a value that was more fair"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Connell",
+      "object": "Power Plant Tax Assessment",
+      "confidence": 0.9,
+      "supporting_excerpt": "she said she proposed the change because the 20 state is gearing up to buy its own power plants and transmission lines"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Connell",
+      "object": "change not intended to maximize tax revenues",
+      "confidence": 0.7,
+      "supporting_excerpt": "connell herself said she did not advocate the change to maximize tax20 revenues but to ensure the most consistent and most accurate method"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Lenny Goldberg",
+      "object": "executive director of the California Tax Reform Association",
+      "confidence": 1.0,
+      "supporting_excerpt": "lenny goldberg executive director of the californ ia20 tax reform association"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Lenny Goldberg",
+      "object": "Power Plant Tax Assessment",
+      "confidence": 0.7,
+      "supporting_excerpt": "goldberg said monterey county should have received at least 20 million mor e20 in taxes on the moss landing plant acquired by duke energy"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Duke Energy",
+      "object": "Moss Landing plant acquisition",
+      "confidence": 0.7,
+      "supporting_excerpt": "monterey county should have received at least 20 million mor e20 in taxes on the moss landing plant acquired by duke energy"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Carole Migden",
+      "object": "bill to allow cities to keep enhanced share of revenues",
+      "confidence": 0.7,
+      "supporting_excerpt": "those cities may keep their enhanced share of the revenues under a bill20 sponsored by assemblywoman carole migden"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Carole Migden",
+      "object": "Bill AB81",
+      "confidence": 0.6,
+      "supporting_excerpt": "a bill sponsored by assemblywoman carole migden that would also shift authority for power plant assessment to the state board the bill ab81 passed the assembly"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Barbara Hennessy",
+      "object": "Long Beach",
+      "confidence": 0.4,
+      "supporting_excerpt": "long beach city controller barbara hennessy cited a past settlement agreement with the utilities"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Barbara Hennessy",
+      "object": "Power Plant Assessment",
+      "confidence": 0.4,
+      "supporting_excerpt": "my concern is that something like that would happen in the future hennessy said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Patrick Wood",
+      "object": "Federal Energy Regulatory Commission",
+      "confidence": 0.4,
+      "supporting_excerpt": "patrick wood one of bushs two new appointees to the federal energy regulatory commission"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Patrick Wood",
+      "object": "Electricity Price Controls",
+      "confidence": 0.6,
+      "supporting_excerpt": "he would consider denying power generators the right to charge market prices for electricity"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "Federal Energy Regulatory Commission",
+      "confidence": 0.6,
+      "supporting_excerpt": "gov gray davis who earlier in the day told the government affairs committee that ferc should order power generators to pay california 9 billion in refunds for alleged overcharges"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "it is unconscionable that ferc looked the other way while energy companies bilked our state out of 9 billion davis told panel chairman joe lieberman"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis told panel chairman joe lieberma n20 who had offered davis the forum before his investigatory committee"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Barbara Boxer",
+      "object": "Electricity Gouging Relief Act of 2001",
+      "confidence": 0.9,
+      "supporting_excerpt": "sen barbara boxer a california democrat introduced the20 electricity gouging relief act of 2001 that would force ferc to do so"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Wood",
+      "object": "head of the texas publi c20 utilities commission",
+      "confidence": 1.0,
+      "supporting_excerpt": "wood the former head of the texas publi c20 utilities commission was a chief catalyst behind a 5to0 vote by ferc"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "FERC",
+      "object": "impose a sweeping price ceiling on electricity throughout 1120 western states",
+      "confidence": 1.0,
+      "supporting_excerpt": "wood the former head of the texas publi c20 utilities commission was a chief catalyst behind a 5to0 vote by ferc20 monday to impose a sweeping price ceiling on electricity throughout 1120 western states"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Wood",
+      "object": "treble damages for generator overcharges",
+      "confidence": 0.9,
+      "supporting_excerpt": "wood also said that while refunds might be useful to chasten electricity20 sellers congress might consider giving ferc the power to impose punitive 20 triple damages for generator overcharges"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Wood",
+      "object": "return to traditional cost-of-service regulation",
+      "confidence": 0.7,
+      "supporting_excerpt": "a return to the traditional costofservice regulation that exist ed20 before california partially deregulated electricity in 1996 remains on the 20 table"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "California",
+      "object": "revoke the rights of six generators to sell electricity at market rates",
+      "confidence": 0.9,
+      "supporting_excerpt": "the state has demanded that federal regulators revoke the rights of six20 generators to sell electricity at market rates"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Independent System Operator",
+      "object": "six generators' rights revoked",
+      "confidence": 0.7,
+      "supporting_excerpt": "regulators revoke the rights of six20 generators to sell electricity at market rates the california independent 20 system operator said"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Nora Mead Brownell",
+      "object": "federal regulator",
+      "confidence": 1.0,
+      "supporting_excerpt": "bushs other new appointee nora mead brownell a former pennsylvania utili ty20 regulator"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Nora Mead Brownell",
+      "object": "federal role should be more forceful",
+      "confidence": 0.7,
+      "supporting_excerpt": "nora mead brownell a former pennsylvania utili ty20 regulator also suggested a much more forceful federal role"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Nora Mead Brownell",
+      "object": "competition in deregulated markets does not happen overnight",
+      "confidence": 0.7,
+      "supporting_excerpt": "you dont just open the market declare victory and walk away brownell 20 said competition in a newly deregulated market she added doesnt just 20 happen overnight"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Governor Davis",
+      "object": "Wood",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis spokesman steve maviglio said davis has had extensive conversations 20 with wood that lead him to believe wood would be amenable to refunds"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steve Maviglio",
+      "object": "meeting of minds between Davis and Wood",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis 20 thinks theres a real meeting of minds there maviglio said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Governor Davis",
+      "object": "private meeting with Wood and Brownell",
+      "confidence": 0.6,
+      "supporting_excerpt": "davis met privately with wood and brownell yesterday"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Wood",
+      "object": "scheduled meeting with Davis in Sacramento on Monday",
+      "confidence": 0.7,
+      "supporting_excerpt": "wood is scheduled 20 to meet with davis again in sacramento on monday"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Wood",
+      "object": "Bush appointee",
+      "confidence": 0.6,
+      "supporting_excerpt": "when woods name was first floated as a bush appointee"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Curt Hebert",
+      "object": "FERC chairman",
+      "confidence": 0.7,
+      "supporting_excerpt": "fiercely freemarket ferc chairman curt 20 hebert a republican appointee of president clinton whom bush elevated to 20 head the agency"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Wood",
+      "object": "regulatory course preferred over free-market approach",
+      "confidence": 0.7,
+      "supporting_excerpt": "but in his first few public comments since taking office wood has20 consistently charted a much more regulatory course"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "President Bush",
+      "object": "likely to tap Wood as FERC chairman",
+      "confidence": 0.7,
+      "supporting_excerpt": "bush is considered like ly20 to tap wood as ferc chairman perhaps this fall"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Wood",
+      "object": "federal regulators should actively monitor and enforce market rules",
+      "confidence": 0.7,
+      "supporting_excerpt": "wood and brownell said that once properly deregulated electricity 20 markets are in place federal regulators should actively monitor and enforc e20 market rules"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "FERC",
+      "object": "ordered settlement talks between State of California and electricity suppliers",
+      "confidence": 1.0,
+      "supporting_excerpt": "ferc also ordered settlement20 talks between the state of california and its electricity suppliers"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Curtis Wagner",
+      "object": "FERC judge presiding over settlement talks",
+      "confidence": 0.6,
+      "supporting_excerpt": "fe rc20 judge curtis wagner will preside"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Governor Davis",
+      "object": "refund total nearly 70 times FERC's alleged overcharges",
+      "confidence": 0.7,
+      "supporting_excerpt": "the refund total davis gave senators is nearly 70 times more than the 133 20 million in overcharges that ferc has alleged so far"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steve Maviglio",
+      "object": "refunds after January 17 go to state, before go to utilities",
+      "confidence": 0.7,
+      "supporting_excerpt": "maviglio said any refunds of alleged overcharges that occurred after the20 state began buying power january 17 would go to the state refunds of20 overcharges before that date would to go the states utilities"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pacific Gas and Electric Co",
+      "object": "in bankruptcy",
+      "confidence": 0.7,
+      "supporting_excerpt": "one of whic h20 pacific gas and electric co is in bankruptcy"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Wood",
+      "object": "price controls will not prevent blackouts due to supply shortage",
+      "confidence": 0.7,
+      "supporting_excerpt": "wood warned that the price controls imposed by ferc this week will not20 prevent blackouts this summer because electricity remains in short supply"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pacific Gas and Electric Co",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "overcharges before that date would to go the states utilities one of whic h20 pacific gas and electric co is in bankruptcy"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Wood",
+      "object": "West Coast Electricity Supply",
+      "confidence": 0.7,
+      "supporting_excerpt": "we want to make sure that we mitigate not only the price but mitiga te20 the expectations that things are going to be rosy this summer on the west 20 coast they are not there will be blackouts"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Governor Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "for gov davis the cause of the states crisis is simply that a bunch o f20 texas cowboys got in the corral and decided to take advantage of california"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Fred Thompson",
+      "object": "Governor Davis mismanaged electricity crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "republicans took him to task for mismanaging the states electricity crisis and trying to20 lay the blame on bush"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Governor Davis",
+      "object": "refunds for wrongly taken power payments",
+      "confidence": 0.9,
+      "supporting_excerpt": "but davis stuck to his insistence on refunds give us back the money that 20 was wrongly taken from us he said"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Bill Workman",
+      "object": "Utility Bill Relief Program",
+      "confidence": 0.7,
+      "supporting_excerpt": "nonprofit agencies that serve santa clara countys needy are about to get 20 relief from skyrocketing energy costs that could keep them from doing their 20 jobs20 a unique grant program to help them cut their utility bills was announced"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Peter Hero",
+      "object": "president of community foundation silicon valley",
+      "confidence": 0.9,
+      "supporting_excerpt": "peter hero president of community foundation silicon valley"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Robert Freiri",
+      "object": "executive director",
+      "confidence": 0.9,
+      "supporting_excerpt": "according to executive director robert freiri"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Community Foundation Silicon Valley",
+      "object": "Energy Grant Program",
+      "confidence": 0.8,
+      "supporting_excerpt": "community foundation silicon valley has begun handing out 5000 grants"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "St Elizabeth's Day Care Center",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "the announcement of the grants part of a 100000 energy crisis response fund created with donations from several private foundations was made in san jose at st elizabeths day care center"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "St Elizabeth's Day Care Center",
+      "object": "Energy Grant Program",
+      "confidence": 0.6,
+      "supporting_excerpt": "the churchrun day care center which serves more than 200 children was one of three agencies that received the first of the foundations energy saving grants yesterday"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "San Juan Bautista Child Development Center",
+      "object": "Energy Grant Program",
+      "confidence": 0.8,
+      "supporting_excerpt": "other grant recipients were san juan bautista child development center"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Concern for the Poor",
+      "object": "Energy Grant Program",
+      "confidence": 0.6,
+      "supporting_excerpt": "other grant recipients were san juan bautista child development center in east san jose which plans to buy an energysaving commercial stove for its central kitchen and concern for the poor"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "San Juan Bautista Child Development Center",
+      "object": "Silicon Valley Energy Grant Program",
+      "confidence": 0.9,
+      "supporting_excerpt": "grant recipients were san juan bautista child development center in 20 east san jose which plans to buy an energysaving commercial stove"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Concern for the Poor",
+      "object": "Silicon Valley Energy Grant Program",
+      "confidence": 0.9,
+      "supporting_excerpt": "grant recipients were san juan bautista child development center in 20 east san jose which plans to buy an energysaving commercial stove for its 20 central kitchen and concern for the poor which runs the san jose family 20 shelter"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Greg Larson",
+      "object": "president and ceo of united way silicon valley",
+      "confidence": 1.0,
+      "supporting_excerpt": "hero was joined at the news conference by greg larson president and ceo of 20 united way silicon valley"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Hero",
+      "object": "Silicon Valley Energy Grant Program",
+      "confidence": 0.7,
+      "supporting_excerpt": "hero said his foundation was seeking matching funds from other 20 donors and that he expects the energy grant program to double or triple i n20 size within the next few weeks"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Hero",
+      "object": "Silicon Valley philanthropy resilience",
+      "confidence": 0.7,
+      "supporting_excerpt": "i may be an optimist but it seems philanthropy is so much more on the rad ar20 screen of silicon valley even among the dotcomers whose stocks and jobs 20 have taken a beating said hero"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Greg Larson",
+      "object": "anonymous silicon valley contractor donation",
+      "confidence": 0.7,
+      "supporting_excerpt": "greg larson president and ceo of 20 united way silicon valley who told how his own agency is being rescued fro m20 mounting energy bills by an anonymous silicon valley contractor"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Severin Borenstein",
+      "object": "director of the university of california energy institute",
+      "confidence": 0.7,
+      "supporting_excerpt": "said severin borenstein director of the university of california energy institute"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Mike Wilczek",
+      "object": "senior reporter for platts power markets",
+      "confidence": 0.7,
+      "supporting_excerpt": "said mike wilczek senior reporter for platts power markets a division of mcgrawhill"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Gary Ackerman",
+      "object": "executive director of the western power trading forum",
+      "confidence": 0.7,
+      "supporting_excerpt": "said gary ackerman executive director of the western power trading forum"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Energy industry officials",
+      "object": "Federal Energy Regulatory Commission",
+      "confidence": 0.4,
+      "supporting_excerpt": "energy industry officials have been studying the federal energy regulatory commissions monday order"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Severin Borenstein",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "i think the party has gotten a lot quieter said severin borenstein"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Mike Wilczek",
+      "object": "Federal Price Controls",
+      "confidence": 0.4,
+      "supporting_excerpt": "they know theres going to be a ceiling on prices and thats bearish news said mike wilczek"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Gary Ackerman",
+      "object": "executive director of the western power trading forum",
+      "confidence": 1.0,
+      "supporting_excerpt": "said gary ackerman20 executive director of the western power trading forum"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gary Ackerman",
+      "object": "it's too soon to declare the profit party over",
+      "confidence": 0.7,
+      "supporting_excerpt": "say its too soon to declare the profit party 20 over20 prices can always go higher and always go lower said gary ackerman"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Angela Wilson",
+      "object": "California Energy Crisis",
+      "confidence": 0.6,
+      "supporting_excerpt": "been studying the federal energy regulatory 20 commissions monday order"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Duke Energy",
+      "object": "owns four california power plants",
+      "confidence": 0.7,
+      "supporting_excerpt": "the order includes a demand that duke energy which owns four california20 power plants refund with interest profits"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Federal Energy Regulatory Commission",
+      "object": "Duke Energy must refund profits from charging the state 3880 per megawatthour",
+      "confidence": 1.0,
+      "supporting_excerpt": "the order includes a demand that duke energy which owns four california20 power plants refund with interest profits from charging the state20 3880 per megawatthour"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Federal Energy Regulatory Commission",
+      "object": "we will not tolerate abuse of market power or anticompetitive bidding behavior",
+      "confidence": 0.7,
+      "supporting_excerpt": "we will not tolerate abuse of market power or anticompetitive bidding20 behavior regulators wrote in the order"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Federal Energy Regulatory Commission",
+      "object": "Duke Energy bidding practices",
+      "confidence": 0.4,
+      "supporting_excerpt": "duke energys bidding at multiples of its marginal costs in an attempt to recover pastdue amounts c an in no way be found to be just and reasonable"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Governor Gray Davis",
+      "object": "energy companies have bilked Americans out of billions of dollars",
+      "confidence": 0.4,
+      "supporting_excerpt": "they have bilked americans out of billions of dollars and now they have to play by the rules"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Robert Michaels",
+      "object": "consultant to power producers",
+      "confidence": 0.7,
+      "supporting_excerpt": "robert michaels a professor of economics at california state university fullerton and a consultant to power producers"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Robert Michaels",
+      "object": "California State University Fullerton",
+      "confidence": 0.6,
+      "supporting_excerpt": "robert michaels a professor of economics at california state university fullerton"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steve Maviglio",
+      "object": "Price Control Ruling",
+      "confidence": 0.4,
+      "supporting_excerpt": "its a positive development but its just half the battle said gov gray davis spokesman steve maviglio"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Governor Gray Davis",
+      "object": "Senate Committee on Government Affairs",
+      "confidence": 0.4,
+      "supporting_excerpt": "davis will testify this morning before the senate committee on government affairs along with the ferc commissioners"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Steve Maviglio",
+      "object": "Davis spokesman",
+      "confidence": 0.9,
+      "supporting_excerpt": "y20 davis spokesman steve maviglio"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis will testify this morning before the senate committee on government 20 affairs along with the ferc commissioners"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Julie Simon",
+      "object": "vice president of policy at the electric power supply association",
+      "confidence": 1.0,
+      "supporting_excerpt": "julie simon vice president of policy at the electric power supply20 association"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Julie Simon",
+      "object": "FERC Price Regulation Order",
+      "confidence": 0.7,
+      "supporting_excerpt": "the order is20 incredibly intrusive it worries me that this could have a detrimental20 impact on california getting the investment that it needs"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Mitch Wilk",
+      "object": "utility consultant",
+      "confidence": 1.0,
+      "supporting_excerpt": "mitch wilk a utility consultant who ran the puc from 19 8620 to 199120"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dianne Feinstein",
+      "object": "FERC Price Regulation Order",
+      "confidence": 0.7,
+      "supporting_excerpt": "sen dianne feinstein a20 fierce critic of the agency thanked the commissioners"
+    },
+    {
+      "claim_type": "agreed",
+      "subject": "Dianne Feinstein",
+      "object": "FERC Price Regulation Order",
+      "confidence": 0.9,
+      "supporting_excerpt": "lets watch and wait and see how this order works feinstein said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gordon Smith",
+      "object": "FERC Price Regulation Order",
+      "confidence": 0.7,
+      "supporting_excerpt": "she and sen gordon smith rore 20 pulled back their bill that would have established costbased price caps"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Steven Fetter",
+      "object": "FERC Price Regulation Order",
+      "confidence": 0.7,
+      "supporting_excerpt": "this plan he said maintains a20 connection to the supplyanddemand patterns that is definitely a positive"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Steven Fetter",
+      "object": "utility bond rater with fitch inc",
+      "confidence": 1.0,
+      "supporting_excerpt": "stev en20 fetter a utility bond rater with fitch inc in new york"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curt Hebert",
+      "object": "FERC chairman",
+      "confidence": 0.9,
+      "supporting_excerpt": "ferc chairman curt hebert"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Curt Hebert",
+      "object": "Price Controls Debate",
+      "confidence": 0.7,
+      "supporting_excerpt": "ferc chairman curt hebert whose turnaround on this issue has been attribut ed20 to political pressure and the presence of two new gop commissioners committ ed20 to helping california continued to insist tuesday that the price controls 20 are not caps"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Curt Hebert",
+      "object": "price controls are working",
+      "confidence": 0.7,
+      "supporting_excerpt": "the approach has been working and i believe it will work better hebert 20 told the senators"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Wilk",
+      "object": "electricity rates are going to go up",
+      "confidence": 0.7,
+      "supporting_excerpt": "but longterm wilk said electricity rates are going to go up no matter 20 what happens"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Wilk",
+      "object": "Western Electricity Markets",
+      "confidence": 0.4,
+      "supporting_excerpt": "the order has changed the playing field wilk said20 its a new ballgame he said20 the order he added sends a signal to generators"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Kate Berry",
+      "object": "California Energy Crisis",
+      "confidence": 0.9,
+      "supporting_excerpt": "register staff writers kate berry and john howard contributed to this repor t"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "FERC",
+      "object": "ordered limited price caps during electricity alerts only",
+      "confidence": 0.9,
+      "supporting_excerpt": "april 26 orders limited price caps during electricity alerts only"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "FERC",
+      "object": "ordered around-the-clock price controls throughout the west",
+      "confidence": 1.0,
+      "supporting_excerpt": "june 18 orders aroundtheclock price controls throughout the west as par t20 of a comprehensive plan for western electricity markets"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "firm price caps",
+      "confidence": 0.7,
+      "supporting_excerpt": "gov gray davis hes been mr one note for firm price caps"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dianne Feinstein",
+      "object": "price cap",
+      "confidence": 0.4,
+      "supporting_excerpt": "sen dianne feinstein shes been mrs price cap she wrote to the president held news conferences and introduced a bill on costbased pricing"
+    },
+    {
+      "claim_type": "agreed",
+      "subject": "Dianne Feinstein",
+      "object": "hold back on her bill to see if the new controls work",
+      "confidence": 0.6,
+      "supporting_excerpt": "she agreed tuesday to hold back on her bill to see if the new controls work"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "George W. Bush",
+      "object": "antiprice cap",
+      "confidence": 0.6,
+      "supporting_excerpt": "president george w bush he is mr antiprice cap"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Billy Tauzin",
+      "object": "chairman of the house energy and commerce committee",
+      "confidence": 0.7,
+      "supporting_excerpt": "rep billy tauzin he is mr no price cap legislation the powerful chairman of the house energy and commerce committee"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Billy Tauzin",
+      "object": "killed an emergency bill to help california get through the summer",
+      "confidence": 0.7,
+      "supporting_excerpt": "the powerful chairman of the house energy and commerce committee killed an emergency bill to help california get through the summer"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curt Hebert",
+      "object": "chairman of FERC",
+      "confidence": 0.9,
+      "supporting_excerpt": "curt hebert hes mr free market hebert chairman of ferc"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Curt Hebert",
+      "object": "free market",
+      "confidence": 0.4,
+      "supporting_excerpt": "curt hebert hes mr free market hebert chairman of ferc for months resisted anything that even hinted at price caps"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Federal Energy Regulatory Commission",
+      "object": "price relief",
+      "confidence": 0.4,
+      "supporting_excerpt": "republicans some from california wrote to ferc urging it to issue some price relief"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Curt Hebert",
+      "object": "resisted anything that even hinted at price caps",
+      "confidence": 0.7,
+      "supporting_excerpt": "for months20 resisted anything that even hinted at price caps the republican from20 mississippi still insists the new controls are not caps"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Richard Massey",
+      "object": "democratic commissioner from arkansas",
+      "confidence": 1.0,
+      "supporting_excerpt": "richard massey hes mr caps do work massey a democratic commissioner 20 from arkansas"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Richard Massey",
+      "object": "has argued for price caps for eight months",
+      "confidence": 0.7,
+      "supporting_excerpt": "has argued for price caps for eight months he put pressure on20 his fellow commissioners"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Pat Wood",
+      "object": "new gop bush appointee",
+      "confidence": 1.0,
+      "supporting_excerpt": "pat wood and nora mead brownell they are mr and ms new kids on the20 block these new gop bush appointees"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Pat Wood",
+      "object": "flexible and open to caps",
+      "confidence": 0.7,
+      "supporting_excerpt": "these new gop bush appointees made it known they were flexible and 20 open to caps"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Debra Bowen",
+      "object": "chairman of the state senates energy committee",
+      "confidence": 1.0,
+      "supporting_excerpt": "sen debra bowen dmarina del rey who is chairman of the state senates 20 energy committee"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Debra Bowen",
+      "object": "criticized the federal energy regulator commissions effort to hold settlement negotiations",
+      "confidence": 0.7,
+      "supporting_excerpt": "a leading state democratic lawmaker criticized the federal energy regulator y20 commissions effort to hold settlement negotiations"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Julie Simon",
+      "object": "vice president of policy for the electric power supply association",
+      "confidence": 1.0,
+      "supporting_excerpt": "said julie simon vice president of poli cy20 for the electric power supply association"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "FERC",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "california wrote to ferc urging it to issue some 20 price relief"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "FERC",
+      "object": "expand price controls in california and other states",
+      "confidence": 1.0,
+      "supporting_excerpt": "the settlement conference was established as part of fercs order monday to 20 expand price controls in california and other states"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Southern California Edison",
+      "object": "massive debts owed to power suppliers",
+      "confidence": 0.7,
+      "supporting_excerpt": "those issues include massive debts owed to power suppliers by the states 20 utilities primarily southern california edison and pacific gas electric"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Angela Wilson",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "those debts in turn could be offset against claims that power suppliers overcharged the state up to 68 billion and should pay refunds"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Curtis Wagner",
+      "object": "FERC",
+      "confidence": 0.4,
+      "supporting_excerpt": "curtis wagner fercs chief administrative law judge is expected to assist the parties in a settlement"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Southern California Edison",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "those issues include massive debts owed to power suppliers by the states utilities primarily southern california edison and pacific gas electric"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Kathleen Connell",
+      "object": "California State Controller",
+      "confidence": 0.9,
+      "supporting_excerpt": "controller kathleen connell shouldnt pay the two consultants"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Lewis Uhler",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "lewis uhler filed the suit monday in sacramento superior court saying that controller kathleen connell shouldnt pay the two consultants hired to help gov gray davis deal with californias energy crisis"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Lewis Uhler",
+      "object": "block payments to consultants",
+      "confidence": 0.6,
+      "supporting_excerpt": "an antitax advocate has filed a lawsuit against the state attempting to block payments to two consultants hired to help gov gray davis deal with californias energy crisis"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Chris Lehane",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "both men have been shaping davis public awareness campaign about the energy crisis"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Chris Lehane",
+      "object": "Southern California Edison",
+      "confidence": 0.4,
+      "supporting_excerpt": "both men advise southern california edison and their work may cause a conflict of interest"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Kathleen Connell",
+      "object": "lawsuit against consultants",
+      "confidence": 0.4,
+      "supporting_excerpt": "im certainly in agreement with the intention of the lawsuit connell said"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Jack M Stewart",
+      "object": "president",
+      "confidence": 0.6,
+      "supporting_excerpt": "california manufacturers and technology association president jack m stewart"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Cruz Bustamante",
+      "object": "Lt Gov",
+      "confidence": 0.7,
+      "supporting_excerpt": "responsible energy producers have nothing to worry about said the sponsor lt gov cruz bustamante"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Jay La Suer",
+      "object": "committee vice chairman",
+      "confidence": 0.7,
+      "supporting_excerpt": "committee vice chairman jay la suer rla mesa worried that the bill may create a bounty hunter mentality"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Jack M Stewart",
+      "object": "price caps and windfall profits and criminal penalties will harm energy supply",
+      "confidence": 0.4,
+      "supporting_excerpt": "it feels to me were entering the final chapter of an orwellian novel said california manufacturers and technology association president jack m stewart if were sending signals of price caps and windfall profits and now criminal penalties i dont think were going to have the energy we need"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Jay La Suer",
+      "object": "the bill may create a bounty hunter mentality among whistleblowers and a witch hunt atmosphere",
+      "confidence": 0.4,
+      "supporting_excerpt": "committee vice chairman jay la suer rla mesa worried that the bill may create a bounty hunter mentality among whistleblowers and a witch hunt atmosphere for prosecutors"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "John E Bryson",
+      "object": "chief",
+      "confidence": 0.7,
+      "supporting_excerpt": "edison international chief john e bryson said a federal ruling this week limiting wholesale energy prices"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "John E Bryson",
+      "object": "Edison International",
+      "confidence": 0.8,
+      "supporting_excerpt": "edison international chief john e bryson"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "John E Bryson",
+      "object": "federal ruling limiting wholesale energy prices is not enough to pull Southern California Edison from brink of bankruptcy",
+      "confidence": 0.4,
+      "supporting_excerpt": "edison international chief john e bryson said a federal ruling this week limiting wholesale energy prices in 10 western states isnt enough to pull its utility southern california edison any further from the brink of bankruptcy"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "John E Bryson",
+      "object": "proposed bailout deal between Edison and the state",
+      "confidence": 0.4,
+      "supporting_excerpt": "bryson said he senses a warming among state lawmakers to a proposed bailout deal between his company and the state that would supply billions of dollars to edison in trade for years of cheap power"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Edison Bailout Deal",
+      "object": "state legislative hearings began",
+      "confidence": 0.5,
+      "supporting_excerpt": "state legislative hearings on the deal began today"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Angela Wilson",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "state legislative hearings on the deal began20 today the deadline for the legislature to act is aug 1520 california new york and connecticut along with environmental and consumer 20 groups filed suit"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mirant",
+      "object": "Potrero Power Plant",
+      "confidence": 0.7,
+      "supporting_excerpt": "three community groups sued mirant california and the bay area air quality 20 management district in federal court they accuse the air quality managers of20 violating the federal clean air act by allowing mirant to exceed the time i t20 can run its potrero power plant without pollution controls"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Patrick Dorinson",
+      "object": "Mirant",
+      "confidence": 0.7,
+      "supporting_excerpt": "mirant spokesma n20 patrick dorinson would not comment on the suit but says the company has20 complied with an earlier executive order"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Del Mar Fair",
+      "object": "Emergency power preparations",
+      "confidence": 0.7,
+      "supporting_excerpt": "the midway on the 300acre site is crowded with 13 electric generators hous ed20 in white 40foot trailers fair officials are spending 2000 a day on the 20 generators over the course of the threeweek fair which ends july 420"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Stephen Chambers",
+      "object": "executive director",
+      "confidence": 0.6,
+      "supporting_excerpt": "said stephen chambers executive director of the western fairs association"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Stephen Chambers",
+      "object": "Western Fairs Association",
+      "confidence": 0.6,
+      "supporting_excerpt": "stephen chambers executive director of the western fairs association a sacramento based organization"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Ralph Clark",
+      "object": "CEO",
+      "confidence": 0.9,
+      "supporting_excerpt": "said ralph clark ceo of the amador fair"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Ralph Clark",
+      "object": "Amador County Fair",
+      "confidence": 0.8,
+      "supporting_excerpt": "ralph clark ceo of the amador fair"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Angela Wilson",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "people to drive by our fair and say were having rolling 20 blackouts"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Angela Wilson",
+      "object": "Fair Industry Power Costs",
+      "confidence": 0.6,
+      "supporting_excerpt": "this summer also means headaches and high power bills"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Orange County Fair",
+      "object": "generator leasing",
+      "confidence": 0.4,
+      "supporting_excerpt": "at the orange county fair which has traditionally used generators to power rides theyre leasing one additional generator this year"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Orange County Fair",
+      "object": "6500 spending on glow sticks",
+      "confidence": 0.4,
+      "supporting_excerpt": "theyre leasing one additional generator this year and spending 6500 on glow sticks"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California State Fair",
+      "object": "cutting back on hours and hot water",
+      "confidence": 0.4,
+      "supporting_excerpt": "at the california state fair in sacramento theyre cutting back on hours and hot water to the hot tubs"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Del Mar Fairgrounds",
+      "object": "137152.95 electricity cost March-April",
+      "confidence": 0.4,
+      "supporting_excerpt": "the del mar fairgrounds paid 13715295 for electricity from march 12 to april 10"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Amador County Fair",
+      "object": "6000 spending on backup generators",
+      "confidence": 0.4,
+      "supporting_excerpt": "the 63yearold amador fair which runs july 2629 is spending 6000 on backup generators and lighting"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Angela Wilson",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "the 63yearold amador fair which runs july 2629 is spending 6000 on 20 backup generators and lighting a big bite out of a 250000 total budget"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Amador Fair",
+      "object": "backup generators and lighting",
+      "confidence": 0.7,
+      "supporting_excerpt": "the 63yearold amador fair which runs july 2629 is spending 6000 on 20 backup generators and lighting"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Los Angeles County Fair",
+      "object": "raising admission fees",
+      "confidence": 0.7,
+      "supporting_excerpt": "the los angeles county fair in 20 pomona is raising admission fees on weekends from 10 to 12 for adults and 20 5 to 6 for kids to cover energy costs"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California State Fair",
+      "object": "opening two hours later on weekdays",
+      "confidence": 0.7,
+      "supporting_excerpt": "in sacramento the california state fair is opening two hours later on20 weekdays to shed electricity load"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California State Fair",
+      "object": "installing solar panels",
+      "confidence": 0.7,
+      "supporting_excerpt": "its also installing hundreds of solar 20 panels on a parking lot to generate half a megawatt of electricity"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sanmina Corp",
+      "object": "Technology Industry Slowdown",
+      "confidence": 0.4,
+      "supporting_excerpt": "sanmina dropped 174 to 1834 after saying its earnings and revenues will be below earlier estimates due to sluggish demand as high inventories continue to hurt the technology industry"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Transmeta Corp",
+      "object": "Technology Industry Slowdown",
+      "confidence": 0.4,
+      "supporting_excerpt": "transmeta corp which designs powersaving chips for notebook computers slashed its sales projection citing a slowdown in shipments to japan its major market"
+    }
+  ],
+  "_source_id": "72065",
+  "_email_meta": {
+    "sender": "angela.wilson@enron.com",
+    "recipient": "ann.schmidt@enron.com, bryan.seyfried@enron.com, elizabeth.linnell@enron.com, ",
+    "date": "2001-06-21"
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "entities": [
+    {
+      "name": "Jerry Peters",
+      "type": "person",
+      "aliases": [
+        "jerry.peters@enron.com"
+      ]
+    },
+    {
+      "name": "Stanley Horton",
+      "type": "person",
+      "aliases": [
+        "stanley.horton@enron.com"
+      ]
+    },
+    {
+      "name": "Ben Glisan",
+      "type": "person",
+      "aliases": [
+        "ben.glisan@enron.com"
+      ]
+    },
+    {
+      "name": "Kelly Boots",
+      "type": "person",
+      "aliases": [
+        "kelly.boots@enron.com"
+      ]
+    },
+    {
+      "name": "Jesse John",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Northern Border Partners",
+      "type": "organization",
+      "aliases": [
+        "NBP"
+      ]
+    },
+    {
+      "name": "UBS Warburg",
+      "type": "organization",
+      "aliases": [
+        "UBS",
+        "fka painewebber"
+      ]
+    },
+    {
+      "name": "Salomon Smith Barney",
+      "type": "organization",
+      "aliases": [
+        "SSB"
+      ]
+    },
+    {
+      "name": "Banc of America",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "First Union",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Lehman",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Goldman",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Merrill",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Northern Border Partners Equity Offering",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "MLP Underwriting Selection",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "UBS",
+      "type": "organization",
+      "aliases": [
+        "Warburg",
+        "PaineWebber"
+      ]
+    },
+    {
+      "name": "NBP",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Dain Rauscher",
+      "type": "organization",
+      "aliases": [
+        "DRS"
+      ]
+    },
+    {
+      "name": "AG Edwards",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Royal Bank of Canada",
+      "type": "organization",
+      "aliases": [
+        "RBC"
+      ]
+    },
+    {
+      "name": "Bank of America",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Goldman Sachs",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Lehman Brothers",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Merrill Lynch",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Morgan Stanley Dean Witter",
+      "type": "organization",
+      "aliases": [
+        "MSDW"
+      ]
+    },
+    {
+      "name": "Williams",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "NBPL",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "NBP Offerings Management",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Lead Manager Allocation Strategy",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jerry Peters",
+      "object": "Stanley Horton",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: stanley.horton@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jerry Peters",
+      "object": "Ben Glisan",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: ben.glisan@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jerry Peters",
+      "object": "Kelly Boots",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: kelly.boots@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jerry Peters",
+      "object": "Northern Border Partners Equity Offering",
+      "confidence": 0.7,
+      "supporting_excerpt": "attached is a short memo on our selection rationale for the underwriting group for a planned midmay equity offering of about 130 150 million for northern border partners"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jerry Peters",
+      "object": "UBS Warburg",
+      "confidence": 0.7,
+      "supporting_excerpt": "ubs warburg age and diversify and expand holdings in other major systems"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jerry Peters",
+      "object": "Salomon Smith Barney",
+      "confidence": 0.7,
+      "supporting_excerpt": "firms that have substantial nbp holdings ubs warburg age and diversify and expand holdings in other major systems ssb"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jerry Peters",
+      "object": "Banc of America",
+      "confidence": 0.6,
+      "supporting_excerpt": "ssb banc of america first union"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jerry Peters",
+      "object": "Lehman",
+      "confidence": 0.6,
+      "supporting_excerpt": "for the firms not selected ie lehman goldman and merrill"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Ben Glisan",
+      "object": "underwriting fees information",
+      "confidence": 0.9,
+      "supporting_excerpt": "kelly as ben requested the underwriting fees are expected to be about 425"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Jesse John",
+      "object": "MLP Underwriting Selection",
+      "confidence": 0.7,
+      "supporting_excerpt": "the following provides the rationale supporting the recommended underwriter group for northern border partners upcoming equity offering"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jesse John",
+      "object": "Salomon Smith Barney",
+      "confidence": 0.7,
+      "supporting_excerpt": "lead manager salomon smith barney ssb controls an impressive retail distribution system"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jesse John",
+      "object": "UBS Warburg",
+      "confidence": 0.7,
+      "supporting_excerpt": "joint lead manager ubs warburg fka painewebber ubs has served a lead manager for the last two nbp offerings"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jerry Peters",
+      "object": "Stanley Horton",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jerry.peters@enron.com\nTo: stanley.horton@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jerry Peters",
+      "object": "Ben Glisan",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jerry.peters@enron.com\nTo: stanley.horton@enron.com, ben.glisan@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jerry Peters",
+      "object": "Kelly Boots",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jerry.peters@enron.com\nTo: stanley.horton@enron.com, ben.glisan@enron.com, kelly.boots@enron.com"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "UBS",
+      "object": "NBP",
+      "confidence": 0.9,
+      "supporting_excerpt": "warburg fka painewebber ubs has served a lead manager for the last two nbp offerings"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "UBS",
+      "object": "joint lead role comanagers",
+      "confidence": 1.0,
+      "supporting_excerpt": "rather than placing ubs in a situation where they would have to stretch to put away a lead manager allocation it was deemed prudent to slot them in the joint lead role comanagers"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Dain Rauscher",
+      "object": "comanagers",
+      "confidence": 0.9,
+      "supporting_excerpt": "comanagers dain rauscher and ag edwards"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Dain Rauscher",
+      "object": "NBP",
+      "confidence": 0.9,
+      "supporting_excerpt": "dain rauscher and ag edwards both firms have a strong midmarket presence and have demonstrated their ability to place a significant number of nbp units in past offerings"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Dain Rauscher",
+      "object": "acquired by Royal Bank of Canada",
+      "confidence": 0.8,
+      "supporting_excerpt": "dain rauscher was recently acquired by royal bank of canada"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Bank of America",
+      "object": "NBP",
+      "confidence": 0.9,
+      "supporting_excerpt": "bank of america has been a significant provider of commercial banking services to nbp and nbpl over many years"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "First Union",
+      "object": "NBP",
+      "confidence": 0.9,
+      "supporting_excerpt": "first union recently became an nbp lender in the march 2001 transaction"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Bank of America",
+      "object": "joint lead for Williams MLP IPO",
+      "confidence": 1.0,
+      "supporting_excerpt": "bank of america serving as a joint lead for highly successful williams mlp ipo"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Goldman Sachs",
+      "object": "NBP offering",
+      "confidence": 0.9,
+      "supporting_excerpt": "other institutions considered but not selected goldman sachs"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Lehman Brothers",
+      "object": "NBP offering",
+      "confidence": 0.9,
+      "supporting_excerpt": "other institutions considered but not selected goldman sachs lehman brothers"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Merrill Lynch",
+      "object": "historically has not supported the MLP product",
+      "confidence": 0.7,
+      "supporting_excerpt": "merrill lynch historically this firm has not supported the mlp product"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Morgan Stanley Dean Witter",
+      "object": "analyst has a hold rating on NBP units",
+      "confidence": 0.7,
+      "supporting_excerpt": "msdw nbp receives no coverage on the investment banking side and their analyst has a hold rating on the units"
+    }
+  ],
+  "_source_id": "162944",
+  "_email_meta": {
+    "sender": "jerry.peters@enron.com",
+    "recipient": "stanley.horton@enron.com, ben.glisan@enron.com, kelly.boots@enron.com, ",
+    "date": "2001-04-12"
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "entities": [
+    {
+      "name": "Glen Hass",
+      "type": "person",
+      "aliases": [
+        "gh"
+      ]
+    },
+    {
+      "name": "Mark Baldwin",
+      "type": "person",
+      "aliases": [
+        "mbaldwin"
+      ]
+    },
+    {
+      "name": "Kimberly Watson",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Lorraine Lindberg",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "TK Lohman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Commissioner Bilas",
+      "type": "person",
+      "aliases": [
+        "Bilas"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "CPUC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "FERC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Transwestern",
+      "type": "organization",
+      "aliases": [
+        "tw",
+        "tws"
+      ]
+    },
+    {
+      "name": "Southern California Gas Company",
+      "type": "organization",
+      "aliases": [
+        "SoCAL"
+      ]
+    },
+    {
+      "name": "Comprehensive Settlement",
+      "type": "project",
+      "aliases": [
+        "cs",
+        "csa"
+      ]
+    },
+    {
+      "name": "Proposed Decision",
+      "type": "project",
+      "aliases": [
+        "pd"
+      ]
+    },
+    {
+      "name": "SoCAL GIR",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Market Concentration Limits",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Firm Receipt Point Capacity",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "SoCalSDGE",
+      "type": "organization",
+      "aliases": [
+        "socal"
+      ]
+    },
+    {
+      "name": "ITCS",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "CSA",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Regulation",
+      "type": "topic",
+      "aliases": [
+        "PD",
+        "proposed decision"
+      ]
+    },
+    {
+      "name": "Core Interstate Capacity",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Stranded Cost Recovery",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Transwestern Pipeline",
+      "type": "organization",
+      "aliases": [
+        "TW",
+        "tw"
+      ]
+    },
+    {
+      "name": "Pacific Gas and Electric",
+      "type": "organization",
+      "aliases": [
+        "PGE",
+        "pge"
+      ]
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Proposed Decision Implementation",
+      "type": "topic",
+      "aliases": [
+        "PD",
+        "pd"
+      ]
+    },
+    {
+      "name": "Capacity Streamlining Agreement",
+      "type": "topic",
+      "aliases": [
+        "CSA",
+        "csa"
+      ]
+    },
+    {
+      "name": "SoCAL",
+      "type": "organization",
+      "aliases": [
+        "socal"
+      ]
+    },
+    {
+      "name": "CSA",
+      "type": "organization",
+      "aliases": [
+        "csa"
+      ]
+    },
+    {
+      "name": "6TW",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "SoCAL System Operating Environment",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Glen Hass",
+      "object": "Kimberly Watson, Lorraine Lindberg, TK Lohman",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: glen.hass@enron.com To: kimberly.watson@enron.com, lorraine.lindberg@enron.com, tk.lohman@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Glen Hass",
+      "object": "Mark Baldwin",
+      "confidence": 0.9,
+      "supporting_excerpt": "as requested mark baldwin has put together a summary of the proposed decision and comment points for filing on friday"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Mark Baldwin",
+      "object": "Proposed Decision",
+      "confidence": 0.9,
+      "supporting_excerpt": "mark baldwin has put together a summary of the proposed decision and comment points"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Glen Hass",
+      "object": "Proposed Decision",
+      "confidence": 0.7,
+      "supporting_excerpt": "having reviewed the proposed decision i would agree with marks assessment in that while we may prefer that the commission not modify the comprehensive settlement overall the modifications made should not negatively impact transwestern"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Glen Hass",
+      "object": "Proposed Decision",
+      "confidence": 0.7,
+      "supporting_excerpt": "below are his comments which we can use for discussion purposes at the conference call later this morning"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Mark Baldwin",
+      "object": "Transwestern support for Proposed Decision",
+      "confidence": 0.7,
+      "supporting_excerpt": "i still ascertain that tw can support the current 1010 pd"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Commissioner Bilas",
+      "object": "Market Concentration Limits",
+      "confidence": 1.0,
+      "supporting_excerpt": "market concentration limits reduced from 40 to 30 of available receipt point capacity"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Mark Baldwin",
+      "object": "Market Concentration Limits",
+      "confidence": 0.7,
+      "supporting_excerpt": "tw has preferred no limits to market concentration historically however as before i do not believe pushing this issue will be successful or productive for tw"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Commissioner Bilas",
+      "object": "SoCAL firm receipt point capacity requirement",
+      "confidence": 1.0,
+      "supporting_excerpt": "socal will be required to make available on a daily basis any unutilized firm rp capacity"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Mark Baldwin",
+      "object": "SoCAL firm receipt point capacity requirement",
+      "confidence": 0.6,
+      "supporting_excerpt": "i dont see any negative impact on tw perhaps positive"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Commissioner Bilas",
+      "object": "Price cap for secondary intrastate market",
+      "confidence": 1.0,
+      "supporting_excerpt": "price cap for secondary intrastate market set at 120 of socal firm rate"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Mark Baldwin",
+      "object": "Price cap precedent",
+      "confidence": 0.7,
+      "supporting_excerpt": "i dont like the precedent set in this area however it assures that the economic value allocation between socal citygate and supply basin will proportionately tend toward the interstate system providers"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Glen Hass",
+      "object": "Kimberly Watson",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: glen.hass@enron.com\nTo: kimberly.watson@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Glen Hass",
+      "object": "Lorraine Lindberg",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: glen.hass@enron.com\nTo: lorraine.lindberg@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Glen Hass",
+      "object": "TK Lohman",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: glen.hass@enron.com\nTo: tk.lohman@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Glen Hass",
+      "object": "Core Interstate Capacity",
+      "confidence": 0.7,
+      "supporting_excerpt": "5pd does not reduce the cores interstate capacity nor their storage capacities but rather maintains these capacities at current levels current level 1044 mmcfd proposed 1000 mmcfd on the interstate system"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Glen Hass",
+      "object": "no clear negative impact on tw from this change",
+      "confidence": 0.7,
+      "supporting_excerpt": "i see no clear negative impact on tw from this changep"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Glen Hass",
+      "object": "Stranded Cost Recovery",
+      "confidence": 0.7,
+      "supporting_excerpt": "10pd orders a 10 cap on itcs stranded costresponsibility borne by bundled core customers due to unbundled core interstate capacity"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Glen Hass",
+      "object": "no direct impact upon tw interest however likely a touchy point with noncore interest",
+      "confidence": 0.7,
+      "supporting_excerpt": "no direct impact upon tw interest however likely a touchy point with noncore interest p 75"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Glen Hass",
+      "object": "SoCalSDGE",
+      "confidence": 0.7,
+      "supporting_excerpt": "7 socal directed to presentvia advice ltr how the cost of noncore default balancing will be allocated"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Glen Hass",
+      "object": "only positive attributes of this change for tw",
+      "confidence": 0.7,
+      "supporting_excerpt": "i see only positive attributes of this change for tw p63"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Glen Hass",
+      "object": "Proposed Decision Implementation",
+      "confidence": 0.7,
+      "supporting_excerpt": "the pd modifications to the csa do not impose upon tw any conditions or costs that would be reason not to support the pd"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Glen Hass",
+      "object": "Capacity Streamlining Agreement",
+      "confidence": 0.7,
+      "supporting_excerpt": "rules and socal services and consumer protection implementation no impact on tw interest p 88100 15lots of tweaking on how socal can recover the cost to implement to services envisioned under the csa"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Transwestern Pipeline",
+      "object": "Proposed Decision Implementation should be approved",
+      "confidence": 0.7,
+      "supporting_excerpt": "tw agrees that the time is ripe for approval of the pd"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Transwestern Pipeline",
+      "object": "firm tradable receipt point rights are positive changes",
+      "confidence": 0.7,
+      "supporting_excerpt": "tw agrees with the pd that the centerpiece of positive changes embodied in the csa in the creation of firm tradable rp rights"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Transwestern Pipeline",
+      "object": "Proposed Decision reduces market inefficiencies",
+      "confidence": 0.7,
+      "supporting_excerpt": "further adoption of the pd substantially reduces unnecessary market inefficiencies at the california border by providing all market participants with gas scheduling certainty"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Transwestern Pipeline",
+      "object": "Proposed Decision Implementation",
+      "confidence": 1.0,
+      "supporting_excerpt": "tw supports socal and others whom are approving this pd on this point"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Glen Hass",
+      "object": "Southern California Gas Company",
+      "confidence": 0.7,
+      "supporting_excerpt": "socal has already started to implement portions of the csa and those cost are accruing to a balancing account"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Glen Hass",
+      "object": "Pacific Gas and Electric",
+      "confidence": 0.7,
+      "supporting_excerpt": "the pge market structure which relieves upon an unbundled intrastate backbone system work relatively well during californias challenging energy markets"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Glen Hass",
+      "object": "SoCAL System Operating Environment",
+      "confidence": 0.7,
+      "supporting_excerpt": "already starting to follow the csa game plan in their attempts to improve the operating environment on the socal system"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "SoCAL",
+      "object": "structural changes",
+      "confidence": 1.0,
+      "supporting_excerpt": "it is consistent to follow through and make the structural changes required to make permanent these improvements"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "6TW",
+      "object": "SoCAL",
+      "confidence": 0.7,
+      "supporting_excerpt": "6tw supports socal and others whom are approving this pd on this point"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Glen Hass",
+      "object": "ensure CSA signatories approval before filing comments",
+      "confidence": 0.9,
+      "supporting_excerpt": "tw should be sure that socal is on board as well as other csa signatories prior to filing these type comments"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Glen Hass",
+      "object": "matters on conference call",
+      "confidence": 0.7,
+      "supporting_excerpt": "i look forward to discussing these matters tomorrow on the conference call"
+    }
+  ],
+  "_source_id": "495299",
+  "_email_meta": {
+    "sender": "glen.hass@enron.com",
+    "recipient": "kimberly.watson@enron.com, lorraine.lindberg@enron.com, tk.lohman@enron.com, ",
+    "date": "2001-10-17"
+  }
+}

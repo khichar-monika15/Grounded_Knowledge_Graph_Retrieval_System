@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "Debra Perlingiere",
+      "type": "person",
+      "aliases": [
+        "debra.perlingiere@enron.com",
+        "dperli"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "Enron North America Corp"
+      ]
+    },
+    {
+      "name": "NEGM",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Gas contract terms",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Debra Perlingiere",
+      "object": "Beth",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: debra.perlingiere@enron.com\nTo: webbb@dsmo.com"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Debra Perlingiere",
+      "object": "Enron",
+      "confidence": 0.8,
+      "supporting_excerpt": "debra perlingiere enron north america corp legal department"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Debra Perlingiere",
+      "object": "legal department",
+      "confidence": 0.9,
+      "supporting_excerpt": "debra perlingiere enron north america corp legal department"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Debra Perlingiere",
+      "object": "NEGM purchasing gas on behalf of gas companies",
+      "confidence": 0.4,
+      "supporting_excerpt": "enron recognizes that when negm is acting as buyer hereunder negm is purchasing gas on behalf of certain gas companies"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Debra Perlingiere",
+      "object": "transporter definition in contract sections 4 and 11",
+      "confidence": 0.4,
+      "supporting_excerpt": "the term 01transporter018 when used in this contract including but not limited to in sections 4 and 11 shall include any company acting in the capacity of a transporter"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Debra Perlingiere",
+      "object": "section 43 application to imbalance charges",
+      "confidence": 0.4,
+      "supporting_excerpt": "agree that section 43 of the contract will apply to invoices from such transporters for imbalance charges"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Debra Perlingiere",
+      "object": "force majeure must take place at delivery point",
+      "confidence": 0.3,
+      "supporting_excerpt": "force majeure must take place at the delivery point"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Debra Perlingiere",
+      "object": "Enron's concern with NEGM's force majeure claim",
+      "confidence": 0.4,
+      "supporting_excerpt": "enrons concern is with negms desire to claim force majeure as a result of an event by its customer downstream"
+    }
+  ],
+  "_source_id": "358837",
+  "_email_meta": {
+    "sender": "debra.perlingiere@enron.com",
+    "recipient": "webbb@dsmo.com",
+    "date": "2001-03-16"
+  }
+}

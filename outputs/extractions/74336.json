@@ -1,0 +1,184 @@
+{
+  "entities": [
+    {
+      "name": "Charles Schwab Co Inc",
+      "type": "organization",
+      "aliases": [
+        "Schwab"
+      ]
+    },
+    {
+      "name": "Jeff Dasovich",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Standard & Poor's",
+      "type": "organization",
+      "aliases": [
+        "S&P"
+      ]
+    },
+    {
+      "name": "US Equity Market Performance",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Global Currency Markets",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "International Stock Exchanges",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Schwab",
+      "type": "organization",
+      "aliases": [
+        "schwabalerts.marketupdates@schwab.com"
+      ]
+    },
+    {
+      "name": "Bridgestone Firestone Inc",
+      "type": "organization",
+      "aliases": [
+        "Bridgestone",
+        "Firestone"
+      ]
+    },
+    {
+      "name": "Ford",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Teligent",
+      "type": "organization",
+      "aliases": [
+        "TGNT"
+      ]
+    },
+    {
+      "name": "Charter Semiconductor",
+      "type": "organization",
+      "aliases": [
+        "CHRT"
+      ]
+    },
+    {
+      "name": "Firestone Tire Failures",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Economic Market Updates",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Corporate Bankruptcy Filings",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Market Updates",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Charles Schwab Co Inc",
+      "object": "Jeff Dasovich",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: schwabalerts.marketupdates@schwab.com To: jeff.dasovich@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Standard & Poor's",
+      "object": "US Equity Market Performance",
+      "confidence": 0.6,
+      "supporting_excerpt": "information provided by standard poors"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Charles Schwab Co Inc",
+      "object": "US Equity Market Performance",
+      "confidence": 0.7,
+      "supporting_excerpt": "charles schwab co inc morning market viewtm for tuesday may 22 2001"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Charles Schwab Co Inc",
+      "object": "International Stock Exchanges",
+      "confidence": 0.6,
+      "supporting_excerpt": "japan europe summary european shares were higher by midmorning"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Charles Schwab Co Inc",
+      "object": "Global Currency Markets",
+      "confidence": 0.7,
+      "supporting_excerpt": "currency summary the us dollar is mixed against the yen and the euro"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Bridgestone Firestone Inc",
+      "object": "terminated supplier relationship with Ford",
+      "confidence": 0.9,
+      "supporting_excerpt": "bridgestonefirestone inc has terminated its supplier relationship with ford"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bridgestone Firestone Inc",
+      "object": "design and manufacturing flaws",
+      "confidence": 0.7,
+      "supporting_excerpt": "bridgestonefirestone stated that there were design and manufacturing flaws on its end"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Ford",
+      "object": "recall 10 million to 13 million firestone tires",
+      "confidence": 0.9,
+      "supporting_excerpt": "ford intends to recall another 10 million to 13 million firestone tires"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Teligent",
+      "object": "filing for chapter 11 bankruptcy protection",
+      "confidence": 0.9,
+      "supporting_excerpt": "teligent tgnt 056 unch the beleaguered data services and broadband company announced that it is filing for chapter 11 bankruptcy protection"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Teligent",
+      "object": "cutting work force by 40",
+      "confidence": 0.7,
+      "supporting_excerpt": "earlier in the month teligent announced that it was cutting its work force by 40"
+    },
+    {
+      "claim_type": "warned",
+      "subject": "Charter Semiconductor",
+      "object": "fiscal second-quarter profits will hit well below analysts current estimates",
+      "confidence": 0.9,
+      "supporting_excerpt": "charter semiconductor chrt 3201 074 warned that its fiscal secondquarter profits will hit well below analysts current estimates"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Schwab",
+      "object": "Market Updates",
+      "confidence": 0.7,
+      "supporting_excerpt": "home sales friday april durable goods orders revised firstquarter us gross domestic product april existing home sales university of michigan final index of consumer sentiment for may"
+    }
+  ],
+  "_source_id": "74336",
+  "_email_meta": {
+    "sender": "schwabalerts.marketupdates@schwab.com",
+    "recipient": "jeff.dasovich@enron.com",
+    "date": "2001-05-22"
+  }
+}

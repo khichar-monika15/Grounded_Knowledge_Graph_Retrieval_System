@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ISC Registrar",
+      "type": "organization",
+      "aliases": [
+        "isc.registrar@enron.com"
+      ]
+    },
+    {
+      "name": "Samantha Boyd",
+      "type": "person",
+      "aliases": [
+        "samantha.boyd@enron.com"
+      ]
+    },
+    {
+      "name": "Understanding Options",
+      "type": "project",
+      "aliases": [
+        "uoptns112701"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "ISC Registrar",
+      "object": "Samantha Boyd",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: isc.registrar@enron.com\nTo: samantha.boyd@enron.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Samantha Boyd",
+      "object": "removed from course",
+      "confidence": 0.9,
+      "supporting_excerpt": "your enrollment status has been changed from enrolled to removed from course"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Samantha Boyd",
+      "object": "Understanding Options",
+      "confidence": 0.9,
+      "supporting_excerpt": "your enrollment status has been changed from enrolled to removed from course for the following course   course title     understanding options"
+    }
+  ],
+  "_source_id": "479268",
+  "_email_meta": {
+    "sender": "isc.registrar@enron.com",
+    "recipient": "samantha.boyd@enron.com",
+    "date": "2001-11-20"
+  }
+}

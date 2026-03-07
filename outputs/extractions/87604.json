@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "Pete Davis",
+      "type": "person",
+      "aliases": [
+        "pete.davis@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Portland West Desk",
+      "type": "organization",
+      "aliases": [
+        "oportlandwestdesk"
+      ]
+    },
+    {
+      "name": "California Scheduling",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "ISO",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Pete Davis",
+      "object": "Pete Davis",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: pete.davis@enron.com\nTo: pete.davis@enron.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "California Scheduling",
+      "object": "no ancillary schedules awarded",
+      "confidence": 0.8,
+      "supporting_excerpt": "no ancillary schedules awarded"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "California Scheduling",
+      "object": "no variances detected",
+      "confidence": 0.8,
+      "supporting_excerpt": "no variances detected"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Portland West Desk",
+      "object": "California Scheduling",
+      "confidence": 0.6,
+      "supporting_excerpt": "parsing file  oportlandwestdeskcalifornia schedulingiso final schedules2001100705txt"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "California Scheduling",
+      "object": "error retrieving hourahead price data",
+      "confidence": 0.8,
+      "supporting_excerpt": "error retrieving hourahead price data"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "California Scheduling",
+      "object": "process continuing",
+      "confidence": 0.8,
+      "supporting_excerpt": "process continuing"
+    }
+  ],
+  "_source_id": "87604",
+  "_email_meta": {
+    "sender": "pete.davis@enron.com",
+    "recipient": "pete.davis@enron.com",
+    "date": "2001-10-07"
+  }
+}

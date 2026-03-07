@@ -1,0 +1,151 @@
+{
+  "entities": [
+    {
+      "name": "EES",
+      "type": "organization",
+      "aliases": [
+        "ees"
+      ]
+    },
+    {
+      "name": "EWS",
+      "type": "organization",
+      "aliases": [
+        "ews"
+      ]
+    },
+    {
+      "name": "Enron Americas",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Rogers Herndon",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Kevin Presto",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Don Black",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Tim Belden",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "John Lavorato",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Louise Kitchen",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Eastern Power Group",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Eastern Interconnect",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Western US",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Risk Function Consolidation",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "John Lavorato",
+      "object": "all.worldwide@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: enron.announcements@enron.com\nTo: all.worldwide@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Louise Kitchen",
+      "object": "all.worldwide@enron.com",
+      "confidence": 0.8,
+      "supporting_excerpt": "john lavorato  louise kitchen"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Rogers Herndon",
+      "object": "Vice President Trading in Eastern Power Group",
+      "confidence": 0.7,
+      "supporting_excerpt": "we have asked rogers herndon currently vice presidenttrading in the eastern power group"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Rogers Herndon",
+      "object": "Manager of risk function in Eastern Interconnect",
+      "confidence": 0.7,
+      "supporting_excerpt": "we have asked rogers herndon currently vice presidenttrading in the eastern power group to manage this function in the eastern interconnect"
+    },
+    {
+      "claim_type": "reports_to",
+      "subject": "Rogers Herndon",
+      "object": "Kevin Presto",
+      "confidence": 0.5,
+      "supporting_excerpt": "rogers will continue to report to kevin presto"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Don Black",
+      "object": "Vice President EES Risk Management and Sourcing",
+      "confidence": 0.7,
+      "supporting_excerpt": "we have asked don black formerly vice presidentees risk management and sourcing"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Don Black",
+      "object": "Manager of risk function in Western US",
+      "confidence": 0.7,
+      "supporting_excerpt": "we have asked don black formerly vice presidentees risk management and sourcing to manage this function in the western us"
+    },
+    {
+      "claim_type": "reports_to",
+      "subject": "Don Black",
+      "object": "Tim Belden",
+      "confidence": 0.6,
+      "supporting_excerpt": "don will manage this group from houston and will report to tim belden"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "John Lavorato",
+      "object": "Risk Function Consolidation",
+      "confidence": 0.4,
+      "supporting_excerpt": "given the growth in ees it has become apparent that it is time to consolidate the risk functions between ees and ews"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "John Lavorato",
+      "object": "Two new risk groups inside Enron Americas",
+      "confidence": 0.6,
+      "supporting_excerpt": "two new risk groups inside enron americas will be formed to provide ees with pricing structuring retail and wholesale commodity risk management logistics and backoffice services"
+    }
+  ],
+  "_source_id": "325364",
+  "_email_meta": {
+    "sender": "enron.announcements@enron.com",
+    "recipient": "all.worldwide@enron.com",
+    "date": "2001-05-04"
+  }
+}

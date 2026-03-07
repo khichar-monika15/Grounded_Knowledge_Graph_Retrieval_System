@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "Stinson Gibner",
+      "type": "person",
+      "aliases": [
+        "stinson.gibner@enron.com"
+      ]
+    },
+    {
+      "name": "Jeff Skilling",
+      "type": "person",
+      "aliases": [
+        "jeff.skilling@enron.com"
+      ]
+    },
+    {
+      "name": "Katherine Brown",
+      "type": "person",
+      "aliases": [
+        "katherine.brown@enron.com"
+      ]
+    },
+    {
+      "name": "Sandeep Kohli",
+      "type": "person",
+      "aliases": [
+        "sandeep.kohli@enron.com"
+      ]
+    },
+    {
+      "name": "Vince Kaminski",
+      "type": "person",
+      "aliases": [
+        "vince.j.kaminski@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Maharashtra",
+      "type": "location",
+      "aliases": [
+        "maharastra"
+      ]
+    },
+    {
+      "name": "Dabhol Energy Cost Analysis",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Stinson Gibner",
+      "object": "Jeff Skilling",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: stinson.gibner@enron.com\nTo: jeff.skilling@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Stinson Gibner",
+      "object": "Katherine Brown",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: stinson.gibner@enron.com\nTo: jeff.skilling@enron.com, katherine.brown@enron.com"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Sandeep Kohli",
+      "object": "Dabhol Energy Cost Analysis",
+      "confidence": 0.8,
+      "supporting_excerpt": "i am forwarding an analysis put together by sandeep kohli"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Vince Kaminski",
+      "object": "Dabhol Energy Cost Analysis",
+      "confidence": 0.6,
+      "supporting_excerpt": "an analysis put together by sandeep kohli and reviewed by vince and me"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Stinson Gibner",
+      "object": "Dabhol Energy Cost Analysis",
+      "confidence": 0.6,
+      "supporting_excerpt": "an analysis put together by sandeep kohli and reviewed by vince and me"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dabhol Energy Cost Analysis",
+      "object": "Dabhol energy costs are several cents below that of roughly 600 mw of distributed generation",
+      "confidence": 0.4,
+      "supporting_excerpt": "the results in the attached word document show that dabhol energy costs are several cents below that of roughly 600 mw of distributed generation"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Energy Cost Analysis",
+      "object": "Maharashtra",
+      "confidence": 0.4,
+      "supporting_excerpt": "600 mw of distributed generation which has been identified in maharastra"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sandeep Kohli",
+      "object": "Vince Kaminski",
+      "confidence": 0.8,
+      "supporting_excerpt": "to vince j kaminskiect stinson gibnerect"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sandeep Kohli",
+      "object": "Stinson Gibner",
+      "confidence": 0.8,
+      "supporting_excerpt": "to vince j kaminskiect stinson gibnerect"
+    }
+  ],
+  "_source_id": "443933",
+  "_email_meta": {
+    "sender": "stinson.gibner@enron.com",
+    "recipient": "jeff.skilling@enron.com, katherine.brown@enron.com",
+    "date": "2001-01-05"
+  }
+}

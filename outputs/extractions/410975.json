@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "W. Smith",
+      "type": "person",
+      "aliases": [
+        "wsmith"
+      ]
+    },
+    {
+      "name": "Mary Meier",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Wordsmith",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Boston Globe",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Stair Project",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "W. Smith",
+      "object": "Linguaphile",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: wsmith@wordsmith.org\nTo: linguaphile@wordsmith.org"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Mary Meier",
+      "object": "Stair Project",
+      "confidence": 0.9,
+      "supporting_excerpt": "mary meier a millworkers house remade the boston globe feb 24 2000"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Stair Project",
+      "object": "newel stripped and sanded",
+      "confidence": 0.4,
+      "supporting_excerpt": "midway through the stair project he appeared with a solid pine stair newel stripped and sanded"
+    }
+  ],
+  "_source_id": "410975",
+  "_email_meta": {
+    "sender": "wsmith@wordsmith.org",
+    "recipient": "linguaphile@wordsmith.org",
+    "date": "2001-04-12"
+  }
+}

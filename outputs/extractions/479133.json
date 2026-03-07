@@ -1,0 +1,107 @@
+{
+  "entities": [
+    {
+      "name": "National Weather Service Miami",
+      "type": "organization",
+      "aliases": [
+        "NWS Miami"
+      ]
+    },
+    {
+      "name": "National Hurricane Center",
+      "type": "organization",
+      "aliases": [
+        "NHC"
+      ]
+    },
+    {
+      "name": "Tropical Depression Fifteen",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Caribbean",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Atlantic",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Nicaragua",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Tropical Storm Monitoring",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "storm-advisory@lists.hurricanecentral.com",
+      "object": "storm@lists.hurricanecentral.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: storm-advisory@lists.hurricanecentral.com\nTo: storm@lists.hurricanecentral.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Tropical Depression Fifteen",
+      "object": "Caribbean",
+      "confidence": 0.6,
+      "supporting_excerpt": "track the new systems in the caribbean and atlantic"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Tropical Depression Fifteen",
+      "object": "Atlantic",
+      "confidence": 0.6,
+      "supporting_excerpt": "track the new systems in the caribbean and atlantic"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Tropical Depression Fifteen",
+      "object": "formed",
+      "confidence": 0.8,
+      "supporting_excerpt": "tropical depression forms along the coast of nicaragua"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Tropical Depression Fifteen",
+      "object": "Nicaragua",
+      "confidence": 0.7,
+      "supporting_excerpt": "the poorlydefined center of tropical depression fifteen was located near latitude 130 northlongitude 835 west or on the coast of nicaragua"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Franklin",
+      "object": "forecaster",
+      "confidence": 0.9,
+      "supporting_excerpt": "forecaster franklin"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "National Weather Service Miami",
+      "object": "Tropical Depression Fifteen",
+      "confidence": 0.7,
+      "supporting_excerpt": "national weather service miami fl 4 pm est mon oct 29 2001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "National Hurricane Center",
+      "object": "Tropical Depression Fifteen",
+      "confidence": 0.7,
+      "supporting_excerpt": "the next advisory will be issued by the national hurricane center at 10 pm est"
+    }
+  ],
+  "_source_id": "479133",
+  "_email_meta": {
+    "sender": "storm-advisory@lists.hurricanecentral.com",
+    "recipient": "storm@lists.hurricanecentral.com",
+    "date": "2001-10-29"
+  }
+}

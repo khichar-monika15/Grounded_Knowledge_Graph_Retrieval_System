@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "Lisa Jacobson",
+      "type": "person",
+      "aliases": [
+        "lisa.jacobson@enron.com"
+      ]
+    },
+    {
+      "name": "Kevin McGowan",
+      "type": "person",
+      "aliases": [
+        "kevin.mcgowan@enron.com"
+      ]
+    },
+    {
+      "name": "Daniel Reck",
+      "type": "person",
+      "aliases": [
+        "daniel.reck@enron.com"
+      ]
+    },
+    {
+      "name": "Jeff Keeler",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Environmental Strategies Group",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Emissions Strategy Meeting",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Global Emissions Issues",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "London Office",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Enron Building",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Environmental Strategies Manager",
+      "type": "role",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Lisa Jacobson",
+      "object": "Kevin McGowan",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: lisa.jacobson@enron.com, kevin.mcgowan@enron.com, daniel.reck@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Lisa Jacobson",
+      "object": "Daniel Reck",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: lisa.jacobson@enron.com, kevin.mcgowan@enron.com, daniel.reck@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Lisa Jacobson",
+      "object": "Environmental Strategies Manager",
+      "confidence": 0.9,
+      "supporting_excerpt": "lisa jacobson enron manager environmental strategies"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Environmental Strategies Group",
+      "object": "Emissions Strategy Meeting",
+      "confidence": 0.6,
+      "supporting_excerpt": "the environmental strategies group will convene an emissions strategy meeting on friday may 18"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Emissions Strategy Meeting",
+      "object": "Global Emissions Issues",
+      "confidence": 0.4,
+      "supporting_excerpt": "to discuss global emissions issues such as air quality regulation climate change and us multipollutant legislation"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Environmental Strategies Group",
+      "object": "Emissions Strategy Meeting",
+      "confidence": 0.6,
+      "supporting_excerpt": "a video conference is being organized to enable broad participation from the london office"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Lisa Jacobson",
+      "object": "Jeff Keeler",
+      "confidence": 0.4,
+      "supporting_excerpt": "if you have any questions or suggestions in advance of the meeting please do not hesitate to contact me or jeff keeler"
+    }
+  ],
+  "_source_id": "32732",
+  "_email_meta": {
+    "sender": "lisa.jacobson@enron.com",
+    "recipient": "lisa.jacobson@enron.com, kevin.mcgowan@enron.com, daniel.reck@enron.com, ",
+    "date": "2001-05-08"
+  }
+}

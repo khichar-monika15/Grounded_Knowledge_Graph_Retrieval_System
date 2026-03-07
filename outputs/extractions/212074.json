@@ -1,0 +1,43 @@
+{
+  "entities": [
+    {
+      "name": "J. Kaminski",
+      "type": "person",
+      "aliases": [
+        "j.kaminski@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EB1962",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Cooper",
+      "object": "J. Kaminski",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: cooper@enron.com\nTo: j.kaminski@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "EB1962",
+      "object": "Commercialization of ENE Research Risk Management Products",
+      "confidence": 0.6,
+      "supporting_excerpt": "where eb1962    commercialization of ene researchrisk management products"
+    }
+  ],
+  "_source_id": "212074",
+  "_email_meta": {
+    "sender": "cooper@enron.com",
+    "recipient": "j.kaminski@enron.com",
+    "date": "2001-06-01"
+  }
+}

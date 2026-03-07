@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "Brent Price",
+      "type": "person",
+      "aliases": [
+        "price",
+        "brent"
+      ]
+    },
+    {
+      "name": "Mike McConnell",
+      "type": "person",
+      "aliases": [
+        "mike.mcconnell"
+      ]
+    },
+    {
+      "name": "A. Shankman",
+      "type": "person",
+      "aliases": [
+        "a..shankman"
+      ]
+    },
+    {
+      "name": "Sayed Khoja",
+      "type": "person",
+      "aliases": [
+        "khoja sayed",
+        "sayed"
+      ]
+    },
+    {
+      "name": "Energy Operations",
+      "type": "project",
+      "aliases": [
+        "egm operations"
+      ]
+    },
+    {
+      "name": "Expense Meeting",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Brent Price",
+      "object": "Mike McConnell",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: mike.mcconnell@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Brent Price",
+      "object": "A. Shankman",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: a..shankman@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Brent Price",
+      "object": "Expense Meeting",
+      "confidence": 0.7,
+      "supporting_excerpt": "attached is the headcount detail for energy operations as we discussed in mondays expense meeting"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Brent Price",
+      "object": "Energy Operations",
+      "confidence": 0.6,
+      "supporting_excerpt": "attached is the headcount detail for energy operations"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Brent Price",
+      "object": "london costs",
+      "confidence": 0.9,
+      "supporting_excerpt": "london costs do not tie to mondays schedule because i made some reductions after the meeting"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sayed Khoja",
+      "object": "Brent Price",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from  khoja sayed   sent tuesday october 16 2001 309 pm to price brent a"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sayed Khoja",
+      "object": "Energy Operations",
+      "confidence": 0.6,
+      "supporting_excerpt": "subject egm operations 2002 plan"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Sayed Khoja",
+      "object": "revised schedule",
+      "confidence": 0.8,
+      "supporting_excerpt": "attached is the revised schedule"
+    }
+  ],
+  "_source_id": "431805",
+  "_email_meta": {
+    "sender": "a..price@enron.com",
+    "recipient": "mike.mcconnell@enron.com, a..shankman@enron.com",
+    "date": "2001-10-17"
+  }
+}

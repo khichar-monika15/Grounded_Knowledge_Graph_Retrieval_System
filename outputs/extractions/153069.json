@@ -1,0 +1,535 @@
+{
+  "entities": [
+    {
+      "name": "Scientech",
+      "type": "organization",
+      "aliases": [
+        "scientech"
+      ]
+    },
+    {
+      "name": "Peace Software",
+      "type": "organization",
+      "aliases": [
+        "peace software"
+      ]
+    },
+    {
+      "name": "Vice President Cheney",
+      "type": "person",
+      "aliases": [
+        "Dick Cheney",
+        "vice president dick cheney"
+      ]
+    },
+    {
+      "name": "Keith Stamm",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Aquila Inc",
+      "type": "organization",
+      "aliases": [
+        "aquila inc"
+      ]
+    },
+    {
+      "name": "Will McNamara",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "President Bush",
+      "type": "person",
+      "aliases": [
+        "bush",
+        "president bush"
+      ]
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "United States Energy Crisis",
+      "type": "topic",
+      "aliases": [
+        "US energy crisis",
+        "energy crisis"
+      ]
+    },
+    {
+      "name": "Bush Energy Plan",
+      "type": "topic",
+      "aliases": [
+        "national energy plan",
+        "energy strategy"
+      ]
+    },
+    {
+      "name": "Director Electric Industry Analysis",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "President and CEO",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "Spencer Abraham",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bush Administration Energy Plan",
+      "type": "topic",
+      "aliases": [
+        "energy plan"
+      ]
+    },
+    {
+      "name": "Domestic Oil and Natural Gas Exploration",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Energy Infrastructure Expansion",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Energy Task Force",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "scientech.com",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Bush Administration",
+      "type": "organization",
+      "aliases": [
+        "bush administration"
+      ]
+    },
+    {
+      "name": "FERC",
+      "type": "organization",
+      "aliases": [
+        "Federal Energy Regulatory Commission"
+      ]
+    },
+    {
+      "name": "California Energy Shortage",
+      "type": "topic",
+      "aliases": [
+        "california energy crisis",
+        "california power supply"
+      ]
+    },
+    {
+      "name": "Transmission Infrastructure Expansion",
+      "type": "topic",
+      "aliases": [
+        "energy infrastructure expansion",
+        "power line construction"
+      ]
+    },
+    {
+      "name": "Eminent Domain Authority",
+      "type": "topic",
+      "aliases": [
+        "eminent domain policy"
+      ]
+    },
+    {
+      "name": "New York City",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Dick Cheney",
+      "type": "person",
+      "aliases": [
+        "Vice President",
+        "cheney"
+      ]
+    },
+    {
+      "name": "Cheney Task Force",
+      "type": "project",
+      "aliases": [
+        "task force"
+      ]
+    },
+    {
+      "name": "Energy Task Plan",
+      "type": "project",
+      "aliases": [
+        "energy plan"
+      ]
+    },
+    {
+      "name": "Yucca Mountain",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Nevada",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "New York",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "CNN",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "U.S. Federal Government",
+      "type": "organization",
+      "aliases": [
+        "federal government"
+      ]
+    },
+    {
+      "name": "Nuclear Power Policy",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Energy Supply Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Nuclear Waste Repository",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Pacific Gas and Electric Co",
+      "type": "organization",
+      "aliases": [
+        "PG&E"
+      ]
+    },
+    {
+      "name": "Nancy Spring",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "North American Power System",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Energy Industry",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Scientech",
+      "object": "missing",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: issuealert@scientech.com\nTo: missing"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Vice President Cheney",
+      "object": "United States Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "vice president cheney recently stated that to meet projected energy demands the us requires between 1300 and 1900 new power plants"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Keith Stamm",
+      "object": "President and CEO",
+      "confidence": 0.9,
+      "supporting_excerpt": "keith stamm president and ceo of aquila inc"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Keith Stamm",
+      "object": "Aquila Inc",
+      "confidence": 0.9,
+      "supporting_excerpt": "keith stamm president and ceo of aquila inc shares on the dynamics behind the highly successful april ipo"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Will McNamara",
+      "object": "Director Electric Industry Analysis",
+      "confidence": 0.9,
+      "supporting_excerpt": "by will mcnamara director electric industry analysis"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Bush Energy Plan",
+      "object": "nuclear power",
+      "confidence": 0.6,
+      "supporting_excerpt": "nuclear power eminent domain emerge as key elements"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California",
+      "object": "United States Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "with california struggling through yet another round of rolling blackouts this week and reportedly its thirtyninth issuance of a stage 3 emergency warning since january"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "President Bush",
+      "object": "Bush Energy Plan",
+      "confidence": 0.9,
+      "supporting_excerpt": "a national energy plan which is the culmination of nearly three months of meetings by a task force led by vice president dick cheney is scheduled to be announced by president bush sometime next week"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "President Bush",
+      "object": "domestic oil and natural gas exploration",
+      "confidence": 0.7,
+      "supporting_excerpt": "since january it has been expected that president bush will unveil an energy plan that strongly encourages exploration for domestic oil and natural gas"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "President Bush",
+      "object": "Bush Administration Energy Plan",
+      "confidence": 0.9,
+      "supporting_excerpt": "it has been expected that president bush will unveil an energy plan that strongly encourages exploration for domestic oil and natural gas"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "President Bush",
+      "object": "Domestic Oil and Natural Gas Exploration",
+      "confidence": 0.7,
+      "supporting_excerpt": "an energy plan that strongly encourages exploration for domestic oil and natural gas"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Vice President Cheney",
+      "object": "conservation is not a sufficient basis for a sound comprehensive energy policy",
+      "confidence": 0.7,
+      "supporting_excerpt": "conservation is not a sufficient basis for a sound comprehensive energy policy"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "President Bush",
+      "object": "the nation cant conserve its way to energy independence",
+      "confidence": 0.7,
+      "supporting_excerpt": "the president has stated publicly that the nation cant conserve its way to energy independence"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Vice President Cheney",
+      "object": "Energy Task Force",
+      "confidence": 0.9,
+      "supporting_excerpt": "the energy task force led by vice president cheney"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Energy Task Force",
+      "object": "Spencer Abraham",
+      "confidence": 0.9,
+      "supporting_excerpt": "the energy task force led by vice president cheney will recommend that energy secretary spencer abraham draw up legislation"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Bush Administration Energy Plan",
+      "object": "Energy Infrastructure Expansion",
+      "confidence": 0.7,
+      "supporting_excerpt": "a key element of the bush administrations plan will be the expansion of energy infrastructures to deliver power across the nation"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Energy Task Force",
+      "object": "Transmission Infrastructure Expansion",
+      "confidence": 0.7,
+      "supporting_excerpt": "the energy task force led by vice president cheney will recommend that energy secretary spencer abraham draw up legislation that allows for ferc to assume control over private property to accelerate the construction of transmission power lines"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Spencer Abraham",
+      "object": "energy secretary",
+      "confidence": 0.9,
+      "supporting_excerpt": "energy secretary spencer abraham"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Energy Task Force",
+      "object": "lack of transmission capacity is a key causal factor of California Energy Shortage",
+      "confidence": 0.7,
+      "supporting_excerpt": "the task force believes that the lack of transmission capacity is one of the key causal factors of the california energy shortage"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Vice President Cheney",
+      "object": "Eminent Domain Authority",
+      "confidence": 0.7,
+      "supporting_excerpt": "in interviews this week cheney admitted that eminent domain would be addressed in the energy task plan"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "utilities",
+      "object": "ownership of land for power line construction",
+      "confidence": 0.9,
+      "supporting_excerpt": "utilities and not the government would be given ownership of the land and allowed to build the new lines this is something that utilities as a group have requested for some time"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Vice President Cheney",
+      "object": "Eminent Domain Authority",
+      "confidence": 0.7,
+      "supporting_excerpt": "cheney admitted that eminent domain would be addressed in the energy task plan but has not specified what the plan would propose"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dick Cheney",
+      "object": "eminent domain",
+      "confidence": 0.7,
+      "supporting_excerpt": "cheney admitted that eminent domain would be addressed in the energy task plan"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dick Cheney",
+      "object": "federal authority on electrical lines",
+      "confidence": 0.7,
+      "supporting_excerpt": "the vice president did acknowledge that the key issue to be addressed is whether or not the federal government should have the same authority on electrical lines as it already has on gas lines"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dick Cheney",
+      "object": "Nuclear Power Policy",
+      "confidence": 0.7,
+      "supporting_excerpt": "nuclear power will factor in rather significantly to the task forces proposals"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dick Cheney",
+      "object": "CNN",
+      "confidence": 0.7,
+      "supporting_excerpt": "on may 8 in an exclusive interview with cnn cheney said that the answers to the nations energy woes lie in increasing the supply of energy sources including giving nuclear power a fresh look"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Dick Cheney",
+      "object": "nuclear power is economically viable",
+      "confidence": 0.7,
+      "supporting_excerpt": "from an economic standpoint now is a good time for nuclear power to reemerge"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Dick Cheney",
+      "object": "nuclear power is safe and clean",
+      "confidence": 0.7,
+      "supporting_excerpt": "nuclear power is recognized as a safe technology that doesnt emit any carbon dioxide at all"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Dick Cheney",
+      "object": "nuclear waste is a significant problem",
+      "confidence": 0.7,
+      "supporting_excerpt": "the only significant problem that cheney sees with nuclear power is the nuclear waste piling up at reactors all over the country"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Dick Cheney",
+      "object": "national permanent repository for nuclear waste",
+      "confidence": 1.0,
+      "supporting_excerpt": "the vice president supports an increase in the nations reliance on nuclear power he also supports the use of a national permanent repository that can be developed for nuclear waste"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Yucca Mountain",
+      "object": "Nevada",
+      "confidence": 0.7,
+      "supporting_excerpt": "yucca mountain located in nevada is being tested as a suitable site for a spent nuclear fuel and highlevel radioactive waste repository"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Energy Task Plan",
+      "object": "to be officially released",
+      "confidence": 0.9,
+      "supporting_excerpt": "when the bush administrations energy plan is officially released next week"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Cheney Task Force",
+      "object": "Energy Task Plan",
+      "confidence": 0.8,
+      "supporting_excerpt": "the specific proposals that the cheney task force offers"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dick Cheney",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "cheney himself admits that the energy plan has become a political debate"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Bush Administration",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "after months of rolling blackouts the bankruptcy of pacific gas and electric co and projections for severe summer problems californias problem has now become president bushs problem"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "FERC",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "for months it was clear that the bush administration and ferc preferred to let california solve its own problems"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Pacific Gas and Electric Co",
+      "object": "bankruptcy",
+      "confidence": 0.8,
+      "supporting_excerpt": "the bankruptcy of pacific gas and electric co"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Nancy Spring",
+      "object": "sponsorship contact",
+      "confidence": 1.0,
+      "supporting_excerpt": "your company can schedule a sponsorship of issuealert by contacting nancy spring via email or calling 5052447613"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Scientech",
+      "object": "Energy Industry",
+      "confidence": 0.7,
+      "supporting_excerpt": "scientechs sole purpose in publishing its issuealerts is to offer an independent perspective regarding the key events occurring in the energy industry"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Scientech",
+      "object": "independent analysis and perspective on energy industry",
+      "confidence": 0.7,
+      "supporting_excerpt": "are compiled based on the independent analysis of scientech consultants the opinions expressed in scientechs issuealerts"
+    }
+  ],
+  "_source_id": "153069",
+  "_email_meta": {
+    "sender": "issuealert@scientech.com",
+    "recipient": "missing",
+    "date": "2001-05-11"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "Joannie Williamson",
+      "type": "person",
+      "aliases": [
+        "joannie.williamson@enron.com"
+      ]
+    },
+    {
+      "name": "Stan Marek",
+      "type": "person",
+      "aliases": [
+        "stanmarek@marekbros.com"
+      ]
+    },
+    {
+      "name": "Brent Larsen",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Joannie Williamson",
+      "object": "Stan Marek",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: joannie.williamson@enron.com\nTo: stanmarek@marekbros.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bill",
+      "object": "hardhat",
+      "confidence": 0.6,
+      "supporting_excerpt": "bill and jeff will have their own hardhats"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jeff",
+      "object": "hardhat",
+      "confidence": 0.6,
+      "supporting_excerpt": "bill and jeff will have their own hardhats"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Brent Larsen",
+      "object": "Enron building lobby meeting",
+      "confidence": 0.7,
+      "supporting_excerpt": "ill be in the lobby of the enron building at 11 am"
+    }
+  ],
+  "_source_id": "446380",
+  "_email_meta": {
+    "sender": "joannie.williamson@enron.com",
+    "recipient": "stanmarek@marekbros.com",
+    "date": "2001-05-04"
+  }
+}

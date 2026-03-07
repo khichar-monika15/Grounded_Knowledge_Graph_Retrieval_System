@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "James Hughes",
+      "type": "person",
+      "aliases": [
+        "jim hughes",
+        "james.hughes@enron.com"
+      ]
+    },
+    {
+      "name": "Greg Whalley",
+      "type": "person",
+      "aliases": [
+        "greg.whalley@enron.com"
+      ]
+    },
+    {
+      "name": "Kevin Hannon",
+      "type": "person",
+      "aliases": [
+        "kevin hannon"
+      ]
+    },
+    {
+      "name": "EWS",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EEOS",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "European Assets Reorganization",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "James Hughes",
+      "object": "Greg Whalley",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: james.hughes@enron.com\nTo: greg.whalley@enron.com"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "James Hughes",
+      "object": "Kevin Hannon",
+      "confidence": 0.6,
+      "supporting_excerpt": "kevin hannon and i were meeting yesterday to review various organizational issues"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Kevin Hannon",
+      "object": "James Hughes",
+      "confidence": 0.6,
+      "supporting_excerpt": "one thing he asked me to do was extend a one time only offer to take over the assets in europe"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "James Hughes",
+      "object": "EEOS",
+      "confidence": 0.4,
+      "supporting_excerpt": "an additional question i had is whether you think that ews continues to be the correct place for eeos"
+    }
+  ],
+  "_source_id": "499414",
+  "_email_meta": {
+    "sender": "james.hughes@enron.com",
+    "recipient": "greg.whalley@enron.com",
+    "date": "2001-06-21"
+  }
+}

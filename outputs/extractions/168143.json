@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "Outlook Web Access",
+      "type": "project",
+      "aliases": [
+        "OWA"
+      ]
+    },
+    {
+      "name": "Outlook 2000 migration team",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Cephus Gunn",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Debbie Yates",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Greg Lewis",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Notes to Outlook migration",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Outlook 2000 migration team",
+      "object": "Cephus Gunn",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: cephus.gunn@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Outlook 2000 migration team",
+      "object": "Debbie Yates",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: debbie.yates@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Outlook 2000 migration team",
+      "object": "Greg Lewis",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: greg.lewis@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Outlook 2000 migration team",
+      "object": "Notes to Outlook migration",
+      "confidence": 0.4,
+      "supporting_excerpt": "once your mailbox has been migrated from notes to outlook the outlook client will be configured on your computer"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Outlook 2000 migration team",
+      "object": "Outlook Web Access",
+      "confidence": 0.4,
+      "supporting_excerpt": "during this period you can use outlook web access owa via your web browser internet explorer 50 to read and send mail"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Outlook 2000 migration team",
+      "object": "remote access capability for Outlook Web Access",
+      "confidence": 0.6,
+      "supporting_excerpt": "there are future plans to make owa available from your home or when traveling abroad"
+    }
+  ],
+  "_source_id": "168143",
+  "_email_meta": {
+    "sender": "outlook.team@enron.com",
+    "recipient": "cephus.gunn@enron.com, debbie.yates@enron.com, greg.lewis@enron.com, ",
+    "date": "2001-05-21"
+  }
+}

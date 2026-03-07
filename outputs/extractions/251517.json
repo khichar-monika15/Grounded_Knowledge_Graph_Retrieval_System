@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "Steven Kean",
+      "type": "person",
+      "aliases": [
+        "steven.kean@enron.com",
+        "steve",
+        "steven j kean"
+      ]
+    },
+    {
+      "name": "Sherri Sera",
+      "type": "person",
+      "aliases": [
+        "sherri.sera@enron.com",
+        "srs"
+      ]
+    },
+    {
+      "name": "Maureen McVicker",
+      "type": "person",
+      "aliases": [
+        "maureen mcvicker"
+      ]
+    },
+    {
+      "name": "Mary Poorman",
+      "type": "person",
+      "aliases": [
+        "mary poorman"
+      ]
+    },
+    {
+      "name": "Jeff Skilling",
+      "type": "person",
+      "aliases": [
+        "jeff",
+        "jeff skilling"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Gas Controllers Association",
+      "type": "organization",
+      "aliases": [
+        "GCA",
+        "gas controllers association"
+      ]
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Sherri Sera",
+      "object": "Steven Kean",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: steven.kean@enron.com To: sherri.sera@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Mary Poorman",
+      "object": "Jeff Skilling",
+      "confidence": 0.8,
+      "supporting_excerpt": "mary poorman 03142001  to jeff skillingcorpenronenron"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Mary Poorman",
+      "object": "assistant secretary",
+      "confidence": 1.0,
+      "supporting_excerpt": "the gas controllers association of which i am the assistant secretary"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Mary Poorman",
+      "object": "California Energy Crisis",
+      "confidence": 0.4,
+      "supporting_excerpt": "we would like to present a speaker who can educate our members on the california energy crisis"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Mary Poorman",
+      "object": "Jeff Skilling",
+      "confidence": 0.6,
+      "supporting_excerpt": "we would appreciate it if you could carve some time out of your very busy schedule"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sherri Sera",
+      "object": "Jeff Skilling",
+      "confidence": 0.4,
+      "supporting_excerpt": "steve jeff will be in boston on this date doing 11s following 1q earnings release"
+    }
+  ],
+  "_source_id": "251517",
+  "_email_meta": {
+    "sender": "steven.kean@enron.com",
+    "recipient": "sherri.sera@enron.com",
+    "date": "2001-03-14"
+  }
+}

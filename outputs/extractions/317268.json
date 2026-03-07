@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "Ben Jacoby",
+      "type": "person",
+      "aliases": [
+        "ben.jacoby@enron.com",
+        "ben f jacoby"
+      ]
+    },
+    {
+      "name": "Kay Mann",
+      "type": "person",
+      "aliases": [
+        "kay.mann@enron.com",
+        "kay mann"
+      ]
+    },
+    {
+      "name": "Chris Booth",
+      "type": "person",
+      "aliases": [
+        "chris.booth@enron.com",
+        "chris booth"
+      ]
+    },
+    {
+      "name": "Mike Young",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "Enron North America Corp"
+      ]
+    },
+    {
+      "name": "Blue Dog Max",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Ben Jacoby",
+      "object": "Kay Mann",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: ben.jacoby@enron.com\nTo: kay.mann@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ben Jacoby",
+      "object": "payment of invoices and letter of credit for first unit",
+      "confidence": 0.4,
+      "supporting_excerpt": "with respect to the payment of invoices and the lc for the first unit what do we need to do in light of section 6a in the letter agreement lets talk about this in our meeting tomorrow"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Kay Mann",
+      "object": "Ben Jacoby",
+      "confidence": 0.5,
+      "supporting_excerpt": "kay mannenron 05172001 to ben f jacobyhouectect"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Kay Mann",
+      "object": "Blue Dog Max monthly report",
+      "confidence": 0.7,
+      "supporting_excerpt": "we arent required to but i dont see a downside to sending it"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Ben Jacoby",
+      "object": "Chris Booth",
+      "confidence": 0.8,
+      "supporting_excerpt": "sent by ben jacobyect to chris boothnaenronenron"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Ben Jacoby",
+      "object": "confer with Kay Mann",
+      "confidence": 0.9,
+      "supporting_excerpt": "i would think so please confer with kay before we do"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Chris Booth",
+      "object": "Ben Jacoby",
+      "confidence": 0.5,
+      "supporting_excerpt": "from chris booth enron 05162001 to ben jacobyhouectect"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Chris Booth",
+      "object": "send Blue Dog Max monthly report to Mike Young",
+      "confidence": 0.8,
+      "supporting_excerpt": "should we send this to mike young"
+    }
+  ],
+  "_source_id": "317268",
+  "_email_meta": {
+    "sender": "ben.jacoby@enron.com",
+    "recipient": "kay.mann@enron.com",
+    "date": "2001-05-17"
+  }
+}

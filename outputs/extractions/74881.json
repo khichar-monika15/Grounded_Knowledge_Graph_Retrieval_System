@@ -1,0 +1,74 @@
+{
+  "entities": [
+    {
+      "name": "Jacqueline Kelly",
+      "type": "person",
+      "aliases": [
+        "Jackie",
+        "jacqueline.kelly@schwab.com"
+      ]
+    },
+    {
+      "name": "Steve DeBruyn",
+      "type": "person",
+      "aliases": [
+        "steve_debruyn@notes.teradyne.com"
+      ]
+    },
+    {
+      "name": "Prof Bajaj",
+      "type": "person",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Praveen",
+      "object": "Jacqueline Kelly",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: jacqueline.kelly@schwab.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Praveen",
+      "object": "Steve DeBruyn",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: steve_debruyn@notes.teradyne.com"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Prof Bajaj",
+      "object": "laptop use for exam",
+      "confidence": 1.0,
+      "supporting_excerpt": "prof bajaj is ok with people using laptops for the exam tonight"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Prof Bajaj",
+      "object": "printouts instead of floppy disks",
+      "confidence": 0.9,
+      "supporting_excerpt": "however you will have to hand him printouts instead of floppy disks"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Jacqueline Kelly",
+      "object": "celebration at Henry's after final",
+      "confidence": 0.6,
+      "supporting_excerpt": "a group of us are going to henrys after the final to celebrate"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jacqueline Kelly",
+      "object": "Praveen",
+      "confidence": 0.6,
+      "supporting_excerpt": "please come join us"
+    }
+  ],
+  "_source_id": "74881",
+  "_email_meta": {
+    "sender": "pspk@yahoo.com",
+    "recipient": "jacqueline.kelly@schwab.com, steve_debruyn@notes.teradyne.com, ",
+    "date": "2001-05-07"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "entities": [
+    {
+      "name": "Drew Fossum",
+      "type": "person",
+      "aliases": [
+        "df",
+        "drew.fossum@enron.com",
+        "fossum drew"
+      ]
+    },
+    {
+      "name": "Martha Benner",
+      "type": "person",
+      "aliases": [
+        "martha.benner@enron.com",
+        "benner martha"
+      ]
+    },
+    {
+      "name": "Ann Smith",
+      "type": "person",
+      "aliases": [
+        "smith ann"
+      ]
+    },
+    {
+      "name": "Emily Sellers",
+      "type": "person",
+      "aliases": [
+        "sellers emily"
+      ]
+    },
+    {
+      "name": "Sara Davidson",
+      "type": "person",
+      "aliases": [
+        "sara davidson"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "RSVP Form Update",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Online RSVP Form",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Law Conference",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "San Antonio",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Drew Fossum",
+      "object": "Martha Benner",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: drew.fossum@enron.com\nTo: martha.benner@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Martha Benner",
+      "object": "RSVP Form Update",
+      "confidence": 0.7,
+      "supporting_excerpt": "i need to discuss this with you before i fill out the form"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Martha Benner",
+      "object": "Drew Fossum",
+      "confidence": 0.9,
+      "supporting_excerpt": "i need to make your flights before i do the form"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Martha Benner",
+      "object": "RSVP Form Update",
+      "confidence": 0.9,
+      "supporting_excerpt": "we can talk about this on thursday pm or friday and make the reservations and do the form at that time"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Drew Fossum",
+      "object": "Ann Smith",
+      "confidence": 0.9,
+      "supporting_excerpt": "from fossum drew sent tuesday march 20 2001 159 pm to smith ann benner martha"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Sara Davidson",
+      "object": "RSVP Form Update",
+      "confidence": 0.9,
+      "supporting_excerpt": "forwarded by drew fossumetsenron on 03202001 from sara davidsonenronenronxgate on 03192001"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Drew Fossum",
+      "object": "Online RSVP Form",
+      "confidence": 0.7,
+      "supporting_excerpt": "the problems with the online rsvp form should now be solved"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Drew Fossum",
+      "object": "retry RSVP form submission",
+      "confidence": 0.8,
+      "supporting_excerpt": "please give it another try at httplawconferencecorpenroncom"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Drew Fossum",
+      "object": "Law Conference",
+      "confidence": 0.6,
+      "supporting_excerpt": "see you in san antonio"
+    }
+  ],
+  "_source_id": "118746",
+  "_email_meta": {
+    "sender": "drew.fossum@enron.com",
+    "recipient": "martha.benner@enron.com",
+    "date": "2001-03-20"
+  }
+}

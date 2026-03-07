@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "Palm",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Palm Software Connection",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Insync Online",
+      "type": "organization",
+      "aliases": [
+        "insync online team",
+        "Insync"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "insynconline.6nzbd0s4.d@insync-palm.com",
+      "object": "Jeffrey",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: insynconline.6nzbd0s4.d@insync-palm.com\nTo: jdasovic@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Palm Software Connection",
+      "object": "office documents, games, instant messages",
+      "confidence": 0.7,
+      "supporting_excerpt": "take your office documents with you play the coolest games send and receive instant messages using your handheld youll find the software that makes it all possible on palms new software connection"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Palm Software Connection",
+      "object": "Documents to Go, Bejeweled, BugMe Messenger",
+      "confidence": 0.7,
+      "supporting_excerpt": "for starters check out these hot titles brbr a hrefhttpinsynconlinep04comudcke0vs55ec2tb1 bdocuments to go174 professional editionba review and edit word excel and powerpoint documents on your handheld brbr a hrefhttpinsynconlinep04comuddke0vs55ec2te11 bbejeweledba all that glitters are gems this game is as addictive as it is easy to play brbr a hrefhttpinsynconlinep04comudake0vs55ec2tl21 bbugme messengerba"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Insync Online",
+      "object": "Palm handheld users",
+      "confidence": 0.7,
+      "supporting_excerpt": "want to know which apps your fellow palm153 handheld users are keen on"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Insync Online",
+      "object": "software ratings and recommendations",
+      "confidence": 0.7,
+      "supporting_excerpt": "our special user ratings will help you find the best software for you"
+    }
+  ],
+  "_source_id": "67504",
+  "_email_meta": {
+    "sender": "insynconline.6nzbd0s4.d@insync-palm.com",
+    "recipient": "jdasovic@enron.com",
+    "date": "2001-12-24"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "Amy Wilson",
+      "type": "person",
+      "aliases": [
+        "amywilson@btamail.net.cn"
+      ]
+    },
+    {
+      "name": "Alarm Distributors",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Ademco",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Home Security System",
+      "type": "topic",
+      "aliases": [
+        "alarm system",
+        "home protection"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Amy Wilson",
+      "object": "u7gkqxqh2@hotmail.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: amywilson@btamail.net.cn\nTo: u7gkqxqh2@hotmail.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Home Security System",
+      "object": "Alarm Distributors",
+      "confidence": 0.7,
+      "supporting_excerpt": "is your home safe home alarm system free   get details httpwwwalarmdistributorscom"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Home Security System",
+      "object": "Ademco",
+      "confidence": 0.6,
+      "supporting_excerpt": "httpwwwademcocomademcoproductscontrolsimagesvista1520pjpgprotection for your familybusiness"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Home Security System",
+      "object": "free installation",
+      "confidence": 0.6,
+      "supporting_excerpt": "free  installation  free extended 3 year warranty"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Home Security System",
+      "object": "backup battery",
+      "confidence": 0.7,
+      "supporting_excerpt": "free ademco backup batteryif power is interrupted in your home this rechargeable battery back up will take over and maintain your secure environment"
+    }
+  ],
+  "_source_id": "436997",
+  "_email_meta": {
+    "sender": "amywilson@btamail.net.cn",
+    "recipient": "u7gkqxqh2@hotmail.com",
+    "date": "2001-10-24"
+  }
+}

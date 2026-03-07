@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron"
+      ]
+    },
+    {
+      "name": "Enron 2001 Corporate Goals",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Enron Intranet",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "general.announcement@enron.com",
+      "object": "all.worldwide@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: general.announcement@enron.com\nTo: all.worldwide@enron.com"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Enron",
+      "object": "Enron 2001 Corporate Goals",
+      "confidence": 0.6,
+      "supporting_excerpt": "we are making enrons 2001 corporate and business unit goals available to employees"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Enron",
+      "object": "Enron 2001 Corporate Goals",
+      "confidence": 0.7,
+      "supporting_excerpt": "please take a few minutes to review our 2001 goals on enrons intranet"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Enron",
+      "object": "Enron 2001 Corporate Goals will help employees understand company vision",
+      "confidence": 0.4,
+      "supporting_excerpt": "we believe they will help you gain a better understanding of our vision for the company and will inspire you to identify innovative ways to help your organization and enron achieve our objectives"
+    }
+  ],
+  "_source_id": "209885",
+  "_email_meta": {
+    "sender": "general.announcement@enron.com",
+    "recipient": "all.worldwide@enron.com",
+    "date": "2001-04-02"
+  }
+}

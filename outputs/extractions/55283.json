@@ -1,0 +1,139 @@
+{
+  "entities": [
+    {
+      "name": "Martin Cuilla",
+      "type": "person",
+      "aliases": [
+        "martin.cuilla@enron.com"
+      ]
+    },
+    {
+      "name": "Zooey Wharton",
+      "type": "person",
+      "aliases": [
+        "zwharton@dawray.com",
+        "zwhartondawraycom"
+      ]
+    },
+    {
+      "name": "Holly Melissa Wheeler",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Gordon Sinclair",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "United States",
+      "type": "location",
+      "aliases": [
+        "America"
+      ]
+    },
+    {
+      "name": "Canada",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Congressional Record",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "American generosity editorial",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Z.W. Harton",
+      "type": "person",
+      "aliases": [
+        "zwharton@dawray.com"
+      ]
+    },
+    {
+      "name": "American International Relations",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Martin Cuilla",
+      "object": "Zooey Wharton",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: martin.cuilla@enron.com\nTo: zwharton@dawray.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Martin Cuilla",
+      "object": "American generosity editorial",
+      "confidence": 0.7,
+      "supporting_excerpt": "i was curious if this was real and found it on the web appearantly it happened for real in 1973"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Zooey Wharton",
+      "object": "Multiple recipients",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from zooey wharton mailtozwhartondawraycom sent wednesday september 12 2001 to alexis bill email blind man luke email camerons lifelong friend email christine email cookie email cuz email dad and kris email dancin chic email deedee email eric email gina email husband email jeff shaw email joan home email johnny email jonas email julie jules email kiki email mike fuerst email nicole email rbbb email shelley pete email spike antolik email steph email steve patterson email supahstahhh email tres email wendell email will email"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Holly Melissa Wheeler",
+      "object": "Multiple recipients",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from holly melissa wheeler sent wednesday september 12 2001 to jason d bath joshua c anderson kelly m kowis zooey wharton"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gordon Sinclair",
+      "object": "American generosity editorial",
+      "confidence": 0.7,
+      "supporting_excerpt": "a remarkable editorial broadcast from toronto by gordon sinclair a canadian television commentator"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "American generosity editorial",
+      "object": "United States",
+      "confidence": 0.7,
+      "supporting_excerpt": "this canadian thinks it is time to speak up for the americans as the most generous and possibly the least appreciated people on all the earth"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Martin Cuilla",
+      "object": "United States deserves recognition for international aid and technological achievement",
+      "confidence": 0.7,
+      "supporting_excerpt": "i can name you 5000 times when the americans raced to the help of other people in trouble can you name me even one time when someone else raced to the americans in trouble"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Martin Cuilla",
+      "object": "Canada should support the United States",
+      "confidence": 0.7,
+      "supporting_excerpt": "i hope canada is not one of those stand proud america"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Martin Cuilla",
+      "object": "Marshall Plan",
+      "confidence": 0.7,
+      "supporting_excerpt": "the marshall plan and the truman policy pumped billions of dollars into discouraged countries"
+    }
+  ],
+  "_source_id": "55283",
+  "_email_meta": {
+    "sender": "martin.cuilla@enron.com",
+    "recipient": "zwharton@dawray.com",
+    "date": "2001-09-12"
+  }
+}

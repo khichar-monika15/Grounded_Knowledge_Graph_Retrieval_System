@@ -1,0 +1,52 @@
+{
+  "entities": [
+    {
+      "name": "Amazon",
+      "type": "organization",
+      "aliases": [
+        "amazon.com"
+      ]
+    },
+    {
+      "name": "S. Kean",
+      "type": "person",
+      "aliases": [
+        "skean"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Amazon",
+      "object": "S. Kean",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: gift@amazon.com\nTo: skean@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Amazon",
+      "object": "holiday marketing email",
+      "confidence": 0.7,
+      "supporting_excerpt": "we hope you enjoyed receiving this message however if youd rather not receive future emails of this sort from amazoncom"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Amazon",
+      "object": "customer communication preferences",
+      "confidence": 0.4,
+      "supporting_excerpt": "please visit the help page updating subscriptions and communication preferences and click the customer communication preferences link"
+    }
+  ],
+  "_source_id": "244404",
+  "_email_meta": {
+    "sender": "gift@amazon.com",
+    "recipient": "skean@enron.com",
+    "date": "2001-11-27"
+  }
+}

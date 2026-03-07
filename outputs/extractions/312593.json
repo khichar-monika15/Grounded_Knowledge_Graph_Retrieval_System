@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "Reagan Rorschach",
+      "type": "person",
+      "aliases": [
+        "reagan.rorschach@enron.com"
+      ]
+    },
+    {
+      "name": "David Fairley",
+      "type": "person",
+      "aliases": [
+        "david.fairley@enron.com"
+      ]
+    },
+    {
+      "name": "Lloyd Will",
+      "type": "person",
+      "aliases": [
+        "lloyd.will@enron.com"
+      ]
+    },
+    {
+      "name": "Christi Nicolay",
+      "type": "person",
+      "aliases": [
+        "christi.nicolay@enron.com"
+      ]
+    },
+    {
+      "name": "Marvin L Carraway",
+      "type": "person",
+      "aliases": [
+        "mcarraway@watervalley.net"
+      ]
+    },
+    {
+      "name": "Mike Griffen",
+      "type": "person",
+      "aliases": [
+        "mgriffin@morganlewis.com"
+      ]
+    },
+    {
+      "name": "Bonnie Blair",
+      "type": "person",
+      "aliases": [
+        "bblair@thompsoncoburncom"
+      ]
+    },
+    {
+      "name": "Entergy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Clarksdale",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Morgan Lewis",
+      "type": "organization",
+      "aliases": [
+        "morganlewis.com"
+      ]
+    },
+    {
+      "name": "Entergy-MDEA Interconnection Agreement",
+      "type": "project",
+      "aliases": [
+        "MDEA interconnection agreement",
+        "mdea_ioa"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Reagan Rorschach",
+      "object": "David Fairley",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: reagan.rorschach@enron.com To: david.fairley@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Reagan Rorschach",
+      "object": "Lloyd Will",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: reagan.rorschach@enron.com To: david.fairley@enron.com, lloyd.will@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Reagan Rorschach",
+      "object": "Christi Nicolay",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: reagan.rorschach@enron.com To: david.fairley@enron.com, lloyd.will@enron.com, christi.nicolay@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Reagan Rorschach",
+      "object": "Entergy-MDEA Interconnection Agreement",
+      "confidence": 0.7,
+      "supporting_excerpt": "attached is entergys response to clarksdales comments forwarded by reagan rorschach"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Mike Griffen",
+      "object": "Bonnie Blair",
+      "confidence": 0.6,
+      "supporting_excerpt": "from mgriffenmorganlewiscom sent sunday february 25 2001 900 pm to bblairthompsoncoburncom"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Mike Griffen",
+      "object": "Entergy-MDEA Interconnection Agreement",
+      "confidence": 0.6,
+      "supporting_excerpt": "subject revised draft of entergymdea interconnection agreement"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bonnie Blair",
+      "object": "Entergy-MDEA Interconnection Agreement",
+      "confidence": 0.7,
+      "supporting_excerpt": "i received your email but the revised draft agreement was not attached"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Mike Griffen",
+      "object": "Morgan Lewis",
+      "confidence": 0.8,
+      "supporting_excerpt": "thanks mike griffen morgan lewis 202 4677257"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Reagan Rorschach",
+      "object": "David Fairley",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: david.fairley@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Reagan Rorschach",
+      "object": "Lloyd Will",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: lloyd.will@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Reagan Rorschach",
+      "object": "Christi Nicolay",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: christi.nicolay@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Morgan Lewis",
+      "object": "email domain change",
+      "confidence": 0.6,
+      "supporting_excerpt": "the morgan lewis email domain has been changed to morganlewiscom"
+    }
+  ],
+  "_source_id": "312593",
+  "_email_meta": {
+    "sender": "reagan.rorschach@enron.com",
+    "recipient": "david.fairley@enron.com, lloyd.will@enron.com, christi.nicolay@enron.com, ",
+    "date": "2001-02-26"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "Janine Migden",
+      "type": "person",
+      "aliases": [
+        "janine.migden@enron.com",
+        "janine migden"
+      ]
+    },
+    {
+      "name": "Steven Kean",
+      "type": "person",
+      "aliases": [
+        "steven.kean@enron.com"
+      ]
+    },
+    {
+      "name": "Richard Shapiro",
+      "type": "person",
+      "aliases": [
+        "richard.shapiro@enron.com"
+      ]
+    },
+    {
+      "name": "James Steffes",
+      "type": "person",
+      "aliases": [
+        "james.steffes@enron.com"
+      ]
+    },
+    {
+      "name": "Nicole Schwartz",
+      "type": "person",
+      "aliases": [
+        "nicole schwartz",
+        "nicole.schwartz"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron.com"
+      ]
+    },
+    {
+      "name": "EES Reorganization",
+      "type": "topic",
+      "aliases": [
+        "ees reorganization",
+        "reorg"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Janine Migden",
+      "object": "Steven Kean",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: janine.migden@enron.com To: steven.kean@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Janine Migden",
+      "object": "Richard Shapiro",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: janine.migden@enron.com To: steven.kean@enron.com, richard.shapiro@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Janine Migden",
+      "object": "James Steffes",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: janine.migden@enron.com To: steven.kean@enron.com, richard.shapiro@enron.com, james.steffes@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Janine Migden",
+      "object": "EES Reorganization",
+      "confidence": 0.3,
+      "supporting_excerpt": "fyi this is the ees reorganization memo janine"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Janine Migden",
+      "object": "Nicole Schwartz",
+      "confidence": 0.6,
+      "supporting_excerpt": "can you try sending me the email on the reorg still didnt get it thanks janine"
+    }
+  ],
+  "_source_id": "242041",
+  "_email_meta": {
+    "sender": "janine.migden@enron.com",
+    "recipient": "steven.kean@enron.com, richard.shapiro@enron.com, james.steffes@enron.com, ",
+    "date": "2001-03-28"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "E. Williams",
+      "type": "person",
+      "aliases": [
+        "e..williams@enron.com"
+      ]
+    },
+    {
+      "name": "Louise Kitchen",
+      "type": "person",
+      "aliases": [
+        "louise.kitchen@enron.com"
+      ]
+    },
+    {
+      "name": "Brian Redmond",
+      "type": "person",
+      "aliases": [
+        "brian.redmond@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "E. Williams",
+      "object": "Louise Kitchen",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: louise.kitchen@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "E. Williams",
+      "object": "Brian Redmond",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: louise.kitchen@enron.com, brian.redmond@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Louise Kitchen",
+      "object": "due diligence report",
+      "confidence": 0.8,
+      "supporting_excerpt": "per your request attached is the subject due diligence report"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Brian Redmond",
+      "object": "due diligence report",
+      "confidence": 0.8,
+      "supporting_excerpt": "per your request attached is the subject due diligence report"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "E. Williams",
+      "object": "Dan",
+      "confidence": 0.6,
+      "supporting_excerpt": "dan ext  53417"
+    }
+  ],
+  "_source_id": "256769",
+  "_email_meta": {
+    "sender": "e..williams@enron.com",
+    "recipient": "louise.kitchen@enron.com, brian.redmond@enron.com",
+    "date": "2001-07-12"
+  }
+}

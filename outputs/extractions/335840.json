@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "Pete Davis",
+      "type": "person",
+      "aliases": [
+        "pete.davis@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Scheduling",
+      "type": "topic",
+      "aliases": [
+        "ISO scheduling",
+        "Portland West Desk"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Pete Davis",
+      "object": "Pete Davis",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: pete.davis@enron.com\nTo: pete.davis@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Pete Davis",
+      "object": "California Scheduling",
+      "confidence": 0.7,
+      "supporting_excerpt": "start date 41801 hourahead hour 13  no ancillary schedules awarded  no  variances detected      log messages  parsing file  oportlandwestdeskcalifornia schedulingiso final  schedules2001041813txt"
+    }
+  ],
+  "_source_id": "335840",
+  "_email_meta": {
+    "sender": "pete.davis@enron.com",
+    "recipient": "pete.davis@enron.com",
+    "date": "2001-04-18"
+  }
+}

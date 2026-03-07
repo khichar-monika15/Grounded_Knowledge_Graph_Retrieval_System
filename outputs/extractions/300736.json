@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "Kay Mann",
+      "type": "person",
+      "aliases": [
+        "kay.mann@enron.com",
+        "kay mann"
+      ]
+    },
+    {
+      "name": "Matthew Gockerman",
+      "type": "person",
+      "aliases": [
+        "matthew.gockerman@enron.com",
+        "matt"
+      ]
+    },
+    {
+      "name": "Carolyn Campbell",
+      "type": "person",
+      "aliases": [
+        "ccampbellkslawcom",
+        "carolyn m campbell"
+      ]
+    },
+    {
+      "name": "George Kutzschbach",
+      "type": "person",
+      "aliases": [
+        "gkutzschbachfulbrightcom"
+      ]
+    },
+    {
+      "name": "John Jones",
+      "type": "person",
+      "aliases": [
+        "jjonesintergencom"
+      ]
+    },
+    {
+      "name": "Doug Pedigo",
+      "type": "person",
+      "aliases": [
+        "dpedigointergencom"
+      ]
+    },
+    {
+      "name": "Shawn Noonan",
+      "type": "person",
+      "aliases": [
+        "snoonanintergencom"
+      ]
+    },
+    {
+      "name": "John Laborde",
+      "type": "person",
+      "aliases": [
+        "johnlabordeuspwcglobalcom"
+      ]
+    },
+    {
+      "name": "CA Energy Development I",
+      "type": "project",
+      "aliases": [
+        "ca energy development i",
+        "CA Energy Development I LLC"
+      ]
+    },
+    {
+      "name": "CA Energy Development II",
+      "type": "project",
+      "aliases": [
+        "ca energy development ii",
+        "CA Energy Development II LLC"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron"
+      ]
+    },
+    {
+      "name": "Intergen",
+      "type": "organization",
+      "aliases": [
+        "intergencom",
+        "Intergen North America LP"
+      ]
+    },
+    {
+      "name": "Sweetgum Energy",
+      "type": "organization",
+      "aliases": [
+        "sweetgum energy lp"
+      ]
+    },
+    {
+      "name": "King & Spalding",
+      "type": "organization",
+      "aliases": [
+        "king spalding"
+      ]
+    },
+    {
+      "name": "Texas",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Houston",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Development",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kay Mann",
+      "object": "Matthew Gockerman",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kay.mann@enron.com\nTo: matthew.gockerman@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Kay Mann",
+      "object": "federal EINs for CA Energy Development I and II",
+      "confidence": 0.9,
+      "supporting_excerpt": "matt do ca energy development i and ii have federal eins thanks kay"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Carolyn Campbell",
+      "object": "corporate documents not registered to do business in Texas",
+      "confidence": 0.7,
+      "supporting_excerpt": "carolyn has corp documents not registered to do business in texas"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Matthew Gockerman",
+      "object": "corporate data on CA Energy Development I and II LLC entities",
+      "confidence": 0.9,
+      "supporting_excerpt": "who has the current corporate data on these llc entities such as business address names of managing officers and directors ie persons authorized to execute documents on behalf of the llcs and the federal ein numbers"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "George Kutzschbach",
+      "object": "invoice language and LLC formatting changes",
+      "confidence": 0.7,
+      "supporting_excerpt": "in addition to the invoice change the periods should be removed from llc on the cover page in the first paragraph of the first page in section 178 and on the signature page of each facility agreement"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "George Kutzschbach",
+      "object": "invoice address for CA Energy Development I",
+      "confidence": 0.7,
+      "supporting_excerpt": "for one of the facility agreements ca energy development i llc co sweetgum energy lp co intergen north america lp 909 fannin suite 2200 houston texas 77010 attention john jones"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "George Kutzschbach",
+      "object": "invoice address for CA Energy Development II",
+      "confidence": 0.7,
+      "supporting_excerpt": "for the other ca energy development ii llc co sweetgum energy lp co intergen north america lp 909 fannin suite 2200 houston texas 77010 attention john jones"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Carolyn Campbell",
+      "object": "invoice language providing GE will invoice the LLC directly",
+      "confidence": 0.9,
+      "supporting_excerpt": "george kay mann is looking for your requested language providing that ge will invoice the llc directly"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Carolyn Campbell",
+      "object": "attorney at King & Spalding",
+      "confidence": 0.9,
+      "supporting_excerpt": "carolyn m campbell king spalding"
+    }
+  ],
+  "_source_id": "300736",
+  "_email_meta": {
+    "sender": "kay.mann@enron.com",
+    "recipient": "matthew.gockerman@enron.com",
+    "date": "2001-01-02"
+  }
+}

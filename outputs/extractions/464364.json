@@ -1,0 +1,63 @@
+{
+  "entities": [
+    {
+      "name": "Kate Symes",
+      "type": "person",
+      "aliases": [
+        "kate.symes@enron.com",
+        "kate symes"
+      ]
+    },
+    {
+      "name": "Bill Williams III",
+      "type": "person",
+      "aliases": [
+        "bill.iii@enron.com",
+        "bill"
+      ]
+    },
+    {
+      "name": "Enron Capital Trade Resources Corp",
+      "type": "organization",
+      "aliases": [
+        "enron capital trade resources corp"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kate Symes",
+      "object": "Bill Williams III",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: kate.symes@enron.com\nTo: bill.iii@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bill Williams III",
+      "object": "Enron Capital Trade Resources Corp",
+      "confidence": 0.6,
+      "supporting_excerpt": "enron capital  trade resources corp    from  bill williams iii"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Kate Symes",
+      "object": "Bill Williams III needing help",
+      "confidence": 0.7,
+      "supporting_excerpt": "you shouldnt be sorry about the fact that you need help"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Bill Williams III",
+      "object": "Kate Symes's help",
+      "confidence": 0.6,
+      "supporting_excerpt": "i appreciate the help"
+    }
+  ],
+  "_source_id": "464364",
+  "_email_meta": {
+    "sender": "kate.symes@enron.com",
+    "recipient": "bill.iii@enron.com",
+    "date": "2001-03-15"
+  }
+}

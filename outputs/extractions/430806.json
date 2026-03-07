@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "Jeffrey Shankman",
+      "type": "person",
+      "aliases": [
+        "jeffrey.shankman@enron.com"
+      ]
+    },
+    {
+      "name": "Alexandra Saler",
+      "type": "person",
+      "aliases": [
+        "alexandra.saler@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeffrey Shankman",
+      "object": "Alexandra Saler",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeffrey.shankman@enron.com\nTo: alexandra.saler@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jeffrey Shankman",
+      "object": "Range Rovers",
+      "confidence": 0.6,
+      "supporting_excerpt": "i test drove range rovers saturday"
+    }
+  ],
+  "_source_id": "430806",
+  "_email_meta": {
+    "sender": "jeffrey.shankman@enron.com",
+    "recipient": "alexandra.saler@enron.com",
+    "date": "2001-01-09"
+  }
+}

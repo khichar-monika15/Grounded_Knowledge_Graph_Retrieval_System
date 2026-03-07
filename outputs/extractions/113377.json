@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "Mary Fischer",
+      "type": "person",
+      "aliases": [
+        "mary.fischer@enron.com",
+        "mary fischer"
+      ]
+    },
+    {
+      "name": "Felecia Fitzgerald",
+      "type": "person",
+      "aliases": [
+        "felecia.fitzgerald@enron.com",
+        "felecia fitzgerald"
+      ]
+    },
+    {
+      "name": "Karen Ballesteros",
+      "type": "person",
+      "aliases": [
+        "karen ballesteros"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "The Bentley Company",
+      "type": "organization",
+      "aliases": [
+        "TB",
+        "the bentley company"
+      ]
+    },
+    {
+      "name": "Western Region",
+      "type": "location",
+      "aliases": [
+        "western region"
+      ]
+    },
+    {
+      "name": "Tax Asset Adjustment",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Company Winding Up",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Mary Fischer",
+      "object": "Felecia Fitzgerald",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: mary.fischer@enron.com\nTo: felecia.fitzgerald@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mary Fischer",
+      "object": "Karen Ballesteros",
+      "confidence": 0.6,
+      "supporting_excerpt": "cc karen ballesteros"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mary Fischer",
+      "object": "The Bentley Company",
+      "confidence": 0.3,
+      "supporting_excerpt": "cc karen ballesteros western region the bentley company exchange"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Felecia Fitzgerald",
+      "object": "Tax Asset Adjustment",
+      "confidence": 0.7,
+      "supporting_excerpt": "the june tax asset was created because of a tax adjustment for client meals and entertainment"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Felecia Fitzgerald",
+      "object": "Company Winding Up",
+      "confidence": 0.7,
+      "supporting_excerpt": "this company the tb and 1581 the related payroll company is shutting down and we have to reverse everything on this company by october"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Felecia Fitzgerald",
+      "object": "Mary Fischer",
+      "confidence": 0.9,
+      "supporting_excerpt": "is there special considerations that we need to make on this company in this process  as always shanks for your help"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Felecia Fitzgerald",
+      "object": "54k tax asset is about 13 of this which seems logical so i think that july is okay",
+      "confidence": 0.7,
+      "supporting_excerpt": "54k tax asset is about 13 of this which seems logical so i think that july is okay"
+    }
+  ],
+  "_source_id": "113377",
+  "_email_meta": {
+    "sender": "mary.fischer@enron.com",
+    "recipient": "felecia.fitzgerald@enron.com",
+    "date": "2001-08-14"
+  }
+}

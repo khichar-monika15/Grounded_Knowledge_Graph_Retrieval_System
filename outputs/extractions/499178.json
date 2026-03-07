@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "Jeffrey Shankman",
+      "type": "person",
+      "aliases": [
+        "shankman",
+        "jeffrey a shankman"
+      ]
+    },
+    {
+      "name": "Greg Whalley",
+      "type": "person",
+      "aliases": [
+        "whalley",
+        "greg.whalley"
+      ]
+    },
+    {
+      "name": "Per Sekse",
+      "type": "person",
+      "aliases": [
+        "sekse",
+        "per sekse"
+      ]
+    },
+    {
+      "name": "Mike McConnell",
+      "type": "person",
+      "aliases": [
+        "mcconnell",
+        "mike"
+      ]
+    },
+    {
+      "name": "James L Bouillion",
+      "type": "person",
+      "aliases": [
+        "bouillion",
+        "jim bouillion",
+        "james l bouillion"
+      ]
+    },
+    {
+      "name": "Paul Clayton",
+      "type": "person",
+      "aliases": [
+        "clayton",
+        "clayton paul"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "2002 Insurance Budget",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "WTC Attack Insurance Impact",
+      "type": "topic",
+      "aliases": [
+        "wtc attack impact",
+        "insurance market hardening"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeffrey Shankman",
+      "object": "Greg Whalley",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: a..shankman@enron.com\nTo: greg.whalley@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Per Sekse",
+      "object": "Mike McConnell",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from  sekse per   sent friday september 21 2001 854 am to mcconnell mike"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Per Sekse",
+      "object": "Jeffrey Shankman",
+      "confidence": 0.8,
+      "supporting_excerpt": "cc shankman jeffrey a"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Per Sekse",
+      "object": "James L Bouillion",
+      "confidence": 0.8,
+      "supporting_excerpt": "cc shankman jeffrey a bouillion james l"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Per Sekse",
+      "object": "2002 Insurance Budget",
+      "confidence": 0.6,
+      "supporting_excerpt": "subject fw 2002 insurance budget"
+    },
+    {
+      "claim_type": "informed",
+      "subject": "Per Sekse",
+      "object": "Greg Whalley",
+      "confidence": 0.8,
+      "supporting_excerpt": "fyi  jeff   original message from  sekse per"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Paul Clayton",
+      "object": "WTC Attack Insurance Impact",
+      "confidence": 0.9,
+      "supporting_excerpt": "last weeks catastrophic event in new york and washington dc has produced losses precipitating a further hardening of the worldwide insurance market resulting in higher rates larger deductibles and retentions and more restrictive terms and conditions"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Paul Clayton",
+      "object": "increase premium projections by 9 million for property and 3 million for excess liability",
+      "confidence": 1.0,
+      "supporting_excerpt": "after consultation with our insurance market resources we have deemed it necessary to increase our premium projections by an additional 9million for property and 3million for excess liability"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Paul Clayton",
+      "object": "Enron",
+      "confidence": 0.7,
+      "supporting_excerpt": "enrons workers compensation auto liability and general liability are insulated from market fluctuations due to the use of our captive to fund these exposures"
+    }
+  ],
+  "_source_id": "499178",
+  "_email_meta": {
+    "sender": "a..shankman@enron.com",
+    "recipient": "greg.whalley@enron.com",
+    "date": "2001-09-21"
+  }
+}

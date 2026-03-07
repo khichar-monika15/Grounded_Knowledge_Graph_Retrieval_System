@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "name": "David E. Deutsch",
+      "type": "person",
+      "aliases": [
+        "dd",
+        "dedeutsch"
+      ]
+    },
+    {
+      "name": "Gerald Nemec",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Caroline Tran",
+      "type": "person",
+      "aliases": [
+        "tran caroline",
+        "ct"
+      ]
+    },
+    {
+      "name": "Duke Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Sempra Energy Solutions",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Natural Gas Portfolio Pricing Manager",
+      "type": "role",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "David E. Deutsch",
+      "object": "Gerald Nemec",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: dedeutsch@duke-energy.com To: gerald.nemec@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "David E. Deutsch",
+      "object": "Caroline Tran",
+      "confidence": 0.7,
+      "supporting_excerpt": "here is the resume of that awesome gas trader i told you about"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "David E. Deutsch",
+      "object": "Gerald Nemec",
+      "confidence": 0.8,
+      "supporting_excerpt": "please put it in the right hands"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Caroline Tran",
+      "object": "David E. Deutsch",
+      "confidence": 0.6,
+      "supporting_excerpt": "original message from tran caroline sent thursday march 01 2001 931 am to davidddeutschdukeenergycom"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Caroline Tran",
+      "object": "Natural Gas Portfolio Pricing Manager",
+      "confidence": 0.6,
+      "supporting_excerpt": "caroline tran natural gas portfolio pricing manager sempra energy solutions"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Caroline Tran",
+      "object": "Sempra Energy Solutions",
+      "confidence": 0.5,
+      "supporting_excerpt": "caroline tran natural gas portfolio pricing manager sempra energy solutions"
+    }
+  ],
+  "_source_id": "346554",
+  "_email_meta": {
+    "sender": "dedeutsch@duke-energy.com",
+    "recipient": "gerald.nemec@enron.com",
+    "date": "2001-03-01"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "Kathy Moore",
+      "type": "person",
+      "aliases": [
+        "m..moore@enron.com"
+      ]
+    },
+    {
+      "name": "Tana Jones",
+      "type": "person",
+      "aliases": [
+        "tana.jones@enron.com"
+      ]
+    },
+    {
+      "name": "Steph Kim",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Trafigura",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "London",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "NA Financial Products",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "US Propane Butane Trading",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Kathy Moore",
+      "object": "Tana Jones",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: m..moore@enron.com\nTo: tana.jones@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steph Kim",
+      "object": "Trafigura",
+      "confidence": 0.6,
+      "supporting_excerpt": "steph kim trafigura derivatives 44 207 298 7922"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "customer",
+      "object": "GTC",
+      "confidence": 0.6,
+      "supporting_excerpt": "customer has questions regarding the gtc for na financial products"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "customer",
+      "object": "London",
+      "confidence": 0.6,
+      "supporting_excerpt": "customer is located in london"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "customer",
+      "object": "US Propane Butane Trading",
+      "confidence": 0.9,
+      "supporting_excerpt": "they have transacted us propane and butane financial products during the month of november"
+    }
+  ],
+  "_source_id": "188632",
+  "_email_meta": {
+    "sender": "m..moore@enron.com",
+    "recipient": "tana.jones@enron.com",
+    "date": "2001-12-04"
+  }
+}

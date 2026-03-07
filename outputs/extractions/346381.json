@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "Gerald Nemec",
+      "type": "person",
+      "aliases": [
+        "gerald.nemec@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Harassment Avoidance",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Development Center",
+      "type": "organization",
+      "aliases": [
+        "development center team"
+      ]
+    },
+    {
+      "name": "DoubleTree La Salle B",
+      "type": "location",
+      "aliases": [
+        "doubletreela salle b"
+      ]
+    },
+    {
+      "name": "Houston",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "participated_in",
+      "subject": "Gerald Nemec",
+      "object": "Harassment Avoidance",
+      "confidence": 0.8,
+      "supporting_excerpt": "you are enrolled in the following class   harassment avoidance"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Harassment Avoidance",
+      "object": "class days and times 2232001",
+      "confidence": 0.6,
+      "supporting_excerpt": "class days and times   2232001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Harassment Avoidance",
+      "object": "DoubleTree La Salle B",
+      "confidence": 0.6,
+      "supporting_excerpt": "room   location doubletreela salle b  houston"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Harassment Avoidance",
+      "object": "5000",
+      "confidence": 0.6,
+      "supporting_excerpt": "participant fee 5000"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Harassment Avoidance",
+      "object": "02232001",
+      "confidence": 0.6,
+      "supporting_excerpt": "last day to cancel 02232001"
+    },
+    {
+      "claim_type": "informed",
+      "subject": "Development Center",
+      "object": "Gerald Nemec",
+      "confidence": 0.9,
+      "supporting_excerpt": "if you have any questions please call the development center team at  7138530357"
+    }
+  ],
+  "_source_id": "346381",
+  "_email_meta": {
+    "sender": "gerald.nemec@enron.com",
+    "recipient": "gerald.nemec@enron.com",
+    "date": "2001-02-20"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "entities": [
+    {
+      "name": "Patti Thompson",
+      "type": "person",
+      "aliases": [
+        "patti.thompson@enron.com"
+      ]
+    },
+    {
+      "name": "Andy Zipper",
+      "type": "person",
+      "aliases": [
+        "andy.zipper@enron.com"
+      ]
+    },
+    {
+      "name": "Jay Webb",
+      "type": "person",
+      "aliases": [
+        "jay.webb@enron.com"
+      ]
+    },
+    {
+      "name": "Thomas Gros",
+      "type": "person",
+      "aliases": [
+        "thomas.gros@enron.com",
+        "Tom Gros"
+      ]
+    },
+    {
+      "name": "Sally Beck",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark Taylor",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jeff Hodge",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Elizabeth Sager",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Leslie Reeves",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "CommodityLogic",
+      "type": "organization",
+      "aliases": [
+        "commodylogic"
+      ]
+    },
+    {
+      "name": "Confirmation Elimination Review",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Patti Thompson",
+      "object": "Andy Zipper",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: patti.thompson@enron.com\nTo: andy.zipper@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Patti Thompson",
+      "object": "Jay Webb",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: andy.zipper@enron.com, jay.webb@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Patti Thompson",
+      "object": "Thomas Gros",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: andy.zipper@enron.com, jay.webb@enron.com, thomas.gros@enron.com"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Sally Beck",
+      "object": "Confirmation Elimination Review",
+      "confidence": 0.9,
+      "supporting_excerpt": "attendees sally beck   andy zipper   jay webb   tom gros   mark taylor   jeff hodge   elizabeth sager   leslie reeves"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Andy Zipper",
+      "object": "Confirmation Elimination Review",
+      "confidence": 0.9,
+      "supporting_excerpt": "attendees sally beck   andy zipper   jay webb   tom gros   mark taylor   jeff hodge   elizabeth sager   leslie reeves"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Jay Webb",
+      "object": "Confirmation Elimination Review",
+      "confidence": 0.9,
+      "supporting_excerpt": "attendees sally beck   andy zipper   jay webb   tom gros   mark taylor   jeff hodge   elizabeth sager   leslie reeves"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Thomas Gros",
+      "object": "Confirmation Elimination Review",
+      "confidence": 0.9,
+      "supporting_excerpt": "attendees sally beck   andy zipper   jay webb   tom gros   mark taylor   jeff hodge   elizabeth sager   leslie reeves"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Mark Taylor",
+      "object": "Confirmation Elimination Review",
+      "confidence": 0.9,
+      "supporting_excerpt": "attendees sally beck   andy zipper   jay webb   tom gros   mark taylor   jeff hodge   elizabeth sager   leslie reeves"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Jeff Hodge",
+      "object": "Confirmation Elimination Review",
+      "confidence": 0.9,
+      "supporting_excerpt": "attendees sally beck   andy zipper   jay webb   tom gros   mark taylor   jeff hodge   elizabeth sager   leslie reeves"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Elizabeth Sager",
+      "object": "Confirmation Elimination Review",
+      "confidence": 0.9,
+      "supporting_excerpt": "attendees sally beck   andy zipper   jay webb   tom gros   mark taylor   jeff hodge   elizabeth sager   leslie reeves"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Leslie Reeves",
+      "object": "Confirmation Elimination Review",
+      "confidence": 0.9,
+      "supporting_excerpt": "attendees sally beck   andy zipper   jay webb   tom gros   mark taylor   jeff hodge   elizabeth sager   leslie reeves"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Confirmation Elimination Review",
+      "object": "CommodityLogic",
+      "confidence": 0.7,
+      "supporting_excerpt": "subject review game plan for elimination of confirmations and impact on  commodylogic"
+    }
+  ],
+  "_source_id": "387778",
+  "_email_meta": {
+    "sender": "patti.thompson@enron.com",
+    "recipient": "andy.zipper@enron.com, jay.webb@enron.com, thomas.gros@enron.com, ",
+    "date": "2001-04-25"
+  }
+}

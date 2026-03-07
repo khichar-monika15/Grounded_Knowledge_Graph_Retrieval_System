@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "Karen Heathman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Karen Heathman",
+      "object": "missing",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: karen.heathman@enron.com\nTo: missing"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Terri",
+      "object": "scheduled meeting",
+      "confidence": 0.7,
+      "supporting_excerpt": "was originally scheduled for wednesday february 21 at 200300 pm  terri  x33565"
+    }
+  ],
+  "_source_id": "37902",
+  "_email_meta": {
+    "sender": "karen.heathman@enron.com",
+    "recipient": "missing",
+    "date": "2001-02-27"
+  }
+}

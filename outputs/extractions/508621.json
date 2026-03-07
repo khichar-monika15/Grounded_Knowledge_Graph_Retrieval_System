@@ -1,0 +1,142 @@
+{
+  "entities": [
+    {
+      "name": "Tara Wayne",
+      "type": "person",
+      "aliases": [
+        "tarawayne@hotmail.com"
+      ]
+    },
+    {
+      "name": "Frankfurt",
+      "type": "location",
+      "aliases": [
+        "frankfurt germany"
+      ]
+    },
+    {
+      "name": "Houston",
+      "type": "location",
+      "aliases": [
+        "texas"
+      ]
+    },
+    {
+      "name": "Wuerzburg",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Texas Trip",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Scarlet Fever",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Tara's Mom",
+      "type": "person",
+      "aliases": [
+        "mom"
+      ]
+    },
+    {
+      "name": "Germany",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Texas",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Tara Wayne",
+      "object": "jferst@aol.com, wbree95199@aol.com, rjskipwjr@aol.com, dwright77@hotmail.com, henry_nina@juno.com, floresh@hq.1ad.army.mil, jason (trading), williamsj@iconus.com, gravestc@idir.net, samandlori@dellnet.com, maggie@greenapron.com, 2boys@ev1.net, mbhicks54@home.com, mgreen1000@aol.com, maureen@centurycare.com, engrosso@home.com, psgray@interfithealth.com, mom@1starnet.com, sharon.murray@oursite.cc, conways@tgenviro.com, tometh49@flash.net, floresa@hq.1ad.army.mil, wayne.green@cmtymail.100asg.army.mil",
+      "confidence": 0.6,
+      "supporting_excerpt": "From: tarawayne@hotmail.com\nTo: jferst@aol.com, wbree95199@aol.com, rjskipwjr@aol.com, dwright77@hotmail.com, henry_nina@juno.com, floresh@hq.1ad.army.mil, williams, jason (trading) </o=enron/ou=na/cn=recipients/cn=jwillia>, williamsj@iconus.com, gravestc@idir.net, samandlori@dellnet.com, maggie@greenapron.com, 2boys@ev1.net, mbhicks54@home.com, mgreen1000@aol.com, maureen@centurycare.com, engrosso@home.com, psgray@interfithealth.com, mom@1starnet.com, sharon.murray@oursite.cc, conways@tgenviro.com, tometh49@flash.net, floresa@hq.1ad.army.mil, wayne.green@cmtymail.100asg.army.mil"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Texas Trip",
+      "object": "cancelled",
+      "confidence": 0.8,
+      "supporting_excerpt": "we didnt make it to texas"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jason",
+      "object": "Scarlet Fever",
+      "confidence": 0.7,
+      "supporting_excerpt": "wayne returned with jason just before midnight with the diagnosis of scarlet fever with a rash spotted tonsils and 103 fever"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jason",
+      "object": "illness onset",
+      "confidence": 0.7,
+      "supporting_excerpt": "jason got sick sunday late afternoon jason said his mouth hurt"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Nolan",
+      "object": "sore throat exposure",
+      "confidence": 0.7,
+      "supporting_excerpt": "nolan and i had had sore throats over the last two weeks"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bob",
+      "object": "immune suppressed status",
+      "confidence": 0.7,
+      "supporting_excerpt": "avoiding bob since he is immune suppressed due to the transplant"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Tara Wayne",
+      "object": "cancel trip to Houston",
+      "confidence": 1.0,
+      "supporting_excerpt": "sonot wanting to spend the entire time in houston sick or avoiding bob since he is immune suppressed due to the transplant i tracked down my mom and had to cancel"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Texas Trip",
+      "object": "cancelled",
+      "confidence": 0.9,
+      "supporting_excerpt": "i tracked down my mom and had to cancel our trip this occurred at about 1am germany time"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jason",
+      "object": "sick",
+      "confidence": 0.4,
+      "supporting_excerpt": "jason is doing fine you wouldnt even guess he is sick by looking at him although he has been taking his medicine"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Tara Wayne",
+      "object": "Texas Day with Jason",
+      "confidence": 0.4,
+      "supporting_excerpt": "when jason woke up and said mom you know what today is texas day it brought tears to my eyes"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Tara Wayne",
+      "object": "located in Germany",
+      "confidence": 0.6,
+      "supporting_excerpt": "facing the 50 degree weather here in germany"
+    }
+  ],
+  "_source_id": "508621",
+  "_email_meta": {
+    "sender": "tarawayne@hotmail.com",
+    "recipient": "jferst@aol.com, wbree95199@aol.com, rjskipwjr@aol.com, dwright77@hotmail.com, henry_nina@juno.com, floresh@hq.1ad.army.mil, williams, jason (trading) </o=enron/ou=na/cn=recipients/cn=jwillia>, williamsj@iconus.com, gravestc@idir.net, samandlori@dellnet.com, maggie@greenapron.com, 2boys@ev1.net, mbhicks54@home.com, mgreen1000@aol.com, maureen@centurycare.com, engrosso@home.com, psgray@interfithealth.com, mom@1starnet.com, sharon.murray@oursite.cc, conways@tgenviro.com, tometh49@flash.net, floresa@hq.1ad.army.mil, wayne.green@cmtymail.100asg.army.mil",
+    "date": "2001-06-07"
+  }
+}

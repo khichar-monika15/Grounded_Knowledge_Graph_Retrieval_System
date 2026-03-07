@@ -1,0 +1,145 @@
+{
+  "entities": [
+    {
+      "name": "Phillip Love",
+      "type": "person",
+      "aliases": [
+        "pl"
+      ]
+    },
+    {
+      "name": "B. Palmer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Souad Mahmassani",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Victor Guggenheim",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Larry Joe Hunter",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bianca Ornelas",
+      "type": "person",
+      "aliases": [
+        "bianca"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "CPS",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Deal Counterparty Management",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Phillip Love",
+      "object": "B. Palmer",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: b.palmer@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Phillip Love",
+      "object": "Souad Mahmassani",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: souad.mahmassani@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Phillip Love",
+      "object": "Victor Guggenheim",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: victor.guggenheim@enron.com"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Phillip Love",
+      "object": "not granting TAGG access to Larry Joe Hunter's group",
+      "confidence": 0.7,
+      "supporting_excerpt": "after meeting with larry joe hunter we will not be granting tagg access to his group"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Larry Joe Hunter",
+      "object": "wanting access to change deals booked to wrong counterparty",
+      "confidence": 0.4,
+      "supporting_excerpt": "they were wanting access to change deals that were booked to the wrong counterparty"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Larry Joe Hunter's group",
+      "object": "making changes in the afternoon during calculation time",
+      "confidence": 0.6,
+      "supporting_excerpt": "they were wanting to do these changes in the afternoon while we were calcing"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Phillip Love",
+      "object": "afternoon changes during calculation",
+      "confidence": 0.9,
+      "supporting_excerpt": "this is not an option"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Phillip Love",
+      "object": "responsible for deal corrections",
+      "confidence": 0.9,
+      "supporting_excerpt": "therefore the resolution is we are responsible for these corrections"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Bianca Ornelas",
+      "object": "handing out revised and updated counterparty list on monthly basis",
+      "confidence": 0.7,
+      "supporting_excerpt": "bianca will be handing out a revised and updated counterparty list on a monthlly basis"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Phillip Love",
+      "object": "credit risk exposure and letter of credit from CPS",
+      "confidence": 0.4,
+      "supporting_excerpt": "our credit risk exposure is the bottom line if we do not have all the deals to the right counterparty each day we may not be receiving enough money on letter of credit from cps"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Phillip Love",
+      "object": "this is a highly visible area for mistakes",
+      "confidence": 0.4,
+      "supporting_excerpt": "fyi this is going to be a highly visible area for us to make mistakes"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Phillip Love",
+      "object": "group will face severe consequences if mistakes continue",
+      "confidence": 0.4,
+      "supporting_excerpt": "if we continue to make these mistakes we as a group will catch severe fire"
+    }
+  ],
+  "_source_id": "296240",
+  "_email_meta": {
+    "sender": "phillip.love@enron.com",
+    "recipient": "b.palmer@enron.com, souad.mahmassani@enron.com, victor.guggenheim@enron.com, ",
+    "date": "2001-01-31"
+  }
+}

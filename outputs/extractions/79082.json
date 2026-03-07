@@ -1,0 +1,38 @@
+{
+  "entities": [
+    {
+      "name": "Jeff Dasovich",
+      "type": "person",
+      "aliases": [
+        "jeff.dasovich@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "7409949@skytel.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com\nTo: 7409949@skytel.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jeff Dasovich",
+      "object": "phone number 4157827822",
+      "confidence": 0.6,
+      "supporting_excerpt": "4157827822  jeff"
+    }
+  ],
+  "_source_id": "79082",
+  "_email_meta": {
+    "sender": "jeff.dasovich@enron.com",
+    "recipient": "7409949@skytel.com",
+    "date": "2001-10-03"
+  }
+}

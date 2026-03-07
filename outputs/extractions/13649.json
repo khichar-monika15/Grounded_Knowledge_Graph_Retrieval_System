@@ -1,0 +1,217 @@
+{
+  "entities": [
+    {
+      "name": "iCruise",
+      "type": "organization",
+      "aliases": [
+        "specials@icruise.com"
+      ]
+    },
+    {
+      "name": "Carnival Cruise Lines",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Norwegian Cruise Line",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Celebrity Cruises Inc",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Holland America Line",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Royal Caribbean Cruise Line",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Cruise Specials",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Grandeur of the Seas",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Voyager of the Seas",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Inspiration",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Miami",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "New Orleans",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Caribbean",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Cruise Specials Promotion",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "iCruise",
+      "object": "postmaster@your.smtp.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: specials@icruise.com To: postmaster@your.smtp.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Carnival Cruise Lines",
+      "object": "Carnival Triumph",
+      "confidence": 0.7,
+      "supporting_excerpt": "carnival cruise lines carnival triumph from 559 port taxes included inside or 559 ocean view 7 day western caribbean sailing roundtrip from miami"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Norwegian Cruise Line",
+      "object": "Norwegian Dream",
+      "confidence": 0.7,
+      "supporting_excerpt": "norwegian cruise line norwegian dream from 999 port taxes included inside or 1099 ocean view 14 day south america cruise sailing from buenos aires to santiago"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Celebrity Cruises Inc",
+      "object": "Mercury",
+      "confidence": 0.7,
+      "supporting_excerpt": "celebrity cruises inc mercury from 778 port taxes included inside or 940 ocean view 7 day cruise to alaska sailing roundtrip from vancouver"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Holland America Line",
+      "object": "Zaandam",
+      "confidence": 0.7,
+      "supporting_excerpt": "holland america line zaandam from 838 port taxes included inside or 1029 ocean view 7 day holiday sailing to the caribbean sailing roundtrip ft lauderdale"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Carnival Cruise Lines",
+      "object": "Carnival Victory",
+      "confidence": 0.7,
+      "supporting_excerpt": "carnival cruise lines carnival victory from 732 port taxes included inside cabins onlynew years eve 7 day eastern caribbean sailing roundtrip from miami"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Norwegian Cruise Line",
+      "object": "Norwegian Sky",
+      "confidence": 0.7,
+      "supporting_excerpt": "norwegian cruise line norwegian sky from 432 port taxes included inside cabin or 525 ocean view 7 day eastern caribbean cruise sailing roundtrip from miami"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Celebrity Cruises Inc",
+      "object": "Millennium",
+      "confidence": 0.7,
+      "supporting_excerpt": "celebrity cruises inc millennium from 654 port taxes included inside or 750 ocean view 7 day eastern caribbean sailing roundtrip from ft lauderdale"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Holland America Line",
+      "object": "Westerdam",
+      "confidence": 0.7,
+      "supporting_excerpt": "holland america line westerdam from 824 port taxes included inside or 1014 ocean view 8 day holiday cruise sailing roundtrip from ft lauderdale"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Carnival Cruise Lines",
+      "object": "Ecstasy",
+      "confidence": 0.7,
+      "supporting_excerpt": "carnival cruise lines ecstasy from 430 port taxes included inside or 478 ocean view 3 day cruise to ensenada sailing roundtrip from los angeles"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Royal Caribbean Cruise Line",
+      "object": "Adventure of the Seas",
+      "confidence": 0.7,
+      "supporting_excerpt": "royal caribbean cruise line adventure of the seas from 591 port taxes included inside or 781ocean view 7 day southern caribbean cruise sailing roundtrip from san juan"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Royal Caribbean Cruise Line",
+      "object": "Grandeur of the Seas",
+      "confidence": 0.7,
+      "supporting_excerpt": "royal caribbean cruise line grandeur of the seas from 1200 port taxes included inside or 1705 ocean view 11 day exotic caribbean cruise sailing roundtrip from miami"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Royal Caribbean Cruise Line",
+      "object": "Voyager of the Seas",
+      "confidence": 0.7,
+      "supporting_excerpt": "royal caribbean cruise line voyager of the seas from 669 port taxes included inside or 939 ocean"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "iCruise",
+      "object": "postmaster@your.smtp.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: specials@icruise.com\nTo: postmaster@your.smtp.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "iCruise",
+      "object": "Voyager of the Seas",
+      "confidence": 0.7,
+      "supporting_excerpt": "royal caribbean cruise line voyager of the seas from 669 port taxes included inside or 939 ocean view 7 day western caribbean cruise sailing roundtrip from miami"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "iCruise",
+      "object": "Inspiration",
+      "confidence": 0.7,
+      "supporting_excerpt": "carnival cruise lines inspiration from 973 port taxes included inside or 1011 ocean view with port hole 7 day western caribbean cruise sailing roundtrip from new orleans"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Grandeur of the Seas",
+      "object": "Miami",
+      "confidence": 0.6,
+      "supporting_excerpt": "11 day exotic caribbean cruise sailing roundtrip from miami"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Voyager of the Seas",
+      "object": "Miami",
+      "confidence": 0.6,
+      "supporting_excerpt": "7 day western caribbean cruise sailing roundtrip from miami"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Inspiration",
+      "object": "New Orleans",
+      "confidence": 0.6,
+      "supporting_excerpt": "7 day western caribbean cruise sailing roundtrip from new orleans"
+    }
+  ],
+  "_source_id": "13649",
+  "_email_meta": {
+    "sender": "specials@icruise.com",
+    "recipient": "postmaster@your.smtp.com",
+    "date": "2001-11-23"
+  }
+}

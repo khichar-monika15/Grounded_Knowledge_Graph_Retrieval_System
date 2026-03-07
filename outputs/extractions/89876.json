@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "David Delainey",
+      "type": "person",
+      "aliases": [
+        "dave",
+        "david w delainey"
+      ]
+    },
+    {
+      "name": "Crystal Dobson",
+      "type": "person",
+      "aliases": [
+        "crystal"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron North America",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EES",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Direct",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Houston",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Calgary",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Oxford",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Donna Delainey",
+      "type": "person",
+      "aliases": [
+        "dawna",
+        "donna"
+      ]
+    },
+    {
+      "name": "Kassandra Delainey",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Samantha Delainey",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Career transitions",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "David Delainey",
+      "object": "Crystal Dobson",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: david.delainey@enron.com To: crystal.dobson@enron.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "David Delainey",
+      "object": "Chair/CEO of EES",
+      "confidence": 0.7,
+      "supporting_excerpt": "my move from presceo of enron north america to chairceo of ees"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "David Delainey",
+      "object": "Enron North America",
+      "confidence": 0.6,
+      "supporting_excerpt": "my move from presceo of enron north america to chairceo of ees"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "David Delainey",
+      "object": "EES",
+      "confidence": 0.6,
+      "supporting_excerpt": "my move from presceo of enron north america to chairceo of ees"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "David Delainey",
+      "object": "Donna Delainey",
+      "confidence": 0.7,
+      "supporting_excerpt": "dawna is fine we have two girls six kassandra and four samantha"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "David Delainey",
+      "object": "Kassandra Delainey",
+      "confidence": 0.6,
+      "supporting_excerpt": "we have two girls six kassandra and four samantha"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "David Delainey",
+      "object": "Samantha Delainey",
+      "confidence": 0.6,
+      "supporting_excerpt": "we have two girls six kassandra and four samantha"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "David Delainey",
+      "object": "relocated to Houston",
+      "confidence": 0.6,
+      "supporting_excerpt": "we have been in houston now three and half years it has been a good move from a career point of view"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Crystal Dobson",
+      "object": "Enron Direct",
+      "confidence": 0.6,
+      "supporting_excerpt": "i am located in oxford and work part time at enron direct"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Crystal Dobson",
+      "object": "Oxford",
+      "confidence": 0.4,
+      "supporting_excerpt": "i am located in oxford and work part time at enron direct"
+    }
+  ],
+  "_source_id": "89876",
+  "_email_meta": {
+    "sender": "david.delainey@enron.com",
+    "recipient": "crystal.dobson@enron.com",
+    "date": "2001-02-14"
+  }
+}

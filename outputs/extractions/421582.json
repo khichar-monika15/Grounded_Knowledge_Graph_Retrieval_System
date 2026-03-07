@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "Brent Hendry",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Scott Griffin",
+      "type": "person",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Brent Hendry",
+      "object": "Scott Griffin",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: brent.hendry@enron.com\nTo: scott.griffin@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Brent Hendry",
+      "object": "revised draft",
+      "confidence": 0.7,
+      "supporting_excerpt": "here is the revised draft with the strike amount seperated as requested"
+    }
+  ],
+  "_source_id": "421582",
+  "_email_meta": {
+    "sender": "brent.hendry@enron.com",
+    "recipient": "scott.griffin@enron.com",
+    "date": "2001-10-10"
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "entities": [
+    {
+      "name": "Rod Hayslett",
+      "type": "person",
+      "aliases": [
+        "rod.hayslett@enron.com",
+        "rod hayslettfgtenron"
+      ]
+    },
+    {
+      "name": "Shelley Corman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Steven J Kean",
+      "type": "person",
+      "aliases": [
+        "steve kean"
+      ]
+    },
+    {
+      "name": "Vicki Sharp",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Drew Foss",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Maria Pavlou",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Michael Moran",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bill Donovan",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Energy Services",
+      "type": "organization",
+      "aliases": [
+        "EES"
+      ]
+    },
+    {
+      "name": "Enron Facility Services",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Property and Services Corp",
+      "type": "organization",
+      "aliases": [
+        "EPSC"
+      ]
+    },
+    {
+      "name": "Northern Natural Gas",
+      "type": "organization",
+      "aliases": [
+        "NNG"
+      ]
+    },
+    {
+      "name": "Transcontinental Gas Pipeline",
+      "type": "organization",
+      "aliases": [
+        "TW"
+      ]
+    },
+    {
+      "name": "Natural Gas Pipeline",
+      "type": "organization",
+      "aliases": [
+        "NBPL"
+      ]
+    },
+    {
+      "name": "FERC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Kinder Morgan",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Houston facilities reorganization",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Omaha facilities reorganization",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Marketing affiliate compliance",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "FERC standards of conduct",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Facility management transition",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Houston",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Omaha",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "EES Global Energy Services Group",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Daniel Leff",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron Corporate Administration Services",
+      "type": "organization",
+      "aliases": [
+        "ECAS"
+      ]
+    },
+    {
+      "name": "Enron Center Campus",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Facility Management Services",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Rod Hayslett",
+      "object": "haysletr@flash.net",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: rod.hayslett@enron.com\nTo: haysletr@flash.net"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Shelley Corman",
+      "object": "Marketing affiliate compliance",
+      "confidence": 0.7,
+      "supporting_excerpt": "shelley corman 11152000 to steven j keannaenronenron vicki sharphoueesees drew fossumetsenronenron maria pavlouetsenronenron michael moranetsenronenron cc bcc rod hayslettfgtenron subject mkt affiliate implications"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron Energy Services",
+      "object": "marketing affiliate of several of the enron pipelines",
+      "confidence": 0.7,
+      "supporting_excerpt": "enron energy services is presently a marketing affiliate of several of the enron pipelines"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron Energy Services",
+      "object": "buys and sells gas and holds transport contracts on pipelines",
+      "confidence": 0.7,
+      "supporting_excerpt": "ees 1 buyssells gas and 2 holds transport contracts on our pipelines"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Rod Hayslett",
+      "object": "FERC would not have problem with mechanical electrical airconditioning types of services",
+      "confidence": 0.7,
+      "supporting_excerpt": "generally i dont see the ferc having any problem with mechanical electrical airconditioning types of services"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "FERC",
+      "object": "giving marketing affiliate access to transportation and shipper records is impermissibly sharing information",
+      "confidence": 0.7,
+      "supporting_excerpt": "ferc has ruled that giving a marketing affiliate access to transportation and shipper records including something as simple as file room access is deemed to be impermissibly sharing the information with a marketing affiliate in violation of the standards"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Rod Hayslett",
+      "object": "EES will not be able to perform records management function for NNG TW or NBPL",
+      "confidence": 0.9,
+      "supporting_excerpt": "thus it seems to me that ees will explicitly not be able to perform any records management function for nng tw or nbpl"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "FERC",
+      "object": "scrutinizes intercompany charges carefully",
+      "confidence": 0.6,
+      "supporting_excerpt": "ferc scrutinizes intercompany charges carefully"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Rod Hayslett",
+      "object": "EES facility management charges should come from Enron Facility Services not EES",
+      "confidence": 0.9,
+      "supporting_excerpt": "it would be helpful if any ees facility management chargesallocations come from enron facility services not ees"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Steven J Kean",
+      "object": "Facility management transition to EES by year end",
+      "confidence": 1.0,
+      "supporting_excerpt": "responsibility for daily operations of building support services in the enron building houston leased offices and two pacific place omaha will be transitioning from corporate to enron energy services ees by yearend"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Facility management transition",
+      "object": "areas affected include facility operations and maintenance of mechanical electrical and airconditioning systems mail delivery housekeeping food copier and records services",
+      "confidence": 0.7,
+      "supporting_excerpt": "the areas affected include facility operations and maintenance of mechanical electrical and airconditioning systems mail delivery housekeeping food copier and records services"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Facility management transition",
+      "object": "transition designed to optimize value by leveraging facility management businesses offered by EES",
+      "confidence": 0.7,
+      "supporting_excerpt": "this transition of services as presently managed by enron property and services corp epsc is designed to optimize value to enrons business units by leveraging facility management businesses now offered by ees to their commercial customers"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Enron Property and Services Corp staff",
+      "object": "report to Enron Facility Services",
+      "confidence": 1.0,
+      "supporting_excerpt": "epsc staff having administrative responsibility for these services will report to enron facility services a subsidiary"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Daniel Leff",
+      "object": "President and CEO",
+      "confidence": 0.9,
+      "supporting_excerpt": "led by daniel leff president and ceo"
+    },
+    {
+      "claim_type": "reports_to",
+      "subject": "Enron Property and Services Corp",
+      "object": "Enron Facility Services",
+      "confidence": 0.9,
+      "supporting_excerpt": "epsc staff having administrative responsibility for these services will report to enron facility services"
+    },
+    {
+      "claim_type": "reports_to",
+      "subject": "Enron Facility Services",
+      "object": "EES Global Energy Services Group",
+      "confidence": 0.8,
+      "supporting_excerpt": "a subsidiary of eess global energy services group"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Bill Donovan",
+      "object": "Vice President Corporate Administrative Services",
+      "confidence": 0.9,
+      "supporting_excerpt": "reporting to bill donovan vice president corporate administrative services"
+    },
+    {
+      "claim_type": "reports_to",
+      "subject": "Enron Property and Services Corp",
+      "object": "Enron Corporate Administration Services",
+      "confidence": 0.9,
+      "supporting_excerpt": "epsc in its development role remains a part of enron corporate administration services ecas"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Enron Property and Services Corp",
+      "object": "Enron Center Campus",
+      "confidence": 0.6,
+      "supporting_excerpt": "managing the development of houstons new enron center campus project"
+    }
+  ],
+  "_source_id": "162985",
+  "_email_meta": {
+    "sender": "rod.hayslett@enron.com",
+    "recipient": "haysletr@flash.net",
+    "date": "2001-02-21"
+  }
+}

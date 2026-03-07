@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "Eric Bass",
+      "type": "person",
+      "aliases": [
+        "eric.bass@enron.com"
+      ]
+    },
+    {
+      "name": "Shanna Husser",
+      "type": "person",
+      "aliases": [
+        "shanna.husser@enron.com"
+      ]
+    },
+    {
+      "name": "Christina Barthel",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron North America Corp",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Pipeline Sale",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Shanna Husser",
+      "object": "Eric Bass",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: eric.bass@enron.com To: shanna.husser@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Shanna Husser",
+      "object": "Pipeline Sale",
+      "confidence": 0.4,
+      "supporting_excerpt": "he wanted to talk about life after the sale of the pipeline ie some people will be leaving the company with the pipeline"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Shanna Husser",
+      "object": "Eric Bass",
+      "confidence": 0.6,
+      "supporting_excerpt": "so he wants me to be ready to take on more responsibility"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Christina Barthel",
+      "object": "Shanna Husser",
+      "confidence": 0.6,
+      "supporting_excerpt": "Forwarded by shanna husserhouees on 01262001 christina barthel 01262001 to shanna husserhoueesees"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Shanna Husser",
+      "object": "Tom",
+      "confidence": 0.6,
+      "supporting_excerpt": "did you ever find out what tom wanted"
+    }
+  ],
+  "_source_id": "16639",
+  "_email_meta": {
+    "sender": "eric.bass@enron.com",
+    "recipient": "shanna.husser@enron.com",
+    "date": "2001-01-26"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "enron"
+      ]
+    },
+    {
+      "name": "Enron Online",
+      "type": "project",
+      "aliases": [
+        "enonline"
+      ]
+    },
+    {
+      "name": "EBS",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Brazil",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Sundance",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Data Storage Market",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "eBiz",
+      "type": "project",
+      "aliases": [
+        "ebiz"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "enron.announcements@enron.com",
+      "object": "all.worldwide@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: enron.announcements@enron.com\nTo: all.worldwide@enron.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "eBiz",
+      "object": "Data Storage Market",
+      "confidence": 0.7,
+      "supporting_excerpt": "read about enrons entry into the data storage market  also in this issue"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "eBiz",
+      "object": "Enron Online",
+      "confidence": 0.6,
+      "supporting_excerpt": "sizing up enrononlines competition"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "eBiz",
+      "object": "Brazil",
+      "confidence": 0.6,
+      "supporting_excerpt": "brazils new merchant plant"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "EBS",
+      "object": "Sundance",
+      "confidence": 0.6,
+      "supporting_excerpt": "ebs sponsors sundance"
+    }
+  ],
+  "_source_id": "463378",
+  "_email_meta": {
+    "sender": "enron.announcements@enron.com",
+    "recipient": "all.worldwide@enron.com",
+    "date": "2001-02-02"
+  }
+}

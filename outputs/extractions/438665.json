@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "Paul Kaufman",
+      "type": "person",
+      "aliases": [
+        "paul.kaufman@enron.com"
+      ]
+    },
+    {
+      "name": "Richard Shapiro",
+      "type": "person",
+      "aliases": [
+        "richard.shapiro@enron.com"
+      ]
+    },
+    {
+      "name": "James Steffes",
+      "type": "person",
+      "aliases": [
+        "james.steffes@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Western Republican Governors",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Paul Kaufman",
+      "object": "Richard Shapiro",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: paul.kaufman@enron.com\nTo: richard.shapiro@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Paul Kaufman",
+      "object": "James Steffes",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: paul.kaufman@enron.com\nTo: richard.shapiro@enron.com, james.steffes@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Western Republican Governors",
+      "object": "think tank for energy policy",
+      "confidence": 0.4,
+      "supporting_excerpt": "apparently a lot of the republican governors in the west rely on it for energy policy"
+    }
+  ],
+  "_source_id": "438665",
+  "_email_meta": {
+    "sender": "paul.kaufman@enron.com",
+    "recipient": "richard.shapiro@enron.com, james.steffes@enron.com",
+    "date": "2001-06-07"
+  }
+}

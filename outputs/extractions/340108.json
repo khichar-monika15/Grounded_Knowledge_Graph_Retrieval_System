@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "Patrice L. Mims",
+      "type": "person",
+      "aliases": [
+        "l.mims@enron.com"
+      ]
+    },
+    {
+      "name": "Debra Perlingiere",
+      "type": "person",
+      "aliases": [
+        "debra.perlingiere@enron.com",
+        "dp"
+      ]
+    },
+    {
+      "name": "Mr. Hunt",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Nicor Energy LLC",
+      "type": "organization",
+      "aliases": [
+        "nicor energy llc"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dynegy",
+      "type": "organization",
+      "aliases": [
+        "dynegys"
+      ]
+    },
+    {
+      "name": "Enron North America Legal",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Nicor Energy Agreement",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Patrice L. Mims",
+      "object": "Debra Perlingiere",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: l..mims@enron.com To: debra.perlingiere@enron.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Debra Perlingiere",
+      "object": "Patrice L. Mims",
+      "confidence": 0.6,
+      "supporting_excerpt": "original message from perlingiere debra sent monday october 08 2001 247 pm to mims patrice l"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Debra Perlingiere",
+      "object": "Nicor Energy Agreement",
+      "confidence": 0.7,
+      "supporting_excerpt": "as an update there is only one issue remaining concerning the agreement that being force majeure"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Debra Perlingiere",
+      "object": "Dynegy",
+      "confidence": 0.7,
+      "supporting_excerpt": "i am waiting on a revision to dynegys guaranty for nicor"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Debra Perlingiere",
+      "object": "Mr. Hunt",
+      "confidence": 0.9,
+      "supporting_excerpt": "i have left a message for mr hunt and await his call"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Debra Perlingiere",
+      "object": "Enron North America Legal",
+      "confidence": 0.9,
+      "supporting_excerpt": "debra perlingiere enron north america legal"
+    }
+  ],
+  "_source_id": "340108",
+  "_email_meta": {
+    "sender": "l..mims@enron.com",
+    "recipient": "debra.perlingiere@enron.com",
+    "date": "2001-10-09"
+  }
+}

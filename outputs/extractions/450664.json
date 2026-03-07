@@ -1,0 +1,207 @@
+{
+  "entities": [
+    {
+      "name": "Carol St Clair",
+      "type": "person",
+      "aliases": [
+        "carol.clair@enron.com",
+        "carol st clair"
+      ]
+    },
+    {
+      "name": "Vicki Sharp",
+      "type": "person",
+      "aliases": [
+        "vicki.sharp@enron.com",
+        "vicki sharp"
+      ]
+    },
+    {
+      "name": "Chris Long",
+      "type": "person",
+      "aliases": [
+        "chris long"
+      ]
+    },
+    {
+      "name": "Jeffrey T Hodge",
+      "type": "person",
+      "aliases": [
+        "jeffrey t hodge"
+      ]
+    },
+    {
+      "name": "Elizabeth Sager",
+      "type": "person",
+      "aliases": [
+        "elizabeth sager"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EES",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Forward Contract Definition",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Bankruptcy Code",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Physical Supply Contracts",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Carol St Clair",
+      "object": "Vicki Sharp",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: carol.clair@enron.com\nTo: vicki.sharp@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Carol St Clair",
+      "object": "Chris Long",
+      "confidence": 0.8,
+      "supporting_excerpt": "im checking with chris long on this"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Carol St Clair",
+      "object": "Vicki Sharp",
+      "confidence": 0.6,
+      "supporting_excerpt": "as soon as i hear back from him i will call you"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Carol St Clair",
+      "object": "Vicki Sharp",
+      "confidence": 0.6,
+      "supporting_excerpt": "im having my assistant look into where those materials that you sent ended up"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Vicki Sharp",
+      "object": "Carol St Clair",
+      "confidence": 0.8,
+      "supporting_excerpt": "to carol st clair"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Vicki Sharp",
+      "object": "Carol St Clair",
+      "confidence": 0.6,
+      "supporting_excerpt": "it would help if i knew what was on the table for example does the proposed amendment already redefine forward contracts"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carol St Clair",
+      "object": "Vicki Sharp",
+      "confidence": 0.8,
+      "supporting_excerpt": "to vicki sharp"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carol St Clair",
+      "object": "Jeffrey T Hodge",
+      "confidence": 0.8,
+      "supporting_excerpt": "cc jeffrey t hodge"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carol St Clair",
+      "object": "Elizabeth Sager",
+      "confidence": 0.5,
+      "supporting_excerpt": "cc elizabeth sager"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Carol St Clair",
+      "object": "Vicki Sharp",
+      "confidence": 0.5,
+      "supporting_excerpt": "could you please send me a copy of melanies memo"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Chris Long",
+      "object": "Carol St Clair",
+      "confidence": 0.8,
+      "supporting_excerpt": "to carol st clair"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Chris Long",
+      "object": "Forward Contract Definition",
+      "confidence": 0.6,
+      "supporting_excerpt": "subject re forward contract definition"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Chris Long",
+      "object": "Forward Contract Definition",
+      "confidence": 0.4,
+      "supporting_excerpt": "while it never too late to suggest a change given the political situation i would be hesitant to offer anything more than a clarification"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Chris Long",
+      "object": "Forward Contract Definition",
+      "confidence": 0.6,
+      "supporting_excerpt": "i suggest you examine if there are any changes depending on what happens in the senate now that it is in democratic hands the process can be reopened and we could have an opportunity to offer suggested changes or it kill the bill all together"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carol St Clair",
+      "object": "Chris Long",
+      "confidence": 0.5,
+      "supporting_excerpt": "to chris long"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Carol St Clair",
+      "object": "Vicki Sharp",
+      "confidence": 0.8,
+      "supporting_excerpt": "cc vicki sharp"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Carol St Clair",
+      "object": "Chris Long",
+      "confidence": 0.6,
+      "supporting_excerpt": "would it be too late to suggest changes to the definition of forward contracts in the bankruptcy code in order to improve our position with respect to the physical supply contracts that ees enters into"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Carol St Clair",
+      "object": "Bankruptcy Code",
+      "confidence": 0.4,
+      "supporting_excerpt": "suggest changes to the definition of forward contracts in the bankruptcy code"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Carol St Clair",
+      "object": "Physical Supply Contracts",
+      "confidence": 0.4,
+      "supporting_excerpt": "improve our position with respect to the physical supply contracts that ees enters into"
+    }
+  ],
+  "_source_id": "450664",
+  "_email_meta": {
+    "sender": "carol.clair@enron.com",
+    "recipient": "vicki.sharp@enron.com",
+    "date": "2001-05-30"
+  }
+}

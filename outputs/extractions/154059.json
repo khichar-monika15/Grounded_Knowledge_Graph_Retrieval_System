@@ -1,0 +1,171 @@
+{
+  "entities": [
+    {
+      "name": "Nina Edmonds",
+      "type": "person",
+      "aliases": [
+        "nina.edmonds@enron.com"
+      ]
+    },
+    {
+      "name": "Mark Haedicke",
+      "type": "person",
+      "aliases": [
+        "e.haedicke@enron.com",
+        "mark e haedicke"
+      ]
+    },
+    {
+      "name": "Paul Simons",
+      "type": "person",
+      "aliases": [
+        "simons paul"
+      ]
+    },
+    {
+      "name": "Mark Evans",
+      "type": "person",
+      "aliases": [
+        "evans mark"
+      ]
+    },
+    {
+      "name": "Justin Boyd",
+      "type": "person",
+      "aliases": [
+        "boyd justin"
+      ]
+    },
+    {
+      "name": "Liz O'Sullivan",
+      "type": "person",
+      "aliases": [
+        "losullivan@isda.org"
+      ]
+    },
+    {
+      "name": "Christophe Chassard",
+      "type": "person",
+      "aliases": [
+        "christophechassard@rwtrading.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "ISDA",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "ISDA Energy and Developing Products Conference",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "London",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "New York",
+      "type": "location",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Nina Edmonds",
+      "object": "Mark Haedicke",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: nina.edmonds@enron.com To: e..haedicke@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Paul Simons",
+      "object": "away from the office",
+      "confidence": 0.7,
+      "supporting_excerpt": "paul simons is away from the office returning next friday 12 october"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Mark Haedicke",
+      "object": "Mark Evans",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from haedicke mark e  sent 04 october 2001  to evans mark london legal boyd justin simons paul"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Mark Haedicke",
+      "object": "Justin Boyd",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from haedicke mark e  sent 04 october 2001  to evans mark london legal boyd justin simons paul"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Mark Haedicke",
+      "object": "Paul Simons",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from haedicke mark e  sent 04 october 2001  to evans mark london legal boyd justin simons paul"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Mark Haedicke",
+      "object": "comments on the agenda",
+      "confidence": 0.9,
+      "supporting_excerpt": "do you have any comments on the agenda  let me know and i will forward them on"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Liz O'Sullivan",
+      "object": "Mark Haedicke",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from liz osullivan mailtolosullivanisdaorg sent thursday october 04 2001 856 am to mark haedicke christophechassardrwetradingcom"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Liz O'Sullivan",
+      "object": "Christophe Chassard",
+      "confidence": 0.9,
+      "supporting_excerpt": "original message from liz osullivan mailtolosullivanisdaorg sent thursday october 04 2001 856 am to mark haedicke christophechassardrwetradingcom"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Liz O'Sullivan",
+      "object": "ISDA Energy and Developing Products Conference",
+      "confidence": 0.7,
+      "supporting_excerpt": "i am writing in regards to isdas energy and developing products conference in london on december 4 2001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "ISDA Energy and Developing Products Conference",
+      "object": "London",
+      "confidence": 0.7,
+      "supporting_excerpt": "isdas energy and developing products conference in london on december 4 2001"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Liz O'Sullivan",
+      "object": "Mark Haedicke",
+      "confidence": 0.9,
+      "supporting_excerpt": "attached is a copy of the final agenda for your review  thank you both for your input and expertise"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Liz O'Sullivan",
+      "object": "suggestions to improve the agenda",
+      "confidence": 0.9,
+      "supporting_excerpt": "please let me know if you have any more suggestions to improve the agenda before it goes to print"
+    }
+  ],
+  "_source_id": "154059",
+  "_email_meta": {
+    "sender": "nina.edmonds@enron.com",
+    "recipient": "e..haedicke@enron.com",
+    "date": "2001-10-05"
+  }
+}

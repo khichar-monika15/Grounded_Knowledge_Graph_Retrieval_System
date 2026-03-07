@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "Evening MBA Program",
+      "type": "project",
+      "aliases": [
+        "evening mba"
+      ]
+    },
+    {
+      "name": "Haas Berkeley",
+      "type": "organization",
+      "aliases": [
+        "haas.berkeley.edu"
+      ]
+    },
+    {
+      "name": "Fall 2001 Registration",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "TJ",
+      "object": "Evening MBA Program students",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: owner-eveningmba@haas.berkeley.edu\nTo: eveningmba@haas.berkeley.edu"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Evening MBA Program",
+      "object": "tentative schedule of classes for fall 2001",
+      "confidence": 0.7,
+      "supporting_excerpt": "a tentative schedule of classes for fall 2001 is available for you in the evening mba office at the front desk"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Evening MBA Program",
+      "object": "send fall 2001 registration materials along with the class schedule to students at home address the first week of april",
+      "confidence": 0.9,
+      "supporting_excerpt": "we plan to send fall 2001 registration materials along with the class schedule to you at your home address the first week of april"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Fall 2001 Registration",
+      "object": "telebears registration takes place april 19 and 20",
+      "confidence": 0.6,
+      "supporting_excerpt": "telebears registration takes place april 19 and 20"
+    }
+  ],
+  "_source_id": "76098",
+  "_email_meta": {
+    "sender": "owner-eveningmba@haas.berkeley.edu",
+    "recipient": "eveningmba@haas.berkeley.edu",
+    "date": "2001-03-26"
+  }
+}

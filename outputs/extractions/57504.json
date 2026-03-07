@@ -1,0 +1,546 @@
+{
+  "entities": [
+    {
+      "name": "Alan Comnes",
+      "type": "person",
+      "aliases": [
+        "alan.comnes@enron.com"
+      ]
+    },
+    {
+      "name": "Karen Denne",
+      "type": "person",
+      "aliases": [
+        "karen.denne@enron.com"
+      ]
+    },
+    {
+      "name": "Jeff Dasovich",
+      "type": "person",
+      "aliases": [
+        "jeff.dasovich@enron.com"
+      ]
+    },
+    {
+      "name": "Ken Lay",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "LADWP BC Hydro Bonneville Gouging",
+      "type": "topic",
+      "aliases": [
+        "LADWP BC Hydro Bonneville accused of gouging california"
+      ]
+    },
+    {
+      "name": "Robert J Lopez",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Rich Connell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Gray Davis",
+      "type": "person",
+      "aliases": [
+        "Gov Gray Davis"
+      ]
+    },
+    {
+      "name": "Anjali Sheffrin",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Los Angeles Department of Water and Power",
+      "type": "organization",
+      "aliases": [
+        "DWP"
+      ]
+    },
+    {
+      "name": "Bonneville Power Administration",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "BC Hydro",
+      "type": "organization",
+      "aliases": [
+        "British Columbia Hydro"
+      ]
+    },
+    {
+      "name": "Powerex",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Pacific Gas and Electric",
+      "type": "organization",
+      "aliases": [
+        "PG&E"
+      ]
+    },
+    {
+      "name": "Southern Company Energy Marketing",
+      "type": "organization",
+      "aliases": [
+        "Mirant"
+      ]
+    },
+    {
+      "name": "California Independent System Operator",
+      "type": "organization",
+      "aliases": [
+        "CAISO"
+      ]
+    },
+    {
+      "name": "Los Angeles Times",
+      "type": "organization",
+      "aliases": [
+        "Times"
+      ]
+    },
+    {
+      "name": "Electricity Market Manipulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Wholesale Electricity Pricing",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Pacific Northwest",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "British Columbia",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Atlanta",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Wayne Cousins",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "David Freeman",
+      "type": "person",
+      "aliases": [
+        "S. David Freeman"
+      ]
+    },
+    {
+      "name": "Mirant",
+      "type": "organization",
+      "aliases": [
+        "Southern Co Energy Marketing"
+      ]
+    },
+    {
+      "name": "Reliant Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Williams Co",
+      "type": "organization",
+      "aliases": [
+        "Williams Cos"
+      ]
+    },
+    {
+      "name": "Canadian Agency",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Deregulation Plan",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Electricity Price Inflation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Houston",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Tulsa",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "North America",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "DWP",
+      "type": "organization",
+      "aliases": [
+        "Department of Water and Power"
+      ]
+    },
+    {
+      "name": "Stephen Oliver",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "CAISO",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Aquila Power Corp",
+      "type": "organization",
+      "aliases": [
+        "Aquila"
+      ]
+    },
+    {
+      "name": "Market Deregulation Practices",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Aquila",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Al Butkus",
+      "type": "person",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Alan Comnes",
+      "object": "Karen Denne",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: alan.comnes@enron.com\nTo: karen.denne@enron.com"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Jeff Dasovich",
+      "object": "article with table of generators and gouging amounts",
+      "confidence": 0.9,
+      "supporting_excerpt": "jeff asked for this for ken lay the original article had a table of generators and the amount of gouging by each"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Alan Comnes",
+      "object": "LADWP BC Hydro Bonneville Gouging",
+      "confidence": 0.6,
+      "supporting_excerpt": "subject ladwp bc hydro bonneville accused of gouging california"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Los Angeles Department of Water and Power",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "governmentowned utilities including the los angeles department of water and power were influential in driving wholesale electricity prices to levels that helped ignite californias exploding energy crisis"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bonneville Power Administration",
+      "object": "Electricity Market Manipulation",
+      "confidence": 0.7,
+      "supporting_excerpt": "the documentwhich decodes the identities of unnamed suppliers in a recent state studysingles out three governmentrun agencies as consistently trying to inflate prices they are the dwp the federally owned bonneville power administration in the pacific northwest"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "BC Hydro",
+      "object": "Electricity Market Manipulation",
+      "confidence": 0.7,
+      "supporting_excerpt": "the documentwhich decodes the identities of unnamed suppliers in a recent state studysingles out three governmentrun agencies as consistently trying to inflate prices they are the dwp the federally owned bonneville power administration in the pacific northwest and the trading arm of canadas bc hydro in british columbia"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Powerex",
+      "object": "Wholesale Electricity Pricing",
+      "confidence": 0.7,
+      "supporting_excerpt": "no entitypublic or privateearned as much in alleged excess profits as british columbias powerex the state records show they were the most aggressive bidders"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pacific Gas and Electric",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "they also helped saddle californias three largest utilities with billions of dollars in debtleading one pacific gas electric to seek bankruptcy protection last week"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Anjali Sheffrin",
+      "object": "author of the coded study",
+      "confidence": 0.9,
+      "supporting_excerpt": "said anjali sheffrin author of the coded study"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Southern Company Energy Marketing",
+      "object": "Wholesale Electricity Pricing",
+      "confidence": 0.7,
+      "supporting_excerpt": "second on the list was atlantabased southern co energy marketing now called mirant"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Independent System Operator",
+      "object": "Wholesale Electricity Pricing",
+      "confidence": 0.7,
+      "supporting_excerpt": "the study by the california independent system operator or caliso analyzed thousands of hours of bidding practices for 20 large suppliers in the spot or realtime market from may to november"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Robert J Lopez",
+      "object": "Los Angeles Times",
+      "confidence": 0.7,
+      "supporting_excerpt": "governmentrun producers cited as driving prices up spokesmen deny any market manipulation by robert j lopez rich connell times staff writers"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Alan Comnes",
+      "object": "Karen Denne",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: alan.comnes@enron.com To: karen.denne@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sheffrin",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "freedom to bid it in said sheffrin who did not discuss any companies by name"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Canadian Agency",
+      "object": "Electricity Price Inflation",
+      "confidence": 0.6,
+      "supporting_excerpt": "the canadian agency reaped 176 million in alleged excessive profits"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mirant",
+      "object": "Electricity Price Inflation",
+      "confidence": 0.7,
+      "supporting_excerpt": "second on the list was atlantabased southern co energy marketing now called mirant which collected nearly 97 million in alleged inflated earnings"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "BC Hydro",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "bc hydro and mirantalong with the dwp and other producerssay they played by the rules established under californias flawed deregulation plan"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Wayne Cousins",
+      "object": "BC Hydro market participation",
+      "confidence": 0.7,
+      "supporting_excerpt": "it was the marketplace that determined what the price of electricity would be at any given time said bc hydro spokesman wayne cousins"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "BC Hydro",
+      "object": "Electricity Price Inflation",
+      "confidence": 0.7,
+      "supporting_excerpt": "bc hydro officials acknowledge that they did anticipate periods of severe power shortages and planned for them by letting their reservoirs rise overnight and then opening them to create hydroelectricity which could be produced inexpensively but sold for a premium"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Los Angeles Department of Water and Power",
+      "object": "Electricity Price Inflation",
+      "confidence": 0.7,
+      "supporting_excerpt": "los angeles department of water and power although eighth on the list of alleged profiteers was among those singled out for seeking high prices during periods of high demand"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Reliant Energy",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "that would rise substantially with even modest increases in demand the strategy also helped prop up prices keeping them from falling the dwps average hourly bid or asking price for electricity ultimately bought topped such private sellers as reliant energy of houston"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Williams Co",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "topped such private sellers as reliant energy of houston and tulsabased williams cos two major players in the national energy market"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "David Freeman",
+      "object": "Los Angeles Department of Water and Power price inflation allegations",
+      "confidence": 0.7,
+      "supporting_excerpt": "dwp general manager s david freeman called the reports findings outrageous insisting that the utility never tried to inflate prices"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "David Freeman",
+      "object": "DWP general manager",
+      "confidence": 0.9,
+      "supporting_excerpt": "dwp general manager s david freeman"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "David Freeman",
+      "object": "reports findings were outrageous",
+      "confidence": 0.6,
+      "supporting_excerpt": "david freeman called the reports findings outrageous"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "David Freeman",
+      "object": "DWP never tried to inflate prices",
+      "confidence": 0.6,
+      "supporting_excerpt": "insisting that the utility never tried to inflate prices"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "David Freeman",
+      "object": "DWP charged high prices for surplus power at the 11th hour",
+      "confidence": 0.7,
+      "supporting_excerpt": "he did acknowledge however that the agency has charged high prices for surplus power at the 11th hour"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "David Freeman",
+      "object": "high prices were justified by production costs",
+      "confidence": 0.7,
+      "supporting_excerpt": "but said that was only because it cost more to produce"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "David Freeman",
+      "object": "DWP charged CAISO cost plus 15 percent",
+      "confidence": 0.7,
+      "supporting_excerpt": "we have consistently charged caliso our cost plus 15 he said"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Stephen Oliver",
+      "object": "Bonneville Power Administration vice president",
+      "confidence": 0.9,
+      "supporting_excerpt": "stephen oliver a bonneville vice president"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Stephen Oliver",
+      "object": "Bonneville did not act improperly",
+      "confidence": 0.7,
+      "supporting_excerpt": "bonneville officials say some of its profits are used to pay back federal construction loans and fund an internationally recognized salmon recovery program stephen oliver a bonneville vice president said his agency did not act improperly"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Stephen Oliver",
+      "object": "CAISO for detailed information on conclusions",
+      "confidence": 0.9,
+      "supporting_excerpt": "has asked caliso for detailed information on how it reached its conclusions"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bonneville Power Administration",
+      "object": "supplies electricity from 29 federal dams in Columbia-Snake River basin",
+      "confidence": 0.7,
+      "supporting_excerpt": "a nonprofit agency that sells wholesale electricity produced at 29 federal dams in the columbiasnake river basin"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Aquila Power Corp",
+      "object": "offered lowest average hourly price of any supplier studied",
+      "confidence": 0.7,
+      "supporting_excerpt": "aquila power corp of missouri which tried to act responsibly has bailed out it offered the lowest average hourly price of any supplier studiedslightly more than 8 per megawatthour"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mirant",
+      "object": "highest average hourly price of suppliers studied at 138 per megawatthour",
+      "confidence": 0.6,
+      "supporting_excerpt": "compared to mirants 138 the highest"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "CAISO",
+      "object": "spot market design resulted in all suppliers receiving highest price paid",
+      "confidence": 0.7,
+      "supporting_excerpt": "the spot market as initially designed made sure that all suppliers offering power received the highest price paid in any hour"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mirant",
+      "object": "California Energy Crisis",
+      "confidence": 0.6,
+      "supporting_excerpt": "mirants 138 the highest but the spot market"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Aquila",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "aquila collected 171 an hour for power it was willing to sell at a singledigit price"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Al Butkus",
+      "object": "Aquila pulled out of California market due to unpredictability",
+      "confidence": 0.7,
+      "supporting_excerpt": "aquila spokesman al butkus said the company pulled out of the california market because it was too unpredictable"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sheffrin",
+      "object": "Market adjustments have not significantly reduced excessive prices",
+      "confidence": 0.7,
+      "supporting_excerpt": "sheffrin said it hasnt made much difference because the overall prices are still excessive"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sheffrin",
+      "object": "California electricity market is critically ill",
+      "confidence": 0.7,
+      "supporting_excerpt": "were saying the patient is sick sheffrin said of californias electricity market it needs help and may die"
+    }
+  ],
+  "_source_id": "57504",
+  "_email_meta": {
+    "sender": "alan.comnes@enron.com",
+    "recipient": "karen.denne@enron.com",
+    "date": "2001-05-01"
+  }
+}

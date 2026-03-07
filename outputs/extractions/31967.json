@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "Sally Beck",
+      "type": "person",
+      "aliases": [
+        "sally.beck@enron.com"
+      ]
+    },
+    {
+      "name": "Lisa Costello",
+      "type": "person",
+      "aliases": [
+        "lisa.costello@enron.com"
+      ]
+    },
+    {
+      "name": "Bob Hall",
+      "type": "person",
+      "aliases": [
+        "bob m hall"
+      ]
+    },
+    {
+      "name": "Heather Choate",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Robert L Hall",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Sally Beck",
+      "object": "Lisa Costello",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sally.beck@enron.com\nTo: lisa.costello@enron.com"
+    },
+    {
+      "claim_type": "reports_to",
+      "subject": "Bob Hall",
+      "object": "Sally Beck",
+      "confidence": 0.8,
+      "supporting_excerpt": "bob hall the vp that reports to me"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Bob Hall",
+      "object": "VP",
+      "confidence": 0.9,
+      "supporting_excerpt": "bob hall the vp that reports to me"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Lisa Costello",
+      "object": "Heather Choate",
+      "confidence": 0.3,
+      "supporting_excerpt": "his assistant heather choate is included in your mailing list"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sally Beck",
+      "object": "Robert L Hall",
+      "confidence": 0.4,
+      "supporting_excerpt": "the robert l hall at ets to whom this is addressed is not bob hall in networks who reports to me"
+    }
+  ],
+  "_source_id": "31967",
+  "_email_meta": {
+    "sender": "sally.beck@enron.com",
+    "recipient": "lisa.costello@enron.com",
+    "date": "2001-03-07"
+  }
+}

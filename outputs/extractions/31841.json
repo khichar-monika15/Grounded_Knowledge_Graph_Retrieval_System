@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "Sally Beck",
+      "type": "person",
+      "aliases": [
+        "sally.beck@enron.com"
+      ]
+    },
+    {
+      "name": "Mary Solmonson",
+      "type": "person",
+      "aliases": [
+        "mary"
+      ]
+    },
+    {
+      "name": "Sheri Thomas",
+      "type": "person",
+      "aliases": [
+        "sheri.thomas@enron.com",
+        "sheri"
+      ]
+    },
+    {
+      "name": "Bob Hall",
+      "type": "person",
+      "aliases": [
+        "bob.hall@enron.com"
+      ]
+    },
+    {
+      "name": "Peggy Hedstrom",
+      "type": "person",
+      "aliases": [
+        "peggy.hedstrom@enron.com"
+      ]
+    },
+    {
+      "name": "Andy Zipper",
+      "type": "person",
+      "aliases": [
+        "andy"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "EnronOnline",
+      "type": "project",
+      "aliases": [
+        "ecommerce"
+      ]
+    },
+    {
+      "name": "Operations Product Control Team",
+      "type": "project",
+      "aliases": [
+        "product control group"
+      ]
+    },
+    {
+      "name": "ClickPaper",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "DealBench",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "CommodityLogic",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Enron Networks Realignment",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Sally Beck",
+      "object": "Sheri Thomas, Bob Hall, Peggy Hedstrom",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: sally.beck@enron.com To: sheri.thomas@enron.com, bob.hall@enron.com, peggy.hedstrom@enron.com"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Mary Solmonson",
+      "object": "resigned from Enron",
+      "confidence": 0.9,
+      "supporting_excerpt": "mary solmonson has made a personal choice to resign from enron"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Sally Beck",
+      "object": "Mary Solmonson's resignation",
+      "confidence": 0.7,
+      "supporting_excerpt": "it is with regret that i have accepted marys letter of recommendation"
+    },
+    {
+      "claim_type": "reports_to",
+      "subject": "Sheri Thomas",
+      "object": "Andy Zipper",
+      "confidence": 0.6,
+      "supporting_excerpt": "sheri will now report directly to andy zipper who leads enrononline"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Andy Zipper",
+      "object": "leads EnronOnline",
+      "confidence": 0.6,
+      "supporting_excerpt": "andy zipper who leads enrononline"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Sheri Thomas",
+      "object": "Operations Product Control Team",
+      "confidence": 0.8,
+      "supporting_excerpt": "the group led by sheri thomas"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Sally Beck, Sheri Thomas, Andy Zipper",
+      "object": "organizational realignment with Sheri Thomas's team",
+      "confidence": 0.4,
+      "supporting_excerpt": "sheri andy and i met with sheris team yesterday to announce this organizational realignment"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sally Beck",
+      "object": "Sheri Thomas has done a great job leading the product control group",
+      "confidence": 0.4,
+      "supporting_excerpt": "sheri has done a great job of leading the product control group over the past 14 months"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Operations Product Control Team",
+      "object": "ClickPaper, DealBench, CommodityLogic",
+      "confidence": 0.4,
+      "supporting_excerpt": "sheris team will continue to support other ecommerce initiatives such as clickpaper dealbench and commoditylogic"
+    }
+  ],
+  "_source_id": "31841",
+  "_email_meta": {
+    "sender": "sally.beck@enron.com",
+    "recipient": "sheri.thomas@enron.com, bob.hall@enron.com, peggy.hedstrom@enron.com, ",
+    "date": "2001-04-18"
+  }
+}

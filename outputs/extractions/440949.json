@@ -1,0 +1,31 @@
+{
+  "entities": [
+    {
+      "name": "S. Shively",
+      "type": "person",
+      "aliases": [
+        "s..shively@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "S. Shively",
+      "object": "unknown recipient",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: s..shively@enron.com\nTo: missing"
+    }
+  ],
+  "_source_id": "440949",
+  "_email_meta": {
+    "sender": "s..shively@enron.com",
+    "recipient": "missing",
+    "date": "2001-06-26"
+  }
+}

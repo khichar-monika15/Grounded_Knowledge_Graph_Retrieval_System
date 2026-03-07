@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "password@vertical.net",
+      "type": "organization",
+      "aliases": [
+        "Vertical Nets",
+        "verticalnets"
+      ]
+    },
+    {
+      "name": "eBusiness Training Services",
+      "type": "project",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "password@vertical.net",
+      "object": "v.charles.weldon@enron.com",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: password@vertical.net\nTo: v.charles.weldon@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "v.charles.weldon@enron.com",
+      "object": "eBusiness Training Services",
+      "confidence": 0.6,
+      "supporting_excerpt": "your login information for verticalnets ebusiness training services"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "v.charles.weldon@enron.com",
+      "object": "account access granted",
+      "confidence": 0.8,
+      "supporting_excerpt": "you can log in to your account by clicking here"
+    }
+  ],
+  "_source_id": "498432",
+  "_email_meta": {
+    "sender": "password@vertical.net",
+    "recipient": "v.charles.weldon@enron.com",
+    "date": "2001-04-23"
+  }
+}

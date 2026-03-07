@@ -1,0 +1,326 @@
+{
+  "entities": [
+    {
+      "name": "Continental Airlines",
+      "type": "organization",
+      "aliases": [
+        "continental_airlines_inc"
+      ]
+    },
+    {
+      "name": "C. German",
+      "type": "person",
+      "aliases": [
+        "cgerman"
+      ]
+    },
+    {
+      "name": "OnePass",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Cool Travel Specials",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Alamo Rent a Car",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "National Car Rental",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Westin Hotels & Resorts",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Sheraton Hotels & Resorts",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Hilton Hotels",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Domestic US Travel Promotion",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "ECT"
+      ]
+    },
+    {
+      "name": "Alamo",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Car Rental Rates Promotion",
+      "type": "topic",
+      "aliases": [
+        "Continental Cool discounted rates"
+      ]
+    },
+    {
+      "name": "National",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Cool Travel Specials",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Last-Minute Weekend Rates",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Continental Airlines Inc",
+      "type": "organization",
+      "aliases": [
+        "continental_airlines_inc_060501@airmail.continental.com"
+      ]
+    },
+    {
+      "name": "C German",
+      "type": "person",
+      "aliases": [
+        "cgerman@ect.enron.com"
+      ]
+    },
+    {
+      "name": "Hotel Travel Promotions",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Hilton Family Hotels",
+      "type": "organization",
+      "aliases": [
+        "Hilton"
+      ]
+    },
+    {
+      "name": "Raleigh, NC",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Tucson, AZ",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "San Jose, CA",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Travel Promotions",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Hotel Discount Promotion",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Continental Airlines",
+      "object": "C. German",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: continental_airlines_inc_060501@airmail.continental.com\nTo: cgerman@ect.enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Continental Airlines",
+      "object": "OnePass",
+      "confidence": 0.7,
+      "supporting_excerpt": "become a onepass member and start earning miles towards free travel every time you fly register instantly for your onepass number"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Continental Airlines",
+      "object": "Cool Travel Specials",
+      "confidence": 0.6,
+      "supporting_excerpt": "cool travel specials domestic us wednesday june 6 2001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Cool Travel Specials",
+      "object": "Alamo Rent a Car",
+      "confidence": 0.6,
+      "supporting_excerpt": "3 alamo rent a car offers"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Cool Travel Specials",
+      "object": "National Car Rental",
+      "confidence": 0.6,
+      "supporting_excerpt": "4 national car rental offers"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Cool Travel Specials",
+      "object": "Westin Hotels & Resorts",
+      "confidence": 0.7,
+      "supporting_excerpt": "5 westin hotels resorts sheraton hotels resorts four points by sheraton st regis the luxury collection and w hotels"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Cool Travel Specials",
+      "object": "Hilton Hotels",
+      "confidence": 0.6,
+      "supporting_excerpt": "6 hilton hotel offers"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Car Rental Rates Promotion",
+      "object": "Alamo",
+      "confidence": 0.7,
+      "supporting_excerpt": "to receive special continental cool discounted rates simply make advance reservations and be sure to request id 596871 and rate code 33"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Car Rental Rates Promotion",
+      "object": "National Car Rental",
+      "confidence": 0.6,
+      "supporting_excerpt": "4 cool travel specials from national car rental"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Car Rental Rates Promotion",
+      "object": "compact class vehicles at airport locations",
+      "confidence": 0.7,
+      "supporting_excerpt": "car rates listed below are valid on compact class vehicles at airport locations only"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Car Rental Rates Promotion",
+      "object": "intermediate class vehicles at airport locations",
+      "confidence": 0.7,
+      "supporting_excerpt": "rates listed below are valid on intermediate class vehicles at airport locations only"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Cool Travel Specials",
+      "object": "Continental Airlines",
+      "confidence": 0.7,
+      "supporting_excerpt": "to receive your special continental airlines cool travel specials discounted rates"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Last-Minute Weekend Rates",
+      "object": "Westin Hotels & Resorts",
+      "confidence": 0.7,
+      "supporting_excerpt": "cool travel specials lastminute weekend rates from westin hotels resorts sheraton hotels resorts four points by sheraton st regis the luxury collection and w hotels"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Continental Airlines",
+      "object": "product code coolus",
+      "confidence": 0.9,
+      "supporting_excerpt": "simply make your reservations in advance and be sure to request product code coolus"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "National",
+      "object": "car rental reservations",
+      "confidence": 0.6,
+      "supporting_excerpt": "to make your reservation contact national at 1800carrent 18002277368"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Continental Airlines Inc",
+      "object": "Hotel Travel Promotions",
+      "confidence": 0.7,
+      "supporting_excerpt": "6 cool travel specials on hilton hotels and resorts the following rates are available june 911 2001"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Continental Airlines Inc",
+      "object": "special hotel rates for multiple locations",
+      "confidence": 0.9,
+      "supporting_excerpt": "special rates apply only for the dates listed at each hotel and are subject to availability"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Hilton Family Hotels",
+      "object": "special rates available",
+      "confidence": 0.7,
+      "supporting_excerpt": "to book this weeks special rates for hilton family hotels visit and book at httpairmailcontinentalcomcgibin5floyed760bmm20ow0jwg0a7"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Hilton Family Hotels",
+      "object": "Raleigh, NC location",
+      "confidence": 0.6,
+      "supporting_excerpt": "raleigh nc hilton north raleigh 119"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Hilton Family Hotels",
+      "object": "Tucson, AZ location",
+      "confidence": 0.6,
+      "supporting_excerpt": "tucson az doubletree guest suites tucson 59"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Alamo Rent A Car",
+      "object": "rental terms and conditions",
+      "confidence": 0.7,
+      "supporting_excerpt": "alamo rent a cars terms and conditions taxes including vlf taxes up to us189 per day in california"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "National Car Rental",
+      "object": "customer contract requirements",
+      "confidence": 0.7,
+      "supporting_excerpt": "customer must provide contract id at the time of reservation to be eligible for discounts"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Alamo Rent A Car",
+      "object": "San Jose, CA restriction",
+      "confidence": 0.6,
+      "supporting_excerpt": "offer not valid in san jose ca"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Continental Airlines Inc",
+      "object": "Hotel Discount Promotion",
+      "confidence": 0.7,
+      "supporting_excerpt": "offer is subject to availability advance reservations required and is based on singledouble occupancy offer not applicable to group travel additional service charge and tax may apply the discount is reflected in the rate quoted offer valid at participating hotel only"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Hotel Discount Promotion",
+      "object": "Westin Sheraton Four Points St Regis The Luxury Collection and W Hotels",
+      "confidence": 0.7,
+      "supporting_excerpt": "terms and conditions for westin sheraton four points st regis the luxury collection and w hotels offer is subject to availability"
+    }
+  ],
+  "_source_id": "128862",
+  "_email_meta": {
+    "sender": "continental_airlines_inc_060501@airmail.continental.com",
+    "recipient": "cgerman@ect.enron.com",
+    "date": "2001-06-05"
+  }
+}

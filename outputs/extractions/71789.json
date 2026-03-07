@@ -1,0 +1,431 @@
+{
+  "entities": [
+    {
+      "name": "Jeff Dasovich",
+      "type": "person",
+      "aliases": [
+        "jeff.dasovich@enron.com",
+        "jeff"
+      ]
+    },
+    {
+      "name": "Ann Cohn",
+      "type": "person",
+      "aliases": [
+        "ann.cohn@sce.com"
+      ]
+    },
+    {
+      "name": "K McCrea",
+      "type": "person",
+      "aliases": [
+        "kmccrea@sablaw.com"
+      ]
+    },
+    {
+      "name": "M Kahl",
+      "type": "person",
+      "aliases": [
+        "mkahl@ka-pow.com"
+      ]
+    },
+    {
+      "name": "Gray Davis",
+      "type": "person",
+      "aliases": [
+        "Gov Gray Davis",
+        "davis"
+      ]
+    },
+    {
+      "name": "Peter Behr",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Curtis L Wagner Jr",
+      "type": "person",
+      "aliases": [
+        "Judge Curtis L Wagner Jr",
+        "wagner"
+      ]
+    },
+    {
+      "name": "Michael Kahn",
+      "type": "person",
+      "aliases": [
+        "michael kahn"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "SCE",
+      "type": "organization",
+      "aliases": [
+        "Southern California Edison"
+      ]
+    },
+    {
+      "name": "The Washington Post",
+      "type": "organization",
+      "aliases": [
+        "washington post"
+      ]
+    },
+    {
+      "name": "Federal Energy Regulatory Commission",
+      "type": "organization",
+      "aliases": [
+        "FERC"
+      ]
+    },
+    {
+      "name": "California Independent Grid Operator",
+      "type": "organization",
+      "aliases": [
+        "CAISO",
+        "states power grid manager"
+      ]
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": [
+        "energy pricing controversy",
+        "energy talks"
+      ]
+    },
+    {
+      "name": "Electricity Contract Renegotiation",
+      "type": "topic",
+      "aliases": [
+        "longterm electricity contracts",
+        "43 billion contracts"
+      ]
+    },
+    {
+      "name": "Refund Settlement Negotiations",
+      "type": "topic",
+      "aliases": [
+        "settlement conference",
+        "california settlement"
+      ]
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Washington",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "K. McCrea",
+      "type": "person",
+      "aliases": [
+        "kmccrea@sablaw.com"
+      ]
+    },
+    {
+      "name": "M. Kahl",
+      "type": "person",
+      "aliases": [
+        "mkahl@ka-pow.com"
+      ]
+    },
+    {
+      "name": "Reliant Energy Inc",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Williams Energy Services",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Duke Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Southern Co",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "FERC",
+      "type": "organization",
+      "aliases": [
+        "Federal Energy Regulatory Commission"
+      ]
+    },
+    {
+      "name": "David Freeman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Power Refund Settlement",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Long-term Power Contracts",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Michael Zenger",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Frank Wolak",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Cambridge Energy Research Associates",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Stanford University",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Grid",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Refund Negotiations",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Power Price Contract Disputes",
+      "type": "topic",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "Ann Cohn",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com\nTo: ann.cohn@sce.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "K McCrea",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com\nTo: kmccrea@sablaw.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "M Kahl",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: jeff.dasovich@enron.com\nTo: mkahl@ka-pow.com"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "Electricity Contract Renegotiation",
+      "confidence": 0.7,
+      "supporting_excerpt": "you can renegotiate our existing contracts and save us money however you want to do it its just got to net out close to 89 billion"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "Refund Settlement Negotiations",
+      "confidence": 0.7,
+      "supporting_excerpt": "california officials have abruptly shifted tactics in their attempt to recover billions of dollars in alleged overcharges for electricity saying they may reduce their demands for huge refunds if generators renegotiate 43 billion in longterm electricity contracts"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Michael Kahn",
+      "object": "chairman of California Independent Grid Operator",
+      "confidence": 0.9,
+      "supporting_excerpt": "michael kahn chairman of california independent grid operator"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Peter Behr",
+      "object": "California Energy Crisis",
+      "confidence": 0.6,
+      "supporting_excerpt": "peter behr 07062001 the washington post final page e01"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curtis L Wagner Jr",
+      "object": "FERC chief administrative judge",
+      "confidence": 1.0,
+      "supporting_excerpt": "wagner fercs chief administrative judge has been trying to push both sides toward a compromise"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Curtis L Wagner Jr",
+      "object": "preliminary finding on overcharge amount",
+      "confidence": 0.9,
+      "supporting_excerpt": "wagner said he may issue his own preliminary finding today on the amount of overcharges if california officials and the generators cannot reach a compromise"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Curtis L Wagner Jr",
+      "object": "Refund Settlement Negotiations",
+      "confidence": 0.7,
+      "supporting_excerpt": "the closed negotiations over a california settlement being conducted in washington by federal energy regulatory commission judge curtis l wagner jr"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Curtis L Wagner Jr",
+      "object": "settlement negotiations",
+      "confidence": 0.7,
+      "supporting_excerpt": "what im trying to do is get people in a settlement mood"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Energy Crisis",
+      "object": "California",
+      "confidence": 0.7,
+      "supporting_excerpt": "mountainous energy prices have bankrupted california s largest utility drained billions of dollars out of the state treasury"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "K. McCrea",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: kmccrea@sablaw.com"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Jeff Dasovich",
+      "object": "M. Kahl",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: mkahl@ka-pow.com"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Kahn",
+      "object": "chairman of california independent grid operator",
+      "confidence": 1.0,
+      "supporting_excerpt": "kahn chairman of california independent grid operator the states power grid manager"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Kahn",
+      "object": "Power Refund Settlement",
+      "confidence": 0.7,
+      "supporting_excerpt": "the states demand for nearly 9 billion in refunds from power generators and marketers was too high"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Wagner",
+      "object": "Kahn",
+      "confidence": 0.7,
+      "supporting_excerpt": "wagner complained last month that kahn was following a political agenda and his lack of independence in the negotiations was such a joke that the parties might as well wear clown suits"
+    },
+    {
+      "claim_type": "criticized",
+      "subject": "Wagner",
+      "object": "Reliant Energy Inc, Williams Energy Services, Duke Energy, Southern Co",
+      "confidence": 0.9,
+      "supporting_excerpt": "he has also criticized the generators and power marketers led by reliant energy inc williams energy services duke energy and southern co for failing to make serious settlement offers"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Power generators and marketers",
+      "object": "600 million refund",
+      "confidence": 0.9,
+      "supporting_excerpt": "the suppliers have offered to refund 600 million provided the state is able to call off various california lawsuits demanding far larger refunds"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "FERC",
+      "object": "124 million in refunds",
+      "confidence": 0.6,
+      "supporting_excerpt": "ferc has tentatively called for 124 million in refunds"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "David Freeman",
+      "object": "Long-term Power Contracts",
+      "confidence": 0.9,
+      "supporting_excerpt": "daviss aide s david freeman and his staff began negotiating longterm power contacts with suppliers"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Long-term Power Contracts",
+      "object": "43 billion in deals signed",
+      "confidence": 0.9,
+      "supporting_excerpt": "the 43 billion in deals signed so far would require the state to pay about 70 per hour for a megawatt of power"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "california s energy calamity stemmed in large part from its failed deregulation plan"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Michael Zenger",
+      "object": "Cambridge Energy Research Associates",
+      "confidence": 0.8,
+      "supporting_excerpt": "michael zenger california director of cambridge energy research associates"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Frank Wolak",
+      "object": "Stanford University",
+      "confidence": 0.8,
+      "supporting_excerpt": "frank wolak a stanford university economist"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Frank Wolak",
+      "object": "heads an oversight committee for the california grid",
+      "confidence": 1.0,
+      "supporting_excerpt": "frank wolak a stanford university economist who heads an oversight committee for the california grid"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Wagner",
+      "object": "California Energy Refund Negotiations",
+      "confidence": 0.7,
+      "supporting_excerpt": "those polaropposite views have left both sides in wagners conference room billions of dollars apart"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Michael Zenger",
+      "object": "theres no benchmark for what a fair and reasonable price should be",
+      "confidence": 0.7,
+      "supporting_excerpt": "theres no benchmark for what a fair and reasonable price should be said michael zenger"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Frank Wolak",
+      "object": "it does require the regulators to regulate",
+      "confidence": 0.7,
+      "supporting_excerpt": "its not rocket science but it does require the regulators to regulate said frank wolak"
+    }
+  ],
+  "_source_id": "71789",
+  "_email_meta": {
+    "sender": "jeff.dasovich@enron.com",
+    "recipient": "ann.cohn@sce.com, kmccrea@sablaw.com, mkahl@ka-pow.com, jdasovic@enron.com, ",
+    "date": "2001-07-06"
+  }
+}

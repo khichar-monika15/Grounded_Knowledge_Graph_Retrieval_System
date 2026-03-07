@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "Maureen McVicker",
+      "type": "person",
+      "aliases": [
+        "mcs"
+      ]
+    },
+    {
+      "name": "Mark Schroeder",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Steve Kean",
+      "type": "person",
+      "aliases": [
+        "steven j kean"
+      ]
+    },
+    {
+      "name": "Sharon Butcher",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Tom Briggs",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Wolfgang Skribot",
+      "type": "person",
+      "aliases": [
+        "wolfgang"
+      ]
+    },
+    {
+      "name": "Jarek Astramowicz",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Richard Creitzman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Office of Foreign Assets Control",
+      "type": "organization",
+      "aliases": [
+        "OFAC"
+      ]
+    },
+    {
+      "name": "US State Department",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Iraqi Oil for Food Program",
+      "type": "topic",
+      "aliases": [
+        "iraqi oil for food",
+        "un oil for food program"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Maureen McVicker",
+      "object": "Mark Schroeder",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: maureen.mcvicker@enron.com\nTo: mark.schroeder@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mark Schroeder",
+      "object": "Sharon Butcher",
+      "confidence": 0.7,
+      "supporting_excerpt": "mark  steve said sharon butcher is the person you need to contact re corp policy"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Maureen McVicker",
+      "object": "Tom Briggs",
+      "confidence": 0.9,
+      "supporting_excerpt": "i am asking tom briggs to bottom this out with offfice of froeign  assets control or us state department"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Maureen McVicker",
+      "object": "Steve Kean",
+      "confidence": 0.9,
+      "supporting_excerpt": "asking steve  kean is there is any corporate policy regarding purchase of iraqi oil under  un authorised program"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Wolfgang Skribot",
+      "object": "Iraqi Oil for Food Program",
+      "confidence": 0.7,
+      "supporting_excerpt": "i am looking at a proposal under which a russian oilmajor would be wishing  to sell iraqui crude to us coming from the un oilforfood program"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Wolfgang Skribot",
+      "object": "Enron",
+      "confidence": 0.9,
+      "supporting_excerpt": "i would  be interested to learn whether enron can purchase crude oil from this  program provided that we receive proof that it comes out of the un program  and whether we are willing to do it"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Wolfgang Skribot",
+      "object": "Mark Schroeder",
+      "confidence": 0.6,
+      "supporting_excerpt": "to mark schroederlonectect"
+    }
+  ],
+  "_source_id": "241360",
+  "_email_meta": {
+    "sender": "maureen.mcvicker@enron.com",
+    "recipient": "mark.schroeder@enron.com",
+    "date": "2001-02-06"
+  }
+}

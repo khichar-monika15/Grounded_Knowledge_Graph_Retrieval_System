@@ -1,0 +1,4462 @@
+{
+  "entities": [
+    {
+      "name": "Ann Schmidt",
+      "type": "person",
+      "aliases": [
+        "ann.schmidt@enron.com"
+      ]
+    },
+    {
+      "name": "Enron",
+      "type": "organization",
+      "aliases": [
+        "Enron India",
+        "Enron units"
+      ]
+    },
+    {
+      "name": "Dabhol Power Project",
+      "type": "project",
+      "aliases": [
+        "Dabhol",
+        "Enrons dabhol power co",
+        "Enrons india unit"
+      ]
+    },
+    {
+      "name": "California Energy Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "President Bush",
+      "type": "person",
+      "aliases": [
+        "bush"
+      ]
+    },
+    {
+      "name": "California",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "India",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "El Paso Corp",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Governor Gray Davis",
+      "type": "person",
+      "aliases": [
+        "Gov Gray Davis",
+        "Mr. Davis"
+      ]
+    },
+    {
+      "name": "Vice President Dick Cheney",
+      "type": "person",
+      "aliases": [
+        "Dick Cheney"
+      ]
+    },
+    {
+      "name": "New York Times Company",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "White House",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Congress",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Energy Policy",
+      "type": "topic",
+      "aliases": [
+        "energy plan"
+      ]
+    },
+    {
+      "name": "Tax Cut",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Washington",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Mesa, Arizona",
+      "type": "location",
+      "aliases": [
+        "mesa ariz"
+      ]
+    },
+    {
+      "name": "Pennsylvania",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "George W. Bush",
+      "type": "person",
+      "aliases": [
+        "Mr. Bush",
+        "bush"
+      ]
+    },
+    {
+      "name": "Gray Davis",
+      "type": "person",
+      "aliases": [
+        "Mr. Davis",
+        "mr davis"
+      ]
+    },
+    {
+      "name": "Spencer Abraham",
+      "type": "person",
+      "aliases": [
+        "mr abraham"
+      ]
+    },
+    {
+      "name": "U.S. Energy Department",
+      "type": "organization",
+      "aliases": [
+        "energy department",
+        "his department"
+      ]
+    },
+    {
+      "name": "Bush Administration",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Mr. Davis",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mr. Bush",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mr. Cheney",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Kenneth Lay",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bill Lockyer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Marc D Fabiani",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Chris Lehane",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron Corporation",
+      "type": "organization",
+      "aliases": [
+        "enron"
+      ]
+    },
+    {
+      "name": "Federal Energy Regulatory Commission",
+      "type": "organization",
+      "aliases": [
+        "FERC"
+      ]
+    },
+    {
+      "name": "Energy Policy Debate",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Texas",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Camp Pendleton",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Los Angeles",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Silicon Valley",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol Power Corp",
+      "type": "organization",
+      "aliases": [
+        "DPC",
+        "dabhol"
+      ]
+    },
+    {
+      "name": "Maharashtra State Electricity Board",
+      "type": "organization",
+      "aliases": [
+        "MSEB"
+      ]
+    },
+    {
+      "name": "K Wade Cline",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Vinay Bansal",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Jesse Pesta",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Wall Street Journal",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol Billing Dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "MSEB",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Natural Gas Market Manipulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "El Paso",
+      "type": "organization",
+      "aliases": [
+        "El Paso Natural Gas Co"
+      ]
+    },
+    {
+      "name": "Bruce Cain",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Institute of Governmental Studies",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "University of California at Berkeley",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Federal Energy Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Pacific Gas Electric",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Southern California Edison",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Southern California Gas",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "California Public Utilities Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dynegy",
+      "type": "organization",
+      "aliases": [
+        "Houstonbased dynegy"
+      ]
+    },
+    {
+      "name": "West Texas",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Oklahoma",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Southwest",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Houston",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Pipeline capacity dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "El Paso Natural Gas Co",
+      "type": "organization",
+      "aliases": [
+        "El Paso"
+      ]
+    },
+    {
+      "name": "El Paso Merchant Energy Co",
+      "type": "organization",
+      "aliases": [
+        "El Paso Merchant"
+      ]
+    },
+    {
+      "name": "Ralph Eads",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Curtis L Wagner Jr",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "William Wise",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "El Paso Pipeline Capacity Dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Joseph Kalt",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Harvard University",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "New York Times",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "El Paso Merchant Pipeline Capacity Deal",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Gas Market Control and Trading",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol Power",
+      "type": "organization",
+      "aliases": [
+        "Dabhol Power Co",
+        "dabhol power company"
+      ]
+    },
+    {
+      "name": "Dabhol Power Plant",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "India Power Tariff Dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol Power",
+      "type": "project",
+      "aliases": [
+        "Dabhol Power Co",
+        "Dabhol power company"
+      ]
+    },
+    {
+      "name": "Industrial Development Bank of India",
+      "type": "organization",
+      "aliases": [
+        "IDBI"
+      ]
+    },
+    {
+      "name": "Maharashtra",
+      "type": "location",
+      "aliases": [
+        "western province of maharashtra"
+      ]
+    },
+    {
+      "name": "A.V. Gokak",
+      "type": "person",
+      "aliases": [
+        "Gokak"
+      ]
+    },
+    {
+      "name": "K. Wade Cline",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Steve Percy",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol Payment Dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Power Purchase Agreement",
+      "type": "topic",
+      "aliases": [
+        "PPA"
+      ]
+    },
+    {
+      "name": "Wade Cline",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol Power Company",
+      "type": "organization",
+      "aliases": [
+        "Dabhol"
+      ]
+    },
+    {
+      "name": "Enron India",
+      "type": "organization",
+      "aliases": [
+        "Enron India Pvt Ltd"
+      ]
+    },
+    {
+      "name": "VM Lal",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "India Payment Dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Madhav Godbole",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Maharashtra Government",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "India Power Sector Investment",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Tariff Renegotiation Dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Maria Abraham",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Stefan Maechler",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Enron Corp",
+      "type": "organization",
+      "aliases": [
+        "enron.com"
+      ]
+    },
+    {
+      "name": "Credit Suisse Asset Management",
+      "type": "organization",
+      "aliases": [
+        "CSAM"
+      ]
+    },
+    {
+      "name": "Credit Suisse Group",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Prime New Energy AG",
+      "type": "organization",
+      "aliases": [
+        "prime new energy"
+      ]
+    },
+    {
+      "name": "SBB Swiss Railways",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Siemens",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Calpine Corp",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Mirant",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Aixtron",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Ballard Power Systems",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Capstone Turbine Corp",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Gamesa",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol Project",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Indian Power Sector Reform",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Sustainable Energy Investment",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Singapore",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Switzerland",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "North America",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Europe",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Stefan Maechler",
+      "type": "role",
+      "aliases": [
+        "Managing Director"
+      ]
+    },
+    {
+      "name": "Maharashtra State Government",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Indian Federal Government",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Suresh Prabhu",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Vilasrao Deshmukh",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Yashwant Sinha",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "SK Chakrabarti",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "National Thermal Power Corporation",
+      "type": "organization",
+      "aliases": [
+        "NTPC"
+      ]
+    },
+    {
+      "name": "Power Trading Corporation",
+      "type": "organization",
+      "aliases": [
+        "PTC"
+      ]
+    },
+    {
+      "name": "Dabhol Power Dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "India Power Tariff Negotiations",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "DPC",
+      "type": "organization",
+      "aliases": [
+        "Dabhol Power Company",
+        "dabhol power"
+      ]
+    },
+    {
+      "name": "IDBI",
+      "type": "organization",
+      "aliases": [
+        "Industrial Development Bank of India"
+      ]
+    },
+    {
+      "name": "Tariff Reduction",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "S K Chakrabarti",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "State Electricity Regulatory Commission",
+      "type": "organization",
+      "aliases": [
+        "MERC"
+      ]
+    },
+    {
+      "name": "ICICI",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "State Bank of India",
+      "type": "organization",
+      "aliases": [
+        "SBI"
+      ]
+    },
+    {
+      "name": "Canara Bank",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol tariff reduction",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol lender dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "MERC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Gujarat State Electricity Board",
+      "type": "organization",
+      "aliases": [
+        "GEB"
+      ]
+    },
+    {
+      "name": "Gujarat Powergen",
+      "type": "organization",
+      "aliases": [
+        "GPEC"
+      ]
+    },
+    {
+      "name": "Gujarat Industries Power Company",
+      "type": "organization",
+      "aliases": [
+        "GIPCO"
+      ]
+    },
+    {
+      "name": "Essar Power",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron India PPA Dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Gujarat Bond Issuance Program",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Gujarat",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Mumbai High Court",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "GEB",
+      "type": "organization",
+      "aliases": [
+        "Gujarat Electricity Board"
+      ]
+    },
+    {
+      "name": "GPEC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Gujarat Electricity Regulatory Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol Tariff Renegotiation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Independent Power Projects Payments",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Bombay",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Dolphin Energy Ltd",
+      "type": "project",
+      "aliases": [
+        "DEL"
+      ]
+    },
+    {
+      "name": "Qatar",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "United Arab Emirates",
+      "type": "location",
+      "aliases": [
+        "UAE"
+      ]
+    },
+    {
+      "name": "Abdullah bin Hamad Al-Attiyah",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "UAE Offsets Group",
+      "type": "organization",
+      "aliases": [
+        "UOG"
+      ]
+    },
+    {
+      "name": "TotalFinaElf",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol Power Project Crisis",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Qatari Gas Export Initiative",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Qatar Project",
+      "type": "project",
+      "aliases": [
+        "March Qatar"
+      ]
+    },
+    {
+      "name": "Sharad Pawar",
+      "type": "person",
+      "aliases": [
+        "Mr Sharad Pawar"
+      ]
+    },
+    {
+      "name": "Praful Patel",
+      "type": "person",
+      "aliases": [
+        "Mr Praful Patel"
+      ]
+    },
+    {
+      "name": "P V Narasimha Rao",
+      "type": "person",
+      "aliases": [
+        "Mr P V Narasimha Rao"
+      ]
+    },
+    {
+      "name": "NTPC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Nationalist Congress Party",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Dabhol Power Renegotiation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Mr. Pawar",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mr. Praful Patel",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mr. P V Narasimha Rao",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Dr. Manmohan Singh",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ms. Rebecca Mark",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Prashant Bhushan",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Nitin Pradhan",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "C J Sawant",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "F S Nariman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bombay High Court",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Shiv Sena",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "BJP",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "NCP",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enron Power Project",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Maharashtra Government Approval Process",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Enron Civil Suit 1995",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Linda Powers",
+      "type": "person",
+      "aliases": [
+        "ms linda powers"
+      ]
+    },
+    {
+      "name": "Ajit M Nimbalkar",
+      "type": "person",
+      "aliases": [
+        "mr ajit m nimbalkar"
+      ]
+    },
+    {
+      "name": "Rebecca Mark",
+      "type": "person",
+      "aliases": [
+        "ms rebecca mark"
+      ]
+    },
+    {
+      "name": "Douglas McFadden",
+      "type": "person",
+      "aliases": [
+        "mr douglas mcfadden"
+      ]
+    },
+    {
+      "name": "General Electric Corporation",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Power Venture",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Delhi",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "India Power Project",
+      "type": "project",
+      "aliases": [
+        "power generation project"
+      ]
+    },
+    {
+      "name": "PPA",
+      "type": "project",
+      "aliases": [
+        "power purchase agreement"
+      ]
+    },
+    {
+      "name": "World Bank",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Central Electricity Authority",
+      "type": "organization",
+      "aliases": [
+        "CEA"
+      ]
+    },
+    {
+      "name": "Power Purchase Agreement",
+      "type": "project",
+      "aliases": [
+        "PPA"
+      ]
+    },
+    {
+      "name": "Private Sector Power Generation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "GEC",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "A V Gokak",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "S Padmanabhan",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Electricite de France",
+      "type": "organization",
+      "aliases": [
+        "EDF"
+      ]
+    },
+    {
+      "name": "Montedison",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Edison",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Sondel",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Tariff Notification Dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Mediterranean Power Competition",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Italy",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Spain",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Hidrocantabrico",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Electricidade de Portugal",
+      "type": "organization",
+      "aliases": [
+        "EDP"
+      ]
+    },
+    {
+      "name": "Energie Baden Wuerttemberg",
+      "type": "organization",
+      "aliases": [
+        "EnBW"
+      ]
+    },
+    {
+      "name": "EDF",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Telefonica",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "KPN",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "European Commission",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Enel",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "European Union Energy Market Liberalization",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Foreign Investment Restrictions",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "European Utility Consolidation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "RWE",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Eon",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Endesa",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Electrabel",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Suez",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "European Union Commission",
+      "type": "organization",
+      "aliases": [
+        "EU Commission",
+        "Commission"
+      ]
+    },
+    {
+      "name": "Romano Prodi",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Loyola de Palacio",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "European Energy Liberalization",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "EU Market Competition",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "State Asset Privatization",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "France",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "International Expansion Programme",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Allan Hoffenblum",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Sherry Bebitch Jeffe",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bill Clinton",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Reliant Energy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Public Policy Institute of California",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "University of Southern California",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Steve Maviglio",
+      "type": "person",
+      "aliases": [
+        "davis spokesman"
+      ]
+    },
+    {
+      "name": "Ari Fleischer",
+      "type": "person",
+      "aliases": [
+        "white house spokesman"
+      ]
+    },
+    {
+      "name": "James Jeffords",
+      "type": "person",
+      "aliases": [
+        "vermont sen james jeffords"
+      ]
+    },
+    {
+      "name": "Federal Government",
+      "type": "organization",
+      "aliases": [
+        "administration",
+        "white house"
+      ]
+    },
+    {
+      "name": "Democratic Party",
+      "type": "organization",
+      "aliases": [
+        "democrats"
+      ]
+    },
+    {
+      "name": "Republican Party",
+      "type": "organization",
+      "aliases": [
+        "gop",
+        "california republicans"
+      ]
+    },
+    {
+      "name": "Arctic National Wildlife Refuge",
+      "type": "location",
+      "aliases": [
+        "alaska"
+      ]
+    },
+    {
+      "name": "Federal Energy Strategy",
+      "type": "topic",
+      "aliases": [
+        "presidents longterm energy strategy",
+        "energy plan"
+      ]
+    },
+    {
+      "name": "Ken Lay",
+      "type": "person",
+      "aliases": [
+        "kenneth lay"
+      ]
+    },
+    {
+      "name": "Karen Denne",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Dianne Feinstein",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Barbara Boxer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Gary Ackerman",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Kathleen Connell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "California Attorney General",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "Western Power Trading Forum",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Alaska",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Electricity Price Manipulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Doris Allen",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Hannahbeth Jackson",
+      "type": "person",
+      "aliases": [
+        "jackson"
+      ]
+    },
+    {
+      "name": "Dana Rohrabacher",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Regulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Gender-Based Pricing Laws",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "California Capitol",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Orange County",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Arnold Schwarzenegger",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Richard Riordan",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ben Austin",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "George Bush",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Nancy Pelosi",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Huntington Beach",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Newport Beach",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "San Francisco",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Rancho Park Golf Course",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "U.S. House of Representatives",
+      "type": "organization",
+      "aliases": [
+        "Congress"
+      ]
+    },
+    {
+      "name": "Political fundraising",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Steny H Hoyer",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "David E Bonior",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ron Reina",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bill Kolender",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Gloria Molina",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Antonio Villaraigosa",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Xavier Becerra",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Steve Soboroff",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ellen Oppenheim",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Maryland",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Michigan",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Kern County",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "San Diego County",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Los Angeles County",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "California Energy Deregulation",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "2002 Michigan Governor Race",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "2003 Los Angeles Mayoral Race",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Ron Campise",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "John Williams",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Lee Brown",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ned Holmes",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Marc J Shapiro",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Ed Wulfe",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Bob Lanier",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Rob Mosbacher",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Houston Chronicle",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "2003 Houston Mayoral Race",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "2001 Houston Mayoral Race",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Manhattan Chase Bank",
+      "type": "organization",
+      "aliases": [
+        "chase bank"
+      ]
+    },
+    {
+      "name": "Chris Bell",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Orlando Sanchez",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "West Houston",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Hunters Creek",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "New York City",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Houston mayoral race",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Business leaders political ambitions",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Los Angeles Times",
+      "type": "organization",
+      "aliases": [
+        "times mirror company"
+      ]
+    },
+    {
+      "name": "Sequoia National Park",
+      "type": "location",
+      "aliases": []
+    },
+    {
+      "name": "Los Angeles World Affairs Council",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Darry Sragow",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "S. Ragow",
+      "type": "person",
+      "aliases": [
+        "sragow"
+      ]
+    },
+    {
+      "name": "Karen Hughes",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Al Gore",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Dan Bartlett",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Public Strategies",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Counselor to the President",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "Communications Advisor",
+      "type": "role",
+      "aliases": []
+    },
+    {
+      "name": "Pete Wilson",
+      "type": "person",
+      "aliases": [
+        "Gov Pete Wilson",
+        "republican gov pete wilson"
+      ]
+    },
+    {
+      "name": "Sean Walsh",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Mark D Fabiani",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Presidential Tax Cut",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Federal Regulators",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Bob Hertzberg",
+      "type": "person",
+      "aliases": [
+        "assembly speaker bob hertzberg"
+      ]
+    },
+    {
+      "name": "Bill Whalen",
+      "type": "person",
+      "aliases": [
+        "research fellow at stanford universitys hoover institution"
+      ]
+    },
+    {
+      "name": "Richard A Gephardt",
+      "type": "person",
+      "aliases": [
+        "house democratic leader richard a gephardt"
+      ]
+    },
+    {
+      "name": "Hoover Institution",
+      "type": "organization",
+      "aliases": [
+        "stanford universitys hoover institution"
+      ]
+    },
+    {
+      "name": "Democratic Republican Energy Battle",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Price Caps Relief Dispute",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "George P. Radanovich",
+      "type": "person",
+      "aliases": [
+        "rep george p radanovich"
+      ]
+    },
+    {
+      "name": "James M. Jeffords",
+      "type": "person",
+      "aliases": [
+        "sen james m jeffords"
+      ]
+    },
+    {
+      "name": "Tom Daschle",
+      "type": "person",
+      "aliases": [
+        "tom daschle"
+      ]
+    },
+    {
+      "name": "Marshall Wittmann",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "Hudson Institute",
+      "type": "organization",
+      "aliases": [
+        "conservative hudson institute"
+      ]
+    },
+    {
+      "name": "Peter Navarro",
+      "type": "person",
+      "aliases": []
+    },
+    {
+      "name": "UC Irvine",
+      "type": "organization",
+      "aliases": [
+        "uc irvines"
+      ]
+    },
+    {
+      "name": "Bush-Davis Political Conflict",
+      "type": "topic",
+      "aliases": []
+    },
+    {
+      "name": "Dynergy",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Reliant",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Williams",
+      "type": "organization",
+      "aliases": []
+    },
+    {
+      "name": "Western Electricity Market",
+      "type": "topic",
+      "aliases": [
+        "wholesale electricity market"
+      ]
+    },
+    {
+      "name": "Transmission Grid Purchase",
+      "type": "project",
+      "aliases": []
+    },
+    {
+      "name": "Merchant Generators",
+      "type": "organization",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_type": "sent_to",
+      "subject": "Ann Schmidt",
+      "object": "missing recipient",
+      "confidence": 0.5,
+      "supporting_excerpt": "From: ann.schmidt@enron.com\nTo: missing"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dabhol Power Project",
+      "object": "payment rejection by Indian state",
+      "confidence": 0.7,
+      "supporting_excerpt": "enron project rejects payment by indian state the wall street journal 052901"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dabhol Power Project",
+      "object": "tariff cut negotiations",
+      "confidence": 0.7,
+      "supporting_excerpt": "indias gokak on talks with enron on dabhol comment correct bloomberg 052901"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Enron",
+      "object": "rejection of government-run power buyers",
+      "confidence": 0.7,
+      "supporting_excerpt": "enron rejects govtrun power buyers legal notice paper says bloomberg 052901"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Enron India",
+      "object": "10 percent tariff cut",
+      "confidence": 0.9,
+      "supporting_excerpt": "enrons india unit willing to cut tariffs by 10 report dow jones international news 052901"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "President Bush",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "for crucial california trip bush calibrates how best to handle states energy crisis the new york times 052901"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "El Paso Corp",
+      "object": "California crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "el paso corp a villain or scapegoat in calif crisis houston chronicle 052901"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "President Bush",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "president bush traveled tonight to california carefully calibrating how to deal with the states energy crisis"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "President Bush",
+      "object": "Tax Cut",
+      "confidence": 1.0,
+      "supporting_excerpt": "and then won the tax cut that he staked his campaign upon"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "President Bush",
+      "object": "California",
+      "confidence": 0.7,
+      "supporting_excerpt": "mr bush began his first visit as president to the most populous state which he lost by roughly 12 percentage points in novembers election"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "President Bush",
+      "object": "Governor Gray Davis",
+      "confidence": 0.7,
+      "supporting_excerpt": "mr bush will meet briefly on tuesday with gov gray davis"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Governor Gray Davis",
+      "object": "price caps on wholesale electric power",
+      "confidence": 0.7,
+      "supporting_excerpt": "gov gray davis who will insist as he did again today that the federal government impose price caps on wholesale electric power"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "President Bush",
+      "object": "price caps on wholesale electric power",
+      "confidence": 0.9,
+      "supporting_excerpt": "the white house says mr bush will refuse again"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Vice President Dick Cheney",
+      "object": "price caps",
+      "confidence": 0.7,
+      "supporting_excerpt": "we think thats a mistake vice president dick cheney said on friday talking about why he rejected those options"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "Congress",
+      "object": "Tax Cut",
+      "confidence": 1.0,
+      "supporting_excerpt": "after congress approved the 135 trillion tax cut that will be phased in over the next 10 years"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "President Bush",
+      "object": "Energy Policy",
+      "confidence": 0.6,
+      "supporting_excerpt": "the administration made public 10 days ago"
+    },
+    {
+      "claim_type": "sent_to",
+      "subject": "Ann Schmidt",
+      "object": "missing",
+      "confidence": 0.5,
+      "supporting_excerpt": "To: missing"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "George W. Bush",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "bush used the state as exhibit a for his argument about what happens when population rises when overregulation freezes the construction of new power plants"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "George W. Bush",
+      "object": "you cannot conserve your way to energy independence",
+      "confidence": 0.7,
+      "supporting_excerpt": "the problems in california shows that you cannot conserve your way to energy independence mr bush said"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "George W. Bush",
+      "object": "long-term solutions",
+      "confidence": 0.7,
+      "supporting_excerpt": "mr bushs aides have been struggling for days to choreograph the twoday visit here trying to find ways to differ with mr davis without seeming callous about the problem or in conflict with the state the betting is that mr bush will focus on longterm solutions"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Spencer Abraham",
+      "object": "Energy Secretary",
+      "confidence": 0.9,
+      "supporting_excerpt": "energy secretary spencer abraham issued an order"
+    },
+    {
+      "claim_type": "authorized",
+      "subject": "Spencer Abraham",
+      "object": "order to determine investor interest in transmission line financing",
+      "confidence": 1.0,
+      "supporting_excerpt": "energy secretary spencer abraham issued an order of chiefly symbolic importance saying his department would move quickly to determine whether investors were interested in financing and coowning a new transmission line"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "U.S. Energy Department",
+      "object": "studies of land acquisition by eminent domain",
+      "confidence": 0.9,
+      "supporting_excerpt": "it said that it would proceed with studies of how the land could be acquired by eminent domain if necessary"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Spencer Abraham",
+      "object": "Bush administration is taking a leadership role in addressing California's electricity transmission system",
+      "confidence": 0.7,
+      "supporting_excerpt": "the bush administration is taking a leadership role in addressing a longneglected problem in californias electricity transmission system mr abraham said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ann Schmidt",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "avert the same types of problems from recurring year after year the statement was clearly intended as a prelude to the meeting with mr davis"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Mr. Bush",
+      "object": "Energy Policy Debate",
+      "confidence": 0.7,
+      "supporting_excerpt": "mr bush is scheduled to travel to camp pendleton to repeat his call for the military and other federal users of power in california to flip off their switches whenever possible"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Mr. Cheney",
+      "object": "Energy Policy Debate",
+      "confidence": 0.7,
+      "supporting_excerpt": "given his own comments and mr cheneys about the limited utility of conservation"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kenneth Lay",
+      "object": "Enron Corporation",
+      "confidence": 0.6,
+      "supporting_excerpt": "kenneth lay who heads the enron corporation"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kenneth Lay",
+      "object": "Federal Energy Regulatory Commission",
+      "confidence": 0.7,
+      "supporting_excerpt": "kenneth lay who heads the enron corporation and has sought to influence the selection of members of the federal energy regulatory commission"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Bill Lockyer",
+      "object": "Kenneth Lay",
+      "confidence": 0.7,
+      "supporting_excerpt": "californias attorney general bill lockyer also a democrat suggested to the wall street journal last week that some time in jail would be the best way to deal with one of mr bushs biggest supporters kenneth lay"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mr. Davis",
+      "object": "Marc D Fabiani",
+      "confidence": 0.7,
+      "supporting_excerpt": "to press the case he has hired two political operatives from the clinton white house marc d fabiani and chris lehane"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mr. Davis",
+      "object": "Texas",
+      "confidence": 0.7,
+      "supporting_excerpt": "mr davis has accused texas energy companies of profiteering at californias expense"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Power Corp",
+      "object": "Enron",
+      "confidence": 0.6,
+      "supporting_excerpt": "enron corps indian power project dabhol power corp"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Dabhol Power Corp",
+      "object": "291 million check from Maharashtra State Electricity Board",
+      "confidence": 1.0,
+      "supporting_excerpt": "enron corps indian power project dabhol power corp has rejected a check valued at 291 million from its only customer the maharashtra state electricity board"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dabhol Power Corp",
+      "object": "misrepresentation of ramp-up speed",
+      "confidence": 0.7,
+      "supporting_excerpt": "we deny that dpc have practiced any misrepresentation dabhols letter says"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "K Wade Cline",
+      "object": "Enron executive",
+      "confidence": 0.9,
+      "supporting_excerpt": "the letter signed by enron executive k wade cline"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Vinay Bansal",
+      "object": "Maharashtra State Electricity Board",
+      "confidence": 0.6,
+      "supporting_excerpt": "mseb chairman vinay bansal"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Jesse Pesta",
+      "object": "Wall Street Journal",
+      "confidence": 0.6,
+      "supporting_excerpt": "by jesse pesta staff reporter of the wall street journal"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Maharashtra State Electricity Board",
+      "object": "rescind power-purchasing contract",
+      "confidence": 0.9,
+      "supporting_excerpt": "the electricity boards decision last week to rescind its powerpurchasing contract"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Power Project",
+      "object": "3 billion power plant",
+      "confidence": 0.7,
+      "supporting_excerpt": "the 3 billion power plant is the largest foreign investment in india"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "K Wade Cline",
+      "object": "Enron executive",
+      "confidence": 0.9,
+      "supporting_excerpt": "signed by enron executive k wade cline"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Vinay Bansal",
+      "object": "contract rescission and payment validity",
+      "confidence": 0.7,
+      "supporting_excerpt": "mseb chairman vinay bansal said that after the check was rejected the mseb went ahead and directdeposited a payment to a dabhol account unaware of the letters contents"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Vinay Bansal",
+      "object": "had not read the letter",
+      "confidence": 0.7,
+      "supporting_excerpt": "mr bansal said that he hadnt read the letter yet so he wouldnt comment on it"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Vinay Bansal",
+      "object": "MSEB paid previous bills on time",
+      "confidence": 0.7,
+      "supporting_excerpt": "mr bansal disputed that saying he believes the two previous bills were also paid on time"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "El Paso Corp",
+      "type": "organization",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "californians ire grows as case resumes by david ivanovich copyright 2001 houston chronicle washington bureau washington the lights keep going out in california and people there want someone to blame california is pointing the finger at texas energy companies and first up is houstons el paso corp"
+    },
+    {
+      "claim_type": "accused",
+      "subject": "California Public Utilities Commission",
+      "object": "El Paso Corp of using market power to drive up gas prices",
+      "confidence": 0.9,
+      "supporting_excerpt": "the california public utilities commission has accused el paso of using its power in the natural gas market to drive up gas prices in california"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "El Paso Corp",
+      "object": "nations largest gas pipeline company",
+      "confidence": 0.6,
+      "supporting_excerpt": "el paso the nations largest gas pipeline company"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "El Paso",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "el paso counters that the runup in gas prices was caused not by its actions but by an unanticipated and unprecedented surge in demand"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Bruce Cain",
+      "object": "director of the institute of governmental studies",
+      "confidence": 1.0,
+      "supporting_excerpt": "bruce cain director of the institute of governmental studies at the university of california at berkeley"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Bruce Cain",
+      "object": "Californians are getting very irritable about energy situation",
+      "confidence": 0.7,
+      "supporting_excerpt": "its the same story with slightly different details cain said and people in california are getting very very irritable"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "El Paso and out-of-state energy firms causing energy woes",
+      "confidence": 0.7,
+      "supporting_excerpt": "gov gray davis and other democratic leaders have repeatedly blamed outofstate energy firms for the states energy woes"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Gray Davis",
+      "object": "Federal Energy Commission failing to take action",
+      "confidence": 0.7,
+      "supporting_excerpt": "they have excoriated the federal energy commission for failing to take decisive action to give californians relief"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "President Bush",
+      "object": "California",
+      "confidence": 0.7,
+      "supporting_excerpt": "as president bush visits california today democrats are pointing to the el paso case"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "El Paso",
+      "object": "Pipeline capacity constraints within California",
+      "confidence": 0.7,
+      "supporting_excerpt": "they argue the real problem is pipeline capacity constraints within california not on the supply of gas moving in pipelines bringing gas to the state"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "El Paso",
+      "object": "transports natural gas from West Texas and Oklahoma to Southern California",
+      "confidence": 0.7,
+      "supporting_excerpt": "el paso operates a major pipeline system that transports natural gas from producing basins in areas such as west texas and oklahoma to southern california and other parts of the southwest"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pacific Gas Electric",
+      "object": "owned rights to transport gas on Edison pipeline system",
+      "confidence": 0.7,
+      "supporting_excerpt": "the states two cashstrapped utilities pacific gas electric and southern california edison and a local gas distribution company southern california gas owned the rights to transport gas along the edison pipeline system"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Public Utilities Commission",
+      "object": "prodded utilities to give up capacity on El Paso line",
+      "confidence": 0.7,
+      "supporting_excerpt": "the california public utilities commission prodded the utilities to give up their capacity on the el paso line"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dynegy",
+      "object": "held rights to pipeline capacity",
+      "confidence": 0.7,
+      "supporting_excerpt": "houstonbased dynegy held the rights to the pipeline capacity for a while"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron",
+      "object": "affiliate took brief turn in pipeline capacity in February 2000",
+      "confidence": 0.7,
+      "supporting_excerpt": "then an enron affiliate took a brief turn in february 2000"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "El Paso Natural Gas Co",
+      "object": "opened bidding for 12 billion cubic feet of pipeline capacity in February 2000",
+      "confidence": 0.7,
+      "supporting_excerpt": "in february 2000 el pasos pipeline arm el paso natural gas co opened the bidding again for about 12 billion cubic feet of pipeline capacity"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ann Schmidt",
+      "object": "El Paso Natural Gas Co",
+      "confidence": 0.7,
+      "supporting_excerpt": "affiliate took a brief turn in february 2000 el pasos pipeline arm el paso natural gas co opened the bidding again"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "El Paso Merchant Energy Co",
+      "object": "El Paso Natural Gas Co",
+      "confidence": 0.7,
+      "supporting_excerpt": "an el paso affiliate el paso merchant energy co won the rights to that capacity for 15 months with a 385 million bid"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Public Utilities Commission",
+      "object": "El Paso Merchant Energy Co",
+      "confidence": 0.7,
+      "supporting_excerpt": "the california public utilities commission cried foul and asked the federal energy regulatory commission to force el paso merchant to disgorge its profits earned under the contract"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "El Paso Merchant Energy Co",
+      "object": "184 million in pretax profits",
+      "confidence": 0.7,
+      "supporting_excerpt": "el paso has earned 184 million in pretax profits since the contract began"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Ralph Eads",
+      "object": "president of el paso merchant",
+      "confidence": 0.9,
+      "supporting_excerpt": "ralph eads president of el paso merchant testified last week"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Curtis L Wagner Jr",
+      "object": "administrative law judge at the federal energy regulatory commission",
+      "confidence": 1.0,
+      "supporting_excerpt": "the case was turned over to curtis l wagner jr an administrative law judge at the federal energy regulatory commission"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "El Paso Merchant Energy Co",
+      "object": "unused pipeline capacity",
+      "confidence": 0.7,
+      "supporting_excerpt": "el paso merchant admits significant portions of its capacity went unused"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "William Wise",
+      "object": "El Paso Natural Gas Co",
+      "confidence": 0.6,
+      "supporting_excerpt": "el paso chief executive william wise"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "El Paso Merchant Energy Co",
+      "object": "Valentine's Day 2000 presentation to William Wise",
+      "confidence": 0.7,
+      "supporting_excerpt": "the most tantalizing evidence in the case surrounds a valentines day 2000 presentation made by el paso merchant officials to el paso chief executive william wise"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ann Schmidt",
+      "object": "El Paso Merchant Pipeline Capacity Deal",
+      "confidence": 0.7,
+      "supporting_excerpt": "day 2000 presentation made by el paso merchant officials to el paso chief executive william wise"
+    },
+    {
+      "claim_type": "approved",
+      "subject": "William Wise",
+      "object": "El Paso Merchant Pipeline Capacity Deal",
+      "confidence": 1.0,
+      "supporting_excerpt": "wise conceded he had indeed approved el paso merchants plan to make a bid for the pipeline capacity"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Wagner",
+      "object": "Eads",
+      "confidence": 0.7,
+      "supporting_excerpt": "wagner grew irritated with eads last week when the el paso merchant executive appeared to equivocate"
+    },
+    {
+      "claim_type": "authorized",
+      "subject": "William Wise",
+      "object": "El Paso Merchant managers to decide specifics of pipeline capacity bid",
+      "confidence": 1.0,
+      "supporting_excerpt": "although he said he left it up to el paso merchant managers to decide the specifics of that bid"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Joseph Kalt",
+      "object": "lack of capacity on intrastate pipeline network in California",
+      "confidence": 0.7,
+      "supporting_excerpt": "harvard university professor joseph kalt argues that the real problem is a lack of capacity on the systems inside the state of california"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "El Paso",
+      "object": "hedging losses of 691 million through March 31",
+      "confidence": 0.7,
+      "supporting_excerpt": "el paso merchant had suffered 691 million in hedging losses through march 31 including 429 million in the first quarter of this year"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Eads",
+      "object": "Gas Market Control and Trading",
+      "confidence": 0.7,
+      "supporting_excerpt": "eads also argued that if el paso officials had been trying to push up gas prices they would not have used a risk management technique known as hedging"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "K Wade Cline",
+      "object": "chief operating officer",
+      "confidence": 0.9,
+      "supporting_excerpt": "dabhol power chief operating officer k wade cline"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dabhol Power",
+      "object": "power tariff cut",
+      "confidence": 0.7,
+      "supporting_excerpt": "declined to comment on whether it would cut its power tariffs after a second round of talks"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "K Wade Cline",
+      "object": "10 percent power tariff reduction",
+      "confidence": 0.7,
+      "supporting_excerpt": "dabhol power chief operating officer k wade cline had told domestic lenders the company is ready to cut power tariffs by 10"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Dabhol Power Plant",
+      "object": "2184 megawatts capacity upon second phase completion",
+      "confidence": 0.9,
+      "supporting_excerpt": "the 30billion dabhol power plant in western india will generate 2184 megawatts of power when the second phase is completed later this year"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Dabhol Power",
+      "object": "no proposals submitted to committee",
+      "confidence": 0.9,
+      "supporting_excerpt": "after the meeting cline said dabhol power submitted no proposals before the committee"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Maharashtra State Electricity Board",
+      "object": "480 million dollars in defaulted power payments",
+      "confidence": 0.7,
+      "supporting_excerpt": "the state electricity utility is the only buyer and has defaulted on 480 million of power payments"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Indian financial institutions",
+      "object": "Dabhol Power",
+      "confidence": 0.7,
+      "supporting_excerpt": "indian financial institutions with more than 50 loan exposure to dabhol power will meet wednesday to devise a strategy"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "A.V. Gokak",
+      "object": "Indian government's nominee in discussions with Enron",
+      "confidence": 1.0,
+      "supporting_excerpt": "av gokak the indian governments nominee in discussions with enron corps dabhol power co"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "A.V. Gokak",
+      "object": "meeting between power utility and Maharashtra State Electricity Board",
+      "confidence": 0.9,
+      "supporting_excerpt": "this is the first time gokak has attended a meeting to resolve the standoff over payments by the board to dabhol"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "A.V. Gokak",
+      "object": "India is very keen for a resolution",
+      "confidence": 0.7,
+      "supporting_excerpt": "india is very keen for a resolution of this issue we will play an active role in solving the payment dispute"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Dabhol Power",
+      "object": "Maharashtra State Electricity Board's legal notice",
+      "confidence": 1.0,
+      "supporting_excerpt": "enron corppromoted dabhol power company has rejected the governmentrun maharashtra state electricity boards legal notice terminating their power purchase agreement"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "K. Wade Cline",
+      "object": "legal notice is not acceptable",
+      "confidence": 0.7,
+      "supporting_excerpt": "the legal notice is not acceptable to us as according to the ppa power purchase agreement the mseb does not have the right to rescind the agreement"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Maharashtra State Electricity Board",
+      "object": "cancelled power purchase agreement with Dabhol Power",
+      "confidence": 0.9,
+      "supporting_excerpt": "the maharashtra electricity board thursday told dabhol power it was canceling the contract"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Indian lenders",
+      "object": "ways to convince overseas counterparts to salvage Dabhol Power",
+      "confidence": 0.7,
+      "supporting_excerpt": "indian lenders to dabhol will meet wednesday to discuss ways to convince overseas counterparts to salvage the 3 billion power project"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Power",
+      "object": "owed 3 billion rupees for power supplied in December and January",
+      "confidence": 0.7,
+      "supporting_excerpt": "dabhol is owed 3 billion rupees 639 million for power supplied in december and january"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Wade Cline",
+      "object": "ways to convince overseas counterparts to salvage the 3 billion power project",
+      "confidence": 0.7,
+      "supporting_excerpt": "wednesday to discuss ways to convince overseas counterparts to salvage the 3 billion power project"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Dabhol Power Company",
+      "object": "caught up in a payment dispute",
+      "confidence": 0.9,
+      "supporting_excerpt": "3 billion power project which is caught up in a payment dispute"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Maharashtra State Electricity Board",
+      "object": "payment of bills",
+      "confidence": 1.0,
+      "supporting_excerpt": "the board has refused to pay the bills saying theyre too high"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Wade Cline",
+      "object": "managing director of enron corps dabhol power co",
+      "confidence": 0.9,
+      "supporting_excerpt": "wade cline managing director of enron corps dabhol power co"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dabhol Power Company",
+      "object": "reduction in tariff rates",
+      "confidence": 0.7,
+      "supporting_excerpt": "discussions are ongoing and well meet again on dabhols plans to cut power tariffs by 10 percent"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Wade Cline",
+      "object": "chief operating officer enron india pvt ltd",
+      "confidence": 0.9,
+      "supporting_excerpt": "k wade kline chief operating officer enron india pvt ltd"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "VM Lal",
+      "object": "principal secretary to the maharashtra government",
+      "confidence": 0.9,
+      "supporting_excerpt": "vm lal principal secretary to the maharashtra government"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Power Company",
+      "object": "65 percent owned by houstonbased enron",
+      "confidence": 0.7,
+      "supporting_excerpt": "dabhol power company which is 65 percent owned by houstonbased enron"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron",
+      "object": "Dabhol Power Project",
+      "confidence": 0.7,
+      "supporting_excerpt": "owned by houstonbased enron we are negotiating on the various issues that are coming in the way of the project"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Enron",
+      "object": "MSEB",
+      "confidence": 0.7,
+      "supporting_excerpt": "enron and mseb have been sparring for over six months on the 2184 mw project"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "MSEB",
+      "object": "Dabhol Power Project",
+      "confidence": 0.9,
+      "supporting_excerpt": "mseb began buying the 740 mw of power produced by the the projects first phase in may 1999 but late last year it started to default on payments"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "MSEB",
+      "object": "second phase power purchase",
+      "confidence": 1.0,
+      "supporting_excerpt": "it also decided against buying the 1444 mw of power produced by the projects second phase"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol",
+      "object": "power purchase agreement cancellation",
+      "confidence": 0.7,
+      "supporting_excerpt": "dabhol issued a notice this month to cancel its power purchase deal over this issue"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Madhav Godbole",
+      "object": "tariff renegotiation panel head",
+      "confidence": 1.0,
+      "supporting_excerpt": "the maharashtra government formed a panel last month to renegotiate the tariffs headed by former bureaucrat madhav godbole"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Dabhol",
+      "object": "committee recommendations",
+      "confidence": 1.0,
+      "supporting_excerpt": "dabhol had said before tuesdays meeting that it does not agree with the committees recommendations"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Dabhol",
+      "object": "tariff renegotiation meeting",
+      "confidence": 0.9,
+      "supporting_excerpt": "the meeting was attended by key executives of dabhol the maharashtra state electricity board mseb and representatives of the federal and state governments"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Power Project",
+      "object": "29 billion total cost",
+      "confidence": 0.7,
+      "supporting_excerpt": "the project which is being built at a total cost of 29 billion"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ann Schmidt",
+      "object": "Dabhol Project",
+      "confidence": 0.7,
+      "supporting_excerpt": "built at a total cost of 29 billion is being funded through 2 billion of loans"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Maria Abraham",
+      "object": "Dabhol Project",
+      "confidence": 0.6,
+      "supporting_excerpt": "additional reporting by maria abraham"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Stefan Maechler",
+      "object": "Managing Director of Credit Suisse Asset Management",
+      "confidence": 1.0,
+      "supporting_excerpt": "prime new energy is headed by stefan maechler managing director of credit suisse asset management"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Stefan Maechler",
+      "object": "Credit Suisse Asset Management",
+      "confidence": 0.8,
+      "supporting_excerpt": "stefan maechler managing director of credit suisse asset management"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Prime New Energy AG",
+      "object": "Enron Corp",
+      "confidence": 0.7,
+      "supporting_excerpt": "investments include stakes in listed companies calpine corp mirant aixtron enron corp"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Foreign Lenders",
+      "object": "Dabhol Project",
+      "confidence": 0.7,
+      "supporting_excerpt": "they have called a meeting on june 5 and 6 in singapore to discuss invoking guarantees on their loans"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Prime New Energy AG",
+      "object": "Sustainable Energy Investment",
+      "confidence": 0.6,
+      "supporting_excerpt": "prime new energy ag which invests in sustainable energy technology"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Prime New Energy AG",
+      "object": "Indian Power Sector Reform",
+      "confidence": 0.7,
+      "supporting_excerpt": "in the project at stake is not just the investment in the project but also indias efforts to reform the power sector"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Power Company",
+      "object": "Dabhol Power Dispute",
+      "confidence": 0.7,
+      "supporting_excerpt": "the enronpromoted dabhol power company which is currently embroiled in a legal battle with the state"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Indian Federal Government",
+      "object": "Maharashtra State Government proposal to purchase electricity from Dabhol Power Company",
+      "confidence": 1.0,
+      "supporting_excerpt": "the indian federal government has refused a proposal by the maharashtra state government that it purchase electricity from the enronpromoted dabhol power company"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Suresh Prabhu",
+      "object": "Federal Power Minister",
+      "confidence": 1.0,
+      "supporting_excerpt": "the federal power minister suresh prabhu told pti in an interview"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Suresh Prabhu",
+      "object": "Central utilities cannot buy power from DPC and sell it elsewhere when Maharashtra government cannot buy it",
+      "confidence": 0.7,
+      "supporting_excerpt": "how can central utilities buy power from dpc and sell it elsewhere when it is not possible for the maharashtra government to buy it the federal power minister suresh prabhu told pti in an interview"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Vilasrao Deshmukh",
+      "object": "Maharashtra Chief Minister",
+      "confidence": 1.0,
+      "supporting_excerpt": "he had made his stand clear to the maharashtra chief minister vilasrao deshmukh when he came with the proposal to meet him and the finance minister yashwant sinha"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Yashwant Sinha",
+      "object": "Finance Minister",
+      "confidence": 0.9,
+      "supporting_excerpt": "to meet him and the finance minister yashwant sinha"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Vilasrao Deshmukh",
+      "object": "Federal government instruct NTPC and PTC to buy power from second phase of DPC",
+      "confidence": 0.9,
+      "supporting_excerpt": "deshmukh had asked the federal government to bail out the state by instructing the ntpc and the power trading corporation ptc to buy power from the second phase of dpc to be commissioned later this year"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Power Company",
+      "object": "India Power Tariff Negotiations",
+      "confidence": 0.7,
+      "supporting_excerpt": "dabhol power co the indian unit of enron corp ene has told its domestic lenders that its willing to cut tariffs by at least 10 in an attempt to resolve a dispute with indian authorities"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Dabhol Power Company",
+      "object": "Cut tariffs by at least 10 percent",
+      "confidence": 0.9,
+      "supporting_excerpt": "dabhol power co the indian unit of enron corp ene has told its domestic lenders that its willing to cut tariffs by at least 10"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "SK Chakrabarti",
+      "object": "Chairman and Managing Director of Industrial Development Bank of India",
+      "confidence": 1.0,
+      "supporting_excerpt": "sk chakrabarti chairman and managing director of the industrial development bank of india"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "SK Chakrabarti",
+      "object": "DPC managing director is agreeable to cutting tariff by 10 and it can be reduced further",
+      "confidence": 0.7,
+      "supporting_excerpt": "the dpc dabhol power managing director met me recently he is agreeable to cutting tariff by 10 i am sure it can even be reduced further sk chakrabarti chairman and managing director of the industrial development bank of india"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "DPC",
+      "object": "Dabhol Power Dispute",
+      "confidence": 0.7,
+      "supporting_excerpt": "in an attempt to resolve a dispute with indian authorities the dpc dabhol power managing director met me recently"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "DPC",
+      "object": "Tariff Reduction",
+      "confidence": 0.8,
+      "supporting_excerpt": "he is agreeable to cutting tariff by 10"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "IDBI",
+      "object": "Dabhol Power Project",
+      "confidence": 0.7,
+      "supporting_excerpt": "idbi has a total loan exposure of 2158 billion rupees 1inr469750 to dabhol power"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Power Project",
+      "object": "Maharashtra",
+      "confidence": 0.7,
+      "supporting_excerpt": "the 3 billion dabhol power project indias biggest foreign investment project is situated in the western indian state of maharashtra"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "DPC",
+      "object": "1444 megawatts of electricity generation",
+      "confidence": 0.9,
+      "supporting_excerpt": "the project which will generate 1444 megawatts of electricity when the second phase is completed later this year"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "DPC",
+      "object": "Maharashtra State Electricity Board",
+      "confidence": 0.7,
+      "supporting_excerpt": "the company on may 19 issued a preliminary termination notice to the maharashtra state electricity board or mseb"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "IDBI",
+      "object": "Dabhol Power Dispute",
+      "confidence": 0.7,
+      "supporting_excerpt": "indian financial institutions with outstanding loans to dabhol including idbi will meet wednesday to agree on a common stance"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "S K Chakrabarti",
+      "object": "acting chairman and managing director",
+      "confidence": 1.0,
+      "supporting_excerpt": "industrial development bank of india idbi acting chairman and managing director s k chakrabarti"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Dabhol Power Company",
+      "object": "slash tariff by 10 per cent after second phase",
+      "confidence": 0.9,
+      "supporting_excerpt": "dpc is ready to slash its tariff by 10 per cent after the second phase of the 2184 mw project is functional in june first week"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "S K Chakrabarti",
+      "object": "per unit price reduction with liquified natural gas",
+      "confidence": 0.7,
+      "supporting_excerpt": "the per unit price would also reduce by another 10 per cent when the plant switches to liquified natural gas as fuel chakrabarti said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "S K Chakrabarti",
+      "object": "IDBI exposure to DPC project is rs 2158 billion",
+      "confidence": 0.7,
+      "supporting_excerpt": "idbis exposure to dpc project is to the tune of rs 2158 billion us459 million including guarantees worth rs 1528 billion and rupee loans of rs 630 billion chakrabarti said"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "K Wade Cline",
+      "object": "managing director",
+      "confidence": 0.9,
+      "supporting_excerpt": "enron india managing director k wade cline"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Dabhol Power Company",
+      "object": "Maharashtra State Electricity Board legal notice",
+      "confidence": 1.0,
+      "supporting_excerpt": "enrons dabhol power company dpc has rejected the maharashtra state electricity boards mseb legal notice for rescinding the ppa"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "K Wade Cline",
+      "object": "legal notice is not acceptable",
+      "confidence": 0.7,
+      "supporting_excerpt": "the legal notice is not acceptable to us as according to the ppa mseb does not have the right to rescind the agreement"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "K Wade Cline",
+      "object": "the legal notice is not acceptable",
+      "confidence": 0.7,
+      "supporting_excerpt": "k wade cline has said the legal notice is not acceptable to us"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Enron India PPA Dispute",
+      "object": "MSEB right to rescind agreement",
+      "confidence": 0.7,
+      "supporting_excerpt": "according to the ppa mseb does not have the right to rescind the agreement"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "MSEB",
+      "object": "questioned legal validity of entire PPA",
+      "confidence": 0.7,
+      "supporting_excerpt": "the mseb has questioned the legal validity of the entire ppa as per the indian contracts act ica 1872"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "MSEB",
+      "object": "filed petition in MERC",
+      "confidence": 0.7,
+      "supporting_excerpt": "later also went a step further by filing a petition in merc"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "DPC",
+      "object": "continued demand for escrow account",
+      "confidence": 0.6,
+      "supporting_excerpt": "the dpc has continued its demand for an escrow account"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "MSEB",
+      "object": "filed caveat in Mumbai High Court",
+      "confidence": 0.6,
+      "supporting_excerpt": "mseb has filed a caveat in the mumbai high court"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "DPC",
+      "object": "demanded increase in letter of credit amount",
+      "confidence": 0.7,
+      "supporting_excerpt": "the dpc has also demanded an increase in lc letter of credit amount"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Gujarat State Electricity Board",
+      "object": "issue bonds worth rs 650 crore",
+      "confidence": 1.0,
+      "supporting_excerpt": "geb has decided to issue bonds worth rs 650 crore to two of the three independent power projects"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gujarat Powergen",
+      "object": "to be issued bonds worth rs 400 crore",
+      "confidence": 0.6,
+      "supporting_excerpt": "gpec will be issued bonds worth rs 400 crore"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gujarat Industries Power Company",
+      "object": "to be issued bonds worth rs 250 crore",
+      "confidence": 0.6,
+      "supporting_excerpt": "gipco will be issued bonds worth rs 250 crores"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gujarat Powergen",
+      "object": "bonds with maturity period options of four five and six years",
+      "confidence": 0.7,
+      "supporting_excerpt": "gpec will be issued bonds with option of four five and six years of maturity period"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gujarat Industries Power Company",
+      "object": "bonds with maturity period options of six seven and eight years",
+      "confidence": 0.7,
+      "supporting_excerpt": "gipco which will be issued bonds worth rs 250 crore will have maturity period options of six seven and eight years"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Essar Power",
+      "object": "similar bond offer believed to be in process",
+      "confidence": 0.7,
+      "supporting_excerpt": "a similar offer for the third independent power project essar power is believed to be in the process"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "GEB",
+      "object": "facing severe financial crunch",
+      "confidence": 0.9,
+      "supporting_excerpt": "geb which has been facing severe financial crunch for the past few years"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Dabhol Power Company",
+      "object": "Dabhol Tariff Renegotiation",
+      "confidence": 0.7,
+      "supporting_excerpt": "officials at us energy giant enron corps indian unit are scheduled to meet with a state government panel on tuesday to discuss the fate of a controversial 29 billion power project"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Power Company",
+      "object": "regards the meeting as a courtesy call only",
+      "confidence": 0.7,
+      "supporting_excerpt": "dabhol power company owned 65 percent by houstonbased enron has already announced that it regards the meeting as a courtesy call only"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Madhav Godbole",
+      "object": "panel head",
+      "confidence": 0.9,
+      "supporting_excerpt": "the panel is headed by madhav godbole a former bureaucrat"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "MSEB",
+      "object": "defaulted on 48 million of power payments",
+      "confidence": 0.9,
+      "supporting_excerpt": "maharashtra state electricity board mseb which agreed in 1995 to buy the plants entire output says the power is too costly and has defaulted on 48 million of power payments"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "Dabhol Power Company",
+      "object": "issued notice to cancel power purchase deal",
+      "confidence": 1.0,
+      "supporting_excerpt": "dabhol issued a notice this month to cancel its power purchase deal"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Dabhol Power Company",
+      "object": "committee recommendations",
+      "confidence": 1.0,
+      "supporting_excerpt": "dabhol has said that it does not agree with the committees recommendations and hence does not believe the new panel would find a solution"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Essar Power",
+      "object": "considered dragging state government to court",
+      "confidence": 0.7,
+      "supporting_excerpt": "essar power in its wisdom had also considered dragging the state government to the court"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Essar Power",
+      "object": "brought pressure on state government to settle past dues",
+      "confidence": 0.7,
+      "supporting_excerpt": "two of the three ipps gpec and essar power had brought in pressure on the state government to settle down the past dues"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Madhav Godbole",
+      "object": "panel head",
+      "confidence": 0.9,
+      "supporting_excerpt": "panel is headed by madhav godbole a former bureaucrat"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Madhav Godbole",
+      "object": "committee which recommended a series of steps to bring down the project tariff",
+      "confidence": 0.7,
+      "supporting_excerpt": "madhav godbole a former bureaucrat who earlier headed a committee which recommended a series of steps to bring down the project tariff"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Dabhol",
+      "object": "does not agree with the committees recommendations",
+      "confidence": 0.7,
+      "supporting_excerpt": "dabhol has said that it does not agree with the committees recommendations"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Indian lenders",
+      "object": "Dabhol",
+      "confidence": 0.7,
+      "supporting_excerpt": "lenders meet indian lenders to dabhol will meet in bombay on wednesday"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Indian lenders",
+      "object": "adoption of a common strategy to convince foreign lenders not to invoke guarantees",
+      "confidence": 0.7,
+      "supporting_excerpt": "the meetings top priority will be the adoption of a common strategy to convince foreign lenders not to invoke guarantees issued by local financial institutions and banks"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol",
+      "object": "total cost of 29 billion",
+      "confidence": 0.7,
+      "supporting_excerpt": "the project is being built at a total cost of 29 billion"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Foreign lenders",
+      "object": "called a meeting on june 5 and 6 in singapore",
+      "confidence": 0.7,
+      "supporting_excerpt": "they have called a meeting on june 5 and 6 in singapore to discuss invoking guarantees on their loans in the project"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Abdullah bin Hamad Al-Attiyah",
+      "object": "momentum had not slowed on Dolphin Energy Ltd project",
+      "confidence": 0.7,
+      "supporting_excerpt": "qatari oil minister abdullah bin hamad alattiyah said momentum had not slowed on a 35 billion project to route qatari gas to the united arab emirates after enron corp bowed out of dolphin energy ltd"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Enron",
+      "object": "sold its 245 percent stake in Dolphin Energy Ltd",
+      "confidence": 0.9,
+      "supporting_excerpt": "enron last week sold its 245 percent stake in del to the uae offsets group uog"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "UAE Offsets Group",
+      "object": "stake increased to 755 percent in Dolphin Energy Ltd",
+      "confidence": 0.7,
+      "supporting_excerpt": "uog for an undisclosed amount raising the uae firms stake to 755 percent"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "TotalFinaElf",
+      "object": "interested in acquiring Enron's stake in Dolphin Energy Ltd",
+      "confidence": 0.7,
+      "supporting_excerpt": "del has said several companies including its other partner in the project frances totalfinaelf were interested in acquiring enrons stake"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "TotalFinaElf",
+      "object": "interested in acquiring Enron's stake in Qatar project",
+      "confidence": 0.7,
+      "supporting_excerpt": "several companies including its other partner in the project frances totalfinaelf were interested in acquiring enrons stake in march qatar"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Enron",
+      "object": "Qatar project commercial term sheet agreement",
+      "confidence": 0.7,
+      "supporting_excerpt": "del signed a commmercial term sheet agreement which outlined the conditions of the upstream agreement for the longawaited project"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Enron",
+      "object": "production sharing agreement before end of third quarter 2001",
+      "confidence": 0.9,
+      "supporting_excerpt": "the two sides aim to sign a production sharing agreement before the end of the third quarter 2001"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Maharashtra Government",
+      "object": "renegotiating with Dabhol Power Company",
+      "confidence": 0.7,
+      "supporting_excerpt": "it always looked as if the maharashtra government had a definite plan while renegotiating with dabhol power company"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sharad Pawar",
+      "object": "criticising the re negotiating committee chairman Madhav Godbole",
+      "confidence": 0.7,
+      "supporting_excerpt": "the party was spoilt by a statement by the nationalist congress party president mr sharad pawar criticising the re negotiating committee chairman mr madhav godbole"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Madhav Godbole",
+      "object": "resigned but was convinced to retract it",
+      "confidence": 0.8,
+      "supporting_excerpt": "the latter resigned but was convinced to retract it"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Sharad Pawar",
+      "object": "Chief Minister of Maharashtra",
+      "confidence": 1.0,
+      "supporting_excerpt": "it was mr pawar as chief minister of maharashtra who had bypassed a lot of objections to give the project to enron"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Praful Patel",
+      "object": "stated Pawar's government brought in Enron",
+      "confidence": 0.7,
+      "supporting_excerpt": "as mr praful patel rightly said in star news newshour the project had the blessings also of the then prime minister mr p v narasimha rao"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "P V Narasimha Rao",
+      "object": "Prime Minister who blessed Dabhol project",
+      "confidence": 0.7,
+      "supporting_excerpt": "the project had the blessings also of the then prime minister mr p v narasimha rao"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mr. Pawar",
+      "object": "brought in Enron",
+      "confidence": 0.7,
+      "supporting_excerpt": "it can not be lost sight of that it was mr pawars government that brought in enron"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mr. Praful Patel",
+      "object": "stated project had blessings of then prime minister",
+      "confidence": 0.7,
+      "supporting_excerpt": "as mr praful patel rightly said in star news newshour the project had the blessings also of the then prime minister"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dr. Manmohan Singh",
+      "object": "finance minister pushing for reforms",
+      "confidence": 0.7,
+      "supporting_excerpt": "his finance minister dr manmohan singh all of them pushing for reforms"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ms. Rebecca Mark",
+      "object": "Enron head met powers in Maharashtra",
+      "confidence": 0.7,
+      "supporting_excerpt": "this civil suit was mysteriously withdrawn after the enron head ms rebecca mark met the powers that be in maharashtra"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Prashant Bhushan",
+      "object": "drafted civil suit as eminent lawyer",
+      "confidence": 0.6,
+      "supporting_excerpt": "The suit drafted by such eminent lawyers as prashant bhushan"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Nitin Pradhan",
+      "object": "drafted civil suit as eminent lawyer",
+      "confidence": 0.7,
+      "supporting_excerpt": "The suit drafted by such eminent lawyers as prashant bhushan nitin pradhan"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "C J Sawant",
+      "object": "drafted civil suit as eminent lawyer",
+      "confidence": 0.7,
+      "supporting_excerpt": "The suit drafted by such eminent lawyers as prashant bhushan nitin pradhan c j sawant"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "F S Nariman",
+      "object": "drafted civil suit as eminent lawyer",
+      "confidence": 0.7,
+      "supporting_excerpt": "The suit drafted by such eminent lawyers as prashant bhushan nitin pradhan c j sawant the then advocate general and f s nariman"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bombay High Court",
+      "object": "civil suit filed in 1995",
+      "confidence": 0.7,
+      "supporting_excerpt": "the real story is described in a civil suit filed in 1995 by the then bjpshiv sena government in the bombay high court"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Mr. Pawar",
+      "object": "government favored Enron by giving approvals after elections announced",
+      "confidence": 0.7,
+      "supporting_excerpt": "the pawar government went out of its way to favour enron by giving approvals even after the elections were announced and conducted in the state"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron",
+      "object": "received approvals in violation of election code",
+      "confidence": 0.6,
+      "supporting_excerpt": "a gross violation of the election code"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Linda Powers",
+      "object": "Enron",
+      "confidence": 0.7,
+      "supporting_excerpt": "the testimony of ms linda powers specifically states that moreover our company spent an enormous amount of its own money approximately 20 million on this education and project development process alone"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Ajit M Nimbalkar",
+      "object": "India Power Project",
+      "confidence": 0.9,
+      "supporting_excerpt": "a memorandum of understanding was signed between the second defendant represented by mr ajit m nimbalkar then chairman of the second defendant ms rebecca mark of enron and mr douglas mcfadden of general electric corporation"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Ajit M Nimbalkar",
+      "object": "chairman",
+      "confidence": 0.9,
+      "supporting_excerpt": "mr ajit m nimbalkar then chairman of the second defendant"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron",
+      "object": "India Power Project",
+      "confidence": 0.7,
+      "supporting_excerpt": "within five days of arrival in india and within three days of arrival in bombay the enron team arrived in india on june 15"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "India Power Project",
+      "object": "20 year electrical power purchase contract",
+      "confidence": 0.7,
+      "supporting_excerpt": "contract for 20 years term between power venture and mseb to be structured to achieve an all in price of us 0073kwh"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "World Bank",
+      "object": "Dabhol Power Project",
+      "confidence": 0.7,
+      "supporting_excerpt": "the world bank expressed its opposition to the project and advised that it was not viable not in the interest of maharashtra in particular and the country the public and the consumers in general"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Enron",
+      "object": "World Bank opposition",
+      "confidence": 1.0,
+      "supporting_excerpt": "this objection was brushed aside by enron which said in a letter that the world bank opinion can be changed"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Enron",
+      "object": "PR firm engagement",
+      "confidence": 0.9,
+      "supporting_excerpt": "we enron will engage a pr firm and hopefully manage the media from here on"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Central Electricity Authority",
+      "object": "Power Purchase Agreement violations",
+      "confidence": 0.7,
+      "supporting_excerpt": "the central electricity authority had drawn attention to several aspects of the mou including i the allin price is a departure from the existing norms and parameters notified by the government under section 43 a2 of the electricity supply act 1948"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Central Electricity Authority",
+      "object": "US dollar pricing departure",
+      "confidence": 0.7,
+      "supporting_excerpt": "denominating the price in us dollars is also a departure from the existing norms"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Power Purchase Agreement",
+      "object": "25 percent equity return",
+      "confidence": 0.7,
+      "supporting_excerpt": "the ppa allows a return much in excess of 25 per cent"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ann Schmidt",
+      "object": "Tariff Notification Dispute",
+      "confidence": 0.7,
+      "supporting_excerpt": "not even structured in accordance with the said notification the tariff notification allows payments only for the actual fuel consumed and not for deemed consumption"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dabhol Power Company",
+      "object": "heat rate guaranteed",
+      "confidence": 0.7,
+      "supporting_excerpt": "the heat rate guaranteed by the dabhol power company to the mseb is 7605 btu per unit"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "GEC",
+      "object": "heat rate guaranteed",
+      "confidence": 0.7,
+      "supporting_excerpt": "the heat rate guaranteed by gec to dpc is considerably lower under the ppa"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Maharashtra Government",
+      "object": "Dabhol Power Project",
+      "confidence": 0.7,
+      "supporting_excerpt": "the suit was withdrawn and its government appointed a review committee which integrated the lng plant with the power plant and gave the green signal for the second phase"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "A V Gokak",
+      "object": "centre representative",
+      "confidence": 0.7,
+      "supporting_excerpt": "its representative a v gokak and stating that the centre is evaluating various options"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron",
+      "object": "Dabhol Power Project",
+      "confidence": 0.7,
+      "supporting_excerpt": "with cosmetic concessions by enron and a lot of sacrifices by the state and the centre"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Electricite de France",
+      "object": "Mediterranean Power Competition",
+      "confidence": 0.7,
+      "supporting_excerpt": "french state monopoly power company electricite de france edf caused a furore in rome last week by grabbing 201 per cent of italian industrial group montedison"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Montedison",
+      "object": "Edison and Sondel holdings",
+      "confidence": 0.6,
+      "supporting_excerpt": "montedison has majority holdings in energy producers edison and sondel"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Edison",
+      "object": "Sondel",
+      "confidence": 0.7,
+      "supporting_excerpt": "together these two modern and thrusting companies soon to be merged have 6000 megawatts of generation capacity"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Italy",
+      "object": "Foreign Investment Restrictions",
+      "confidence": 0.7,
+      "supporting_excerpt": "italys shocked response was to rush through a decree limiting voting rights of foreign companies buying into its generation industry to 2 per cent"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Spain",
+      "object": "Hidrocantabrico",
+      "confidence": 0.7,
+      "supporting_excerpt": "spain is acting under a new edf law intended to keep stateowned foreign groups from controlling its utilities"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Electricidade de Portugal",
+      "object": "Hidrocantabrico",
+      "confidence": 0.7,
+      "supporting_excerpt": "one of those is electricidade de portugal edp 30 per cent owned by the portuguese government"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Energie Baden Wuerttemberg",
+      "object": "Hidrocantabrico",
+      "confidence": 0.7,
+      "supporting_excerpt": "the other is germanys thirdlargest producer energie baden wuerttemberg enbw 345 per cent owned by the french monopoly edf"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "European Commission",
+      "object": "Telefonica",
+      "confidence": 0.7,
+      "supporting_excerpt": "the goldenshare law used to scupper a deal between spanish phone company telefonica and hollands kpn has been challenged by the european commission"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "EDF",
+      "object": "European Union Energy Market Liberalization",
+      "confidence": 0.7,
+      "supporting_excerpt": "edf is doing what state monopolies facing eventual privatisation always do moving into markets where liberalisation is further advanced and barriers to entry are lower"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "EDF",
+      "object": "Enel",
+      "confidence": 0.7,
+      "supporting_excerpt": "it has been doing in italy where the former state monopoly enel is being forced to sell off capacity much would have gone to montedison but it may go elsewhere if edf is"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ann Schmidt",
+      "object": "European Energy Liberalization",
+      "confidence": 0.7,
+      "supporting_excerpt": "eu pressure to liberalise will mean edf will have to face serious competition on its domestic market"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "EDF",
+      "object": "lost 48 clients representing roughly 3 per cent of sales",
+      "confidence": 0.9,
+      "supporting_excerpt": "the company says it has already lost 48 clients representing roughly 3 per cent of sales to the benefit of the german companies rwe and eon"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "EDF",
+      "object": "Montedison",
+      "confidence": 0.7,
+      "supporting_excerpt": "much would have gone to montedison but it may go elsewhere if edf is seen to be in control"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "EDF",
+      "object": "Enron",
+      "confidence": 0.7,
+      "supporting_excerpt": "americas enron spains endesa the francobelgian company electrabel and upstart french rival suez"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Romano Prodi",
+      "object": "Commission President",
+      "confidence": 0.9,
+      "supporting_excerpt": "commission president romano prodi a former italian prime minister"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Loyola de Palacio",
+      "object": "Commissioner for Energy",
+      "confidence": 1.0,
+      "supporting_excerpt": "commissioner for energy loyola de palacio who happens to be spanish"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Loyola de Palacio",
+      "object": "there is no point in privatising state companies only to have them renationalised by someone elses government",
+      "confidence": 0.7,
+      "supporting_excerpt": "commissioner for energy loyola de palacio who happens to be spanish has argued fiercely there is no point in privatising state companies only to have them renationalised by someone elses government"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "European Union Commission",
+      "object": "State Asset Privatization",
+      "confidence": 0.7,
+      "supporting_excerpt": "the commission has taken spain to court over the goldenshares law and is investigating the decision against enbw and edp"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "European Union Commission",
+      "object": "pressure paris to open the french market",
+      "confidence": 0.9,
+      "supporting_excerpt": "the commission argues it is better to pressure paris to open the french market than to let rome and madrid close theirs"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "EDF",
+      "object": "domestic liberalisation",
+      "confidence": 0.9,
+      "supporting_excerpt": "if edf finds its foreign forays thwarted it may decide for itself that some domestic liberalisation is necessary"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "President Bush",
+      "object": "California Energy Crisis",
+      "confidence": 0.6,
+      "supporting_excerpt": "bush will focus on energy problems during the twoday swing"
+    },
+    {
+      "claim_type": "agreed",
+      "subject": "President Bush",
+      "object": "meet with Gray Davis",
+      "confidence": 0.9,
+      "supporting_excerpt": "bush has agreed to meet with davis at the governors request to discuss their differences over how to resolve the energy crunch"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Allan Hoffenblum",
+      "object": "voters do not view energy crisis ideologically",
+      "confidence": 0.7,
+      "supporting_excerpt": "voters dont look at the energy crisis in an ideological mode said allan hoffenblum"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ann Schmidt",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "lights and why are my electric rates so high a recent poll by the public policy institute of california found that voters statewide gave both bush and davis low marks in the way they have dealt with the energy crisis"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Public Policy Institute of California",
+      "object": "Bush's handling of energy crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "the survey found 56 percent of californians disapproved of bushs handling of the matter"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Public Policy Institute of California",
+      "object": "Davis's handling of energy crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis fared even worse with 62 percent of respondents saying they are unhappy with his performance"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Davis",
+      "object": "Texas-based energy companies",
+      "confidence": 0.7,
+      "supporting_excerpt": "some political observers say davis latest strategy linking bush to the texasbased energy companies the governor charges are responsible for high prices is beginning to resonate with voters"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Sherry Bebitch Jeffe",
+      "object": "senior scholar at the University of Southern California",
+      "confidence": 1.0,
+      "supporting_excerpt": "said sherry bebitch jeffe a senior scholar at the university of southern california"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Sherry Bebitch Jeffe",
+      "object": "Enron Corp",
+      "confidence": 0.7,
+      "supporting_excerpt": "she was referring to recent attacks by davis and other democrats against houstonbased reliant energy and enron corp which have supplied energy to california until recently"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bill Clinton",
+      "object": "California",
+      "confidence": 0.7,
+      "supporting_excerpt": "bill clinton who cruised to two california victories headed to the west coast after his first month in office and returned frequently"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "George W. Bush",
+      "object": "Federal facilities to reduce energy consumption by 10 percent",
+      "confidence": 1.0,
+      "supporting_excerpt": "bush ordered federal facilities including the sprawling military bases in the state to reduce energy consumption by 10 percent"
+    },
+    {
+      "claim_type": "decided",
+      "subject": "George W. Bush",
+      "object": "Federal government to expedite permits for new power plants",
+      "confidence": 1.0,
+      "supporting_excerpt": "he has directed the federal government to expedite permits for new power plants that the state desperately needs"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Federal Government",
+      "object": "Price caps on wholesale electricity",
+      "confidence": 1.0,
+      "supporting_excerpt": "the administration has adamantly rejected davis pleas to have the federal government cap the price of wholesale electricity in the state"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "Price ceiling on electricity costs",
+      "confidence": 0.9,
+      "supporting_excerpt": "davis spokesman steve maviglio said the governor will use his meeting with bush to once again request that the president approve a ceiling on electricity costs"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Steve Maviglio",
+      "object": "Davis spokesman",
+      "confidence": 0.9,
+      "supporting_excerpt": "davis spokesman steve maviglio said"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Ari Fleischer",
+      "object": "White house spokesman",
+      "confidence": 0.9,
+      "supporting_excerpt": "white house spokesman ari fleischer disputed"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Federal Government",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "the administration has sought to be more attentive to the energy shortage after california republicans warned of a possible voter backlash"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "James Jeffords",
+      "object": "Defection from Republican Party",
+      "confidence": 0.7,
+      "supporting_excerpt": "democrats have regained control of the senate following vermont sen james jeffords defection last week from the gop"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Federal Government",
+      "object": "Price caps distort the market",
+      "confidence": 0.7,
+      "supporting_excerpt": "white house officials say price caps distort the market and would not solve the major problem facing california"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "George W. Bush",
+      "object": "Federal Energy Strategy",
+      "confidence": 0.8,
+      "supporting_excerpt": "the presidents longterm energy strategy unveiled this month"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Bill Lockyer",
+      "object": "California Attorney General",
+      "confidence": 0.9,
+      "supporting_excerpt": "the states democratic attorney general bill lockyer"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Bill Lockyer",
+      "object": "file civil and criminal charges against Enron",
+      "confidence": 0.9,
+      "supporting_excerpt": "lockyer said his office would like to file civil and criminal charges against the energy supplier"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Bill Lockyer",
+      "object": "possible manipulation of wholesale electricity prices by energy firms",
+      "confidence": 0.7,
+      "supporting_excerpt": "lockyer who is investigating possible manipulation of wholesale electricity prices by energy firms trading in california"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Bill Lockyer",
+      "object": "Ken Lay should be imprisoned",
+      "confidence": 0.7,
+      "supporting_excerpt": "i would love to personally escort lay to an 8by10 cell that he would share with a tattooed dude who says hi my name is spike honey"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Karen Denne",
+      "object": "Enron spokeswoman",
+      "confidence": 0.9,
+      "supporting_excerpt": "enron spokeswoman karen denne"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Karen Denne",
+      "object": "Bill Lockyer's comments",
+      "confidence": 1.0,
+      "supporting_excerpt": "denne responded that lockyers comments do not even dignify a response"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dianne Feinstein",
+      "object": "California",
+      "confidence": 0.6,
+      "supporting_excerpt": "the states two democratic senators dianne feinstein and barbara boxer"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Gary Ackerman",
+      "object": "executive director of Western Power Trading Forum",
+      "confidence": 1.0,
+      "supporting_excerpt": "gary ackerman executive director of a generators and marketers trade group called the western power trading forum"
+    },
+    {
+      "claim_type": "informed",
+      "subject": "Kathleen Connell",
+      "object": "Gary Ackerman",
+      "confidence": 0.9,
+      "supporting_excerpt": "state controller kathleen connell rang him up to apologize for lockyer"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Kathleen Connell",
+      "object": "Bill Lockyer's comments were inappropriate",
+      "confidence": 0.7,
+      "supporting_excerpt": "she called to express her regrets over comments made by an elected official a colleague of hers"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Kathleen Connell",
+      "object": "Ackerman",
+      "confidence": 0.7,
+      "supporting_excerpt": "state controller kathleen connell rang him up to apologize for lockyer she called to express her regrets over comments made by an elected official a colleague of hers ackerman said"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Kathleen Connell",
+      "object": "distancing herself from comments by elected officials",
+      "confidence": 0.7,
+      "supporting_excerpt": "she called to express her regrets over comments made by an elected official a colleague of hers ackerman said she wanted to distance herself from those kinds of comments"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bill Lockyer",
+      "object": "Doris Allen",
+      "confidence": 0.7,
+      "supporting_excerpt": "when doris allenthe orange county republican who was briefly the states first woman assembly speakerwas driven out by fellow republicans for cutting a deal with democrats to get the job she characterized her enemies as powermongering men with small penises that prompted lockyer to declare"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Hannahbeth Jackson",
+      "object": "bill requiring prices for services be posted",
+      "confidence": 0.9,
+      "supporting_excerpt": "jackson has pushed through a bill putting bite in the 1995 law and requiring that prices for such services be posted"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Hannahbeth Jackson",
+      "object": "Gender-Based Pricing Laws",
+      "confidence": 0.7,
+      "supporting_excerpt": "when hannahbeth jackson the assembly democrat representing parts of ventura and santa barbara counties went to her santa barbara dry cleaners she found that she was being charged 125 each for her husbands shirts and 3 each for her blouses"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dana Rohrabacher",
+      "object": "Huntington Beach",
+      "confidence": 0.6,
+      "supporting_excerpt": "dana rohrabacher the republican congressman from huntington beach"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ann Schmidt",
+      "object": "Dana Rohrabacher",
+      "confidence": 0.3,
+      "supporting_excerpt": "From: ann.schmidt@enron.com"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dana Rohrabacher",
+      "object": "Republican Party",
+      "confidence": 0.6,
+      "supporting_excerpt": "dana rohrabacher the republican congressman"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Arnold Schwarzenegger",
+      "object": "Dana Rohrabacher",
+      "confidence": 0.7,
+      "supporting_excerpt": "enlisting one star the gop dotes on so much so that his name was bruited about as governor material arnold schwarzenegger the austrianborn actor is turning star power into tar power at a 1000aplate fundraiser for rohrabacher"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Arnold Schwarzenegger",
+      "object": "Newport Beach",
+      "confidence": 0.7,
+      "supporting_excerpt": "at a 1000aplate fundraiser for rohrabacher june 9 in newport beach"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bill Clinton",
+      "object": "Rancho Park Golf Course",
+      "confidence": 0.7,
+      "supporting_excerpt": "los angeles rancho park golf course now has a bronze plaque set in a boulder to memorialize clintons golf game there last august the marker reads president of the united states william jefferson clinton played golf at rancho park golf course august 12 2000"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Richard Riordan",
+      "object": "Bill Clinton",
+      "confidence": 0.7,
+      "supporting_excerpt": "one of whom was in the first foursomela mayor richard riordan"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Ben Austin",
+      "object": "deputy mayor",
+      "confidence": 1.0,
+      "supporting_excerpt": "former clinton white house aide ben austin now deputy mayor to riordan"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Nancy Pelosi",
+      "object": "San Francisco",
+      "confidence": 0.6,
+      "supporting_excerpt": "nancy pelosi the san francisco democrat"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Nancy Pelosi",
+      "object": "U.S. House of Representatives",
+      "confidence": 0.7,
+      "supporting_excerpt": "nancy pelosi the san francisco democrat has spent some recent time of her 14 years in congress"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Nancy Pelosi",
+      "object": "California",
+      "confidence": 0.7,
+      "supporting_excerpt": "nancy pelosi the san francisco democrat has spent some recent time of her 14 years in congress angling to get california back into the house leadership"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Nancy Pelosi",
+      "object": "majority whip",
+      "confidence": 1.0,
+      "supporting_excerpt": "angling to get california back into the house leadership with herself as majority whip"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steny H Hoyer",
+      "object": "Maryland",
+      "confidence": 0.7,
+      "supporting_excerpt": "fellow demo steny h hoyer of maryland was already jockeying for the same job"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "David E Bonior",
+      "object": "Michigan",
+      "confidence": 0.7,
+      "supporting_excerpt": "michigan rep david e bonior might soon quit as whip to campaign if he decides to run for governor in 2002"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "David E Bonior",
+      "object": "whip",
+      "confidence": 0.9,
+      "supporting_excerpt": "michigan rep david e bonior might soon quit as whip"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "California Energy Deregulation",
+      "object": "legislature voted unanimously",
+      "confidence": 0.7,
+      "supporting_excerpt": "the legislature which voted unanimously in 1996 to adopt energy deregulation voted unanimously again last week"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ron Reina",
+      "object": "Bill Kolender",
+      "confidence": 0.7,
+      "supporting_excerpt": "the retirement memo of ron reina longtime aide to san diego county sheriff bill kolender"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Xavier Becerra",
+      "object": "Antonio Villaraigosa",
+      "confidence": 0.7,
+      "supporting_excerpt": "rep xavier becerra said in a long press release that he had telephoned both villaraigosa and molina and offered an apology"
+    },
+    {
+      "claim_type": "rejected",
+      "subject": "Gloria Molina",
+      "object": "Xavier Becerra apology",
+      "confidence": 1.0,
+      "supporting_excerpt": "no way said molina what she heard from becerra was a longwinded narrative devoid of mea culpas"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Steve Soboroff",
+      "object": "Ellen Oppenheim",
+      "confidence": 0.7,
+      "supporting_excerpt": "former recreation and parks commissioner steve soboroff and department general manager ellen oppenheim unveil plaque"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Ellen Oppenheim",
+      "object": "general manager",
+      "confidence": 0.9,
+      "supporting_excerpt": "general manager ellen oppenheim unveil plaque"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ron Campise",
+      "object": "photographer",
+      "confidence": 0.6,
+      "supporting_excerpt": "photographer ron campise for the times"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "John Williams",
+      "object": "staff writer",
+      "confidence": 0.6,
+      "supporting_excerpt": "john williams staff 05282001 houston chronicle"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Ken Lay",
+      "object": "chairman of enron corp",
+      "confidence": 0.9,
+      "supporting_excerpt": "lay the chairman of enron corp is testing the water"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Ned Holmes",
+      "object": "2003 Houston Mayoral Race",
+      "confidence": 0.7,
+      "supporting_excerpt": "three prominent businessmen ned holmes ken lay and marc j shapiro are talking with politicos and others about running for mayor in two years"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Ned Holmes",
+      "object": "Lee Brown should serve final term",
+      "confidence": 0.6,
+      "supporting_excerpt": "each now prefers brown to serve a final term"
+    },
+    {
+      "claim_type": "participated_in",
+      "subject": "Ned Holmes",
+      "object": "fundraising for Rob Mosbacher",
+      "confidence": 0.9,
+      "supporting_excerpt": "holmes already has taken a step though he chaired fundraising for rob mosbacher"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Rob Mosbacher",
+      "object": "lost to Lee Brown in 1997 runoff",
+      "confidence": 0.7,
+      "supporting_excerpt": "he chaired fundraising for rob mosbacher who lost to brown in the 1997 runoff"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Lay",
+      "object": "Enron Corp",
+      "confidence": 0.6,
+      "supporting_excerpt": "lay the chairman of enron corp"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Lay",
+      "object": "Bush White House",
+      "confidence": 0.7,
+      "supporting_excerpt": "many view lay with his strong ties to the bush white house"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Shapiro",
+      "object": "vice chairman of finance risk management and administration",
+      "confidence": 1.0,
+      "supporting_excerpt": "shapiro is being quieter as vice chairman of finance risk management and administration for manhattan chase bank"
+    },
+    {
+      "claim_type": "works_at",
+      "subject": "Shapiro",
+      "object": "Manhattan Chase Bank",
+      "confidence": 0.9,
+      "supporting_excerpt": "vice chairman of finance risk management and administration for manhattan chase bank"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Shapiro",
+      "object": "New York City",
+      "confidence": 0.6,
+      "supporting_excerpt": "he lives in new york city"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Shapiro",
+      "object": "Hunters Creek",
+      "confidence": 0.7,
+      "supporting_excerpt": "he has a house in the enclave city of hunters creek inside west houston"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Holmes",
+      "object": "other candidates should run",
+      "confidence": 0.7,
+      "supporting_excerpt": "holmes joked i encourage the other two to run all the time"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Chris Bell",
+      "object": "Houston mayoral race",
+      "confidence": 0.6,
+      "supporting_excerpt": "city councilmen chris bell and orlando sanchez"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Brown",
+      "object": "Houston mayoral race",
+      "confidence": 0.7,
+      "supporting_excerpt": "for brown the challenge may be to convince these same voters hes doing his job well"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Brown",
+      "object": "maintained strong lead but whirled in vortex of bad news",
+      "confidence": 0.9,
+      "supporting_excerpt": "brown has maintained a strong though not insurmountable lead but in recent weeks hes whirled in a vortex of bad news"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "President Bush",
+      "object": "Governor Gray Davis",
+      "confidence": 0.6,
+      "supporting_excerpt": "he will engage gov gray davis in a private discussion"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Governor Gray Davis",
+      "object": "wholesale electricity price caps",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis plans to press his case for caps on wholesale electricity prices"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "President Bush",
+      "object": "wholesale electricity price caps would worsen the states power crisis",
+      "confidence": 0.6,
+      "supporting_excerpt": "bush insists would worsen the states power crisis"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "President Bush",
+      "object": "highlight administrations efforts to promote conservation",
+      "confidence": 0.9,
+      "supporting_excerpt": "bush wants to show californians that he cares about their plight and he plans to highlight his administrations efforts to promote conservation"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "President Bush",
+      "object": "efforts to reduce electricity use at military bases",
+      "confidence": 0.7,
+      "supporting_excerpt": "he will tout his efforts to reduce electricity use at military bases"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Governor Gray Davis",
+      "object": "increased federal aid to help fight an insect threatening the wine industry",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis and his administration want other things from washington from increased federal aid to help fight an insect threatening the wine industry"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Governor Gray Davis",
+      "object": "exemption from a rule that could increase gasoline prices in california",
+      "confidence": 0.7,
+      "supporting_excerpt": "to an exemption from a rule that could increase gasoline prices in california"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Darry Sragow",
+      "object": "both the president and the governor have been wounded",
+      "confidence": 0.6,
+      "supporting_excerpt": "both the president and the governor have been wounded"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ann Schmidt",
+      "object": "S. Ragow",
+      "confidence": 0.6,
+      "supporting_excerpt": "sragow both the president and the governor have been wounded"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "S. Ragow",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "we have a real crisis and it requires the involvement of the state and federal government"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Davis",
+      "object": "Governor",
+      "confidence": 0.9,
+      "supporting_excerpt": "davis was elected governor in a 1998 landslide"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Davis",
+      "object": "plummeting poll numbers",
+      "confidence": 0.9,
+      "supporting_excerpt": "he heads into his 2002 reelection campaign with plummeting poll numbers"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "California voters",
+      "object": "Davis job performance",
+      "confidence": 0.7,
+      "supporting_excerpt": "a field poll released last week showed only 42 of registered voters in california approve of the job hes doing as governor while 49 disapprove"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "California voters",
+      "object": "Bush energy crisis response",
+      "confidence": 0.7,
+      "supporting_excerpt": "a private poll taken earlier this month on behalf of public strategies a consulting firm that represents independent power generators showed that 71 of the states likely voters thought the president should be doing more to solve the energy crisis only 23 thought he was doing enough"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Karen Hughes",
+      "object": "Counselor to the President",
+      "confidence": 1.0,
+      "supporting_excerpt": "karen hughes counselor to the president said bush would listen to davis argument"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Karen Hughes",
+      "object": "price controls",
+      "confidence": 0.7,
+      "supporting_excerpt": "she said the president still felt strongly that price caps would discourage investment in new power plants"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Dan Bartlett",
+      "object": "Communications Advisor",
+      "confidence": 0.9,
+      "supporting_excerpt": "dan bartlett one of bushs communications advisors said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bush",
+      "object": "California",
+      "confidence": 0.7,
+      "supporting_excerpt": "bush lost to democrat al gore by more than 1 million votes he came up short in the vote on election day in california"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Dan Bartlett",
+      "object": "Bush's communications advisor",
+      "confidence": 0.9,
+      "supporting_excerpt": "dan bartlett one of bushs communications advisors"
+    },
+    {
+      "claim_type": "discussed",
+      "subject": "Bush",
+      "object": "California",
+      "confidence": 0.7,
+      "supporting_excerpt": "the white house always has regarded california as an important destination for bush"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Dan Bartlett",
+      "object": "California has difficult times ahead and needs federal government help",
+      "confidence": 0.7,
+      "supporting_excerpt": "the state has difficult times ahead of it and its important the president and federal government help them through these difficult times bartlett said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bill Clinton",
+      "object": "Pete Wilson",
+      "confidence": 0.7,
+      "supporting_excerpt": "when president clinton came to california the white house rarely if ever deigned to inform republican gov pete wilson"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pete Wilson",
+      "object": "Federal Government",
+      "confidence": 0.7,
+      "supporting_excerpt": "the combative wilson repeatedly sued the federal government on issues ranging from voter registration requirements to demands for reimbursements for costs associated with illegal immigration"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Sean Walsh",
+      "object": "Bush White House should hold meeting with Gray Davis",
+      "confidence": 0.7,
+      "supporting_excerpt": "it is smart of the bush white house to hold a meeting with gov davis said sean walsh"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.6,
+      "supporting_excerpt": "so far davis has not sued over the energy crisis"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Chris Lehane",
+      "object": "Consultant to Gray Davis",
+      "confidence": 0.9,
+      "supporting_excerpt": "he has retained consultants chris lehane and mark d fabiani"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Chris Lehane",
+      "object": "Clinton Administration",
+      "confidence": 0.6,
+      "supporting_excerpt": "veteran operatives from the clinton administration"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Gray Davis",
+      "object": "Bush is practical and well-intentioned",
+      "confidence": 0.6,
+      "supporting_excerpt": "davis called bush practical and wellintentioned"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Gray Davis",
+      "object": "Threaten to sue Bush administration if meeting fails to produce desired results",
+      "confidence": 0.9,
+      "supporting_excerpt": "he threatened to sue the administration if his meeting with the president fails to produce desired results"
+    },
+    {
+      "claim_type": "requested",
+      "subject": "Gray Davis",
+      "object": "Relief from Bush administration",
+      "confidence": 0.9,
+      "supporting_excerpt": "give us relief find a way to give us relief davis implored"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Davis",
+      "object": "Bush is practical and wellintentioned",
+      "confidence": 0.6,
+      "supporting_excerpt": "davis called bush practical and wellintentioned at the same time"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "Davis",
+      "object": "Price caps relief",
+      "confidence": 0.9,
+      "supporting_excerpt": "give us relief find a way to give us relief davis implored and if the president continues to refuse to impose price caps were going to court"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bob Hertzberg",
+      "object": "contingency plans",
+      "confidence": 0.7,
+      "supporting_excerpt": "even if the meeting produces no tangible results it will be an opportunity to tone down the rhetoric said assembly speaker bob hertzberg dsherman oaks"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Bill Whalen",
+      "object": "Davis communications will not be kinder gentler",
+      "confidence": 0.7,
+      "supporting_excerpt": "you cant tell me that with the clintongore spin machine now running davis communications that were going to see a kinder gentler governor he said"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Richard A Gephardt",
+      "object": "visiting Oakland on Tuesday and Torrance on Wednesday",
+      "confidence": 0.7,
+      "supporting_excerpt": "house democratic leader richard a gephardt of missouri will be in oakland on tuesday and torrance on wednesday to turn up the heat on republicans"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Bill Lockyer",
+      "object": "Ken Lay should be locked in prison",
+      "confidence": 0.7,
+      "supporting_excerpt": "californias democratic attorney general bill lockyer suggested in an interview published by the wall street journal on tuesday that ken lay chairman of the texasbased energy company enron corp and a close friend of bush should be locked in a prison cell with a tattooed inmate named spike"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Ken Lay",
+      "object": "close friend of Bush",
+      "confidence": 0.7,
+      "supporting_excerpt": "ken lay chairman of the texasbased energy company enron corp and a close friend of bush"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Ken Lay",
+      "object": "chairman of Enron Corp",
+      "confidence": 0.9,
+      "supporting_excerpt": "ken lay chairman of the texasbased energy company enron corp"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Enron Corp",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "company enron corp and a close friend of bush should be locked in a prison cell"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Gray Davis",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "which do you think gray davis cares more abouthis dealings with washington or his reelection chances"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "George W. Bush",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "bush is going to do whats right for california regardless of the governors remarks"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "George P. Radanovich",
+      "object": "Representative",
+      "confidence": 0.9,
+      "supporting_excerpt": "rep george p radanovich rmariposa"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Marshall Wittmann",
+      "object": "senior fellow at the conservative hudson institute",
+      "confidence": 0.9,
+      "supporting_excerpt": "marshall wittmann a senior fellow at the conservative hudson institute"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "James M. Jeffords",
+      "object": "Republican Party",
+      "confidence": 0.6,
+      "supporting_excerpt": "sen james m jeffords of vermont quit the republican party"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Tom Daschle",
+      "object": "Senate Majority Leader",
+      "confidence": 0.7,
+      "supporting_excerpt": "its tom daschle the south dakota democrat who is about to become senate majority leader"
+    },
+    {
+      "claim_type": "role_assignment",
+      "subject": "Peter Navarro",
+      "object": "business professor at uc irvines graduate school of management",
+      "confidence": 1.0,
+      "supporting_excerpt": "peter navarro is a business professor at uc irvines graduate school of management"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Dynergy",
+      "object": "California Energy Crisis",
+      "confidence": 0.7,
+      "supporting_excerpt": "these energy conglomeratesdynergy reliant enron williams and othersproduce power for as little as a nickel or a dime per kilowatt hour and sell it into the western states for prices spiking as high as a dollar during rolling blackouts"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Governor Gray Davis",
+      "object": "President Bush could end California's crisis by imposing price controls",
+      "confidence": 0.7,
+      "supporting_excerpt": "as davis correctly argues bush could end californias crisis tomorrow by imposing firm and reasonable price controls on the western regions wholesale electricity market"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "President Bush",
+      "object": "price controls would discourage new power plant construction",
+      "confidence": 0.7,
+      "supporting_excerpt": "bush says that such price controls would discourage new power plant construction and make our problems worse"
+    },
+    {
+      "claim_type": "proposed",
+      "subject": "President Bush",
+      "object": "impose a firm regionwide price cap of 15 to 20 cents",
+      "confidence": 0.9,
+      "supporting_excerpt": "bush could easily shortcircuit this recessionary shock by imposing a firm regionwide price cap of 15 to 20 cents"
+    },
+    {
+      "claim_type": "status_change",
+      "subject": "Transmission Grid Purchase",
+      "object": "failed/aborted",
+      "confidence": 0.8,
+      "supporting_excerpt": "davis failed miserably in closing that deal with disastrous consequences"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Pacific Gas Electric",
+      "object": "bankruptcy",
+      "confidence": 0.6,
+      "supporting_excerpt": "pacific gas electric is in a bankruptcy court"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Southern California Edison",
+      "object": "financial distress",
+      "confidence": 0.7,
+      "supporting_excerpt": "southern california edison continues to hover on the brink of receivership"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Energy Crisis",
+      "object": "transmission grid deal aborted",
+      "confidence": 0.7,
+      "supporting_excerpt": "the aborted transmission grid deal has left the utilities without adequate funds to pay off the states small generators"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Merchant Generators",
+      "object": "withholding supply to game the market",
+      "confidence": 0.7,
+      "supporting_excerpt": "these generators bought the plants from the states utilities after deregulation for a mere 32 billion since then they have used the plants to game the market by withholding supply"
+    },
+    {
+      "claim_type": "opinion",
+      "subject": "Davis",
+      "object": "worst mistake was not seizing merchant generator plants months ago",
+      "confidence": 0.7,
+      "supporting_excerpt": "in hindsight it is clear that davis worst mistake was not seizing the plants of the merchant generators who were ripping off california months ago"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "California Energy Crisis",
+      "object": "electricity bill may eventually reach 100 billion",
+      "confidence": 0.7,
+      "supporting_excerpt": "the generators have stuck californians with an electricity bill that may eventually reach 100 billion"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Davis",
+      "object": "using taxpayer money on high-priced spin doctors",
+      "confidence": 0.7,
+      "supporting_excerpt": "davis is now using taxpayer money on several highpriced spin doctors"
+    },
+    {
+      "claim_type": "mentioned",
+      "subject": "Democratic Party",
+      "object": "using millions on media campaign to redirect public anger toward Bush Administration",
+      "confidence": 0.7,
+      "supporting_excerpt": "the democratic party is using millions on a media campaign to redirect the publics anger toward the bush administration and the republicans"
+    }
+  ],
+  "_source_id": "74091",
+  "_email_meta": {
+    "sender": "ann.schmidt@enron.com",
+    "recipient": "missing",
+    "date": "2001-05-29"
+  }
+}
