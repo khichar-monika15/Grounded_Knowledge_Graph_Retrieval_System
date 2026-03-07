@@ -421,11 +421,24 @@ def main():
                     "RETURN a.name, c.claim_type, b.name, c.confidence\n"
                     "ORDER BY c.confidence DESC LIMIT 20"
                 ),
+                "Find entity by partial name": (
+                    "MATCH (e:Entity) WHERE e.name CONTAINS 'Skilling'\n"
+                    "RETURN e.name, e.entity_id, e.entity_type LIMIT 5"
+                ),
                 "2-hop neighborhood": (
-                    "MATCH (src:Entity {name: 'Jeff Skilling'})-[c:Claim*1..2]-(dst:Entity)\n"
-                    "RETURN dst.name, dst.entity_type LIMIT 20"
+                    "MATCH (src:Entity {name: 'Jeffrey Skilling'})-[c:Claim]->(dst:Entity)\n"
+                    "RETURN dst.name, dst.entity_type, c.claim_type LIMIT 20"
+                ),
+                "True 2-hop path": (
+                    "MATCH (src:Entity {name: 'Jeffrey Skilling'})-[:Claim]->(mid:Entity)-[:Claim]->(dst:Entity)\n"
+                    "RETURN mid.name, dst.name LIMIT 20"
                 ),
             }
+            st.caption(
+                "**Tip:** Entity names must match exactly. Use the *Find entity by partial name* template "
+                "to look up the stored name before querying. Variable-length paths (`*1..2`) are not "
+                "supported — use separate hops as shown in *True 2-hop path*."
+            )
             template = st.selectbox("Template", list(TEMPLATES.keys()))
             cypher_query = st.text_area("Cypher query", value=TEMPLATES[template], height=120)
             if st.button("Run Query"):
