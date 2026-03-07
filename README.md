@@ -10,9 +10,13 @@ visualization.
 
 ## Screenshots
 
-| Graph Explorer | Evidence Panel | Retrieval | Merge Inspector |
-|---|---|---|---|
-| ![graph](screenshots/graph_explorer.png) | ![evidence](screenshots/evidence_panel.png) | ![retrieval](screenshots/retrieval.png) | ![merge](screenshots/merge_inspector.png) |
+| Graph Explorer | Merge History (Recent) | Merge History (Log) |
+|---|---|---|
+| ![graph](screenshots/1_graph_explorer.png) | ![merge_top](screenshots/2_merge_history_top.png) | ![merge_bottom](screenshots/3_merge_history_bottom.png) |
+
+| Search Retrieval | Cypher Query |
+|---|---|
+| ![retrieval](screenshots/4_search_retrieval.png) | ![cypher](screenshots/5_advanced_query_cypher.png) |
 
 > To regenerate: `uv run streamlit run app/app.py` (requires `outputs/` to exist)
 
