@@ -1,4 +1,4 @@
-# Layer10 Grounded Long-Term Memory System
+# Grounded Long-Term Memory System
 
 Extracts structured knowledge from the Enron email dataset, deduplicates entities and claims at
 three levels, stores them in a grounded memory graph, and provides retrieval with interactive
