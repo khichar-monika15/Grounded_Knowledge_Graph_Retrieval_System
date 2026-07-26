@@ -1,7 +1,5 @@
 # Write-Up: Grounded Long-Term Memory System
 
-**Submission for Layer10 Take-Home Project**
-
 ---
 
 ## TL;DR for Reviewers
@@ -647,8 +645,6 @@ Full-panel Kùzu Cypher query interface (previously hidden in a collapsed expand
 - Results rendered as `st.dataframe()` with row count
 
 ---
-
-## 9. Layer10 Adaptation
 
 ### 9.1 Ontology Extensions
 
